@@ -35,6 +35,7 @@ from core.claude_runner import (
     chunk_text,
     RATE_LIMIT_DELAY, ANALYSIS_TIMEOUT,
 )
+from core.chunking import run_chunked_synthesis, SINGLE_CALL_THRESHOLD
 from utils import (
     render_sidebar, require_client, render_progress_bar,
     inject_css, render_breadcrumb,
@@ -606,70 +607,101 @@ if run_mode == "synthesize_now":
                 f"{len(policy_ready) - n_loaded} not yet analyzed. Findings may be incomplete."
             )
 
-    # Synthesis call (1 of 2)
+    # Synthesis call (1 of 2) - auto-chunked for large programs.
+    #
+    # 2026-05-01: replaced single-call synthesis with run_chunked_synthesis,
+    # which auto-detects whether the all-policies prompt is small enough for
+    # a single call (<130 KB) or needs chunking. The chunked path partitions
+    # policies by coverage cluster (Core Liability / Pro+Cyber / ML / WC /
+    # Property / Pollution / other), bin-packs into <=140 KB-prompt chunks,
+    # and merges per-chunk findings with cross-chunk dedup of Bad/Ugly.
+    # Background: v3e validation confirmed prompts >170 KB hit truncation /
+    # silent hangs on the 2.1.121 binary; chunking keeps every call safe.
     prog.progress(0.25, text="Synthesizing findings...")
     _log_step("Synthesizing findings across all analyzed policies...")
-    # Phase 2B-1: pass a COMPRESSED requirements shape to synthesis (legacy
-    # flat list only). The rich contracts:{by_coverage:...} matrix shifts
-    # synthesis attention toward contract-compliance findings and away from
-    # substantive per-policy findings — that data is for the cross-policy
-    # matrix pass below, NOT for synthesis. See PHASE-2A-DIAGNOSTIC.md.
     synthesis_reqs = {
         "client":        (requirements_data or {}).get("client"),
         "analysis_date": (requirements_data or {}).get("analysis_date"),
         "requirements":  (requirements_data or {}).get("requirements") or [],
     }
-    prompt     = build_crossref_prompt(client_notes, slug, synthesis_reqs, policy_analyses)
-    ok, result = run_claude(prompt, timeout=ANALYSIS_TIMEOUT)
 
-    if _is_rate_limit(ok, result):
+    def _synth_progress(label: str, frac: float) -> None:
+        prog.progress(0.25 + 0.4 * frac, text=label)
+        _log_sub(label)
+
+    findings, synth_meta = run_chunked_synthesis(
+        client_notes,
+        slug,
+        synthesis_reqs,
+        policy_analyses,
+        timeout=ANALYSIS_TIMEOUT,
+        progress_callback=_synth_progress,
+    )
+
+    rate_limited = any("RATE_LIMIT" in (msg or "") for _, msg in synth_meta.get("errors", []))
+    if rate_limited:
         _set_rate_limited()
         with log:
             st.error(
-                "\U0001f6ab Daily usage limit reached during synthesis. "
-                "Policy analyses are saved \u2014 try again tomorrow."
+                "🚫 Daily usage limit reached during synthesis. "
+                "Policy analyses are saved — try again tomorrow."
             )
         findings = state.get("findings", [])
-    elif ok:
-        parsed = extract_json(result)
-        if parsed and "findings" in parsed:
-            findings = parsed["findings"]
-            for f in findings:
-                like = f.get("likelihood")
-                sev  = f.get("severity")
-                if like and sev and "risk_score" not in f:
-                    f["risk_score"] = int(like) * int(sev)
-                elif "risk_score" not in f:
-                    f["risk_score"] = None
-            with log:
-                n_ugly = sum(1 for f in findings if f.get("category") == "Ugly")
-                n_bad  = sum(1 for f in findings if f.get("category") == "Bad")
-                n_good = sum(1 for f in findings if f.get("category") == "Good")
-                st.success(
-                    f"Synthesis complete \u2014 {len(findings)} findings: "
-                    f"{n_ugly} critical, {n_bad} bad, {n_good} good."
-                )
-        else:
-            raw_path = exchange_dir / f"{slug}-crossref-raw.txt"
-            try:
-                raw_path.write_text(result or "", encoding="utf-8")
-            except Exception:
-                pass
-            findings = state.get("findings", [])
-            with log:
-                st.info(
-                    "Synthesis completed but JSON parse failed. "
-                    f"Raw response saved to {raw_path.name}. "
-                    + (f"Kept {len(findings)} prior findings." if findings
-                       else "No prior findings available.")
+    elif synth_meta.get("ok") and findings:
+        with log:
+            n_ugly   = sum(1 for f in findings if f.get("category") == "Ugly")
+            n_bad    = sum(1 for f in findings if f.get("category") == "Bad")
+            n_review = sum(1 for f in findings if f.get("category") in ("Review", "Needs Review"))
+            n_good   = sum(1 for f in findings if f.get("category") == "Good")
+            mode     = synth_meta.get("mode", "?")
+            n_chunks = len(synth_meta.get("chunks") or [])
+            n_dups   = len(synth_meta.get("duplicates_collapsed") or [])
+            n_errs   = len(synth_meta.get("errors") or [])
+            chunk_summary = (
+                f" ({n_chunks} chunks; {n_dups} duplicates collapsed"
+                f"{f'; {n_errs} chunk errors' if n_errs else ''})"
+                if mode == "chunked" else ""
+            )
+            st.success(
+                f"Synthesis complete — {len(findings)} findings: "
+                f"{n_ugly} critical, {n_bad} bad, {n_review} review, {n_good} good"
+                f"{chunk_summary}."
+            )
+            if mode == "chunked":
+                _log_sub(
+                    f"Chunked synthesis: {n_chunks} chunks "
+                    f"({', '.join(c['name'] for c in synth_meta['chunks'])}); "
+                    f"all-policies prompt would have been "
+                    f"{synth_meta.get('all_policies_prompt_chars', 0):,} chars"
                 )
     else:
         findings = state.get("findings", [])
+        err_msgs = synth_meta.get("errors") or []
         with log:
-            if findings:
-                st.info(f"Synthesis call failed: {result[:200]}. Kept {len(findings)} prior findings.")
+            if err_msgs:
+                first_err = err_msgs[0][1] if err_msgs else "(unknown)"
+                raw_path = exchange_dir / f"{slug}-crossref-raw.txt"
+                try:
+                    raw_path.write_text(
+                        json.dumps(synth_meta, indent=2, ensure_ascii=False)
+                            if not isinstance(first_err, str) else first_err,
+                        encoding="utf-8",
+                    )
+                except Exception:
+                    pass
+                if findings:
+                    st.info(
+                        f"Synthesis returned no findings ({len(err_msgs)} chunk error(s); "
+                        f"first: {str(first_err)[:200]}). Kept {len(findings)} prior findings."
+                    )
+                else:
+                    st.error(
+                        f"Synthesis failed across all chunks. First error: {str(first_err)[:300]}"
+                    )
+            elif findings:
+                st.info(f"Synthesis returned no findings. Kept {len(findings)} prior findings.")
             else:
-                st.error(f"Synthesis failed: {result}")
+                st.error("Synthesis returned no findings.")
 
     # Cross-policy intelligence pass (2 of 2)
     if has_crossref and findings and not _rate_limited():
