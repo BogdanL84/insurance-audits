@@ -265,6 +265,45 @@ conditions when this issue manifested.
 
 ## Field test log
 
+### 2026-05-01 — Streamlit hang post-cross-policy-pass on Precision Aero (recoverable)
+
+**Symptom:** Streamlit audit on Precision Aero (5 policies, 0 contracts)
+displayed "Synthesis complete — 55 findings" then "Running cross-policy
+intelligence pass…" and stalled. Python process at 0% CPU. claude.exe
+subprocess gone. `clients/precision-aero/output/audit-state.json` showed
+`stage: "text_extracted"`, `findings: []`.
+
+**Diagnosis (forensics):** the cross-policy intelligence pass tempfile at
+`AppData/Local/Temp/claude_runner_kx59zxk2/claude_stdout.txt` survived,
+contained 309 KB of stream-json with a clean `result` event
+(`is_error: False`, `duration_ms: 266763`, `terminal_reason: "completed"`).
+Reconstructed text → 43,543 chars → `extract_json` recovered 55 findings
+(4U + 16B + 24R + 6G + 5 Informational). The cross-policy pass DID
+complete; Streamlit just never processed the response into UI / disk.
+
+**Root cause hypothesis:** the cross-policy pass took 4 min 26 sec, close
+to its 300s timeout. Streamlit's `_Analyze.py:696` returned the response,
+then either (a) the subsequent rerender / `with log:` block / progress
+update stalled, or (b) the Stage C matrix pass at line 723 hit an error
+during `cross_policy.py` matrix construction (entity/compliance/NOC
+matrices on 5 policies, 3 of which had word_count: 0 and minimal analysis
+fields), or (c) Streamlit's main thread blocked on the long-running
+synthesis chain and never recovered. No tempfile from a more recent
+claude.exe spawn means the Stage C matrix pass never started.
+
+**Recovery:** `validation-2026-04-27/phase-2b-2/_recover_precision_aero.py`
+parses the surviving tempfile and writes findings to
+`clients/precision-aero/output/findings.json` and updates
+`audit-state.json`. No API spend. ~5 min total.
+
+**Architectural recommendation (open task):** the pipeline currently keeps
+synthesis findings, cross-policy pass findings, and matrix pass findings
+in `st.session_state` until the very end of `_Analyze.py`. If anything
+fails, prior work is lost from disk. Pipeline should write findings to
+disk after each successful stage (synthesis → save; cross-policy pass →
+save; matrix pass → save). One-line addition per stage; would have
+prevented this loss entirely.
+
 ### 2026-05-01 — stream-json runner migration fixes truncation on 2.1.121
 
 The 2.1.121 binary (the pinned version) also has a truncation issue at the

@@ -1,0 +1,163 @@
+{
+  "source_file": "USLI EPLI.pdf",
+  "analysis_date": "2026-05-01",
+  "policy_type": "Management Liability",
+  "is_package": false,
+  "coverage_parts": [
+    "EPLI"
+  ],
+  "is_primary": true,
+  "named_insured": "Precision Aero, Inc.",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "Renewal certificate does not include a Broad Form Named Insured endorsement. Monoline EPLI for a single named entity."
+  },
+  "carrier": "United States Liability Insurance Company (USLI) — Berkshire Hathaway, A++ Best",
+  "policy_number": "EPL1575392A",
+  "effective_date": "2023-11-30",
+  "expiry_date": "2024-11-30",
+  "limits": {
+    "each_claim": 1000000,
+    "aggregate": 1000000,
+    "retention_each_claim": 25000,
+    "co_insurance_percent": 0,
+    "retroactive_date": "2022-11-30"
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": null,
+    "for_other_reasons": null,
+    "page_ref": "Not visible — governed by EPL-AZ Arizona State Amendatory Endorsement (07/21) and policy jacket, neither of which is included in this renewal certificate. Cannot verify notice period from text provided."
+  },
+  "endorsements": [
+    {
+      "form_number": "EPL 170",
+      "name": "Biometric Information Exclusion",
+      "page": 8,
+      "notes": "Excludes claims arising from collection, use, storage, or disclosure of biometric data (BIPA-style claims). Form text not in renewal certificate; effect inferred from form name. Highly relevant for a manufacturer that may use biometric time clocks or fingerprint access controls."
+    },
+    {
+      "form_number": "EPL-148",
+      "name": "Retroactive Date Endorsement",
+      "page": 11,
+      "notes": "Replaces 'Full Prior Acts Coverage' with retroactive date of 11/30/2022. Any wrongful act prior to that date is excluded. Effective prior acts coverage is only 1 year as of this policy inception."
+    },
+    {
+      "form_number": "EPL-162",
+      "name": "Fair Labor Standards Act Sub-Limit Endorsement",
+      "page": 8,
+      "notes": "Sublimits wage & hour / FLSA defense (and possibly indemnity) coverage. Sublimit amount not visible in renewal certificate. Form text required to assess adequacy."
+    },
+    {
+      "form_number": "EPL-167",
+      "name": "Amended Definition of Loss Endorsement",
+      "page": 8,
+      "notes": "Modifies the Loss definition. Form text not in renewal certificate. Potentially narrows what counts as covered Loss (e.g., punitive damages, front pay, back pay, liquidated damages). Needs verification."
+    },
+    {
+      "form_number": "EPL-169",
+      "name": "Amended Notice/Claim and Circumstance Reporting Provisions",
+      "page": 8,
+      "notes": "Modifies notice and circumstance reporting. Form text not in renewal certificate. Could tighten or loosen reporting triggers."
+    },
+    {
+      "form_number": "EPL-AZ",
+      "name": "Arizona State Amendatory Endorsement",
+      "page": 8,
+      "notes": "State-mandated amendments for Arizona. Form text not in renewal certificate."
+    },
+    {
+      "form_number": "EPL-J",
+      "name": "Employment Practices Liability Insurance Policy (Coverage Form)",
+      "page": 8,
+      "notes": "Base EPLI coverage form. Full text not in renewal certificate."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Biometric Information Exclusion",
+      "form_number": "EPL 170",
+      "page": 8,
+      "impact": "Excludes claims arising out of collection, use, storage, or disclosure of biometric identifiers/information. For a manufacturer that may use biometric time clocks, fingerprint scanners, or facial recognition for plant access, this excludes a fast-growing class of employee privacy litigation (BIPA in Illinois has produced settlements of $50M+ in single class actions; California, Texas, NY, and others now have analogous statutes). A standalone Cyber/Privacy policy with biometric coverage, or a manuscripted EPLI buy-back, would be needed to insure this exposure."
+    },
+    {
+      "name": "Retroactive Date Limitation (Prior Acts cut to 11/30/2022)",
+      "form_number": "EPL-148",
+      "page": 11,
+      "impact": "Section II 'Full Prior Acts Coverage Provision' is deleted and replaced with a retroactive date of 11/30/2022. Any wrongful act committed before 11/30/2022 is permanently excluded. As of policy inception 11/30/2023, prior acts coverage is only 1 year — far short of typical EPLI continuity (which runs back to first inception of EPLI coverage). Long-tail employment claims (constructive discharge, harassment claims years after the conduct, retaliation tied to old protected activity) commonly arise from acts predating retro. No other policy in a typical program covers this gap."
+    },
+    {
+      "name": "Fair Labor Standards Act Sub-Limit",
+      "form_number": "EPL-162",
+      "page": 8,
+      "impact": "Wage & hour exposure (FLSA + state-law equivalents) is subject to a sublimit rather than the full $1M aggregate. Sublimit amount is not visible on the renewal certificate. Wage & hour class actions are the single most common large-dollar employment exposure; a low sublimit (e.g., $100K–$250K defense-only) leaves a manufacturer with hourly workforce materially exposed. Sublimit amount must be confirmed against the EPL-162 form."
+    },
+    {
+      "name": "Defense Costs Erode the Retention",
+      "form_number": "EPL-J / Declarations",
+      "page": 9,
+      "impact": "Declarations and policy notice expressly state: 'Defense Costs shall be applied against the Retention.' Insured pays the first $25,000 of defense before carrier dollars engage. Standard for EPLI but worth understanding. Defense-cost-vs.-limit erosion (whether defense also erodes the $1M limit) is not visible in the renewal certificate and must be verified — most EPLI forms have defense inside the limit."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "additional_findings": [
+    {
+      "category": "Bad",
+      "finding": "Limit too low for a manufacturer — $1M aggregate shared across all claims",
+      "likelihood": 3,
+      "severity": 4,
+      "detail": "Each Claim limit and Aggregate limit are both $1,000,000 (Pg. 9). A single discrimination, harassment, or wrongful-termination class action involving multiple claimants can exceed $1M in defense costs alone — especially in California or with a regulatory overlay. With defense costs likely inside the limit (typical for EPLI; needs confirmation from EPL-J form), a single moderately serious matter could exhaust the aggregate, leaving zero coverage for the rest of the policy year. Recommend benchmarking against employee headcount and jurisdiction; for any meaningful manufacturing workforce, $2M–$5M aggregate is more appropriate."
+    },
+    {
+      "category": "Bad",
+      "finding": "Retroactive date of 11/30/2022 — only 1 year of prior acts",
+      "likelihood": 3,
+      "severity": 4,
+      "detail": "EPL-148 (Pg. 11) replaces Full Prior Acts coverage with a retroactive date of 11/30/2022. As of inception 11/30/2023, only 1 year of prior wrongful acts is covered. Employment claims commonly arise long after the underlying conduct — a 2021 termination resulting in a 2024 EEOC charge would be uncovered. If Precision Aero had EPLI in prior years, the retro date should match that earliest continuous EPLI inception, not 1 year. Verify whether continuity exists; if so, push the retro back. If this is the first EPLI policy, the retro should at least step back annually (full prior acts at next renewal)."
+    },
+    {
+      "category": "Ugly",
+      "finding": "Biometric Information Exclusion — material gap for a manufacturer",
+      "likelihood": 3,
+      "severity": 4,
+      "detail": "EPL 170 (Pg. 8) excludes claims arising out of biometric information. Manufacturers commonly use biometric time clocks, fingerprint or hand-scan plant entry, and facial recognition for access control. Biometric privacy class actions under Illinois BIPA, Texas CUBI, and similar laws have produced single-employer settlements exceeding $50M. If Precision Aero uses any biometric employee identification — confirm at intake — this exclusion creates a complete coverage gap with no other policy in the program likely to respond (a Cyber/Privacy policy with affirmative biometric coverage, or a manuscripted EPLI buy-back, would be required)."
+    },
+    {
+      "category": "Bad",
+      "finding": "Wage & Hour sublimit (amount not disclosed on renewal certificate)",
+      "likelihood": 3,
+      "severity": 3,
+      "detail": "EPL-162 (Pg. 8) sublimits FLSA / wage & hour coverage. The sublimit amount is not stated on the renewal certificate. Wage & hour is the highest-frequency, highest-severity employment exposure in most jurisdictions. For a manufacturer with hourly production employees, sublimits below $250K defense are inadequate. Action: pull the EPL-162 endorsement form to confirm the dollar sublimit, then evaluate against payroll exposure."
+    },
+    {
+      "category": "Informational",
+      "finding": "Renewal Certificate only — full policy text not provided",
+      "likelihood": null,
+      "severity": null,
+      "detail": "The document analyzed is a Renewal Certificate plus marketing inserts. The base EPLI coverage form (EPL-J), Arizona State Amendatory (EPL-AZ), Amended Definition of Loss (EPL-167), Amended Notice/Claim provisions (EPL-169), Wage & Hour sublimit (EPL-162), and Policy Jacket are all referenced but their text is not included. Several audit items cannot be confirmed from this document and require the full policy: (a) cancellation/nonrenewal notice period, (b) hammer clause/consent-to-settle structure, (c) defense costs inside vs. outside the $1M limit, (d) definition of Employee (W-2 only? temps? 1099?), (e) third-party harassment coverage, (f) punitive damages treatment, (g) wage & hour sublimit dollar amount, (h) what EPL-167 changes about the Loss definition (front pay? liquidated damages?). Recommend obtaining the full policy before final report."
+    },
+    {
+      "category": "Informational",
+      "finding": "Carrier strength is excellent",
+      "likelihood": null,
+      "severity": null,
+      "detail": "USLI is a Berkshire Hathaway subsidiary with A.M. Best rating A++ (Superior) for financial stability. No carrier-financial-strength concern."
+    }
+  ],
+  "_source_file": "USLI EPLI.pdf"
+}

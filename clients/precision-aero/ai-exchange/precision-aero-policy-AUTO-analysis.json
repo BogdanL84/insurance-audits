@@ -1,0 +1,346 @@
+{
+  "source_file": "AUTO.pdf",
+  "analysis_date": "2026-05-01",
+  "policy_type": "Auto",
+  "is_package": false,
+  "coverage_parts": [
+    "Business Auto Liability",
+    "Auto Medical Payments",
+    "Uninsured Motorists",
+    "Underinsured Motorists",
+    "Physical Damage - Comprehensive",
+    "Physical Damage - Collision",
+    "Towing & Labor",
+    "Hired Auto Liability",
+    "Non-Owned Auto Liability"
+  ],
+  "is_primary": true,
+  "named_insured": "Precision Aero Inc",
+  "named_insured_entity_type": "unspecified",
+  "additional_named_insureds": [],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": null,
+    "excludes_note": null
+  },
+  "carrier": "Pekin Insurance Company",
+  "policy_number": "005917541",
+  "effective_date": "2024-03-01",
+  "expiry_date": "2025-03-01",
+  "limits": {
+    "liability_each_accident": 1000000,
+    "liability_each_person": 1000000,
+    "property_damage": 1000000,
+    "auto_medical_payments": 5000,
+    "uninsured_motorists_each_person": 1000000,
+    "uninsured_motorists_each_accident": 1000000,
+    "underinsured_motorists_each_person": 1000000,
+    "underinsured_motorists_each_accident": 1000000,
+    "physical_damage_comprehensive_deductible": 500,
+    "physical_damage_collision_deductible": 500,
+    "hired_auto_estimated_cost_of_hire": 1000,
+    "non_owned_auto_employees_rated": 4,
+    "non_owned_auto_partners_rated": 2
+  },
+  "covered_auto_symbols": {
+    "liability": "1 (Any Auto)",
+    "auto_medical_payments": "7 (Specifically Described Autos)",
+    "uninsured_motorists": "7 (Specifically Described Autos)",
+    "underinsured_motorists": "7 (Specifically Described Autos)",
+    "physical_damage_comprehensive": "7 (Specifically Described Autos)",
+    "physical_damage_collision": "7 (Specifically Described Autos)",
+    "uninsured_motorists_property_damage": "NO COVERAGE",
+    "personal_injury_protection": "NO COVERAGE",
+    "motor_transit_cargo": "NO COVERAGE"
+  },
+  "scheduled_autos": [
+    {
+      "unit": 3,
+      "year": 2018,
+      "make": "Dodge",
+      "model": "Ram 1500",
+      "vin": "1C6RR6FGXJS304941",
+      "stated_value": 28490,
+      "garaged": "5310 S 32nd St, Phoenix, AZ 85040"
+    },
+    {
+      "unit": 4,
+      "year": 2020,
+      "make": "Chevrolet",
+      "model": "G2500 Express",
+      "vin": "1GCWGBFG8L1154198",
+      "stated_value": 35000,
+      "garaged": "5310 S 32nd St, Phoenix, AZ 85040"
+    }
+  ],
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": 30,
+    "page_ref": "Per IL 00 17 11 98 Common Policy Conditions (referenced on Pg 9 endorsement schedule); AZ Changes-Nonrenewal CA 02 05 also applies. No carrier broadening endorsement extending notice."
+  },
+  "endorsements": [
+    {
+      "form_number": "CA 00 01 03 10",
+      "name": "Business Auto Coverage Form",
+      "page": 9,
+      "notes": "Base coverage form."
+    },
+    {
+      "form_number": "CA 31 34 10 18",
+      "name": "Commercial Auto Enhancement Endorsement",
+      "page": 9,
+      "notes": "Carrier broadening endorsement — content not included in extracted text. Must review separately to confirm whether it provides Additional Insured automatic status, Waiver of Subrogation, P&NC, Hired Auto Physical Damage, Drive Other Car, Lease Gap, or other broadenings. THIS IS A CRITICAL DOCUMENT TO REVIEW."
+    },
+    {
+      "form_number": "CA 01 75 07 04",
+      "name": "Arizona Changes",
+      "page": 9,
+      "notes": "State amendatory."
+    },
+    {
+      "form_number": "CA 02 05 05 14",
+      "name": "Arizona Changes — Nonrenewal",
+      "page": 9,
+      "notes": "Governs nonrenewal notice for AZ."
+    },
+    {
+      "form_number": "CA 04 23 07 04",
+      "name": "Arizona — Full Glass Coverage",
+      "page": 9,
+      "notes": "Standard AZ glass coverage."
+    },
+    {
+      "form_number": "CA 21 39 07 09",
+      "name": "Arizona Uninsured Motorists Coverage",
+      "page": 11,
+      "notes": "Standard AZ UM endorsement. Symbol 7 (scheduled autos only)."
+    },
+    {
+      "form_number": "CA 21 40 07 09",
+      "name": "Arizona Underinsured Motorists Coverage",
+      "page": 14,
+      "notes": "Standard AZ UIM endorsement. Symbol 7."
+    },
+    {
+      "form_number": "CA 21 51 10 13",
+      "name": "Split Bodily Injury Underinsured Motorists Coverage Limits",
+      "page": 17,
+      "notes": "Splits UIM into per person / per accident."
+    },
+    {
+      "form_number": "CA 21 02 11 06",
+      "name": "Split Bodily Injury Uninsured Motorists Coverage Limits",
+      "page": 18,
+      "notes": "Splits UM into per person / per accident."
+    },
+    {
+      "form_number": "CA 31 21 10 18",
+      "name": "Split Liability Limits",
+      "page": 19,
+      "notes": "Splits liability into per person/per accident BI and per accident PD ($1M/$1M/$1M)."
+    },
+    {
+      "form_number": "CA 23 04 10 01",
+      "name": "Rolling Stores",
+      "page": 9,
+      "notes": "Generally a coverage form variant — does not appear to apply to a machine shop's typical operations; verify why this is on the policy."
+    },
+    {
+      "form_number": "CA 23 44 11 16",
+      "name": "Public Or Livery Passenger Conveyance Exclusion",
+      "page": 9,
+      "notes": "Standard exclusion. Acceptable for machine shop."
+    },
+    {
+      "form_number": "CA 23 84 01 06",
+      "name": "Exclusion Of Terrorism",
+      "page": 9,
+      "notes": "Standard terrorism exclusion."
+    },
+    {
+      "form_number": "CA 23 94 03 06",
+      "name": "Silica Or Silica-Related Dust Exclusion",
+      "page": 9,
+      "notes": "Excludes silica-related claims arising from auto operations."
+    },
+    {
+      "form_number": "CA 31 36 10 18",
+      "name": "Exclusion — Lead Liability",
+      "page": 9,
+      "notes": "Carrier exclusion for lead liability."
+    },
+    {
+      "form_number": "CA 31 37 10 18",
+      "name": "Exclusion — Asbestos",
+      "page": 9,
+      "notes": "Carrier exclusion for asbestos."
+    },
+    {
+      "form_number": "CA 31 38 10 18",
+      "name": "Exclusion — Hydraulic Fracturing",
+      "page": 9,
+      "notes": "Frac exclusion. Not relevant to machine shop operations."
+    },
+    {
+      "form_number": "CA 31 40 10 18",
+      "name": "Abuse Or Molestation Exclusion",
+      "page": 9,
+      "notes": "Carrier exclusion for abuse/molestation."
+    },
+    {
+      "form_number": "CA 31 41 10 18",
+      "name": "Premium Audit Changes",
+      "page": 9,
+      "notes": "Modifies premium audit terms."
+    },
+    {
+      "form_number": "CA 99 17 03 06",
+      "name": "Individual Named Insured",
+      "page": 9,
+      "notes": "This endorsement is designed for policies where the Named Insured is an INDIVIDUAL — it extends coverage to spouse/family members for personal autos. Precision Aero is an INC. Presence of this endorsement on a corporate policy is anomalous and likely either an administrative error or there is an individual on the policy not disclosed in the Dec. Verify with carrier."
+    },
+    {
+      "form_number": "CA 99 03 03 06",
+      "name": "Auto Medical Payments Coverage",
+      "page": 9,
+      "notes": "Adds Med Pay coverage form."
+    },
+    {
+      "form_number": "IL 00 03 09 08",
+      "name": "Calculation of Premium",
+      "page": 9,
+      "notes": "Standard."
+    },
+    {
+      "form_number": "IL 00 17 11 98",
+      "name": "Common Policy Conditions",
+      "page": 9,
+      "notes": "Standard 10-day nonpayment / 30-day other-reason cancellation notice. NOT extended to 60 days by any visible carrier endorsement."
+    },
+    {
+      "form_number": "IL 00 21 09 08",
+      "name": "Nuclear Energy Liability Exclusion",
+      "page": 9,
+      "notes": "Standard."
+    },
+    {
+      "form_number": "CU 21 44 01 15",
+      "name": "Conditional Exclusion of Terrorism",
+      "page": 21,
+      "notes": "ANOMALY — this is a Commercial Umbrella terrorism exclusion form (CU prefix), not Auto. It also references policy number 005935979 (NOT this policy's number 005917541). This page appears to belong to a different policy (likely the Umbrella) and was inadvertently bound into this Auto PDF. Verify document integrity."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Symbol 7 limitation on Physical Damage, Medical Payments, UM, UIM",
+      "form_number": "Item Two of Declarations",
+      "page": 7,
+      "impact": "Only the two specifically described autos (2018 Ram, 2020 Express) are covered for Comp/Collision, Med Pay, UM, and UIM. Hired Auto Physical Damage not purchased separately (Item Four). Any rented or borrowed vehicle has zero physical damage coverage; any employee occupant of a non-owned vehicle has zero Med Pay or UM/UIM. Liability uses Symbol 1 (Any Auto) which is correct."
+    },
+    {
+      "name": "Hired Auto Physical Damage — NOT PURCHASED",
+      "form_number": "Item Four",
+      "page": 10,
+      "impact": "Item Four shows Hired Auto Liability ($47 premium / $1,000 estimated cost of hire) but BOTH Comprehensive and Collision rows are blank. If Precision Aero rents a truck or van, any physical damage to that rental is uninsured. Loss-of-use charges from rental agency would also fall on the insured. Rental agreements routinely make the renter responsible for physical damage to the vehicle."
+    },
+    {
+      "name": "Hired Auto cost of hire estimated at only $1,000/year",
+      "form_number": "Item Four",
+      "page": 10,
+      "impact": "Premium is rated on a $1,000 annual cost-of-hire estimate. If actual hired-auto exposure exceeds this, audit will assess additional premium AND a coverage dispute could arise if loss occurs on a vehicle whose hire wasn't reported. Verify against actual rental activity."
+    },
+    {
+      "name": "Motor Transit Cargo — NO COVERAGE",
+      "form_number": "Item Two",
+      "page": 7,
+      "impact": "No cargo coverage. If Precision Aero transports machined parts, tooling, or inventory in a covered auto and an accident damages the cargo, no coverage applies under this policy. A machine shop with valuable in-transit parts may need a Motor Truck Cargo or Inland Marine policy."
+    },
+    {
+      "name": "Personal Injury Protection — NO COVERAGE",
+      "form_number": "Item Two",
+      "page": 7,
+      "impact": "Acceptable — Arizona is a tort/at-fault state, not a no-fault state, so PIP is generally not required."
+    },
+    {
+      "name": "Uninsured Motorists Property Damage — NO COVERAGE",
+      "form_number": "Item Two",
+      "page": 7,
+      "impact": "If an uninsured at-fault driver damages a Precision Aero vehicle, the only recovery for the vehicle damage is via the policy's Collision coverage (subject to $500 deductible). UMPD is optional in AZ — many insureds buy it specifically to avoid using their collision deductible after an uninsured-driver loss. Worth pricing."
+    },
+    {
+      "name": "Form of Business — NOT SELECTED",
+      "form_number": "Dec Page",
+      "page": 7,
+      "impact": "Dec page Form of Business field reads literally 'NOT SELECTED' even though Named Insured is 'Precision Aero Inc' (a corporation). This is an administrative defect. In the event of a claim, an insurer could (rarely, but possibly) raise misrepresentation arguments around the application. More immediately: the Auto policy contains an 'Individual Named Insured' endorsement (CA 99 17), which is designed for individual-named policies, not corporations. The combination suggests the policy was issued without correctly identifying the entity type."
+    },
+    {
+      "name": "Individual Named Insured endorsement (CA 99 17) attached to a corporate policy",
+      "form_number": "CA 99 17 03 06",
+      "page": 9,
+      "impact": "CA 99 17 extends coverage to spouse/relatives for personal autos when the Named Insured is a natural person. Precision Aero is 'Inc' — there is no individual to extend coverage from. Either (a) this endorsement is misattached and should be removed, or (b) there is an individual Named Insured (e.g., owner) that is not disclosed on the Dec. Verify with carrier."
+    },
+    {
+      "name": "Asbestos Exclusion (CA 31 37)",
+      "form_number": "CA 31 37 10 18",
+      "page": 9,
+      "impact": "Carrier exclusion. Not material to typical machine shop auto exposures."
+    },
+    {
+      "name": "Lead Liability Exclusion (CA 31 36)",
+      "form_number": "CA 31 36 10 18",
+      "page": 9,
+      "impact": "Carrier exclusion. Not material to typical machine shop auto exposures."
+    },
+    {
+      "name": "Silica or Silica-Related Dust Exclusion (CA 23 94)",
+      "form_number": "CA 23 94 03 06",
+      "page": 9,
+      "impact": "Auto-policy silica exclusion. For a machine shop with grinding/cutting operations, silica exposure is a real general liability concern but unlikely to arise from the operation of a covered auto. Acceptable on Auto."
+    },
+    {
+      "name": "Abuse or Molestation Exclusion (CA 31 40)",
+      "form_number": "CA 31 40 10 18",
+      "page": 9,
+      "impact": "Carrier exclusion. Not typically claim-relevant for a machine shop."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false,
+    "hired_auto_liability": true,
+    "hired_auto_physical_damage": false,
+    "non_owned_auto_liability": true,
+    "drive_other_car": false,
+    "employee_as_insured_ca9933": false,
+    "employee_hired_auto_ca2054": false,
+    "fellow_employee_exclusion_deleted": false,
+    "lease_gap_coverage": false,
+    "broad_named_insured": false,
+    "auto_symbol_liability": "1 (Any Auto) — correct",
+    "auto_symbol_physical_damage": "7 (Specifically Described Autos only) — narrow",
+    "mcs_90_endorsement": false,
+    "uninsured_underinsured_limits_match_liability": true,
+    "umpd_coverage": false,
+    "cargo_coverage": false,
+    "commercial_auto_enhancement_endorsement_present_but_text_not_in_extract": true
+  },
+  "notes": [
+    "PAGE INTEGRITY ISSUE: Pages 21-22 (CU 21 44 01 15 Conditional Exclusion of Terrorism) reference policy number 005935979 — a DIFFERENT policy than this one (005917541). The CU prefix indicates Commercial Umbrella, not Auto. This appears to be a misbound page from a separate Umbrella policy. Do not treat as part of the Auto.",
+    "CA 31 34 (Commercial Auto Enhancement Endorsement) text is NOT included in the extracted PDF. This endorsement typically contains carrier broadenings such as automatic AI status, blanket waiver of subrogation, hired auto physical damage giveback, drive other car, employee hired auto, etc. The audit cannot conclude on AI / WoS / P&NC / DOC / employee hired auto until the full text of CA 31 34 is reviewed. Several checklist items above are marked 'false' based on absence-from-extracted-text, which may be revised after reviewing the enhancement endorsement.",
+    "Two scheduled vehicles (2018 Ram 1500 pickup, 2020 Chevy G2500 Express van). Both garaged at 5310 S 32nd St, Phoenix AZ.",
+    "Liability limit: $1M CSL (split as $1M/$1M BI per person/accident + $1M PD per accident via CA 31 21).",
+    "AZ-issued policy. UM/UIM limits ($1M/$1M) appropriately match the liability limit — Good.",
+    "Non-owned auto rating shows 4 employees + 2 partners. Note: 'partners' is unusual for a corporation. Verify whether the 2 'partners' rated are actually owners/officers driving in business and whether non-owned coverage is needed for additional employee classes."
+  ],
+  "_source_file": "AUTO.pdf"
+}

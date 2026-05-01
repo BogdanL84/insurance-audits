@@ -1,0 +1,44 @@
+{
+  "source_file": "BOP.pdf",
+  "analysis_date": "2026-05-01",
+  "policy_type": "other",
+  "is_package": false,
+  "coverage_parts": [],
+  "is_primary": true,
+  "named_insured": "unknown - policy text not extractable",
+  "named_insured_entity_type": "unspecified",
+  "additional_named_insureds": [],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "Policy text was not extractable — all 35 pages returned empty. Cannot confirm presence of Broad Form NI endorsement."
+  },
+  "carrier": "unknown",
+  "policy_number": "unknown",
+  "effective_date": null,
+  "expiry_date": null,
+  "limits": {},
+  "cancellation_notice_days": {
+    "for_nonpayment": null,
+    "for_other_reasons": null,
+    "page_ref": null
+  },
+  "endorsements": [],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "extraction_error": "All 35 pages of BOP.pdf returned empty text. The PDF appears to be image-based (scanned) or otherwise non-extractable via PyMuPDF text extraction. OCR is required before this policy can be audited. No findings can be reported because no policy content was readable.",
+  "_source_file": "BOP.pdf"
+}
