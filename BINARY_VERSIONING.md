@@ -265,6 +265,41 @@ conditions when this issue manifested.
 
 ## Field test log
 
+### 2026-05-01 — Findings Dashboard "Generate Marked-up PDFs" hang (known issue)
+
+**Symptom:** clicking "Generate Marked-up PDFs" on the Findings Dashboard
+shows "Starting…" and never progresses. No claude.exe in Task Manager,
+Python at 0% CPU. Same shape as the earlier post-cross-policy-pass hang
+but a different code path (PDF annotator, not the runner).
+
+**Likely cause:** 3 of Precision Aero's 5 uploaded policies (`BOP.pdf`,
+`UMBRELLA.pdf`, `WC PEKIN 24.pdf`) are **scanned image-only PDFs with
+no extractable text** (`word_count: 0` per `audit-state.json`). The PDF
+annotator (`app/core/pdf_annotator.py`) uses PyMuPDF text-search to
+locate the policy_quote substrings on each page so it can drop a
+sticky-note annotation. With no extractable text, those searches return
+nothing — and the annotator likely loops, retries, or blocks instead of
+gracefully skipping. Either way, no progress, no completion, no error.
+
+**Recommended fix (deferred):** in the marked-up PDF generator, check
+each policy's word_count from `audit-state.json` (or call PyMuPDF
+`get_text("words")` once up front) and **skip annotation for any policy
+with zero extractable words**, emitting a warning to the run log instead
+of attempting and stalling. This is a one-screen change in
+`pdf_annotator.py`'s per-policy loop.
+
+**Workaround for Precision Aero today:** deliver the audit via the JSON
+findings (`clients/precision-aero/output/findings.json`), the Findings
+Dashboard rendering, or "Build Report" markdown export — all three work
+on the recovered findings without touching the PDF annotator.
+
+**Longer-term fix:** add OCR pre-processing during Stage A document
+intake. If `word_count: 0` after extraction, run Tesseract / a cloud OCR
+service against the PDF before per-policy analysis, then write the
+OCR'd text back as the extracted-text source. This would also lift the
+quality of per-policy analyses on those policies (currently ~1.6 KB of
+metadata-only analysis vs ~16 KB on text-extractable policies).
+
 ### 2026-05-01 — Streamlit hang post-cross-policy-pass on Precision Aero (recoverable)
 
 **Symptom:** Streamlit audit on Precision Aero (5 policies, 0 contracts)
