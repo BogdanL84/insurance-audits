@@ -87,3 +87,6 @@ validation-*/phase-*/_smoke_test*.log
 *.old
 *.tmp
 .history/
+
+# ── Claude Code session state ──────────────────────────────────────────
+.claude/
