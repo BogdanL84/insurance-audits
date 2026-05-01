@@ -1,0 +1,385 @@
+{
+  "source_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Umbrella",
+  "is_package": false,
+  "coverage_parts": [
+    "Follow Form Excess Liability (Coverage A)",
+    "Umbrella Liability (Coverage B)"
+  ],
+  "is_primary": false,
+  "named_insured": "Runbeck Election Services Inc",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [
+    {
+      "entity": "Runbeck Properties LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "475-0174",
+      "endorsement_name": "Multiple Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 56,
+      "scope_note": "Listed as Named Insured on this endorsement (LLC-friendly)",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Investments LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "475-0174",
+      "endorsement_name": "Multiple Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 56,
+      "scope_note": "Listed as Named Insured on this endorsement (LLC-friendly)",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Graphics Inc",
+      "entity_type": "Inc",
+      "via_endorsement": "475-0174",
+      "endorsement_name": "Multiple Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 56,
+      "scope_note": "Listed as Named Insured on this endorsement",
+      "broad_form_llc_risk": false
+    }
+  ],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "No Broad Form Named Insured endorsement located. Named Insureds added via 475-0174 Multiple Named Insured Endorsement (page 56) which lists each affiliate explicitly (Runbeck Properties LLC, Runbeck Investments LLC, Runbeck Graphics Inc) — reliable inclusion with no LLC carve-out."
+  },
+  "carrier": "Hanover Insurance Company",
+  "policy_number": "UH4 H221416 05",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "each_occurrence": 10000000,
+    "each_claim": 10000000,
+    "products_completed_operations_aggregate": 10000000,
+    "general_aggregate": 10000000,
+    "retained_limit": 0
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": 45,
+    "page_ref": "Pg 58 (475-0176 Arizona Changes — AZ amendatory supersedes the 60-day standard in 475-0001 §VIII.3.b at Pg 35). Non-renewal: 45 days advance notice. Renewal with material change: 30 days advance notice."
+  },
+  "endorsements": [
+    {
+      "form_number": "231-0862 11 23",
+      "name": "Consumer Privacy Notice",
+      "page": 2,
+      "notes": "Privacy disclosures only — no coverage impact."
+    },
+    {
+      "form_number": "401-1337 02 16",
+      "name": "Trade Or Economic Sanctions Endorsement",
+      "page": 20,
+      "notes": "Excludes coverage to extent prohibited by trade/economic sanctions law."
+    },
+    {
+      "form_number": "401-1374 12 20",
+      "name": "Disclosure Pursuant To Terrorism Risk Insurance Act",
+      "page": 6,
+      "notes": "TRIA disclosure. Total Terrorism Premium $75. Insured did NOT reject — but exclusion endorsement 475-0433 (page 64) excludes Certified Acts of Terrorism, creating an internal conflict that should be confirmed with carrier."
+    },
+    {
+      "form_number": "401-1377 06 20",
+      "name": "Company Address Listing",
+      "page": 22,
+      "notes": "Administrative — list of Hanover company addresses."
+    },
+    {
+      "form_number": "475-0001 12 22",
+      "name": "Hanover Commercial Follow Form Excess And Umbrella Policy",
+      "page": 24,
+      "notes": "Main policy form — provides Coverage A (Follow Form Excess) and Coverage B (Umbrella) with the underlying terms following form except where inconsistent with this policy. Conditions and Definitions (Sections VIII-IX) at page 36: Maintenance of Underlying Insurance, Other Insurance (excess over any other insurance), First Named Insured, Premium Audit, Separation of Insureds, Transfer of Rights of Recovery."
+    },
+    {
+      "form_number": "475-0003 12 14",
+      "name": "Schedule of Underlying Policies",
+      "page": 14,
+      "notes": "Lists CGL (Citizens ZB4 H221415 05 — $1M/$1M/$1M PI/AI/$2M Gen Agg, products incl in gen agg), Auto (Allmerica AW4 H221414 05 — $1M each accident), WC/EL (Mass Bay WD4 H218283 06 — $1M/$1M/$1M), and Employee Benefits Liability (Citizens ZB4 H221415 05 — $1M/$1M)."
+    },
+    {
+      "form_number": "475-0027 12 14",
+      "name": "Exclusion — Total Pollution (Coverage A)",
+      "page": 44,
+      "notes": "Absolute total pollution exclusion applied to Coverage A (Follow Form Excess Liability) — excludes any bodily injury, property damage, personal injury or advertising injury arising from actual, alleged or threatened discharge/release of pollutants."
+    },
+    {
+      "form_number": "475-0031 12 14",
+      "name": "Exclusion — Professional Liability (Coverage A)",
+      "page": 46,
+      "notes": "CRITICAL: Excludes any liability arising out of rendering of or failure to render professional services, advice or instruction under Coverage A (Follow Form Excess). E&O is not picked up by this umbrella."
+    },
+    {
+      "form_number": "475-0050 12 14",
+      "name": "Exclusion — Abuse and Molestation (Coverage A and B)",
+      "page": 48,
+      "notes": "Excludes liability arising from actual or threatened abuse/molestation, including negligent employment, supervision, retention, or failure to report."
+    },
+    {
+      "form_number": "475-0057 12 14",
+      "name": "Exclusion — Lead (Coverage A and B)",
+      "page": 50,
+      "notes": "Absolute lead exclusion applies to both coverages."
+    },
+    {
+      "form_number": "475-0080 12 14",
+      "name": "Exclusion — Fungi or Bacteria Liability (Coverage A and B)",
+      "page": 52,
+      "notes": "Absolute mold/fungi/bacteria exclusion applies to both coverages."
+    },
+    {
+      "form_number": "475-0084 12 14",
+      "name": "Exclusion — Silica (Coverage A and B)",
+      "page": 54,
+      "notes": "Absolute silica/silica-related dust exclusion applies to both coverages."
+    },
+    {
+      "form_number": "475-0174 12 14",
+      "name": "Multiple Named Insured Endorsement",
+      "page": 56,
+      "notes": "Adds Runbeck Properties LLC, Runbeck Investments LLC, and Runbeck Graphics Inc as Named Insureds. Effective 04/01/2025. Reliable inclusion (LLC-friendly, no LLC carve-out)."
+    },
+    {
+      "form_number": "475-0176 04 21",
+      "name": "Arizona Changes",
+      "page": 58,
+      "notes": "Arizona state-specific cancellation/non-renewal: 10 days notice for nonpayment; 45 days for other reasons (after 60 days in effect or on renewal). Non-renewal: 45 days advance notice. Renewal with material change (premium/deductible/limit reduction/coverage reduction): 30 days advance notice."
+    },
+    {
+      "form_number": "475-0215 12 14",
+      "name": "Exclusion — Discrimination (Coverage A and B)",
+      "page": 60,
+      "notes": "Excludes liability arising from discrimination/humiliation based on age, gender, sexual orientation, marital status, race, nationality, religion, disability, or any violation of anti-discrimination laws. Applies to both coverages."
+    },
+    {
+      "form_number": "475-0351 12 14",
+      "name": "Exclusion — Employee Benefits Liability (Coverage B)",
+      "page": 62,
+      "notes": "Excludes Coverage B (Umbrella) coverage for liability arising from administration of employee benefit programs. Coverage A still follows form over the EBL underlying ($1M/$1M on Citizens ZB4 H221415 05)."
+    },
+    {
+      "form_number": "475-0433 01 15",
+      "name": "Exclusion — Certified Acts of Terrorism",
+      "page": 64,
+      "notes": "Excludes injury or damage arising directly or indirectly out of a certified act of terrorism (TRIA-defined). Applies to both coverages. Conflicts on its face with TRIA disclosure on page 6 (terrorism premium charged, coverage not rejected) — confirm with carrier."
+    },
+    {
+      "form_number": "475-0613 11 20",
+      "name": "Underlying Insurance Defined (Coverage A and B)",
+      "page": 66,
+      "notes": "Replaces definition of 'underlying insurance' to clarify that sublimits or separate limits within an underlying policy that are not separately listed on the SCHEDULE OF UNDERLYING POLICIES are NOT considered underlying insurance — meaning the umbrella will NOT drop down/follow over those sublimited coverages."
+    },
+    {
+      "form_number": "475-0618 06 22",
+      "name": "Underlying Claims-Made Coverage — Extended Reporting Periods",
+      "page": 68,
+      "notes": "Provides 60-day Automatic ERP if cancelled/non-renewed (not for nonpayment). Optional ERP available with additional premium: 1 year = 100% of annual premium; 2 years = 150%; 3 years = 200%. ERP does not apply to claims covered by subsequent insurance and does not reinstate/increase limits."
+    },
+    {
+      "form_number": "475-0639 07 23",
+      "name": "Exclusion — Phthalates Coverage (Coverage A and B)",
+      "page": 70,
+      "notes": "Absolute phthalates exclusion (DBP, DIBP, BBP, DEHP, DINP, DIDP and many others). Applies to both coverages — relevant to manufacturing/printing/ink exposure."
+    },
+    {
+      "form_number": "475-0654 12 23",
+      "name": "Exclusion — Access or Disclosure of Confidential or Personal Material or Information and Electronic Data (Coverage A and B)",
+      "page": 72,
+      "notes": "CRITICAL: Excludes any liability arising from access to or disclosure of confidential/personal/health/biometric/financial information, including notification costs, credit monitoring, forensic expenses, PR, data restoration, extortion. Also excludes loss/damage/corruption of electronic data. Coverage A exception preserved only for bodily injury arising from electronic data loss."
+    },
+    {
+      "form_number": "475-0655 12 23",
+      "name": "Exclusion — Violation of Law Addressing Data Privacy (Coverage A and B)",
+      "page": 74,
+      "notes": "Excludes liability arising from violations of data privacy laws including BIPA, CCPA, GDPR, and similar federal/state/local/foreign data privacy statutes. Applies to both coverages."
+    },
+    {
+      "form_number": "475-0661 01 25",
+      "name": "Exclusion — Cyber Incident — Cyber Content",
+      "page": 76,
+      "notes": "CRITICAL CYBER EXCLUSION: Excludes any liability caused by/arising out of a 'cyber incident' — defined broadly as unauthorized access to computer systems, malicious code/virus/ransomware, denial of service attacks, and unintentional/unauthorized infringement of trademark/copyright/IP, plagiarism, invasion of right of publicity, defamation/libel/slander resulting from cyber content. Applies to BOTH Coverage A and Coverage B."
+    },
+    {
+      "form_number": "SIG 11 00 11 17",
+      "name": "Signature Page",
+      "page": 18,
+      "notes": "Officer signatures."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Total Pollution Exclusion (Coverage A)",
+      "form_number": "475-0027 12 14",
+      "page": 44,
+      "impact": "Strips pollution coverage that may otherwise follow form from the underlying CGL on Coverage A — pollution claims do NOT drop down to umbrella excess limits. Combined with §VII.3.j on Coverage B, there is NO pollution coverage anywhere on the umbrella."
+    },
+    {
+      "name": "Professional Liability Exclusion (Coverage A)",
+      "form_number": "475-0031 12 14",
+      "page": 46,
+      "impact": "CRITICAL FOR ELECTION TECHNOLOGY: bars excess coverage for claims arising out of rendering or failure to render professional services. For Run-Test Election Services (ballot processing, election technology, mail handling errors), this means the umbrella will NOT sit over Professional Liability/Tech E&O exposure. Aligns with Coverage B Professional Liability exclusion (§VII.3.k) and Sacramento County contract §II.E which expressly excludes E&O from umbrella attachment. Maricopa County contract is silent on E&O — but umbrella still excludes it."
+    },
+    {
+      "name": "Abuse and Molestation Exclusion (Coverage A and B)",
+      "form_number": "475-0050 12 14",
+      "page": 48,
+      "impact": "No excess coverage for abuse/molestation claims under either coverage, including negligent hiring/supervision/retention claims tied to abuse."
+    },
+    {
+      "name": "Lead Exclusion (Coverage A and B)",
+      "form_number": "475-0057 12 14",
+      "page": 50,
+      "impact": "No excess coverage for lead-related bodily injury or property damage."
+    },
+    {
+      "name": "Fungi Or Bacteria Liability Exclusion (Coverage A and B)",
+      "form_number": "475-0080 12 14",
+      "page": 52,
+      "impact": "No excess coverage for mold/bacteria claims."
+    },
+    {
+      "name": "Silica Exclusion (Coverage A and B)",
+      "form_number": "475-0084 12 14",
+      "page": 54,
+      "impact": "No excess coverage for silica-related claims."
+    },
+    {
+      "name": "Discrimination Exclusion (Coverage A and B)",
+      "form_number": "475-0215 12 14",
+      "page": 60,
+      "impact": "No umbrella excess coverage for discrimination claims (age, gender, race, religion, disability, etc.) — typical (EPLI not a follow-form line). Note: the Maricopa Cyber requirement includes 'invasion of privacy regardless of media' — discrimination tied to privacy may be at issue."
+    },
+    {
+      "name": "Employee Benefits Liability Exclusion (Coverage B)",
+      "form_number": "475-0351 12 14",
+      "page": 62,
+      "impact": "Excludes EBL only on Coverage B (true umbrella). Coverage A still follows form over the EBL underlying ($1M/$1M on Citizens ZB4 H221415 05) per Schedule of Underlying."
+    },
+    {
+      "name": "Exclusion - Certified Acts of Terrorism",
+      "form_number": "475-0433 01 15",
+      "page": 64,
+      "impact": "Despite TRIA disclosure showing terrorism premium charged ($75) and not rejected (page 6), this endorsement excludes Certified Acts of Terrorism on both coverages. NEEDS VERIFICATION — internal policy conflict. Election services may face elevated terrorism exposure given political/civic infrastructure profile."
+    },
+    {
+      "name": "Phthalates Exclusion (Coverage A and B)",
+      "form_number": "475-0639 07 23",
+      "page": 70,
+      "impact": "No excess coverage for phthalates-related claims (relevant to manufacturing/printing — verify ink/plastic exposure)."
+    },
+    {
+      "name": "Access Or Disclosure Of Confidential Or Personal Material Or Information And Electronic Data Exclusion (Coverage A And B)",
+      "form_number": "475-0654 12 23",
+      "page": 72,
+      "impact": "MATERIAL FOR THIS RISK: bars umbrella excess for data breach / unauthorized access / loss of electronic data on BOTH Coverage A and B, including notification costs, credit monitoring, forensic, PR, data restoration, extortion. Run-Test handles voter PII for 90M+ registered voters across 31 states — primary cyber coverage must stand alone; umbrella will NOT extend over a cyber loss. Maricopa requires Cyber at $5M per occurrence — must be satisfied entirely by stand-alone cyber policy with no umbrella drop-down available. Coverage A exception preserved only for bodily injury arising from electronic data loss."
+    },
+    {
+      "name": "Violation Of Law Addressing Data Privacy Exclusion (Coverage A And B)",
+      "form_number": "475-0655 12 23",
+      "page": 74,
+      "impact": "Bars excess coverage for claims under data privacy statutes (CCPA, BIPA, GDPR, state privacy laws, election-related data privacy obligations). Significant for election technology vendor with multi-state PII exposure across 31 states."
+    },
+    {
+      "name": "Exclusion - Cyber Incident - Cyber Content",
+      "form_number": "475-0661 01 25",
+      "page": 76,
+      "impact": "New on this renewal — bars umbrella for cyber incidents (unauthorized access, malware, DoS, ransomware) and cyber-content torts (IP infringement, plagiarism, right of publicity, defamation arising from cyber content). Notably broad — strips traditional Personal & Advertising Injury coverage when the offense is delivered electronically. Reinforces 475-0654/0655 — umbrella has NO cyber coverage of any kind."
+    },
+    {
+      "name": "Asbestos Exclusion (in main policy form)",
+      "form_number": "475-0001 §VII.1.b",
+      "page": 30,
+      "impact": "Absolute asbestos exclusion applicable to both Coverage A and B."
+    },
+    {
+      "name": "War Exclusion (in main policy form)",
+      "form_number": "475-0001 §VII.1.i",
+      "page": 31,
+      "impact": "Standard war exclusion."
+    },
+    {
+      "name": "Recording and Distribution of Material in Violation of Law (TCPA / CAN-SPAM / FCRA / similar)",
+      "form_number": "475-0001 §VII.1.h",
+      "page": 31,
+      "impact": "No umbrella excess for TCPA, CAN-SPAM, FCRA/FACTA, or similar statutory privacy/communication claims. Relevant for an election mail vendor — TCPA risk if any voter outreach calls/texts."
+    },
+    {
+      "name": "Aircraft, Unmanned Aircraft, Auto, or Watercraft Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.a",
+      "page": 33,
+      "impact": "Coverage B does not apply to autos. Coverage A follows form over the underlying Auto policy (Allmerica AW4 H221414 05) — so excess auto coverage is via Coverage A only. Confirm sufficient excess auto limits."
+    },
+    {
+      "name": "Contractual Liability Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.b",
+      "page": 33,
+      "impact": "Coverage B excludes contractual liability EXCEPT for liability assumed under an 'insured contract' or liability insured would have without the contract. Coverage A follows form."
+    },
+    {
+      "name": "Damage to Your Product / Your Work / Impaired Property (Coverage B)",
+      "form_number": "475-0001 §VII.3.c",
+      "page": 33,
+      "impact": "Standard CGL-style exclusions extended to umbrella Coverage B."
+    },
+    {
+      "name": "Directors and Officers Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.d",
+      "page": 33,
+      "impact": "No umbrella excess for D&O claims (D&O is on a separate policy)."
+    },
+    {
+      "name": "Employers Liability Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.e",
+      "page": 33,
+      "impact": "Coverage B excludes EL — but Coverage A follows form over the underlying EL (Mass Bay WD4 H218283 06 — $1M/$1M/$1M), so excess EL is via Coverage A only."
+    },
+    {
+      "name": "Liquor Liability Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.g",
+      "page": 34,
+      "impact": "No umbrella excess for liquor liability."
+    },
+    {
+      "name": "Personal Injury and Advertising Injury exclusions (Coverage B)",
+      "form_number": "475-0001 §VII.3.i",
+      "page": 34,
+      "impact": "Limits PI/AI coverage on Coverage B (intellectual property infringement, internet content, chat rooms, breach of contract, etc.)."
+    },
+    {
+      "name": "Pollution Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.j",
+      "page": 35,
+      "impact": "Absolute pollution exclusion on Coverage B (Coverage A also has Total Pollution Exclusion via 475-0027). NO pollution coverage anywhere on the umbrella."
+    },
+    {
+      "name": "Professional Liability Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.k",
+      "page": 35,
+      "impact": "Reinforces 475-0031 — no umbrella excess for professional services. Critical given Run-Test's election technology services (ballot processing, mail sorting, software/hardware solutions)."
+    },
+    {
+      "name": "Punitive Damages Exclusion (Coverage B)",
+      "form_number": "475-0001 §VII.3.l",
+      "page": 35,
+      "impact": "No coverage for punitive, exemplary, multiplied damages, taxes, fines, or penalties on Coverage B."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "_source_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+}

@@ -1,0 +1,32 @@
+{
+  "sub_chunks": [
+    {
+      "chunk": "core-1A",
+      "recovered_findings": 14,
+      "source": "salvage_chunk1A.py",
+      "note": "Truncated response, recovered from offset 1952"
+    },
+    {
+      "chunk": "core-1B",
+      "recovered_findings": 54,
+      "source": "salvage_chunk1B.py",
+      "note": "Complete response with JSON escape bug; recovered via json_repair"
+    }
+  ],
+  "existing_chunks_loaded": [
+    {
+      "chunk": "pro-cyber",
+      "findings": 64
+    },
+    {
+      "chunk": "ml-wc",
+      "findings": 53
+    }
+  ],
+  "merge_stats": {
+    "pre_merge_total": 185,
+    "post_merge_total": 185,
+    "duplicates_collapsed": 0
+  },
+  "duplicates_log": []
+}

@@ -1,0 +1,384 @@
+
+========================= auto (V2) =========================
+
+V2 pg9 | Auto — Named Driver Exclusion (Malina Trujillo)
+CONTENT: [Bad] Auto — Named Driver Exclusion (Malina Trujillo)
+Risk Score: 6/25
+
+What this means:
+There's a person named Malina Trujillo on your policy who's specifically excluded. If they get behind the wheel of a company car — even in an emergency — your auto policy won't cover the accident. You need to make sure this person never has access to a company vehicle, and HR/dispatch needs to know.
+
+Recommendation:
+Verify operational controls preventing this individual from operating company vehicles. Document in HR records. Consider whether the underlying cause (likely MVR issue) has been resolved and the exclu
+
+V2 pg28 | Auto — Hired & Non-Owned Auto Coverage
+CONTENT: [Good] Auto — Hired & Non-Owned Auto Coverage
+
+What this means:
+Hired and non-owned auto coverage is in place — meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.
+
+Recommendation:
+Maintain. Consider increasing if employee count grows.
+
+V2 pg34 | Auto — Care, Custody, or Control Exclusion (Ballot Transit)
+CONTENT: [Bad] Auto — Care, Custody, or Control Exclusion (Ballot Transit)
+Risk Score: 9/25
+
+What this means:
+If your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up part of it ($100K transit, $250K off-premises) — but for a major election cycle that's not enough. And if it's actual el
+
+Recommendation:
+Increase Property In Transit limit to at least $500K. Consider scheduled Inland Marine cargo policy specifically for election season transports. For high-value equipment routes, document and schedule
+
+--- v2 highlights for auto ---
+V2 pg9 HL | text_under: COVERAGE COVERAGE NAMED
+NA NAMED individual
+C INDIVIDUAL(
+V2 pg28 HL | text_under: HIRED AUTO AUTO CLASS CLASS Code CODE
+V2 pg34 HL | text_under: Property property damage damage owned
+
+========================= ml (V2) =========================
+
+V2 pg36 | EPLI — Wage & Hour Defense Sublimit
+CONTENT: [Bad] EPLI — Wage & Hour Defense Sublimit
+Risk Score: 9/25
+
+What this means:
+If a former employee filed a wage and hour class action — a very common claim type — your insurance pays for $100K of defense costs and zero damages. The company manages its own defense (the carrier won't even appoint a lawyer). $100K is what one lawyer at a firm bills in three months on a class act
+
+Recommendation:
+Increase W&H defense sublimit to $250K-$500K at renewal. Audit timekeeping, exempt classifications, meal/rest break compliance especially in CA. Consider standalone wage & hour policy if exposure warr
+
+V2 pg86 | D&O Entity Coverage — Manufacturing & Professional Services 
+CONTENT: [Ugly] D&O Entity Coverage — Manufacturing & Professional Services 
+Risk Score: 20/25
+
+What this means:
+Your D&O policy says: if a county sues your company because a ballot system failed or you didn't deliver election services correctly, the company itself is NOT covered. Only the individual directors and officers are covered, and only if shareholders sue. This is the worst possible exclusion for your
+
+Recommendation:
+Negotiate removal or material narrowing of PP 00 H350 at renewal. If carrier won't budge, secure standalone Tech E&O entity-level wrapper or place D&O with a different carrier that does not impose thi
+
+V2 pg105 | PE Co-Defendant Extension on Management Liability
+CONTENT: [Good] PE Co-Defendant Extension on Management Liability
+
+What this means:
+Your PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful first line.
+
+Recommendation:
+Maintain. Verify named entities still match current ownership at each renewal.
+
+V2 pg107 | D&O — Split Prior/Pending Date on Excess Layer [text not loc
+CONTENT: [Bad] D&O — Split Prior/Pending Date on Excess Layer [text not loc
+Risk Score: 8/25
+
+What this means:
+Your D&O policy says you have $2 million of coverage. But for any wrongdoing that happened between mid-August 2023 and early April 2024, you actually only have $1 million. The second million has a later start date. So if a 2023 board decision triggers a 2026 lawsuit asking for $1.8 million, you cove
+
+Recommendation:
+At renewal, push to align the excess layer's prior/pending date with the primary's 8/18/2023 date. If carrier won't budge, document the 7.5-month window in board materials and ensure no known potentia
+
+--- v2 highlights for ml ---
+V2 pg36 HL | text_under: wage Wage Hour
+V2 pg86 HL | text_under: EXCLUSION EXCLUSION INSURING INSURING AGREEMENTS
+V2 pg105 HL | text_under: Named Named y
+defendants Lincoln Shields
+
+--- v1 for ml ---
+V1 pg15 | D&O — Wage & Hour: No Carrier Defense Duty; Defense Costs Su
+CONTENT: [Bad] D&O — Wage & Hour: No Carrier Defense Duty; Defense Costs Su
+Risk Score: 9/25
+V1 pg60 | Management Liability — Crime Coverage $2M Included in Packag
+CONTENT: [Good] Management Liability — Crime Coverage $2M Included in Packag
+V1 pg73 | D&O — Entity Regulatory Proceedings Not Covered Unless Indiv
+CONTENT: [Bad] D&O — Entity Regulatory Proceedings Not Covered Unless Indiv
+Risk Score: 12/25
+V1 pg74 | Management Liability — PE Co-Defendant Extension and Shadow 
+CONTENT: [Good] Management Liability — PE Co-Defendant Extension and Shadow
+V1 pg86 | D&O — Manufacturing/Professional Services Exclusion Bars Ent
+CONTENT: [Ugly] D&O — Manufacturing/Professional Services Exclusion Bars Ent
+Risk Score: 12/25
+V1 pg107 | D&O — Split Prior/Pending Date Leaves $1M Gap on Excess Laye
+CONTENT: [Bad] D&O — Split Prior/Pending Date Leaves $1M Gap on Excess Laye
+Risk Score: 12/25
+
+========================= pl (V2) =========================
+
+V2 pg20 | Professional Liability — Mail Processing Services Restricted
+CONTENT: [Ugly] Professional Liability — Mail Processing Services Restricted
+Risk Score: 15/25
+
+What this means:
+Mail processing — sorting and handling ballots — is one of your three biggest revenue streams. Your professional liability policy covers errors from this service only if they happened on or after April 1, 2021. Anything before that is uninsured, even if you only just got sued for it. Election-relate
+
+Recommendation:
+Negotiate to align the mail processing retro date with the base 03/27/2017 retro date at renewal. If carrier won't budge on a 4-year backdated retro, document that any mail processing claim with pre-2
+
+V2 pg23 | Professional Liability — Split Limits of Liability Tower
+CONTENT: [Ugly] Professional Liability — Split Limits of Liability Tower
+Risk Score: 12/25
+
+What this means:
+Your policy says $5 million on the cover page, but read the fine print — that $5 million only applies if the screw-up happened after April 1, 2021. For anything before that, your real limit is $1 million or $2 million. So a 2018 ballot processing error that gets discovered and sued in 2026 has a $1
+
+Recommendation:
+At renewal, push to flatten the tower so $5M applies to all acts post-retroactive date. If carrier resists, accept the structure but quantify the prior-acts liability reserves on the balance sheet and
+
+V2 pg27 | Professional Liability — Ransomware / Extortion Exclusion
+CONTENT: [Ugly] Professional Liability — Ransomware / Extortion Exclusion
+Risk Score: 16/25
+
+What this means:
+Ransomware is the #1 cyber threat to election infrastructure right now. Your professional liability policy excludes it entirely. Your cyber policy covers it up to $4 million — but that same $4 million also has to cover business interruption, data restoration, breach notification, lawsuits, and regul
+
+Recommendation:
+Increase Cyber aggregate to $10M minimum, with separate ransomware sublimit at $5M+. Implement and document offline backups, segmented networks, and incident response retainer for underwriter credit.
+
+V2 pg34 | PL Hammer Clause — Dual Structure (50/50 in SIR Context) [te
+CONTENT: [Bad] PL Hammer Clause — Dual Structure (50/50 in SIR Context) [te
+Risk Score: 9/25
+
+What this means:
+If your insurance company recommends settling a lawsuit and you say no — for very legitimate reputational reasons — your share of any larger judgment goes from 0% to 50%. For an election company, the cases where you most want to fight (a baseless fraud allegation that would damage your reputation) a
+
+Recommendation:
+At renewal, push to consolidate to a single 80/20 hammer or eliminate the SIR/deductible distinction. Document a settlement-decision protocol involving CFO, GC, and CEO with insurance broker advisory.
+
+V2 pg45 | Professional Liability — Network Security & Privacy Breach E
+CONTENT: [Ugly] Professional Liability — Network Security & Privacy Breach E
+Risk Score: 20/25
+
+What this means:
+You handle voter data for 90 million Americans. If that data gets breached — by hack, employee error, lost laptop, or vendor failure — your professional liability policy says 'not our problem.' All of the cleanup work (notifying voters, hiring forensics teams, responding to state attorneys general,
+
+Recommendation:
+Increase Cyber aggregate to $10M minimum at renewal; consider $15M-$25M given client base. Push for defense outside limits or a separate defense-cost bucket. Confirm no Cyber Coverage Endorsement exis
+
+V2 pg45 | Professional Liability — Biometric Identifiers Exclusion (BI
+CONTENT: [Ugly] Professional Liability — Biometric Identifiers Exclusion (BI
+Risk Score: 15/25
+
+What this means:
+Illinois has a law called BIPA. If you use voter signature matching or any biometric verification (face, fingerprint, voice) on Illinois voters, and your privacy disclosures aren't perfectly compliant, every single voter record is worth $1,000-$5,000 in statutory damages in a class action. You serve
+
+Recommendation:
+Confirm whether biometric processing occurs and in which states. If yes, place standalone biometric/privacy liability cover (specialty market). Ensure consent forms and retention policies meet BIPA/CC
+
+--- v2 highlights for pl ---
+V2 pg20 HL | text_under: ENDORSEMENT endorsement RETROACTIVE Retroactive
+V2 pg23 HL | text_under: Effective Date Date
+V2 pg27 HL | text_under: Technology Services Services
+V2 pg45 HL | text_under: Professional Professional Liability Liability Coverage Coverage
+V2 pg45 HL | text_under: Claim Claim arising arising violations
+
+--- v1 for pl ---
+V1 pg20 | Professional Liability — Mail Processing Services Retroactiv
+CONTENT: [Ugly] Professional Liability — Mail Processing Services Retroactiv
+Risk Score: 12/25
+V1 pg27 | Professional Liability — Network Security/Privacy Breach Exc
+CONTENT: [Ugly] Professional Liability — Network Security/Privacy Breach Exc
+Risk Score: 20/25
+
+========================= sg (V2) =========================
+
+V2 pg40 | General Liability — Classification Limitation on Arch Policy
+CONTENT: [Ugly] General Liability — Classification Limitation on Arch Policy
+Risk Score: 12/25
+
+What this means:
+You actually have two GL policies. The Arch one only covers security guard operations — alarms, patrols, investigations. It does NOT cover election technology, ballot printing, or mail processing — your actual business. Those are covered under your Hanover commercial package. This isn't necessarily
+
+Recommendation:
+Confirm with management WHY a separate security guard GL exists — is there a security subsidiary, an in-house guard force, or election-day security operations? If the Arch policy was accidentally plac
+
+--- v2 highlights for sg ---
+V2 pg40 HL | text_under: COVERAGE applies operations operations CLASSIFICATION classification
+
+--- v1 for sg ---
+V1 pg40 | GL — Security Guard Policy Covers Security Operations Only; 
+CONTENT: [Bad] GL — Security Guard Policy Covers Security Operations Only; 
+Risk Score: 4/25
+
+========================= wc (V2) =========================
+
+V2 pg109 | WC — Stop Gap for Monopolistic States
+CONTENT: [Good] WC — Stop Gap for Monopolistic States
+
+What this means:
+There are four states (North Dakota, Ohio, Washington, Wyoming) that require workers' comp from a state fund — your private policy can't write WC there. But your private policy DOES include 'stop gap' employers' liability coverage in those four states, so if an employee gets injured there and sues,
+
+Recommendation:
+Maintain. Confirm any expansion into those states is reported.
+
+V2 pg114 | Workers' Compensation — Waiver of Subrogation Gap (GA, NC, I
+CONTENT: [Bad] Workers' Compensation — Waiver of Subrogation Gap (GA, NC, I
+Risk Score: 9/25
+
+What this means:
+Your workers' comp policy has a blanket waiver of subrogation that applies in 9 states plus California separately — but not in Georgia, North Carolina, or Illinois, where you also have employees. If you have county contracts in any of those three states that require a waiver of subrogation, your pol
+
+Recommendation:
+Endorse WC 00 03 13 to add GA, NC, IL to the list of waiver states. This is a no-cost or low-cost endorsement (additional premium charged only if specific contracts trigger). Audit current COIs to con
+
+V2 pg133 | Workers' Comp — Experience Modification Rate
+CONTENT: [Good] Workers' Comp — Experience Modification Rate
+
+What this means:
+Your workers' comp experience modifier is 0.69 — meaning you have 31% fewer losses than the industry average for your work. That's excellent. It saves you real money and signals to county clients that you run a safe operation.
+
+Recommendation:
+Maintain safety culture. Use the favorable EMR as a competitive differentiator in RFP responses (many counties require EMR ≤ 1.0).
+
+V2 pg148 | California Employers' Liability — Labor Code §2810.3 Exclusi
+CONTENT: [Bad] California Employers' Liability — Labor Code §2810.3 Exclusi
+Risk Score: 8/25
+
+What this means:
+California has a law that holds you responsible if your staffing vendor fails to carry workers' comp for their workers on your jobs. Your policy specifically excludes this exposure. If you use temp agencies in California — and you almost certainly do during election cycles — and that agency's covera
+
+Recommendation:
+Audit California labor contractor relationships. Require COIs from staffing vendors and verify currency monthly during active engagements. Add contractual indemnification language naming Runbeck as ad
+
+--- v2 highlights for wc ---
+V2 pg109 HL | text_under: EMPLOYERS EMPLOYERS LIABILITY LIABILITY Coverage coverage
+V2 pg114 HL | text_under: WAIVER WAIVER applies APPLIES
+V2 pg133 HL | text_under: effective Effective below
+V2 pg148 HL | text_under: EMPLOYERS Employers LIABILITY Liability COVERAGE
+
+--- v1 for wc ---
+V1 pg61 | Workers' Compensation — Favorable EMR of 0.690 — Strong Safe
+CONTENT: [Good] Workers' Compensation — Favorable EMR of 0.690 — Strong Safe
+V1 pg61 | Workers' Compensation — Multi-State Coverage with Stop Gap a
+CONTENT: [Good] Workers' Compensation — Multi-State Coverage with Stop Gap a
+V1 pg114 | Workers' Compensation — Waiver of Subrogation Gap in GA, NC,
+CONTENT: [Bad] Workers' Compensation — Waiver of Subrogation Gap in GA, NC,
+Risk Score: 9/25
+V1 pg137 | WC — Ownership Change Reporting Obligation Critical for PE-B
+CONTENT: [Bad] WC — Ownership Change Reporting Obligation Critical for PE-B
+Risk Score: 6/25
+
+========================= cyber (V2) =========================
+
+V2 pg4 | Cyber — Social Engineering / Cyber Deception Coverage
+CONTENT: [Ugly] Cyber — Social Engineering / Cyber Deception Coverage
+Risk Score: 16/25
+
+What this means:
+You're a government vendor processing wires and ACH for county contracts. The most common cyberattack today — a fraudster sends a fake email pretending to be your CEO or a county official telling Accounts Payable to wire money — would not be covered by any policy in your program in any meaningful wa
+
+Recommendation:
+Restructure cyber deception terms at renewal: target $1M sublimit with $25K-$50K retention. If AmTrust won't restructure, market the cyber renewal — multiple carriers (Coalition, At-Bay, Beazley) offe
+
+--- v2 highlights for cyber ---
+V2 pg4 HL | text_under: Cyber Cyber Deception RETENTION RETENTION
+
+--- v1 for cyber ---
+V1 pg3 | Cyber Liability — Standalone Comprehensive Cyber Policy in P
+CONTENT: [Good] Cyber Liability — Standalone Comprehensive Cyber Policy in P
+
+========================= pkg (V2) =========================
+
+V2 pg137 | Property — Equipment Breakdown Limit Adequacy
+CONTENT: [Good] Property — Equipment Breakdown Limit Adequacy
+
+What this means:
+Your equipment breakdown insurance is $49 million — appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: cyber-caused equipment damage isn't an 'accident' under this — that's why your cyber policy
+
+Recommendation:
+Maintain. Verify cloud-computing service interruption coverage covers all critical SaaS dependencies.
+
+V2 pg144 | Property — Electronic Data Sublimit
+CONTENT: [Bad] Property — Electronic Data Sublimit
+Risk Score: 9/25
+
+What this means:
+Your property policy treats your most valuable asset — election data — as worth $2,500. For a $20+ million-revenue technology company, that's not coverage, it's a punchline. Your cyber policy covers data restoration for cyberattacks, but mechanical/non-cyber data loss has only token coverage. If a s
+
+Recommendation:
+Increase Electronic Data and Interruption of Computer Operations sublimits to $250K-$500K each at next renewal. Hanover should have a Premium Choice or similar endorsement option. If not, marketing th
+
+V2 pg158 | Property — Interruption of Computer Operations Sublimit
+CONTENT: [Bad] Property — Interruption of Computer Operations Sublimit
+Risk Score: 9/25
+
+What this means:
+If a sprinkler discharge or HVAC failure damaged your data systems and shut down ballot processing for two weeks, your business income insurance pays $2,500. That's about 30 minutes of operations for a company your size. Your cyber policy only responds if the cause is cyber — a sprinkler isn't cyber
+
+Recommendation:
+Increase Interruption of Computer Operations sublimit to $1M-$2M at renewal. Hanover Premium Choice or similar should be available.
+
+V2 pg205 | Per-Project Aggregate Cap Limitation
+CONTENT: [Bad] Per-Project Aggregate Cap Limitation
+Risk Score: 6/25
+
+What this means:
+Your GL gives you separate aggregate limits for each project — but only up to $2 million total across the policy. So if you have multiple counties claiming damages in the same year, the sum can't exceed $2 million on the primary GL. Above that, your $10 million umbrella picks up — so in practice thi
+
+Recommendation:
+At renewal, push to remove or significantly increase the $2M policy aggregate cap. Confirm umbrella follow-form attaches at $2M for GL.
+
+--- v2 highlights for pkg ---
+V2 pg137 HL | text_under: PROPERTY EQUIPMENT Equipment BREAKDOWN Breakdown
+V2 pg144 HL | text_under: Electronic U de
+electronic Data s
+data ect to t e
+Additional ect to t e
+Additional p
+Coverage p
+Coverage
+V2 pg158 HL | text_under: sta ed
+policy su t o
+policy d a d
+year sub
+year o
+O
+unless unless g
+Declarations ce pe ce ta
+Declarations
+V2 pg205 HL | text_under: however POLICY Policy AGGREGATE Aggregate applies applies
+
+--- v1 for pkg ---
+V1 pg144 | Commercial Property — Electronic Data and Computer Operation
+CONTENT: [Bad] Commercial Property — Electronic Data and Computer Operation
+Risk Score: 9/25
+
+========================= umb (V2) =========================
+
+V2 pg31 | Umbrella — Professional Liability, Cyber, and D&O Excluded
+CONTENT: [Ugly] Umbrella — Professional Liability, Cyber, and D&O Excluded
+Risk Score: 15/25
+
+What this means:
+You have a $10 million umbrella, which sounds great until you realize what it actually does. It backs up your auto policy, your general liability, and workers' comp. It does NOT back up the four policies that actually matter for your business: professional liability, cyber, D&O, and EPLI. So if a co
+
+Recommendation:
+Build a proper excess tower ABOVE the management liability and cyber primaries: target $5M-$10M excess D&O, $5M-$10M excess Cyber, $5M-$10M excess EPLI. The Hanover umbrella structure is appropriate f
+
+--- v2 highlights for umb ---
+V2 pg31 HL | text_under: Liability liability expense J
+expense
+
+--- v1 for umb ---
+V1 pg36 | Professional Liability — No Umbrella Excess Coverage Over Te
+CONTENT: [Ugly] Professional Liability — No Umbrella Excess Coverage Over Te
+Risk Score: 20/25
+
+========================= convex (V2) =========================
+
+V2 pg7 | Excess Tower — Convex Policy Number Documentation Defect
+CONTENT: [Ugly] Excess Tower — Convex Policy Number Documentation Defect
+Risk Score: 10/25
+
+What this means:
+Your $5 million excess policy and your $5 million primary policy don't agree on the policy number they're built around. This is a documentation defect that could let your excess carrier walk away from a $5M-$10M claim. It's almost certainly a typo — but in insurance, typos in policy numbers are not
+
+Recommendation:
+Immediately email RSG Specialty and Convex requesting a corrected Schedule of Underlying Insurance endorsement reflecting the actual primary policy number. Get written confirmation from both Gemini an
+
+--- v2 highlights for convex ---
+V2 pg7 HL | text_under: Policy POLICY Number Number Declarations Page Page
+
+--- v1 for convex ---
+V1 pg7 | Excess Tech E&O — Policy Number Discrepancy Creates Coverage
+CONTENT: [Bad] Excess Tech E&O — Policy Number Discrepancy Creates Coverage
+Risk Score: 8/25

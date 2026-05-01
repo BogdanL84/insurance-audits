@@ -1,0 +1,359 @@
+{
+  "slug": "pl",
+  "policy_name": "Professional Liability / E&O (Gemini / WR Berkley)",
+  "sources": {
+    "presentation": true,
+    "prior_report": true,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 20,
+      "title": "Professional Liability \u2014 Mail Processing Services Retroactiv",
+      "content": "[Ugly] Professional Liability \u2014 Mail Processing Services Retroactiv\nRisk Score: 12/25",
+      "type_name": "Text"
+    },
+    {
+      "page": 27,
+      "title": "Professional Liability \u2014 Network Security/Privacy Breach Exc",
+      "content": "[Ugly] Professional Liability \u2014 Network Security/Privacy Breach Exc\nRisk Score: 20/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 20,
+      "title": "Professional Liability \u2014 Mail Processing Services Restricted",
+      "content": "[Ugly] Professional Liability \u2014 Mail Processing Services Restricted\nRisk Score: 15/25\n\nWhat this means:\nMail processing \u2014 sorting and handling ballots \u2014 is one of your three biggest revenue streams. Your professional liability policy covers errors from this service only if they happened on or after April 1, 2021. Anything before that is uninsured, even if you only just got sued for it. Election-relate\n\nRecommendation:\nNegotiate to align the mail processing retro date with the base 03/27/2017 retro date at renewal. If carrier won't budge on a 4-year backdated retro, document that any mail processing claim with pre-2",
+      "type_name": "Text"
+    },
+    {
+      "page": 23,
+      "title": "Professional Liability \u2014 Split Limits of Liability Tower",
+      "content": "[Ugly] Professional Liability \u2014 Split Limits of Liability Tower\nRisk Score: 12/25\n\nWhat this means:\nYour policy says $5 million on the cover page, but read the fine print \u2014 that $5 million only applies if the screw-up happened after April 1, 2021. For anything before that, your real limit is $1 million or $2 million. So a 2018 ballot processing error that gets discovered and sued in 2026 has a $1\n\nRecommendation:\nAt renewal, push to flatten the tower so $5M applies to all acts post-retroactive date. If carrier resists, accept the structure but quantify the prior-acts liability reserves on the balance sheet and",
+      "type_name": "Text"
+    },
+    {
+      "page": 27,
+      "title": "Professional Liability \u2014 Ransomware / Extortion Exclusion",
+      "content": "[Ugly] Professional Liability \u2014 Ransomware / Extortion Exclusion\nRisk Score: 16/25\n\nWhat this means:\nRansomware is the #1 cyber threat to election infrastructure right now. Your professional liability policy excludes it entirely. Your cyber policy covers it up to $4 million \u2014 but that same $4 million also has to cover business interruption, data restoration, breach notification, lawsuits, and regul\n\nRecommendation:\nIncrease Cyber aggregate to $10M minimum, with separate ransomware sublimit at $5M+. Implement and document offline backups, segmented networks, and incident response retainer for underwriter credit.",
+      "type_name": "Text"
+    },
+    {
+      "page": 34,
+      "title": "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te",
+      "content": "[Bad] PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te\nRisk Score: 9/25\n\nWhat this means:\nIf your insurance company recommends settling a lawsuit and you say no \u2014 for very legitimate reputational reasons \u2014 your share of any larger judgment goes from 0% to 50%. For an election company, the cases where you most want to fight (a baseless fraud allegation that would damage your reputation) a\n\nRecommendation:\nAt renewal, push to consolidate to a single 80/20 hammer or eliminate the SIR/deductible distinction. Document a settlement-decision protocol involving CFO, GC, and CEO with insurance broker advisory.",
+      "type_name": "Text"
+    },
+    {
+      "page": 45,
+      "title": "Professional Liability \u2014 Network Security & Privacy Breach E",
+      "content": "[Ugly] Professional Liability \u2014 Network Security & Privacy Breach E\nRisk Score: 20/25\n\nWhat this means:\nYou handle voter data for 90 million Americans. If that data gets breached \u2014 by hack, employee error, lost laptop, or vendor failure \u2014 your professional liability policy says 'not our problem.' All of the cleanup work (notifying voters, hiring forensics teams, responding to state attorneys general,\n\nRecommendation:\nIncrease Cyber aggregate to $10M minimum at renewal; consider $15M-$25M given client base. Push for defense outside limits or a separate defense-cost bucket. Confirm no Cyber Coverage Endorsement exis",
+      "type_name": "Text"
+    },
+    {
+      "page": 45,
+      "title": "Professional Liability \u2014 Biometric Identifiers Exclusion (BI",
+      "content": "[Ugly] Professional Liability \u2014 Biometric Identifiers Exclusion (BI\nRisk Score: 15/25\n\nWhat this means:\nIllinois has a law called BIPA. If you use voter signature matching or any biometric verification (face, fingerprint, voice) on Illinois voters, and your privacy disclosures aren't perfectly compliant, every single voter record is worth $1,000-$5,000 in statutory damages in a class action. You serve\n\nRecommendation:\nConfirm whether biometric processing occurs and in which states. If yes, place standalone biometric/privacy liability cover (specialty market). Ensure consent forms and retention policies meet BIPA/CC",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "Professional Liability \u2014 Network Security & Privacy Breach Exclusion",
+      "score": 20,
+      "severity_word": "Critical",
+      "description": "The Gemini Professional Liability policy expressly carves out all privacy/network-security claims from PL coverage.",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 45,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Professional Liability \u2014 Network Security & Privacy Breach E\nRisk Score: 20/25\n\nWhat this means:\nYou handle voter data for 90 million Americans. If that data gets breached \u2014 by hack, employee error, lost laptop, or vendor failure \u2014 your professional liability policy says 'not our problem.' Al"
+    },
+    {
+      "category": "Ugly",
+      "title": "Professional Liability \u2014 Ransomware / Extortion Exclusion",
+      "score": 16,
+      "severity_word": "High",
+      "description": "The PL Technology Services Extension expressly excludes extortion, blackmail, ransom payments, and private security costs.",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 27,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Professional Liability \u2014 Ransomware / Extortion Exclusion\nRisk Score: 16/25\n\nWhat this means:\nRansomware is the #1 cyber threat to election infrastructure right now. Your professional liability policy excludes it entirely. Your cyber policy covers it up to $4 million \u2014 but that same $4 millio"
+    },
+    {
+      "category": "Ugly",
+      "title": "Professional Liability \u2014 Mail Processing Services Restricted Retroactive Date",
+      "score": 15,
+      "severity_word": "High",
+      "description": "While the base PL retroactive date is 03/27/2017, mail processing services \u2014 described in the company profile as a core revenue line \u2014 has a separate retro date of 04/01/2021.",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 20,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Professional Liability \u2014 Mail Processing Services Restricted\nRisk Score: 15/25\n\nWhat this means:\nMail processing \u2014 sorting and handling ballots \u2014 is one of your three biggest revenue streams. Your professional liability policy covers errors from this service only if they happened on or after "
+    },
+    {
+      "category": "Ugly",
+      "title": "Professional Liability \u2014 Biometric Identifiers Exclusion (BIPA / State Equivalents)",
+      "score": 15,
+      "severity_word": "High",
+      "description": "BIPA (Illinois Biometric Information Privacy Act) carries statutory damages of $1,000 per negligent violation and $5,000 per intentional/reckless violation, per person.",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 45,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Professional Liability \u2014 Biometric Identifiers Exclusion (BI\nRisk Score: 15/25\n\nWhat this means:\nIllinois has a law called BIPA. If you use voter signature matching or any biometric verification (face, fingerprint, voice) on Illinois voters, and your privacy disclosures aren't perfectly compl"
+    },
+    {
+      "category": "Ugly",
+      "title": "Professional Liability \u2014 Split Limits of Liability Tower",
+      "score": 12,
+      "severity_word": "Medium",
+      "description": "The declared $5M/$5M limits on the dec page are misleading.",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 23,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Professional Liability \u2014 Split Limits of Liability Tower\nRisk Score: 12/25\n\nWhat this means:\nYour policy says $5 million on the cover page, but read the fine print \u2014 that $5 million only applies if the screw-up happened after April 1, 2021. For anything before that, your real limit is $1 mill"
+    },
+    {
+      "category": "Bad",
+      "title": "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context)",
+      "score": 9,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "pl",
+      "matched_in_audited": true,
+      "audited_page": 34,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te\nRisk Score: 9/25\n\nWhat this means:\nIf your insurance company recommends settling a lawsuit and you say no \u2014 for very legitimate reputational reasons \u2014 your share of any larger judgment goes from 0% to 50%. For an election company, th"
+    }
+  ],
+  "v1_v2_unchanged": [
+    {
+      "v1": {
+        "page": 20,
+        "title": "Professional Liability \u2014 Mail Processing Services Retroactiv",
+        "content": "[Ugly] Professional Liability \u2014 Mail Processing Services Retroactiv\nRisk Score: 12/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 20,
+        "title": "Professional Liability \u2014 Mail Processing Services Restricted",
+        "content": "[Ugly] Professional Liability \u2014 Mail Processing Services Restricted\nRisk Score: 15/25\n\nWhat this means:\nMail processing \u2014 sorting and handling ballots \u2014 is one of your three biggest revenue streams. Your professional liability policy covers errors from this service only if they happened on or after April 1, 2021. Anything before that is uninsured, even if you only just got sued for it. Election-relate\n\nRecommendation:\nNegotiate to align the mail processing retro date with the base 03/27/2017 retro date at renewal. If carrier won't budge on a 4-year backdated retro, document that any mail processing claim with pre-2",
+        "type_name": "Text"
+      },
+      "similarity": 0.93
+    },
+    {
+      "v1": {
+        "page": 27,
+        "title": "Professional Liability \u2014 Network Security/Privacy Breach Exc",
+        "content": "[Ugly] Professional Liability \u2014 Network Security/Privacy Breach Exc\nRisk Score: 20/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 45,
+        "title": "Professional Liability \u2014 Network Security & Privacy Breach E",
+        "content": "[Ugly] Professional Liability \u2014 Network Security & Privacy Breach E\nRisk Score: 20/25\n\nWhat this means:\nYou handle voter data for 90 million Americans. If that data gets breached \u2014 by hack, employee error, lost laptop, or vendor failure \u2014 your professional liability policy says 'not our problem.' All of the cleanup work (notifying voters, hiring forensics teams, responding to state attorneys general,\n\nRecommendation:\nIncrease Cyber aggregate to $10M minimum at renewal; consider $15M-$25M given client base. Push for defense outside limits or a separate defense-cost bucket. Confirm no Cyber Coverage Endorsement exis",
+        "type_name": "Text"
+      },
+      "similarity": 0.95
+    }
+  ],
+  "v1_v2_removed": [],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 23,
+      "title": "Professional Liability \u2014 Split Limits of Liability Tower",
+      "content": "[Ugly] Professional Liability \u2014 Split Limits of Liability Tower\nRisk Score: 12/25\n\nWhat this means:\nYour policy says $5 million on the cover page, but read the fine print \u2014 that $5 million only applies if the screw-up happened after April 1, 2021. For anything before that, your real limit is $1 million or $2 million. So a 2018 ballot processing error that gets discovered and sued in 2026 has a $1\n\nRecommendation:\nAt renewal, push to flatten the tower so $5M applies to all acts post-retroactive date. If carrier resists, accept the structure but quantify the prior-acts liability reserves on the balance sheet and",
+      "type_name": "Text"
+    },
+    {
+      "page": 27,
+      "title": "Professional Liability \u2014 Ransomware / Extortion Exclusion",
+      "content": "[Ugly] Professional Liability \u2014 Ransomware / Extortion Exclusion\nRisk Score: 16/25\n\nWhat this means:\nRansomware is the #1 cyber threat to election infrastructure right now. Your professional liability policy excludes it entirely. Your cyber policy covers it up to $4 million \u2014 but that same $4 million also has to cover business interruption, data restoration, breach notification, lawsuits, and regul\n\nRecommendation:\nIncrease Cyber aggregate to $10M minimum, with separate ransomware sublimit at $5M+. Implement and document offline backups, segmented networks, and incident response retainer for underwriter credit.",
+      "type_name": "Text"
+    },
+    {
+      "page": 34,
+      "title": "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te",
+      "content": "[Bad] PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te\nRisk Score: 9/25\n\nWhat this means:\nIf your insurance company recommends settling a lawsuit and you say no \u2014 for very legitimate reputational reasons \u2014 your share of any larger judgment goes from 0% to 50%. For an election company, the cases where you most want to fight (a baseless fraud allegation that would damage your reputation) a\n\nRecommendation:\nAt renewal, push to consolidate to a single 80/20 hammer or eliminate the SIR/deductible distinction. Document a settlement-decision protocol involving CFO, GC, and CEO with insurance broker advisory.",
+      "type_name": "Text"
+    },
+    {
+      "page": 45,
+      "title": "Professional Liability \u2014 Biometric Identifiers Exclusion (BI",
+      "content": "[Ugly] Professional Liability \u2014 Biometric Identifiers Exclusion (BI\nRisk Score: 15/25\n\nWhat this means:\nIllinois has a law called BIPA. If you use voter signature matching or any biometric verification (face, fingerprint, voice) on Illinois voters, and your privacy disclosures aren't perfectly compliant, every single voter record is worth $1,000-$5,000 in statutory damages in a class action. You serve\n\nRecommendation:\nConfirm whether biometric processing occurs and in which states. If yes, place standalone biometric/privacy liability cover (specialty market). Ensure consent forms and retention policies meet BIPA/CC",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 16,
+      "title": "E&O Policy",
+      "body": [
+        "Policy covers IT services but then carves back most technology failures.",
+        "If election hardware malfunctions or delays ballot processing, there is no coverage.",
+        "Pg. 26 of 45",
+        "Pg. 25 of 45"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 23,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "E&O Policy",
+        "Worker\u2019s Comp Policy"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 26,
+      "title": "E&O Policy",
+      "body": [
+        "Additional Insureds covered for defense only, no indemnity.",
+        "Breach of Contract",
+        "All contracts require Runbeck to Defend, Indemnify and Hold Harmless, not just defend.",
+        "Pg. 20 of 45"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 33,
+      "title": "E&O Policy",
+      "body": [
+        "E&O Exclusion against recalls / reprinting. Your cost to do so will not be covered.",
+        "High likelihood / severe consequences exposure",
+        "Pg. 23 of 45"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 34,
+      "title": "E&O Policy",
+      "body": [
+        "Named Insureds are listed as AI (wrong)",
+        "No counties are listed.",
+        "Breach of Contract",
+        "Pg. 27 of 45"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [
+    [
+      "Tech services carve-back excluding hardware malfunction / electrical / delay / ISP outages",
+      "Verified",
+      "p26-27"
+    ],
+    [
+      "Mail Processing Services restricted retro date 4/1/2021 (vs base 3/27/2017)",
+      "Verified",
+      "p20"
+    ],
+    [
+      "Network Security/Privacy Breach + Biometric Identifiers exclusion (BIPA)",
+      "Verified",
+      "p45-46"
+    ],
+    [
+      "Blanket AI endorsement: Claim Expenses only, no Loss; 'solely' from insured's wrongful acts",
+      "Verified U6",
+      "p21"
+    ],
+    [
+      "PRESENTATION U13 (slide 33) Recall/Reprinting \u2014 cite WRONG (pg 23 = Split Limits, recall is at pg 24 Media Extension)",
+      "REVISE",
+      "p24+15"
+    ],
+    [
+      "Split Limits $1M/$1M / +$1M xs $1M / +$3M xs $2M trigger-date buckets \u2014 hidden $1M effective limit",
+      "MISSED BY V1",
+      "p23"
+    ],
+    [
+      "M&A auto-termination clause (PE-critical)",
+      "MISSED BY V1",
+      "p17-18"
+    ],
+    [
+      "AZ guaranty fund disclaimer (Gemini surplus lines)",
+      "MISSED BY V1",
+      "p3"
+    ],
+    [
+      "Mandatory binding arbitration in Chicago",
+      "MISSED BY V1",
+      "p18"
+    ],
+    [
+      "ERP pricing 75/125/175% of annual \u2248 $188k for 36-mo on $107k premium",
+      "MISSED BY V1",
+      "(ERP)"
+    ]
+  ],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 27,
+          "title": "Professional Liability \u2014 Ransomware / Extortion Exclusion",
+          "snippet": "[Ugly] Professional Liability \u2014 Ransomware / Extortion Exclusion\nRisk Score: 16/25\n\nWhat this means:\nRansomware is the #1 cyber threat to election infrastructure right now. Your professional liability policy excludes it entirely. Your cyber policy covers it up to $4 million \u2014 but"
+        },
+        {
+          "page": 34,
+          "title": "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te",
+          "snippet": "[Bad] PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te\nRisk Score: 9/25\n\nWhat this means:\nIf your insurance company recommends settling a lawsuit and you say no \u2014 for very legitimate reputational reasons \u2014 your share of any larger judgment goes from 0% to 50%. For an "
+        },
+        {
+          "page": 45,
+          "title": "Professional Liability \u2014 Network Security & Privacy Breach E",
+          "snippet": "[Ugly] Professional Liability \u2014 Network Security & Privacy Breach E\nRisk Score: 20/25\n\nWhat this means:\nYou handle voter data for 90 million Americans. If that data gets breached \u2014 by hack, employee error, lost laptop, or vendor failure \u2014 your professional liability policy says '"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+# ── Secrets — never commit ─────────────────────────────────────────────
+.env
+.env.*
+*.env
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+*credentials*.json
+
+# ── Python ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Notebooks ──────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS & IDE ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Pinned binary — too large for git, source documented in BINARY_VERSIONING.md ──
+bin/*.exe
+bin/*.cmd
+bin/*.bat
+
+# ── Large knowledge-base reference materials ──────────────────────────
+# Markdown content (methodology, RMF checklists, etc.) is tracked.
+# Binary reference docs (sample policies, presentations, case studies) are not.
+knowledge-base/**/*.pdf
+knowledge-base/**/*.pptx
+knowledge-base/**/*.pub
+knowledge-base/**/*.xlsx
+knowledge-base/**/*.docx
+knowledge-base/**/*.png
+knowledge-base/**/*.jpg
+knowledge-base/**/*.jpeg
+knowledge-base/**/archive/
+
+# ── Clients — policy PDFs, generated outputs, large reference docs ────
+clients/*/policies/
+clients/*/output/
+clients/*/cope/
+clients/*/loss-runs/
+clients/*/references/
+clients/*/contracts/*.pdf
+clients/*/contracts/*.docx
+clients/*/contracts/*.xlsx
+# DO track the extracted-text and JSON analyses in ai-exchange/ —
+# they're small and useful for regression testing.
+
+# ── Run logs and scratch ───────────────────────────────────────────────
+*.log
+*.log.*
+backups/
+logs/
+scratch/
+tmp/
+temp/
+
+# ── Auto-generated artifacts in validation directory ──────────────────
+# Keep driver scripts, findings_v3*.json, and final reports.
+# Skip raw response tempfiles, prompt dumps, and run logs.
+validation-*/phase-*/_stage_*_response_raw.txt
+validation-*/phase-*/_stage_*_prompt.txt
+validation-*/phase-*/_run_*.log
+validation-*/phase-*/_finish_*.log
+validation-*/phase-*/_smoke_test*.log
+
+# ── Misc ───────────────────────────────────────────────────────────────
+*.bak
+*.old
+*.tmp
+.history/

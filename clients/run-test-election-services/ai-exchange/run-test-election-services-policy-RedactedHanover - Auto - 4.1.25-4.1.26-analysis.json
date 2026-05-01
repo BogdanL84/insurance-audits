@@ -1,0 +1,396 @@
+{
+  "source_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Auto",
+  "is_package": false,
+  "coverage_parts": [
+    "Auto"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services Inc",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [
+    {
+      "entity": "Runbeck Investments LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174 — schedule of named insureds (LLC explicitly listed).",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Properties LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174 (LLC explicitly listed).",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Graphics Inc",
+      "entity_type": "Inc",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174.",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Companies 401(k) Profit Sharing Plan",
+      "entity_type": "unspecified",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174 (employee benefit plan).",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Lincoln Shields LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174 (LLC explicitly listed).",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Black Mountain Investment Co. LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "461-0174",
+      "endorsement_name": "Additional Named Insured Endorsement",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 28,
+      "scope_note": "Listed as Named Insured on Form 461-0174 (LLC explicitly listed).",
+      "broad_form_llc_risk": false
+    }
+  ],
+  "additional_insureds": [
+    {
+      "entity": "Desert Trailer Systems Inc",
+      "via_endorsement": "CA 20 48 02 99",
+      "endorsement_name": "Designated Insured",
+      "page": 43,
+      "scope_note": "Designated Insured for Liability Coverage only — qualifies as 'insured' to the extent the Who Is An Insured provision applies. Address: 2733 W Buckeye Rd, Phoenix, AZ 85009. Scheduled, not blanket."
+    },
+    {
+      "entity": "Any person or organization required by written contract, written agreement or written permit",
+      "via_endorsement": "461-0478 12 12",
+      "endorsement_name": "Blanket Additional Insured - Primary and Non-Contributory",
+      "page": 76,
+      "scope_note": "Blanket AI when required by written contract executed before the accident; primary and non-contributory; AI limit is lesser of contract-required or policy limit; ongoing only (Auto AI). Exceptions: sole negligence of AI; negligence on non-owned/non-trailer auto by AI; when AI is AI under another liability policy."
+    }
+  ],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "No Broad Form Named Insured endorsement present. Affiliated entities are scheduled by name on Form 461-0174 (LLCs explicitly listed), so no LLC carve-out risk."
+  },
+  "carrier": "Allmerica Financial Benefit Insurance Company (The Hanover Insurance Group)",
+  "policy_number": "AW4-H221414-05",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "liability_combined_single_limit": 1000000,
+    "medical_payments": 5000,
+    "uninsured_motorist": 1000000,
+    "underinsured_motorist": 1000000,
+    "physical_damage": "Actual cash value or cost of repair, whichever is less, minus deductible",
+    "comprehensive_deductible": 1000,
+    "collision_deductible": 1000,
+    "hired_auto_liability": "included (cost of hire basis, AZ class 6611)",
+    "non_owned_auto_liability": "included (55 employees, AZ class 6602)",
+    "hired_auto_physical_damage": "$50,000 per accident (per 461-0155 Broadening)",
+    "broadening_endorsement_comprehensive_limit": 500
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": 60,
+    "page_ref": "Pg 48 (461-0155 Item 1 Cancellation Extension replaces IL 00 17 30-day with 60-day for Auto); Pg 55 (IL 00 17 11 98 baseline 10/30)"
+  },
+  "endorsements": [
+    {
+      "form_number": "CA 00 01 03 06",
+      "name": "Business Auto Coverage Form",
+      "page": 30,
+      "notes": "Standard ISO Business Auto Coverage Form. Defines covered auto symbols 1-9 and 19, Liability Coverage (Section II), Physical Damage Coverage (Section III), Conditions (Section IV), Definitions (Section V). 'Insured contract' definition (§V.H) includes assumed tort liability — supports contractual liability for indemnity assumed in MSAs. Other Insurance clause (§IV.B.5) — primary for owned autos, excess for non-owned, but primary for liability assumed under an 'insured contract'."
+    },
+    {
+      "form_number": "IL 00 17 11 98",
+      "name": "Common Policy Conditions",
+      "page": 55,
+      "notes": "Standard policy conditions. Cancellation: 10 days nonpayment, 30 days other reasons (overridden to 60 days by 461-0155 Broadening Endorsement Item 1 for Auto)."
+    },
+    {
+      "form_number": "CA 01 75 07 04",
+      "name": "Arizona Changes",
+      "page": 56,
+      "notes": "AZ state-specific amendments. Replaces Concealment, Misrepresentation or Fraud condition. Coverage denied only where misrepresentation is fraudulent, material, AND we would not have issued or would have issued differently."
+    },
+    {
+      "form_number": "IL 00 21 09 08",
+      "name": "Nuclear Energy Liability Exclusion (Broad Form)",
+      "page": 57,
+      "notes": "Standard nuclear exclusion."
+    },
+    {
+      "form_number": "CA 23 85 01 06",
+      "name": "Exclusion of Terrorism Involving Nuclear, Biological or Chemical Terrorism",
+      "page": 59,
+      "notes": "Excludes NBC terrorism only — does NOT exclude conventional terrorism."
+    },
+    {
+      "form_number": "461-0301 01 07",
+      "name": "Notice to Policyholder on Terrorism",
+      "page": 23,
+      "notes": "TRIA disclosure notice — federal TRIA does not apply to commercial auto."
+    },
+    {
+      "form_number": "461-0505 05 14",
+      "name": "Arizona Changes - Nonrenewal",
+      "page": 61,
+      "notes": "30 days written notice required for nonrenewal. Notice not required if insured requested nonrenewal, policy expressly nonrenewable, premium unpaid, renewal offered, insured insured elsewhere, or insured requested termination."
+    },
+    {
+      "form_number": "CA 99 03 03 06",
+      "name": "Auto Medical Payments Coverage",
+      "page": 62,
+      "notes": "Med Pay endorsement, $5,000 limit. Medical and funeral expenses for insured occupying covered auto or struck as pedestrian."
+    },
+    {
+      "form_number": "461-0679 06 24",
+      "name": "Arizona Uninsured Motorists Coverage",
+      "page": 64,
+      "notes": "AZ UM coverage at $1M. 3-year time limitation for written notice of intent to pursue UM claim. Arbitration available by mutual agreement (coverage disputes excluded)."
+    },
+    {
+      "form_number": "461-0368 07 20",
+      "name": "Arizona UM/UIM Coverage Offer and Selection/Rejection",
+      "page": 69,
+      "notes": "AZ-mandated UM/UIM offer form. Insured may purchase UM/UIM from $50,000 single limit up to BI liability limit, or reject. Selection initials/signature appear blank/redacted in available chunks — confirm actual elections."
+    },
+    {
+      "form_number": "461-0680 01 25",
+      "name": "Arizona Underinsured Motorists Coverage",
+      "page": 72,
+      "notes": "AZ-specific UIM endorsement. Defines 'underinsured motor vehicle,' adds Who Is An Insured, sets exclusions, provides limit reduction by amounts available under tortfeasor's BI policies, 3-year time limitation, arbitration clause. UIM limit per Schedule ($1M)."
+    },
+    {
+      "form_number": "CA 20 48 02 99",
+      "name": "Designated Insured",
+      "page": 43,
+      "notes": "Schedule-based AI endorsement. Adds Desert Trailer Systems Inc as Designated Insured for Liability Coverage only. NOT a blanket AI — no AI status for Maricopa County or Run-Test's other contract counterparties under this form (rely on 461-0478 for blanket AI)."
+    },
+    {
+      "form_number": "401-1235 12 14",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 44,
+      "notes": "Multi-schedule designated entity NOC endorsement. 30-day written notice (other than non-payment). Schedules across pages 44, 45, 46. Notice does NOT grant or extend rights — informational only."
+    },
+    {
+      "form_number": "461-0155 (9-97)",
+      "name": "Business Auto Coverage Broadening Endorsement",
+      "page": 48,
+      "notes": "Hanover proprietary multi-feature broadening: (1) 60-day cancellation; (2) Employee Hired Autos under Symbol 8; (3) Broadened Named Insured for newly acquired/formed entities; (4) Employees as Insureds when using non-owned/non-hired autos in business; (5) $2,500 bail bonds, $500/day loss of earnings; (6) Amended Fellow Employee Exclusion (excess basis for owned/hired); (7) Expense of returning stolen auto; (8) Sign coverage up to $2,000; (9) Glass repair waiver of deductible; (10) Transportation expense $50/day to $1,500; (11) Hired Auto Physical Damage up to $50,000 per accident plus $1,000/day lessor loss of use up to 7 days; (12) A/V/Data Equipment up to $500; (13) Rental Reimbursement & Material Transfer Expense up to $3,000; (14) Airbag Coverage; (15) Auto Loan/Lease Gap; (16) Auto Lease Physical Damage; (17) Knowledge of accident requires notice to executive officer/insurance manager; (18) BLANKET WAIVER OF SUBROGATION preserved through insured contract/written agreement/permit prior to accident; (19) Unintentional failure to disclose; (20) Hired Auto Worldwide (30 days); (21) Mental anguish included in BI."
+    },
+    {
+      "form_number": "461-0478 12 12",
+      "name": "Blanket Additional Insured - Primary and Non-Contributory",
+      "page": 76,
+      "notes": "Blanket AI when required by written contract/agreement/permit executed before the accident and during policy period. AI limit is lesser of contract-specified or policy limit. Primary and non-contributory included. Exceptions: (1) sole negligence of AI; (2) negligence on non-owned/non-trailer auto by AI/Insured; (3) when AI is AI under another liability policy. Coverage to AI no broader than coverage provided to any other insured. KEY for Maricopa/Sacramento County compliance."
+    },
+    {
+      "form_number": "461-0500 11 13",
+      "name": "Waiver of Transfer of Rights of Recovery Against Others to Us (Waiver of Subrogation)",
+      "page": 47,
+      "notes": "BLANKET WHERE REQUIRED BY WRITTEN CONTRACT. Applies only to extent subrogation waived prior to accident or loss under contract. Modifies Business Auto, Business Auto Physical Damage, Garage, Motor Carrier, Truckers."
+    },
+    {
+      "form_number": "CA 99 44 12 93",
+      "name": "Loss Payable Clause",
+      "page": 77,
+      "notes": "Standard ISO Loss Payable Clause for covered autos. Pays loss payee as interest may appear; subrogation rights preserved against third parties."
+    },
+    {
+      "form_number": "461-0425 (9/10)",
+      "name": "Arizona Exclusion of Named Driver",
+      "page": 8,
+      "notes": "Excludes coverage for any 'accident' or 'loss' resulting from operation/use of any covered auto by Malina Trujillo (with exception of UM/UIM). Operational/HR control issue — verify this individual is not driving company autos."
+    },
+    {
+      "form_number": "401-1337 02 16",
+      "name": "Trade or Economic Sanctions Endorsement",
+      "page": 16,
+      "notes": "Insurance does not apply to extent that trade or economic sanctions or other laws prohibit providing insurance, including payment of claims."
+    },
+    {
+      "form_number": "461-0167 (9-00)",
+      "name": "Item Three — Schedule of Covered Autos",
+      "page": 26,
+      "notes": "Schedules two covered autos: Auto 010 — 2013 Mercedes Sprinter (VIN WD3PE8CC1D5807540, AZ, cost new $41,820) and Auto 011 — 2018 Chevrolet Express (VIN 1GCWGAFP0J1341751, AZ, cost new $32,000). Both: $1M UM, $1M UIM, $5,000 Med Pay, $1,000 Comp & Collision deductibles."
+    },
+    {
+      "form_number": "461-0168 (9-00)",
+      "name": "Item Four — Schedule of Hired or Borrowed Covered Auto Coverage / Item Five — Employer's Non-Ownership Liability",
+      "page": 27,
+      "notes": "Hired auto liability rated on cost-of-hire basis (AZ, class 6611, 'if any' cost of hire, rate $3.657/$100). Employer's non-ownership liability rated on 55 employees (AZ class 6602). Confirms hired & non-owned auto coverage is in place."
+    },
+    {
+      "form_number": "461-0174 (9-00)",
+      "name": "Additional Named Insured Endorsement",
+      "page": 28,
+      "notes": "Schedules six additional Named Insureds: Runbeck Investments LLC, Runbeck Properties LLC, Runbeck Graphics Inc, Runbeck Companies 401(k) Profit Sharing Plan, Lincoln Shields LLC, Black Mountain Investment Co. LLC. Schedule-style endorsement that explicitly lists LLCs by name — reliable inclusion (not a Broad Form NI with LLC carve-out)."
+    },
+    {
+      "form_number": "461-0178 (9-00)",
+      "name": "Miscellaneous Coverages — Broadening Endorsement",
+      "page": 29,
+      "notes": "Broadening Endorsement applied (vehicle 950, AZ class 124, comprehensive coverage with $500 limit/deductible). Annual premium $150."
+    },
+    {
+      "form_number": "SIG-1100 11 17",
+      "name": "Signature Page",
+      "page": 42,
+      "notes": "Officer signatures (President John C. Roche, Secretary Charles Frederick Cronin)."
+    }
+  ],
+  "designated_entity_noc_endorsements": [
+    {
+      "form_number": "401-1235 12 14",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 44,
+      "designated_entities": [
+        "BLANKET WHERE REQUIRED BY WRITTEN CONTRACT",
+        "City of Boulder (3065 Center Green Dr, Boulder CO)",
+        "Coconino County (219 East Cherry Avenue)"
+      ],
+      "notice_period_days": 30
+    },
+    {
+      "form_number": "401-1235 12 14",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 45,
+      "designated_entities": [
+        "Amazon.com Services LLC (345 Boren Ave N, Seattle WA)",
+        "El Paso County Contracts & Procurement Division (200 S Cascade Ave, Colorado Springs CO)",
+        "San Luis Obispo County (1055 Monterey St Ste D120, San Luis Obispo CA)"
+      ],
+      "notice_period_days": 30
+    },
+    {
+      "form_number": "401-1235 12 14",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 46,
+      "designated_entities": [
+        "State of Colorado (1700 Broadway Suite 200, Denver CO 80290)",
+        "The New York State Office of General Services; Procurement Services-22802 (38th Floor Corning Tower, Empire State Plaza, Albany NY 12242)"
+      ],
+      "notice_period_days": 30
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Exclusion of Named Driver (Malina Trujillo)",
+      "form_number": "461-0425 (9/10)",
+      "page": 8,
+      "impact": "No liability or physical damage coverage for any covered auto operated by Malina Trujillo (UM/UIM excepted). Operational/HR control issue — verify this individual is not driving company autos."
+    },
+    {
+      "name": "Trade or Economic Sanctions Exclusion",
+      "form_number": "401-1337 02 16",
+      "page": 16,
+      "impact": "Standard OFAC/sanctions exclusion. Low practical impact for domestic election services operations."
+    },
+    {
+      "name": "Nuclear Energy Liability Exclusion (Broad Form)",
+      "form_number": "IL 00 21 09 08",
+      "page": 57,
+      "impact": "Absolute exclusion of bodily injury or property damage arising from hazardous properties of nuclear material. Standard industry exclusion."
+    },
+    {
+      "name": "Exclusion of Terrorism Involving Nuclear, Biological or Chemical Terrorism",
+      "form_number": "CA 23 85 01 06",
+      "page": 59,
+      "impact": "Excludes only NBC terrorism: (1) dispersal/application of radioactive material or use of nuclear weapon/device; (2) release of radioactive material where terrorism intended such release; (3) dispersal/application of pathogenic or poisonous biological/chemical materials; (4) release of biological/chemical materials where terrorism intended such release. Does NOT exclude conventional terrorism. Run-Test serves voter populations and election infrastructure — conventional terrorism remains covered."
+    },
+    {
+      "name": "Contractual Liability Exclusion (with insured contract carve-back)",
+      "form_number": "CA 00 01 03 06",
+      "page": 33,
+      "impact": "Liability assumed under any contract excluded — but carve-back for 'insured contract' (§II.B.2.a) preserves coverage for tort liability assumed in qualifying contracts. Standard ISO language — supports contractual indemnity for Maricopa County and Sacramento County indemnity provisions."
+    },
+    {
+      "name": "Pollution Exclusion (with auto-fluids carve-back)",
+      "form_number": "CA 00 01 03 06",
+      "page": 33,
+      "impact": "Excludes pollution from cargo or pollutants in transit. Carve-back preserves coverage for fuels/lubricants/exhaust gases needed for normal functioning of the auto, and for accidents away from owned/rented premises caused by upset/overturn of a covered auto."
+    },
+    {
+      "name": "Care, Custody or Control Exclusion",
+      "form_number": "CA 00 01 03 06",
+      "page": 34,
+      "impact": "Excludes property damage to property in insured's care, custody or control or transported by insured. Carve-back for sidetrack agreement only. Cargo/property of others while in transit (e.g., customer ballots/equipment) is NOT covered under Auto Liability — must look to Inland Marine/Motor Truck Cargo for coverage."
+    },
+    {
+      "name": "Handling of Property Exclusion",
+      "form_number": "CA 00 01 03 06",
+      "page": 34,
+      "impact": "No coverage for BI/PD before property is moved into the auto or after it is delivered out — handling-related claims fall outside Auto Liability."
+    },
+    {
+      "name": "Movement of Property by Mechanical Device",
+      "form_number": "CA 00 01 03 06",
+      "page": 34,
+      "impact": "BI/PD from movement of property by mechanical device (other than a hand truck) excluded unless the device is attached to the covered auto."
+    },
+    {
+      "name": "Completed Operations Exclusion (Auto)",
+      "form_number": "CA 00 01 03 06",
+      "page": 34,
+      "impact": "Auto Liability does NOT cover BI/PD arising out of your work after work has been completed or abandoned. Completed-operations exposure on services performed (e.g., ballot delivery) must look to GL/Products-Completed Ops, not Auto."
+    },
+    {
+      "name": "Fellow Employee Exclusion",
+      "form_number": "CA 00 01 03 06",
+      "page": 34,
+      "impact": "BI to a fellow employee in the course of employment excluded — typical Workers' Comp/Employers' Liability backstop required. Note: 461-0155 Broadening Item 6 amends this to not apply to owned/hired autos on excess basis."
+    },
+    {
+      "name": "Diminution in Value Exclusion (Physical Damage)",
+      "form_number": "CA 00 01 03 06",
+      "page": 36,
+      "impact": "No coverage for diminished resale/market value following a covered loss to physical damage."
+    },
+    {
+      "name": "Audio/Visual/Data Electronic Devices and Speed-Detection Equipment",
+      "form_number": "CA 00 01 03 06",
+      "page": 36,
+      "impact": "Tapes/discs/portable audio-video gear and radar detectors not covered under Physical Damage. Carve-back for permanently installed sound equipment and equipment integral to vehicle operation. Note: 461-0155 Broadening Item 12 adds up to $500."
+    },
+    {
+      "name": "UIM Exclusions",
+      "form_number": "461-0680 01 25",
+      "page": 73,
+      "impact": "UIM does NOT apply to: (1) punitive/exemplary damages; (2) any claim settled without insurer's consent; (3) direct or indirect benefit of WC/disability insurer (except non-employee individual insureds); (4) anyone using a vehicle without reasonable belief they are entitled; (5) BI arising directly or indirectly out of war, warlike action, insurrection, rebellion, revolution, usurped power. Standard AZ UIM exclusions."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": true,
+    "additional_insured_scheduled": true,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": true,
+    "waiver_of_subrogation_page": "Pg 47 (461-0500 standalone blanket WoS); reinforced Pg 53 (461-0155 Item 18 Blanket Waiver preserved through insured contract/written agreement/permit)",
+    "primary_noncontributory": true,
+    "contractual_liability": true,
+    "per_project_aggregate": false
+  },
+  "_source_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+}

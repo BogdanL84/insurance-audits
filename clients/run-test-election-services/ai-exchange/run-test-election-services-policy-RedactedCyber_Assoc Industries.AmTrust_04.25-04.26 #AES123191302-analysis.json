@@ -1,0 +1,210 @@
+{
+  "source_file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Cyber",
+  "is_package": false,
+  "coverage_parts": [
+    "Cyber"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services, LLC",
+  "named_insured_entity_type": "LLC",
+  "additional_named_insureds": [
+    {
+      "entity": "Runbeck Properties, LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected to LLC via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+      "endorsement_name": "Insured Name Change (Policy Change #1)",
+      "endorsement_type": "Name Change",
+      "page": 2,
+      "scope_note": "Listed as Policyholder/Named Insured on Dec page Item 1",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Investments LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected to LLC via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+      "endorsement_name": "Insured Name Change (Policy Change #1)",
+      "endorsement_type": "Name Change",
+      "page": 2,
+      "scope_note": "Listed as Policyholder/Named Insured on Dec page Item 1",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Runbeck Graphics Inc",
+      "entity_type": "Inc",
+      "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+      "endorsement_name": "Insured Name Change (Policy Change #1)",
+      "endorsement_type": "Name Change",
+      "page": 2,
+      "scope_note": "Listed as Policyholder/Named Insured on Dec page Item 1",
+      "broad_form_llc_risk": false
+    }
+  ],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "No Broad Form Named Insured endorsement visible in the provided Dec/policy excerpt. Item 8 Endorsements list on Page 4 is blank in the extracted text. Cyber policies typically do not contain Broad Form NI extensions; named entities must be expressly scheduled."
+  },
+  "carrier": "Associated Industries Insurance Company, Inc. (AmTrust) — placed via ANV Global Services Inc., surplus lines / non-admitted in Arizona",
+  "policy_number": "AES1231913 02",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "aggregate_limit_of_liability": 4000000,
+    "defense_within_limits": true,
+    "shared_aggregate_across_all_coverages": true,
+    "sublimits": {
+      "ransom_payment": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "data_and_system_recovery": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "bricking_costs": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "business_interruption": {
+        "limit": 4000000,
+        "retention": 50000,
+        "waiting_period_hours": 8,
+        "period_of_restoration_days": 180
+      },
+      "business_interruption_from_suppliers": {
+        "limit": 4000000,
+        "retention": 50000,
+        "waiting_period_hours": 8,
+        "period_of_restoration_days": 180
+      },
+      "reputation_harm": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "cyber_event": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "cyber_deception_social_engineering": {
+        "limit": 250000,
+        "retention": 250000,
+        "effective_recoverable_note": "Retention equals limit — effective recoverable on any single loss is $0; on a $500K loss the recovery is capped at $250K (50%)"
+      },
+      "proof_of_loss": {
+        "limit": 250000,
+        "retention": 50000
+      },
+      "cryptojacking": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "privacy_and_network_security": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "regulatory_fines_and_penalties": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "payment_card": {
+        "limit": 4000000,
+        "retention": 50000
+      },
+      "media": {
+        "limit": 4000000,
+        "retention": 50000
+      }
+    },
+    "extended_discovery_period_offered": "1 Year at 100% of Annual Premium",
+    "continuity_date": "2023-04-01",
+    "choice_of_law": "New York",
+    "premium": 40000
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": null,
+    "for_other_reasons": null,
+    "page_ref": "Not visible in provided 4-page Dec excerpt; Item 8 Endorsements list is blank in extracted text. Underlying policy form CYDECS 0122 cancellation provisions and any state amendatory (AZ) endorsement must be obtained from full policy to confirm. Maricopa contract §8.2.15 requires 30-day cancellation/material-change notice on all required policies — verification needed."
+  },
+  "endorsements": [
+    {
+      "form_number": "IL 12 01 11 85",
+      "name": "Policy Changes — Insured Name Change (Policy Change #1)",
+      "page": 1,
+      "notes": "Effective 4/1/2025, $0.00 additional premium. Corrected the Named Insured to 'Runbeck Election Services, LLC; Runbeck Properties, LLC; Runbeck Investments LLC; Runbeck Graphics Inc'. This is the ONLY policy in the Runbeck program where the LLC entity-type correction was made — the Hanover CGL/Auto/Umbrella, Hartford Mgmt Liability, Arch Security Guards, WR Berkley E&O, and Hanover WC retain the 'Inc' entity-type error per GAP-20 cross-policy analysis."
+    },
+    {
+      "form_number": "CYDECS 0122",
+      "name": "AmTrustCyber Declarations Form",
+      "page": 2,
+      "notes": "Base Cyber policy declarations form. Item 8 Endorsements list shows blank in the provided excerpt — full endorsement schedule not visible."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Defense Within Limits / Eroding Aggregate",
+      "form_number": "CYDECS 0122 Dec page",
+      "page": 2,
+      "impact": "DEFENSE COSTS ARE PART OF AND NOT IN ADDITION TO THE AGGREGATE LIMIT OF LIABILITY. THE AGGREGATE LIMIT OF LIABILITY AVAILABLE TO PAY LOSS AND THE RETENTION SHALL BE REDUCED AND MAY BE EXHAUSTED BY THE PAYMENT OF DEFENSE COSTS. On a typical cyber claim where 60–80% of recovery is consumed by forensics, breach counsel, PR, and regulatory defense, the effective indemnity available from the $4M aggregate is approximately $800K–$1.6M on a single claim."
+    },
+    {
+      "name": "Shared Aggregate Structure",
+      "form_number": "CYDECS 0122 Dec page",
+      "page": 3,
+      "impact": "All 14 coverage lines (Ransom, Data Recovery, Bricking, BI, BI from Suppliers, Reputation Harm, Cyber Event, Cyber Deception, Proof of Loss, Cryptojacking, Privacy & Network Security, Regulatory Fines, Payment Card, Media) share the single $4M aggregate. A single $2M ransomware claim leaves only $2M of capacity for any other cyber event during the policy year — including BI, regulatory defense, payment card liability, etc."
+    },
+    {
+      "name": "Cyber Deception / Social Engineering Phantom Coverage",
+      "form_number": "CYDECS 0122 Dec page Item 7",
+      "page": 3,
+      "impact": "Sublimit $250,000 / Retention $250,000 — effective recoverable on any single loss is $0. Loss of $300K recovers $50K. Loss of $500K recovers $250K (50% of loss). For an election-services company with regular county wire transfers and vendor payment flows, this is materially inadequate."
+    },
+    {
+      "name": "Continuity / Retroactive Date Gap",
+      "form_number": "CYDECS 0122 Dec page Item 5",
+      "page": 3,
+      "impact": "Continuity Date is 4/1/2023, only 2 years before current inception. Runbeck Election Services has been in business 50+ years with continuous operations. Any pre-4/1/2023 cyber incident (e.g., a malicious actor with persistent unauthorized access dating back further) would not be covered under this claims-made/discovery form. Maricopa §8.2.3 requires retroactive date to precede the contract effective date — verification needed against contract effective dates of Maricopa, Sacramento, and Los Angeles County agreements."
+    },
+    {
+      "name": "Choice of Law — New York (insured is Arizona-domiciled)",
+      "form_number": "CYDECS 0122 Dec page Item 5",
+      "page": 3,
+      "impact": "Choice of Law clause selects New York. Insured is Arizona-domiciled with operations in 31+ states. NY law affects litigation venue, recoverable damages categories, punitive damage availability, and statute of limitations interpretation — all of which differ from Arizona law. Material consideration in any coverage dispute."
+    },
+    {
+      "name": "Surplus Lines / Non-Admitted Carrier in Arizona",
+      "form_number": "Arizona Surplus Lines Notice on Page 1",
+      "page": 1,
+      "impact": "Pursuant to A.R.S. §20-401.01(B)(1), this policy is issued by an insurer that does not possess a certificate of authority from the director of the Arizona DIFI. If the insurer becomes insolvent, insureds/claimants will NOT be eligible for Arizona insurance guaranty fund protection. Note: Cyber is a market where E&S placement is common and acceptable — this is an Informational note about guaranty fund limitations, not a Critical/Ugly finding by itself per KB rule 15. AmTrust/Associated Industries is rated A- (Excellent) by AM Best, satisfying both Maricopa's B++ (§8.2.1) and Sacramento's A-VII (§VI.A.1) carrier rating minimums — verification of current rating recommended."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "cross_reference_findings": {
+    "GAP-01_named_insured": "GOOD — Cyber Dec correctly shows 'Runbeck Election Services, LLC' (LLC, not Inc) following Policy Change #1 effective 4/1/2025. This is the ONLY policy in the program with the entity-type correction; remaining 6 program policies retain the 'Inc' error per GAP-20.",
+    "GAP-17_contract_satisfaction_maricopa_cyber_5M": "UGLY (22/25) — Maricopa County contract §8.2.13 requires Cyber Liability of $5,000,000 per occurrence. This policy carries $4,000,000 aggregate (not per-occurrence — and shared/eroding via DWL). Direct shortfall of $1M+ on stated limit, far larger after Defense Within Limits erosion. No excess Cyber tower in program (Hanover Umbrella does not follow form to Cyber). Uncured contract breach as of policy inception 4/1/2025.",
+    "GAP-18_sublimits_cyber_deception": "UGLY (25/25) — Cyber Deception sublimit $250,000 / retention $250,000 = effective recoverable $0 on any single loss. Phantom coverage. Election-services operations process county invoices and vendor payables creating direct social-engineering wire-transfer exposure.",
+    "GAP-18_sublimits_proof_of_loss": "BAD (18/25) — Proof of Loss sublimit $250,000 / retention $50,000. Caps forensic accounting expense at $200K, which may be inadequate to prove up a multi-million-dollar BI claim against the $4M aggregate.",
+    "GAP-21_designated_entity_noc": "UGLY — No Designated Entity Notice of Cancellation endorsement visible. Maricopa §8.2.15 requires 30-day cancellation/material-change notice on all required policies, and §8.2.13 names Cyber as a required policy. Absent endorsement = uncured contract breach.",
+    "additional_insured_status_required_by_maricopa": "UGLY — Maricopa §8.2.7 requires the Cyber policy to name County 'as additional insureds' (note: §8.2.7 carve-out excludes WC and E&O but NOT Cyber). No AI endorsement visible on Cyber. Must verify with carrier whether AmTrust will endorse AI on Cyber — many cyber forms do not accommodate AI status.",
+    "waiver_of_subrogation_required_by_maricopa": "UGLY — Maricopa §8.2.8 requires WoS on Cyber (§8.2.8 carve-out excludes WC and E&O but NOT Cyber). No WoS endorsement visible on Cyber.",
+    "primary_noncontributory_required_by_maricopa": "BAD — Maricopa §8.2.4 requires primary & noncontributory on Cyber. No P&NC endorsement visible.",
+    "defense_within_limits_plus_shared_aggregate": "UGLY (22/25) — Combination of Defense Within Limits + Shared Aggregate across 14 coverage lines + $4M aggregate falling below the $5M Maricopa contract minimum produces effective indemnity capacity of $800K–$1.6M on a single claim — well below contract requirement.",
+    "continuity_date_gap": "BAD (15/25) — Continuity Date 4/1/2023 versus 50+ year company operating history. Any pre-2023 latent cyber event (persistent threat actors, undiscovered breach) is uncovered. Verification of all contract effective dates (Maricopa, Sacramento, Los Angeles) against retro date required to confirm contractual compliance.",
+    "choice_of_law_new_york": "INFORMATIONAL — Arizona-domiciled insured with NY choice-of-law clause. Material in any future coverage litigation; not a coverage gap per se."
+  },
+  "_source_file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf"
+}

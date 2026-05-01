@@ -1,0 +1,94 @@
+{
+  "slug": "convex",
+  "policy_name": "Convex Excess Tech E&O",
+  "sources": {
+    "presentation": true,
+    "prior_report": false,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 7,
+      "title": "Excess Tech E&O \u2014 Policy Number Discrepancy Creates Coverage",
+      "content": "[Bad] Excess Tech E&O \u2014 Policy Number Discrepancy Creates Coverage\nRisk Score: 8/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 7,
+      "title": "Excess Tower \u2014 Convex Policy Number Documentation Defect",
+      "content": "[Ugly] Excess Tower \u2014 Convex Policy Number Documentation Defect\nRisk Score: 10/25\n\nWhat this means:\nYour $5 million excess policy and your $5 million primary policy don't agree on the policy number they're built around. This is a documentation defect that could let your excess carrier walk away from a $5M-$10M claim. It's almost certainly a typo \u2014 but in insurance, typos in policy numbers are not\n\nRecommendation:\nImmediately email RSG Specialty and Convex requesting a corrected Schedule of Underlying Insurance endorsement reflecting the actual primary policy number. Get written confirmation from both Gemini an",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "Excess Tower \u2014 Convex Policy Number Documentation Defect",
+      "score": 10,
+      "severity_word": "Medium",
+      "description": "The Convex Excess Tech E&O Declarations Item 5 identifies the Followed Policy as Gemini VIPL056495.",
+      "policy_slug": "convex",
+      "matched_in_audited": true,
+      "audited_page": 7,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Excess Tower \u2014 Convex Policy Number Documentation Defect\nRisk Score: 10/25\n\nWhat this means:\nYour $5 million excess policy and your $5 million primary policy don't agree on the policy number they're built around. This is a documentation defect that could let your excess carrier walk away from"
+    }
+  ],
+  "v1_v2_unchanged": [
+    {
+      "v1": {
+        "page": 7,
+        "title": "Excess Tech E&O \u2014 Policy Number Discrepancy Creates Coverage",
+        "content": "[Bad] Excess Tech E&O \u2014 Policy Number Discrepancy Creates Coverage\nRisk Score: 8/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 7,
+        "title": "Excess Tower \u2014 Convex Policy Number Documentation Defect",
+        "content": "[Ugly] Excess Tower \u2014 Convex Policy Number Documentation Defect\nRisk Score: 10/25\n\nWhat this means:\nYour $5 million excess policy and your $5 million primary policy don't agree on the policy number they're built around. This is a documentation defect that could let your excess carrier walk away from a $5M-$10M claim. It's almost certainly a typo \u2014 but in insurance, typos in policy numbers are not\n\nRecommendation:\nImmediately email RSG Specialty and Convex requesting a corrected Schedule of Underlying Insurance endorsement reflecting the actual primary policy number. Get written confirmation from both Gemini an",
+        "type_name": "Text"
+      },
+      "similarity": 0.59
+    }
+  ],
+  "v1_v2_removed": [],
+  "v1_v2_new_in_v2": [],
+  "presentation_slides": [
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": false,
+      "hits": []
+    }
+  ]
+}

@@ -1,0 +1,1681 @@
+{
+  "entities": [
+    "All parties where required by written contract (executed prior to loss)",
+    "Any person or organization required by written contract, written agreement or written permit",
+    "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+    "ARC Airport 2800, LLC",
+    "Banterra Bank ISAOA Credit Admin",
+    "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+    "Black Mountain Investment Co. LLC",
+    "Black Mountain Investment Company LLC",
+    "Blanket AI by written contract (ongoing operations)",
+    "Blanket AI Vendors (broad form)",
+    "Desert Trailer Systems Inc",
+    "Graphics Inc",
+    "Investments LLC",
+    "Lincoln Shields LLC",
+    "Properties LLC",
+    "Runbeck Companies 401(k) Profit Sharing Plan",
+    "Runbeck Election Services Inc",
+    "Runbeck Election Services, LLC",
+    "Runbeck Graphics Inc.",
+    "Runbeck Investments LLC",
+    "Runbeck Properties, LLC",
+    "Various lenders/loss payees (Property — not GL AIs)"
+  ],
+  "policies": [
+    "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+    "Redacted2024-26 Management Liability Policy.pdf",
+    "Redacted2025 - 2026 Professional Liability Policy.pdf",
+    "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+    "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+    "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+    "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+    "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+    "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+  ],
+  "policy_types": {
+    "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": "Workers Comp",
+    "Redacted2024-26 Management Liability Policy.pdf": "Management Liability",
+    "Redacted2025 - 2026 Professional Liability Policy.pdf": "Professional Liability",
+    "Redacted2025-2026 Liability Policy - Security Guards.pdf": "CGL",
+    "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": "Tech E&O",
+    "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": "Cyber",
+    "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": "Auto",
+    "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": "Package",
+    "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": "Umbrella"
+  },
+  "first_named_insured_entity_types": {
+    "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": "Inc",
+    "Redacted2024-26 Management Liability Policy.pdf": "LLC",
+    "Redacted2025 - 2026 Professional Liability Policy.pdf": "Inc",
+    "Redacted2025-2026 Liability Policy - Security Guards.pdf": "LLC",
+    "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": "LLC",
+    "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": "LLC",
+    "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": "Inc",
+    "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": "Inc",
+    "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": "Inc"
+  },
+  "matrix": {
+    "All parties where required by written contract (executed prior to loss)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "CG 20 10 12 19",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 60
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "All parties where required by written contract (executed prior to loss)",
+        "normalized_name": "all parties where required by written contract executed prior to loss",
+        "status": "missing"
+      }
+    },
+    "Any person or organization required by written contract, written agreement or written permit": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "461-0478 12 12",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 76
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization required by written contract, written agreement or written permit",
+        "normalized_name": "any person or organization required by written contract written agreement or written permit",
+        "status": "missing"
+      }
+    },
+    "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "VP 07 83 07 17",
+        "endorsement_type": "other",
+        "broad_form_llc_risk": false,
+        "page": 20
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+        "normalized_name": "any person or organization with whom named insured has a written contract requiring ai status blanket",
+        "status": "missing"
+      }
+    },
+    "ARC Airport 2800, LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "CG 20 18 04 13",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 234
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "ARC Airport 2800, LLC",
+        "normalized_name": "arc airport 2800 llc",
+        "status": "missing"
+      }
+    },
+    "Banterra Bank ISAOA Credit Admin": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "CG 20 18 04 13",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 234
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Banterra Bank ISAOA Credit Admin",
+        "normalized_name": "banterra bank isaoa credit admin",
+        "status": "missing"
+      }
+    },
+    "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "VP 02 88 07 17 (End. #10)",
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 30
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+        "normalized_name": "benton county wa 620 market street 1st floor auditor's office prosser wa 99350",
+        "status": "missing"
+      }
+    },
+    "Black Mountain Investment Co. LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Co. LLC",
+        "normalized_name": "black mountain investment co llc",
+        "status": "missing"
+      }
+    },
+    "Black Mountain Investment Company LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "AD 66 16 04 09 (End. #7)",
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 27
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Black Mountain Investment Company LLC",
+        "normalized_name": "black mountain investment company llc",
+        "status": "missing"
+      }
+    },
+    "Blanket AI by written contract (ongoing operations)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "421-2915 06 15",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 194
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI by written contract (ongoing operations)",
+        "normalized_name": "blanket ai by written contract ongoing operations",
+        "status": "missing"
+      }
+    },
+    "Blanket AI Vendors (broad form)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "421-2916 06 15",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 198
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Blanket AI Vendors (broad form)",
+        "normalized_name": "blanket ai vendors broad form",
+        "status": "missing"
+      }
+    },
+    "Desert Trailer Systems Inc": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "CA 20 48 02 99",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 43
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Desert Trailer Systems Inc",
+        "normalized_name": "desert trailer systems inc",
+        "status": "missing"
+      }
+    },
+    "Graphics Inc": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": "990301B0316",
+        "endorsement_type": "other",
+        "broad_form_llc_risk": false,
+        "page": 95
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Graphics Inc",
+        "normalized_name": "graphics inc",
+        "status": "missing"
+      }
+    },
+    "Investments LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "990301B0316",
+        "endorsement_type": "other",
+        "broad_form_llc_risk": false,
+        "page": 95
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Investments LLC",
+        "normalized_name": "investments llc",
+        "status": "missing"
+      }
+    },
+    "Lincoln Shields LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "AD 66 16 04 09 (End. #7)",
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 27
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Lincoln Shields LLC",
+        "normalized_name": "lincoln shields llc",
+        "status": "missing"
+      }
+    },
+    "Properties LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "990301B0316",
+        "endorsement_type": "other",
+        "broad_form_llc_risk": false,
+        "page": 95
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Properties LLC",
+        "normalized_name": "properties llc",
+        "status": "missing"
+      }
+    },
+    "Runbeck Companies 401(k) Profit Sharing Plan": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "additional_named_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Companies 401(k) Profit Sharing Plan",
+        "normalized_name": "runbeck companies 401 k profit sharing plan",
+        "status": "missing"
+      }
+    },
+    "Runbeck Election Services Inc": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "first_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "first_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "first_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "first_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services Inc",
+        "normalized_name": "runbeck election services inc",
+        "status": "first_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      }
+    },
+    "Runbeck Election Services, LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "first_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "first_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "first_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "first_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": null,
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": null
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Election Services, LLC",
+        "normalized_name": "runbeck election services llc",
+        "status": "missing"
+      }
+    },
+    "Runbeck Graphics Inc.": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": "VP 02 79 07 17",
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 36
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+        "endorsement_type": "Name Change",
+        "broad_form_llc_risk": false,
+        "page": 2
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": null,
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 12
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Graphics Inc.",
+        "normalized_name": "runbeck graphics inc",
+        "status": "additional_named_insured",
+        "entity_type": "Inc",
+        "via_endorsement": "475-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 56
+      }
+    },
+    "Runbeck Investments LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected to LLC via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+        "endorsement_type": "Name Change",
+        "broad_form_llc_risk": false,
+        "page": 2
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": null,
+        "endorsement_type": "Schedule Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 12
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Investments LLC",
+        "normalized_name": "runbeck investments llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "475-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 56
+      }
+    },
+    "Runbeck Properties, LLC": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "Listed on Item 1 Policyholder (Dec page); name corrected to LLC via Policy Change #1 (IL 12 01 11 85) effective 4/1/2025",
+        "endorsement_type": "Name Change",
+        "broad_form_llc_risk": false,
+        "page": 2
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "461-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 28
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Runbeck Properties, LLC",
+        "normalized_name": "runbeck properties llc",
+        "status": "additional_named_insured",
+        "entity_type": "LLC",
+        "via_endorsement": "475-0174",
+        "endorsement_type": "Multiple Named Insured",
+        "broad_form_llc_risk": false,
+        "page": 56
+      }
+    },
+    "Various lenders/loss payees (Property — not GL AIs)": {
+      "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "Redacted2024-26 Management Liability Policy.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      },
+      "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "additional_insured",
+        "entity_type": "unspecified",
+        "via_endorsement": "CP 12 18",
+        "endorsement_type": null,
+        "broad_form_llc_risk": false,
+        "page": 22
+      },
+      "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+        "display_name": "Various lenders/loss payees (Property — not GL AIs)",
+        "normalized_name": "various lenders/loss payees property — not gl ais",
+        "status": "missing"
+      }
+    }
+  },
+  "inconsistencies": [
+    {
+      "kind": "first_named_insured_entity_type_mismatch",
+      "details": "Policies disagree on First Named Insured entity type: ['Inc', 'LLC']",
+      "policy_breakdown": {
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": "Inc",
+        "Redacted2024-26 Management Liability Policy.pdf": "LLC",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf": "Inc",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf": "LLC",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": "LLC",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": "LLC",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": "Inc",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": "Inc",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": "Inc"
+      }
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "All parties where required by written contract (executed prior to loss)",
+      "present_on": [
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Any person or organization required by written contract, written agreement or written permit",
+      "present_on": [
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+      "present_on": [
+        "Redacted2025 - 2026 Professional Liability Policy.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "ARC Airport 2800, LLC",
+      "present_on": [
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Banterra Bank ISAOA Credit Admin",
+      "present_on": [
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+      "present_on": [
+        "Redacted2025 - 2026 Professional Liability Policy.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Black Mountain Investment Co. LLC",
+      "present_on": [
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Black Mountain Investment Company LLC",
+      "present_on": [
+        "Redacted2025 - 2026 Professional Liability Policy.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Blanket AI by written contract (ongoing operations)",
+      "present_on": [
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Blanket AI Vendors (broad form)",
+      "present_on": [
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Desert Trailer Systems Inc",
+      "present_on": [
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Graphics Inc",
+      "present_on": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Investments LLC",
+      "present_on": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Lincoln Shields LLC",
+      "present_on": [
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Properties LLC",
+      "present_on": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Companies 401(k) Profit Sharing Plan",
+      "present_on": [
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Election Services Inc",
+      "present_on": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Election Services, LLC",
+      "present_on": [
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Graphics Inc.",
+      "present_on": [
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Investments LLC",
+      "present_on": [
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Runbeck Properties, LLC",
+      "present_on": [
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ]
+    },
+    {
+      "kind": "entity_partial_inclusion",
+      "entity": "Various lenders/loss payees (Property — not GL AIs)",
+      "present_on": [
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+      ],
+      "missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ]
+    }
+  ]
+}

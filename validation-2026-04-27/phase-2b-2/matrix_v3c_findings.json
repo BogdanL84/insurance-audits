@@ -1,0 +1,286 @@
+{
+  "client": "run-test-election-services",
+  "findings": [
+    {
+      "id": "finding-cpm-001",
+      "requirement_type": "Cross-Policy Entity Matrix — Runbeck Properties, LLC Missing From Hanover Commercial Package (Umbrella Has Nothing To Drop Down To)",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 5,
+      "risk_score": 25,
+      "contract_quote": "Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence, $4,000,000 Products/Completed Operations Aggregate, and $4,000,000 General Aggregate Limit.",
+      "contract_page": "Maricopa Contract §8.2.10",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Runbeck Properties, LLC appears as Additional Named Insured on the Hanover Auto policy (Form 461-0174 Multiple Named Insured Endorsement, Pg 28), the AmTrust Cyber policy (Policy Change #1 dated 4/1/2025), and the Hanover Commercial Umbrella (Form 475-0174, Pg 56) — but does NOT appear on the Hanover Commercial Package (Property/CGL/Business Income) Named Insured schedule (Pg 12) or as an Additional Named Insured anywhere within that policy.",
+      "policy_page": "Hanover Package Pg 12 (Schedule); Hanover Umbrella Pg 56 (Form 475-0174)",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "Runbeck Properties, LLC is the property-holding entity in the Runbeck corporate family. It is named on the Hanover Umbrella (Form 475-0174) and on the AmTrust Cyber policy, but it is NOT named on the Hanover Commercial Package — which is the policy that provides primary General Liability and Property coverage. Because the Umbrella sits 'follow form' over scheduled underlying policies, and because the underlying CGL on the Package does not name Runbeck Properties, LLC, the Umbrella has no underlying coverage to drop down to for any premises-liability claim at a Runbeck Properties location. A slip-and-fall, a fire, or any third-party injury claim arising at a property owned by Runbeck Properties, LLC therefore has ZERO GL coverage anywhere in the program — neither primary nor excess. This is the canonical GAP-20 'Umbrella has nothing to drop down to' defect.",
+      "plain_english": "The LLC that owns your real estate is listed on the umbrella policy but NOT on the underlying General Liability policy. Insurance only works when each layer is properly stacked — if someone slips and falls at a building owned by Runbeck Properties, LLC, your GL policy will deny the claim because that LLC isn't a named insured on it. The umbrella can't help either, because there's nothing underneath it to extend. The result: an uninsured premises-liability claim at one of your own buildings.",
+      "recommendation": "Endorse Runbeck Properties, LLC onto the Hanover Commercial Package Named Insured schedule via Multiple Named Insured Endorsement (Hanover form 421-2922 or equivalent). Confirm that all Runbeck-owned real estate locations are scheduled on the Package property statement of values. Reconfirm that the Umbrella schedule of underlying then properly attaches over the corrected primary.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "umbrella-attachment",
+        "gap-20",
+        "named-insured"
+      ],
+      "discoveryQuestions": [
+        "Runbeck Properties, LLC owns the buildings where your operations run — has there ever been a time when a delivery driver, vendor, or visitor was injured at one of those properties, and which entity's certificate of insurance was issued to handle the claim?",
+        "When you renewed the Hanover Package on 4/1/2025, did the broker walk you through which entities are on the GL schedule versus the Umbrella schedule, or was that left to the carrier?",
+        "If a property tenant or lender ever asked you to provide proof of GL coverage for a specific Runbeck-owned building, what document would you send them, and which policy would you point to?"
+      ]
+    },
+    {
+      "id": "finding-cpm-002",
+      "requirement_type": "Cross-Policy Entity Matrix — Auto-Only Additional Named Insureds (Lincoln Shields LLC, Black Mountain Investment Co. LLC) Missing From Commercial Umbrella — Hard $1M Cap on Auto Liability",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 5,
+      "risk_score": 22,
+      "contract_quote": "Commercial/Business Automobile Liability insurance with a combined single limit for bodily injury and property damage of not less than $2,000,000 each occurrence with respect to any of the Contractor's owned, hired, and non-owned vehicles assigned to or used in performance of the Contractor's work or services or use or maintenance of the premises under this contract.",
+      "contract_page": "Maricopa Contract §8.2.11",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Hanover Auto Form 461-0174 (Multiple Named Insured Endorsement, Pg 28) lists 'Lincoln Shields LLC' and 'Black Mountain Investment Co. LLC' as Additional Named Insureds. Hanover Commercial Umbrella Form 475-0174 (Multiple Named Insured Endorsement, Pg 56) does NOT list either entity — Umbrella schedule names only Runbeck Election Services Inc, Runbeck Graphics Inc., Runbeck Investments LLC, Runbeck Properties LLC, and Runbeck Companies 401(k) Profit Sharing Plan.",
+      "policy_page": "Hanover Auto Pg 28 (461-0174) vs. Hanover Umbrella Pg 56 (475-0174)",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "Two LLC entities — Lincoln Shields LLC and Black Mountain Investment Co. LLC — are scheduled as Additional Named Insureds on the Hanover Auto policy (Form 461-0174) but are absent from the Umbrella's Multiple Named Insured Endorsement (Form 475-0174). Any auto-liability claim arising out of vehicles operated by or for these entities has a HARD CAP at the $1,000,000 Auto Combined Single Limit, with NO excess attachment over that primary. A serious auto loss at $3M, $5M, or higher exposes the parent organization (and any other Runbeck entity facing joint-and-several liability) to uninsured exposure of $2M to $4M+. This is the GAP-20 reverse pattern — primary is broader than excess. Note: a Maricopa County contract requires $2M Auto CSL standalone, so even at the contract-minimum loss size these two entities fail compliance with the umbrella unable to step up.",
+      "plain_english": "Two of your subsidiary LLCs — Lincoln Shields and Black Mountain Investment — are on the auto policy but NOT on the umbrella. If one of their vehicles causes a serious accident with a $3M judgment, you are insured for the first $1M and personally on the hook for the next $2M. The umbrella you bought specifically to handle catastrophic auto claims will refuse to pay, because those two entities aren't listed as covered insureds on it.",
+      "recommendation": "Add Lincoln Shields LLC and Black Mountain Investment Co. LLC to the Hanover Umbrella via amended Multiple Named Insured Endorsement (Form 475-0174) so the entity schedule on the Umbrella matches the schedule on the underlying Auto policy. Confirm Hanover acknowledges no premium charge or that any premium adjustment is documented. Verify Maricopa-required $2M CSL is now achievable via $1M primary + $1M umbrella attachment for these two entities (subject to Maricopa's umbrella-attachment permission).",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "umbrella-attachment",
+        "gap-20",
+        "auto-liability"
+      ],
+      "discoveryQuestions": [
+        "Lincoln Shields LLC and Black Mountain Investment Co. LLC are on your auto policy — what role do those entities play in your operations, and how many vehicles do they operate?",
+        "If a Lincoln Shields driver caused a multi-million-dollar wrongful-death claim tomorrow, who would you expect the umbrella to defend — the parent Runbeck or Lincoln Shields itself?",
+        "When the Hanover team set up the umbrella entity schedule, did they confirm to you in writing that all auto-policy named entities were also on the umbrella, or was that something the prior broker was supposed to verify?"
+      ]
+    },
+    {
+      "id": "finding-cpm-003",
+      "requirement_type": "Cross-Policy Entity Matrix — Auto-Only Additional Named Insureds (Lincoln Shields LLC, Black Mountain Investment Co. LLC) Missing From Hanover Commercial Package CGL — Premises Liability Gap",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "8.2.10 Commercial General Liability — Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence... The policy shall include coverage for premises liability, bodily injury, broad form property damage, personal injury, products and completed operations and blanket contractual coverage...",
+      "contract_page": "Maricopa Contract §8.2.10",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Lincoln Shields LLC and Black Mountain Investment Co. LLC are scheduled as Additional Named Insureds on the Hanover Auto policy (Form 461-0174, Pg 28) but do NOT appear on the Hanover Commercial Package Named Insured schedule (Pg 12) or as Additional Named Insureds via any GL endorsement on that policy.",
+      "policy_page": "Hanover Package Pg 12 (Schedule)",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "Lincoln Shields LLC and Black Mountain Investment Co. LLC carry Auto liability coverage as Additional Named Insureds on the Hanover Auto policy but receive NO General Liability coverage anywhere in the program. Any premises liability claim, products claim, personal & advertising injury claim, or contractual liability claim arising out of these entities' operations is uninsured. If either entity owns or occupies premises, employs people, or has any third-party interaction outside of vehicle operation, the GL gap is a true uninsured exposure. The Umbrella similarly does not name these entities, compounding the exposure if any GL claim does materialize.",
+      "plain_english": "Your auto policy covers two subsidiaries that the General Liability policy doesn't. If a vendor slips at a Lincoln Shields location, or if Black Mountain has an advertising-injury or contractual-liability claim, neither the GL nor the umbrella will pay — both policies treat those entities as outsiders. Auto-only AI status means auto claims only.",
+      "recommendation": "Endorse Lincoln Shields LLC and Black Mountain Investment Co. LLC onto the Hanover Commercial Package as Additional Named Insureds (or as Named Insureds if they have material operations). Use Hanover's Multiple Named Insured Endorsement equivalent for the Package. Confirm GL coverage extends to premises owned by these entities and to their named operations.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "premises-liability",
+        "gap-20",
+        "named-insured"
+      ],
+      "discoveryQuestions": [
+        "Do Lincoln Shields LLC and Black Mountain Investment Co. LLC own or occupy any real estate, employ any staff, or perform any third-party work that could trigger a non-auto liability claim?",
+        "When these LLCs were added to your auto policy, did the broker explain that auto-only AI status doesn't extend to premises or general liability — or was the assumption that 'they're on the policy, so they're covered'?",
+        "If a county auditor or county lawyer reviewed your COIs and asked why two entities show up on the Auto certificate but not the GL certificate, what would you tell them?"
+      ]
+    },
+    {
+      "id": "finding-cpm-004",
+      "requirement_type": "Cross-Policy Entity Matrix — Runbeck Companies 401(k) Profit Sharing Plan Missing From Hartford Management Liability (Fiduciary Coverage)",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 5,
+      "risk_score": 20,
+      "contract_quote": "N/A — this is a program-design defect surfaced by the cross-policy entity matrix, not a contract requirement. The Hartford Management Liability policy is the program's only Fiduciary Liability coverage (Aggregate $1,000,000, retention $0, ERISA 502(c) penalty sublimit $50,000).",
+      "contract_page": "—",
+      "contract_file": "PROGRAM",
+      "policy_quote": "Runbeck Companies 401(k) Profit Sharing Plan is named as an Additional Named Insured on the Hanover Auto policy (Form 461-0174 Multiple Named Insured Endorsement, Pg 28). It does NOT appear on the Hartford Management Liability policy as a Named Insured, an Additional Named Insured, or within the Fiduciary Coverage Part schedule of insured plans.",
+      "policy_page": "Hanover Auto Pg 28 (present); Hartford Mgmt Liab — not listed",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "The 401(k) plan exists in the corporate family — it is named on the Auto policy schedule. But the Fiduciary Liability coverage within the Hartford Management Liability package, which is the only insurance in the program designed to respond to ERISA breach-of-fiduciary-duty suits, does not list the Plan. Whether the 'Insured Plan' definition under the Hartford Fiduciary Coverage Part automatically extends to all employee benefit plans of the Named Insured (Runbeck Election Services, LLC) requires verification with Hartford — many Fiduciary forms automatically include all sponsored plans, but several Hartford forms require the plan to be specifically scheduled. If the Plan is NOT auto-included, an ERISA participant suit against plan fiduciaries (mismanagement of plan assets, prohibited transactions, fee disputes) has zero coverage. Given Runbeck is PE-backed and an ERISA exposure for a private-equity-controlled employer is meaningful, this is a critical verification.",
+      "plain_english": "Your 401(k) plan is named on the auto policy (because vehicles drive plan assets to the bank, more or less). But the management liability policy — the one that actually defends ERISA lawsuits against the plan and its trustees — may not include the plan unless it's automatically picked up by the policy's definition. If a participant sues the plan trustees over fees or investment selection, the defense bill could come back uncovered. We need Hartford to confirm in writing whether the 401(k) plan is included.",
+      "recommendation": "Send a written inquiry to Hartford requesting confirmation that the Runbeck Companies 401(k) Profit Sharing Plan is an 'Insured Plan' under the Fiduciary Coverage Part. If it is not auto-included, endorse it onto the Schedule of Insured Plans. Verify ERISA 502(c) penalty sublimit ($50,000) is adequate given plan asset size and participant count. Consider requesting a higher Fiduciary aggregate (current $1M may be light for a PE-backed sponsor).",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "fiduciary-liability",
+        "erisa",
+        "401k-plan",
+        "gap-20"
+      ],
+      "discoveryQuestions": [
+        "How large is the Runbeck Companies 401(k) Plan — total assets, number of participants, and is there a Trustee committee structure that would be the named defendants in an ERISA suit?",
+        "Has the plan been audited or examined by the DOL/IRS in the last three years, and were there any findings about fee disclosures, investment selection, or fiduciary processes?",
+        "When PE acquired Runbeck, was a fiduciary-liability gap analysis done on the existing plan, or did the deal team focus mainly on the corporate D&O tower?",
+        "If a plan participant filed an excessive-fee suit (the most common ERISA class action), do you know who the defense lawyer would be and which insurer would pay them?"
+      ]
+    },
+    {
+      "id": "finding-cpm-005",
+      "requirement_type": "Cross-Policy Entity Matrix — Runbeck Companies 401(k) Profit Sharing Plan Missing From Hanover Commercial Umbrella",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 4,
+      "risk_score": 12,
+      "contract_quote": "If available, the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements.",
+      "contract_page": "Maricopa Contract §8.2.9",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Runbeck Companies 401(k) Profit Sharing Plan appears as an Additional Named Insured on the Hanover Auto policy (Form 461-0174, Pg 28). It does NOT appear on the Hanover Commercial Umbrella Multiple Named Insured Endorsement (Form 475-0174, Pg 56).",
+      "policy_page": "Hanover Auto Pg 28 (present); Hanover Umbrella Pg 56 (absent)",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "The 401(k) Plan is on the Auto schedule but not on the Umbrella schedule. While auto liability claims directly involving the Plan are unusual, any auto-related claim where the Plan is a co-defendant or alleged participant in operations would face a hard $1M cap with no umbrella attachment. More importantly — flagging this defect serves as a tripwire: it confirms the Umbrella entity schedule was not built by reverse-checking against every primary policy's entity schedule. If the 401(k) Plan slipped through, other entities likely have too (consistent with findings finding-cpm-002 and finding-cpm-001).",
+      "plain_english": "Your auto policy includes the 401(k) Plan as an additional insured. The umbrella above it doesn't. It's an unusual claim shape, but if it ever happened, the umbrella wouldn't extend. More importantly, this confirms the umbrella schedule wasn't carefully matched to the underlying schedules — which is the same pattern that creates the bigger gaps for Lincoln Shields and Black Mountain.",
+      "recommendation": "Add the Runbeck Companies 401(k) Profit Sharing Plan to the Hanover Umbrella Multiple Named Insured Endorsement (Form 475-0174). Confirm with Hanover that the umbrella now schedules every entity scheduled on the Auto, GL, and Property primaries.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "umbrella-attachment",
+        "401k-plan",
+        "gap-20"
+      ],
+      "discoveryQuestions": [
+        "Does the 401(k) Plan have any direct vehicle ownership or hired-auto exposure, or is it on the Auto policy primarily as a procedural inclusion?",
+        "When you onboard a new entity into the Runbeck program, does the broker maintain an entity-coverage matrix that you sign off on, or is each policy handled separately?"
+      ]
+    },
+    {
+      "id": "finding-cpm-006",
+      "requirement_type": "Cross-Policy Entity Matrix — Subsidiary Entities (Runbeck Investments LLC, Runbeck Graphics Inc.) Missing From Hartford Management Liability D&O / EPLI",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 4,
+      "risk_score": 12,
+      "contract_quote": "N/A — program-design defect surfaced by the cross-policy entity matrix.",
+      "contract_page": "—",
+      "contract_file": "PROGRAM",
+      "policy_quote": "Runbeck Investments LLC appears as an Additional Named Insured on the Hanover Auto (Form 461-0174, Pg 28), Hanover Package (Schedule, Pg 12), Hanover Umbrella (Form 475-0174, Pg 56), and AmTrust Cyber (Policy Change #1, Pg 2). Runbeck Graphics Inc. appears on those same four policies plus the W.R. Berkley Professional Liability (VP 02 79 07 17, End. #10, Pg 36). NEITHER entity appears as a Named Insured, Additional Named Insured, or Subsidiary on the Hartford Management Liability policy.",
+      "policy_page": "Hartford Mgmt Liab Dec — Named Insured shows 'Runbeck Election Services, LLC' only",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "Most management liability policies extend coverage to subsidiaries via a 'Subsidiary' definition — typically requiring >50% direct or indirect ownership and prospective entities to be reported. Verify whether Hartford's MGL policy automatically picks up Runbeck Investments LLC and Runbeck Graphics Inc. via the Subsidiary definition. If they are NOT subsidiaries within the meaning of the policy (different ownership structure, sister-LLC under a parent holding co.) then a D&O claim against directors/officers of those entities, or an EPLI claim by an employee of Runbeck Graphics specifically, could be uncovered. Given the manufacturing/professional-services exclusion already flagged on the Hartford policy (existing finding), this is an additional layer of D&O exposure.",
+      "plain_english": "Your management liability policy is in the name of Runbeck Election Services, LLC. Two of your subsidiaries — Runbeck Investments and Runbeck Graphics — appear on five other policies in the program but not on this one. If a director of Runbeck Graphics is sued personally, or if an employee of Runbeck Graphics files a wrongful-termination claim, the policy may or may not respond depending on whether those entities qualify as 'subsidiaries' under Hartford's definition. We need Hartford to confirm.",
+      "recommendation": "Confirm in writing with Hartford that Runbeck Investments LLC and Runbeck Graphics Inc. qualify as Subsidiaries under the Management Liability policy's Subsidiary definition. If they do not auto-qualify, endorse them onto the policy as Additional Named Insureds or Subsidiaries. Reconfirm coverage applies for D&O, EPLI, Crime, and Fiduciary across all named entities.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "do-coverage",
+        "epli",
+        "subsidiary-coverage",
+        "gap-20"
+      ],
+      "discoveryQuestions": [
+        "What is the ownership structure linking Runbeck Investments LLC and Runbeck Graphics Inc. to Runbeck Election Services, LLC — direct subsidiary, sister entity under a holding company, or something else?",
+        "Does Runbeck Graphics Inc. employ its own staff, and if so, has anyone there ever filed a discrimination/harassment complaint or threatened litigation?",
+        "When the PE sponsor invested, were Runbeck Investments and Runbeck Graphics Inc. handled as one consolidated D&O risk or as separate insureds?"
+      ]
+    },
+    {
+      "id": "finding-cpm-007",
+      "requirement_type": "Cross-Policy Entity Matrix — ARC Airport 2800, LLC (Landlord) Missing From Hanover Commercial Umbrella",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 3,
+      "risk_score": 9,
+      "contract_quote": "N/A — landlord lease likely requires AI status on GL with limits commonly $5M-$10M (depending on lease). Need to obtain lease for verification.",
+      "contract_page": "—",
+      "contract_file": "PROGRAM",
+      "policy_quote": "ARC Airport 2800, LLC is an Additional Insured on the Hanover Commercial Package (Form CG 20 18 04 13, Pg 234) — listed alongside Banterra Bank ISAOA. It is NOT named on the Hanover Commercial Umbrella schedule of underlying or Multiple Named Insured Endorsement (Pg 56).",
+      "policy_page": "Hanover Package Pg 234 (CG 20 18 04 13); Hanover Umbrella Pg 56 (absent)",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "ARC Airport 2800, LLC appears to be the Scottsdale, AZ landlord based on the corresponding Designated Entity NOC schedule on the Package (Pg 36). The CG 20 18 04 13 form provides Additional Insured status for premises leased to the Named Insured. Most commercial leases require AI status to extend through both the primary GL AND the umbrella — without umbrella attachment, the landlord's protection is capped at the $1M primary GL each-occurrence limit. If the lease requires $5M+ AI limits (common for industrial premises), the program is in breach. Whether the Hanover Umbrella's Coverage A 'Follow Form Excess Liability' automatically extends AI status to entities AI'd on the underlying CGL depends on the umbrella form language and whether AI status survives umbrella attachment without a specific schedule.",
+      "plain_english": "Your landlord at the Scottsdale property is named as an Additional Insured on your General Liability policy. The umbrella on top doesn't list them. If the lease requires $5M of AI limits — which is standard in commercial leases — then a serious injury claim at the leased premises that exceeds $1M leaves the landlord exposed and you in breach of your lease.",
+      "recommendation": "Obtain the lease for the Scottsdale property and identify the AI limit requirement. Confirm with Hanover whether the Umbrella's follow-form language automatically extends AI status conferred on the underlying CGL, or whether the landlord must be specifically scheduled. If the latter, endorse the Umbrella to schedule ARC Airport 2800, LLC as AI.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": "Possibly the Umbrella via follow-form — verify",
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "additional-insured",
+        "landlord",
+        "umbrella-attachment",
+        "gap-20"
+      ],
+      "discoveryQuestions": [
+        "What is the AI limit requirement in your lease with ARC Airport 2800, LLC, and what's the lease's notice-of-cancellation requirement to the landlord?",
+        "Has the landlord ever asked you for a current COI listing them as AI, and did your broker provide one showing both primary and umbrella attachment?"
+      ]
+    },
+    {
+      "id": "finding-cpm-008",
+      "requirement_type": "Cross-Policy Entity Matrix — Workers' Comp Lists Truncated Entity Names ('Investments LLC,' 'Properties LLC,' 'Graphics Inc') Inconsistent With Full 'Runbeck'-Prefixed Names On Other Program Policies",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 3,
+      "risk_score": 9,
+      "contract_quote": "N/A — program-design defect surfaced by the cross-policy entity matrix.",
+      "contract_page": "—",
+      "contract_file": "PROGRAM",
+      "policy_quote": "Hanover Workers' Comp policy Form 990301B0316 (Pg 95) lists Additional Named Insureds as 'Graphics Inc,' 'Investments LLC,' and 'Properties LLC' (without the 'Runbeck' prefix). Every other program policy that names these entities uses the full names: 'Runbeck Graphics Inc.,' 'Runbeck Investments LLC,' and 'Runbeck Properties, LLC'.",
+      "policy_page": "Hanover WC Pg 95 (Form 990301B0316)",
+      "policy_file": "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+      "gap_description": "The Workers' Comp policy schedules three named entities by partial name ('Graphics Inc,' 'Investments LLC,' 'Properties LLC') without the 'Runbeck' prefix that uniquely identifies them. In a contested claim — an employee of Runbeck Graphics Inc. with a disputed coverage determination, or a discovery question about which entity 'Properties LLC' refers to — the WC certificate becomes a litigable identification document. There are tens of thousands of LLCs called 'Properties LLC' in the United States. The carrier almost certainly intended the Runbeck-family entities, but the documentary trail is sloppy. Cross-reference GAP-01 and GAP-20 — this is a sub-pattern of systemic naming inconsistency across the program.",
+      "plain_english": "Your workers' comp policy lists three subsidiaries by their incomplete names — 'Properties LLC' instead of 'Runbeck Properties, LLC,' for example. There are thousands of LLCs in America with those generic names. In a coverage dispute or a contested claim, the carrier could (in theory) argue the policy doesn't cover the right entity. It's a paperwork issue today, but in litigation it becomes ammunition. The simple fix is to ask Hanover to amend the schedule with the full names.",
+      "recommendation": "Request Hanover issue an endorsement amending Form 990301B0316 to use the full legal names: 'Runbeck Graphics Inc.,' 'Runbeck Investments LLC,' and 'Runbeck Properties LLC.' Confirm the corrected names match the Hanover Auto, Package, Umbrella, and AmTrust Cyber schedules.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "entity-matrix",
+        "named-insured",
+        "workers-comp",
+        "gap-01",
+        "gap-20"
+      ],
+      "discoveryQuestions": [
+        "When the WC policy was issued, did Hanover request the full legal names of all entities, or did they accept the broker's submission as drafted?",
+        "Have any WC claims been filed under any of these three entities in the last three years, and did the carrier raise any entity-identification questions?"
+      ]
+    },
+    {
+      "id": "finding-cpm-009",
+      "requirement_type": "Cross-Policy Entity Matrix — Runbeck Election Services, LLC (Confirmed Legal Entity) Absent From 5 Of 9 Policies Including All Hanover Policies — Documentary Mismatch With Cyber Correction Not Propagated",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "N/A — program-design defect surfaced by the cross-policy entity matrix.",
+      "contract_page": "—",
+      "contract_file": "PROGRAM",
+      "policy_quote": "AmTrust Cyber policy was corrected via Policy Change #1 (Form IL 12 01 11 85) effective 4/1/2025 to update the Named Insured from 'Runbeck Election Services Inc' to 'Runbeck Election Services, LLC.' The same correction was NOT made to the Hanover Workers' Comp, Hanover Auto, Hanover Commercial Package, Hanover Commercial Umbrella, or W.R. Berkley Professional Liability — all five of which still list 'Runbeck Election Services Inc' as the First Named Insured.",
+      "policy_page": "Cyber Pg 2 (corrected); WC/Auto/Pkg/Umb/ProLiab Decs (not corrected)",
+      "policy_file": "PROGRAM",
+      "gap_description": "On 4/1/2025, the broker (or AmTrust) identified that the legal entity name was 'Runbeck Election Services, LLC' (not 'Inc') and corrected it on the Cyber policy via formal endorsement IL 12 01 11 85. The same correction was not propagated to the other six policies in the program. This means: (a) someone knew the legal name was wrong, (b) the fix was made on one policy only, and (c) the other six policies remain mis-named one year after the inception date. While the existing finding 'Cross-Policy Named Insured Inconsistency — Inc vs LLC Mismatch' covers the underlying Inc-vs-LLC issue, the present finding adds the critical detail that the discrepancy was IDENTIFIED and PARTIALLY CORRECTED — meaning it was knowingly left unaddressed across the bulk of the program. This elevates the finding from administrative defect to broker-process failure with clear documentary evidence of awareness.",
+      "plain_english": "On April 1st 2025, your broker (or AmTrust) made a formal endorsement to fix the cyber policy because the company name was wrong — they changed 'Inc' to 'LLC.' That same correction was NOT made on the six other policies in your program, even though the same name error existed on every one of them. This isn't a typo; it's a known issue that was fixed on one policy and ignored on the rest. In a coverage dispute, opposing counsel will use this against you — the broker's own paper trail shows they knew the name was wrong and only fixed it in one place.",
+      "recommendation": "Issue endorsement requests to Hanover (WC, Auto, Package, Umbrella) and W.R. Berkley (Professional Liability) to amend the First Named Insured from 'Runbeck Election Services Inc' to 'Runbeck Election Services, LLC' to match the legal entity, the AmTrust Cyber policy, and the Hartford Management Liability policy. Use Form IL 12 01 11 85 (Common Policy Change) or carrier equivalent. Document the correction date and ensure all subsequent renewal applications carry the corrected legal name.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "cross-policy-matrix",
+        "named-insured",
+        "entity-type-mismatch",
+        "gap-01",
+        "broker-process"
+      ],
+      "discoveryQuestions": [
+        "When the AmTrust Cyber correction was made on 4/1/2025, was the broker's recommendation to fix the other policies as well — and if so, why was it not done?",
+        "What is the actual legal entity name on your Articles of Organization and on your most recent tax returns — and have you ever provided that confirming document to the broker?",
+        "If a customer required you to provide proof of insurance using your exact legal entity name on the COI, would the certificate currently match the entity name on your contract?"
+      ]
+    }
+  ]
+}

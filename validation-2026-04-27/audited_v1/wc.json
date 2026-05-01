@@ -1,0 +1,137 @@
+{
+  "filename": "redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED.pdf",
+  "page_count": 206,
+  "annot_count": 4,
+  "bookmark_count": 7,
+  "annotations": [
+    {
+      "page": 61,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Workers' Compensation \u2014 Favorable EMR of 0.690 \u2014 Strong Safe",
+      "subject": "",
+      "content": "[Good] Workers' Compensation \u2014 Favorable EMR of 0.690 \u2014 Strong Safe",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 61,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Workers' Compensation \u2014 Multi-State Coverage with Stop Gap a",
+      "subject": "",
+      "content": "[Good] Workers' Compensation \u2014 Multi-State Coverage with Stop Gap a",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 114,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Workers' Compensation \u2014 Waiver of Subrogation Gap in GA, NC,",
+      "subject": "",
+      "content": "[Bad] Workers' Compensation \u2014 Waiver of Subrogation Gap in GA, NC,\nRisk Score: 9/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 137,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "WC \u2014 Ownership Change Reporting Obligation Critical for PE-B",
+      "subject": "",
+      "content": "[Bad] WC \u2014 Ownership Change Reporting Obligation Critical for PE-B\nRisk Score: 6/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Needs Attention (Bad)",
+      "page": 114
+    },
+    {
+      "level": 3,
+      "title": "Workers' Compensation \u2014 Waiver of Subrogation Gap in GA, NC,",
+      "page": 114
+    },
+    {
+      "level": 3,
+      "title": "WC \u2014 Ownership Change Reporting Obligation Critical for PE-B",
+      "page": 137
+    },
+    {
+      "level": 2,
+      "title": "Compliant (Good)",
+      "page": 61
+    },
+    {
+      "level": 3,
+      "title": "Workers' Compensation \u2014 Favorable EMR of 0.690 \u2014 Strong Safe",
+      "page": 61
+    },
+    {
+      "level": 3,
+      "title": "Workers' Compensation \u2014 Multi-State Coverage with Stop Gap a",
+      "page": 61
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "filename": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302-AUDITED.pdf",
+  "page_count": 5,
+  "annot_count": 1,
+  "bookmark_count": 3,
+  "annotations": [
+    {
+      "page": 3,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "subject": "",
+      "content": "[Good] Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Compliant (Good)",
+      "page": 3
+    },
+    {
+      "level": 3,
+      "title": "Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "page": 3
+    }
+  ]
+}

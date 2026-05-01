@@ -1,0 +1,1495 @@
+{
+  "client": "run-test-election-services",
+  "analysis_date": "2026-04-30",
+  "contracts": {
+    "Redacted12.11.24_City and County of Los Angeles California Renewal_Fully Executed.pdf": {
+      "source_file": "Redacted12.11.24_City and County of Los Angeles California Renewal_Fully Executed.pdf",
+      "analysis_date": "2026-04-30",
+      "contract_party": "County of Los Angeles",
+      "contract_section_ref": "Amendment Number Four to Contract Number 20-001 (pp 1-37)",
+      "has_insurance_provisions": false,
+      "by_coverage": null,
+      "designated_entity_noc": null,
+      "carrier_rating_minimum": null,
+      "claims_made_requirements": null,
+      "indemnification": null,
+      "requirements": [],
+      "notes": "This document is Amendment Number Four to Contract Number 20-001 between the County of Los Angeles and Runbeck Election Services, LLC for Voter Registration System License and Support Services. The amendment makes changes to the following provisions only: (i) Paragraph 4 (Term of Contract) — extends term through December 31, 2026 with two 6-month extension options; (ii) Paragraph 2 (Definitions) — replaced with Exhibit A; (iii) Paragraph 5.1 (Total Contract Sum) — updated to $5,153,898 with maximum of $5,669,288; (iv) Paragraph 7.5.4 (subcontractor background/security investigations); (v) Paragraph 8.11 (GAIN/START Participants); (vi) Paragraph 8.36.1 (Public Records Act); (vii) Paragraph 8.44.2 (Termination for Improper Consideration); (viii) Paragraph 8.59 (Campaign Contribution Prohibition - Levine Act); (ix) Paragraph 9.3 (Women in Technology Hiring Initiative); (x) Appendix B (Pricing Schedule); (xi) Appendix E (County's Administration); (xii) Appendix F (Contractor's Administration); (xiii) Appendix M (Contribution and Agent Declaration Form); (xiv-xviii) miscellaneous gender/terminology changes and entity name change from Inc. to LLC. The amendment does NOT restate, modify, or address insurance requirements. Insurance provisions (presumably contained in Paragraph 8 of the underlying Contract 20-001 or its prior amendments) are unchanged and not reproduced in this document. Per the closing language: 'Except as otherwise provided under this Amendment Number Four, the Contract, as previously amended, including all preambles and recitals set forth herein and therein, shall remain unchanged and in full force and effect.' To audit insurance requirements for this engagement, the original Contract 20-001 (effective January 1, 2021) and Amendments #1-#3 must be reviewed. Note also: Contract party is County of Los Angeles, California — NOT Maricopa County or an Arizona county. Contractor is Runbeck Election Services, LLC (Phoenix, AZ headquartered)."
+    },
+    "Redacted12162026_Douglas County Colorado_2026 Renewal Print & Mail.pdf": {
+      "source_file": "Redacted12162026_Douglas County Colorado_2026 Renewal Print & Mail.pdf",
+      "analysis_date": "2026-04-30",
+      "contract_party": "Douglas County, Colorado (via Carahsoft)",
+      "contract_section_ref": "N/A — extracted document contains only DocuSign envelope metadata and Electronic Record and Signature Disclosure (pp. 1–20)",
+      "has_insurance_provisions": false,
+      "by_coverage": null,
+      "designated_entity_noc": null,
+      "carrier_rating_minimum": null,
+      "claims_made_requirements": null,
+      "indemnification": null,
+      "requirements": [],
+      "notes": "The provided PDF text contains no substantive contract body. Pages 1–13 show only the DocuSign Envelope ID header with no extractable body text (likely image-based or scanned content not OCR'd in the extraction). Pages 14–20 contain only DocuSign Certificate of Completion metadata (signer events, timestamps, IP addresses) and the Electronic Record and Signature Disclosure (ERSD) boilerplate. No insurance schedule, indemnification clause, additional insured language, waiver of subrogation, limits, certificate requirements, or any risk-transfer provisions are present in the extracted text. The contract subject line indicates 'DC - PCS - Runbeck Election Services' (Douglas County Professional Contract Services 2026 Renewal Print & Mail), executed 12/22/2025–12/30/2025 by Douglas County, CO signers (Paralegal, Chief Deputy, Sr. Asst. County Attorney, Risk Manager, Finance Director, County Manager, Commissioner District II, Clerk to the Board). RECOMMENDATION: Re-extract the PDF using OCR (PyMuPDF + Tesseract or equivalent) to capture the contract body on pages 1–13. The current text-only extraction yielded only DocuSign metadata. Insurance terms cannot be audited until the body of the agreement is recovered."
+    },
+    "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf": {
+      "source_file": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "analysis_date": "2026-04-30",
+      "contract_party": "Sacramento County (California)",
+      "contract_section_ref": "Appendix G, Sections I–X (pp 1–4)",
+      "has_insurance_provisions": true,
+      "by_coverage": {
+        "general_liability": {
+          "minimum_per_occurrence": 1000000,
+          "minimum_aggregate_general": 2000000,
+          "minimum_aggregate_products": 2000000,
+          "personal_advertising_injury": 1000000,
+          "fire_damage": 100000,
+          "per_project_aggregate_required_if_construction": true,
+          "umbrella_may_satisfy_minimum": true,
+          "umbrella_satisfaction_note": "Section II.E expressly identifies CGL as a line where Umbrella/Excess Liability may be used to satisfy higher limits, and must follow-form over the underlying. Inline-mention is unambiguous for GL.",
+          "umbrella_interpretation_ambiguous": false,
+          "additional_insured_required": true,
+          "additional_insured_scope": "ongoing + completed operations (premises, ops, products/completed ops, autos)",
+          "primary_noncontributory_required": true,
+          "waiver_of_subrogation_required": false,
+          "form_required": "ISO CG 0001 occurrence form; no additional exclusions/limitations without Risk Manager approval",
+          "section_ref": "§II.A, §III.A, §VII",
+          "exact_quote": "GENERAL LIABILITY: Insurance Services Office's Commercial General Liability occurrence coverage form CG 0001. Including, but not limited to Premises/Operations, Products/Completed Operations, Contractual, and Personal & Advertising Injury, without additional exclusions or limitations, unless approved by the County Risk Manager. ... General Liability shall be on an Occurrence basis (as opposed to Claims Made basis). Minimum limits and structure shall be: Building Trades General Aggregate: $2,000,000; Products Comp/Op Aggregate: $2,000,000; Personal & Adv. Injury: $1,000,000; Each Occurrence: $1,000,000; Fire Damage: $100,000. Contractors and Contractors engaged in other projects of construction shall have their general liability Aggregate Limit of Insurance endorsed to apply separately to each job site or project, as provided for by Insurance Services Office form CG-2503 Amendment-Aggregate Limits of Insurance (Per Project)."
+        },
+        "auto_liability": {
+          "minimum_csl_each_occurrence": 1000000,
+          "personal_lines_alt_limits": "$250,000 per person / $500,000 each accident / $100,000 property damage (only if vehicles individually owned)",
+          "auto_symbol_required": "Symbol 1 (any auto) for corporate/business owned; Symbols 8 & 9 (non-owned/hired) if no owned/leased",
+          "umbrella_may_satisfy_minimum": true,
+          "umbrella_satisfaction_note": "Section II.E expressly identifies Commercial Automobile Liability as a line where Umbrella/Excess may follow-form and satisfy higher limits. Inline-mention is unambiguous for Auto.",
+          "umbrella_interpretation_ambiguous": false,
+          "additional_insured_required": true,
+          "additional_insured_scope": "autos owned, leased, hired or borrowed by the Contractor",
+          "primary_noncontributory_required": true,
+          "waiver_of_subrogation_required": false,
+          "form_required": "ISO CA 0001",
+          "section_ref": "§II.B, §III.B, §VII",
+          "exact_quote": "AUTOMOBILE LIABILITY: Insurance Services Office's Commercial Automobile Liability coverage form CA 0001. 1. Commercial Automobile Liability: auto coverage symbol '1' (any auto) for corporate/business owned vehicles. If there are no owned or leased vehicles, symbols 8 and 9 for non-owned and hired autos shall apply. 2. Personal Lines automobile insurance shall apply if vehicles are individually owned. ... Commercial Automobile Liability for Corporate/business owned vehicles including non-owned and hired, $1,000,000 Combined Single Limit. Personal Lines Automobile Liability for Individually owned vehicles, $250,000 per person, $500,000 each accident, $100,000 property damage."
+        },
+        "workers_comp": {
+          "statutory_required": true,
+          "statutory_jurisdiction": "State of California",
+          "waiver_of_subrogation_required": true,
+          "self_insurance_permitted": true,
+          "section_ref": "§II.C, §III.C, §VIII",
+          "exact_quote": "WORKERS' COMPENSATION: Statutory requirements of the State of California and Employer's Liability Insurance. ... Workers' Compensation Waiver of Subrogation: The workers' compensation policy required hereunder shall be endorsed to state that the workers' compensation carrier waives its right of subrogation against the COUNTY, its officers, directors, officials, employees, agents or volunteers, which might arise by reason of payment under such policy in connection with performance under this Agreement by the CONTRACTOR. Should CONTRACTOR be self-insured for workers' compensation, CONTRACTOR hereby agrees to waive its right of subrogation against COUNTY, its officers, directors, officials, employees, agents or volunteers."
+        },
+        "employers_liability": {
+          "minimum_per_accident": 1000000,
+          "minimum_disease_per_employee": 1000000,
+          "minimum_disease_policy_limit": 1000000,
+          "umbrella_may_satisfy_minimum": true,
+          "umbrella_satisfaction_note": "Section II.E expressly identifies Employers' Liability as a line where Umbrella/Excess may follow-form and satisfy higher limits.",
+          "umbrella_interpretation_ambiguous": false,
+          "section_ref": "§III.D",
+          "exact_quote": "EMPLOYER'S LIABILITY: $1,000,000 per accident for bodily injury or disease."
+        },
+        "professional_liability": {
+          "minimum_per_claim": 1000000,
+          "minimum_aggregate": 1000000,
+          "claims_made_retro_before_contract": true,
+          "extended_reporting_period_minimum_years": 1,
+          "tail_coverage_post_completion_years": 1,
+          "umbrella_may_satisfy_minimum": false,
+          "umbrella_satisfaction_note": "Section II.E EXPLICITLY EXCLUDES Professional Liability from the umbrella follow-form list — '...any other liability coverage (other than Professional Liability)...'. Umbrella may NOT be used to satisfy the Professional Liability minimum.",
+          "umbrella_interpretation_ambiguous": false,
+          "additional_insured_required": false,
+          "section_ref": "§II.D, §III.E, §V",
+          "exact_quote": "PROFESSIONAL LIABILITY or Errors and Omissions Liability insurance appropriate to the CONTRACTOR's profession. ... PROFESSIONAL LIABILITY OR ERRORS AND OMISSIONS LIABILITY: $1,000,000 per claim and aggregate. ... If professional liability coverage is written on a Claims Made form: A. The 'Retro Date' must be shown, and must be on or before the date of the Agreement or the beginning of Agreement performance by CONTRACTOR. B. Insurance must be maintained and evidence of insurance must be provided for at least one (1) year after completion of the Agreement. C. If coverage is cancelled or non-renewed, and not replaced with another claims made policy form with a 'Retro Date' prior to the contract effective date, the CONTRACTOR must purchase 'extended reporting' coverage for a minimum of one (1) year after completion of the Agreement."
+        },
+        "cyber": null,
+        "umbrella": {
+          "minimum_aggregate": null,
+          "follow_form_required": true,
+          "follow_form_scope": "GL, Auto, Employers' Liability, and any other liability coverage EXCEPT Professional Liability",
+          "section_ref": "§II.E",
+          "exact_quote": "UMBRELLA or Excess Liability policies are acceptable where the need for higher liability limits is noted in the Minimum Limits of Insurance and shall provide liability coverages that at least follow form over the underlying insurance requirements where necessary for Commercial General Liability, Commercial Automobile Liability, Employers' Liability, and any other liability coverage (other than Professional Liability) designated under the Minimum Scope of Insurance."
+        },
+        "property": {
+          "coverage_type": "Course of Construction (if maintained)",
+          "loss_payee_required": true,
+          "loss_payee": "County (as loss payee)",
+          "waiver_of_subrogation_required": true,
+          "section_ref": "§IX",
+          "exact_quote": "Course of Construction (COC) Waiver of Subrogation: Any Course of Construction (COC) policies maintained by the CONTRACTOR in performance of the Agreement shall contain the following provisions: 1. The COUNTY shall be named as loss payee. 2. The Insurer shall waive all rights of subrogation against the COUNTY."
+        },
+        "crime": null,
+        "inland_marine": {
+          "waiver_of_subrogation_required": true,
+          "conditional": "If Inland Marine policies are maintained by Contractor in performance of the Agreement",
+          "section_ref": "§IX",
+          "exact_quote": "Inland Marine Waiver of Subrogation: Any Inland Marine insurance policies maintained by the CONTRACTOR in performance of the Agreement shall be endorsed to state that the insurer shall waive all rights of subrogation against the COUNTY."
+        }
+      },
+      "designated_entity_noc": {
+        "required": false,
+        "designated_entity": "County",
+        "notice_period_days": null,
+        "applies_to_lines": [
+          "all"
+        ],
+        "section_ref": "§VI.A.2",
+        "exact_quote": "MAINTENANCE OF INSURANCE COVERAGE: The Contractor shall maintain all insurance coverages and limits in place at all times and provide the County with evidence of each policy's renewal ten (10) days in advance of its anniversary date. Contractor is required by this Agreement to immediately notify County if they receive a communication from their insurance carrier or agent that any required insurance is to be canceled, non-renewed, reduced in scope or limits or otherwise materially changed.",
+        "notes": "Contract does NOT impose a traditional 30-day Designated Entity NOC endorsement. Instead it imposes (a) 10-day advance evidence of renewal and (b) Contractor's contractual duty to immediately notify County of cancellation/non-renewal/material change. This is a contractor-side notification obligation, not a carrier-issued NOC endorsement."
+      },
+      "carrier_rating_minimum": "A-VII (A.M. Best)",
+      "claims_made_requirements": {
+        "retro_must_be_before_contract_effective": true,
+        "extended_reporting_period_minimum_years": 1,
+        "tail_coverage_post_completion_years": 1,
+        "applies_to": "Professional Liability / E&O only",
+        "section_ref": "§V"
+      },
+      "indemnification": {
+        "scope": "Not fully restated in Appendix G; this insurance schedule references 'CONTRACTOR's indemnification' from the underlying Agreement. Civil Code §2782 carve-out is incorporated — Additional Insured coverage shall NOT extend to indemnify the AI for the AI's own active negligence (consistent with California public policy limitation under Civil Code §2782(b)).",
+        "section_ref": "§II.B (preamble), §VII.B",
+        "exact_quote": "Without limiting CONTRACTOR's indemnification, CONTRACTOR shall procure and maintain for the duration of the Agreement, insurance against claims for injuries to persons or damages to property which may arise from or in connection with the performance of the Agreement by the CONTRACTOR, its agents, representatives or employees. ... CIVIL CODE PROVISION: Coverage shall not extend to any indemnity coverage for the active negligence of the additional insured in any case where an agreement to indemnify the additional insured would be invalid under Subdivision (b) of Section 2782 of the Civil Code."
+      },
+      "requirements": [
+        {
+          "id": "req-001",
+          "type": "Minimum Limits — General Liability",
+          "required_policy_types": [
+            "GL"
+          ],
+          "contract_quote": "Building Trades General Aggregate: $2,000,000; Products Comp/Op Aggregate: $2,000,000; Personal & Adv. Injury: $1,000,000; Each Occurrence: $1,000,000; Fire Damage: $100,000.",
+          "page_ref": "§III.A, Page 2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "occurrence-form-only",
+            "ISO-CG-0001-required",
+            "no-additional-exclusions"
+          ],
+          "notes": "Limits are modest by CA county standards ($1M/$2M). Form must be ISO CG 0001 occurrence — claims-made GL is NOT acceptable. No added exclusions/limitations without Risk Manager approval."
+        },
+        {
+          "id": "req-002",
+          "type": "Per-Project Aggregate",
+          "required_policy_types": [
+            "GL"
+          ],
+          "contract_quote": "Contractors and Contractors engaged in other projects of construction shall have their general liability Aggregate Limit of Insurance endorsed to apply separately to each job site or project, as provided for by Insurance Services Office form CG-2503 Amendment-Aggregate Limits of Insurance (Per Project).",
+          "page_ref": "§III.A, Page 2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "per-project-aggregate",
+            "construction-only"
+          ],
+          "notes": "Only applies if Contractor is engaged in construction projects. Run-Test (election services manufacturer) likely not implicated unless doing physical construction work. Confirm scope of work."
+        },
+        {
+          "id": "req-003",
+          "type": "Minimum Limits — Auto Liability",
+          "required_policy_types": [
+            "Auto"
+          ],
+          "contract_quote": "Commercial Automobile Liability for Corporate/business owned vehicles including non-owned and hired, $1,000,000 Combined Single Limit.",
+          "page_ref": "§III.B, Page 2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "combined-single-limit",
+            "any-auto-or-hired-nonowned"
+          ],
+          "notes": "Auto symbol 1 if owned vehicles; symbols 8 & 9 if no owned/leased. Personal lines acceptable only if individually owned vehicles ($250k/$500k/$100k)."
+        },
+        {
+          "id": "req-004",
+          "type": "Minimum Limits — Workers' Comp / Employers' Liability",
+          "required_policy_types": [
+            "WC"
+          ],
+          "contract_quote": "WORKERS' COMPENSATION: Statutory requirements of the State of California and Employer's Liability Insurance. ... EMPLOYER'S LIABILITY: $1,000,000 per accident for bodily injury or disease.",
+          "page_ref": "§II.C, §III.C–D, Page 1–2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "california-statutory",
+            "EL-$1M-uniform"
+          ],
+          "notes": "California statutory WC required. Run-Test is AZ-based — verify Other States Coverage includes California, OR a CA WC policy is in force, before performing work in CA."
+        },
+        {
+          "id": "req-005",
+          "type": "Minimum Limits — Professional Liability",
+          "required_policy_types": [
+            "Professional"
+          ],
+          "contract_quote": "PROFESSIONAL LIABILITY OR ERRORS AND OMISSIONS LIABILITY: $1,000,000 per claim and aggregate.",
+          "page_ref": "§II.D, §III.E, Page 1–2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "umbrella-cannot-satisfy-PL",
+            "appropriate-to-profession"
+          ],
+          "notes": "Umbrella expressly cannot be used to satisfy this minimum (Section II.E). Underlying E&O must independently meet $1M/$1M. Election services / ballot processing — confirm definition of 'Professional Services' on E&O form actually covers election operations."
+        },
+        {
+          "id": "req-006",
+          "type": "Claims-Made Requirements (Retro/ERP)",
+          "required_policy_types": [
+            "Professional"
+          ],
+          "contract_quote": "If professional liability coverage is written on a Claims Made form: A. The 'Retro Date' must be shown, and must be on or before the date of the Agreement or the beginning of Agreement performance by CONTRACTOR. B. Insurance must be maintained and evidence of insurance must be provided for at least one (1) year after completion of the Agreement. C. If coverage is cancelled or non-renewed, and not replaced with another claims made policy form with a 'Retro Date' prior to the contract effective date, the CONTRACTOR must purchase 'extended reporting' coverage for a minimum of one (1) year after completion of the Agreement.",
+          "page_ref": "§V.A–C, Page 2–3 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "retro-date-on-or-before-contract",
+            "ERP-1-year",
+            "tail-1-year"
+          ],
+          "notes": "Retro must be on/before contract effective date. ERP/tail of at least 1 year post-completion required if claims-made is cancelled/non-renewed and not replaced with continuous-retro policy."
+        },
+        {
+          "id": "req-007",
+          "type": "Umbrella / Excess Acceptability",
+          "required_policy_types": [
+            "Umbrella"
+          ],
+          "contract_quote": "UMBRELLA or Excess Liability policies are acceptable where the need for higher liability limits is noted in the Minimum Limits of Insurance and shall provide liability coverages that at least follow form over the underlying insurance requirements where necessary for Commercial General Liability, Commercial Automobile Liability, Employers' Liability, and any other liability coverage (other than Professional Liability) designated under the Minimum Scope of Insurance.",
+          "page_ref": "§II.E, Page 2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "follow-form-required",
+            "PL-EXCLUDED-from-umbrella-stacking"
+          ],
+          "notes": "Umbrella may stack on GL, Auto, EL — but CANNOT satisfy Professional Liability minimum. Must be follow-form."
+        },
+        {
+          "id": "req-008",
+          "type": "Additional Insured",
+          "required_policy_types": [
+            "GL",
+            "Auto"
+          ],
+          "contract_quote": "ADDITIONAL INSURED STATUS: The COUNTY, its officers, directors, officials, employees, and volunteers are to be endorsed as additional insureds as respects: liability arising out of activities performed by or on behalf of the CONTRACTOR; products and completed operations of the CONTRACTOR; premises owned, occupied or used by the CONTRACTOR; or automobiles owned, leased, hired or borrowed by the CONTRACTOR. The coverage shall contain no endorsed limitations on the scope of protection afforded to the COUNTY, its officers, directors, officials, employees, or volunteers.",
+          "page_ref": "§VII.A, Page 3 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "arising-out-of",
+            "ongoing-AND-completed-operations",
+            "no-AI-endorsement-limitations",
+            "broad-AI-class"
+          ],
+          "notes": "Broad AI list (officers, directors, officials, employees, volunteers). 'Arising out of' triggers broad AI scope. Both ongoing AND completed operations required. No endorsed limitations permitted on AI scope — verify CG 20 10 + CG 20 37 (or equivalent broader-than-current-edition) is in place."
+        },
+        {
+          "id": "req-009",
+          "type": "Primary & Noncontributory",
+          "required_policy_types": [
+            "GL",
+            "Auto"
+          ],
+          "contract_quote": "PRIMARY INSURANCE: For any claims related to this Agreement, the CONTRACTOR's insurance coverage shall be endorsed to be primary insurance as respects the COUNTY, its officers, officials, employees and volunteers. Any insurance or self-insurance maintained by the COUNTY, its officers, directors, officials, employees, or volunteers shall be excess of the CONTRACTOR's insurance and shall not contribute with it.",
+          "page_ref": "§VII.C, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "primary",
+            "noncontributory",
+            "endorsement-required"
+          ],
+          "notes": "Both prongs (primary + noncontributory) required. Must be endorsed — not just stated on COI. Verify CG 20 01 (or equivalent) is on the policy."
+        },
+        {
+          "id": "req-010",
+          "type": "Severability of Interest",
+          "required_policy_types": [
+            "GL",
+            "Auto"
+          ],
+          "contract_quote": "SEVERABILITY OF INTEREST: The CONTRACTOR's insurance shall apply separately to each insured against whom claim is made or suit is brought, except with respect to the limits of the insurer's liability.",
+          "page_ref": "§VII.D, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "separation-of-insureds"
+          ],
+          "notes": "Standard ISO CG 0001 includes Separation of Insureds — typically already satisfied by form."
+        },
+        {
+          "id": "req-011",
+          "type": "Civil Code §2782 Carve-Out",
+          "required_policy_types": [
+            "GL",
+            "Auto"
+          ],
+          "contract_quote": "CIVIL CODE PROVISION: Coverage shall not extend to any indemnity coverage for the active negligence of the additional insured in any case where an agreement to indemnify the additional insured would be invalid under Subdivision (b) of Section 2782 of the Civil Code.",
+          "page_ref": "§VII.B, Page 3 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "california-statutory-carveout",
+            "active-negligence-exclusion"
+          ],
+          "notes": "California public policy limit — AI coverage carved back to exclude indemnifying County for County's own active negligence (consistent with Cal. Civ. Code §2782(b)). Does NOT need a special endorsement; this is a contract-level acknowledgement."
+        },
+        {
+          "id": "req-012",
+          "type": "Subcontractor Pass-Through",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC"
+          ],
+          "contract_quote": "SUBCONTRACTORS: CONTRACTOR shall be responsible for the acts and omissions of all its subcontractors and additional insured endorsements as provided by CONTRACTORs subcontractor.",
+          "page_ref": "§VII.E, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "subcontractor-AI-flow-down"
+          ],
+          "notes": "Contractor is responsible for sub acts/omissions and for ensuring subs provide AI endorsements. Implied flow-down — Contractor must include matching insurance reqs in sub agreements."
+        },
+        {
+          "id": "req-013",
+          "type": "Waiver of Subrogation — Workers' Comp",
+          "required_policy_types": [
+            "WC"
+          ],
+          "contract_quote": "Workers' Compensation Waiver of Subrogation: The workers' compensation policy required hereunder shall be endorsed to state that the workers' compensation carrier waives its right of subrogation against the COUNTY, its officers, directors, officials, employees, agents or volunteers, which might arise by reason of payment under such policy in connection with performance under this Agreement by the CONTRACTOR. Should CONTRACTOR be self-insured for workers' compensation, CONTRACTOR hereby agrees to waive its right of subrogation against COUNTY, its officers, directors, officials, employees, agents or volunteers.",
+          "page_ref": "§VIII, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "waiver-of-subrogation-WC",
+            "endorsement-required"
+          ],
+          "notes": "WC waiver must be endorsed. California requires WC 04 03 06 (Waiver of Our Right to Recover from Others) — separate premium charge typical. Self-insured fallback included."
+        },
+        {
+          "id": "req-014",
+          "type": "Property — COC Loss Payee & Waiver of Subrogation",
+          "required_policy_types": [
+            "Property"
+          ],
+          "contract_quote": "Course of Construction (COC) Waiver of Subrogation: Any Course of Construction (COC) policies maintained by the CONTRACTOR in performance of the Agreement shall contain the following provisions: 1. The COUNTY shall be named as loss payee. 2. The Insurer shall waive all rights of subrogation against the COUNTY.",
+          "page_ref": "§IX, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "loss-payee",
+            "waiver-of-subrogation-property"
+          ],
+          "notes": "Conditional — only triggers if Contractor maintains a COC/Builders Risk policy. Run-Test (election services) unlikely to maintain COC unless physical construction is involved."
+        },
+        {
+          "id": "req-015",
+          "type": "Inland Marine Waiver of Subrogation",
+          "required_policy_types": [
+            "Inland Marine"
+          ],
+          "contract_quote": "Inland Marine Waiver of Subrogation: Any Inland Marine insurance policies maintained by the CONTRACTOR in performance of the Agreement shall be endorsed to state that the insurer shall waive all rights of subrogation against the COUNTY.",
+          "page_ref": "§IX, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "waiver-of-subrogation-IM"
+          ],
+          "notes": "Conditional — only triggers if Contractor maintains Inland Marine. RELEVANT to Run-Test if mobile/transit equipment, computers, or election technology is covered under Inland Marine. Verify whether IM is in program and whether WoS endorsement is in place."
+        },
+        {
+          "id": "req-016",
+          "type": "Carrier Rating Minimum",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Professional",
+            "Umbrella",
+            "All"
+          ],
+          "contract_quote": "ACCEPTABILITY OF INSURERS: Insurance is to be placed with insurers with a current A.M. Best's rating of no less than A-VII. The County Risk Manager may waive or alter this requirement, or accept self-insurance in lieu of any required policy of insurance if, in the opinion of the Risk Manager, the interests of the COUNTY and the general public are adequately protected.",
+          "page_ref": "§VI.A.1, Page 3 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "A-VII-minimum-AM-Best"
+          ],
+          "notes": "A-VII is the standard CA county threshold (A- financial strength, VII size category = $25M–$50M policyholder surplus). Verify ALL carriers in the program meet this — especially any E&S placements."
+        },
+        {
+          "id": "req-017",
+          "type": "Cancellation / Material Change Notice",
+          "required_policy_types": [
+            "All"
+          ],
+          "contract_quote": "MAINTENANCE OF INSURANCE COVERAGE: The Contractor shall maintain all insurance coverages and limits in place at all times and provide the County with evidence of each policy's renewal ten (10) days in advance of its anniversary date. Contractor is required by this Agreement to immediately notify County if they receive a communication from their insurance carrier or agent that any required insurance is to be canceled, non-renewed, reduced in scope or limits or otherwise materially changed. Contractor shall provide evidence that such cancelled or non-renewed or otherwise materially changed insurance has been replaced or its cancellation notice withdrawn without any interruption in coverage, scope or limits. Failure to maintain required insurance in force shall be considered a material breach of the Agreement.",
+          "page_ref": "§VI.A.2, Page 3 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "10-day-renewal-evidence",
+            "immediate-cancellation-notice",
+            "material-breach-trigger"
+          ],
+          "notes": "Notification obligation is on the CONTRACTOR, not the carrier. No traditional 30-day Designated Entity NOC endorsement is required. Failure to maintain = material breach."
+        },
+        {
+          "id": "req-018",
+          "type": "Deductibles / Self-Insured Retention Disclosure",
+          "required_policy_types": [
+            "All"
+          ],
+          "contract_quote": "Any deductibles or self-insured retention that apply to any insurance required by this Agreement must be declared and approved by the COUNTY.",
+          "page_ref": "§IV, Page 2 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "SIR-disclosure",
+            "County-approval-required"
+          ],
+          "notes": "Any SIRs or deductibles must be declared and approved BEFORE performance. Important for cyber, professional, and umbrella SIRs."
+        },
+        {
+          "id": "req-019",
+          "type": "Verification of Coverage / COI & Endorsements",
+          "required_policy_types": [
+            "All"
+          ],
+          "contract_quote": "CONTRACTOR shall furnish the COUNTY with certificates evidencing coverage required below. Copies of required endorsements must be attached to provided certificates. ... All certificates, evidences of self-insurance, and additional insured endorsements are to be received and approved by the County before performance commences.",
+          "page_ref": "§I, Page 1 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "endorsement-copies-required-with-COI",
+            "pre-performance-approval"
+          ],
+          "notes": "Actual endorsement COPIES (not just COI references) must be attached. County must approve before performance commences. County also reserves right to require certified copies of policies."
+        },
+        {
+          "id": "req-020",
+          "type": "Notification of Claim / Lawsuit",
+          "required_policy_types": [
+            "All"
+          ],
+          "contract_quote": "If any claim for damages is filed with CONTRACTOR or if any lawsuit is instituted against CONTRACTOR, that arise out of or are in any way connected with CONTRACTOR's performance under this Agreement and that in any way, directly or indirectly, contingently or otherwise, affect or might reasonably affect COUNTY, CONTRACTOR shall give prompt and timely notice thereof to COUNTY. Notice shall be prompt and timely if given within thirty (30) days following the date of receipt of a claim or ten (10) days following the date of service of process of a lawsuit.",
+          "page_ref": "§X, Page 4 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "30-day-claim-notice",
+            "10-day-lawsuit-notice"
+          ],
+          "notes": "Contractor's contractual notice duty to County: 30 days from claim receipt; 10 days from service of process. Independent of carrier notice obligations."
+        },
+        {
+          "id": "req-021",
+          "type": "Right to Adjust Coverage",
+          "required_policy_types": [
+            "All"
+          ],
+          "contract_quote": "COUNTY shall retain the right at any time to review the coverage, form, and amount of the insurance required hereby. If in the opinion of the County Risk Manager, insurance provisions in these requirements do not provide adequate protection for COUNTY and for members of the public, COUNTY may require CONTRACTOR to obtain insurance sufficient in coverage, form and amount to provide adequate protection.",
+          "page_ref": "§II.B (preamble), Page 1 of 4",
+          "required_by_party": "Sacramento County (California)",
+          "risk_flags": [
+            "unilateral-coverage-modification-right"
+          ],
+          "notes": "County reserves right to require ADDITIONAL coverage mid-term if Risk Manager deems current insurance inadequate. Open-ended risk — limits and lines could grow."
+        }
+      ]
+    },
+    "Redactedscrubbed - Maricopa Contract.pdf": {
+      "source_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "analysis_date": "2026-04-30",
+      "contract_party": "Maricopa County",
+      "contract_section_ref": "§8.1–8.2 (pp 4–7)",
+      "has_insurance_provisions": true,
+      "by_coverage": {
+        "general_liability": {
+          "minimum_per_occurrence": 2000000,
+          "minimum_aggregate_general": 4000000,
+          "minimum_aggregate_products": 4000000,
+          "umbrella_may_satisfy_minimum": true,
+          "umbrella_satisfaction_note": "§8.2.10 CGL clause explicitly inline-mentions Commercial Umbrella attachment ('Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence...'). Unambiguous — umbrella DOES satisfy this line's minimum.",
+          "umbrella_interpretation_ambiguous": false,
+          "additional_insured_required": true,
+          "additional_insured_scope": "unspecified (blanket — names County, its agents, representatives, officers, directors, officials, and employees as additional insureds; no ongoing-vs-completed scope distinction stated)",
+          "primary_noncontributory_required": true,
+          "waiver_of_subrogation_required": true,
+          "section_ref": "§8.2.10 (p 6); AI §8.2.7; WOS §8.2.8; P&NC §8.2.4",
+          "exact_quote": "Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence, $4,000,000 Products/Completed Operations Aggregate, and $4,000,000 General Aggregate Limit. The policy shall include coverage for premises liability, bodily injury, broad form property damage, personal injury, products and completed operations and blanket contractual coverage, and shall not contain any provisions which would serve to limit third party action over claims. There shall be no endorsement or modifications of the CGL limiting the scope of coverage for liability arising from explosion, collapse, or underground property damage."
+        },
+        "auto_liability": {
+          "minimum_csl_each_occurrence": 2000000,
+          "umbrella_may_satisfy_minimum": false,
+          "umbrella_satisfaction_note": "Contract has program-level umbrella permission §8.2.9 ('the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements') but §8.2.11 Auto clause does not inline-mention umbrella. Strict reading: umbrella does NOT satisfy this line's minimum (specific governs general). Permissive reading: program-level §8.2.9 cross-applies and umbrella DOES satisfy. Human review required to choose which interpretation governs.",
+          "umbrella_interpretation_ambiguous": true,
+          "additional_insured_required": true,
+          "primary_noncontributory_required": true,
+          "waiver_of_subrogation_required": true,
+          "section_ref": "§8.2.11 (p 6); AI §8.2.7; WOS §8.2.8; P&NC §8.2.4",
+          "exact_quote": "Commercial/Business Automobile Liability insurance with a combined single limit for bodily injury and property damage of not less than $2,000,000 each occurrence with respect to any of the Contractor's owned, hired, and non-owned vehicles assigned to or used in performance of the Contractor's work or services or use or maintenance of the premises under this contract."
+        },
+        "workers_comp": {
+          "statutory_required": true,
+          "waiver_of_subrogation_required": true,
+          "section_ref": "§8.2.12 (p 6)",
+          "exact_quote": "Workers' compensation insurance to cover obligations imposed by Federal and State statutes having jurisdiction of Contractor's employees engaged in the performance of the work or services under this contract... Contractor, its subcontractors, and sub-subcontractors waive all rights against this contract and its agents, officers, directors, and employees for recovery of damages to the extent these damages are covered by the workers' compensation and Employer's Liability or Commercial Umbrella Liability insurance obtained by Contractor, its subcontractors, and its sub-subcontractors pursuant to this contract."
+        },
+        "employers_liability": {
+          "minimum_per_accident": 1000000,
+          "minimum_disease_per_employee": 1000000,
+          "minimum_disease_policy_limit": 1000000,
+          "section_ref": "§8.2.12 (p 6)",
+          "exact_quote": "Employer's Liability insurance of not less than $1,000,000 for each accident, $1,000,000 disease for each employee, and $1,000,000 disease policy limit."
+        },
+        "professional_liability": {
+          "minimum_per_claim": null,
+          "minimum_aggregate": null,
+          "claims_made_retro_before_contract": null,
+          "extended_reporting_period_minimum_years": null,
+          "additional_insured_required": null,
+          "section_ref": null,
+          "exact_quote": null
+        },
+        "cyber": {
+          "minimum_per_occurrence": 5000000,
+          "umbrella_may_satisfy_minimum": false,
+          "umbrella_satisfaction_note": "Contract has program-level umbrella permission §8.2.9 but §8.2.13 Cyber clause does not inline-mention umbrella. Strict reading: umbrella does NOT satisfy this line's minimum. Permissive reading: umbrella DOES satisfy. Human review required.",
+          "umbrella_interpretation_ambiguous": true,
+          "scope_required": [
+            "data breach / unauthorized access / ID theft of data",
+            "invasion of privacy (any media)",
+            "crisis management",
+            "identity theft response costs",
+            "breach notification costs",
+            "credit remediation and credit monitoring",
+            "defense and claims expenses",
+            "regulatory defense costs plus fines and penalties",
+            "cyber extortion",
+            "electronic data restoration expenses (data asset protection)",
+            "network business interruption",
+            "computer fraud coverage",
+            "funds transfer loss",
+            "third-party fidelity",
+            "theft (no requirement for arrest and conviction)",
+            "loss outside the premises of the named insured",
+            "coverage for directors, officers, agents and employees of the Contractor"
+          ],
+          "additional_insured_required": true,
+          "primary_noncontributory_required": true,
+          "section_ref": "§8.2.13 (p 6); AI §8.2.7; P&NC §8.2.4",
+          "exact_quote": "Cyber, Network Security and Privacy Liability Insurance with a limit of not less than $5,000,000 per occurrence. The policy shall include, but not be limited to; coverage for all directors, officers, agents and employees of the Contractor, losses with respect to network risks (such as data breaches, unauthorized access or use, and ID theft of data), invasion of privacy (regardless of the type of media involved in the loss of private information), crisis management, identity theft response costs, breach notification costs, credit remediation, and credit monitoring, defense, and claims expenses, regulatory defense costs plus fines and penalties, cyber extortion, electronic data restoration expenses (data asset protection), network business interruption, computer fraud coverage, funds transfer loss, third-party fidelity, theft, no requirement for arrest and conviction, and loss outside the premises of the named insured."
+        },
+        "umbrella": {
+          "minimum_aggregate": null,
+          "follow_form_required": null,
+          "section_ref": "§8.2.9 (p 6)",
+          "exact_quote": "If available, the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements. If a Commercial Umbrella insurance policy is utilized to meet insurance requirements, the Certificate of Insurance shall indicate which lines the Commercial Umbrella Insurance covers."
+        },
+        "property": null,
+        "crime": null,
+        "inland_marine": null
+      },
+      "designated_entity_noc": {
+        "required": true,
+        "designated_entity": "Maricopa County",
+        "notice_period_days": 30,
+        "applies_to_lines": [
+          "all"
+        ],
+        "section_ref": "§8.2.15 (p 7)",
+        "exact_quote": "Applicable to all insurance policies required within the insurance requirements of this contract, Contractor's insurance shall not be permitted to expire, be suspended, be canceled, or be materially changed for any reason without 30 days prior written notice to Maricopa County. Contractor must provide to Maricopa County, within two business days of receipt, if they receive notice of a policy that has been or will be suspended, canceled, materially changed for any reason, has expired, or will be expiring."
+      },
+      "carrier_rating_minimum": "B++",
+      "claims_made_requirements": {
+        "retro_must_be_before_contract_effective": true,
+        "extended_reporting_period_minimum_years": 2,
+        "section_ref": "§8.2.3 (p 5); §8.2.14.2 (p 7)"
+      },
+      "indemnification": {
+        "scope": "to extent caused by contractor negligence (subject to Arizona comparative negligence laws); sole-negligence carve-out for County",
+        "section_ref": "§8.1 (pp 4–5)",
+        "exact_quote": "To the fullest extent permitted by law, and to the extent that claims, damages, losses, or expenses are not covered and paid by insurance purchased by the contractor, the contractor shall defend, indemnify, and hold harmless the County (as Owner), its agents, representatives, officers, directors, officials, and employees from and against all claims, damages, losses, and expenses (including, but not limited to reasonable attorneys' fees, court costs, expert witness fees, and the costs and reasonable attorneys' fees for appellate proceedings) arising out of, or alleged to have resulted from, the negligent acts, errors, omissions, or mistakes relating to the performance of this contract, subject to Arizona's comparative negligence laws... but only to the extent caused by the negligent acts or omissions of the contractor, a subcontractor, anyone directly or indirectly employed by them, or anyone for whose acts they may be liable, regardless of whether or not such claim, damage, loss, or expense is caused in part by a party indemnified hereunder... The scope of this indemnification does not extend to the sole negligence of County."
+      },
+      "requirements": [
+        {
+          "id": "req-001",
+          "type": "Indemnification / Hold Harmless / Defense",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "To the fullest extent permitted by law, and to the extent that claims, damages, losses, or expenses are not covered and paid by insurance purchased by the contractor, the contractor shall defend, indemnify, and hold harmless the County (as Owner), its agents, representatives, officers, directors, officials, and employees... but only to the extent caused by the negligent acts or omissions of the contractor, a subcontractor, anyone directly or indirectly employed by them, or anyone for whose acts they may be liable... The scope of this indemnification does not extend to the sole negligence of County.",
+          "page_ref": "§8.1.1–8.1.4, Pages 4–5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "arising-out-of",
+            "duty-to-defend",
+            "comparative-negligence",
+            "sole-negligence-carveout-for-County"
+          ],
+          "notes": "Limited to the extent of contractor negligence; Arizona comparative negligence applies. Carve-out is only for County's SOLE negligence — contractor still bears defense/indemnity for any contractor fault even if County is partially negligent."
+        },
+        {
+          "id": "req-002",
+          "type": "Carrier Rating Minimum",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "Contractor, at Contractor's own expense, shall purchase and maintain, at a minimum, the herein stipulated insurance from a company or companies duly licensed by the State of Arizona and possessing an AM Best, Inc. category rating of B++.",
+          "page_ref": "§8.2.1, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [],
+          "notes": "B++ is a relatively low threshold (most preferred carriers are A- or better). Non-admitted carriers acceptable if approved by County."
+        },
+        {
+          "id": "req-003",
+          "type": "Claims-Made Requirements (Retro Date + ERP)",
+          "required_policy_types": [
+            "Cyber",
+            "Professional Liability (if applicable)"
+          ],
+          "contract_quote": "In the event that the insurance required is written on a claims-made basis, Contractor warrants that any retroactive date under the policy shall precede the effective date of this contract and either continuous coverage will be maintained, or an extended discovery period will be exercised for a period of two years beginning at the time work under this contract is completed.",
+          "page_ref": "§8.2.3, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "retro-date",
+            "ERP-2-years"
+          ],
+          "notes": "Cyber is the most likely claims-made policy here. Retro must precede 11/01/21 contract effective date."
+        },
+        {
+          "id": "req-004",
+          "type": "Primary & Noncontributory",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "Contractor's insurance shall be primary insurance as respects County, and any insurance or self-insurance maintained by County shall not contribute to it.",
+          "page_ref": "§8.2.4, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "primary-noncontributory"
+          ],
+          "notes": "Program-level — applies to all required policies."
+        },
+        {
+          "id": "req-005",
+          "type": "Deductible/SIR Allocation",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "The insurance policies may provide coverage that contains deductibles or self-insured retentions. Such deductible and/or self-insured retentions shall not be applicable with respect to the coverage provided to County under such policies. Contractor shall be solely responsible for the deductible and/or self-insured retention and County, at its option, may require Contractor to secure payment of such deductibles or self-insured retentions by a surety bond or an irrevocable and unconditional letter of credit.",
+          "page_ref": "§8.2.6, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "deductible-waived-vs-County",
+            "potential-bond/LOC-requirement"
+          ],
+          "notes": "County reserves the right to require bond or LOC backing for deductibles/SIRs — this could be a meaningful collateral demand."
+        },
+        {
+          "id": "req-006",
+          "type": "Additional Insured",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "The insurance policies required by this contract, except Workers' Compensation and Errors and Omissions, shall name County, its agents, representatives, officers, directors, officials, and employees as additional insureds.",
+          "page_ref": "§8.2.7, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "additional-insured",
+            "broad-AI-scope"
+          ],
+          "notes": "AI scope (ongoing vs completed operations) not specified in contract. WC and E&O expressly excluded from AI requirement."
+        },
+        {
+          "id": "req-007",
+          "type": "Waiver of Subrogation",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "Cyber",
+            "Umbrella",
+            "WC"
+          ],
+          "contract_quote": "The policies required hereunder, except Workers' Compensation and Errors and Omissions, shall contain a waiver of transfer of rights of recovery (subrogation) against County, its agents, representatives, officers, directors, officials, and employees for any claims arising out of Contractor's work or service.",
+          "page_ref": "§8.2.8, Page 6 of 41 (also §8.2.12 for WC waiver)",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "waiver-of-subrogation"
+          ],
+          "notes": "§8.2.8 excludes WC from the general WOS clause, but §8.2.12 separately requires WC waiver of subrogation. Net result: WOS required on all lines including WC. E&O is the only policy where WOS is not required."
+        },
+        {
+          "id": "req-008",
+          "type": "Umbrella Permission (Program-Level)",
+          "required_policy_types": [
+            "Umbrella"
+          ],
+          "contract_quote": "If available, the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements. If a Commercial Umbrella insurance policy is utilized to meet insurance requirements, the Certificate of Insurance shall indicate which lines the Commercial Umbrella Insurance covers.",
+          "page_ref": "§8.2.9, Page 6 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "umbrella-attachment-program-level"
+          ],
+          "notes": "Program-level umbrella permission. Creates ambiguity for Auto §8.2.11 and Cyber §8.2.13 which do not inline-mention umbrella; CGL §8.2.10 explicitly does inline-mention. COI must indicate which lines umbrella covers."
+        },
+        {
+          "id": "req-009",
+          "type": "Minimum Limits — Commercial General Liability",
+          "required_policy_types": [
+            "GL"
+          ],
+          "contract_quote": "Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence, $4,000,000 Products/Completed Operations Aggregate, and $4,000,000 General Aggregate Limit. The policy shall include coverage for premises liability, bodily injury, broad form property damage, personal injury, products and completed operations and blanket contractual coverage, and shall not contain any provisions which would serve to limit third party action over claims. There shall be no endorsement or modifications of the CGL limiting the scope of coverage for liability arising from explosion, collapse, or underground property damage.",
+          "page_ref": "§8.2.10, Page 6 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "XCU-no-exclusion",
+            "blanket-contractual",
+            "no-third-party-action-over-limit",
+            "completed-operations"
+          ],
+          "notes": "$2M/$4M/$4M with explicit umbrella stacking permitted. Blanket contractual required. Cannot exclude XCU (explosion/collapse/underground). Cannot limit action-over claims."
+        },
+        {
+          "id": "req-010",
+          "type": "Minimum Limits — Commercial Auto",
+          "required_policy_types": [
+            "Auto"
+          ],
+          "contract_quote": "Commercial/Business Automobile Liability insurance with a combined single limit for bodily injury and property damage of not less than $2,000,000 each occurrence with respect to any of the Contractor's owned, hired, and non-owned vehicles assigned to or used in performance of the Contractor's work or services or use or maintenance of the premises under this contract.",
+          "page_ref": "§8.2.11, Page 6 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "any-auto",
+            "hired-non-owned",
+            "umbrella-ambiguous"
+          ],
+          "notes": "$2M CSL covering owned, hired, and non-owned. Clause does NOT inline-mention umbrella attachment — ambiguous against program-level §8.2.9."
+        },
+        {
+          "id": "req-011",
+          "type": "Minimum Limits — Workers' Comp & Employers' Liability",
+          "required_policy_types": [
+            "WC"
+          ],
+          "contract_quote": "Workers' compensation insurance to cover obligations imposed by Federal and State statutes having jurisdiction of Contractor's employees engaged in the performance of the work or services under this contract; and Employer's Liability insurance of not less than $1,000,000 for each accident, $1,000,000 disease for each employee, and $1,000,000 disease policy limit. Contractor, its subcontractors, and sub-subcontractors waive all rights against this contract and its agents, officers, directors, and employees for recovery of damages to the extent these damages are covered by the workers' compensation and Employer's Liability or Commercial Umbrella Liability insurance obtained by Contractor, its subcontractors, and its sub-subcontractors pursuant to this contract.",
+          "page_ref": "§8.2.12, Page 6 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "statutory-WC",
+            "EL-1M/1M/1M",
+            "WC-waiver-of-subrogation"
+          ],
+          "notes": "Statutory WC + EL $1M/$1M/$1M. Waiver flows down to subcontractors and sub-subs. Waiver expressly extends to Commercial Umbrella for WC/EL claims."
+        },
+        {
+          "id": "req-012",
+          "type": "Minimum Limits — Cyber, Network Security, and Privacy Liability",
+          "required_policy_types": [
+            "Cyber"
+          ],
+          "contract_quote": "Cyber, Network Security and Privacy Liability Insurance with a limit of not less than $5,000,000 per occurrence. The policy shall include, but not be limited to; coverage for all directors, officers, agents and employees of the Contractor, losses with respect to network risks (such as data breaches, unauthorized access or use, and ID theft of data), invasion of privacy (regardless of the type of media involved in the loss of private information), crisis management, identity theft response costs, breach notification costs, credit remediation, and credit monitoring, defense, and claims expenses, regulatory defense costs plus fines and penalties, cyber extortion, electronic data restoration expenses (data asset protection), network business interruption, computer fraud coverage, funds transfer loss, third-party fidelity, theft, no requirement for arrest and conviction, and loss outside the premises of the named insured.",
+          "page_ref": "§8.2.13, Page 6 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "cyber-5M",
+            "regulatory-defense-fines-penalties",
+            "cyber-extortion",
+            "business-interruption",
+            "funds-transfer",
+            "third-party-fidelity",
+            "social-engineering-implied",
+            "no-arrest-conviction-requirement"
+          ],
+          "notes": "Very broad cyber spec. $5M is high for a $5M-$25M revenue contractor. Mandatory components include third-party fidelity (typically a Crime/SE coverage) and computer fraud / funds transfer — standard cyber forms may sublimit these. Verify each enumerated item exists with adequate sublimits. Also requires regulatory FINES AND PENALTIES coverage (not just defense) — many forms exclude or sublimit fines."
+        },
+        {
+          "id": "req-013",
+          "type": "Certificates of Insurance",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "Prior to contract award, Contractor shall furnish the County with valid and complete Certificates of Insurance, or formal endorsements as required by the contract in the form provided by the County, issued by Contractor's insurer(s)... Certificates of Insurance shall identify Maricopa County as the certificate holder as follows: Maricopa County, c/o Risk Management, 301 W Jefferson St, Suite 910, Phoenix, AZ 85003. If a policy does expire during the life of the Contract, a renewal certificate must be sent to County 15 calendar days prior to the expiration date.",
+          "page_ref": "§8.2.14.1–8.2.14.4, Page 7 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "COI-pre-award",
+            "renewal-COI-15-days"
+          ],
+          "notes": "COI must reference contract number and title. Claims-made policies must show evidence for two years past completion (annual COIs)."
+        },
+        {
+          "id": "req-014",
+          "type": "Designated Entity NOC / Cancellation Notice",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "Applicable to all insurance policies required within the insurance requirements of this contract, Contractor's insurance shall not be permitted to expire, be suspended, be canceled, or be materially changed for any reason without 30 days prior written notice to Maricopa County. Contractor must provide to Maricopa County, within two business days of receipt, if they receive notice of a policy that has been or will be suspended, canceled, materially changed for any reason, has expired, or will be expiring.",
+          "page_ref": "§8.2.15, Page 7 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "30-day-notice",
+            "material-change-notice",
+            "2-business-day-relay"
+          ],
+          "notes": "30-day notice applies to ALL required policies. Notice obligation includes 'material change' (broader than standard ACORD cancellation language) and 2-business-day pass-through if Contractor receives notice from carrier. Likely requires CG 20 12 / Designated Entity NOC endorsement, NOT the standard ACORD COI cancellation disclaimer."
+        },
+        {
+          "id": "req-015",
+          "type": "Insurance Survival / Maintenance",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "All insurance required herein shall be maintained in full force and effect until all work or service required to be performed under the terms of the contract is satisfactorily completed and formally accepted. Failure to do so may, at the sole discretion of County, constitute a material breach of this contract.",
+          "page_ref": "§8.2.2, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "material-breach"
+          ],
+          "notes": "Lapse in coverage = material breach of contract."
+        },
+        {
+          "id": "req-016",
+          "type": "Indemnity Not Limited by Insurance Limits",
+          "required_policy_types": [
+            "GL",
+            "Auto",
+            "WC",
+            "Cyber",
+            "Umbrella"
+          ],
+          "contract_quote": "The amount and type of insurance coverage requirements set forth herein will in no way be construed as limiting the scope of the indemnity in this section.",
+          "page_ref": "§8.1.3, Page 5 of 41",
+          "required_by_party": "Maricopa County",
+          "risk_flags": [
+            "indemnity-uncapped-by-limits"
+          ],
+          "notes": "Standard non-limitation clause — Contractor's indemnification obligations are not capped at insurance limits. Liability above policy limits is uninsured exposure to balance sheet."
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "id": "req-001",
+      "type": "Minimum Limits — General Liability",
+      "required_policy_types": [
+        "GL"
+      ],
+      "contract_quote": "Building Trades General Aggregate: $2,000,000; Products Comp/Op Aggregate: $2,000,000; Personal & Adv. Injury: $1,000,000; Each Occurrence: $1,000,000; Fire Damage: $100,000.",
+      "page_ref": "§III.A, Page 2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "occurrence-form-only",
+        "ISO-CG-0001-required",
+        "no-additional-exclusions"
+      ],
+      "notes": "Limits are modest by CA county standards ($1M/$2M). Form must be ISO CG 0001 occurrence — claims-made GL is NOT acceptable. No added exclusions/limitations without Risk Manager approval."
+    },
+    {
+      "id": "req-002",
+      "type": "Per-Project Aggregate",
+      "required_policy_types": [
+        "GL"
+      ],
+      "contract_quote": "Contractors and Contractors engaged in other projects of construction shall have their general liability Aggregate Limit of Insurance endorsed to apply separately to each job site or project, as provided for by Insurance Services Office form CG-2503 Amendment-Aggregate Limits of Insurance (Per Project).",
+      "page_ref": "§III.A, Page 2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "per-project-aggregate",
+        "construction-only"
+      ],
+      "notes": "Only applies if Contractor is engaged in construction projects. Run-Test (election services manufacturer) likely not implicated unless doing physical construction work. Confirm scope of work."
+    },
+    {
+      "id": "req-003",
+      "type": "Minimum Limits — Auto Liability",
+      "required_policy_types": [
+        "Auto"
+      ],
+      "contract_quote": "Commercial Automobile Liability for Corporate/business owned vehicles including non-owned and hired, $1,000,000 Combined Single Limit.",
+      "page_ref": "§III.B, Page 2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "combined-single-limit",
+        "any-auto-or-hired-nonowned"
+      ],
+      "notes": "Auto symbol 1 if owned vehicles; symbols 8 & 9 if no owned/leased. Personal lines acceptable only if individually owned vehicles ($250k/$500k/$100k)."
+    },
+    {
+      "id": "req-004",
+      "type": "Minimum Limits — Workers' Comp / Employers' Liability",
+      "required_policy_types": [
+        "WC"
+      ],
+      "contract_quote": "WORKERS' COMPENSATION: Statutory requirements of the State of California and Employer's Liability Insurance. ... EMPLOYER'S LIABILITY: $1,000,000 per accident for bodily injury or disease.",
+      "page_ref": "§II.C, §III.C–D, Page 1–2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "california-statutory",
+        "EL-$1M-uniform"
+      ],
+      "notes": "California statutory WC required. Run-Test is AZ-based — verify Other States Coverage includes California, OR a CA WC policy is in force, before performing work in CA."
+    },
+    {
+      "id": "req-005",
+      "type": "Minimum Limits — Professional Liability",
+      "required_policy_types": [
+        "Professional"
+      ],
+      "contract_quote": "PROFESSIONAL LIABILITY OR ERRORS AND OMISSIONS LIABILITY: $1,000,000 per claim and aggregate.",
+      "page_ref": "§II.D, §III.E, Page 1–2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "umbrella-cannot-satisfy-PL",
+        "appropriate-to-profession"
+      ],
+      "notes": "Umbrella expressly cannot be used to satisfy this minimum (Section II.E). Underlying E&O must independently meet $1M/$1M. Election services / ballot processing — confirm definition of 'Professional Services' on E&O form actually covers election operations."
+    },
+    {
+      "id": "req-006",
+      "type": "Claims-Made Requirements (Retro/ERP)",
+      "required_policy_types": [
+        "Professional"
+      ],
+      "contract_quote": "If professional liability coverage is written on a Claims Made form: A. The 'Retro Date' must be shown, and must be on or before the date of the Agreement or the beginning of Agreement performance by CONTRACTOR. B. Insurance must be maintained and evidence of insurance must be provided for at least one (1) year after completion of the Agreement. C. If coverage is cancelled or non-renewed, and not replaced with another claims made policy form with a 'Retro Date' prior to the contract effective date, the CONTRACTOR must purchase 'extended reporting' coverage for a minimum of one (1) year after completion of the Agreement.",
+      "page_ref": "§V.A–C, Page 2–3 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "retro-date-on-or-before-contract",
+        "ERP-1-year",
+        "tail-1-year"
+      ],
+      "notes": "Retro must be on/before contract effective date. ERP/tail of at least 1 year post-completion required if claims-made is cancelled/non-renewed and not replaced with continuous-retro policy."
+    },
+    {
+      "id": "req-007",
+      "type": "Umbrella / Excess Acceptability",
+      "required_policy_types": [
+        "Umbrella"
+      ],
+      "contract_quote": "UMBRELLA or Excess Liability policies are acceptable where the need for higher liability limits is noted in the Minimum Limits of Insurance and shall provide liability coverages that at least follow form over the underlying insurance requirements where necessary for Commercial General Liability, Commercial Automobile Liability, Employers' Liability, and any other liability coverage (other than Professional Liability) designated under the Minimum Scope of Insurance.",
+      "page_ref": "§II.E, Page 2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "follow-form-required",
+        "PL-EXCLUDED-from-umbrella-stacking"
+      ],
+      "notes": "Umbrella may stack on GL, Auto, EL — but CANNOT satisfy Professional Liability minimum. Must be follow-form."
+    },
+    {
+      "id": "req-008",
+      "type": "Additional Insured",
+      "required_policy_types": [
+        "GL",
+        "Auto"
+      ],
+      "contract_quote": "ADDITIONAL INSURED STATUS: The COUNTY, its officers, directors, officials, employees, and volunteers are to be endorsed as additional insureds as respects: liability arising out of activities performed by or on behalf of the CONTRACTOR; products and completed operations of the CONTRACTOR; premises owned, occupied or used by the CONTRACTOR; or automobiles owned, leased, hired or borrowed by the CONTRACTOR. The coverage shall contain no endorsed limitations on the scope of protection afforded to the COUNTY, its officers, directors, officials, employees, or volunteers.",
+      "page_ref": "§VII.A, Page 3 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "arising-out-of",
+        "ongoing-AND-completed-operations",
+        "no-AI-endorsement-limitations",
+        "broad-AI-class"
+      ],
+      "notes": "Broad AI list (officers, directors, officials, employees, volunteers). 'Arising out of' triggers broad AI scope. Both ongoing AND completed operations required. No endorsed limitations permitted on AI scope — verify CG 20 10 + CG 20 37 (or equivalent broader-than-current-edition) is in place."
+    },
+    {
+      "id": "req-009",
+      "type": "Primary & Noncontributory",
+      "required_policy_types": [
+        "GL",
+        "Auto"
+      ],
+      "contract_quote": "PRIMARY INSURANCE: For any claims related to this Agreement, the CONTRACTOR's insurance coverage shall be endorsed to be primary insurance as respects the COUNTY, its officers, officials, employees and volunteers. Any insurance or self-insurance maintained by the COUNTY, its officers, directors, officials, employees, or volunteers shall be excess of the CONTRACTOR's insurance and shall not contribute with it.",
+      "page_ref": "§VII.C, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "primary",
+        "noncontributory",
+        "endorsement-required"
+      ],
+      "notes": "Both prongs (primary + noncontributory) required. Must be endorsed — not just stated on COI. Verify CG 20 01 (or equivalent) is on the policy."
+    },
+    {
+      "id": "req-010",
+      "type": "Severability of Interest",
+      "required_policy_types": [
+        "GL",
+        "Auto"
+      ],
+      "contract_quote": "SEVERABILITY OF INTEREST: The CONTRACTOR's insurance shall apply separately to each insured against whom claim is made or suit is brought, except with respect to the limits of the insurer's liability.",
+      "page_ref": "§VII.D, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "separation-of-insureds"
+      ],
+      "notes": "Standard ISO CG 0001 includes Separation of Insureds — typically already satisfied by form."
+    },
+    {
+      "id": "req-011",
+      "type": "Civil Code §2782 Carve-Out",
+      "required_policy_types": [
+        "GL",
+        "Auto"
+      ],
+      "contract_quote": "CIVIL CODE PROVISION: Coverage shall not extend to any indemnity coverage for the active negligence of the additional insured in any case where an agreement to indemnify the additional insured would be invalid under Subdivision (b) of Section 2782 of the Civil Code.",
+      "page_ref": "§VII.B, Page 3 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "california-statutory-carveout",
+        "active-negligence-exclusion"
+      ],
+      "notes": "California public policy limit — AI coverage carved back to exclude indemnifying County for County's own active negligence (consistent with Cal. Civ. Code §2782(b)). Does NOT need a special endorsement; this is a contract-level acknowledgement."
+    },
+    {
+      "id": "req-012",
+      "type": "Subcontractor Pass-Through",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC"
+      ],
+      "contract_quote": "SUBCONTRACTORS: CONTRACTOR shall be responsible for the acts and omissions of all its subcontractors and additional insured endorsements as provided by CONTRACTORs subcontractor.",
+      "page_ref": "§VII.E, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "subcontractor-AI-flow-down"
+      ],
+      "notes": "Contractor is responsible for sub acts/omissions and for ensuring subs provide AI endorsements. Implied flow-down — Contractor must include matching insurance reqs in sub agreements."
+    },
+    {
+      "id": "req-013",
+      "type": "Waiver of Subrogation — Workers' Comp",
+      "required_policy_types": [
+        "WC"
+      ],
+      "contract_quote": "Workers' Compensation Waiver of Subrogation: The workers' compensation policy required hereunder shall be endorsed to state that the workers' compensation carrier waives its right of subrogation against the COUNTY, its officers, directors, officials, employees, agents or volunteers, which might arise by reason of payment under such policy in connection with performance under this Agreement by the CONTRACTOR. Should CONTRACTOR be self-insured for workers' compensation, CONTRACTOR hereby agrees to waive its right of subrogation against COUNTY, its officers, directors, officials, employees, agents or volunteers.",
+      "page_ref": "§VIII, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "waiver-of-subrogation-WC",
+        "endorsement-required"
+      ],
+      "notes": "WC waiver must be endorsed. California requires WC 04 03 06 (Waiver of Our Right to Recover from Others) — separate premium charge typical. Self-insured fallback included."
+    },
+    {
+      "id": "req-014",
+      "type": "Property — COC Loss Payee & Waiver of Subrogation",
+      "required_policy_types": [
+        "Property"
+      ],
+      "contract_quote": "Course of Construction (COC) Waiver of Subrogation: Any Course of Construction (COC) policies maintained by the CONTRACTOR in performance of the Agreement shall contain the following provisions: 1. The COUNTY shall be named as loss payee. 2. The Insurer shall waive all rights of subrogation against the COUNTY.",
+      "page_ref": "§IX, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "loss-payee",
+        "waiver-of-subrogation-property"
+      ],
+      "notes": "Conditional — only triggers if Contractor maintains a COC/Builders Risk policy. Run-Test (election services) unlikely to maintain COC unless physical construction is involved."
+    },
+    {
+      "id": "req-015",
+      "type": "Inland Marine Waiver of Subrogation",
+      "required_policy_types": [
+        "Inland Marine"
+      ],
+      "contract_quote": "Inland Marine Waiver of Subrogation: Any Inland Marine insurance policies maintained by the CONTRACTOR in performance of the Agreement shall be endorsed to state that the insurer shall waive all rights of subrogation against the COUNTY.",
+      "page_ref": "§IX, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "waiver-of-subrogation-IM"
+      ],
+      "notes": "Conditional — only triggers if Contractor maintains Inland Marine. RELEVANT to Run-Test if mobile/transit equipment, computers, or election technology is covered under Inland Marine. Verify whether IM is in program and whether WoS endorsement is in place."
+    },
+    {
+      "id": "req-016",
+      "type": "Carrier Rating Minimum",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Professional",
+        "Umbrella",
+        "All"
+      ],
+      "contract_quote": "ACCEPTABILITY OF INSURERS: Insurance is to be placed with insurers with a current A.M. Best's rating of no less than A-VII. The County Risk Manager may waive or alter this requirement, or accept self-insurance in lieu of any required policy of insurance if, in the opinion of the Risk Manager, the interests of the COUNTY and the general public are adequately protected.",
+      "page_ref": "§VI.A.1, Page 3 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "A-VII-minimum-AM-Best"
+      ],
+      "notes": "A-VII is the standard CA county threshold (A- financial strength, VII size category = $25M–$50M policyholder surplus). Verify ALL carriers in the program meet this — especially any E&S placements."
+    },
+    {
+      "id": "req-017",
+      "type": "Cancellation / Material Change Notice",
+      "required_policy_types": [
+        "All"
+      ],
+      "contract_quote": "MAINTENANCE OF INSURANCE COVERAGE: The Contractor shall maintain all insurance coverages and limits in place at all times and provide the County with evidence of each policy's renewal ten (10) days in advance of its anniversary date. Contractor is required by this Agreement to immediately notify County if they receive a communication from their insurance carrier or agent that any required insurance is to be canceled, non-renewed, reduced in scope or limits or otherwise materially changed. Contractor shall provide evidence that such cancelled or non-renewed or otherwise materially changed insurance has been replaced or its cancellation notice withdrawn without any interruption in coverage, scope or limits. Failure to maintain required insurance in force shall be considered a material breach of the Agreement.",
+      "page_ref": "§VI.A.2, Page 3 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "10-day-renewal-evidence",
+        "immediate-cancellation-notice",
+        "material-breach-trigger"
+      ],
+      "notes": "Notification obligation is on the CONTRACTOR, not the carrier. No traditional 30-day Designated Entity NOC endorsement is required. Failure to maintain = material breach."
+    },
+    {
+      "id": "req-018",
+      "type": "Deductibles / Self-Insured Retention Disclosure",
+      "required_policy_types": [
+        "All"
+      ],
+      "contract_quote": "Any deductibles or self-insured retention that apply to any insurance required by this Agreement must be declared and approved by the COUNTY.",
+      "page_ref": "§IV, Page 2 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "SIR-disclosure",
+        "County-approval-required"
+      ],
+      "notes": "Any SIRs or deductibles must be declared and approved BEFORE performance. Important for cyber, professional, and umbrella SIRs."
+    },
+    {
+      "id": "req-019",
+      "type": "Verification of Coverage / COI & Endorsements",
+      "required_policy_types": [
+        "All"
+      ],
+      "contract_quote": "CONTRACTOR shall furnish the COUNTY with certificates evidencing coverage required below. Copies of required endorsements must be attached to provided certificates. ... All certificates, evidences of self-insurance, and additional insured endorsements are to be received and approved by the County before performance commences.",
+      "page_ref": "§I, Page 1 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "endorsement-copies-required-with-COI",
+        "pre-performance-approval"
+      ],
+      "notes": "Actual endorsement COPIES (not just COI references) must be attached. County must approve before performance commences. County also reserves right to require certified copies of policies."
+    },
+    {
+      "id": "req-020",
+      "type": "Notification of Claim / Lawsuit",
+      "required_policy_types": [
+        "All"
+      ],
+      "contract_quote": "If any claim for damages is filed with CONTRACTOR or if any lawsuit is instituted against CONTRACTOR, that arise out of or are in any way connected with CONTRACTOR's performance under this Agreement and that in any way, directly or indirectly, contingently or otherwise, affect or might reasonably affect COUNTY, CONTRACTOR shall give prompt and timely notice thereof to COUNTY. Notice shall be prompt and timely if given within thirty (30) days following the date of receipt of a claim or ten (10) days following the date of service of process of a lawsuit.",
+      "page_ref": "§X, Page 4 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "30-day-claim-notice",
+        "10-day-lawsuit-notice"
+      ],
+      "notes": "Contractor's contractual notice duty to County: 30 days from claim receipt; 10 days from service of process. Independent of carrier notice obligations."
+    },
+    {
+      "id": "req-021",
+      "type": "Right to Adjust Coverage",
+      "required_policy_types": [
+        "All"
+      ],
+      "contract_quote": "COUNTY shall retain the right at any time to review the coverage, form, and amount of the insurance required hereby. If in the opinion of the County Risk Manager, insurance provisions in these requirements do not provide adequate protection for COUNTY and for members of the public, COUNTY may require CONTRACTOR to obtain insurance sufficient in coverage, form and amount to provide adequate protection.",
+      "page_ref": "§II.B (preamble), Page 1 of 4",
+      "required_by_party": "Sacramento County (California)",
+      "risk_flags": [
+        "unilateral-coverage-modification-right"
+      ],
+      "notes": "County reserves right to require ADDITIONAL coverage mid-term if Risk Manager deems current insurance inadequate. Open-ended risk — limits and lines could grow."
+    },
+    {
+      "id": "req-001",
+      "type": "Indemnification / Hold Harmless / Defense",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "To the fullest extent permitted by law, and to the extent that claims, damages, losses, or expenses are not covered and paid by insurance purchased by the contractor, the contractor shall defend, indemnify, and hold harmless the County (as Owner), its agents, representatives, officers, directors, officials, and employees... but only to the extent caused by the negligent acts or omissions of the contractor, a subcontractor, anyone directly or indirectly employed by them, or anyone for whose acts they may be liable... The scope of this indemnification does not extend to the sole negligence of County.",
+      "page_ref": "§8.1.1–8.1.4, Pages 4–5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "arising-out-of",
+        "duty-to-defend",
+        "comparative-negligence",
+        "sole-negligence-carveout-for-County"
+      ],
+      "notes": "Limited to the extent of contractor negligence; Arizona comparative negligence applies. Carve-out is only for County's SOLE negligence — contractor still bears defense/indemnity for any contractor fault even if County is partially negligent."
+    },
+    {
+      "id": "req-002",
+      "type": "Carrier Rating Minimum",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "Contractor, at Contractor's own expense, shall purchase and maintain, at a minimum, the herein stipulated insurance from a company or companies duly licensed by the State of Arizona and possessing an AM Best, Inc. category rating of B++.",
+      "page_ref": "§8.2.1, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [],
+      "notes": "B++ is a relatively low threshold (most preferred carriers are A- or better). Non-admitted carriers acceptable if approved by County."
+    },
+    {
+      "id": "req-003",
+      "type": "Claims-Made Requirements (Retro Date + ERP)",
+      "required_policy_types": [
+        "Cyber",
+        "Professional Liability (if applicable)"
+      ],
+      "contract_quote": "In the event that the insurance required is written on a claims-made basis, Contractor warrants that any retroactive date under the policy shall precede the effective date of this contract and either continuous coverage will be maintained, or an extended discovery period will be exercised for a period of two years beginning at the time work under this contract is completed.",
+      "page_ref": "§8.2.3, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "retro-date",
+        "ERP-2-years"
+      ],
+      "notes": "Cyber is the most likely claims-made policy here. Retro must precede 11/01/21 contract effective date."
+    },
+    {
+      "id": "req-004",
+      "type": "Primary & Noncontributory",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "Contractor's insurance shall be primary insurance as respects County, and any insurance or self-insurance maintained by County shall not contribute to it.",
+      "page_ref": "§8.2.4, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "primary-noncontributory"
+      ],
+      "notes": "Program-level — applies to all required policies."
+    },
+    {
+      "id": "req-005",
+      "type": "Deductible/SIR Allocation",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "The insurance policies may provide coverage that contains deductibles or self-insured retentions. Such deductible and/or self-insured retentions shall not be applicable with respect to the coverage provided to County under such policies. Contractor shall be solely responsible for the deductible and/or self-insured retention and County, at its option, may require Contractor to secure payment of such deductibles or self-insured retentions by a surety bond or an irrevocable and unconditional letter of credit.",
+      "page_ref": "§8.2.6, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "deductible-waived-vs-County",
+        "potential-bond/LOC-requirement"
+      ],
+      "notes": "County reserves the right to require bond or LOC backing for deductibles/SIRs — this could be a meaningful collateral demand."
+    },
+    {
+      "id": "req-006",
+      "type": "Additional Insured",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "The insurance policies required by this contract, except Workers' Compensation and Errors and Omissions, shall name County, its agents, representatives, officers, directors, officials, and employees as additional insureds.",
+      "page_ref": "§8.2.7, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "additional-insured",
+        "broad-AI-scope"
+      ],
+      "notes": "AI scope (ongoing vs completed operations) not specified in contract. WC and E&O expressly excluded from AI requirement."
+    },
+    {
+      "id": "req-007",
+      "type": "Waiver of Subrogation",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "Cyber",
+        "Umbrella",
+        "WC"
+      ],
+      "contract_quote": "The policies required hereunder, except Workers' Compensation and Errors and Omissions, shall contain a waiver of transfer of rights of recovery (subrogation) against County, its agents, representatives, officers, directors, officials, and employees for any claims arising out of Contractor's work or service.",
+      "page_ref": "§8.2.8, Page 6 of 41 (also §8.2.12 for WC waiver)",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "waiver-of-subrogation"
+      ],
+      "notes": "§8.2.8 excludes WC from the general WOS clause, but §8.2.12 separately requires WC waiver of subrogation. Net result: WOS required on all lines including WC. E&O is the only policy where WOS is not required."
+    },
+    {
+      "id": "req-008",
+      "type": "Umbrella Permission (Program-Level)",
+      "required_policy_types": [
+        "Umbrella"
+      ],
+      "contract_quote": "If available, the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements. If a Commercial Umbrella insurance policy is utilized to meet insurance requirements, the Certificate of Insurance shall indicate which lines the Commercial Umbrella Insurance covers.",
+      "page_ref": "§8.2.9, Page 6 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "umbrella-attachment-program-level"
+      ],
+      "notes": "Program-level umbrella permission. Creates ambiguity for Auto §8.2.11 and Cyber §8.2.13 which do not inline-mention umbrella; CGL §8.2.10 explicitly does inline-mention. COI must indicate which lines umbrella covers."
+    },
+    {
+      "id": "req-009",
+      "type": "Minimum Limits — Commercial General Liability",
+      "required_policy_types": [
+        "GL"
+      ],
+      "contract_quote": "Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence, $4,000,000 Products/Completed Operations Aggregate, and $4,000,000 General Aggregate Limit. The policy shall include coverage for premises liability, bodily injury, broad form property damage, personal injury, products and completed operations and blanket contractual coverage, and shall not contain any provisions which would serve to limit third party action over claims. There shall be no endorsement or modifications of the CGL limiting the scope of coverage for liability arising from explosion, collapse, or underground property damage.",
+      "page_ref": "§8.2.10, Page 6 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "XCU-no-exclusion",
+        "blanket-contractual",
+        "no-third-party-action-over-limit",
+        "completed-operations"
+      ],
+      "notes": "$2M/$4M/$4M with explicit umbrella stacking permitted. Blanket contractual required. Cannot exclude XCU (explosion/collapse/underground). Cannot limit action-over claims."
+    },
+    {
+      "id": "req-010",
+      "type": "Minimum Limits — Commercial Auto",
+      "required_policy_types": [
+        "Auto"
+      ],
+      "contract_quote": "Commercial/Business Automobile Liability insurance with a combined single limit for bodily injury and property damage of not less than $2,000,000 each occurrence with respect to any of the Contractor's owned, hired, and non-owned vehicles assigned to or used in performance of the Contractor's work or services or use or maintenance of the premises under this contract.",
+      "page_ref": "§8.2.11, Page 6 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "any-auto",
+        "hired-non-owned",
+        "umbrella-ambiguous"
+      ],
+      "notes": "$2M CSL covering owned, hired, and non-owned. Clause does NOT inline-mention umbrella attachment — ambiguous against program-level §8.2.9."
+    },
+    {
+      "id": "req-011",
+      "type": "Minimum Limits — Workers' Comp & Employers' Liability",
+      "required_policy_types": [
+        "WC"
+      ],
+      "contract_quote": "Workers' compensation insurance to cover obligations imposed by Federal and State statutes having jurisdiction of Contractor's employees engaged in the performance of the work or services under this contract; and Employer's Liability insurance of not less than $1,000,000 for each accident, $1,000,000 disease for each employee, and $1,000,000 disease policy limit. Contractor, its subcontractors, and sub-subcontractors waive all rights against this contract and its agents, officers, directors, and employees for recovery of damages to the extent these damages are covered by the workers' compensation and Employer's Liability or Commercial Umbrella Liability insurance obtained by Contractor, its subcontractors, and its sub-subcontractors pursuant to this contract.",
+      "page_ref": "§8.2.12, Page 6 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "statutory-WC",
+        "EL-1M/1M/1M",
+        "WC-waiver-of-subrogation"
+      ],
+      "notes": "Statutory WC + EL $1M/$1M/$1M. Waiver flows down to subcontractors and sub-subs. Waiver expressly extends to Commercial Umbrella for WC/EL claims."
+    },
+    {
+      "id": "req-012",
+      "type": "Minimum Limits — Cyber, Network Security, and Privacy Liability",
+      "required_policy_types": [
+        "Cyber"
+      ],
+      "contract_quote": "Cyber, Network Security and Privacy Liability Insurance with a limit of not less than $5,000,000 per occurrence. The policy shall include, but not be limited to; coverage for all directors, officers, agents and employees of the Contractor, losses with respect to network risks (such as data breaches, unauthorized access or use, and ID theft of data), invasion of privacy (regardless of the type of media involved in the loss of private information), crisis management, identity theft response costs, breach notification costs, credit remediation, and credit monitoring, defense, and claims expenses, regulatory defense costs plus fines and penalties, cyber extortion, electronic data restoration expenses (data asset protection), network business interruption, computer fraud coverage, funds transfer loss, third-party fidelity, theft, no requirement for arrest and conviction, and loss outside the premises of the named insured.",
+      "page_ref": "§8.2.13, Page 6 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "cyber-5M",
+        "regulatory-defense-fines-penalties",
+        "cyber-extortion",
+        "business-interruption",
+        "funds-transfer",
+        "third-party-fidelity",
+        "social-engineering-implied",
+        "no-arrest-conviction-requirement"
+      ],
+      "notes": "Very broad cyber spec. $5M is high for a $5M-$25M revenue contractor. Mandatory components include third-party fidelity (typically a Crime/SE coverage) and computer fraud / funds transfer — standard cyber forms may sublimit these. Verify each enumerated item exists with adequate sublimits. Also requires regulatory FINES AND PENALTIES coverage (not just defense) — many forms exclude or sublimit fines."
+    },
+    {
+      "id": "req-013",
+      "type": "Certificates of Insurance",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "Prior to contract award, Contractor shall furnish the County with valid and complete Certificates of Insurance, or formal endorsements as required by the contract in the form provided by the County, issued by Contractor's insurer(s)... Certificates of Insurance shall identify Maricopa County as the certificate holder as follows: Maricopa County, c/o Risk Management, 301 W Jefferson St, Suite 910, Phoenix, AZ 85003. If a policy does expire during the life of the Contract, a renewal certificate must be sent to County 15 calendar days prior to the expiration date.",
+      "page_ref": "§8.2.14.1–8.2.14.4, Page 7 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "COI-pre-award",
+        "renewal-COI-15-days"
+      ],
+      "notes": "COI must reference contract number and title. Claims-made policies must show evidence for two years past completion (annual COIs)."
+    },
+    {
+      "id": "req-014",
+      "type": "Designated Entity NOC / Cancellation Notice",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "Applicable to all insurance policies required within the insurance requirements of this contract, Contractor's insurance shall not be permitted to expire, be suspended, be canceled, or be materially changed for any reason without 30 days prior written notice to Maricopa County. Contractor must provide to Maricopa County, within two business days of receipt, if they receive notice of a policy that has been or will be suspended, canceled, materially changed for any reason, has expired, or will be expiring.",
+      "page_ref": "§8.2.15, Page 7 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "30-day-notice",
+        "material-change-notice",
+        "2-business-day-relay"
+      ],
+      "notes": "30-day notice applies to ALL required policies. Notice obligation includes 'material change' (broader than standard ACORD cancellation language) and 2-business-day pass-through if Contractor receives notice from carrier. Likely requires CG 20 12 / Designated Entity NOC endorsement, NOT the standard ACORD COI cancellation disclaimer."
+    },
+    {
+      "id": "req-015",
+      "type": "Insurance Survival / Maintenance",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "All insurance required herein shall be maintained in full force and effect until all work or service required to be performed under the terms of the contract is satisfactorily completed and formally accepted. Failure to do so may, at the sole discretion of County, constitute a material breach of this contract.",
+      "page_ref": "§8.2.2, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "material-breach"
+      ],
+      "notes": "Lapse in coverage = material breach of contract."
+    },
+    {
+      "id": "req-016",
+      "type": "Indemnity Not Limited by Insurance Limits",
+      "required_policy_types": [
+        "GL",
+        "Auto",
+        "WC",
+        "Cyber",
+        "Umbrella"
+      ],
+      "contract_quote": "The amount and type of insurance coverage requirements set forth herein will in no way be construed as limiting the scope of the indemnity in this section.",
+      "page_ref": "§8.1.3, Page 5 of 41",
+      "required_by_party": "Maricopa County",
+      "risk_flags": [
+        "indemnity-uncapped-by-limits"
+      ],
+      "notes": "Standard non-limitation clause — Contractor's indemnification obligations are not capped at insurance limits. Liability above policy limits is uninsured exposure to balance sheet."
+    }
+  ]
+}

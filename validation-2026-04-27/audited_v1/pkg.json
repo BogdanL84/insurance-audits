@@ -1,0 +1,48 @@
+{
+  "filename": "RedactedHanover - Commercial - 4.1.25-4.1.26-AUDITED.pdf",
+  "page_count": 254,
+  "annot_count": 1,
+  "bookmark_count": 3,
+  "annotations": [
+    {
+      "page": 144,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Commercial Property \u2014 Electronic Data and Computer Operation",
+      "subject": "",
+      "content": "[Bad] Commercial Property \u2014 Electronic Data and Computer Operation\nRisk Score: 9/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Needs Attention (Bad)",
+      "page": 144
+    },
+    {
+      "level": 3,
+      "title": "Commercial Property \u2014 Electronic Data and Computer Operation",
+      "page": 144
+    }
+  ]
+}

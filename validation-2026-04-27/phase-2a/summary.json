@@ -1,0 +1,25 @@
+{
+  "v2": {
+    "ok": true,
+    "elapsed_s": 129.1,
+    "prompt_chars": 489074,
+    "response_chars": 13719,
+    "n_endorsements": 19,
+    "n_exclusions": 9
+  },
+  "v3": {
+    "ok": true,
+    "elapsed_s": 138.9,
+    "prompt_chars": 494726,
+    "response_chars": 16585,
+    "n_endorsements": 19,
+    "n_exclusions": 8
+  },
+  "delta": {
+    "prompt_chars": 5652,
+    "response_chars": 2866,
+    "elapsed_s": 9.800000000000011,
+    "n_endorsements": 0,
+    "n_exclusions": -1
+  }
+}

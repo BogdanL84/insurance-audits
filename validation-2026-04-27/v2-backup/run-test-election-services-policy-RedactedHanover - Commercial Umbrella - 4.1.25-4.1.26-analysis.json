@@ -1,0 +1,298 @@
+{
+  "source_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-08",
+  "policy_type": "Commercial Follow Form Excess and Umbrella",
+  "is_package": false,
+  "coverage_parts": [
+    "Coverage A — Follow Form Excess Liability",
+    "Coverage B — Umbrella Liability"
+  ],
+  "is_primary": false,
+  "named_insured": "RUNBECK ELECTION SERVICES INC",
+  "carrier": "Hanover Insurance Company",
+  "policy_number": "UH4 H221416 05",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "each_occurrence": 10000000,
+    "each_claim": 10000000,
+    "products_completed_ops_aggregate": 10000000,
+    "general_aggregate": 10000000,
+    "retained_limit": 0
+  },
+  "underlying_schedule": [
+    {
+      "carrier": "Citizens Insurance Company of America",
+      "policy_number": "ZB4 H221415 05",
+      "policy_type": "Commercial General Liability",
+      "period": "04/01/2025–04/01/2026",
+      "limits": {
+        "each_occurrence": 1000000,
+        "general_aggregate": 2000000,
+        "products_completed_ops": "Included in General Aggregate"
+      }
+    },
+    {
+      "carrier": "Allmerica Financial Benefits Insurance Company",
+      "policy_number": "AW4 H221414 05",
+      "policy_type": "Commercial Auto",
+      "period": "04/01/2025–04/01/2026",
+      "limits": {
+        "each_accident": 1000000
+      }
+    },
+    {
+      "carrier": "Massachusetts Bay Insurance Company",
+      "policy_number": "WD4 H218283 06",
+      "policy_type": "Workers Compensation & Employers Liability",
+      "period": "04/01/2025–04/01/2026",
+      "limits": {
+        "bodily_injury_by_accident_each": 1000000,
+        "bodily_injury_by_disease_each": 1000000,
+        "bodily_injury_by_disease_aggregate": 1000000
+      }
+    },
+    {
+      "carrier": "Citizens Insurance Company of America",
+      "policy_number": "ZB4 H221415 05",
+      "policy_type": "Employee Benefits Liability",
+      "period": "04/01/2025–04/01/2026",
+      "limits": {
+        "each_claim": 1000000,
+        "aggregate": 1000000
+      }
+    }
+  ],
+  "notes_on_underlying": "No Professional Liability, D&O, Cyber, or Stop Gap listed in the underlying schedule. The umbrella therefore has no follow-form excess layer sitting over any E&O or cyber policy. Coverage B (standalone umbrella) would need to respond independently for uncovered exposures — but Coverage B itself excludes professional liability.",
+  "endorsements": [
+    {
+      "form_number": "475-0001",
+      "name": "Hanover Commercial Follow Form Excess and Umbrella Policy",
+      "page": 24,
+      "notes": "Main policy form. Coverage A follows the underlying GL, Auto, and WC; Coverage B is standalone umbrella sitting over retained limit of $0. Defense costs are within limits (not in addition). Duty to defend triggers only after underlying insurer defends or underlying limits are exhausted."
+    },
+    {
+      "form_number": "401-1337",
+      "name": "Trade Or Economic Sanctions Endorsement",
+      "page": 20,
+      "notes": "Coverage does not apply to the extent prohibited by trade or economic sanctions or laws/regulations."
+    },
+    {
+      "form_number": "401-1374",
+      "name": "Disclosure Pursuant To Terrorism Risk Insurance Act",
+      "page": 6,
+      "notes": "Total terrorism premium $75. Coverage for certified acts of terrorism is included (not rejected). Subject to $100B cap on insurer participation."
+    },
+    {
+      "form_number": "475-0027 12 14",
+      "name": "Exclusion — Total Pollution (Coverage A)",
+      "page": 44,
+      "notes": "Absolute pollution exclusion applicable to Coverage A (Follow Form Excess) only. Replaces standard subparagraph a. under Section VII Exclusions. Bars BI, PD, PI, and AI arising out of actual/alleged/threatened discharge, dispersal, seepage, migration, release or escape of pollutants at any time. Also bars any loss/cost/expense for remediation demands, cleanup orders, or governmental authority claims related to pollutants."
+    },
+    {
+      "form_number": "475-0031 12 14",
+      "name": "Exclusion — Professional Liability (Coverage A)",
+      "page": 46,
+      "notes": "CRITICAL for Runbeck. Adds professional services exclusion to Coverage A only. Bars any liability or expense arising out of rendering or failure to render any professional service, advice or instruction by the insured or on its behalf — regardless of whether such service is ordinary to the insured's profession. Election technology, ballot printing, mail processing, and election advisory services could all be characterized as 'professional services,' potentially barring excess coverage for core operations."
+    },
+    {
+      "form_number": "475-0050 12 14",
+      "name": "Exclusion — Abuse and Molestation (Coverage A and B)",
+      "page": 48,
+      "notes": "Broad abuse/molestation exclusion applicable to both Coverage A and B. Bars liability for actual or threatened abuse/molestation by anyone, plus negligent employment, investigation, supervision, failure to report, or retention of a person whose conduct would be excluded. Applies regardless of whether abuse was intentional or resulted from negligent conduct."
+    },
+    {
+      "form_number": "475-0057 12 14",
+      "name": "Exclusion — Lead (Coverage A and B)",
+      "page": 50,
+      "notes": "Absolute lead exclusion applicable to both Coverage A and B. Bars all liability arising out of any actual or alleged presence of or exposure to lead including inhalation/ingestion, use in construction/manufacturing, removal/encapsulation, transportation/storage/disposal, and supervision of lead-related jobs. Minimal operational impact for Runbeck."
+    },
+    {
+      "form_number": "475-0080 12 14",
+      "name": "Exclusion — Fungi or Bacteria Liability (Coverage A and B)",
+      "page": 52,
+      "notes": "Absolute fungi/bacteria exclusion applicable to both Coverage A and B. Bars all liability for BI/PD arising from any fungi or bacteria (including mold/mildew and mycotoxins) on or within a building or structure. Applies regardless of concurrent causation. Minimal operational impact for Runbeck."
+    },
+    {
+      "form_number": "475-0084 12 14",
+      "name": "Exclusion — Silica (Coverage A and B)",
+      "page": 54,
+      "notes": "Absolute silica exclusion applicable to both Coverage A and B. Bars all liability for inhalation/ingestion of silica or silica-related dust, contact/exposure, and any remediation/testing/cleanup costs. Minimal operational impact for Runbeck."
+    },
+    {
+      "form_number": "475-0174 12 14",
+      "name": "Multiple Named Insured Endorsement",
+      "page": 56,
+      "notes": "Amends Named Insured to include: Runbeck Properties LLC, Runbeck Investments LLC, and Runbeck Graphics Inc — all added as Named Insureds in addition to Runbeck Election Services Inc. Effective 04/01/2025. Reflects the affiliated entity structure of the insured group."
+    },
+    {
+      "form_number": "475-0176 04 21",
+      "name": "Arizona Changes",
+      "page": 58,
+      "notes": "State-specific endorsement for AZ. Governs cancellation (for policies in effect 60+ days, allowed only for: nonpayment, conviction, fraud/misrepresentation, substantial risk change, breach of duties, reinsurance loss, DOI order, or material hazard increase — 10-day notice for nonpayment, 45-day notice for all other reasons). Non-renewal requires 45-day advance written notice. Renewal with material changes (premium increase, deductible change, limit reduction, or substantial coverage reduction) requires 30-day advance notice. Also adds AZ-specific misrepresentation provision."
+    },
+    {
+      "form_number": "475-0215 12 14",
+      "name": "Exclusion — Discrimination (Coverage A and B)",
+      "page": 60,
+      "notes": "Absolute discrimination exclusion applicable to both Coverage A and B. Bars all liability arising out of discrimination or humiliation based on age, gender, sexual orientation, marital status, race, nationality/national origin, religion/creed, mental or physical capabilities/characteristics/conditions, or any violation of law relating to discrimination. EPL-type claims (employment discrimination, harassment) are entirely excluded from the umbrella — if underlying EPLI has sublimits, there is no excess umbrella protection above those sublimits."
+    },
+    {
+      "form_number": "475-0351 12 14",
+      "name": "Exclusion — Employee Benefits Liability (Coverage B)",
+      "page": 62,
+      "notes": "Excludes employee benefits liability from Coverage B (Umbrella) only. Bars liability for administration of any employee benefit program (life/health/accident insurance, pension plans, WC, unemployment, social security, disability, investment programs, loan programs). Narrowly scoped to Coverage B; Coverage A (Follow Form Excess) not affected."
+    },
+    {
+      "form_number": "475-0433 01 15",
+      "name": "Exclusion — Certified Acts of Terrorism",
+      "page": 64,
+      "notes": "Bars coverage for any injury or damage arising directly or indirectly out of a 'certified act of terrorism' as defined under the federal Terrorism Risk Insurance Act (certified by Secretary of Treasury; $5M+ aggregate insured losses; violent act aimed at coercing civilian population or influencing US government). Applies to both Coverage A and B. Note: TRIA disclosure (401-1374) reflects terrorism premium paid, but this endorsement limits or modifies the scope of terrorism coverage — review both forms in tandem."
+    },
+    {
+      "form_number": "475-0613 11 20",
+      "name": "Underlying Insurance Defined (Coverage A and B)",
+      "page": 66,
+      "notes": "Replaces standard definition of 'Underlying Insurance.' Critical addition: underlying insurance does NOT include any coverage within a scheduled underlying policy when that coverage has a sublimit or separate limit that is NOT separately listed on the Schedule of Underlying Policies. Practical impact: if any underlying policy has sublimits (e.g., cyber sublimit, hired/non-owned auto sublimit, E&O sublimit within a package) that aren't individually listed in the umbrella schedule, those sublimit coverages do not qualify as underlying insurance — meaning the umbrella would not follow form or drop down over them."
+    },
+    {
+      "form_number": "475-0618 06 22",
+      "name": "Underlying Claims-Made Coverage",
+      "page": 68,
+      "notes": "Governs umbrella treatment of claims-made underlying policies. Provides a 60-day Automatic Extended Reporting Period (no additional premium) if umbrella is cancelled/non-renewed for reasons other than nonpayment. Optional ERP available if underlying policy has an optional ERP — must be requested within 60 days of cancellation/non-renewal, at 100% (1-year), 150% (2-year), or 200% (3-year) of annual premium. Extended periods don't reinstate or increase limits. Coverage A follows the trigger of the underlying insurance — if underlying is claims-made, Coverage A is also claims-made."
+    },
+    {
+      "form_number": "475-0639 07 23",
+      "name": "Exclusion — Phthalates (Coverage A and B)",
+      "page": 70,
+      "notes": "Absolute phthalates exclusion applicable to both Coverage A and B. Bars all liability for exposure to phthalates in any form (DBP, DIBP, BBP, DEHP, DINP, DIDP, and numerous others listed). Applies whether phthalates are standalone or combined with other substances. Notes explicitly that this exclusion does not imply other provisions (including pollution exclusion) do not also exclude phthalate-related claims. Minimal operational impact for Runbeck."
+    },
+    {
+      "form_number": "475-0654 12 23",
+      "name": "Exclusion — Access or Disclosure of Confidential or Personal Material or Information and Electronic Data (Coverage A and B)",
+      "page": 72,
+      "notes": "CRITICAL for Runbeck. New/changed form. Deletes the prior data-related liability exclusion and replaces with broader, more explicit exclusions. Bars: (1) all liability arising from access to or disclosure of any person's/organization's confidential or personal information (including patents, trade secrets, customer lists, financial/credit card info, health/biometric info, or any nonpublic information) — applies even if damages include notification costs, credit monitoring, forensics, PR, data restoration, or extortion costs; (2) all liability for loss of/damage to/corruption of/inability to access or manipulate electronic data. Applies to both Coverage A and Coverage B. Runbeck handles voter registration data, ballot data, and election mail data for 90M+ registered voters — a data breach scenario is a core business risk, and this exclusion bars umbrella coverage for it entirely."
+    },
+    {
+      "form_number": "475-0655 12 23",
+      "name": "Exclusion — Violation of Law Addressing Data Privacy (Coverage A and B)",
+      "page": 74,
+      "notes": "CRITICAL for Runbeck. New/changed form. Bars all liability arising from any violation (or alleged violation) of: (1) any federal, state or local law that addresses access, use, printing, dissemination, disposal, collecting, storing, safeguarding, recording, retention, transmitting, communicating, selling or distribution of confidential/personal information — explicitly includes BIPA (Illinois Biometric Information Privacy Act) and CCPA (California Consumer Privacy Act); (2) equivalent laws of non-US jurisdictions including GDPR. Given Runbeck operates in 31 states and DC, touching voter data for 90M+ registrants, class-action data privacy litigation under CCPA, BIPA, or similar state statutes is a realistic exposure — and the umbrella provides zero coverage for it."
+    },
+    {
+      "form_number": "475-0661 01 25",
+      "name": "Exclusion — Cyber Incident / Cyber Content (Coverage A and B)",
+      "page": 76,
+      "notes": "CRITICAL for Runbeck. New endorsement 01/25. Bars all liability or expense caused by, arising out of, or as a consequence of a 'cyber incident' — defined broadly as: (a) unauthorized access to/use of any computer system; (b) malicious code/virus/harmful code; (c) denial of service attack; or (d) unintentional/unauthorized infringement, plagiarism, invasion of right of publicity, or defamation resulting directly from 'cyber content' (electronic display/transmission/dissemination through any network or insured's system). Exclusion applies even if damages include notification costs, credit monitoring, forensics, PR, data restoration, or extortion expenses. Combined with forms 475-0654 and 475-0655, the umbrella is comprehensively stripped of cyber-related coverage. For an election technology company, this represents a significant uninsured exposure gap at the umbrella level."
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Professional Liability — Coverage B (built-in)",
+      "form_number": "475-0001",
+      "page": 35,
+      "impact": "CRITICAL. Coverage B (standalone umbrella) expressly excludes 'any liability or expense arising out of the rendering of or failure to render any professional or quasi-professional service (whether or not such service requires certification or licensing), advice or instruction.' Combined with endorsement 475-0031 12 14 excluding professional liability from Coverage A as well, there is ZERO umbrella/excess coverage for professional liability claims. Runbeck provides election technology services — professional liability is a core exposure and this umbrella provides no protection above the underlying policy."
+    },
+    {
+      "name": "Professional Liability Exclusion — Coverage A (endorsement)",
+      "form_number": "475-0031 12 14",
+      "page": 46,
+      "impact": "CRITICAL for Runbeck. Bars all Coverage A (Follow Form Excess) coverage for liability arising from rendering or failure to render any professional service, advice, or instruction — regardless of whether such service is ordinary to the insured's profession. Runbeck's core business — election technology consulting, ballot design and printing, mail processing, election data management, and advisory services to county and state election officials — could be characterized as 'professional services.' If a county or state agency sues Runbeck for errors in ballot printing, mail processing failures, or election advisory services, the excess umbrella may disclaim coverage on this basis. Together with the built-in Coverage B exclusion (475-0001, pg 35), both coverage parts exclude professional liability."
+    },
+    {
+      "name": "Access/Disclosure of Confidential Information and Electronic Data — Coverage A & B (built-in)",
+      "form_number": "475-0001",
+      "page": 30,
+      "impact": "CRITICAL. Built-in exclusion for any liability arising out of access to or disclosure of personal/confidential information, or loss/damage/corruption of electronic data. This exclusion is then further reinforced by three separate endorsements (475-0654, 475-0655, 475-0661). For Runbeck, which processes ballot data and voter information for 90M+ registered voters across 31 states, this means the umbrella provides zero excess coverage for any data breach, election system compromise, or privacy violation."
+    },
+    {
+      "name": "Access or Disclosure of Confidential/Personal Information and Electronic Data Exclusion — Coverage A & B (endorsement)",
+      "form_number": "475-0654 12 23",
+      "page": 72,
+      "impact": "CRITICAL for Runbeck. Bars all liability from any access to or disclosure of confidential or personal information (including biometric, health, financial, and any nonpublic information). Also bars all liability for loss of, damage to, or corruption of electronic data. Applies to both Coverage A and Coverage B. Runbeck's handling of voter data, election mail, and ballot data for 90M+ registrants creates substantial exposure to data breach claims — this exclusion means the umbrella provides no coverage for such claims at any coverage layer."
+    },
+    {
+      "name": "Violation of Law Addressing Data Privacy Exclusion — Coverage A & B",
+      "form_number": "475-0655 12 23",
+      "page": 74,
+      "impact": "CRITICAL for Runbeck. Expressly excludes liability under CCPA, BIPA, GDPR, and any equivalent state/federal/international data privacy law. Runbeck operates in 31 states and DC, touching voter PII for 90M+ registrants. Class-action litigation under CCPA or BIPA (biometric data from ballot processing or identity verification) is a realistic and growing risk category. The umbrella provides zero coverage for such regulatory or statutory claims."
+    },
+    {
+      "name": "Cyber Incident / Cyber Content Exclusion — Coverage A & B",
+      "form_number": "475-0661 01 25",
+      "page": 76,
+      "impact": "CRITICAL for Runbeck. Combined with the Access/Disclosure of Personal Information exclusion (475-0654) and the Data Privacy Law Violation exclusion (475-0655), the umbrella is comprehensively stripped of cyber and data-related coverage across both Coverage A and Coverage B. Runbeck handles voter registration and election data for 90M+ registered voters across 31 states — a ransomware attack, data breach, or unauthorized access to election systems is a primary business risk. If underlying cyber policy limits are exhausted, the umbrella provides zero excess coverage for any cyber event. This means the ceiling on cyber coverage is the primary cyber policy limit, with no umbrella backstop."
+    },
+    {
+      "name": "Directors and Officers — Coverage B (built-in)",
+      "form_number": "475-0001",
+      "page": 34,
+      "impact": "Coverage B excludes 'any liability or expense for a wrongful act, error, omission or breach of duty by an insured in the performance of the office of director, officer or trustee.' No D&O underlying policy is listed in the schedule. This umbrella provides no excess D&O coverage. For a PE-backed company under heightened regulatory scrutiny, this is a meaningful gap."
+    },
+    {
+      "name": "Employment Related Practices — Coverage A & B (built-in)",
+      "form_number": "475-0001",
+      "page": 30,
+      "impact": "Absolute exclusion for employment-related claims (wrongful termination, harassment, discrimination, demotion, etc.) under both coverage parts. No EPLI underlying listed in the schedule, so there is also no Coverage A follow-form excess sitting over any EPLI policy."
+    },
+    {
+      "name": "Discrimination Exclusion — Coverage A & B",
+      "form_number": "475-0215 12 14",
+      "page": 60,
+      "impact": "Bars all liability for discrimination or humiliation based on protected characteristics (age, gender, sexual orientation, race, national origin, religion, physical/mental condition) or any violation of anti-discrimination law. Applies to both Coverage A and Coverage B. EPL-type claims (employment discrimination, harassment) are entirely excluded from the umbrella — if underlying EPLI has sublimits, there is no excess umbrella protection above those sublimits."
+    },
+    {
+      "name": "Contractual Liability — Coverage B (built-in, with exception)",
+      "form_number": "475-0001",
+      "page": 33,
+      "impact": "Coverage B excludes assumed contractual liability EXCEPT for 'insured contracts.' Standard insured contract exception preserves contractual indemnification coverage for liability assumed in leases, sidetrack agreements, easements, elevator maintenance, and contracts where the insured assumes tort liability of another. Government/county contracts may or may not qualify — depends on contract structure and how 'insured contract' is defined."
+    },
+    {
+      "name": "Pollution — Coverage A (built-in and endorsement)",
+      "form_number": "475-0001 / 475-0027 12 14",
+      "page": 31,
+      "impact": "Coverage A follow-form pollution exclusion (pg 31) plus a separate Total Pollution endorsement (475-0027 12 14, pg 44). Coverage B also has its own absolute pollution exclusion (pg 35). Minimal relevance for election services operations but noted for completeness."
+    },
+    {
+      "name": "Recording and Distribution of Material in Violation of Law — Coverage A & B (built-in)",
+      "form_number": "475-0001",
+      "page": 31,
+      "impact": "Excludes TCPA, CAN-SPAM, FCRA, and any federal/state/local law addressing dissemination or distribution of material or information. Could implicate Runbeck's election mail sorting and ballot mailing operations if a statutory violation claim arises regarding voter communication."
+    },
+    {
+      "name": "Underlying Insurance Sublimit Gap — Schedule Limitation",
+      "form_number": "475-0613 11 20",
+      "page": 66,
+      "impact": "BAD. This endorsement specifies that underlying insurance does NOT include coverages within underlying policies that carry a sublimit or separate limit NOT individually listed on the Schedule of Underlying Policies. If any of Runbeck's underlying policies include sublimits for hired/non-owned auto, professional liability, cyber, E&O, or other coverages that are not separately broken out on the umbrella's schedule, those sublimits will not qualify as underlying insurance — creating a gap where the umbrella neither follows form nor provides drop-down coverage above those sublimits. Requires review of the full Schedule of Underlying Policies to assess impact."
+    },
+    {
+      "name": "Defense Costs Within Limits",
+      "form_number": "475-0001",
+      "page": 8,
+      "impact": "Per the dec page warning and policy structure, claim/defense expenses are payable WITHIN, not in addition to, the $10M limits of insurance. Defense costs erode and can exhaust coverage. On a complex election-related lawsuit, this could significantly reduce available indemnity limits."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "additional_insured_note": "Coverage A follows underlying GL for AI status — any blanket AI on the underlying Citizens GL (ZB4 H221415 05) would extend here per Section III.1.b. However, AI coverage is expressly capped at the amount required by contract less underlying amounts, and 'will not be broader than coverage provided by the underlying insurance.' Cannot confirm blanket AI without reading underlying GL. Coverage B does not automatically include AIs beyond the named insured.",
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": true,
+    "contractual_liability_note": "Coverage B excludes contractual liability but preserves the 'insured contract' exception — standard hold harmless/indemnification clauses in contracts qualify. Coverage A follows the underlying GL which typically includes contractual liability.",
+    "per_project_aggregate": false,
+    "professional_liability_excluded": true,
+    "cyber_excluded": true,
+    "do_excluded": true,
+    "claims_made_warning": true,
+    "claims_made_note": "Coverage A follows the trigger of the underlying insurance — if underlying is claims-made, Coverage A is also claims-made. Endorsement 475-0618 governs this. Coverage B is occurrence-based.",
+    "defense_costs_within_limits": true,
+    "underlying_professional_liability_listed": false,
+    "underlying_do_listed": false,
+    "underlying_cyber_listed": false,
+    "underlying_epli_listed": false
+  },
+  "_source_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+}

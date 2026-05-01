@@ -1,0 +1,793 @@
+{
+  "source_file": "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Workers Comp",
+  "is_package": false,
+  "coverage_parts": [
+    "Workers Compensation",
+    "Employers Liability"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services Inc",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [
+    {
+      "entity": "Investments LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "990301B0316",
+      "endorsement_name": "Workers Compensation Broad Form Endorsement (operative mechanism via WCDECMISC additional named insured listing)",
+      "endorsement_type": "other",
+      "page": 95,
+      "scope_note": "Listed under 'ADDITIONAL NAMED INSURED' on Miscellaneous Information page (WCDECMISC). Entity name partially redacted. Coverage extension likely via Workers Compensation Broad Form Endorsement (990301B0316) which is scheduled in every state.",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Properties LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "990301B0316",
+      "endorsement_name": "Workers Compensation Broad Form Endorsement (operative mechanism via WCDECMISC additional named insured listing)",
+      "endorsement_type": "other",
+      "page": 95,
+      "scope_note": "Listed under 'ADDITIONAL NAMED INSURED' on Miscellaneous Information page (WCDECMISC). Entity name partially redacted. Coverage extension likely via Workers Compensation Broad Form Endorsement (990301B0316).",
+      "broad_form_llc_risk": false
+    },
+    {
+      "entity": "Graphics Inc",
+      "entity_type": "Inc",
+      "via_endorsement": "990301B0316",
+      "endorsement_name": "Workers Compensation Broad Form Endorsement (operative mechanism via WCDECMISC additional named insured listing)",
+      "endorsement_type": "other",
+      "page": 95,
+      "scope_note": "Listed under 'ADDITIONAL NAMED INSURED' on Miscellaneous Information page (WCDECMISC). Entity name partially redacted. Coverage extension likely via Workers Compensation Broad Form Endorsement (990301B0316).",
+      "broad_form_llc_risk": false
+    }
+  ],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": true,
+    "form_number": "990301B0316 / WC 99 03 01 B 03 16",
+    "page": 108,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "Workers Compensation Broad Form Endorsement scheduled in every NCCI state (AZ, AR, CO, GA, IL, IN, NY, OR, PA, SD). Provides Voluntary Compensation & EL Coverage for employees described in Schedule, extends 60 days for new state notification under Other States Insurance, adds Stop Gap Coverage for ND/OH/WA/WY. Indiana exclusion form WC 99 03 08 03 16 deletes the Broad Form's Other States Insurance modification, Transfer of Rights/Duties modification, and entire Voluntary Compensation/EL Coverage section for Indiana operations only."
+  },
+  "carrier": "Massachusetts Bay Insurance Company (Hanover Insurance Group)",
+  "policy_number": "WD4-H218283-06",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "workers_compensation": "Statutory",
+    "employers_liability_each_accident": 1000000,
+    "employers_liability_disease_each_employee": 1000000,
+    "employers_liability_disease_policy_limit": 1000000,
+    "oregon_employers_liability_each_accident": 500000,
+    "oregon_employers_liability_disease_each_employee": 500000,
+    "oregon_employers_liability_disease_policy_limit": 500000,
+    "note": "EL limits $1M/$1M/$1M (above standard $100K/$500K/$100K). Oregon mandates $500K/$500K/$500K floor per WC 36 03 06; the $1M policy limits prevail."
+  },
+  "states_covered_part_3A": [
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "FL",
+    "GA",
+    "IL",
+    "IN",
+    "MN",
+    "NY",
+    "NC",
+    "OR",
+    "PA",
+    "SD"
+  ],
+  "other_states_part_3C": "All states except ND, OH, WA, WY (monopolistic) and the states named in 3A",
+  "experience_modifier": {
+    "AZ": 0.69,
+    "AR": 0.66,
+    "CO": 0.69,
+    "FL": 0.69,
+    "GA": 0.69,
+    "IL": 0.69,
+    "IN": 0.69,
+    "MN": 0.69,
+    "NC": 0.69,
+    "OR": 0.69,
+    "SD": 0.69,
+    "NY": 0.97,
+    "PA": 0.95,
+    "CA_schedule_modification": 0.52,
+    "AZ_schedule_modification": 0.75,
+    "effective_date": "2025-04-01",
+    "note": "Mod under 1.0 broadly indicates favorable loss history."
+  },
+  "premium_summary": {
+    "total_schedule_of_operations_premium": 30691,
+    "total_estimated_annual_premium": 31813,
+    "total_with_taxes_and_assessments": 32022,
+    "by_state": {
+      "AZ": 23179,
+      "AR": 33,
+      "CA": 2808,
+      "CO": 795,
+      "FL": 1377,
+      "GA": 315,
+      "IL": 195,
+      "IN": 937,
+      "MN": 146,
+      "NY": 491,
+      "NC": 147,
+      "OR": 79,
+      "PA": 189,
+      "SD": 0
+    }
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": 30,
+    "page_ref": "Pg 105 standard form WC 00 00 00 C (10 days general); state amendatories override: AZ 30 days (Pg 133), CA 10/30 days (Pg 148), AR 10/30 days (Pg 143), FL 10/30/45 days (Pg 165), GA 10/75 days (Pg 166), IL 10/30/60 days (Pg 168), MN 30/60 days (Pg 175), NC 15/30 days (Pg 184), OR 10/45/90 days (Pg 188), SD 10/20 days (Pg 200)"
+  },
+  "endorsements": [
+    {
+      "form_number": "WC 00 00 00 C",
+      "name": "Workers' Compensation and Employers' Liability Insurance Policy (Standard NCCI Form, Ed. 1-15)",
+      "page": 99,
+      "notes": "Standard policy form. General Section, Parts One-Six. 10 days advance written notice for cancellation."
+    },
+    {
+      "form_number": "990301B0316 / WC 99 03 01 B 03 16",
+      "name": "Workers Compensation Broad Form Endorsement",
+      "page": 108,
+      "notes": "Provides Voluntary Compensation & EL Coverage for scheduled employees, 60 days new state notification (vs 30), Stop Gap Coverage for ND/OH/WA/WY. Scheduled in every NCCI state on policy."
+    },
+    {
+      "form_number": "33103021117 / 331-0302 11 17",
+      "name": "Workers' Compensation Broad Form — Schedule of Employees and Approved States",
+      "page": 107,
+      "notes": "Approved states list: AL, AZ, AR, CO, CT, DE, DC, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MI, MS, MO, MT, NE, NV, NH, NM, NY, OK, OR, PA, RI, SC, SD, TN, UT, VT, VA, WV. Notably excludes CA, FL, NJ, NC, ND, OH, TX, WA, WI, WY."
+    },
+    {
+      "form_number": "WC 99 03 04 03 16",
+      "name": "California Workers' Compensation Broad Form Endorsement",
+      "page": 110,
+      "notes": "California-specific Broad Form. Covered State: California."
+    },
+    {
+      "form_number": "WC 99 03 08 03 16 / 990308 0316",
+      "name": "Indiana Exclusion - Other States Insurance & Voluntary Compensation",
+      "page": 111,
+      "notes": "Material Indiana exclusion: deletes Broad Form's Other States Insurance modification, Transfer of Rights/Duties modification, and entire Voluntary Compensation/EL Coverage section for Indiana. IN reverts to standard NCCI WC 00 00 00."
+    },
+    {
+      "form_number": "WC 00 03 13",
+      "name": "Waiver of Our Right to Recover from Others Endorsement (Blanket)",
+      "page": 113,
+      "notes": "BLANKET WAIVER OF SUBROGATION for parties having a written contract with policyholder requiring waiver. Schedule lists: AZ, AR, CO, FL, IN, MN, NY, OR, PA. CA uses separate WC 04 03 06."
+    },
+    {
+      "form_number": "WC 04 03 06",
+      "name": "Waiver of Our Right to Recover from Others Endorsement — California",
+      "page": 125,
+      "notes": "California-specific blanket waiver. AP = 2% of CA WC premium otherwise due. Requires segregated payroll records."
+    },
+    {
+      "form_number": "000313 0484",
+      "name": "Waiver of Subrogation (Schedule)",
+      "page": 76,
+      "notes": "Scheduled in AZ, AR, CO, FL, GA, IL, IN, MN, NY, NC, OR, PA per Schedule of Forms; premium charged each state ($50-$250)."
+    },
+    {
+      "form_number": "331-0342 (09 11) / 33103420911",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 112,
+      "notes": "30 days written notice to designated entities for cancellation other than nonpayment. Schedule includes El Paso County (CO), Coconino County (AZ), Amazon.com Services LLC."
+    },
+    {
+      "form_number": "WC 00 04 22 C",
+      "name": "Terrorism Risk Insurance Program Reauthorization Act Disclosure",
+      "page": 134,
+      "notes": "TRIPRA disclosure; 80% federal reimbursement above insurer deductible; $100B annual cap. Premium charged $1,463."
+    },
+    {
+      "form_number": "WC 00 04 14 A / 000414A0119",
+      "name": "Notification of Change in Ownership (90-Day Reporting)",
+      "page": 136,
+      "notes": "Insured must report ownership change within 90 days; failure may revise experience mod factor."
+    },
+    {
+      "form_number": "WC 00 04 24 / 000424 0117",
+      "name": "Audit Noncompliance Charge Endorsement",
+      "page": 137,
+      "notes": "Up to 2X estimated annual premium if insured fails to allow audit. In every state except CA."
+    },
+    {
+      "form_number": "WC 00 04 25 / 000425 0517",
+      "name": "Experience Rating Modification Factor Revision",
+      "page": 132,
+      "notes": "Per state schedules: 0.690 most states; 0.970 in NY; 0.950 merit credit in PA."
+    },
+    {
+      "form_number": "WC 00 04 19 A / 000419A0822",
+      "name": "Part Five-Premium Amendatory Endorsement",
+      "page": 140,
+      "notes": "Modifies Section A (Manuals) and Section D (Premium Payments)."
+    },
+    {
+      "form_number": "WC 00 04 19 / 000419 0101",
+      "name": "Premium Due Date Endorsement",
+      "page": 173,
+      "notes": "Insured must pay all premium when due; in IN, NC, NY, PA."
+    },
+    {
+      "form_number": "WC 99 06 12 / 990612 0216",
+      "name": "Trade or Economic Sanctions Endorsement",
+      "page": 141,
+      "notes": "OFAC sanctions compliance. In every state except CA (CA uses separate form)."
+    },
+    {
+      "form_number": "WC 00 04 21 F / 000421F0822",
+      "name": "Catastrophe (Other Than Certified Acts of Terrorism) Premium Endorsement",
+      "page": 142,
+      "notes": "Catastrophe premium charge for events >$50M aggregate WC losses. Premium charged $1,265."
+    },
+    {
+      "form_number": "WC 00 04 21 E / 000421E0121",
+      "name": "Catastrophe Premium Endorsement (NY/PA version)",
+      "page": 183,
+      "notes": "Non-certified catastrophe coverage premium endorsement."
+    },
+    {
+      "form_number": "WC 00 04 04 / 000404 0484",
+      "name": "Pending Rate Change Endorsement",
+      "page": 139,
+      "notes": "Allows mid-term rate adjustment if state regulators approve new rate. Scheduled in AZ, AR, CA, CO, FL, GA, IN, NY, NC, OR, PA, SD."
+    },
+    {
+      "form_number": "WC 00 04 06 / WC 00 04 06 A / 000406A0895",
+      "name": "Premium Discount Endorsement",
+      "page": 114,
+      "notes": "Premium discount tier; scheduled in AZ, FL, IN, PA, IL, CA, CO, NY, AR, OR, GA, MN, NC."
+    },
+    {
+      "form_number": "L295 0503 / L295 (5-03)",
+      "name": "Child Labor Laws and Contractor's Responsibility Notice",
+      "page": 76,
+      "notes": "In every state except CA, NY, MN."
+    },
+    {
+      "form_number": "SIG-1100 11 17",
+      "name": "Signature Page",
+      "page": 106,
+      "notes": "Signed by John C. Roche (President) and Charles Frederick Cronin (Secretary)."
+    },
+    {
+      "form_number": "000000C0115",
+      "name": "Workers Comp and Employers Liability Insurance Policy (jacket)",
+      "page": 76,
+      "notes": "Standard policy jacket form."
+    },
+    {
+      "form_number": "231-0862 11 23",
+      "name": "The Hanover Insurance Group Consumer Privacy Notice",
+      "page": 27,
+      "notes": "Privacy notice; informational."
+    },
+    {
+      "form_number": "111-2032DOCU (Ed. 1/03)",
+      "name": "Premium Audit Policyholder Guide",
+      "page": 46,
+      "notes": "Informational policyholder guide."
+    },
+    {
+      "form_number": "WC 02 06 01 C / 020601C0921",
+      "name": "Arizona Cancellation and Nonrenewal Endorsement",
+      "page": 133,
+      "notes": "AZ requires 30 days advance written notice of cancellation/nonrenewal to insured AND Industrial Commission of Arizona."
+    },
+    {
+      "form_number": "WC 02 06 03 A / 020603A1222",
+      "name": "Arizona Amendatory Endorsement",
+      "page": 138,
+      "notes": "AZ statutory amendments. Replaces Item 2 of Information Page."
+    },
+    {
+      "form_number": "WC 8424d (Ed. 2-02) / 8424D 0202",
+      "name": "Arizona Notice to Employees - Notice of Compliance",
+      "page": 1,
+      "notes": "Bilingual mandatory employee posting; confirms AZ statutory WC compliance."
+    },
+    {
+      "form_number": "WC 03 06 01 B / 030601B0318",
+      "name": "Arkansas Amendatory Endorsement",
+      "page": 143,
+      "notes": "AR-specific. Replaces EL Exclusion 2 (punitive damages per Bulletin 4-82). Cancellation: 30 days insured notice; 10 days nonpayment / 30 days other from carrier; notice to AR WC Commission."
+    },
+    {
+      "form_number": "401-1413 02 23",
+      "name": "Important Policyholder Information for Arkansas Insureds",
+      "page": 29,
+      "notes": "Arkansas Act 197 of 1987 disclosure."
+    },
+    {
+      "form_number": "WC 99 06 62 10 18 / 990662 1018",
+      "name": "AR Workers Compensation Loss Control Notice",
+      "page": 39,
+      "notes": "Required notice under Ark. Code Ann. 11-9-409(d)."
+    },
+    {
+      "form_number": "FORM 1A-1 / FORM1A10102",
+      "name": "Arkansas First Report of Injury or Illness",
+      "page": 40,
+      "notes": "AR Form 1 employer's first report template."
+    },
+    {
+      "form_number": "FORMARN0101",
+      "name": "Employee's Notice of Injury (AR)",
+      "page": 78,
+      "notes": "AR employee form."
+    },
+    {
+      "form_number": "WC 04 03 01 D",
+      "name": "Policy Amendatory Endorsement — California",
+      "page": 145,
+      "notes": "CA-specific: minors illegally employed not insured; punitive damages uninsurable; indemnity payment reimbursement under Labor Code §4650(d); rate change subject to Insurance Commissioner per CIC §11737."
+    },
+    {
+      "form_number": "WC 04 03 60 B",
+      "name": "Employers' Liability Coverage Amendatory Endorsement — California",
+      "page": 147,
+      "notes": "CA EL modifications; modifies Exclusions 1, 2, 7. Adds exclusions for flying crew, statutory failure to secure WC, CA Labor Code §2810.3 labor contracting liability."
+    },
+    {
+      "form_number": "WC 04 06 01 B",
+      "name": "California Cancelation Endorsement",
+      "page": 148,
+      "notes": "11 enumerated cancellation reasons. 10 days notice for (a)-(f) including nonpayment; 30 days for (g)-(k)."
+    },
+    {
+      "form_number": "WC 04 04 21",
+      "name": "Optional Premium Increase Endorsement — California",
+      "page": 149,
+      "notes": "If audit access not provided within 90 days post-expiration, insured liable for 3X current annual premium estimate plus audit attempt costs."
+    },
+    {
+      "form_number": "WC 04 04 22",
+      "name": "California Short-Rate Cancelation Endorsement",
+      "page": 150,
+      "notes": "Short-rate cancellation table when insured cancels."
+    },
+    {
+      "form_number": "WC 04 04 22 (01-12)",
+      "name": "Pro Rata / Short Rate Cancellation Table",
+      "page": 151,
+      "notes": "Short rate cancellation percentage/factor table for days in force 39-365."
+    },
+    {
+      "form_number": "WC 04 99 04 (Ed. 12-01)",
+      "name": "Policyholder Notice — California Insurance Guarantee Association (CIGA) Surcharge",
+      "page": 30,
+      "notes": "CIGA participation/surcharge notice."
+    },
+    {
+      "form_number": "PN 04 99 02 B (Ed. 05-02)",
+      "name": "Policyholder Notice — California Workers' Compensation Insurance Rating Laws",
+      "page": 31,
+      "notes": "CA WC rating laws disclosure under Insurance Code §11752.8."
+    },
+    {
+      "form_number": "PN 04 99 01 I (Ed. 02-22)",
+      "name": "Policyholder Notice — Your Right to Rating and Dividend Information (California)",
+      "page": 44,
+      "notes": "CA right-to-rating notice."
+    },
+    {
+      "form_number": "331-0361 02 16",
+      "name": "California Important Notice to Policyholders — Territorial Factor",
+      "page": 38,
+      "notes": "CA territorial factor adjustment notice."
+    },
+    {
+      "form_number": "WC 99 03 04 (CA)",
+      "name": "California Workers Compensation Broad Form Endorsement",
+      "page": 80,
+      "notes": "California-specific Broad Form (March 2016 ed.)."
+    },
+    {
+      "form_number": "WC 05 04 02 / 050402 1190",
+      "name": "Colorado Classification Endorsement",
+      "page": 156,
+      "notes": "CO Part Five Section B amended; insured must notify of operational changes within 90 days; reclassification carrying higher premium only if insured failed to provide accurate data."
+    },
+    {
+      "form_number": "WC 49 (Rev 11/07) / 49 1107",
+      "name": "Colorado Workers' Compensation Information (English & Spanish)",
+      "page": 48,
+      "notes": "Required CO state employee notice."
+    },
+    {
+      "form_number": "331-0351 (10/12) / 33103511012",
+      "name": "Colorado Premium Credit for Certified Risk Management Programs Disclosure",
+      "page": 50,
+      "notes": "CO premium credit schedule 0%-10% loss-history credit; 2.5% designated medical provider credit; capped at 12.5%."
+    },
+    {
+      "form_number": "11120320103",
+      "name": "Premium Audit Brochure (CO)",
+      "page": 80,
+      "notes": "CO premium audit notice."
+    },
+    {
+      "form_number": "WC 09 04 08 A (Ed. 7-19) / 090408A0719",
+      "name": "Florida Insufficient Funds Endorsement",
+      "page": 158,
+      "notes": "$15 NSF fee for returned premium payments."
+    },
+    {
+      "form_number": "WC 09 04 09 (Ed. 07-2024) / 090409 0724",
+      "name": "Florida Premium Due Date Endorsement",
+      "page": 159,
+      "notes": "Replaces Part Five-Premium Section D for FL."
+    },
+    {
+      "form_number": "WC 09 03 03 / 090303 0805",
+      "name": "Florida Amendatory Endorsement (EL Exclusion 5 - Intentional Conduct)",
+      "page": 128,
+      "notes": "FL replacement of EL Exclusion 5; excludes intentional bodily injury and conduct equivalent to intentional tort that strips civil-liability immunity under FL WC law."
+    },
+    {
+      "form_number": "WC 09 04 07 A (Ed. 03-2024) / 090407A0324",
+      "name": "Florida Non-Cooperation With Premium Audit Endorsement",
+      "page": 161,
+      "notes": "Up to 3X most recent estimated annual premium for audit non-cooperation; $500 cost-defrayment for denied physical inspection; 10X penalty + attorney fees for understated/concealed payroll. Quarterly earnings reports filed with FL DOR with sworn officer attestation required."
+    },
+    {
+      "form_number": "33102620307",
+      "name": "FL WC & Employers Liability Policy Jacket",
+      "page": 82,
+      "notes": "FL policy jacket."
+    },
+    {
+      "form_number": "WC 09 04 03 C (Ed. 01-2021) / 090403C0121",
+      "name": "Florida TRIPRA Endorsement",
+      "page": 162,
+      "notes": "FL TRIPRA disclosure; insurer deductible 20% of direct earned premium 2021-2027; $200M industry trigger; $100B annual cap."
+    },
+    {
+      "form_number": "WC 09 06 07 A (Ed. 7-19) / 090607A0719",
+      "name": "Florida Workers Compensation Insurance Guaranty Association Surcharge Endorsement",
+      "page": 164,
+      "notes": "FWCIGA surcharge mechanism; failure to pay = pro-rata cancellation."
+    },
+    {
+      "form_number": "WC 09 06 09 A (Ed. 01-2025) / 090609A0125",
+      "name": "Florida Cancellation and Nonrenewal Endorsement",
+      "page": 165,
+      "notes": "10 days nonpayment; 30 days if in effect ≤60 days; 45 days if in effect 61+ days. After 61 days only 5 grounds for cancellation. 45-day nonrenewal notice."
+    },
+    {
+      "form_number": "331-0174 (4-19)",
+      "name": "Notice of Availability of Loss Control Services (Florida)",
+      "page": 33,
+      "notes": "FL-required no-cost safety/health consultation services notice."
+    },
+    {
+      "form_number": "401-1418 03 23",
+      "name": "Important Policyholder Information for Florida Insureds",
+      "page": 34,
+      "notes": "FL contact disclosure."
+    },
+    {
+      "form_number": "WC 10 06 01 C (Ed. 7-18) / 100601C0718",
+      "name": "Georgia Cancellation, Nonrenewal, and Change Endorsement",
+      "page": 166,
+      "notes": "GA: 10 days notice if <60 days or nonpayment; 75 days notice (certified mail) if 60+ days for non-nonpayment; 45 days for >15% renewal premium increase; 45 days for coverage reduction."
+    },
+    {
+      "form_number": "WC-1 (Rev. 07/2007) / 1 0707",
+      "name": "Georgia Employer's First Report of Injury",
+      "page": 52,
+      "notes": "Required GA state form."
+    },
+    {
+      "form_number": "231-2015 (Ed. 06-16) / 23120150616",
+      "name": "Georgia WC Policyholder Panel of Physician Requirements",
+      "page": 54,
+      "notes": "GA Rule 201(a)(1) physician panel requirements; Hanover PPO network."
+    },
+    {
+      "form_number": "WC 12 06 01 F (Ed. 1-19) / 120601F0119",
+      "name": "Illinois Amendatory Endorsement",
+      "page": 168,
+      "notes": "IL: expanded EL for consequential injury to civil-union party/spouse/child/parent/sibling. 3-year audit window. Cancellation: 10 days nonpayment / 30 if ≤60 days / 60 if 61+ days. Renewal premium >30% requires 60-day nonrenewal notice; if late, auto-extends 1 year."
+    },
+    {
+      "form_number": "WC 12 03 06 A (Ed. 07-11) / 120306A0711",
+      "name": "Illinois Workers Compensation and Employers Liability Insurance Policy Exclusion Endorsement",
+      "page": 170,
+      "notes": "IL: excludes liability assumed under contract AND any agreement to waive insured's right to limit liability for contribution under IL WC Act/Occupational Disease Act. Workmanlike-manner warranty preserved."
+    },
+    {
+      "form_number": "WC 12 06 03 (Ed. 1-19) / 120603 0119",
+      "name": "Illinois Renewal Endorsement",
+      "page": 171,
+      "notes": "IL renewal provisions; 60-day notice for ≥30% renewal increase; 30-day conditional renewal notice if >5% above filed rate."
+    },
+    {
+      "form_number": "WC 99 06 71 08 19",
+      "name": "Illinois Conditional Renewal Notice",
+      "page": 35,
+      "notes": "IL 215 ILCS 5/462a notice for renewal premium >5% above approved rate."
+    },
+    {
+      "form_number": "WC 34-IL / 34IL 0703",
+      "name": "Illinois Notice of Election to Accept or Reject Insurance Deductible",
+      "page": 84,
+      "notes": "IL deductible election; 'No' deductible elected; $1,000 reference."
+    },
+    {
+      "form_number": "33102410724 / 331-0241 0724",
+      "name": "Illinois Industrial Commission Operations Fund Surcharge Disclosure",
+      "page": 130,
+      "notes": "IL statutory 1.092% surcharge on direct written premium; annual surcharge $2.00."
+    },
+    {
+      "form_number": "401-1417 03 23",
+      "name": "Important Policyholder Information for Illinois Insureds",
+      "page": 36,
+      "notes": "IL 215 ILCS 5/143c contact disclosure."
+    },
+    {
+      "form_number": "WC 22 06 01 D (Ed. 8-06) / 220601D0806",
+      "name": "Minnesota Cancellation and Nonrenewal Endorsement",
+      "page": 175,
+      "notes": "MN: New <90 days cancel for any reason on 60 days notice. After 90 days, only 8 enumerated grounds. 60-day notice (30 for nonpayment). 60-day nonrenewal."
+    },
+    {
+      "form_number": "WC 22 00 00 A (Ed. 11-03) / 220000A1103",
+      "name": "Minnesota Amendatory Endorsement",
+      "page": 177,
+      "notes": "MN modifies EL Section E (We Will Also Pay) — adds bond premiums up to limit, litigation costs, pre/post-judgment interest. Section H subrogation modifications. 1-year EL audit window."
+    },
+    {
+      "form_number": "WC 22 03 01 (Ed. 1-05) / 220301 0105",
+      "name": "Minnesota Compliance with Applicable Trade Sanction Laws",
+      "page": 178,
+      "notes": "MN OFAC compliance."
+    },
+    {
+      "form_number": "WC 31 03 08 (Ed. 4-84) / 310308 0484",
+      "name": "New York Limit of Liability Endorsement",
+      "page": 179,
+      "notes": "Insurer may not limit liability for damages payable due to BI to employees arising out of/in course of employment subject to and compensable under NY WC Law. Effectively unlimited EL for NY claims."
+    },
+    {
+      "form_number": "WC 31 06 18 / 310618 0315",
+      "name": "New York Workers Compensation Policyholder Notice of Right to Appeal",
+      "page": 180,
+      "notes": "NY appeals process to NYCIRB and DFS."
+    },
+    {
+      "form_number": "WC 31 03 19 N / 310319N0424",
+      "name": "New York Construction Classification Premium Adjustment Program (NYCCPAP) Endorsement",
+      "page": 181,
+      "notes": "NY premium credits for eligible construction classes if avg wages >$23.24/hr."
+    },
+    {
+      "form_number": "C-105 (1-11)",
+      "name": "New York Notice of Compliance to Employees",
+      "page": 2,
+      "notes": "Mandatory NY posting; confirms NY coverage 04/01/2025-04/01/2026."
+    },
+    {
+      "form_number": "WC 32 03 01 D (Ed. 7-18) / 320301D0718",
+      "name": "North Carolina Amended Coverage Endorsement",
+      "page": 184,
+      "notes": "NC: <60 days cancel for any reason with 30-day notice (registered/certified mail). After 60 days only 10 enumerated grounds. 15 days notice for grounds (b)(1)-(10). 45-day nonrenewal. 30-day notice for coverage reduction or premium increase."
+    },
+    {
+      "form_number": "WC 99 06 78 (Ed. 01/21)",
+      "name": "North Carolina Policyholder Disclosure Notice of Terrorism Insurance Coverage",
+      "page": 37,
+      "notes": "NC TRIA disclosure."
+    },
+    {
+      "form_number": "WC 36 06 01 E (Ed. 1-08) / 360601E0108",
+      "name": "Oregon Cancellation Endorsement",
+      "page": 188,
+      "notes": "OR: 90-day notice if cancel based on insurer's decision not to offer to all employers within premium category; 45-day for other reasons; 10-day for nonpayment."
+    },
+    {
+      "form_number": "WC 36 06 04 (Ed. 01-17) / 360604 0117",
+      "name": "Oregon Amendatory Endorsement",
+      "page": 189,
+      "notes": "OR EL Exclusion 5 expanded — excludes intentional bodily injury/aggravation, intentional-tort-equivalent conduct, tortious conduct under ORS 656.018(3) stripping immunity. Adds Item 13 — excludes ORS 656.019 / ORS 654.305-336 causes of action."
+    },
+    {
+      "form_number": "WC 36 03 06 (Ed. 1-02) / 360306 0102",
+      "name": "Oregon Limits of Liability Endorsement",
+      "page": 190,
+      "notes": "OR EL minimum limits $500K/$500K/$500K (or higher amount in Item 3.B)."
+    },
+    {
+      "form_number": "WC 36 06 02 / 360602 0111",
+      "name": "Oregon Confidentiality Endorsement",
+      "page": 191,
+      "notes": "Insured must hold confidential medical/vocational claim records of injured OR workers; obtain confidentiality agreements from employees/agents."
+    },
+    {
+      "form_number": "WC 36 06 03 / 360603 0111",
+      "name": "Oregon Employer Paid Medical Claims Endorsement",
+      "page": 192,
+      "notes": "OR employer may reimburse carrier for medical services on accepted nondisabling claims; reimbursed amounts not used in experience modification."
+    },
+    {
+      "form_number": "WC 37 04 05 / 370405 0896",
+      "name": "Pennsylvania Merit Rating Plan Endorsement",
+      "page": 193,
+      "notes": "PA merit rating credit (5% credit / 0% / 5% debit) based on lost-time injuries in most recent 2 years. 0.950 credit applied."
+    },
+    {
+      "form_number": "WC 37 04 01 / 370401 0117",
+      "name": "Pennsylvania Audit Noncompliance Charge Endorsement",
+      "page": 194,
+      "notes": "PA: 2X EAP audit noncompliance charge; removed if insured later complies."
+    },
+    {
+      "form_number": "WC 37 06 04 / 370604 1099",
+      "name": "Pennsylvania Employer Assessment Endorsement",
+      "page": 131,
+      "notes": "PA Act 57 of 1997 employer assessment. Code 0938, factor 2.22, $6.00 assessment."
+    },
+    {
+      "form_number": "WC 37 06 02 / 370602 0484",
+      "name": "Pennsylvania Notice — Insurance Consultation Services Exemption Act",
+      "page": 196,
+      "notes": "PA carrier and agents/employees not liable for damages from loss-control/inspection/consultation services, with enumerated exceptions."
+    },
+    {
+      "form_number": "WC 37 06 03 A / 370603A0895",
+      "name": "Pennsylvania Act 86-1986 Endorsement",
+      "page": 197,
+      "notes": "PA: 60 days advance notice of nonrenewal; 30 days advance notice of premium increase at renewal; unearned premium return rules."
+    },
+    {
+      "form_number": "WC 37 06 01 / 370601 0484",
+      "name": "Special Pennsylvania Endorsement — Inspection of Manuals",
+      "page": 204,
+      "notes": "PA manuals approved under Section 654 of PA Insurance Company Law."
+    },
+    {
+      "form_number": "WC 40 06 01 A / 400601A0711",
+      "name": "South Dakota Direct Action Statute Endorsement",
+      "page": 199,
+      "notes": "SDCL §58-20-12: injured employee may add carrier as defendant in EL suit; carrier directly liable."
+    },
+    {
+      "form_number": "WC 40 06 05 B / 400605B0406",
+      "name": "South Dakota Cancellation and Nonrenewal Endorsement",
+      "page": 200,
+      "notes": "SD: 10 days nonpayment / 20 days other reasons. After 60 days, only enumerated grounds for cancellation. 60-day nonrenewal notice."
+    }
+  ],
+  "designated_entity_noc_endorsements": [
+    {
+      "form_number": "331-0342 (09 11) / 33103420911",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 112,
+      "designated_entities": [
+        "El Paso County Contracts & Procurement Division (200 South Cascade Avenue, Colorado Springs, CO 80903)",
+        "Coconino County (219 East Cherry Ave, Flagstaff, AZ 86001)",
+        "Amazon.com Services LLC (345 Boren Avenue North, Seattle, WA 98109)"
+      ],
+      "notice_period_days": 30
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Employers' Liability — Liability Assumed Under Contract",
+      "form_number": "WC 00 00 00 C, Part Two §C.1",
+      "page": 102,
+      "impact": "Standard EL exclusion — does not cover liability assumed under contract (except warranty of workmanlike work). Tort indemnity to a third party for injury to insured's employee may still be covered under §B.1."
+    },
+    {
+      "name": "Employers' Liability — Federal Acts (USL&H, Jones Act, FELA, DBA, Nonappropriated Fund, OCSLA)",
+      "form_number": "WC 00 00 00 C, Part Two §C.8-10",
+      "page": 102,
+      "impact": "Excludes work subject to USL&H, Nonappropriated Fund, OCSLA, Defense Base Act, FELA, and crew of any vessel. No USL&H or Jones Act coverage absent endorsement."
+    },
+    {
+      "name": "Employers' Liability — Discrimination/Personnel Practices Exclusion",
+      "form_number": "WC 00 00 00 C, Part Two §C.7",
+      "page": 102,
+      "impact": "Excludes damages from coercion, criticism, demotion, evaluation, reassignment, discipline, defamation, harassment, humiliation, discrimination, termination, or any personnel practices/policies/acts/omissions. EPLI required to fill this gap."
+    },
+    {
+      "name": "Employers' Liability — Bodily Injury Outside US/Canada",
+      "form_number": "WC 00 00 00 C, Part Two §C.6",
+      "page": 102,
+      "impact": "Excludes BI occurring outside US/territories/possessions/Canada, except for US/Canadian citizens temporarily abroad."
+    },
+    {
+      "name": "Employers' Liability — Punitive Damages / Illegally-Employed Workers",
+      "form_number": "WC 00 00 00 C, Part Two §C.2-3",
+      "page": 102,
+      "impact": "Excludes punitive/exemplary damages and BI to employees employed in violation of law with insured's knowledge."
+    },
+    {
+      "name": "Florida EL — Intentional Conduct Exclusion (Modified)",
+      "form_number": "WC 09 03 03 / 090303 0805",
+      "page": 128,
+      "impact": "FL replacement of EL Exclusion 5. Excludes intentional injury and conduct equivalent to intentional tort that would deprive insured of civil-liability immunity under FL WC law. Broader than standard exclusion 5."
+    },
+    {
+      "name": "Indiana — No Voluntary Compensation / No Broad Form Other States Modifications",
+      "form_number": "WC 99 03 08 03 16 / 990308 0316",
+      "page": 111,
+      "impact": "For Indiana, the Broad Form's Voluntary Compensation & EL Coverage section is deleted entirely. Indiana operations rely on standard NCCI WC 00 00 00 with no Voluntary Comp safety net. Material if any IN employee performs work outside the states scheduled under Item 3.A."
+    },
+    {
+      "name": "Illinois — Liability Assumed Under Contract / Waiver of Contribution Right Exclusion",
+      "form_number": "WC 12 03 06 A (Ed. 07-11) / 120306A0711",
+      "page": 170,
+      "impact": "IL only. Excludes liability assumed under contract AND any agreement to waive insured's right to limit liability for contribution under IL WC Act and Occupational Disease Act. Workmanlike-manner warranty preserved. PRACTICAL: in IL, contract clauses requiring Run-Test to waive its statutory contribution limitations would be uninsured."
+    },
+    {
+      "name": "Oregon — Intentional Acts / Tortious Conduct / ORS 656.019 / ORS 654.305-336 Exclusion",
+      "form_number": "WC 36 06 04 / 360604 0117",
+      "page": 189,
+      "impact": "OR only. Excludes intentional bodily injury/aggravation, intentional-tort-equivalent conduct, tortious conduct or activity per ORS 656.018(3) stripping employer immunity, and any cause of action under ORS 656.019 or ORS 654.305-336."
+    },
+    {
+      "name": "Trade or Economic Sanctions Exclusion",
+      "form_number": "WC 99 06 12 / 990612 0216",
+      "page": 141,
+      "impact": "No coverage to extent trade/economic sanctions or other laws prohibit insurer from providing coverage. OFAC-style exclusion."
+    },
+    {
+      "name": "California — Punitive/Exemplary Damages Uninsurable",
+      "form_number": "WC 04 03 01 D",
+      "page": 145,
+      "impact": "CA does not cover punitive/exemplary damages where insurance prohibited by law or contrary to public policy."
+    },
+    {
+      "name": "California — Minors Illegally Employed Not Insured",
+      "form_number": "WC 04 03 01 D",
+      "page": 145,
+      "impact": "No coverage for additional comp imposed under CA Labor Code §4557 for injury to employee under 16 illegally employed."
+    },
+    {
+      "name": "California EL — Flying Crew Exclusion",
+      "form_number": "WC 04 03 60 B",
+      "page": 147,
+      "impact": "CA excludes BI to any member of the flying crew of any aircraft."
+    },
+    {
+      "name": "California EL — Failure to Secure WC Obligations",
+      "form_number": "WC 04 03 60 B",
+      "page": 147,
+      "impact": "CA excludes BI to employee where insured deprived of statutory/common law defenses or subject to penalty for failure to secure WC obligations."
+    },
+    {
+      "name": "California EL — Labor Code §2810.3 Liability Exclusion",
+      "form_number": "WC 04 03 60 B",
+      "page": 147,
+      "impact": "CA excludes liability arising from Labor Code §2810.3 (labor contracting / staffing arrangement liability)."
+    },
+    {
+      "name": "Arkansas — Punitive/Exemplary Damages (EL)",
+      "form_number": "WC 03 06 01 B / 030601B0318",
+      "page": 143,
+      "impact": "AR modified EL exclusion — punitive/exemplary damages because of BI to employee in violation of law (per AR Bulletin 4-82) excluded."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": true,
+    "waiver_of_subrogation_page": "113 (WC 00 03 13 blanket — schedule lists AZ, AR, CO, FL, IN, MN, NY, OR, PA); 125 (WC 04 03 06 — California-specific blanket waiver)",
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "_source_file": "redacted - Hanover - WC - 4.1.25-4.1.26.pdf"
+}

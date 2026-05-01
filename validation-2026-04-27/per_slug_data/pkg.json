@@ -1,0 +1,279 @@
+{
+  "slug": "pkg",
+  "policy_name": "Hanover Commercial Package",
+  "sources": {
+    "presentation": true,
+    "prior_report": false,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 144,
+      "title": "Commercial Property \u2014 Electronic Data and Computer Operation",
+      "content": "[Bad] Commercial Property \u2014 Electronic Data and Computer Operation\nRisk Score: 9/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 137,
+      "title": "Property \u2014 Equipment Breakdown Limit Adequacy",
+      "content": "[Good] Property \u2014 Equipment Breakdown Limit Adequacy\n\nWhat this means:\nYour equipment breakdown insurance is $49 million \u2014 appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: cyber-caused equipment damage isn't an 'accident' under this \u2014 that's why your cyber policy\n\nRecommendation:\nMaintain. Verify cloud-computing service interruption coverage covers all critical SaaS dependencies.",
+      "type_name": "Text"
+    },
+    {
+      "page": 144,
+      "title": "Property \u2014 Electronic Data Sublimit",
+      "content": "[Bad] Property \u2014 Electronic Data Sublimit\nRisk Score: 9/25\n\nWhat this means:\nYour property policy treats your most valuable asset \u2014 election data \u2014 as worth $2,500. For a $20+ million-revenue technology company, that's not coverage, it's a punchline. Your cyber policy covers data restoration for cyberattacks, but mechanical/non-cyber data loss has only token coverage. If a s\n\nRecommendation:\nIncrease Electronic Data and Interruption of Computer Operations sublimits to $250K-$500K each at next renewal. Hanover should have a Premium Choice or similar endorsement option. If not, marketing th",
+      "type_name": "Text"
+    },
+    {
+      "page": 158,
+      "title": "Property \u2014 Interruption of Computer Operations Sublimit",
+      "content": "[Bad] Property \u2014 Interruption of Computer Operations Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a sprinkler discharge or HVAC failure damaged your data systems and shut down ballot processing for two weeks, your business income insurance pays $2,500. That's about 30 minutes of operations for a company your size. Your cyber policy only responds if the cause is cyber \u2014 a sprinkler isn't cyber\n\nRecommendation:\nIncrease Interruption of Computer Operations sublimit to $1M-$2M at renewal. Hanover Premium Choice or similar should be available.",
+      "type_name": "Text"
+    },
+    {
+      "page": 205,
+      "title": "Per-Project Aggregate Cap Limitation",
+      "content": "[Bad] Per-Project Aggregate Cap Limitation\nRisk Score: 6/25\n\nWhat this means:\nYour GL gives you separate aggregate limits for each project \u2014 but only up to $2 million total across the policy. So if you have multiple counties claiming damages in the same year, the sum can't exceed $2 million on the primary GL. Above that, your $10 million umbrella picks up \u2014 so in practice thi\n\nRecommendation:\nAt renewal, push to remove or significantly increase the $2M policy aggregate cap. Confirm umbrella follow-form attaches at $2M for GL.",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Bad",
+      "title": "Property \u2014 Electronic Data Sublimit",
+      "score": 9,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "pkg",
+      "matched_in_audited": true,
+      "audited_page": 144,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] Property \u2014 Electronic Data Sublimit\nRisk Score: 9/25\n\nWhat this means:\nYour property policy treats your most valuable asset \u2014 election data \u2014 as worth $2,500. For a $20+ million-revenue technology company, that's not coverage, it's a punchline. Your cyber policy covers data restoration for cyb"
+    },
+    {
+      "category": "Bad",
+      "title": "Property \u2014 Interruption of Computer Operations Sublimit",
+      "score": 9,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "pkg",
+      "matched_in_audited": true,
+      "audited_page": 158,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] Property \u2014 Interruption of Computer Operations Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a sprinkler discharge or HVAC failure damaged your data systems and shut down ballot processing for two weeks, your business income insurance pays $2,500. That's about 30 minutes of operations for a c"
+    },
+    {
+      "category": "Bad",
+      "title": "Per-Project Aggregate Cap Limitation",
+      "score": 6,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "pkg",
+      "matched_in_audited": true,
+      "audited_page": 205,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] Per-Project Aggregate Cap Limitation\nRisk Score: 6/25\n\nWhat this means:\nYour GL gives you separate aggregate limits for each project \u2014 but only up to $2 million total across the policy. So if you have multiple counties claiming damages in the same year, the sum can't exceed $2 million on the p"
+    },
+    {
+      "category": "Good",
+      "title": "Property \u2014 Equipment Breakdown Limit Adequacy",
+      "score": 0,
+      "severity_word": "",
+      "description": "[Good] Property \u2014 Equipment Breakdown Limit Adequacy\n\nWhat this means:\nYour equipment breakdown insurance is $49 million \u2014 appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: cyber-caused equipment damage isn't an 'accident' under this \u2014 that's why your cyber policy\n\nRecommendation:\nMaintain. Verify cloud-computing service interruption coverage covers all critical SaaS dependencies.",
+      "policy_slug": "pkg",
+      "matched_in_audited": true,
+      "audited_page": 137,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Good] Property \u2014 Equipment Breakdown Limit Adequacy\n\nWhat this means:\nYour equipment breakdown insurance is $49 million \u2014 appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: cyber-caused equipme",
+      "from_pdf_only": true
+    }
+  ],
+  "v1_v2_unchanged": [
+    {
+      "v1": {
+        "page": 144,
+        "title": "Commercial Property \u2014 Electronic Data and Computer Operation",
+        "content": "[Bad] Commercial Property \u2014 Electronic Data and Computer Operation\nRisk Score: 9/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 144,
+        "title": "Property \u2014 Electronic Data Sublimit",
+        "content": "[Bad] Property \u2014 Electronic Data Sublimit\nRisk Score: 9/25\n\nWhat this means:\nYour property policy treats your most valuable asset \u2014 election data \u2014 as worth $2,500. For a $20+ million-revenue technology company, that's not coverage, it's a punchline. Your cyber policy covers data restoration for cyberattacks, but mechanical/non-cyber data loss has only token coverage. If a s\n\nRecommendation:\nIncrease Electronic Data and Interruption of Computer Operations sublimits to $250K-$500K each at next renewal. Hanover should have a Premium Choice or similar endorsement option. If not, marketing th",
+        "type_name": "Text"
+      },
+      "similarity": 0.61
+    }
+  ],
+  "v1_v2_removed": [],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 137,
+      "title": "Property \u2014 Equipment Breakdown Limit Adequacy",
+      "content": "[Good] Property \u2014 Equipment Breakdown Limit Adequacy\n\nWhat this means:\nYour equipment breakdown insurance is $49 million \u2014 appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: cyber-caused equipment damage isn't an 'accident' under this \u2014 that's why your cyber policy\n\nRecommendation:\nMaintain. Verify cloud-computing service interruption coverage covers all critical SaaS dependencies.",
+      "type_name": "Text"
+    },
+    {
+      "page": 158,
+      "title": "Property \u2014 Interruption of Computer Operations Sublimit",
+      "content": "[Bad] Property \u2014 Interruption of Computer Operations Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a sprinkler discharge or HVAC failure damaged your data systems and shut down ballot processing for two weeks, your business income insurance pays $2,500. That's about 30 minutes of operations for a company your size. Your cyber policy only responds if the cause is cyber \u2014 a sprinkler isn't cyber\n\nRecommendation:\nIncrease Interruption of Computer Operations sublimit to $1M-$2M at renewal. Hanover Premium Choice or similar should be available.",
+      "type_name": "Text"
+    },
+    {
+      "page": 205,
+      "title": "Per-Project Aggregate Cap Limitation",
+      "content": "[Bad] Per-Project Aggregate Cap Limitation\nRisk Score: 6/25\n\nWhat this means:\nYour GL gives you separate aggregate limits for each project \u2014 but only up to $2 million total across the policy. So if you have multiple counties claiming damages in the same year, the sum can't exceed $2 million on the primary GL. Above that, your $10 million umbrella picks up \u2014 so in practice thi\n\nRecommendation:\nAt renewal, push to remove or significantly increase the $2M policy aggregate cap. Confirm umbrella follow-form attaches at $2M for GL.",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 24,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Management Liability Policy",
+        "Commercial Package"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 28,
+      "title": "Commercial Package Policy",
+      "body": [
+        "BPP has exclusion against fire and smoke damage, lightning, windstorm, and hail.",
+        "High likelihood / severe consequences exposure",
+        "Pg. 130 of 254"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 29,
+      "title": "Commercial Package Policy",
+      "body": [
+        "No business income payment for revenue losses that are contributed to \u2013 or increased from an agreement in respect to equipment breakdown.",
+        "High likelihood / severe consequences exposure",
+        "Pg. 130 of 254"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 30,
+      "title": "Commercial Package Policy",
+      "body": [
+        "No BI coverage for loss or damage to \u2018unfinished stock\u2019\u2018finished stock\u2019 has $100k sublimit.",
+        "High likelihood / severe consequences exposure",
+        "Pg. 179 & 180 of 254",
+        "Pg. 75 of 254"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 31,
+      "title": "Commercial Package Policy",
+      "body": [
+        "Ordinance or Law exclusion for building reconstruction",
+        "High likelihood / severe consequences exposure",
+        "Pg. 175 of 254"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-20a",
+      "description": "Properties LLC missing from CGL but on Auto/Umbrella/Cyber",
+      "keywords": [
+        "properties llc",
+        "cgl"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-20b",
+      "description": "Cross-policy entity inconsistency pattern",
+      "keywords": [
+        "lincoln shields",
+        "black mountain"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-21",
+      "description": "Designated Entity NOC 401-1235 details",
+      "keywords": [
+        "401-1235",
+        "designated entity"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 137,
+          "title": "Property \u2014 Equipment Breakdown Limit Adequacy",
+          "snippet": "[Good] Property \u2014 Equipment Breakdown Limit Adequacy\n\nWhat this means:\nYour equipment breakdown insurance is $49 million \u2014 appropriate for industrial printing presses and sorting equipment. If a press blows up, you're well-covered for repair and lost income. Note one limitation: "
+        },
+        {
+          "page": 144,
+          "title": "Property \u2014 Electronic Data Sublimit",
+          "snippet": "[Bad] Property \u2014 Electronic Data Sublimit\nRisk Score: 9/25\n\nWhat this means:\nYour property policy treats your most valuable asset \u2014 election data \u2014 as worth $2,500. For a $20+ million-revenue technology company, that's not coverage, it's a punchline. Your cyber policy covers data"
+        },
+        {
+          "page": 158,
+          "title": "Property \u2014 Interruption of Computer Operations Sublimit",
+          "snippet": "[Bad] Property \u2014 Interruption of Computer Operations Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a sprinkler discharge or HVAC failure damaged your data systems and shut down ballot processing for two weeks, your business income insurance pays $2,500. That's about 30 minutes o"
+        },
+        {
+          "page": 205,
+          "title": "Per-Project Aggregate Cap Limitation",
+          "snippet": "[Bad] Per-Project Aggregate Cap Limitation\nRisk Score: 6/25\n\nWhat this means:\nYour GL gives you separate aggregate limits for each project \u2014 but only up to $2 million total across the policy. So if you have multiple counties claiming damages in the same year, the sum can't exceed"
+        }
+      ]
+    }
+  ]
+}

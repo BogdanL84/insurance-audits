@@ -1,0 +1,162 @@
+{
+  "slug": "umb",
+  "policy_name": "Hanover Commercial Umbrella",
+  "sources": {
+    "presentation": true,
+    "prior_report": false,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 36,
+      "title": "Professional Liability \u2014 No Umbrella Excess Coverage Over Te",
+      "content": "[Ugly] Professional Liability \u2014 No Umbrella Excess Coverage Over Te\nRisk Score: 20/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 31,
+      "title": "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded",
+      "content": "[Ugly] Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded\nRisk Score: 15/25\n\nWhat this means:\nYou have a $10 million umbrella, which sounds great until you realize what it actually does. It backs up your auto policy, your general liability, and workers' comp. It does NOT back up the four policies that actually matter for your business: professional liability, cyber, D&O, and EPLI. So if a co\n\nRecommendation:\nBuild a proper excess tower ABOVE the management liability and cyber primaries: target $5M-$10M excess D&O, $5M-$10M excess Cyber, $5M-$10M excess EPLI. The Hanover umbrella structure is appropriate f",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded",
+      "score": 15,
+      "severity_word": "High",
+      "description": "The Hanover Commercial Umbrella ($10M) is a follow-form excess for GL, Auto, WC, and EBL ONLY.",
+      "policy_slug": "umb",
+      "matched_in_audited": true,
+      "audited_page": 31,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded\nRisk Score: 15/25\n\nWhat this means:\nYou have a $10 million umbrella, which sounds great until you realize what it actually does. It backs up your auto policy, your general liability, and workers' comp. It does NOT back up the four pol"
+    }
+  ],
+  "v1_v2_unchanged": [],
+  "v1_v2_removed": [
+    {
+      "page": 36,
+      "title": "Professional Liability \u2014 No Umbrella Excess Coverage Over Te",
+      "content": "[Ugly] Professional Liability \u2014 No Umbrella Excess Coverage Over Te\nRisk Score: 20/25",
+      "type_name": "Text"
+    }
+  ],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 31,
+      "title": "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded",
+      "content": "[Ugly] Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded\nRisk Score: 15/25\n\nWhat this means:\nYou have a $10 million umbrella, which sounds great until you realize what it actually does. It backs up your auto policy, your general liability, and workers' comp. It does NOT back up the four policies that actually matter for your business: professional liability, cyber, D&O, and EPLI. So if a co\n\nRecommendation:\nBuild a proper excess tower ABOVE the management liability and cyber primaries: target $5M-$10M excess D&O, $5M-$10M excess Cyber, $5M-$10M excess EPLI. The Hanover umbrella structure is appropriate f",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 25,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Commercial Umbrella",
+        "\u2026 again, It\u2019s LLC not INC"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 27,
+      "title": "Umbrella Policy",
+      "body": [
+        "Umbrella Policy Causes Horizontal Exhaustion",
+        "Breach of Contract",
+        "Pg. 37 of 77"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-08a",
+      "description": "Schedule of Underlying blank for Tech E&O / D&O",
+      "keywords": [
+        "schedule of underlying",
+        "blank",
+        "tech e&o",
+        "d&o",
+        "professional liability"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 31,
+          "title": "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded",
+          "snippet": "[Ugly] Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded\nRisk Score: 15/25\n\nWhat this means:\nYou have a $10 million umbrella, which sounds great until you realize what it actually does. It backs up your auto policy, your general liability, and workers' comp. It does NOT "
+        }
+      ]
+    },
+    {
+      "gap_id": "GAP-08b",
+      "description": "Hanover Umbrella does NOT sit over Convex Tech E&O",
+      "keywords": [
+        "convex",
+        "tech e&o",
+        "follow-form"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-08c",
+      "description": "Coverage B direct exclusions strip professional services",
+      "keywords": [
+        "coverage b",
+        "professional services",
+        "exclusion"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": false,
+      "hits": []
+    }
+  ]
+}

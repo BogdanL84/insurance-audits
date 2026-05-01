@@ -1,0 +1,157 @@
+{
+  "slug": "sg",
+  "policy_name": "Security Guards Liability (Arch Insurance)",
+  "sources": {
+    "presentation": true,
+    "prior_report": true,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 40,
+      "title": "GL \u2014 Security Guard Policy Covers Security Operations Only; ",
+      "content": "[Bad] GL \u2014 Security Guard Policy Covers Security Operations Only; \nRisk Score: 4/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 40,
+      "title": "General Liability \u2014 Classification Limitation on Arch Policy",
+      "content": "[Ugly] General Liability \u2014 Classification Limitation on Arch Policy\nRisk Score: 12/25\n\nWhat this means:\nYou actually have two GL policies. The Arch one only covers security guard operations \u2014 alarms, patrols, investigations. It does NOT cover election technology, ballot printing, or mail processing \u2014 your actual business. Those are covered under your Hanover commercial package. This isn't necessarily\n\nRecommendation:\nConfirm with management WHY a separate security guard GL exists \u2014 is there a security subsidiary, an in-house guard force, or election-day security operations? If the Arch policy was accidentally plac",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "General Liability \u2014 Classification Limitation on Arch Policy",
+      "score": 12,
+      "severity_word": "Medium",
+      "description": "The Arch policy is a SECURITY GUARD GL with $1M/$3M limits.",
+      "policy_slug": "sg",
+      "matched_in_audited": true,
+      "audited_page": 40,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] General Liability \u2014 Classification Limitation on Arch Policy\nRisk Score: 12/25\n\nWhat this means:\nYou actually have two GL policies. The Arch one only covers security guard operations \u2014 alarms, patrols, investigations. It does NOT cover election technology, ballot printing, or mail processing "
+    }
+  ],
+  "v1_v2_unchanged": [],
+  "v1_v2_removed": [
+    {
+      "page": 40,
+      "title": "GL \u2014 Security Guard Policy Covers Security Operations Only; ",
+      "content": "[Bad] GL \u2014 Security Guard Policy Covers Security Operations Only; \nRisk Score: 4/25",
+      "type_name": "Text"
+    }
+  ],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 40,
+      "title": "General Liability \u2014 Classification Limitation on Arch Policy",
+      "content": "[Ugly] General Liability \u2014 Classification Limitation on Arch Policy\nRisk Score: 12/25\n\nWhat this means:\nYou actually have two GL policies. The Arch one only covers security guard operations \u2014 alarms, patrols, investigations. It does NOT cover election technology, ballot printing, or mail processing \u2014 your actual business. Those are covered under your Hanover commercial package. This isn't necessarily\n\nRecommendation:\nConfirm with management WHY a separate security guard GL exists \u2014 is there a security subsidiary, an in-house guard force, or election-day security operations? If the Arch policy was accidentally plac",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 13,
+      "title": "Security Guard Policy",
+      "body": [
+        "Great Additional Insured and Primary / Noncontributory endorsements.",
+        "Pg. 59 of 68",
+        "Pg. 60 of 68"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 15,
+      "title": "Security Guard Policy",
+      "body": [
+        "No BI / PD coverage for \u2018wrongful acts\u2019\u201cbroad definition of wrongful\u201d",
+        "Pg. 23 of 68",
+        "Pg. 26 of 68"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 22,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Security Guard Policy",
+        "Cyber Policy"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [
+    [
+      "Security Guard policy covers security ops only; not core election services",
+      "Bad Risk 4",
+      "p40"
+    ],
+    [
+      "Wrongful acts paid only under Coverage D sublimit (NOT BI/PD on Coverage A)",
+      "Verified B1",
+      "p24-27"
+    ],
+    [
+      "PRESENTATION G4 (slide 13) AI+P/NC at pp 59-60 \u2014 CITES OFF BY ONE; correct: pp 60 (P/NC) + 61 (AI ongoing) + sep CG 20 37 (AI completed ops)",
+      "REVISE",
+      "p60-61"
+    ],
+    [
+      "PRESENTATION B1 wrongful acts cite pp 23-26 \u2014 pp 23 is Canine, pp 27 has the narrow definition",
+      "REVISE",
+      "p27"
+    ],
+    [
+      "Cancellation 60 days (AZ state endorsement)",
+      "Verified",
+      "p15-16"
+    ]
+  ],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": false,
+      "hits": []
+    }
+  ]
+}

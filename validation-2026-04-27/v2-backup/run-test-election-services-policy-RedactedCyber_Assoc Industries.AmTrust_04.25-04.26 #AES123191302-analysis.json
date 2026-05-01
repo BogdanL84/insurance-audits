@@ -1,0 +1,134 @@
+{
+  "source_file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+  "analysis_date": "2026-04-08",
+  "policy_type": "Cyber Liability",
+  "is_package": false,
+  "coverage_parts": [
+    "First-Party Cyber (Ransom Payment, Data and System Recovery, Bricking Costs, Business Interruption, Business Interruption from Suppliers, Reputation Harm, Cyber Event, Cyber Deception, Proof of Loss, Cryptojacking)",
+    "Third-Party Cyber (Privacy and Network Security Liability, Regulatory Fines and Penalties, Payment Card Liability, Media Liability)"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services, LLC; Runbeck Properties, LLC; Runbeck Investments LLC; Runbeck Graphics Inc",
+  "carrier": "Associated Industries Insurance Company, Inc. (AmTrust / ANV Global Services — surplus lines, non-admitted in AZ)",
+  "policy_number": "AES1231913 02",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "aggregate_limit_of_liability": 4000000,
+    "ransom_payment": 4000000,
+    "data_and_system_recovery": 4000000,
+    "bricking_costs": 4000000,
+    "business_interruption": 4000000,
+    "business_interruption_from_suppliers": 4000000,
+    "reputation_harm": 4000000,
+    "cyber_event": 4000000,
+    "cyber_deception": 250000,
+    "proof_of_loss": 250000,
+    "cryptojacking": 4000000,
+    "privacy_and_network_security_liability": 4000000,
+    "regulatory_fines_and_penalties": 4000000,
+    "payment_card": 4000000,
+    "media": 4000000
+  },
+  "retentions": {
+    "ransom_payment": 50000,
+    "data_and_system_recovery": 50000,
+    "bricking_costs": 50000,
+    "business_interruption": 50000,
+    "business_interruption_from_suppliers": 50000,
+    "reputation_harm": 50000,
+    "cyber_event": 50000,
+    "cyber_deception": 250000,
+    "proof_of_loss": 50000,
+    "cryptojacking": 50000,
+    "privacy_and_network_security_liability": 50000,
+    "regulatory_fines_and_penalties": 50000,
+    "payment_card": 50000,
+    "media": 50000
+  },
+  "business_interruption_waiting_period_hours": 8,
+  "business_interruption_period_of_restoration_days": 180,
+  "business_interruption_from_suppliers_waiting_period_hours": 8,
+  "business_interruption_from_suppliers_period_of_restoration_days": 180,
+  "continuity_date": "2023-04-01",
+  "choice_of_law": "New York",
+  "extended_discovery_period": "1 Year",
+  "extended_discovery_period_premium": "100% of Annual Premium",
+  "annual_premium": 40000,
+  "surplus_lines_notice": "Associated Industries Insurance Company, Inc. is non-admitted in Arizona. Per ARS §20-401.01(B)(1), insureds and claimants are NOT eligible for Arizona Insurance Guaranty Fund protection in the event of insolvency.",
+  "endorsements": [
+    {
+      "form_number": "IL 12 01 11 85",
+      "name": "Named Insured Change Endorsement",
+      "page": 1,
+      "notes": "Policy Change No. 1, effective 4/1/2025. Adds Runbeck Properties, LLC; Runbeck Investments LLC; Runbeck Graphics Inc to named insured. $0 additional premium."
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Defense Costs Inside Limits",
+      "form_number": "CYDECS 0122",
+      "page": 2,
+      "impact": "Defense costs erode the $4M aggregate limit of liability. A major claim with extensive defense spend could exhaust limits before indemnity is paid. Critical for an election technology company facing potential regulatory actions or class actions involving voter data."
+    },
+    {
+      "name": "Surplus Lines / No Guaranty Fund Protection",
+      "form_number": "IL 12 01 11 85 / ARS §20-401.01(B)(1)",
+      "page": 1,
+      "impact": "Carrier is non-admitted in Arizona. If Associated Industries becomes insolvent, there is no state guaranty fund backstop. Informational — carrier is an AmTrust entity; assess AM Best rating separately."
+    },
+    {
+      "name": "Claims-Made and Discovered Trigger",
+      "form_number": "CYDECS 0122",
+      "page": 2,
+      "impact": "First-party coverage applies only to incidents FIRST DISCOVERED during the policy period. Third-party coverage applies only to claims FIRST MADE during the policy period or extended discovery period. Prior incidents discovered before 4/1/2025 are not covered. Continuity date is 4/1/2023 — verify no gap in prior cyber coverage between 2023 and 2025."
+    },
+    {
+      "name": "Cyber Deception Sublimit",
+      "form_number": "CYDECS 0122",
+      "page": 3,
+      "impact": "Social engineering / cyber deception coverage is sublimited to $250,000 (vs. $4M for all other first-party coverages) with a $250,000 retention — meaning this coverage effectively has no net benefit at current sublimit/retention structure. For an election services company that processes payments and handles sensitive government contracts, social engineering/funds transfer fraud is a high-frequency attack vector. This is a meaningful gap."
+    },
+    {
+      "name": "Proof of Loss Sublimit",
+      "form_number": "CYDECS 0122",
+      "page": 3,
+      "impact": "Proof of Loss coverage is sublimited to $250,000 with a $50,000 retention. Scope of this coverage part needs to be confirmed in the full policy form (redacted)."
+    }
+  ],
+  "checklist": {
+    "first_party_coverage": true,
+    "third_party_coverage": true,
+    "business_interruption": true,
+    "dependent_business_interruption": true,
+    "ransomware_extortion": true,
+    "social_engineering_cyber_deception": true,
+    "social_engineering_sublimit_note": "Severely sublimited at $250,000 with $250,000 retention — net effective coverage is $0 until losses exceed retention",
+    "regulatory_defense": true,
+    "payment_card_pci_dss": true,
+    "media_liability": true,
+    "cryptojacking": true,
+    "bricking_costs": true,
+    "reputation_harm": true,
+    "retroactive_date": "2023-04-01",
+    "extended_reporting_period_available": true,
+    "defense_costs_inside_limits": true,
+    "surplus_lines_carrier": true,
+    "guaranty_fund_protection": false,
+    "choice_of_law": "New York",
+    "additional_insured": false,
+    "waiver_of_subrogation": false,
+    "primary_noncontributory": false
+  },
+  "notes": [
+    "POLICY FORM IS REDACTED — full terms, conditions, exclusions, and endorsements are not available in the provided text. All findings below are based solely on the declarations page. A full policy form review is required before finalizing any audit findings.",
+    "This is a monoline Cyber Liability policy (AmTrustCyber / CYDECS 0122 form) placed through ANV Global Services, a surplus lines intermediary.",
+    "The $4M aggregate limit is shared across ALL coverage parts — first-party and third-party combined. A large first-party ransomware event could exhaust limits before any third-party regulatory or liability claims are paid.",
+    "Continuity date of 4/1/2023 means incidents discovered before that date are excluded. Confirm Runbeck had continuous cyber coverage from 4/1/2023 to present with no gaps.",
+    "Social engineering / cyber deception sublimit of $250,000 with a $250,000 retention is a critical gap for an election technology company. BEC and wire fraud attacks targeting government contractors are extremely common. Recommend increasing this sublimit to at minimum $1M or carving it out of the retention structure.",
+    "Defense costs are inside the $4M aggregate limit — this materially reduces available indemnity in complex regulatory or class action scenarios. Election technology companies face elevated regulatory scrutiny and potential class actions from election officials or voters following a data breach.",
+    "No additional insured, waiver of subrogation, or primary & noncontributory provisions are visible on the declarations. These are common requirements in government contracts with county and state election officials. If required by contract, these provisions need to be endorsed onto the policy — verify full policy form.",
+    "Carrier concentration: need to verify whether the same carrier (Associated Industries / AmTrust) appears on other lines in Runbeck's program. If so, flag as concentration risk."
+  ],
+  "_source_file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf"
+}

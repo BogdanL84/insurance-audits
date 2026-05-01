@@ -1,0 +1,109 @@
+{
+  "source_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-29",
+  "policy_type": "Commercial Auto",
+  "is_package": false,
+  "coverage_parts": ["Business Auto Liability", "Auto Medical Payments", "Uninsured Motorists", "Underinsured Motorists", "Auto Physical Damage (Comprehensive & Collision)", "Hired Auto Physical Damage (extension)", "Employer's Non-Ownership Liability"],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services Inc (with Additional Named Insured endorsement 461-0174 adding: Runbeck Investments LLC, Runbeck Properties LLC, Runbeck Graphics Inc, Runbeck Companies 401(k) Profit Sharing Plan, Lincoln Shields LLC, Black Mountain Investment Co. LLC)",
+  "carrier": "Allmerica Financial Benefit Insurance Company (Hanover Insurance Group)",
+  "policy_number": "AW4-H221414-05",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "liability_combined_single_limit": 1000000,
+    "medical_payments": 5000,
+    "uninsured_motorists": 1000000,
+    "underinsured_motorists": 1000000,
+    "comprehensive_deductible": 1000,
+    "collision_deductible": 1000,
+    "hired_auto_physical_damage": 50000,
+    "audio_visual_data_equipment_sublimit": 500,
+    "transportation_expense_max": 1500,
+    "rental_reimbursement_max": 3000,
+    "bail_bond": 2500,
+    "loss_of_earnings_per_day": 500,
+    "sign_coverage": 2000,
+    "covered_auto_symbols_liability": "01 - Any Auto",
+    "covered_auto_symbols_other_coverages": "02 - Owned Autos Only",
+    "scheduled_vehicles": 2,
+    "annual_premium": 6991
+  },
+  "endorsements": [
+    {"form_number": "CA 00 01 03 06", "name": "Business Auto Coverage Form", "page": 30, "notes": "Base ISO Business Auto form. Liability uses Symbol 01 (Any Auto) — broadest available."},
+    {"form_number": "461-0174", "name": "Additional Named Insured Endorsement", "page": 28, "notes": "Adds 6 affiliated entities including 4 LLCs and a 401(k) Plan. Confirm consistency across other program policies (Property, Umbrella, GL) per GAP-20."},
+    {"form_number": "461-0425 (9/10)", "name": "Arizona Exclusion of Named Driver", "page": 8, "notes": "EXCLUDES MALINA TRUJILLO. Liability, Med Pay, and Physical Damage do NOT apply to any accident involving this individual. Only UM/UIM preserved. CRITICAL — verify HR status."},
+    {"form_number": "461-0478 12 12", "name": "Blanket Additional Insured — Primary and Non-Contributory", "page": 76, "notes": "Blanket AI when required by written contract. Primary and non-contributory language conforming."},
+    {"form_number": "461-0500 11 13", "name": "Waiver of Subrogation (Blanket)", "page": 47, "notes": "Blanket waiver where required by written contract — must be agreed prior to loss."},
+    {"form_number": "461-0155 (9-97)", "name": "Business Auto Broadening Endorsement", "page": 48, "notes": "60-day cancellation notice (vs 30-day base). Employees as insureds for non-owned use. Broadened Named Insured for >50% owned/newly acquired entities — but EXCLUDES coverage for accidents prior to acquisition. $50K Hired Auto Physical Damage. $500 Audio/Visual sublimit (severely inadequate for tech company). $50/day rental reimbursement to $1,500 max. Mental anguish included in bodily injury. Worldwide hired auto. Fellow Employee exclusion deleted for owned/hired autos."},
+    {"form_number": "CA 20 48 02 99", "name": "Designated Insured", "page": 43, "notes": "Adds Desert Trailer Systems Inc, 2733 W Buckeye Rd, Phoenix AZ — verify business relationship; appears to be a one-off scheduled AI."},
+    {"form_number": "401-1235 12 14", "name": "Notice of Cancellation to Designated Entity(s)", "page": 44, "notes": "30-day cancellation notice (NOT nonrenewal) to: Blanket where required by contract, City of Boulder, Coconino County, Amazon.com Services LLC, El Paso County, San Luis Obispo County, State of Colorado, NY State OGS. 30 days is below 90-day government contract industry benchmark."},
+    {"form_number": "461-0505 05 14", "name": "Arizona Changes – Nonrenewal", "page": 61, "notes": "30-day nonrenewal notice. Combined with 60-day cancellation, this creates a notice asymmetry — insured has only 30 days at year-end to find replacement."},
+    {"form_number": "CA 99 03 03 06", "name": "Auto Medical Payments Coverage", "page": 62, "notes": "$5,000 limit — modest."},
+    {"form_number": "461-0679 06 24", "name": "Arizona Uninsured Motorists Coverage", "page": 64, "notes": "$1M UM limit. Three-year statute of limitations for filing UM claim post-accident."},
+    {"form_number": "461-0680 01 25", "name": "Arizona Underinsured Motorists Coverage", "page": 72, "notes": "$1M UIM limit. UIM reduces by amounts available under tortfeasor's bonds/policies."},
+    {"form_number": "461-0368 07 20", "name": "AZ UM/UIM Offer and Selection/Rejection", "page": 68, "notes": "Selection form is BLANK — no insured signature, no initials selecting/rejecting limits. Form requires insured signature within 30 days. Verify signed form is on file."},
+    {"form_number": "CA 23 85 01 06", "name": "Exclusion of Terrorism Involving Nuclear, Biological or Chemical Terrorism", "page": 59, "notes": "Carves out only NBC terrorism — conventional terrorism remains covered."},
+    {"form_number": "IL 00 21 09 08", "name": "Nuclear Energy Liability Exclusion (Broad Form)", "page": 57, "notes": "Standard nuclear exclusion."},
+    {"form_number": "CA 01 75 07 04", "name": "Arizona Changes", "page": 56, "notes": "AZ-specific concealment/misrepresentation provisions."},
+    {"form_number": "IL 00 17 11 98", "name": "Common Policy Conditions", "page": 55, "notes": "Base 30-day cancellation (extended to 60 by 461-0155)."},
+    {"form_number": "CA 99 44 12 93", "name": "Loss Payable Clause", "page": 77, "notes": "Loss payee endorsement."},
+    {"form_number": "401-1337 02 16", "name": "Trade or Economic Sanctions Endorsement", "page": 16, "notes": "OFAC sanctions exclusion."}
+  ],
+  "exclusions_of_note": [
+    {"name": "Named Driver Exclusion — Malina Trujillo", "form_number": "461-0425", "page": 8, "impact": "ABSOLUTE: any accident involving Malina Trujillo driving a covered auto has NO Liability, NO Med Pay, NO Physical Damage coverage. Only UM/UIM is preserved. This is a binary, severe exposure if this individual is still an active employee with vehicle access. No other policy in the program would cover an accident she causes. CFO impact: a single at-fault accident driven by this excluded person is fully self-insured — defense costs, settlements, and physical damage to the company vehicle all out of pocket."},
+    {"name": "Pollution Exclusion", "form_number": "CA 00 01 §B.11", "page": 33, "impact": "Excludes pollution from cargo and operations, with carve-back only for fuel/lubricant/exhaust from auto's own operating systems and for upset/overturn accidents away from premises. No upgrade endorsement. For an election services company hauling equipment, ink, and chemicals, this is a typical limitation. Would be addressed by a Contractor's Pollution policy or a CGL pollution buyback — not covered here or in the Hanover Package."},
+    {"name": "Care, Custody or Control / Cargo Exclusion", "form_number": "CA 00 01 §B.6", "page": 34, "impact": "No coverage for property of others in the insured's care, custody or control while in covered autos. Translation: ballots, voting machines, and county-owned hardware in transit are NOT covered by Auto Liability. Would need Motor Truck Cargo or Inland Marine coverage. Given Runbeck/Run-Test ships ballots to 31 states, this is a significant exposure to verify is covered by an Inland Marine or Bailees policy elsewhere in the program."},
+    {"name": "Handling of Property Exclusion", "form_number": "CA 00 01 §B.7", "page": 34, "impact": "No BI/PD coverage from handling of property before loaded onto / after unloaded from the auto. Combined with the Movement of Property by Mechanical Device exclusion (§B.8), creates a gap for loading/unloading injuries that aren't actively part of vehicle operation."},
+    {"name": "Racing/Stunting Exclusion", "form_number": "CA 00 01 §B.13", "page": 35, "impact": "Standard. No business impact for this insured."},
+    {"name": "NBC Terrorism Exclusion", "form_number": "CA 23 85", "page": 59, "impact": "No coverage for nuclear, biological, or chemical terrorism. Conventional terrorism remains covered. Given the politically sensitive nature of election services, conventional terrorism coverage being intact is meaningful."},
+    {"name": "Audio/Visual/Data Electronic Equipment $500 Sublimit", "form_number": "461-0155 §11", "page": 51, "impact": "Cap of $500 for ALL electronic equipment loss in any one accident. For a tech company that ships scanners, laptops, and election processing hardware in covered autos, this sublimit is grossly inadequate. A single covered auto carrying a single piece of voting equipment likely exceeds this cap by an order of magnitude. Would need Inland Marine / Equipment Floater to address."},
+    {"name": "Hired Auto Physical Damage $50K Cap", "form_number": "461-0155 §10", "page": 51, "impact": "Per-accident max of $50K on hired auto physical damage. Adequate for passenger cars, marginal for box trucks. Cost of Hire is rated 'IF ANY' — verify whether the insured actually rents trucks for ballot delivery seasonally; a premium audit and an inadequate sublimit could collide at the worst time."},
+    {"name": "Workers' Compensation / Employee Indemnification Exclusion", "form_number": "CA 00 01 §B.3-4", "page": 33, "impact": "Standard — auto liability does not cover employee BI; that's the WC policy's domain. Fellow Employee exclusion deleted by 461-0155 §6 for owned/hired autos, which is favorable."}
+  ],
+  "checklist": {
+    "additional_insured_blanket": true,
+    "additional_insured_scheduled": true,
+    "additional_insured_completed_ops": null,
+    "waiver_of_subrogation": true,
+    "waiver_of_subrogation_page": 47,
+    "primary_noncontributory": true,
+    "contractual_liability": true,
+    "per_project_aggregate": null
+  },
+  "key_findings_summary": {
+    "ugly": [
+      "Named Driver Exclusion of MALINA TRUJILLO (461-0425, p.8) — total exclusion from Liability/Med Pay/Phys Damage; verify employment status and vehicle access immediately. If currently employed with any vehicle access, this is a 22-25/25 risk score.",
+      "Named Insured entity-type mismatch: policy reads 'RUNBECK ELECTION SERVICES INC' with Form of Business = CORPORATION (p.22), but client-confirmed legal entity (per program audit context) is LLC. Cross-reference with all other program policies (GAP-01, GAP-20).",
+      "$1M Liability CSL primary may not satisfy government contracts requiring $2M Auto Liability standalone. Per GAP-17, many county contracts permit umbrella attachment for GL but require standalone primary for Auto. Verify each county contract's attachment language."
+    ],
+    "bad": [
+      "Audio/Visual/Data Equipment $500 sublimit (461-0155 §11, p.51) for a company shipping high-value election technology — materially inadequate.",
+      "Hired Auto Physical Damage $50K cap (461-0155 §10, p.51) — inadequate for box trucks/specialty vehicles often used in seasonal election work.",
+      "Cost of Hire rated 'IF ANY' (p.27) — premium audit exposure if hired auto usage is material.",
+      "30-day Nonrenewal notice (461-0505) creates asymmetry with 60-day cancellation; insured has only 30 days at year-end to find replacement carrier — below 90-day industry benchmark.",
+      "30-day Designated Entity cancellation notice (401-1235) — below 90-day government contract benchmark; verify each county contract requirement.",
+      "UM/UIM Selection/Rejection form (461-0368) appears unsigned — verify signed form is on file at carrier within 30 days of policy receipt.",
+      "$5,000 Med Pay limit — modest given the operational profile; consider increasing.",
+      "Symbol 02 (Owned Only) for Comp/Collision means hired autos rely on the 461-0155 §10 extension only — verify the $50K cap is sufficient for any rented box trucks."
+    ],
+    "good": [
+      "Liability Symbol 01 (Any Auto) — broadest covered auto symbol.",
+      "Blanket Additional Insured Primary & Non-Contributory (461-0478) where required by written contract.",
+      "Blanket Waiver of Subrogation (461-0500 + 461-0155 §17) where required by written contract.",
+      "Mental anguish included in 'bodily injury' definition (461-0155 §20).",
+      "Fellow Employee exclusion deleted for owned/hired autos (461-0155 §6) — coverage for employee-on-employee auto BI claims.",
+      "Broadened Named Insured for entities >50% owned or newly acquired (461-0155 §3) — though excludes pre-acquisition accidents and excludes business entities with their own auto policy.",
+      "60-day cancellation notice (461-0155 §1) — improvement over ISO base 30.",
+      "Multi-state cancellation notice schedules for government counterparties (401-1235).",
+      "$1M UM/UIM matching liability limits.",
+      "Worldwide hired auto coverage extension (461-0155 §19).",
+      "$2,500 bail bond, $500/day loss of earnings, $50/day rental reimbursement (461-0155 §§5, 9, 12) — broadenings above ISO defaults."
+    ],
+    "informational": [
+      "Desert Trailer Systems Inc scheduled as Designated Insured (CA 20 48, p.43) — verify business reason; not a typical AI relationship.",
+      "Cost of Hire rated 'IF ANY' with 55-employee Employer Non-Ownership Liability count (p.27) — confirm this matches actual driver count.",
+      "Two scheduled vehicles only (2013 Mercedes Sprinter, 2018 Chevy Express) — confirm fleet matches operations; election services may use additional rented vehicles seasonally."
+    ]
+  }
+}

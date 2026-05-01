@@ -1,0 +1,2293 @@
+
+============================================================
+PAGE 1 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+1 of 7 
+AMENDMENT NUMBER FOUR 
+TO CONTRACT NUMBER 20-001 
+BY AND BETWEEN COUNTY OF LOS ANGELES 
+AND RUNBECK ELECTIONS SERVICES, LLC 
+FOR 
+VOTER REGISTRATION SYSTEM LICENSE 
+AND SUPPORT SERVICES 
+This Amendment Number Four (“Amendment Number Four”) to Contract Number 20-001 
+(“Contract”) is entered into this 
+ day of 
+, 2024 by and between 
+County of Los Angeles, a political subdivision of the State of California (“County”) and 
+Runbeck Election Services, LLC, formerly known as Runbeck Election Services, Inc. 
+(“Contractor”) a corporation in the State of California. County and Contractor are sometimes 
+hereinafter referred to collectively as the “Parties” and each individually as a “Party.” 
+WHEREAS, the Contract #20-001 was originally approved by the County’s Board of 
+Supervisors on December 8, 2020 and entered into by and between County and Contractor 
+on January 1, 2021; and 
+WHEREAS, under certain Amendment #1 to the Contract dated October 12, 2022, the 
+Contract was amended to reflect, among other things, (i) replacement of Paragraph 8.10 
+(Consideration of Hiring County Employees Targeted for Layoff or Re-Employment List), 
+sub-paragraph 8.10.1 of the Contract with a new Paragraph 8.10 (Consideration of Hiring 
+County Employees Targeted for Layoffs or are on a County Re-Employment List), sub- 
+paragraph 8.10.1; (ii) replacement of Paragraph 8.13 (Contractor’s Acknowledgement of 
+County’s Commitment to Safely Surrendered Baby Law) with a new Paragraph 8.13 
+(Contractor’s Acknowledgement of County’s Commitment to Safely Surrendered Baby 
+Law); (iii) replacement of Paragraph 8.18 (Facsimile Representations) of the Contract with 
+a new Paragraph 8.18 (Counterparts and Electronic Signatures and Representations); (iv) 
+replacement of Paragraph 8.56 (Compliance with Fair Chance Employment Practices) with 
+a new Paragraph 8.56 (Compliance with Fair Chance Employment Practices); (v) 
+incorporation of Paragraph 8.59 (COVID-19 Vaccinations of County Contractor Personnel); 
+(vi) incorporation of Appendix L (COVID-19 Vaccination Certification of Compliance); and
+WHEREAS, under certain Amendment #2 to the Contract dated January 20, 2023, the
+Contract was amended to reflect the extension of the term of the Contract for its first option 
+year effective January 1, 2023 through December 31, 2023; and 
+WHEREAS, under certain Amendment #3 to the Contract dated September 13, 2023, 
+the Contract was amended to reflect, among other things, (i) extension of the term of the 
+Contract for its second option year effective January 1, 2024 through December 31, 2024; 
+(ii) replacement of Paragraph 8.59 (COVID-19 Vaccinations of County Contractor
+Personnel) of the Contract with a new Paragraph 8.59 (Intentionally Omitted); (iii)
+replacement of Appendix D (County’s Administration) of the Contract with a new Appendix
+D (County’s Administration); (iv) replacement of Appendix E (Contractor’s Administration) of
+the Contract with a new Appendix E (Contractor’s Administration); (v) replacement of
+Appendix L (COVID-19 Vaccination Certification of Compliance) of the Contract with a new
+Appendix L (Intentionally Omitted); and
+December 
+11th
+
+============================================================
+PAGE 2 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+2 of 7 
+WHEREAS, the County and Contractor wish to amend the Contract to (i) replace 
+Paragraph 4 (Term of Contract) of the Contract with a new Paragraph 4 (Term of Contract); 
+(ii) replace Paragraph 2 (Definitions) of the Contract with a new Paragraph 2 (Definitions);
+(iii) replace Paragraph 5 (Contract Sum), Subparagraph 5.1 (Total Contract Sum) of the
+Contract with a new Paragraph 5 (Contract Sum), Subparagraph 5.1 (Total Contract Sum);
+(iv) incorporate a new Paragraph 7 (Administration of Contract – Contractor), Subparagraph
+7.5 (Background and Security Investigations), Subparagraph 7.5.4; (v) replace Paragraph 8
+(Standard Terms and Conditions), Subparagraph 8.11 (Consideration of Hiring
+GAIN/GROW Participants) of the Contract with a new Paragraph 8 (Standard Terms and
+Conditions), Subparagraph 8.11 (Consideration of Hiring GAIN/START Participants); (vi)
+replace Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.36 (Public Records
+Act), Subparagraph 8.36.1 of the Contract with a new Paragraph 8 (Standard Terms and
+Conditions), Subparagraph 8.36 (Public Records Act), Subparagraph 8.36.1; (vii) replace
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.44 (Termination for
+Improper Consideration), Subparagraph 8.44.2 of the Contract with a new Paragraph 8
+(Standard Terms and Conditions), Subparagraph 8.44 (Termination for Improper
+Consideration), Subparagraph 8.44.2; (viii) incorporate Paragraph 8 (Standard Terms and
+Conditions), Subparagraph 8.59 (Campaign Contribution Prohibition Following Final
+Decision in Contract Proceeding); (ix) incorporate Paragraph 9 (Unique Terms and
+Conditions), Subparagraph 9.3 (Compliance with County’s Women in Technology Hiring
+Initiative); (x) replace Appendix B (Pricing Schedule) with a new Appendix B (Pricing
+Schedule; (xi) replace Appendix E (County’s Administration) with a new Appendix E
+(County’s Administration); (xii) replace Appendix F (Contractor’s Administration) with a new
+Appendix F (Contractor’s Administration); (xiii) incorporate Appendix M (Contribution and
+Agent Declaration Form); (xiv) replace “his”/”her” with the term “their”; (xv) replace
+“Agreement” with “Contract” and “Department Head” with “Director”; (xvi) replace “shall” with
+“must” or “will”; (xvii) capitalize all instances of “Contract” and “Contractor”; (xviii) formalize
+the legal entity name change from “Runbeck Election Services, Inc.” to “Runbeck Election
+Services, LLC”; and
+WHEREAS, this Amendment Number Four is made pursuant to Paragraph 8 (Standard 
+Terms and Conditions), Subparagraph 8.1 (Amendments and Change Orders) of the Contract. 
+NOW THEREFORE, in consideration of the foregoing and for other good and valuable 
+consideration, the receipt and sufficiency of which is hereby acknowledged, the Contract, is 
+hereby amended as follows: 
+1.
+Paragraph 4 (Term of Contract) of the Contract is hereby deleted in its entirety and
+replaced with a new Paragraph 4 (Term of Contract) of the Contract to read as
+follows:
+4 
+TERM OF CONTRACT
+4.1 
+The term of this Contract commences on January 1, 2021 and 
+ends on December 31, 2026, unless sooner terminated or 
+extended, in whole or in part, as provided in this Contract.
+
+============================================================
+PAGE 3 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+3 of 7 
+ 
+ 
+ 
+4.2 
+The County will have the sole option to extend this Contract term 
+for up to two (2) additional six (6) month to month extensions. Each 
+such extension option may be exercised at the sole discretion of 
+the County. 
+ 
+The County maintains a database that tracks/monitors contractor 
+performance history. Information entered into the database may 
+be used for a variety of purposes, including determining whether 
+the County will exercise a Contract term extension option. 
+ 
+4.3 
+The Contractor must notify Department when this Contract is 
+within six (6) months of the expiration of the term as provided for 
+hereinabove. Upon occurrence of this event, the Contractor will 
+send written (hard copy and e-mail) notification to Department at 
+the Contracts and Grants Manager’s address herein provided in 
+Appendix D (County’s Administration). County will deliver written 
+notice of any exercise of its option to extend to Contractor within 
+six (6) months of the expiration of the term of the Contract. 
+ 
+2. 
+Paragraph 2 (Definitions) is hereby deleted in its entirety and replaced with a new 
+Subparagraph 2 (Definitions) to incorporate County Contract Analyst and County 
+Observed Holidays into the definitions. See Exhibit A. 
+ 
+3. 
+Paragraph 5 (Contract Sum), Subparagraph 5.1 (Total Contract Sum) is hereby 
+deleted in its entirety and replaced with a new Paragraph 5 (Contract Sum), 
+Subparagraph 5.1 (Total Contract Sum) of the Contract to read as follows: 
+ 
+5.1 Total Contract Sum 
+ 
+5.1.1 
+The “Contract Sum” for the term is Five Million One Hundred Fifty-Three 
+Thousand Eight Hundred Ninety-Eight Dollars ($5,153,898). 
+ 
+5.1.2 
+The fees and other applicable rates for the Term of the Contract are set 
+forth in Appendix B (Pricing Schedule). Contractor’s fees shall remain 
+firm and fixed prices for the Term of the Contract. The RR/CC, or 
+designee, at their sole discretion, may increase the Contract Sum for the 
+term extension up to a maximum of ten percent (10%) of the Contract 
+Sum Five Hundred Fifteen Thousand Three Hundred Ninety Dollars 
+($515,390) over the Term of the Contract. 
+ 
+5.1.3 
+Any such increase to the Contract Sum will be done via an Amendment to 
+this Contract prepared and executed by the Contractor and by the RR/CC 
+or designee, provided County Counsel approval is obtained prior to 
+execution of such Amendment. 
+ 
+5.1.4 
+The maximum Contract Sum shall not exceed Five Million Six 
+Hundred Sixty-Nine Thousand Two Hundred Eighty-Eight Dollars 
+($5,669,288).
+
+============================================================
+PAGE 4 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+4 of 7 
+ 
+ 
+ 
+ 
+4. 
+Paragraph 7 (Administration of Contract – Contractor), Subparagraph 7.5 
+(Background and Security Investigations), Subparagraph 7.5.4 is hereby 
+incorporated into the Contract in its entirety to read as follows: 
+ 
+7.5.4 
+These terms will also apply to subcontractors of County 
+contractors. 
+ 
+5. 
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.11 (Consideration 
+of Hiring GAIN/GROW Participants) is hereby deleted in its entirety and replaced 
+with a new Subparagraph 8.11 (Consideration of Hiring GAIN/START Participants) 
+to read as follows: 
+ 
+8.11 
+Consideration of Hiring GAIN/START Participants 
+Should the Contractor require additional or replacement personnel after the 
+effective date of this Contract, the Contractor will give consideration for any 
+such employment openings to participants in the County‘s Department of 
+Public Social Services (DPSS) Greater Avenues for Independence (GAIN) 
+Program or Skills and Training to Achieve Readiness for Tomorrow (START) 
+Program who meet the contractor’s minimum qualifications for the open 
+position. For this purpose, consideration will mean that the Contractor will 
+interview qualified candidates. The County will refer GAIN/START 
+participants by job category to the Contractor. Contractors must report all job 
+openings with job requirements to: gainstart@dpss.lacounty.gov and 
+bservices@opportunity.lacounty.gov 
+and 
+DPSS 
+will 
+refer 
+qualified 
+GAIN/START job candidates. 
+ 
+In the event that both laid-off County employees and GAIN/START 
+participants are available for hiring, County employees must be given first 
+priority. 
+ 
+6. 
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.36 (Public Records 
+Act), Subparagraph 8.36.1 is hereby deleted in its entirety and replaced with a new 
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.36 (Public Records 
+Act), Subparagraph 8.36.1 into the Contract to read as follows: 
+ 
+8.36.1 Any documents submitted by Contractor; all information obtained in 
+connection with the County’s right to audit and inspect Contractor’s 
+documents, books, and accounting records pursuant to Paragraph 8.38 
+(Record Retention and Inspection Audit Settlement) of this Contract; as well 
+as those documents which were required to be submitted in response to the 
+Request for Proposals (RFP) used in the solicitation process for this 
+Contract, become the exclusive property of the County. All such documents 
+become a matter of public record and will be regarded as public records. 
+Exceptions will be those elements in the California Government Code 
+Section 7921 et seq. (Public Records Act) and which are marked “trade 
+secret”, “confidential”, or “proprietary”. The County will not in any way be
+
+============================================================
+PAGE 5 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+5 of 7 
+ 
+ 
+ 
+liable or responsible for the disclosure of any such records including, without 
+limitation, those so marked, if disclosure is required by law, or by an order 
+issued by a court of competent jurisdiction. 
+7. 
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.44 (Termination for 
+Improper Consideration), Subparagraph 8.44.2 is hereby deleted in its entirety and 
+replaced with a new Paragraph 8 (Standard Terms and Conditions), Subparagraph 
+8.44 (Termination for Improper Consideration), Subparagraph 8.44.2 into the 
+Contract to read as follows: 
+ 
+8.44.2 The Contractor must immediately report any attempt by a County officer or 
+employee to solicit such improper consideration. The report must be made 
+either to the County manager charged with the supervision of the employee 
+or to the County Auditor-Controller’s Employee Hotline at (800) 544-6861 or 
+https://fraud.lacounty.gov/. 
+ 
+8. 
+Paragraph 8 (Standard Terms and Conditions), Subparagraph 8.59 (Campaign 
+Contribution Prohibition Following Final Decision in Contract Proceeding) is hereby 
+incorporated into the Contract in its entirety to read as follows: 
+ 
+8.59 
+Campaign Contribution Prohibition Following Final Decision in 
+Contract Proceeding 
+ 
+Pursuant to Government Code Section 84308, Contractor and its 
+Subcontractors, are prohibited from making a contribution of more than $250 
+to a County officer for twelve (12) months after the date of the final decision 
+in the proceeding involving this Contract. Failure to comply with the 
+provisions of Government Code Section 84308 and of this paragraph, may 
+be a material breach of this Contract as determined in the sole discretion of 
+the County. 
+ 
+9. 
+Paragraph 9 (Unique Terms and Conditions), Subparagraph 9.3 (Compliance with 
+County’s Women in Technology Hiring Initiative) is hereby incorporated into the 
+Contract in its entirety to read as follows: 
+9.3 
+Compliance with County’s Women in Technology Hiring Initiative 
+ 
+At the direction of the Board, the County has established a “Women in 
+Technology” (WIT) Hiring Initiative focused on recruiting, training, mentoring 
+and preparing all genders, including women, at-risk youth, and 
+underrepresented populations (program participants) for County Information 
+Technology (IT) careers. In support of the subject initiative, IT contractors 
+currently offering certification, training, and/or mentoring programs must 
+make such program(s) available to WIT program participants, if feasible. 
+Contractors 
+must 
+report 
+such 
+programs 
+available 
+to: 
+WITProgram@isd.lacounty.gov. 
+ 
+10. 
+Appendix B (Pricing Schedule) of the Contract is hereby deleted in its entirety and
+
+============================================================
+PAGE 6 of 37
+============================================================
+
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+6 of 7 
+ 
+ 
+ 
+replaced with a new Appendix B (Pricing Schedule) (revised January 1, 2025). 
+ 
+11. 
+Appendix E (County’s Administration) of the Contract is hereby deleted in its entirety 
+and replaced with a new Appendix E (County’s Administration) (revised January 
+1, 2025). 
+ 
+12. 
+Appendix F (Contractor’s Administration) of the Contract is hereby deleted in its 
+entirety and replaced with a new Appendix F (Contractor’s Administration) (revised 
+January 1, 2025). 
+ 
+13. 
+Appendix M (Contribution and Agent Declaration Form) is hereby incorporated into 
+the Contract, a true and correct copy of which is attached hereto and incorporated 
+herein by this reference. 
+14. 
+The Contract is hereby amended to replace all references of “his” and “her” with the 
+term “their” throughout the Contract to be gender inclusive. 
+15. 
+The Contract is hereby amended to replace all references of “Agreement” with 
+“Contract” throughout the Contract. 
+16. 
+The Contract is hereby amended to replace all references of “shall” with “must” or 
+“will” per County Counsel instruction. 
+ 
+17. 
+The Contract is hereby amended to capitalize all instances of “Contract” and 
+“Contractor” except as to Paragraph 8 (Standard Terms and Conditions), Paragraph 
+8.12 (Contractor Responsibility and Debarment). 
+ 
+18. 
+The County consents to the Assignment and Agreement, including all change 
+notices, amendments, and any and all documents executed in relation thereto, to 
+Runbeck Election Services, LLC. 
+ 
+The name “Runbeck Election Services, Inc.” and any variation or form of the name, 
+is hereby replaced and interpreted to be “Runbeck Election Services, LLC”, and any 
+variation or form of the name, wherever it may appear in the Contract and any 
+Attachments, Appendices, or Exhibits thereof and is henceforth “Contractor” with all 
+the rights and responsibilities provided under the agreement. 
+ 
+ 
+Runbeck Election Services, LLC agrees to be responsible for all rights, 
+responsibilities, duties, covenants, and conditions required of Contractor under the 
+terms of the Contract, including Change Notices and Amendments thereto. 
+ 
+Except as otherwise provided under this Amendment Number Four, the Contract, as 
+previously amended, including all preambles and recitals set forth herein and therein, shall 
+remain unchanged and in full force and effect. 
+ 
+/ 
+/ 
+/
+
+============================================================
+PAGE 7 of 37
+============================================================
+
+Docusign Envelope ID: O2FEF7E9-D887-4BF2-86F5-2E63A7DC46DA
+AMENDMENT NUMBER FOUR
+TO CONTRACT NUMBER 20-001
+BY AND BETWEEN COUNTY OF LOS ANGELES
+AND RUNBECK ELECTIONS SERVICES, LLC
+FOR
+VOTER REGISTRATION SYSTEM LICENSE
+AND SUPPORT SERVICES
+IN WITNESS WHEREOF, the Board of Supervisors of the County of Los Angeles has
+caused
+this
+Amendment
+Number
+Four
+to
+be
+subscribed
+on
+its
+behalf
+by
+the
+Registrar-Recorder/County Clerk or their designee and the Contractor has subscribed the
+same through its duly authorized officer as of the day, month and year first above written.
+The persons signing on behalf of Contractor warrant under penalty of perjury that they are
+authorized to bind the Contractor.
+COUNTY OF LOS ANGELES
+RUNBECK ELECTION SERVICES
+MAcLc4
+gndby
+DEAN C. LOGAN / \
+lVZ°2r-luMI
+Registrar-Recordeu nty Clerk
+Vice President, Sales
+20-2681027
+Tax Identification Number
+APPROVED AS TO FORM:
+DAWYN R. HARRISON
+County Counsel
+2%zaI 2.
+By__________________________
+MICHAEL D. OWENS
+Senior Deputy County Counsel
+Amendment Number Four to Contract Number #20-001
+7 of 7
+for Voter Registration System License and Support Services
+
+============================================================
+PAGE 8 of 37
+============================================================
+
+Exhibit A 
+ 
+Exhibit A (Definitions) - Amendment #4 
+2 
+DEFINITIONS 
+2.1 
+Standard Definitions: 
+The headings herein contained are for convenience and reference only 
+and are not intended to define the scope of any provision thereof. The 
+following words as used herein shall be construed to have the following 
+meaning, unless otherwise apparent from the context in which they are 
+used. 
+2.1.1 
+Acceptance: As used herein, the term shall mean County’s 
+written approval of any tasks, subtasks, deliverables, goods, 
+services or other Work, including Acceptance Tests, provided 
+by Contractor to County pursuant to this Contract. 
+2.1.2 
+Agreement: The agreement executed between County and 
+Contractor. Included are all supplemental contracts amending 
+or extending the service to be performed. The Contract sets 
+forth the terms and conditions for the issuance and 
+performance of all tasks, deliverables, services and other work. 
+This word contract may be used interchangeably with the word 
+“Contract”. 
+2.1.3 
+Amendment: As used herein, the term shall have the meaning 
+specified in Paragraph 8.1 (Amendments and Change 
+Notices). 
+2.1.4 
+Annual Fees: As used herein, the term shall mean the annual 
+fees to be paid by County to Contractor commencing upon first 
+anniversary of the Effective Date and shall include License 
+Renewal Fees and Software Support Fees, as specified in 
+Appendix B (Pricing Schedule). 
+2.1.5 
+Application Modifications: As used herein, the term shall 
+mean 
+Software 
+Enhancements, 
+Updates 
+and 
+any 
+Replacement Product provided by Contractor to County under 
+this Contract. Once accepted and approved by County, 
+Application Modifications shall become part of, and be 
+deemed, System Software for the purpose of this Contract. 
+2.1.6 
+Application Programming Interface or API: A set of 
+subroutine definitions, protocols, and tools for building 
+application software. In general terms, it is a set of clearly 
+defined methods of communication between various software 
+components. 
+2.1.7 
+Application Software: As used herein, the term shall mean all 
+core application and all Application Modifications accepted and 
+approved by County, and related Documentation, provided by 
+Contractor 
+pursuant 
+to 
+this 
+Contract. 
+This 
+includes 
+Contractor’s DIMS software (also referred to herein as 
+“Contractor’s Software”) for purposes of license only, and not 
+ownership.
+
+============================================================
+PAGE 9 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+2.1.8 
+Base Term: As used herein shall mean the same as set forth 
+in Section 4 (Term of Contract). 
+2.1.9 
+Board of Supervisors or Board: The Board of Supervisors of 
+the County of Los Angeles acting as governing body. 
+2.1.10 
+Business Day(s): As used herein, the term, whether singular 
+or plural, shall mean Monday through Friday, excluding County 
+observed holidays, unless stated otherwise. 
+2.1.11 
+Business Hour(s): As used herein, the term, whether singular 
+or plural, shall mean 7:00 a.m. to 5:00 p.m. PT during Business 
+Days. 
+2.1.12 
+Chief Executive Office or CEO: As used herein, the terms 
+shall mean County’s Chief Executive Office. 
+2.1.13 
+Change Notice: As used herein, the term shall have the 
+meaning given to such term in Paragraph 8.1 (Amendments 
+and Change Notices). 
+2.1.14 
+Change Order: As used herein, the term shall mean the terms 
+of any Optional Work agreed to by County and Contractor 
+applicable to the provision of Software Enhancements and 
+Customizations by Contractor, as specified in Appendix A 
+(Statement of Work). 
+2.1.15 
+Component(s): As used herein, the term "Component(s)" shall 
+mean, individually and collectively, each and every component 
+of the System, including System Software, System 
+Environment and System Data, irrespective of whether 
+provided by County or Contractor. 
+2.1.16 
+Conditional Voter Registration or CVR: Refers to the 
+fourteen (14) day period prior to Election Day through and 
+including Election Day, an individual can go to the office of their 
+county elections official to conditionally register to vote and vote 
+a provisional ballot. 
+2.1.17 
+Confidential Information: As used herein, the term shall 
+mean any data or information, in any format, and includes 
+sensitive financial information, any County Data and any other 
+information otherwise deemed confidential by County or by 
+applicable Federal, State or local law, as further specified in 
+Paragraph 7.6 (Confidentiality). 
+Contract: The agreement executed between County and 
+Contractor. Included are all supplemental contracts amending 
+or extending the service to be performed. The Contract sets 
+forth the terms and conditions for the issuance and 
+performance of all tasks, deliverables, services and other work. 
+This word contract may be used interchangeably with the word 
+“Contract”. 
+2.1.18 
+Contract Deficiency Report: This term as used herein shall 
+have the same meaning as set forth in Section 4.3 (Contract
+
+============================================================
+PAGE 10 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+Deficiency Report) of the Statement of Work. 
+2.1.19 
+Contract Sum or Total Contract Sum: As used herein, the 
+term "Contract Sum" shall mean the total monetary amount 
+payable by County to Contractor hereunder, as set forth in 
+Paragraph 5.0 (Contract Sum). The Contract Sum shall not be 
+adjusted for any costs or expenses whatsoever of Contractor, 
+without written consent of County. 
+2.1.20 
+Contractor: The person or persons, sole proprietor, 
+partnership, joint venture, corporation or other legal entity who 
+has entered into a Contract with the County to perform or 
+execute the work covered by this contract. 
+2.1.21 
+Contractor Project Manager: The dedicated Project 
+Manager designated by the Contractor to administer the 
+agreement operations under this Contract. Individual 
+responsible for the overall day to day project – overseeing the 
+deployment of people, systems and processes needed for the 
+successful implementation of Contractor’s solution for County 
+elections. 
+2.1.22 
+Contractor Key Personnel: As used herein, the term shall 
+have the meaning specified in Paragraph 7.1 (Contractor 
+Administration). 
+2.1.23 
+Core Application Software Upgrades: As used herein, the 
+term shall mean periodic updates, revisions, or enhancements 
+to Core Application Software. 
+2.1.24 
+County: The County of Los Angeles in the State of California. 
+2.1.25 
+County Contract Analyst: The person designated by the County 
+to manage and facilitate the administrative functions of the Contract. 
+2.1.26 
+County Data: As used herein, the term shall mean all data and 
+information provided or owned by County, whether stored on- 
+line or off-line, which will be used by Contractor for providing 
+Work under this Contract. 
+2.1.27 
+County Hardware: As used herein, the term shall mean all 
+County owned computers and other equipment that will be 
+used in conjunction with any Contractor provided hardware as 
+part of the system environment for the provision of Work 
+pursuant to this Contract. 
+2.1.28 
+County Contract Project Monitor: Person with responsibility 
+to oversee the day to day activities of this contract. 
+Responsibility for inspections of any and all tasks, deliverables, 
+goods, services and other work provided by the contractor. 
+2.1.29 
+County Key Personnel: As used herein, the term shall have 
+the 
+meaning 
+specified 
+in 
+Paragraph 
+6.1 
+(County’s 
+Administration). 
+2.1.30 
+County Observed Holidays: Days on which County
+
+============================================================
+PAGE 11 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+ 
+departments are closed for business in observance of 
+significant events. A list of County observed holidays may be 
+found 
+on 
+the 
+County’s 
+website 
+https://lacounty.gov/government/about-la-county/about/. 
+2.1.31 
+County’s Project Administration: As used herein, the term 
+shall have the meaning specified in Paragraph 6.1 (County’s 
+Project Administration). 
+2.1.32 
+County Project Director: Person designated by County with 
+authority for County on contractual or administrative matters 
+relating to this contract that cannot be resolved by the County’s 
+Project Manager. 
+2.1.33 
+County Project Manager: Person designated by County’s 
+Project Director to manage the operations under this contract. 
+2.1.34 
+Critical Election Period: The election period is defined as E- 
+30 through E+20 for Countywide elections. 
+2.1.35 
+Customizations: As used herein, the term Customizations 
+shall mean Solution Modifications and Application Program 
+Interfaces, and related Documentation, which Contractor may 
+provide upon County's request therefor in the form of Optional 
+Work in accordance with Appendix A (Statement of Work). 
+2.1.36 
+Data Information Management System or DIMS: Refers to 
+the Department’s system that manages all voter registration 
+information. 
+2.1.37 
+Day(s): Whether capitalized or not, shall mean calendar 
+day(s), not business or working days, unless otherwise 
+specified. 
+2.1.38 
+Debarment: This term as used herein shall mean the process 
+that precludes an existing contractor and/or proposer from: 
+submitting a response to a County solicitation, being awarded 
+a Contract, and/or performing Work on a County Contract. 
+2.1.39 
+Declared Vote-by-Mail Voter or DVBM: If an election 
+precinct has two hundred and fifty (250) or less registered 
+voters on the eighty-eighth (88th) day prior to an election, that 
+precinct may be declared a Vote-by-Mail precinct by the 
+elections official due to unavailability of voting locations and 
+poll workers in small precincts. All voters in such designated 
+precincts will automatically be sent a VBM ballot for that 
+election. 
+2.1.40 
+Deficiency or Deficiencies: As used herein, the term, whether 
+singular or plural, shall mean and include any defect(s) in the 
+development, implementation, materials and/or workmanship; 
+error(s), omission(s) and/or deviation(s) from published and/or 
+mutually agreed upon standards; deviation(s) from any of the 
+requirements or any County approved Deliverables or 
+Specifications under the Contract; and/or other problems which
+
+============================================================
+PAGE 12 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+result in the system, or any system component, not performing 
+in compliance with the provisions of this Contract, including, but 
+not limited to, the Specifications, System Requirements and 
+System Performance Requirements. 
+2.1.41 
+Deficiency Credits: As used herein, the term shall mean 
+credits or any other form of discount to be applied to the 
+applicable Maintenance Fees for Contractor's failure to timely 
+correct Deficiencies, as specified in Exhibit 5 (System 
+Maintenance), Section 5.1 (Deficiency Credits). 
+2.1.42 
+Deliverable or Deliverables: As used herein, the terms, 
+whether singular or plural, shall mean items and/or services 
+provided or to be provided by Contractor under this Contract, 
+including numbered Deliverable(s) in Appendix A (Statement of 
+Work). 
+2.1.43 
+Department or Department of Registrar-Recorder/County 
+Clerk: Department and staff responsible for the update and 
+file maintenance of voter registration records and the conduct 
+of elections in County. https://www.lavote.net/. Headquarters 
+is located at 12400 Imperial Highway, Norwalk, California 
+90650. 
+2.1.44 
+Director: As used herein, the term "Director" shall mean the 
+Project director of this Contract. 
+2.1.45 
+Disabling Device(s): shall have the meaning specified in 4.1 
+(General Warranties). 
+2.1.46 
+Disaster Recovery Plan: Plan for how systems and 
+processes would be put back in place in circumstances of 
+massive loss. Example – loss of power or loss of data. 
+2.1.47 
+Documentation: As used herein, the term shall mean any and 
+all written and electronic materials provided or made available 
+by Contractor under this Contract, including, but not limited to, 
+documentation relating to software specifications and 
+functions, training course materials, Specifications including 
+System Requirements, technical manuals, handbooks, flow 
+charts, technical information, reference materials, user 
+manuals, operating manuals, quick reference guides, FAQs, 
+and all other instructions and reference materials relating to the 
+capabilities, operation, installation and use of the system 
+and/or applicable components. 
+2.1.48 
+Downtime: As used herein, the term shall mean shall have the 
+meaning specified in Section 5.1 (Deficiency Credits). It is that 
+period of time when the System or any System Component, 
+due to any Deficiency, fails to function, and as a result, County 
+is unable to utilize the system in accordance with the 
+Specifications, including System Requirements and System 
+Performance Requirements, and this Contract, as further 
+specified in Exhibit 5 (System Maintenance).
+
+============================================================
+PAGE 13 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+2.1.49 
+Due Date: As used herein, the term shall mean the due date 
+for the completion of any Deliverable in the Project Schedule 
+or any Change Order. 
+2.1.50 
+DXI: DIMS.net eXternal Interface. 
+2.1.51 
+E dates or E- or E+: Refers to the number of days before the 
+date of an election (E-) or the numbers of day after an election 
+(E+). 
+2.1.52 
+Effective Date: As used herein shall mean the date identified 
+in the Preamble to this Contract, which is the date as of which 
+this Contract has been executed by an authorized 
+representative of the Contractor and has been approved by the 
+Board. 
+2.1.53 
+Elections (i.e., Federal, Statewide, and Local): A formal and 
+organized process for electing a candidate. 
+2.1.54 
+Election Period(s): The election period is defined per election 
+from the opening of the first Vote Center to the close of the last 
+Vote Center. 
+2.1.55 
+Election Plan: A plan completed by the Contractor that 
+accounts for each and every election task. As needed, the plan will be 
+used as a management tool to ensure the successful completion 
+of all Tasks and Deliverables, according to mandated and time sensitive 
+time frames. 
+2.1.56 
+Election Tally System or ETS: Refers to programmatically 
+tallying election results for an election. 
+2.1.57 
+Extension(s): This term as used herein shall mean the same 
+as set forth in Section 4 (Term of Contract). 
+2.1.58 
+Federal Election: Refers to the primary, general, or special 
+election conducted to elect a President, Vice President, 
+Member of the United States Senate or House of 
+Representatives. 
+2.1.59 
+Finalized Requirements: A detailed documentation that 
+describes the capabilities, features and functionalities of the 
+deliverable/s, including the acceptance criteria approved by 
+both the County Project Director and the County Project 
+Manager. 
+2.1.60 
+Fiscal Year: The twelve (12) month period beginning July 1st 
+and ending the following June 30th. 
+2.1.61 
+Fixed Hourly Rate: As used herein, the term shall mean the 
+hourly rate, specified in Appendix B (Pricing Schedule), for 
+Professional 
+Services, 
+including 
+Consulting 
+Services, 
+Additional Training and Customizations, which Contractor may 
+provide upon County's request therefor in the form of Optional 
+Work in accordance with Appendix A (Statement of Work). 
+2.1.62 
+General Election: Occurs in November of even numbered
+
+============================================================
+PAGE 14 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+years (i.e., 2020, 2022, 2024, etc.). 
+2.1.63 
+Help Desk: As used herein, the term shall mean Contractor's 
+help desk for providing Support Services hereunder, as 
+specified in Exhibit 5 (System Maintenance). 
+2.1.64 
+Help Desk Status Report: Refers to reports provided by 
+Contractor containing the date problem was reported, the 
+description, severity level, status, staff person assigned to 
+resolve problem, and date problem resolved. 
+2.1.65 
+Initial Term: As used herein, the term shall have the meaning 
+specified in Paragraph 4.1 (Contract Term). 
+2.1.66 
+Interface(s): As used herein, the term "Interfaces" shall mean 
+the set of software mechanisms, consisting of Application 
+Program Interfaces which may be provided by Contractor 
+under this Contract, which allow the transfer of electronic data 
+and/or software commands between computer systems, 
+networks, 
+applications 
+or 
+modules, 
+and 
+related 
+Documentation. 
+2.1.67 
+Issue Management Tracking Process: Refers to the 
+Contractor’s tracking process where Departmental IT staff can 
+review the status and updates of the support requests made 
+bythe Department . 
+2.1.68 
+License: As used herein, the term "License" shall have the 
+meaning specified in clause 10.2 (License) this Contract. 
+2.1.69 
+License Fees: As used herein, the term “License Fee(s)” shall 
+mean the fees for the License to be paid by County to 
+Contractor over the period of System Implementation and 
+System Maintenance and Election Support services as 
+specified in Appendix B (Pricing Schedule). 
+2.1.70 
+License Renewal Fees: As used herein, the term “License 
+Renewal Fee(s)” shall mean the fees to be paid by County to 
+Contractor for the renewal of the License commencing on the 
+first anniversary of the Effective Date, as specified in Appendix 
+B (Pricing Schedule). 
+2.1.71 
+Local Election: Refers to a municipal, county, or district 
+election. 
+2.1.72 
+Maintenance and Support Services: As used herein shall 
+mean the same as set forth in Exhibit 5 (System Maintenance). 
+2.1.73 
+Maintenance Fees: As used herein, the term shall mean the 
+applicable fees to be paid by County to Contractor for System 
+Maintenance pursuant to Appendix B (Pricing Schedule) and 
+shall include any or all of the following: License Renewal Fees, 
+Software Support Fees and/or System Support Fees. 
+2.1.74 
+Maintenance Services: As used herein, the term shall have 
+the meaning specified in Exhibit 5 (System Maintenance). and
+
+============================================================
+PAGE 15 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+shall comprise part of System Maintenance provided by 
+Contractor under this Contract. 
+2.1.75 
+Maximum Fixed Price: As used herein, the term shall mean 
+the maximum amount to be paid by County to Contractor for 
+any Optional Work approved by County to be provided by 
+Contractor in accordance with Appendix A (Statement of 
+Work). 
+2.1.76 
+Mass File: A data set of all Permanent VBM voters who 
+receive a mail ballot on a permanent basis. Also known as the 
+Perm File. 
+2.1.77 
+Mean Time to Resolution: Time from notification of incident 
+to resolution. 
+2.1.78 
+Military or Overseas Voter: Refers to a voter who is 
+permanently or temporary residing out of the county for an 
+election. 
+2.1.79 
+National institute of Standards and Technology or NIST: 
+This term as used herein shall mean a non-regulatory Federal 
+agency within the United States (U.S.) Department of 
+Commerce that works with industry to develop and apply 
+technology, measurements, and standards and promotes U.S. 
+innovation and industrial competitiveness. 
+2.1.80 
+Non-Responsibility: This term as used herein shall mean a 
+finding by the County that a proposer is incapable of performing 
+as a responsible County contractor, based on past 
+performance history or other relevant documentation. 
+2.1.81 
+Non-Responsive: This term as used herein shall mean the 
+failure of a proposer to comply with all solicitation requirements 
+making the proposer ineligible for consideration in that specific 
+proposal evaluation process. 
+2.1.82 
+Option Term: This term as used herein shall mean the same 
+as set forth in Section 4 (Term of Contract). 
+2.1.83 
+Optional Work: As used herein, this term shall mean 
+Software Enhancements and/or Professional Services, which 
+may be provided by Contractor to County upon County's 
+request and approval in accordance with Appendix A 
+(Statement of Work). 
+2.1.84 
+Party or Parties: This term as used herein shall mean the 
+same as set forth in the Recitals. 
+2.1.85 
+Payment Schedule: As used herein, the term shall mean 
+prices for Deliverables, rates and other fees identified as 
+Appendix B (Pricing Schedule) with all Schedules thereto. 
+2.1.86 
+Permanent Vote-by-Mail Voter or PVBM: Voters who have 
+requested to receive a mail ballot for all elections in which they 
+are eligible to vote.
+
+============================================================
+PAGE 16 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+2.1.87 
+Personally, Identifiable Information or PII: This term as used 
+herein shall mean any information that identifies a person, 
+including, but not limited to, name, address, email address, 
+passwords, account numbers, social security numbers, credit 
+card information, personal, financial, or healthcare information, 
+personal preferences, demographic data, marketing data, 
+credit data, or any other identification data. For the avoidance 
+of doubt, Personally Identifiable Information shall include, but 
+not be limited to, all “non-public personal information,” as 
+defined under the Gramm-Leach-Bliley Act (15 United States 
+Code (“U.S.C.”) §6801 et seq. 
+2.1.88 
+Pool Dollars: As used herein, the term "Pool Dollars" shall 
+mean the maximum amount allocated under this Agreement for 
+the provision by Contractor of Optional Work, including 
+Software Enhancements and Professional Services approved 
+by County in accordance with the terms of this Contract. 
+2.1.89 
+Precinct: This term as used herein shall mean a geographical 
+area which contains 1,000 or fewer voters, established for 
+election administration functions. In California, a consolidated 
+precinct is required to contain 1,000 or fewer poll voters. 
+Regular precinct boundaries may change each election to 
+“voting precinct” boundaries, depending on the jurisdictions 
+holding elections and the resulting ballot types. 
+2.1.90 
+Primary Election: Occurs in March of even numbered years 
+(i.e., 2020, 2022, 2024; etc.). 
+2.1.91 
+Production Server: As used herein, the term shall mean the 
+primary Contractor provided system hardware used for all 
+Work under this Contract. 
+2.1.92 
+Professional Services: As used herein, the term shall mean 
+Consulting 
+Services, 
+Additional 
+Training 
+and/or 
+Customizations, which Contractor may provide upon County's 
+request therefor in the form of Optional Work in accordance 
+with Appendix A (Statement of Work). 
+2.1.93 
+Project Schedule: As used herein, the term shall mean the 
+agreed upon timeline for System Implementation Tasks, 
+Subtasks and Deliverables specified in Appendix A (Statement 
+of Work), as identified as Exhibit 4 (Project Schedule). 
+2.1.94 
+Proprietary Rights: As used herein, the term shall mean all 
+legal and equitable rights, including all copyrights, patent rights, 
+trade secrets, trademarks, confidential and proprietary 
+information rights, moral rights and all rights and title in and to 
+the structure, sequence and organization of a work of 
+authorship, and all rights in and to any code, materials, 
+pictures, interfaces, screen displays and audio visual displays 
+and presentations. 
+2.1.95 
+Registrar-Recorder/County Clerk or RR/CC: As used
+
+============================================================
+PAGE 17 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+herein, the term shall mean the Head of the Department of 
+Registrar- Recorder/County Clerk of County of Los Angeles. 
+2.1.96 
+Release Event(s): As used herein, the term "Release 
+Event(s)" shall mean any of the following: 
+ 
+1. A receiver, trustee, or similar officer is appointed for the 
+business or property of Contractor; or 
+2. Contractor files a petition in bankruptcy, files a petition 
+seeking 
+any 
+reorganization 
+(without 
+confirming 
+immediately in writing to the Customer that it will continue 
+to maintain the Software in accordance with the terms of 
+the 
+Agreement 
+or 
+any 
+applicable 
+maintenance 
+agreement), makes an arrangement, composition, or 
+similar relief under any law regarding insolvency or relief 
+for debtors, or makes an assignment for the benefit of 
+creditors; or 
+3. Any Involuntary petition or proceeding under bankruptcy or 
+insolvency laws is instituted against Contractor and not 
+stayed, enjoined, or discharged within sixty (60) days; or 
+4. Contractor takes any corporate action authorizing any of 
+the foregoing; or 
+5. Any similar or analogous proceedings or event to those in 
+Sections one (1), two (2), or three (3) above occurs in 
+respect of Contractor within any jurisdiction outside the 
+United States of America; or 
+6. Contractor ceases to carry on its business or the part of its 
+business which relates to the Software; or 
+7. Contractor or, where relevant, its agent, parent, subsidiary 
+or associated company is in material breach of its 
+obligations as to maintenance or modification of the 
+Software under the Agreement or any maintenance 
+agreement entered into in connection with the Software 
+and has failed to remedy such default notified by the 
+Customer to Contractor within a reasonable period. 
+2.1.97 
+Release Notes Report: As used herein, the term shall mean 
+the document that detail the corrections, changes or 
+enhancements made to any supported portion of the DIMS 
+suite, this includes database, client, services or applications 
+required by DIMSNet. 
+2.1.98 
+Responsible: As used herein shall mean a proposer that has 
+conducted themselves in an acceptable manner as determined 
+by the Board of Supervisors (see County Code 2.202.030) and 
+has the financial and managerial ability to perform the required 
+work. 
+2.1.99 
+Responsive: As used herein shall mean a proposal submitted 
+to the County that complies with all solicitation requirements. 
+2.1.100 Resolution Time: As used herein, the term shall mean the
+
+============================================================
+PAGE 18 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+period of time from County's notification of a Deficiency to 
+Contractor to its correction in accordance with Exhibit 5 
+(System Maintenance). 
+2.1.101 Response Time: As used herein, the term shall mean the 
+acceptable time period within which Contractor shall respond 
+to County following County’s report of any Deficiency, as set 
+forth in Exhibit 5 (System Maintenance). 
+2.1.102 Scheduled Elections: Include the Primary and General 
+Elections. The Primary Elections are scheduled in March of 
+even numbered years. General Elections are scheduled in 
+November of even numbered years. 
+2.1.103 Scheduled Downtime: Shall have the meaning set forth as 
+defined in Exhibit 5 (System Maintenance). 
+2.1.104 Sensitive Position: A person with direct access to County PII 
+data. 
+2.1.105 Severity Level or SL: As used herein, the terms shall mean 
+the problem severity levels for correction of Deficiencies, as 
+specified in Exhibit 5 (System Maintenance). 
+2.1.106 Software Enhancements: As used herein, the term shall 
+mean Customizations and/or Additional Software, including 
+Solution Modifications and Application Program Interfaces, 
+which Contractor may provide upon County's request therefor 
+in the form of Optional Work in accordance with Appendix A 
+(Statement of Work). 
+2.1.107 Software Support Fees: As used herein, the term shall mean 
+the annual fees to be paid by County to Contractor for System 
+Maintenance regarding Application Software, as specified in 
+Appendix B (Pricing Schedule). 
+2.1.108 Solution Modifications: As used herein, the term shall mean 
+modifications to the Application Software, including system 
+solution, and related Documentation, which Contractor may 
+provide upon County's request therefor as Customizations in 
+accordance with Appendix A (Statement of Work), which will 
+update County’s solution and shall become part of, and be 
+deemed, System Software for the purpose of this Contract. 
+2.1.109 Source Code: As used herein, the term "Source Code" shall 
+mean the source code for Application Software, to the extent 
+available, developed for or licensed to County under this 
+Agreement by Contractor, including Core Application and 
+Application Modifications, together with all Documentation 
+and other proprietary information related to such source code. 
+2.1.110 Source Code Escrow Contract: As used herein, the term 
+"Source Code Escrow Contract" shall mean an agreement 
+between Contractor and a third-party Source Code escrow 
+agent, including all addenda, amendments and modifications
+
+============================================================
+PAGE 19 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+thereto, for depositing the Source Code in accordance with 
+Paragraph 10.3 (Source Code Escrow), incorporated herein 
+by reference as Appendix I (Source Code Escrow Contract). 
+2.1.111 Special Election: An unscheduled election conducted as 
+requested where the County is notified by the Board of 
+Supervisors of the County or Governor, no later than sixty-one 
+(61) days before a Special Election as to the services the 
+County is to provide (Elections Code 10002). Special 
+Elections are elections conducted when called, on as-needed 
+basis. 
+2.1.112 Specifications: As used herein, the term shall mean any or all 
+of the following, as applicable: 
+1. 
+ll System Performance Requirements and standards 
+set forth in this Contract, including, but not limited to, 
+requirements for system availability and system 
+response time identified in Exhibit 5 (System 
+Maintenance). 
+2. 
+The Documentation, to the extent not inconsistent with 
+any of the foregoing in this definition. 
+3. 
+All specifications identified as such by Contractor, 
+including, but not limited to, the Project Schedule and 
+the Project Control Document, but only to the extent: 
+(i) not inconsistent with any of the foregoing in this 
+Paragraph; and (ii) acceptable to County in its sole 
+discretion. 
+4. 
+All 
+system 
+environment 
+requirements 
+and 
+certifications provided by Contractor in accordance 
+with this Contract with respect to the system. 
+5. 
+All written and/or electronic materials furnished by or 
+through 
+Contractor 
+regarding 
+the 
+Application 
+Software or the system, including functionality, 
+features, capacity, availability, response times, 
+accuracy or any other performance or other system 
+criteria or any element of the System or any system 
+component. 
+2.1.113 State: As used herein, the term shall mean the State of 
+California. 
+2.1.114 Statement of Work or SOW: The directions, provisions, and 
+requirements provided herein and special provisions pertaining 
+to the method, frequency, manner and place of performing the 
+contract services stated in Appendix A (Statement of Work). 
+2.1.115 Statewide Election: An election held throughout the State. 
+“Uniform District Election Law” (UDEL) (also known as Local 
+and Municipal Consolidated Election) - An election conducted 
+in November of odd number years (i.e., 2021, 2023, 2025; 
+etc.). 
+2.1.116 Statewide Voter Registration Database: A single, uniform,
+
+============================================================
+PAGE 20 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+official, centralized, interactive computerized statewide voter 
+registration list defined, maintained, and administered at the 
+State level. 
+2.1.117 Subcontract: A contract by the contractor to employ a 
+subcontractor to provide services to fulfill this contract. 
+2.1.118 Subcontractor: Any individual, person or persons, sole 
+proprietor, firm, partnership, joint venture, corporation, or other 
+legal entity furnishing supplies, services of any nature, 
+equipment, and/or materials to contractor in furtherance of 
+contractor's performance of this contract, at any tier, under oral 
+or written contract. 
+2.1.119 Support Hours: 7:00 a.m. to 5:00 p.m. Pacific Local Time 
+daily. 
+2.1.120 Support Services: As used herein, the term shall have the 
+meaning specified in Exhibit 5 (System Maintenance) and shall 
+comprise part of System Maintenance provided by Contractor 
+under this Contract. 
+2.1.121 System Availability: As used herein, the term "System 
+Availability" shall mean the percentage of time during any 
+month of System Maintenance when the System does not 
+experience any Downtime and all System Components 
+available to County. 
+2.1.122 System Data: As used herein, the term "System Data" shall 
+mean all County Data and external data, whether provided by 
+County or Contractor during the term of this Contract. 
+2.1.123 System Environment: As used herein, the term "System 
+Environment" shall mean System Hardware, System Network 
+and Third-Party Software components provided by Contractor 
+in accordance with Contractor's specifications or by Contractor. 
+2.1.124 System Hardware: As used herein, the term "System 
+Hardware" shall mean the Production Server, Back-Up Server 
+and other equipment provided by Contractor for the System 
+and performance of Work pursuant to this Contract. 
+2.1.125 System Performance Deficiency: As used herein, the term 
+shall mean failure by the system to meet any of the System 
+Performance Requirements as specified in Exhibit 5 (System 
+Maintenance). 
+2.1.126 System Performance Requirements: As used herein, the 
+term shall mean the performance requirements for the system, 
+including system availability, System Response Time and 
+Back-up Server Hosting as specified in Exhibit 5 (System 
+Maintenance). 
+2.1.127 System Performance Warranty: As used herein, the term 
+shall mean Contractor's warranty to meet System Performance 
+Requirements as specified in Exhibit 5 (System Maintenance).
+
+============================================================
+PAGE 21 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+2.1.128 System Requirements: As used herein, the term shall mean 
+business, operational, technical and/or functional requirements 
+relating to the operation or utilization of the system, as specified 
+in Appendix A (Statement of Work). 
+2.1.129 System Response Time: As used herein, the term shall mean 
+the time elapsed from the entry of a query at a workstation to 
+the time the workstation fully displays the complete results, as 
+may be further specified in Exhibit 5 (System Maintenance). 
+2.1.130 System Software: As used herein, the term shall mean 
+Application Software and any Third-Party Software, and related 
+Documentation, provided under this Contract by Contractor in 
+accordance with Contractor's specifications or by Contractor, 
+as applicable, as further specified in Appendix A (Statement of 
+Work), 
+including 
+Application 
+Modifications, 
+Solution 
+Modifications, and Software Enhancements. 
+2.1.131 System Support Fees: As used herein, the term shall mean 
+the monthly fees to be paid by County to Contractor for System 
+Maintenance, as specified in Appendix B (Pricing Schedule). 
+2.1.132 System Upgrade shall have the meaning set forth in Section 
+5.2 (System Performance Requirements and Deficiencies). 
+2.1.133 Task or task and Subtask or subtask: As used herein, the 
+terms, whether singular or plural, shall mean one of the areas 
+of work to be performed under this Contract, including those 
+identified as numbered Tasks and Subtasks in Appendix A 
+(Statement of Work). 
+2.1.134 Test Environment: As used herein, the term shall mean the 
+non-production System Environment set up by Contractor 
+pursuant to Appendix A (Statement of Work) for Application 
+Software implementation, System Tests and System Training. 
+2.1.135 Update(s): As used herein, the term, whether singular or 
+plural, shall mean and include any additions to and/or 
+replacements to the Application Software, available or made 
+available subsequent to Final Acceptance, and shall include all 
+Application 
+Software 
+performance 
+and 
+functionality 
+enhancement releases, new Version Releases, System 
+Software upgrades, improvements, interim updates, including 
+fixes and patches, Deficiency corrections, and modifications to 
+the Application Software, including those required for the 
+System Software to remain in compliance with applicable 
+Federal and State laws and regulations and the terms of this 
+Contract, provided by Contractor in accordance with Exhibit 5 
+(System Maintenance) with all Schedules thereto. 
+2.1.136 User(s) or user(s): As used herein, the terms, whether 
+singular or plural, shall mean any person or entity authorized 
+by County of Los Angeles or Department of Registrar- 
+Recorder/County Clerk to access or use the system pursuant
+
+============================================================
+PAGE 22 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+to this Contract. 
+2.1.137 User Acceptance Test: As used herein, the term shall mean 
+the System Test conducted in accordance with Appendix A 
+(Statement of Work). 
+2.1.138 Version Release: As used herein, the term shall mean 
+Contractor's Application Software major version upgrade which 
+contains new software functionalities and features and/or 
+system compatibilities, including any Replacement Product. 
+2.1.139 Vote Center: Refers to location where voters will have the 
+freedom to cast a ballot in-person within their county instead of 
+being tied to a single polling location. Vote centers look and feel 
+like polling places but provide additional modern features to 
+make voting easy and convenient. Vote centers are required to 
+be operational (ten) 10 days prior to an election through election 
+day as well as have the ability for a voter to vote in-person, drop 
+off their ballot, get a replacement ballot, vote using an 
+accessible voting machine, get help and voting material in 
+multiple languages, register to vote or update their voter 
+registration. 
+2.1.140 Voter History: Refers to the electronic record of each time a 
+voter participates in a state or Federal election. 
+2.1.141 Voter Information Management System or VIMS: A software 
+application system that automates voter registration and 
+election management functions. 
+2.1.142 VoteCal System: Refers to California’s Statewide Voter 
+Registration Database. 
+2.1.143 Voter Registration File: Also known as Voter File or Voter 
+Index File, as pursuant to Article 5 commencing with section 
+2180 of the California Election Code, is a file of all voter 
+registration records in Los Angeles County. The file includes a 
+variety of voter types: permanent, declared, military, overseas, 
+foreign language voters, etc. 
+2.1.144 Voter Registration System License and Support Services: 
+Refers to a voter registration and election management 
+application that enables election officials to register voters and 
+conduct elections from a central data store. This system 
+allows for both single jurisdictions and states to manage 
+elections from the same interface. 
+2.1.145 Warranties: As used herein, the term shall mean the 
+warranties regarding Contractor's performance under the 
+Contract, including the system, as specified in Exhibit 5 
+(System Maintenance). This definition does not limit or 
+preclude any other warranties implied by law or equity into this 
+Contract. 
+2.1.146 Warranty Period: As used herein, the term shall have the
+
+============================================================
+PAGE 23 of 37
+============================================================
+
+Exhibit A 
+ 
+ 
+meaning set forth in Exhibit 5 (System Maintenance). 
+2.1.147 Web or Web Services: As used herein, the terms shall mean 
+a software system designed to support interoperable computer 
+interactions over a network. 
+2.1.148 Web-Server Hosting: As used herein, the term shall mean 
+system operation at a physical location that houses the 
+dedicated servers, hardware and networks for the DIMS and 
+provides direct Web access to the internet, as further specified 
+in Appendix A (Statement of Work). 
+2.1.149 Wide Area Network or WAN: Refers to a collection of data 
+network that covers a broad area (i.e., 
+any 
+telecommunications 
+network 
+that 
+links 
+across 
+metropolitan, regional, national or international boundaries) 
+using leased or privately-owned data links. 
+2.1.150 Work: As used herein, the term shall mean any and all tasks, 
+subtasks, deliverables, goods, services and other work 
+provided, or to be provided, by or on behalf of Contractor 
+pursuant to this Contract, including system components, 
+system implementation services, system maintenance and 
+Optional Work.
+
+============================================================
+PAGE 24 of 37
+============================================================
+
+APPENDIX B 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+TOTAL PRICING SUMMARY 
+ 
+ 
+ 
+ 
+ 
+Work Description 
+Total Firm Fixed Price 
+System Maintenance 
+$4,753,898
+Optional Work (Pool Dollars) 
+$400,000
+Total Price 
+$5,153,898
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix B (Pricing Schedule) - Amendment #4 
+1 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+Contractor's Name: RUNBECK ELECTION SERVICES
+
+============================================================
+PAGE 25 of 37
+============================================================
+
+APPENDIX B 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+APPENDIX B - PRICING SCHEDULE 
+ 
+ 
+ 
+ 
+ 
+ 
+Work
+Description
+Year 1
+(1/1/2021 –
+12/31/21 
+Year 2
+(1/1/2022 –
+12/31/22 
+Optional Year 3
+(1/1/2023 –
+12/31/23
+Optional Year 4
+(1/1/2024–
+12/31/24)
+Extension
+Year 5
+(1/1/25-12/31/25 
+Extension
+Year 6
+(1/1/26-12/31/26 
+Optiona
+6 Months
+(1/1/27-6/30/27)
+Optiona
+6 Months
+(7/1/27-
+12/31/27)
+Total Firm
+Fixed
+Price
+System 
+Maintenanc 
+e 
+$674,535 
+$674,535 
+$691,398 
+$708,683 
+$668,249 
+$668,249 
+$334,124 
+$334,124 
+$4,753,898 
+Optional 
+Work (Pool 
+Dollars) 
+$100,000
+$100,000 
+$100,000 
+$100,000 
+$0 
+$0 
+$0 
+$0 
+$400,000 
+Total
+$774,535 
+$774,535 
+$791,398 
+$808,683 
+$668,249 
+$668,249 
+$334,124 
+$334,124 
+$5,153,898 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix B (Pricing Schedule) - Amendment #4 
+2
+
+============================================================
+PAGE 26 of 37
+============================================================
+
+APPENDIX B 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+SYSTEM IMPLEMENTATION - FIRM FIXED PRICE 
+APPENDIX B - PRICING SCHEDULE 
+ 
+ 
+Subtask/Deliverables 
+TASK 1 – SUPPORT AND MAINTENANCE SERVICES 
+1.1 - Core Application Software Upgrades 
+1.2 – Help Desk Support 
+A contact will be available twenty-four (24) hours a day, seven (7) days a week during Critical Election Periods. At any other time, a 
+resource will be available during business hours of 7:00am-5:00pm Pacific Local Time. In addition, respond according to severity 
+levels above. 
+1.3 - Status Reports- Help Desk Status Reports 
+1.4 – Issue Management Tracking 
+Within three (3) months of Effective Date of the Contract, Contractor must establish an Issue Management Tracking process that 
+provides the County access to DIMS issue report. This tracking process must also provide a reporting mechanism to export the 
+issues/bugs for County’s management review with Operation teams. 
+TASK 2 – SYSTEM INTERFACE PROGRAMMING AND EXECUTION 
+2.1 - Define and Maintain Interface Software for the Statewide Voter Database (VoteCal) 
+2.2 - Real Time Electronic Pollbook (E-Pollbook) API 
+TASK 3 – EXTERNAL ACCESS PLAN AND CONFIGURATION 
+3.1 
+Contractor shall provide consulting services around use case analysis to determine appropriate DIMS.net System access 
+by the City Clerks. 
+3.2 □Contractor shall provide a written report outlining the configuration setting changes in DIMS.net System required to set-up City 
+Clerk access. 
+3.3 □Contractor shall provide training to County describing steps for configuration of security access changes in DIMS.net System 
+required to set-up limited City Clerk access. 
+3.4 □Contractor shall advise County of configuration setting changes in DIMS.net System required to setup City Clerk access in 
+both the Test and Production Environments. 
+TASK 4 – CHANGE ORDER PROCESS 
+4.1 - Contractor will submit Change Order with firm and fixed pricing according to Appendix B (Pricing Schedule), when applicable. 
+County will approve any Change Order by utilizing the Optional Work Schedule B.1 for Pool Dollars. 
+TASK 5 – ACCOUNT MANAGER 
+The Contractor shall hire and provide an Account Manager that is assigned to work Problems and enhancements that are 
+reported/requested by the County. The Contractor’s Account Manager shall be responsible for Contractor's day-to-day activities as 
+related to this Contract and for reporting to County in the manner set forth by Department. The Contractor’s Account Manager shall 
+be responsible for Contractor's performance of all its tasks and subtasks and ensuring Contractor's compliance with this Contract. 
+From the Effective Date through the expiration of the term of this Contract, the Contractor's Account Manager shall meet and confer 
+with County's Project Manager on a regular basis to review project progress and discuss project coordination. Such meetings shall 
+be conducted at a time and place convenient to County's Project Manager. 
+□T h e Contractors will notify County in writing of any changes in the name and contact information of Contractor's Account Manager. 
+Contractor's Name: RUNBECK ELECTION SERVICES 
+DIMS.net ELECTION MANAGEMENT SYSTEM
+
+============================================================
+PAGE 27 of 37
+============================================================
+
+APPENDIX B 
+ 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+SYSTEM MAINTENANCE - FIRM FIXED PRICE 
+APPENDIX B - PRICING SCHEDULE 
+ 
+ 
+ 
+ 
+ 
+ 
+System Maintenance 
+Firm Fixed Price 
+Description of System 
+Maintenance 
+Year 1 
+(1/1/2021 
+– 
+12/31/21) 
+Year 2 
+(1/1/2022 
+– 12/31/22) 
+Optional 
+Year 3 
+(1/1/2023 – 
+12/31/23) 
+Optional Year 
+4 (1/1/2024– 
+12/31/24) 
+Extension 
+Year 5 (1/1/25- 
+12/31/25) 
+Extension 
+Year 6 
+(1/1/26- 
+12/31/26) 
+Optional 
+6 Months 
+(1/1/27- 
+6/30/27) 
+Optional 
+6 Months 
+(7/1/27- 
+12/31/27) 
+Firm Fixed Price 
+TOTAL 
+DIMS.net Software License, 
+Maintenance & Support Services 
+$674,535 
+$674,535 
+$691,398 
+$708,683 
+$668,249 
+$668,249 
+$334,124 
+$334,124 
+$4,753,898 
+Application Software 
+Application Modifications 
+Replacement Products 
+Updates/Upgrades 
+Help Desk Support (Technical and 
+User Support) 
+New Alternate Account Manager- 
+24/7 Help Desk Assistance during 
+Countywide Elections 
+Contract Administration/Security 
+Requirements 
+Total of System Maintenance 
+$674,535 
+$674,535 
+$691,398 
+$708,683 
+$668,249 
+$668,249 
+$334,124 
+$334,124 
+$4,753,898 
+ 
+ 
+* 
+Software License and Maintenances: These fees will be billed in monthly payments. Each monthly payment shall be paid in arrears of the applicable month invoiced. 
+Appendix B (Pricing Schedule) - Amendment #4 
+4
+
+============================================================
+PAGE 28 of 37
+============================================================
+
+APPENDIX B 
+Appendix B (Pricing Schedule) - Amendment 
+5 
+ 
+ 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+OPTIONAL WORK FIXED HOURLY RATE 
+APPENDIX B - PRICING SCHEDULE 
+ 
+ 
+ 
+ 
+Optional Work* 
+Fixed Hourly Rate 
+Labor Resources 
+$200 
+1. Requested on-site service = $1,820 per day/per person 
+2. Requested remote database migration support = $200 per hour 
+3. Requested remote technical support = $200 per hour 
+4. Requested system enhancements = $200 per hour 
+5. Requested VoteRemote (ASR Interface) = $200 per hour 
+6. Requested ePollBook Interface = $200 per hour 
+ 
+ 
+ 
+ 
+Fixed Hourly Rate shall be used to calculate Maximum Fixed Price for Optional Work, which may be provided 
+by Contractor during the term of the Agreement. Fixed Hourly Rate shall not increase during the term of the 
+Agreement. 
+ 
+* Optional Work will be determined solely by County. Contractor is not required to enter any pricing other than 
+the Fixed Hourly Rate. 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+Contractor's Name: RUNBECK ELECTION SERVICES
+
+============================================================
+PAGE 29 of 37
+============================================================
+
+APPENDIX B 
+Appendix B (Pricing Schedule) - Amendment 
+6 
+ 
+ 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM SCHEDULE B.1 
+OPTIONAL WORK 
+APPENDIX B - PAYMENT SCHEDULE 
+ 
+ 
+DIMS.net ELECTION MANAGEMENT SYSTEM 
+Contractor's Name: RUNBECK ELECTION SERVICES 
+SCHEDULE B.1 
+Optional Work 
+1. OPTIONAL WORK/Pool Dollar 
+Item 
+No. 
+Description/type 
+Request 
+Date 
+Delivery 
+Date 
+County 
+Approval 
+Date 
+Maximum 
+Fixed price 
+SUBTOTAL 
+$ 
+ 
+ 
+Note 2: Any applicable state and local taxes are not included and are the responsibility of Customer. 
+Premium or rush transportation services incurred in connection with deliverables included in the Total 
+Fees are additive and will be billed as incurred.
+
+============================================================
+PAGE 30 of 37
+============================================================
+
+APPENDIX E 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix E 
+ 
+ 
+COUNTY’S ADMINISTRATION 
+CONTRACT: 
+VOTER REGISTRATION SYSTEM LICENSE AND SUPPORT SERVICES 
+CONTRACT NO: 
+20-001 
+COUNTY PROJECT DIRECTOR: 
+ 
+Name: 
+Aman Bhullar 
+Title: 
+Assistant Registrar-Recorder/County Clerk, Information Technology Bureau 
+Address: 
+12400 Imperial Highway 
+Room 7001 
+Norwalk, California 90650 
+Telephone: 
+(562) 462-2714 
+E-Mail Address: 
+abhullar@rrcc.lacounty.gov 
+ 
+COUNTY PROJECT MANAGER: 
+Name: 
+Hector M. Manzo 
+Title: 
+Division Manager, Voter Systems 
+Address: 
+12400 Imperial Highway 
+Room 6001C 
+Norwalk, California 90650 
+Telephone: 
+(562) 353-5036 
+E-Mail Address: 
+hmmanzo@rrcc.lacounty.gov 
+ 
+COUNTY CONTRACT PROJECT MONITOR: 
+ 
+Name: 
+Amy Farsakyan 
+Title: 
+Manager, Information & Voter Registration System 
+Address: 
+12400 Imperial Highway 
+Room 6001C 
+Norwalk, California 90650 
+Telephone: 
+(562) 462-2443 
+E-Mail Address: 
+amargaryan-farsakyan@rrcc.lacounty.gov 
+COUNTY CONTRACTS MANAGER: 
+Name: 
+Cecille Asuncion 
+Title: 
+Manager, Contracts and Grants 
+Address: 
+12400 Imperial Highway 
+Room 7211 
+Norwalk, California 90650 
+Telephone: 
+(562) 383-2561 
+E-Mail Address: 
+casuncion@rrcc.lacounty.gov
+
+============================================================
+PAGE 31 of 37
+============================================================
+
+APPENDIX E 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix E 
+ 
+ 
+COUNTY CONTRACTS ANALYST: 
+Name: 
+Melinda Huynh 
+Title: 
+Contracts Analyst 
+Address: 
+12400 Imperial Highway 
+Room 7211 
+Norwalk, California 90650 
+E-Mail Address: 
+mhuynh@rrcc.lacounty.gov 
+COUNTY CONTRACTS MONITOR: 
+ 
+Name: 
+Melinda Huynh 
+Address: 
+12400 Imperial Highway 
+Room 7211 
+Norwalk, California 90650 
+E-Mail Address: 
+contracts@rrcc.lacounty.gov 
+ 
+ 
+CONTRACTS QUESTIONS: 
+For contracts questions, send an e-mail to contracts@rrcc.lacounty.gov. 
+ 
+INVOICE QUESTIONS: 
+For invoice questions, send an e-mail to accountspayable@rrcc.lacounty.gov and copy the County 
+Project Manager and County Contract Project Monitor. 
+ 
+Include the name of your company, contract name and contact number.
+
+============================================================
+PAGE 32 of 37
+============================================================
+
+APPENDIX F 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix F 
+ 
+ 
+CONTRACTOR’S ADMINISTRATION 
+ 
+CONTRACT: 
+VOTER REGISTRATION SYSTEM LICENSE AND SUPPORT SERVICES 
+CONTRACT NO: 
+20-001 
+CONTRACTOR’S PROJECT DIRECTOR: 
+Name: 
+Matt Kaiser 
+Title: 
+Director of DIMS.net 
+Address: 
+ 2800 South 36th Street 
+Phoenix, Arizona 85034 
+Telephone: 
+(602) 509-3056 
+E-Mail Address: mkaiser@runbeck.net 
+ 
+CONTRACTOR’S PROJECT MANAGER: 
+Name: 
+Annie Tcha 
+Title: 
+ Account Manager, Election Management Systems 
+Address: 
+2800 South 36th Street 
+Phoenix, Arizona 85034 
+Telephone: 
+(530) 329-1084 
+E-Mail Address: atcha@runbeck.net 
+ 
+CONTRACTOR’S AUTHORIZED OFFICIAL: 
+Name: 
+Rizwan Fidai 
+Title: 
+Vice President, Sales 
+Address: 
+ 2800 South 36th Street 
+Phoenix, Arizona 85034 
+Telephone: 
+(480) 455-1095 
+E-Mail Address: rfidai@runbeck.net 
+ 
+NOTICES TO CONTRACTOR SHALL BE SENT TO THE FOLLOWING ADDRESS: 
+ 
+Name: 
+Jeff Ellington 
+Title: 
+Chief Executive Officer 
+Address: 
+ 2800 South 36th Street 
+Phoenix, Arizona 85034 
+Telephone: 
+(480) 455-1028 
+E-Mail Address: jellington@runbeck.net 
+ 
+Name: 
+Rizwan Fidai 
+Title: 
+Vice President, Sales 
+Address: 
+ 2800 South 36th Street 
+Phoenix, Arizona 85034 
+Telephone: 
+(480) 455-1095 
+E-Mail Address: rfidai@runbeck.net
+
+============================================================
+PAGE 33 of 37
+============================================================
+
+APPENDIX M 
+CONTRIBUTION AND AGENT DECLARATION FORM 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix M 
+ 
+ 
+ 
+This form must be completed separately by all bidders/proposers, including all prime contractors and 
+subcontractors, and by all applicants for licenses, permits, and other entitlements for use issued by the 
+County of Los Angeles ("County"). 
+ 
+Pursuant to the Levine Act (Government Code Section 84308), a member of the Board of Supervisors, 
+other elected County officials (the Sheriff, Assessor, and the District Attorney), and other County 
+employees and/or officers ("County Officers") are disqualified and not able to participate in a proceeding 
+involving contracts, franchises, licenses, permits and other entitlements for use if the County Officer 
+received more than $250 in contributions in the past 12 months from the bidder, proposer or applicant, any 
+paid agent of the bidder, proposer, or applicant, or any financially interested participant who actively 
+supports or opposes a particular decision in the proceeding. 
+ 
+State law requires you to disclose information about contributions made by you, your company, 
+and lobbyists and agents paid to represent you. Failure to complete the form in its entirety may 
+result in significant delays in the processing of your application and potential disqualification from 
+the procurement or application process. 
+ 
+You must fully answer the applicable questions below. You ("Declarant"), or your company, if 
+applicable, including all entities identified below (collectively, “Declarant Company”) must also 
+answer the questions below. The term “employee(s)” shall be defined as employees, officers, 
+partners, owners, or directors of Declarant Company. 
+ 
+An affirmative response to any questions will not automatically cause the disqualification of your 
+bid/proposal, or the denial of your application for a license, permit or other entitlement. However, 
+failure to answer questions completely, in good faith, or providing materially false answers may 
+subject a bidder/proposer to disqualification from the procurement. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This material is intended for use by bidders/proposers, including all prime contractors and subcontractors, and by all applicants fo
+licenses, permits, and other entitlements for use issued by the County of Los Angeles and does not constitute legal advice. If you hav
+questions about the Levine Act and how it applies to you, you should call your lawyer or contact the Fair Political Practices Commission fo
+further guidance.
+
+============================================================
+PAGE 34 of 37
+============================================================
+
+APPENDIX M 
+CONTRIBUTION AND AGENT DECLARATION FORM 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix M 
+ 
+ 
+ 
+Complete each section below. State “none” if applicable. 
+ 
+A. 
+COMPANY OR APPLICANT INFORMATION 
+ 
+1) Declarant Company or Applicant Name: 
+Click or tap here to enter text. 
+ 
+a) If applicable, identify all subcontractors that have been or will be named in your bid 
+or proposal: Click or tap here to enter text. 
+ 
+b) If applicable, variations and acronyms of Declarant Company’s name used within the 
+past 12 months: Click or tap here to enter text. 
+ 
+c) Identify all entities or individuals who have the authority to make decisions for you or 
+Declarant Company about making contributions to a County Officer, regardless of 
+whether you or Declarant Company have actually made a contribution: 
+Click or tap here to enter text. 
+ 
+[IF A COMPANY, ANSWER QUESTIONS 2 - 3] 
+ 
+2) Identify only the Parent(s), Subsidiaries and Related Business Entities that Declarant 
+Company has controlled or directed, or been controlled or directed by. “Controlled or 
+directed” means shared ownership, 50% or greater ownership, or shared management 
+and control between the entities. 
+ 
+a) Parent(s): 
+Click or tap here to enter text. 
+b) Subsidiaries: 
+Click or tap here to enter text. 
+c) Related Business Entities: 
+Click or tap here to enter text. 
+3) If Declarant Company is a closed corporation (non-public, with under 35 shareholders), 
+identify the majority shareholder. 
+ 
+Click or tap here to enter text. 
+ 
+4) Identify all entities (proprietorships, firms, partnerships, joint ventures, syndicates, 
+business trusts, companies, corporations, limited liability companies, associations, 
+committees, and any other organization or group of persons acting in concert) whose 
+contributions you or Declarant Company have the authority to direct or control. 
+ 
+Click or tap here to enter text.
+
+============================================================
+PAGE 35 of 37
+============================================================
+
+APPENDIX M 
+CONTRIBUTION AND AGENT DECLARATION FORM 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix M 
+ 
+ 
+ 
+5) Identify any individuals such as employees, agents, attorneys, law firms, lobbyists, and 
+lobbying firms who are or who will act on behalf of you or Declarant Company and who 
+will receive compensation to communicate with a County Officer regarding the award 
+or approval of this contract or project, license, permit, or other entitlement for use. 
+ 
+(Do not list individuals and/or firms who, as part of their profession, either (1) submit to the 
+County drawings or submissions of an architectural, engineering, or similar nature, or (2) 
+provide purely technical data or analysis, and who will not have any other type of 
+communication with a County agency, employee, or officer.) 
+ 
+Click or tap here to enter text. 
+ 
+6) If you or Declarant Company are a 501(c)(3) non-profit organization, identify the 
+compensated officers of your organization and the compensated members of your 
+board. 
+ 
+Click or tap here to enter text. 
+ 
+ 
+B. 
+CONTRIBUTIONS 
+1) Have you or the Declarant Company solicited or directed your employee(s) or agent(s) 
+to make contributions, whether through fundraising events, communications, or any 
+other means, to a County Officer in the past 12 months? If so, provide details of each 
+occurrence, including the date. 
+ 
+Date (contribution solicited, 
+or directed) 
+Recipient Name (elected official) 
+Amount 
+Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here to enter text. 
+Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here to enter text. 
+Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here to enter text. 
+*Please attach an additional page, if necessary. 
+ 
+2) 
+Disclose all contributions made by you or any of the entities and individuals identified in 
+Section A to a County officer in the past 12 months. 
+ 
+Date (contribution 
+made) 
+Name (of the contributor) 
+Recipient Name (elected 
+official) 
+Amount 
+Click or tap here to enter Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here 
+text. 
+to enter text. 
+Click or tap here to enter Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here 
+text. 
+to enter text. 
+Click or tap here to enter Click or tap here to enter text. Click or tap here to enter text. 
+Click or tap here 
+text. 
+to enter text. 
+*Please attach an additional page, if necessary.
+
+============================================================
+PAGE 36 of 37
+============================================================
+
+APPENDIX M 
+CONTRIBUTION AND AGENT DECLARATION FORM 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix M 
+ 
+ 
+ 
+C. 
+DECLARATION 
+ 
+By signing this Contribution and Agent Declaration form, you (Declarant), or you and the Declarant 
+Company, if applicable, attest that you have read the entirety of the Contribution Declaration and 
+the statements made herein are true and correct to the best of your knowledge and belief. (Only 
+complete the one section that applies.) 
+ 
+There are Click or tap here to enter text. additional pages attached to this Contribution Declaration 
+Form. 
+ 
+COMPANY BIDDERS OR APPLICANTS 
+ 
+I, Click or tap here to enter text. (Authorized Representative), on behalf of Click or tap here to enter 
+text.(Declarant Company), at which I am employed as Click or tap here to enter text. (Title), attest 
+that after having made or caused to be made a reasonably diligent investigation regarding the 
+Declarant Company, the foregoing responses, and the explanation on the attached page(s), if any, 
+are correct to the best of my knowledge and belief. Further, I understand that failure to answer the 
+questions in good faith or providing materially false answers may subject Declarant Company to 
+consequences, including disqualification of its bid/proposal or delays in the processing of the 
+requested contract, license, permit, or other entitlement. 
+ 
+IMPORTANT NOTICE REGARDING FUTURE AGENTS AND FUTURE CONTRIBUTIONS: 
+ 
+By signing this Contribution and Agent Declaration form, you also agree that, if Declarant Company 
+hires an agent, such as, but not limited to, an attorney or lobbyist during the course of these 
+proceedings and will compensate them for communicating with the County about this contract, 
+project, permit, license, or other entitlement for use, you agree to inform the County of the identity 
+of the agent or lobbyist and the date of their hire. You also agree to disclose to the County any 
+future contributions made to members of the County Board of Supervisors, another elected County 
+officer (the Sheriff, Assessor, and the District Attorney), or any other County officer or employee by 
+the Declarant Company, or, if applicable, any of the Declarant Company's proposed 
+subcontractors, agents, lobbyists, and employees who have communicated or will communicate 
+with the County about this contract, license, permit, or other entitlement after the date of signing 
+this disclosure form, and within 12 months following the approval, renewal, or extension of the 
+requested contract, license, permit, or entitlement for use. 
+ 
+ 
+ 
+Click or tap here to enter text. 
+Signature 
+Date
+
+============================================================
+PAGE 37 of 37
+============================================================
+
+APPENDIX M 
+CONTRIBUTION AND AGENT DECLARATION FORM 
+Amendment Number Four to Contract Number #20-001 
+for Voter Registration System License and Support Services 
+Appendix M 
+ 
+ 
+ 
+ 
+INDIVIDUAL BIDDERS OR APPLICANTS 
+ 
+I, Click or tap here to enter text., declare that the foregoing responses and the explanation on the 
+attached sheet(s), if any, are correct to the best of my knowledge and belief. Further, I understand 
+that failure to answer the questions in good faith or providing materially false answers may subject 
+me to consequences, including disqualification of my bid/proposal or delays in the processing of 
+the requested license, permit, or other entitlement. 
+IMPORTANT NOTICE REGARDING FUTURE AGENTS AND FUTURE CONTRIBUTIONS: 
+ 
+If I hire an agent or lobbyist during the course of these proceedings and will compensate them for 
+communicating with the County about this contract, project, permit, license, or other entitlement for 
+use, I agree to inform the County of the identity of the agent or lobbyist and the date of their hire. I 
+also agree to disclose to the County any future contributions made to members of the County Board 
+of Supervisors, another elected County official (the Sheriff, Assessor, and the District Attorney), or 
+any other County officer or employee by me, or an agent such as, but not limited to, a lobbyist or 
+attorney representing me, that are made after the date of signing this disclosure form, and within 
+12 months following the approval, renewal, or extension of the requested contract, license, permit, 
+or entitlement for use. 
+ 
+ 
+ 
+Click or tap here to enter text. 
+Signature 
+Date

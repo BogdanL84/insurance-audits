@@ -1,0 +1,141 @@
+{
+  "source_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+  "analysis_date": "2026-04-08",
+  "policy_type": "Follow Form Excess Professional Liability",
+  "is_package": false,
+  "coverage_parts": [
+    "Excess Professional Liability (Follow Form)"
+  ],
+  "is_primary": false,
+  "named_insured": "Runbeck Election Services, LLC",
+  "carrier": "Convex Insurance UK Limited",
+  "policy_number": "XPL000040-0425",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "policy_limit": 5000000,
+    "attachment_point": 5000000,
+    "total_program_limit_if_underlying_intact": 10000000
+  },
+  "retroactive_date": "2017-03-27",
+  "underlying_policies": [
+    {
+      "insurer": "Gemini Insurance Company",
+      "policy_number_per_declarations_item5": "VIPL056495",
+      "policy_number_per_schedule_of_underlying": "VIPL055885",
+      "effective_date": "2025-04-01",
+      "expiry_date": "2026-04-01",
+      "limit": 5000000,
+      "attachment_point": 0,
+      "retroactive_date": "2017-03-27",
+      "discrepancy_flag": "CRITICAL DOCUMENTATION ISSUE: Policy number on Declarations Page Item 5 (VIPL056495) does not match the Schedule of Underlying Insurance XPL-301 (VIPL055885). These are different policy numbers. Must be verified with RSG Specialty and Convex immediately — if they reference different policies, there is a material gap in the excess tower."
+    }
+  ],
+  "endorsements": [
+    {
+      "form_number": "XPL-300 (07/22)",
+      "name": "Follow Form Excess Professional Liability Coverage Part",
+      "page": 10,
+      "notes": "Core coverage form. Follow-form to Gemini primary. Conditional follow-form — follows MORE RESTRICTIVE terms of any underlying policy. Defense costs follow the Followed Policy. Does not cover sublimited coverages from underlying. Uncollectability risk retained by insured."
+    },
+    {
+      "form_number": "XPL-301 (01/23)",
+      "name": "Schedule of Underlying Insurance",
+      "page": 13,
+      "notes": "Lists Gemini Insurance Company policy VIPL055885 as the sole underlying policy at $5M xs $0 with retroactive date 03/27/2017. NOTE: Policy number here (VIPL055885) conflicts with Declarations Item 5 (VIPL056495)."
+    },
+    {
+      "form_number": "XPL-502 (01/23)",
+      "name": "Retroactive Date Endorsement",
+      "page": 18,
+      "notes": "Retroactive date: 03/27/2017. No coverage for acts or omissions prior to this date. Must verify this matches or is no later than the Gemini primary retroactive date to avoid a coverage corridor."
+    },
+    {
+      "form_number": "CUS-002 (07/22)",
+      "name": "Sanction Limitation and Exclusion Clause",
+      "page": 14,
+      "notes": "Standard OFAC/UN/EU/UK sanctions exclusion. No coverage for claims that would expose Convex to sanctions liability."
+    },
+    {
+      "form_number": "CUS-003 (01/25)",
+      "name": "Service of Suit",
+      "page": 15,
+      "notes": "Convex submits to US jurisdiction. Service of process via Troutman Pepper Locke LLP, New York (Zachary Lerner)."
+    },
+    {
+      "form_number": "XPL-002 (04/24)",
+      "name": "Notice of Claims",
+      "page": 17,
+      "notes": "Claims reporting address: Reserv Claims Analysis LLC, 99 Wall Street #5202, New York, NY 10005. Email: convex.claims@reserv.com. Phone: +1 646 956 5222."
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Policy Number Discrepancy — Declarations vs. Schedule of Underlying",
+      "form_number": "XPL-001 / XPL-301",
+      "page": 6,
+      "impact": "Declarations Item 5 identifies the Followed Policy as VIPL056495 (Gemini). The Schedule of Underlying Insurance (XPL-301) lists VIPL055885 (also Gemini). These are different policy numbers. If they reference different policies, the excess tower is not properly constructed and there may be no valid underlying policy for the follow-form to attach to. This is a material documentation defect requiring immediate verification with RSG Specialty and Convex."
+    },
+    {
+      "name": "No Coverage for Sublimits in Underlying Policies",
+      "form_number": "XPL-300 (07/22)",
+      "page": 11,
+      "impact": "Explicit exclusion: 'If any Underlying Policy grants coverage subject to a sublimit of liability, this policy shall not afford such coverage.' Any sublimited coverages in the Gemini primary (e.g., regulatory defense sublimits, crisis management, specific coverage extensions) do NOT extend to this excess layer. The excess only attaches to the full $5M primary limit on main covered claims."
+    },
+    {
+      "name": "Uncollectability Risk Retained by Insured",
+      "form_number": "XPL-300 (07/22)",
+      "page": 10,
+      "impact": "Explicit language: 'The risk of uncollectability with respect to any Underlying Policy or Underlying Insurers for any reason is expressly retained by the Insured and is not covered under this policy.' If Gemini becomes insolvent or disputes coverage, Runbeck must fund the entire $5M attachment point from its own pocket before Convex pays a dollar. No drop-down coverage."
+    },
+    {
+      "name": "Conditional Follow-Form — More Restrictive Terms Govern",
+      "form_number": "XPL-300 (07/22)",
+      "page": 10,
+      "impact": "Exact language: 'If any Underlying Policy includes any more restrictive coverage, terms, definitions, exclusions, conditions, or limitations, then this policy will follow the more restrictive provisions of any Underlying Policy.' The excess follows the narrowest, not the broadest, underlying terms. This is the conditional follow-form trap — this policy is only as good as the weakest link in the underlying tower."
+    },
+    {
+      "name": "Post-Inception Broadening Endorsements Not Followed",
+      "form_number": "XPL-300 (07/22)",
+      "page": 11,
+      "impact": "If the Gemini primary is broadened after 04/01/2025 (new coverage endorsements, increased sublimits, additional insureds with additional premium), Convex will NOT automatically follow those changes. Written agreement from Convex required. Mid-term primary enhancements create a coverage gap at the excess layer unless Convex is notified and agrees."
+    },
+    {
+      "name": "Retroactive Date Exclusion",
+      "form_number": "XPL-502 (01/23)",
+      "page": 18,
+      "impact": "No coverage for acts, errors, or omissions occurring before 03/27/2017. This is a claims-made policy — the retroactive date is the hard floor for coverage. Must verify Gemini primary retroactive date is identical; if primary has an earlier retro date, there is a coverage corridor where primary responds but excess does not."
+    },
+    {
+      "name": "Sanction Limitation and Exclusion",
+      "form_number": "CUS-002 (07/22)",
+      "page": 14,
+      "impact": "No coverage for any claim that would expose Convex to UN, EU, UK, or US sanctions liability. Standard exclusion — minimal practical impact for a US election services company unless international operations are added."
+    },
+    {
+      "name": "Surplus Lines — No Arizona Guaranty Fund Protection",
+      "form_number": "XPL-001 (01/24)",
+      "page": 6,
+      "impact": "Convex Insurance UK Limited is a non-admitted E&S carrier in Arizona. Explicit statutory notice: if Convex becomes insolvent, Runbeck is NOT eligible for Arizona Insurance Guaranty Fund protection. Informational note — E&S placement is standard for excess Tech E&O at this specialty level and does not constitute a coverage gap in itself. Both the primary (Gemini) and excess (Convex) are E&S placements — note carrier concentration on this layer."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "audit_notes": [
+    "CLAIMS-MADE POLICY: This is a claims-made excess policy. Extended Reporting Period (ERP/tail) terms are not addressed in this policy — they would be in the Gemini primary. Confirm ERP availability and cost in the primary.",
+    "DEFENSE COSTS: 'Defense costs and expenses shall operate in an identical manner to the Followed Policy.' Whether defense costs are inside or outside the $5M limit depends entirely on the Gemini primary policy terms — must audit Gemini to determine.",
+    "FOLLOW-FORM DEPENDENCY: This policy is hollow without understanding the Gemini primary (VIPL055885 or VIPL056495 — see discrepancy note). Every coverage determination requires cross-referencing the primary. Do not assess this excess in isolation.",
+    "TOTAL PROFESSIONAL LIABILITY TOWER: $10M total ($5M Gemini primary xs $0 + $5M Convex excess xs $5M). For an election technology company serving 90M+ voters with government contracts across 31 states, assess whether $10M is adequate given catastrophic election failure scenarios.",
+    "PRODUCER: RSG Specialty, LLC (Phoenix, AZ) — specialty E&S wholesale broker. Standard channel for this type of excess Tech E&O placement.",
+    "CHECKLIST FIELDS N/A: Additional insured, waiver of subrogation, primary & noncontributory, contractual liability, and per-project aggregate fields are not applicable to a professional liability excess policy. These are GL-specific provisions. All show false due to policy type, not as gaps."
+  ],
+  "_source_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf"
+}

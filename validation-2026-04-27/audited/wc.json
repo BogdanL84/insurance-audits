@@ -1,0 +1,229 @@
+{
+  "filename": "redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED (1).pdf",
+  "page_count": 206,
+  "annot_count": 8,
+  "bookmark_count": 7,
+  "annotations": [
+    {
+      "page": 109,
+      "type_code": 8,
+      "type_name": "Highlight",
+      "title": "",
+      "subject": "",
+      "content": "",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        51.877750396728516,
+        153.14996337890625,
+        469.2891540527344,
+        239.73004150390625
+      ],
+      "highlighted_text": "EMPLOYERS EMPLOYERS LIABILITY LIABILITY Coverage coverage"
+    },
+    {
+      "page": 109,
+      "type_code": 0,
+      "type_name": "Text",
+      "title": "WC \u2014 Stop Gap for Monopolistic States",
+      "subject": "",
+      "content": "[Good] WC \u2014 Stop Gap for Monopolistic States\n\nWhat this means:\nThere are four states (North Dakota, Ohio, Washington, Wyoming) that require workers' comp from a state fund \u2014 your private policy can't write WC there. But your private policy DOES include 'stop gap' employers' liability coverage in those four states, so if an employee gets injured there and sues,\n\nRecommendation:\nMaintain. Confirm any expansion into those states is reported.",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill_color": null,
+      "rect": [
+        277.1199645996094,
+        153.8399658203125,
+        293.1199645996094,
+        169.8399658203125
+      ],
+      "highlighted_text": ""
+    },
+    {
+      "page": 114,
+      "type_code": 8,
+      "type_name": "Highlight",
+      "title": "",
+      "subject": "",
+      "content": "",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        1.0,
+        0.6000000238418579,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        105.8914794921875,
+        77.15179443359375,
+        560.0092163085938,
+        264.5965576171875
+      ],
+      "highlighted_text": "WAIVER WAIVER applies APPLIES"
+    },
+    {
+      "page": 114,
+      "type_code": 0,
+      "type_name": "Text",
+      "title": "Workers' Compensation \u2014 Waiver of Subrogation Gap (GA, NC, I",
+      "subject": "",
+      "content": "[Bad] Workers' Compensation \u2014 Waiver of Subrogation Gap (GA, NC, I\nRisk Score: 9/25\n\nWhat this means:\nYour workers' comp policy has a blanket waiver of subrogation that applies in 9 states plus California separately \u2014 but not in Georgia, North Carolina, or Illinois, where you also have employees. If you have county contracts in any of those three states that require a waiver of subrogation, your pol\n\nRecommendation:\nEndorse WC 00 03 13 to add GA, NC, IL to the list of waiver states. This is a no-cost or low-cost endorsement (additional premium charged only if specific contracts trigger). Audit current COIs to con",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        157.60000610351562,
+        77.90179443359375,
+        173.60000610351562,
+        93.90179443359375
+      ],
+      "highlighted_text": ""
+    },
+    {
+      "page": 133,
+      "type_code": 8,
+      "type_name": "Highlight",
+      "title": "",
+      "subject": "",
+      "content": "",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        99.01070404052734,
+        542.2833862304688,
+        376.1282958984375,
+        597.9595947265625
+      ],
+      "highlighted_text": "effective Effective below"
+    },
+    {
+      "page": 133,
+      "type_code": 0,
+      "type_name": "Text",
+      "title": "Workers' Comp \u2014 Experience Modification Rate",
+      "subject": "",
+      "content": "[Good] Workers' Comp \u2014 Experience Modification Rate\n\nWhat this means:\nYour workers' comp experience modifier is 0.69 \u2014 meaning you have 31% fewer losses than the industry average for your work. That's excellent. It saves you real money and signals to county clients that you run a safe operation.\n\nRecommendation:\nMaintain safety culture. Use the favorable EMR as a competitive differentiator in RFP responses (many counties require EMR \u2264 1.0).",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill_color": null,
+      "rect": [
+        377.86688232421875,
+        542.8829956054688,
+        393.86688232421875,
+        558.8829956054688
+      ],
+      "highlighted_text": ""
+    },
+    {
+      "page": 148,
+      "type_code": 8,
+      "type_name": "Highlight",
+      "title": "",
+      "subject": "",
+      "content": "",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        1.0,
+        0.6000000238418579,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        133.47862243652344,
+        79.58062744140625,
+        293.5632019042969,
+        116.753662109375
+      ],
+      "highlighted_text": "EMPLOYERS Employers LIABILITY Liability COVERAGE"
+    },
+    {
+      "page": 148,
+      "type_code": 0,
+      "type_name": "Text",
+      "title": "California Employers' Liability \u2014 Labor Code \u00a72810.3 Exclusi",
+      "subject": "",
+      "content": "[Bad] California Employers' Liability \u2014 Labor Code \u00a72810.3 Exclusi\nRisk Score: 8/25\n\nWhat this means:\nCalifornia has a law that holds you responsible if your staffing vendor fails to carry workers' comp for their workers on your jobs. Your policy specifically excludes this exposure. If you use temp agencies in California \u2014 and you almost certainly do during election cycles \u2014 and that agency's covera\n\nRecommendation:\nAudit California labor contractor relationships. Require COIs from staffing vendors and verify currency monthly during active engagements. Add contractual indemnification language naming Runbeck as ad",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke_color": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill_color": null,
+      "rect": [
+        192.1428680419922,
+        80.14312744140625,
+        208.1428680419922,
+        96.14312744140625
+      ],
+      "highlighted_text": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Needs Attention (Bad)",
+      "page": 114
+    },
+    {
+      "level": 3,
+      "title": "Workers' Compensation \u2014 Waiver of Subrogation Gap (GA, NC, I",
+      "page": 114
+    },
+    {
+      "level": 3,
+      "title": "California Employers' Liability \u2014 Labor Code \u00a72810.3 Exclusi",
+      "page": 148
+    },
+    {
+      "level": 2,
+      "title": "Compliant (Good)",
+      "page": 133
+    },
+    {
+      "level": 3,
+      "title": "Workers' Comp \u2014 Experience Modification Rate",
+      "page": 133
+    },
+    {
+      "level": 3,
+      "title": "WC \u2014 Stop Gap for Monopolistic States",
+      "page": 109
+    }
+  ]
+}

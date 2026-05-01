@@ -1,0 +1,612 @@
+{
+  "source_file": "Redacted2024-26 Management Liability Policy.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Management Liability",
+  "is_package": true,
+  "coverage_parts": [
+    "D&O",
+    "EPLI",
+    "Fiduciary",
+    "Crime"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services, LLC",
+  "named_insured_entity_type": "LLC",
+  "additional_named_insureds": [],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": null
+  },
+  "carrier": "Twin City Fire Insurance Co. (a Hartford company)",
+  "policy_number": "59 KB 0575120-24",
+  "effective_date": "2024-08-18",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "do_aggregate": 2000000,
+    "do_corporate_reimbursement_retention": 10000,
+    "do_entity_liability_aggregate": 2000000,
+    "do_entity_liability_retention": 10000,
+    "do_investigation_costs_sublimit": 500000,
+    "do_additional_limit_for_managers": 1000000,
+    "do_legal_services_wrongful_act_sublimit": 2000000,
+    "do_data_privacy_event_expense_sublimit": 50000,
+    "additional_limit_for_managers_insuring_agreement_A": 1000000,
+    "epli_aggregate": 1000000,
+    "epli_retention": 10000,
+    "epli_third_party_sublimit": 1000000,
+    "epli_wage_and_hour_defense_sublimit": 100000,
+    "epli_workplace_violence_expenses_sublimit": 100000,
+    "epli_training_costs_sublimit": 1000000,
+    "fiduciary_aggregate": 1000000,
+    "fiduciary_retention": 0,
+    "fiduciary_settlement_program_sublimit": 250000,
+    "fiduciary_hipaa_sublimit": 500000,
+    "fiduciary_erisa_502c_penalty_sublimit": 50000,
+    "fiduciary_ppa_uk_pensions_aca_penalty_sublimit": 250000,
+    "crime_employee_theft": 2000000,
+    "crime_forgery_alteration_incl_credit_cards": 2000000,
+    "crime_inside_premises": 2000000,
+    "crime_outside_premises": 2000000,
+    "crime_computer_funds_transfer_fraud": 2000000,
+    "crime_money_orders_counterfeit": 50000,
+    "crime_computer_systems_restoration": 25000,
+    "crime_identity_recovery": 25000,
+    "crime_deception_fraud_social_engineering": 15000,
+    "crime_theft_clients_property_off_premises": null,
+    "crime_investigative_expense_sublimit": 25000,
+    "money_orders_counterfeit_currency_sublimit": 50000,
+    "virtual_currency_sublimit_per_occurrence": 15000,
+    "virtual_currency_retention_per_occurrence": 5000,
+    "identity_recovery_lost_wages_per_day": 250,
+    "identity_recovery_lost_wages_total_per_occurrence": 5000,
+    "identity_recovery_mental_health_counseling_per_occurrence": 1000,
+    "premium_total": 41564
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": null,
+    "page_ref": "Pg 103 (Endorsement 32 — Arizona Cancellation and Nonrenewal HR 02 H003 01). Insurer may ONLY cancel for nonpayment of premium (10 days notice by certified mail). Nonrenewal: 45 days written notice. Note: Endt #5 (PP 00 H107) at Pg 69 sets 20-day nonpayment notice but is overridden in AZ by Endt #32."
+  },
+  "endorsements": [
+    {
+      "form_number": "HR00H09401",
+      "name": "Updated Suite of Employment-Related Risk Management Resources (Hartford Help/Jackson Lewis hotline)",
+      "page": 1,
+      "notes": "Risk management services notice — EPLI value-add. Jackson Lewis hotline 866-620-0014."
+    },
+    {
+      "form_number": "PP00H00201",
+      "name": "Private Choice Premier Policy Declarations",
+      "page": 2,
+      "notes": "Master Dec page."
+    },
+    {
+      "form_number": "PP00H60100",
+      "name": "Crime Coverage Part Declarations",
+      "page": 8,
+      "notes": "Crime Dec — $2M limits across most insuring agreements; $15K Deception Fraud / Social Engineering sublimit (LOW)."
+    },
+    {
+      "form_number": "PP00H00300",
+      "name": "Common Terms and Conditions",
+      "page": 9,
+      "notes": "Master common terms governing all coverage parts."
+    },
+    {
+      "form_number": "PP00H30000",
+      "name": "Directors, Officers and Entity Liability Coverage Part",
+      "page": 21,
+      "notes": "D&O coverage form. Entity Liability included. Side A/B/C structure."
+    },
+    {
+      "form_number": "PP00H40000",
+      "name": "Employment Practices Liability Coverage Part",
+      "page": null,
+      "notes": "EPLI coverage form."
+    },
+    {
+      "form_number": "PP00H50000",
+      "name": "Fiduciary Liability Coverage Part",
+      "page": null,
+      "notes": "Fiduciary coverage form."
+    },
+    {
+      "form_number": "PP00H60000",
+      "name": "Crime Coverage Part",
+      "page": null,
+      "notes": "Crime form."
+    },
+    {
+      "form_number": "PP 00 M138 00 0421",
+      "name": "Books and Records Request Endorsement",
+      "page": 62,
+      "notes": "Endt #1. Adds D&O Insuring Agreement (D) Derivative Demands coverage for Books and Records Costs (e.g., Delaware Section 220 demand). $500,000 sublimit, part of (not in addition to) Investigation Costs sublimit."
+    },
+    {
+      "form_number": "HG 00 H157 00 0722",
+      "name": "Disclosure/Cap on Losses — Terrorism Risk Insurance Act (TRIA)",
+      "page": 64,
+      "notes": "Endt #2. Standard TRIA disclosure with $100B annual cap on insurer liability for certified acts of terrorism."
+    },
+    {
+      "form_number": "PP 00 M190 00 0222",
+      "name": "Inquiry Costs Extension (Common Terms and Conditions)",
+      "page": 66,
+      "notes": "Endt #3. Applies to D&O, EPL, and Fiduciary. Pays Inquiry Costs (written request to interview/depose Insured Person or produce documents). $50,000 sublimit aggregate, part of (not in addition to) Combined Aggregate Limit. Insured must elect to give notice."
+    },
+    {
+      "form_number": "PP 00 H052 00 0616",
+      "name": "Amend Application Section — Delete Human Resources Reference",
+      "page": 68,
+      "notes": "Endt #4. Limits imputation of knowledge in the Application to CEO/CFO of Named Entity or signer of Application — narrows imputation."
+    },
+    {
+      "form_number": "PP 00 H107 00 0417",
+      "name": "Amend Cancellation Provision — 20 Days Notice / Unearned Premium Pro Rata",
+      "page": 69,
+      "notes": "Endt #5. Insurer may cancel only for non-payment with 20 days notice. No other cancellation by Insurer permitted. Unearned premium pro rata. (Overridden by AZ Endt #32 — 10 days.)"
+    },
+    {
+      "form_number": "PP 00 H112 00 0517",
+      "name": "Amend Defense and Settlement Endorsement — Within Retention",
+      "page": 70,
+      "notes": "Endt #6. Insureds may settle a Claim entirely within the retention without insurer consent. Insurer not liable for amounts within retention."
+    },
+    {
+      "form_number": "PP 00 M119 00 0120",
+      "name": "Amend Definition of Damages — Include Personal Asset Protection Costs",
+      "page": 71,
+      "notes": "Endt #7. Damages now includes Personal Asset Protection Costs incurred by President/CEO/CFO of Named Entity to oppose enforcement-authority efforts to seize personal assets/real estate."
+    },
+    {
+      "form_number": "PP 00 H358 00 0417",
+      "name": "Amend Definition of Entity Claim — Include Coverage for Administrative or Regulatory Proceedings",
+      "page": 72,
+      "notes": "Endt #8. Entity Claim now includes formal administrative/regulatory proceeding against Insured Entity, but ONLY while such proceeding is also pending against an Insured Person."
+    },
+    {
+      "form_number": "PP 00 H125 00 0718",
+      "name": "Amend Definition of Manager — Include Shadow Director",
+      "page": 73,
+      "notes": "Endt #9. Manager now includes de facto or shadow directors acting on behalf of Insured Entity with written indemnification agreement. Important for PE-backed company where PE sponsor representatives may be deemed shadow directors."
+    },
+    {
+      "form_number": "PP 00 H022 00 0616",
+      "name": "Amend Definition of Notice Manager - Listed",
+      "page": 74,
+      "notes": "Endt #10. Notice Manager limited to CEO and CFO of Named Entity. Narrows who can trigger notice obligations."
+    },
+    {
+      "form_number": "PP 00 H113 00 0517",
+      "name": "Amend Definition of Subsidiary — Add Controlled 501(c)(3) Organizations",
+      "page": 76,
+      "notes": "Endt #11. Subsidiary now includes foundations, charitable trusts, PACs, or 501(c)(3) organizations controlled by Named Entity or Subsidiary."
+    },
+    {
+      "form_number": "PP 00 H435 00 0317",
+      "name": "Amend Notice of Claim — Section VI(B)(2) (EPLI)",
+      "page": 77,
+      "notes": "Endt #12. EPL notice of claim period extended to 365 days after renewal date if policy is renewed with insurer."
+    },
+    {
+      "form_number": "PP 00 H433 00 0417",
+      "name": "Amended Definition of Retaliation (EPLI)",
+      "page": 78,
+      "notes": "Endt #13. Broadens Retaliation to expressly include workers' comp rights, FMLA, ERISA, ADA, refusing to violate law, cooperating with investigations, whistleblower claims (False Claims Act, SOX). Important for whistleblower scenarios."
+    },
+    {
+      "form_number": "PP 00 H363 00 0718",
+      "name": "Amended Personal Profit Exclusion — Sections 11, 12, and 15 (D&O)",
+      "page": 79,
+      "notes": "Endt #14. Personal profit exclusion now triggered only by judgment or non-appealable final adjudication. Carve-back for Securities Act §§11, 12, 15 violations. Favorable to insureds."
+    },
+    {
+      "form_number": "PP 00 H432 00 0417",
+      "name": "Amended Retention Waiver (EPLI)",
+      "page": 80,
+      "notes": "Endt #15. Retention does not apply to Defense Costs in covered Claims. Insurer reimburses 50% of Defense Costs paid within retention if final adjudication establishes none of Insureds liable other than Defense Costs."
+    },
+    {
+      "form_number": "PP 00 H377 00 0120",
+      "name": "Anti Trust/Unfair Trade Exclusion — Sublimit (D&O)",
+      "page": 81,
+      "notes": "Endt #16. Antitrust/Sherman/Clayton/FTC violations subject to sublimit of lesser of remaining limit or $1,000,000. Carve-back from total exclusion to sublimited coverage."
+    },
+    {
+      "form_number": "PP 00 H521 00 0522",
+      "name": "Amend Definition of Damages — 502(c) (Fiduciary)",
+      "page": 82,
+      "notes": "Endt #17. ERISA §502(c) penalties (failure to provide required ERISA plan documents) covered up to $250,000."
+    },
+    {
+      "form_number": "PP 00 M073 00 0719",
+      "name": "COBRA Claim Sublimit Endorsement (Fiduciary)",
+      "page": 83,
+      "notes": "Endt #18. Adds COBRA Claim coverage with $1,000,000 sublimit, $0 retention, prior/pending date 8/18/2023. Sublimit part of, not in addition to, Fiduciary Limit."
+    },
+    {
+      "form_number": "PP 00 H350 00 0616",
+      "name": "EXCLUSION FOR MANUFACTURING AND PROFESSIONAL SERVICE ENDORSEMENT (D&O)",
+      "page": 85,
+      "notes": "Endt #19. CRITICAL EXCLUSION — bars D&O coverage for any Claim based upon, arising from, or in any way related to: (1) malfunction of any product or product failure due to deficiency/inadequacy/defect/dangerous condition in product or its design/manufacture; or (2) rendering or failure to render any services for fees (including services for customers/clients). Carve-backs: (i) civil proceedings brought by security holders without solicitation/assistance/active participation of Insured Entity or Manager; or (ii) Derivative Action or Derivative Demand. Section V Insuring Agreement (C) sub-paragraph (C) deleted."
+    },
+    {
+      "form_number": "PP 00 H111 00 0517",
+      "name": "Extended Reporting Period — 90 Day Election Period",
+      "page": 86,
+      "notes": "Endt #20. ERP election period extended to 90 days after cancellation/non-renewal. Favorable."
+    },
+    {
+      "form_number": "PP 00 H609 00 0616",
+      "name": "Forgery or Alteration — Personal Accounts (Crime)",
+      "page": 87,
+      "notes": "Endt #21. Crime IA #2 extended to forgery/alteration of written instruments from personal accounts of each officer of Insured Entity. Sublimit lesser of 10% of IA-2 limit or $100,000. Retention 10% of IA-2 retention. Sublimit part of (not in addition to) IA-2 limit."
+    },
+    {
+      "form_number": "PP 00 H430 00 0616",
+      "name": "Immigration Claim Coverage Endorsement With Defense Cost Sublimit (EPLI)",
+      "page": 88,
+      "notes": "Endorsement #22. Adds Immigration Claim Defense coverage under EPLI. Sub-limit $100,000 (defense costs only — part of, not in addition to, EPLI aggregate). Retention $10,000. Prior/Pending 8/18/2023. Covers civil/criminal investigations re Immigration Control Act of 1986. Excludes labor/grievance arbitrations."
+    },
+    {
+      "form_number": "PP 00 H357 00 0417",
+      "name": "Independent Contractor Extension With Indemnification Requirement (D&O)",
+      "page": 90,
+      "notes": "Endorsement #23. Extends D&O Manager definition to natural-person Independent Contractors only if Insured Entity agrees to indemnify in same manner as Managers. Conditional on indemnification agreement."
+    },
+    {
+      "form_number": "PP 00 M039 00 0318",
+      "name": "Liberalization Endorsement (Including Exceptions)",
+      "page": 91,
+      "notes": "Endorsement #24. Standard liberalization clause — broader new-business AZ form auto-applies after Approval Date. Does not apply to terms modified by other endorsements (incl. state amendatory)."
+    },
+    {
+      "form_number": "PP 00 H025 00 0616",
+      "name": "Multiple Extended Reporting Period Options",
+      "page": 93,
+      "notes": "Endorsement #25. Replaces ITEM 7 ERP options. Three tiers: (1) 12 mo @ 150% premium; (2) 24 mo @ 175% premium; (3) 36 mo @ 200% premium. ERP for Liability Coverage Parts only — NOT Non-Liability."
+    },
+    {
+      "form_number": "PP 00 H503 01 0517",
+      "name": "Order of Payments (Fiduciary Liability)",
+      "page": 94,
+      "notes": "Endorsement #26. Order of Payments for Fiduciary Coverage Part. Insurer pays IA (A) Insured Person Loss FIRST. Side A first protection."
+    },
+    {
+      "form_number": "PP 00 H362 00 0718",
+      "name": "Personal Crisis Management & Reputation Expense Coverage (D&O)",
+      "page": 95,
+      "notes": "Endorsement #27. Adds Personal Crises Management Expense Coverage to D&O. Pays PR fees/expenses (Insurer prior consent) for Personal Regulatory Event. $100,000 aggregate sub-limit — part of, NOT in addition to, D&O Aggregate. Must be reported within 60 days."
+    },
+    {
+      "form_number": "PP 00 H033 00 0616",
+      "name": "Prior Acts Exclusion (Liability Coverage Parts)",
+      "page": 96,
+      "notes": "Endorsement #28. MATERIAL EXCLUSION. Excludes Claims based upon/arising from/related to any Wrongful Act prior to 8/18/2023, or Interrelated Wrongful Acts thereto. Applies to D&O, EPLI AND Fiduciary. Effectively a 1-year prior acts cutoff (policy effective 8/18/2024). Significant for PE-backed company."
+    },
+    {
+      "form_number": "PP 00 H109 00 0517",
+      "name": "Single Retention — Claims Covered Under Multiple Coverage Parts",
+      "page": 97,
+      "notes": "Endorsement #29. Replaces Common Terms VI(D). When a Claim triggers multiple Coverage Parts, only the HIGHEST applicable Retention applies — no stacking. Insured-favorable."
+    },
+    {
+      "form_number": "PP 00 H672 00 0217",
+      "name": "Telephone and Toll Fraud Coverage Endorsement (Crime)",
+      "page": 98,
+      "notes": "Endorsement #30. Adds Telephone System Access Fraud IA to Crime. Limit: lesser of $1,000,000 or Crime IA #1 limit. Retention: lesser of $10,000 or Crime IA #1 retention. Loss capped to 30 consecutive days from discovery. Excludes losses from calling card / phone access card / phone credit card."
+    },
+    {
+      "form_number": "PP 00 H426 00 0616",
+      "name": "Workplace Violence Coverage Endorsement (EPLI)",
+      "page": 100,
+      "notes": "Endorsement #31. Adds Workplace Violence IA to EPLI ($100K sublimit per Dec). Pays BI Expenses up to 90 days, Employee salary/wages up to 90 days, counseling, security guard up to 30 days, security consultant, PR firm. NO Retention. EXCLUDES war/insurrection/riot AND extortion-driven force AND legal costs/attorneys' fees/settlements/judgments — EXPENSE-only coverage, NOT third-party liability."
+    },
+    {
+      "form_number": "HR 02 H003 01 0711",
+      "name": "Arizona Cancellation and Nonrenewal Endorsement",
+      "page": 103,
+      "notes": "Endorsement #32. AZ-mandatory amendatory. Insurer may ONLY cancel for nonpayment — 10 days written notice by certified mail. Nonrenewal: 45 days written notice by certified mail. Notice must include refund of unearned premium (except financed)."
+    },
+    {
+      "form_number": "PP 00 H050 00 0616",
+      "name": "Co-Defendant(s) Extension Endorsement — Private Equity or Venture Capital Funds",
+      "page": 104,
+      "notes": "Endorsement #33. PE-SPECIFIC — IMPORTANT for Run-Test as PE-backed. Applies to D&O, EPLI, Fiduciary. Named Co-Defendants: Lincoln Shields, LLC and Black Mountain Investment Company, LLC. Defines Affiliated Entities (pooled investment vehicles, GP/managing entities, SPVs) and Co-Defendants. Coverage requires (i) actual/alleged Wrongful Act of an Insured, (ii) Claim first against Insured, (iii) Co-Defendants joined by reason of ownership/management control of Named Entity, (iv) same counsel. Coverage terminates if co-defendants dismissed/found not liable. NO coverage for Wrongful Acts of any Co-Defendant itself."
+    },
+    {
+      "form_number": "PP 00 H105 00 0616",
+      "name": "Amended Declarations — Split Prior or Pending Date (Liability Coverage Parts)",
+      "page": 106,
+      "notes": "Endorsement #34. Splits Prior or Pending Date for D&O / Entity Liability: 04/02/2024 applies ONLY to the additional/increased $1,000,000 layer in excess of the first $1,000,000. First $1M has older P&P date; upper $1M has 4/2/2024 P&P date. MATERIAL — narrower coverage on upper $1M layer for matters pending between 8/18/2023 and 4/2/2024."
+    },
+    {
+      "form_number": "HG 00 H129 00 1016",
+      "name": "U.S. Dept. of Treasury OFAC Advisory Notice to Policyholders",
+      "page": 108,
+      "notes": "Informational notice — not coverage modification."
+    },
+    {
+      "form_number": "HR 00 H093 00 0207",
+      "name": "Producer Compensation Notice",
+      "page": 109,
+      "notes": "Informational notice — Hartford producer compensation disclosures."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Manufacturing and Professional Services Exclusion (D&O)",
+      "form_number": "PP 00 H350 00 0616",
+      "page": 85,
+      "impact": "CRITICAL — bars D&O entity-liability coverage for any claim arising from product malfunction/defect or rendering/failure to render any services for fees (including services for customers/clients). For Run-Test, an election technology vendor whose CORE BUSINESS is rendering printing/mailing/processing services to counties, this exclusion could bar D&O coverage for the most likely claim scenarios — county suing for negligent service delivery, election errors, mail-handling failures. Carve-backs only for: (i) securities-holder civil proceedings brought without solicitation/assistance/active participation of Insured Entity or Manager; and (ii) Derivative Actions or Derivative Demands. Aligns with 2026-03-24 lesson learned — Hartford Private Choice Premier consistently has this exclusion. SEVERE GAP for Run-Test's operational risk profile (potential UGLY for Side C)."
+    },
+    {
+      "name": "Prior Acts Exclusion (D&O, EPLI, Fiduciary)",
+      "form_number": "PP 00 H033 00 0616",
+      "page": 96,
+      "impact": "Excludes any Claim based upon/arising from/related to any Wrongful Act prior to 8/18/2023, or Interrelated Wrongful Acts thereto. Applies to D&O, EPLI AND Fiduciary. With policy effective 8/18/2024, this is a 1-year prior-acts window — historical exposures predating 8/18/2023 are uninsured. Especially material for PE-backed company per CLAUDE.md."
+    },
+    {
+      "name": "Split Prior or Pending Date — D&O Increased Limit Layer",
+      "form_number": "PP 00 H105 00 0616",
+      "page": 106,
+      "impact": "Upper $1,000,000 D&O / Entity Liability layer (in excess of first $1M) has Prior or Pending Date of 4/2/2024. Any litigation/proceeding pending on or before 4/2/2024 not covered by upper $1M, even if covered by first $1M. Creates a coverage 'donut' for matters pending between 8/18/2023 and 4/2/2024."
+    },
+    {
+      "name": "Antitrust / Unfair Trade Exclusion (D&O) — Sublimited",
+      "form_number": "PP 00 H377 00 0120",
+      "page": 81,
+      "impact": "Antitrust/Sherman/Clayton/FTC claims sublimited to lesser of remaining limit or $1,000,000. Better than full exclusion (carve-back exists) but still capped."
+    },
+    {
+      "name": "Personal Profit Exclusion (D&O) — Final Adjudication Required",
+      "form_number": "PP 00 H363 00 0718",
+      "page": 79,
+      "impact": "Favorable — personal profit exclusion only triggered by judgment or non-appealable final adjudication. Carve-back for Securities Act §§11, 12, 15 violations."
+    },
+    {
+      "name": "D&O — Bodily Injury / Property Damage Exclusion",
+      "form_number": "PP00H30000 §IV(A)",
+      "page": 25,
+      "impact": "Excludes BI/PD/sickness/disease/emotional distress/property damage. Standard D&O exclusion. Carve-back for: (i) security holder civil proceedings; (ii) Derivative Action/Demand; (iii) corporate manslaughter/homicide criminal proceedings."
+    },
+    {
+      "name": "D&O — Pollution Exclusion",
+      "form_number": "PP00H30000 §IV(D)",
+      "page": 26,
+      "impact": "Excludes pollution-related Claims. Carve-back for Insuring Agreement A (Side A — non-indemnifiable Insured Person Loss) and security-holder civil proceedings / Derivative Actions."
+    },
+    {
+      "name": "D&O — Wage & Hour / ERISA / Equal Pay / WARN / COBRA Exclusion",
+      "form_number": "PP00H30000 §IV(E)",
+      "page": 26,
+      "impact": "D&O does not cover wage & hour, unpaid wages, WC benefits, unemployment, disability, social security, Equal Pay Act, WARN, COBRA. Wage & Hour defense costs separately sublimited under EPLI ($100K). Exposure risk for hourly election-services workforce."
+    },
+    {
+      "name": "D&O — ERISA Exclusion",
+      "form_number": "PP00H30000 §IV(F)",
+      "page": 26,
+      "impact": "ERISA-related claims excluded from D&O — covered instead under Fiduciary Liability ($1M)."
+    },
+    {
+      "name": "D&O — Insured vs. Insured Exclusion",
+      "form_number": "PP00H30000 §IV(G)",
+      "page": 26,
+      "impact": "Excludes Claims by/on behalf of Insureds or security holders. Carve-backs for security-holder derivative proceedings, Derivative Actions/Demands, Employee Insured Person Claims (without Manager assistance), wrongful-termination Manager Claims, and Whistleblower-related claims."
+    },
+    {
+      "name": "D&O — Outside Capacity / Other Entity Service Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 27,
+      "impact": "Excludes Insured Person Claims based on service as director/officer/trustee/employee of any entity other than an Insured Entity, even at Insured Entity's direction. Carve-back only for Insured Persons serving in an 'Outside Capacity' as defined."
+    },
+    {
+      "name": "D&O — Outside Entity Insured-vs-Insured Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 27,
+      "impact": "Bars Claims by/on behalf of Outside Entities or their D&Os against Insured Persons serving in Outside Capacity. Carve-backs for derivative actions and contribution/indemnification."
+    },
+    {
+      "name": "D&O — Public Offering / Securities Listing Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 27,
+      "impact": "Excludes Claims arising from any public listing/offering of Insured Entity securities or post-offering purchase/sale. Carve-backs for private placements (incl. JOBS Act crowdfunding), failure-to-IPO suits by security holders, and pre-IPO Wrongful Acts where the offering does not occur."
+    },
+    {
+      "name": "D&O — Conduct Exclusions (Personal Profit, Fraud)",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes Loss for personal financial profit/remuneration the Insured was not legally entitled to, and for criminal/deliberately fraudulent acts or willful violations of law — both require final non-appealable adjudication. Wrongful Act of one Insured not imputed to others. For Entity Coverage (C), only triggered if past/present CEO, CFO, GC or equivalent of Named Entity committed the act."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) Entity Coverage — Contract Liability Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes Entity Loss arising from contractual liability except where liability would attach absent the contract; carve-back for security-holder civil proceedings and derivative actions/demands."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) — Employment Practices Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes Entity Loss for employment-related Wrongful Acts, discrimination, sexual harassment — those flow to EPLI part instead."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) — Bodily Injury / Personal Injury Type Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes false arrest, abuse of process, malicious prosecution, defamation, invasion of privacy, trespass, nuisance, wrongful entry/eviction, assault, battery, loss of consortium under Entity Coverage."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) — IP Infringement Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes Entity Loss for copyright/patent/trademark/trade dress/service mark/trade secret/IP infringement, dilution, misappropriation. Carve-back for security-holder civil proceedings and derivative actions/demands."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) — Antitrust / FTC / Unfair Trade Practices Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Excludes Entity Loss for unfair trade practices or violation of FTC Act or similar laws."
+    },
+    {
+      "name": "D&O Insuring Agreement (C) — Inadequate Consideration Exclusion",
+      "form_number": "PP 00 H300 00 0616",
+      "page": 28,
+      "impact": "Bars indemnity for Entity-purchase-of-its-own-securities at inadequate consideration, but Defense Costs are carved back."
+    },
+    {
+      "name": "EPLI — Bodily Injury / Property Damage Exclusion",
+      "form_number": "PP 00 H400 00 0616",
+      "page": 35,
+      "impact": "Excludes BI/PD/sickness/disease/death and false imprisonment, abuse of process, malicious prosecution, trespass, nuisance, wrongful eviction. Carve-back for employment-related defamation/misrepresentation and employment-related mental anguish/false arrest/invasion of privacy when alleged with covered EPL Wrongful Act."
+    },
+    {
+      "name": "EPLI — Wage & Hour, ERISA, OSHA, NLRA, COBRA, WARN Exclusion",
+      "form_number": "PP 00 H400 00 0616",
+      "page": 35,
+      "impact": "Excludes claims for unpaid wages/overtime, WC, unemployment, disability, social security, plus violations of WARN, NLRA, OSHA, COBRA, ERISA, and Wage & Hour Violations. Carve-back: Defense Costs only for Wage & Hour, subject to a Sub-Limit per Item 5 Decs (sub-limit erodes the aggregate)."
+    },
+    {
+      "name": "EPLI — Strike / Lockout / Labor Dispute Exclusion",
+      "form_number": "PP 00 H400 00 0616",
+      "page": 35,
+      "impact": "Excludes lockout, strike, picket line, replacement-worker, and similar labor-dispute or collective-bargaining actions."
+    },
+    {
+      "name": "EPLI — Contractual Liability Exclusion",
+      "form_number": "PP 00 H400 00 0616",
+      "page": 35,
+      "impact": "Excludes liability assumed under contract; carve-back for liability that would attach absent contract. Separate sub-section also excludes breach of oral/written/implied employment contract with Defense-Cost carve-back."
+    },
+    {
+      "name": "EPLI Insuring Agreement (B) — Antitrust / Price Discrimination Exclusion",
+      "form_number": "PP 00 H400 00 0616",
+      "page": 36,
+      "impact": "Bars Third-Party Liability for antitrust/price discrimination/unfair-competition claims."
+    },
+    {
+      "name": "Immigration Claim — Defense Costs Only, $100K Sub-limit",
+      "form_number": "PP 00 H430 00 0616",
+      "page": 88,
+      "impact": "Immigration claim coverage is DEFENSE COSTS ONLY (no indemnity). $100K aggregate sub-limit is part of, NOT in addition to, EPLI Aggregate — erodes EPLI limit. $10K retention applies. Prior/Pending Date 8/18/2023."
+    },
+    {
+      "name": "Fiduciary — Pollution Exclusion",
+      "form_number": "PP 00 H500 00 0616",
+      "page": 42,
+      "impact": "Excludes pollution-related claims; carve-back where Claim alleges loss to Insured Plan or participant accounts caused by pollution event."
+    },
+    {
+      "name": "Fiduciary — Wage & Hour / Equal Pay / WARN Exclusion",
+      "form_number": "PP 00 H500 00 0616",
+      "page": 42,
+      "impact": "Excludes claims for unpaid wages/overtime, WC, unemployment, disability, Equal Pay Act, WARN Act, and Wage & Hour Violations under fiduciary part."
+    },
+    {
+      "name": "Fiduciary — Failure to Pay Benefits Exclusion",
+      "form_number": "PP 00 H500 00 0616",
+      "page": 43,
+      "impact": "Excludes claims for actual/alleged failure to pay benefits owed under an Insured Plan; carve-backs for personal-obligation Insured Person liability and for plan-investment-loss claims regardless of how characterized."
+    },
+    {
+      "name": "Fiduciary — Failure to Fund / Reversion Exclusion",
+      "form_number": "PP 00 H500 00 0616",
+      "page": 43,
+      "impact": "Excludes failure to fund/collect contributions and any reversion of plan contributions/assets to Insured Entity."
+    },
+    {
+      "name": "Fiduciary — Personal Profit / Fraud Conduct Exclusions",
+      "form_number": "PP 00 H500 00 0616",
+      "page": 43,
+      "impact": "Personal profit and criminal/fraudulent act exclusions, both requiring final non-appealable adjudication. Wrongful Act not imputed across Insureds."
+    },
+    {
+      "name": "Crime — Limit & Retention Single-Highest-Retention Rule / Virtual Currency Sublimit",
+      "form_number": "PP 00 H600 00 0616",
+      "page": 47,
+      "impact": "If multiple Retentions could apply to one Occurrence, only the HIGHEST applies. Virtual Currency sublimit $15,000 / Retention $5,000 per Occurrence — significantly limits crypto-related Crime recovery."
+    },
+    {
+      "name": "Crime — Acts Committed By Insured's Partners or Limited Liability Members",
+      "form_number": "PP 00 H600 00 0616 §V(B)",
+      "page": 52,
+      "impact": "Excludes loss from theft/deception fraud/forgery committed by partners or LLC members. As an LLC, Runbeck's LLC-member-perpetrated crime is excluded except limited carve-back for IA 1 (Employee Theft) and IA 2 (Forgery) subject to LLC-member-as-Employee paragraph (10) calculation."
+    },
+    {
+      "name": "Crime — Voluntary Parting of Title or Possession (IA 3 & 4 only)",
+      "form_number": "PP 00 H600 00 0616 §V(R)",
+      "page": 54,
+      "impact": "Loss from voluntary parting via dishonest inducement excluded under Inside Premises and Outside Premises (IA 3 & 4). Does NOT affect Deception Fraud (social engineering) IA."
+    },
+    {
+      "name": "Crime — Indirect Loss",
+      "form_number": "PP 00 H600 00 0616 §V(H)",
+      "page": 52,
+      "impact": "Loss of income / business interruption from a Crime occurrence is excluded. Compensatory damages directly from a covered loss are payable."
+    },
+    {
+      "name": "Crime — Intellectual Property, Confidential Information, Electronic Data",
+      "form_number": "PP 00 H600 00 0616 §V(V)",
+      "page": 55,
+      "impact": "No coverage for theft/disclosure of trade secrets, IP, credit card numbers, bank account numbers, etc. (unless covered under IA 8 Identity Recovery), or Data (unless covered under IA 7). For Run-Test handling 90M voter records, this is a meaningful gap — voter PII theft would NOT be a Crime claim, must be addressed by Cyber policy."
+    },
+    {
+      "name": "Crime — Inventory Shortages",
+      "form_number": "PP 00 H600 00 0616 §V(I)",
+      "page": 52,
+      "impact": "Standard exclusion — loss based solely on inventory computation is barred."
+    },
+    {
+      "name": "Crime — War / Nuclear / Governmental Action",
+      "form_number": "PP 00 H600 00 0616 §V(M),(G),(S)",
+      "page": 53,
+      "impact": "Standard catastrophic exclusions."
+    },
+    {
+      "name": "Crime — Deception Fraud sub-exclusions",
+      "form_number": "PP 00 H600 00 0616 §V(T)",
+      "page": 54,
+      "impact": "Deception Fraud (social engineering) IA carved out from many other coverages (no double-recovery between Funds Transfer Fraud, Computer Fraud, Forgery, etc.). Deception Fraud sublimit only $15,000 (LOW) per Crime Dec — very limited social engineering protection."
+    },
+    {
+      "name": "Crime — Identity Recovery: Professional/Business Identity Theft Excluded",
+      "form_number": "PP 00 H600 00 0616 §V(X)",
+      "page": 55,
+      "impact": "IA 8 Identity Recovery is for the personal identities of named officers/directors/risk managers/in-house counsel — not the business itself."
+    },
+    {
+      "name": "Workplace Violence — No Third-Party Liability",
+      "form_number": "PP 00 H426 00 0616",
+      "page": 102,
+      "impact": "Workplace Violence coverage is EXPENSE coverage only (BI, employee, PR firm). Endorsement EXPLICITLY excludes 'any legal costs, attorneys fees, expenses, settlements, judgments, penalties or other amounts incurred as a result of any claim, suit or other legal proceeding brought against an Insured in connection with a Workplace Violence Action.' Third-party bodily injury / wrongful death suits flowing from a workplace shooting would NOT be covered here — must be evaluated under GL/Umbrella/EPLI third-party harassment provisions."
+    },
+    {
+      "name": "Workplace Violence — War/Civil Unrest and Extortion Carve-outs",
+      "form_number": "PP 00 H426 00 0616",
+      "page": 101,
+      "impact": "Workplace Violence Expenses excluded for war/invasion/insurrection/riot/rebellion/revolution/civil war/military action AND for use or threat of force occurring for purpose of demanding money/securities/property (i.e., extortion-driven violence falls under Crime/K&R coverage, not WPV)."
+    },
+    {
+      "name": "Telephone & Toll Fraud — Calling/Credit Card Carve-out and 30-Day Cap",
+      "form_number": "PP 00 H672 00 0217",
+      "page": 98,
+      "impact": "Toll-fraud coverage excludes loss from use of calling card, telephone access card, or telephone credit card. Loss capped to 30 consecutive days from first discovery — material limitation for slow-rolling toll fraud."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "_source_file": "Redacted2024-26 Management Liability Policy.pdf"
+}

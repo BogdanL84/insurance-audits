@@ -1,0 +1,678 @@
+{
+  "client": "run-test-election-services",
+  "findings": [
+    {
+      "id": "finding-001",
+      "requirement_type": "Named Insured — Inc vs LLC Entity-Type Mismatch (Hanover Auto)",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "Run-Test confirmed legal entity = 'Runbeck Election Services, LLC' (per Hartford ML, Arch Security, Convex Excess, AmTrust Cyber Dec pages and AmTrust Policy Change #1 dated 4/1/2025 which expressly corrected the Cyber Named Insured to LLC).",
+      "contract_page": "Cross-program — confirmed by AmTrust Cyber Policy Change #1, page 2",
+      "contract_file": "Multiple program policies",
+      "policy_quote": "First Named Insured: 'Runbeck Election Services Inc'",
+      "policy_page": "Dec page",
+      "policy_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+      "gap_description": "The Hanover Commercial Auto Dec lists 'Runbeck Election Services Inc' as First Named Insured. The client's true legal entity is an LLC, as confirmed by four other in-force policies (Hartford ML, Arch Security CGL, Convex Excess Tech E&O, AmTrust Cyber — the latter expressly corrected via Policy Change #1 effective 4/1/2025). The Inc-vs-LLC asymmetry persists across five program policies (WC, Auto, Commercial Package, Umbrella, Gemini E&O) while four name the LLC correctly. Two distinct legal persons are named on the program for the same operating company. Form-of-Business field on the Auto Dec almost certainly reads 'Corporation,' compounding the documentary mismatch. In a contested claim, plaintiff counsel will argue the policyholder of record (Inc) is not the entity that incurred the loss (LLC), creating standing/insurable-interest litigation that delays defense and forces a coverage-by-litigation outcome.",
+      "plain_english": "Five of your nine policies — including the Auto policy — name 'Runbeck Election Services Inc.' But your real company is 'Runbeck Election Services, LLC.' Inc and LLC are two different legal entities. Your Cyber carrier already fixed this for the Cyber policy back on 4/1/2025; nobody propagated that fix to the rest of the program. If a serious auto claim hits, the carrier or a plaintiff can argue that the entity on the policy isn't the entity that operated the truck — which buys you weeks of fighting before defense even starts.",
+      "recommendation": "Immediately request Policy Change endorsements (IL 12 01 or carrier equivalent) on Hanover Auto, Hanover Commercial Package, Hanover Umbrella, Gemini Professional Liability, and Hanover WC to correct First Named Insured to 'Runbeck Election Services, LLC' and Form of Business to 'Limited Liability Company.' Use the AmTrust Cyber Policy Change #1 as a template. Get all five corrections back-dated to 4/1/2025 inception so there is no gap.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "entity-type-mismatch",
+        "GAP-01",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "When did Runbeck convert from Inc to LLC, and was the broker notified at that time to update every policy in the program?",
+        "Has anyone ever submitted a claim where the carrier asked you to prove the entity on the Dec page is the same entity that suffered the loss?",
+        "Your AmTrust Cyber carrier corrected the entity name in Policy Change #1 effective 4/1/2025 — do you know why that correction wasn't applied to the other eight policies at the same renewal?",
+        "If a plaintiff sued 'Runbeck Election Services, LLC' for an auto accident, how comfortable would you be relying on a policy issued to 'Runbeck Election Services Inc' to fund your defense?"
+      ]
+    },
+    {
+      "id": "finding-002",
+      "requirement_type": "Named Insured — Inc vs LLC Entity-Type Mismatch (Hanover Commercial Package)",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "Run-Test confirmed legal entity = 'Runbeck Election Services, LLC.'",
+      "contract_page": "Cross-program — confirmed by AmTrust Cyber Policy Change #1, page 2",
+      "contract_file": "Multiple program policies",
+      "policy_quote": "First Named Insured: 'Runbeck Election Services Inc'",
+      "policy_page": "Dec page",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "Hanover Commercial Package Dec lists 'Runbeck Election Services Inc' as First Named Insured. The Package carries the Property, GL, Business Income, Equipment Breakdown, and Data Breach coverages — every premises-based and equipment-based loss runs through this single Dec. A name mismatch here cascades into every coverage part of the package. The Broad Form Named Insured endorsement (421-2916 06 15, page 198) has standard LLC carve-outs, so the broad form does NOT auto-correct the missing-LLC problem.",
+      "plain_english": "The single most important policy in your program — the Commercial Package that covers your buildings, your equipment, your liability, and your business income — is issued to a corporation that doesn't exist. Your real entity is the LLC. A property loss at your facility could turn into 'who is the insured of record' litigation before claim payment.",
+      "recommendation": "Issue Policy Change correcting First Named Insured to 'Runbeck Election Services, LLC.' Verify the Form of Business field. Ask Hanover to confirm in writing that the correction back-dates to 4/1/2025 inception with no gap.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "entity-type-mismatch",
+        "GAP-01",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Have you ever had a property claim under this package — and if so, was the entity name on the loss notice the same as on the Dec?",
+        "If a fire destroyed your Phoenix facility tomorrow, do you know which entity holds the building and would file the claim?",
+        "How would you feel walking into a $20M business-income claim with a name mismatch on the policy?"
+      ]
+    },
+    {
+      "id": "finding-003",
+      "requirement_type": "Named Insured — Inc vs LLC Entity-Type Mismatch (Hanover Umbrella)",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 5,
+      "risk_score": 20,
+      "contract_quote": "Run-Test confirmed legal entity = 'Runbeck Election Services, LLC.'",
+      "contract_page": "Cross-program — confirmed by AmTrust Cyber Policy Change #1, page 2",
+      "contract_file": "Multiple program policies",
+      "policy_quote": "First Named Insured: 'Runbeck Election Services Inc'",
+      "policy_page": "Dec page",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "The $10M Umbrella names 'Runbeck Election Services Inc' and the same entity-type defect that exists on the underlying Hanover policies repeats here. The Umbrella schedules its underlyings by entity name. If a court were to find that the LLC is the correct entity-of-loss, both the underlying Hanover policies AND the Umbrella have a documentation problem at exactly the same time — which means there is no clean primary-to-excess attachment for the LLC entity until the names are corrected.",
+      "plain_english": "Your $10M umbrella has the same name problem as the underlying Hanover policies. That's worse than a single-policy mismatch — it means the entire vertical liability tower is documented to a non-existent corporation. A serious liability claim ($5M+) hits both layers simultaneously, and the entity name issue bites you twice.",
+      "recommendation": "Correct First Named Insured to 'Runbeck Election Services, LLC' on the Umbrella simultaneously with the underlying Hanover Commercial Package and Auto. Confirm the Schedule of Underlying Insurance lists the corrected entity names.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "entity-type-mismatch",
+        "umbrella",
+        "GAP-01",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Has your broker or Hanover ever explained why the Umbrella was issued to Inc when four other policies in the program already correctly name LLC?",
+        "If a $7M auto claim hit and you needed the umbrella, do you understand how the entity-name mismatch could complicate the umbrella drop-down?"
+      ]
+    },
+    {
+      "id": "finding-004",
+      "requirement_type": "Named Insured — Inc vs LLC Entity-Type Mismatch (Gemini Professional Liability)",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "Run-Test confirmed legal entity = 'Runbeck Election Services, LLC.'",
+      "contract_page": "Cross-program — confirmed by AmTrust Cyber Policy Change #1, page 2",
+      "contract_file": "Multiple program policies",
+      "policy_quote": "First Named Insured: 'Runbeck Election Services, Inc.'",
+      "policy_page": "Dec page (MPLDEC 07 19)",
+      "policy_file": "Redacted2025 - 2026 Professional Liability Policy.pdf",
+      "gap_description": "Gemini Professional Liability primary names 'Runbeck Election Services, Inc.' This is particularly hazardous because: (1) Convex Excess Tech E&O sitting above this layer correctly names the LLC, creating a documented Inc-vs-LLC disagreement WITHIN the Tech E&O tower itself; and (2) Tech E&O is the lead coverage for ballot printing and election-mail processing services, which is the litigation-magnet exposure for this client. Plaintiff's counsel can attack the entity-of-record on the primary while bypassing it on the excess.",
+      "plain_english": "The carrier most likely to face a real claim — your Tech E&O primary, which would respond if a county sued you over a ballot-print error — names the wrong entity. Worse, your $5M excess Tech E&O above it names the right entity. So your tech tower is split between two different legal persons. That is a coverage-litigation invitation.",
+      "recommendation": "Request Endorsement to correct First Named Insured to 'Runbeck Election Services, LLC' on Gemini primary. Once corrected, request Convex confirm in writing that the underlying-policy reference still attaches.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "entity-type-mismatch",
+        "tech-eo",
+        "GAP-01",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Your professional liability primary names 'Inc' but your excess names 'LLC' — has Convex confirmed it will follow form into a primary issued to a different legal entity?",
+        "If a Maricopa County print error claim hit your Tech E&O primary tomorrow, do you understand how the entity mismatch between primary and excess could cap your effective tower at $5M?"
+      ]
+    },
+    {
+      "id": "finding-005",
+      "requirement_type": "Cross-Policy Entity Coverage — Lincoln Shields LLC Missing from Hanover Umbrella",
+      "category": "Ugly",
+      "likelihood": 3,
+      "severity": 5,
+      "risk_score": 15,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Lincoln Shields LLC is named on the Hanover Auto Multiple Named Insured Endorsement (461-0174, page 28) and on the Gemini E&O Schedule (AD 66 16 04 09, page 27), so it is operationally a member of the Runbeck insured family.",
+      "contract_page": "Hanover Auto page 28; Gemini E&O page 27",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Multiple Named Insured Endorsement (Form 475-0174) Schedule does NOT include 'Lincoln Shields LLC.'",
+      "policy_page": "Page 56",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "Lincoln Shields LLC is named on the Hanover Auto policy and on the Gemini E&O policy, but is NOT named on the Hanover Umbrella Multiple Named Insured Endorsement (475-0174, page 56). Result: any auto liability claim against Lincoln Shields LLC has a HARD CAP at the $1M Auto CSL primary limit with no excess attachment. A single severe auto loss (multi-vehicle, fatality, large bodily-injury verdict) can blow through $1M and leave Lincoln Shields LLC uninsured for the excess layer that supposedly protects the entire family of entities.",
+      "plain_english": "Lincoln Shields LLC is part of your insured family on the Auto and E&O policies. But it is NOT listed on the $10M Umbrella. That means any auto claim involving Lincoln Shields stops at $1M — no umbrella drop-down, no excess. One serious accident with a Lincoln Shields vehicle and the umbrella will not respond.",
+      "recommendation": "Endorse 'Lincoln Shields LLC' onto the Hanover Umbrella Multiple Named Insured Endorsement (475-0174). Audit the Umbrella schedule against every primary entity schedule and reconcile. Request a no-cost mid-term endorsement back-dated to 4/1/2025 inception.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "umbrella-attachment",
+        "hard-cap",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "What does Lincoln Shields LLC do operationally — does it own vehicles, employ drivers, or operate at any of your facilities?",
+        "If a Lincoln Shields vehicle caused a $4M auto liability claim, where is the $3M of coverage above your $1M Auto primary supposed to come from?",
+        "Has Lincoln Shields LLC ever been audited against the Umbrella schedule, or did it simply get added to Auto when it was formed?"
+      ]
+    },
+    {
+      "id": "finding-006",
+      "requirement_type": "Cross-Policy Entity Coverage — Lincoln Shields LLC Missing from Hanover Commercial Package GL",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 4,
+      "risk_score": 12,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Lincoln Shields LLC is on Auto and E&O but absent from the Commercial Package Schedule.",
+      "contract_page": "Hanover Auto page 28",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hanover Commercial Package Schedule of Named Insureds (page 12) does not list 'Lincoln Shields LLC.'",
+      "policy_page": "Page 12",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "If Lincoln Shields LLC operates from any premises, hosts visitors, or has any GL exposure, the Hanover Commercial Package GL does NOT respond — the entity is not a Named Insured. The Broad Form Named Insured (421-2916 06 15, page 198) excludes LLCs from automatic coverage, so the broad form does not cure this gap.",
+      "plain_english": "If Lincoln Shields LLC has its own location, visitors, or operations, a slip-and-fall or premises liability claim there will not be covered by your main GL policy. Lincoln Shields is an entity in your family on Auto and E&O, but it has no GL coverage anywhere in your program.",
+      "recommendation": "Add 'Lincoln Shields LLC' to the Hanover Commercial Package Schedule of Named Insureds. If Lincoln Shields has no operations or premises, document that fact in the broker file so the entity placement is intentional.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "general-liability",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Does Lincoln Shields LLC own or lease any real estate, host customer or vendor visits, or have employees?",
+        "If a visitor slipped at a Lincoln Shields location, which policy would respond — and have you ever stress-tested that?"
+      ]
+    },
+    {
+      "id": "finding-007",
+      "requirement_type": "Cross-Policy Entity Coverage — Black Mountain Investment LLC Missing from Hanover Umbrella",
+      "category": "Ugly",
+      "likelihood": 3,
+      "severity": 5,
+      "risk_score": 15,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. 'Black Mountain Investment Co. LLC' appears on Hanover Auto (461-0174 Multiple Named Insured Endorsement, page 28) and 'Black Mountain Investment Company LLC' appears on Gemini E&O (AD 66 16 04 09, page 27).",
+      "contract_page": "Hanover Auto page 28; Gemini E&O page 27",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Multiple Named Insured Endorsement (Form 475-0174) does NOT include any variant of Black Mountain Investment.",
+      "policy_page": "Page 56",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "Black Mountain Investment LLC (named two different ways across the program — see separate finding) is on the Auto primary and E&O primary but absent from the Umbrella schedule. Same hard-cap risk as Lincoln Shields: any Auto liability claim against this entity is capped at $1M with no umbrella attachment.",
+      "plain_english": "Black Mountain Investment LLC is part of your family on Auto and E&O but it isn't on the Umbrella. Hard cap at $1M for any Auto claim involving this entity.",
+      "recommendation": "Add Black Mountain Investment LLC (use the legally correct spelling — see separate finding on name inconsistency) to the Hanover Umbrella Multiple Named Insured Endorsement (475-0174).",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "umbrella-attachment",
+        "hard-cap",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "What does Black Mountain Investment LLC do — is it an investment-holding entity, a property holder, or operational?",
+        "Why does Black Mountain appear on the Auto schedule if it doesn't have operational vehicle exposure?"
+      ]
+    },
+    {
+      "id": "finding-008",
+      "requirement_type": "Cross-Policy Entity Naming — Black Mountain Investment 'Co. LLC' vs 'Company LLC' Spelling Inconsistency",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 3,
+      "risk_score": 9,
+      "contract_quote": "N/A — cross-policy entity matrix derivation.",
+      "contract_page": "—",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hanover Auto schedule reads 'Black Mountain Investment Co. LLC' (page 28); Gemini E&O schedule reads 'Black Mountain Investment Company LLC' (page 27).",
+      "policy_page": "Auto page 28 / E&O page 27",
+      "policy_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf / Redacted2025 - 2026 Professional Liability Policy.pdf",
+      "gap_description": "The same entity is named two different ways on two policies in the same program. In litigation, plaintiff counsel could argue 'Co. LLC' and 'Company LLC' are legally distinct entities and force the policyholder to prove they are the same. This compounds the umbrella-gap finding: the Umbrella has no record of either spelling, and which spelling should be added becomes a documentation question.",
+      "plain_english": "Two of your policies spell the same entity differently. Auto says 'Co. LLC,' E&O says 'Company LLC.' If a claim hits, the carriers can each argue that whichever spelling they don't have isn't covered. Pick the one the Arizona Secretary of State has on file and standardize across the program.",
+      "recommendation": "Confirm legal name with Arizona Corporation Commission filings. Update Hanover Auto and Gemini E&O schedules to match. Use the same spelling when adding the entity to the Hanover Umbrella.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "entity-naming-consistency",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "What is the exact legal name of Black Mountain Investment per the Arizona Corporation Commission filing?",
+        "When this entity was added to your insurance schedule, was the same spelling sent to every carrier, or did each carrier transcribe it differently?"
+      ]
+    },
+    {
+      "id": "finding-009",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Properties LLC Missing from Hanover Commercial Package GL",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Runbeck Properties LLC appears on Hanover Auto, Hanover Umbrella, and AmTrust Cyber but is absent from the Hanover Commercial Package Schedule of Named Insureds.",
+      "contract_page": "Auto page 28; Umbrella page 56; Cyber page 2",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hanover Commercial Package Schedule of Named Insureds (page 12) does not list 'Runbeck Properties, LLC.'",
+      "policy_page": "Page 12",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "Runbeck Properties LLC, by name, is the property-holding entity of the family. It is named on the Auto, Umbrella, and Cyber policies. It is conspicuously ABSENT from the Hanover Commercial Package — the very policy that provides Property AND General Liability coverage. A premises liability claim at any Runbeck Properties LLC location would have no GL coverage, and the Umbrella has nothing to follow form to. The Umbrella schedule listing the entity is meaningless without an underlying GL.",
+      "plain_english": "The entity that literally has 'Properties' in its name — the entity that holds your real estate — is not on your property-and-liability policy. It IS on the Auto and the Umbrella and the Cyber. But not the one that covers buildings and slip-and-falls. A visitor slipping at a Runbeck Properties location has no GL coverage, and the umbrella above it has nothing to drop down to. This is the most severe entity-mismatch in the program.",
+      "recommendation": "URGENT: Endorse 'Runbeck Properties, LLC' onto the Hanover Commercial Package Schedule of Named Insureds and verify Property and GL coverage parts both extend to this entity. Back-date to 4/1/2025 inception. Until corrected, treat this as an open uninsured premises exposure.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "general-liability",
+        "umbrella-attachment",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Does Runbeck Properties LLC own the real estate where Runbeck Election Services operates, or does it own separate properties?",
+        "If a vendor slipped on a Runbeck Properties parking lot, do you know which policy would respond?",
+        "Has Runbeck Properties ever filed a claim, and which entity name was on it?",
+        "Why was Runbeck Properties added to Auto and Cyber but not to the Commercial Package — is there a coverage rationale or is this a clerical miss?"
+      ]
+    },
+    {
+      "id": "finding-010",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Graphics Inc Missing from Convex Excess Tech E&O",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Runbeck Graphics Inc. is named on Gemini E&O primary (Schedule via VP 02 79 07 17, page 36) but absent from the Convex Excess Tech E&O Schedule of Named Insureds.",
+      "contract_page": "Gemini E&O page 36",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Convex Excess Tech E&O Named Insured = 'Runbeck Election Services, LLC' only. No additional named insured schedule.",
+      "policy_page": "Page 6",
+      "policy_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+      "gap_description": "Runbeck Graphics Inc. is a Named Insured on the Gemini Professional Liability primary but is NOT named on the Convex $5M Excess Tech E&O. Effect: any professional liability / Tech E&O claim brought against Runbeck Graphics Inc. is capped at the Gemini $5M primary limit. The $5M excess does NOT attach over Graphics-specific claims because Graphics is not a scheduled insured on the excess. For an election-services family that prints ballots, Runbeck Graphics is operationally central; this is not a peripheral entity.",
+      "plain_english": "Your Tech E&O is a $10M tower — $5M primary plus $5M excess. But the excess only protects 'Runbeck Election Services, LLC.' It does NOT protect 'Runbeck Graphics Inc.' If a county sues Graphics over a ballot-print error and the loss exceeds $5M, the excess will not pay. Effective Tech E&O capacity for Graphics claims = $5M, not $10M.",
+      "recommendation": "Endorse 'Runbeck Graphics Inc.' onto the Convex Excess Tech E&O policy as a Named Insured. Confirm Convex maintains follow-form for the added entity. Verify the Schedule of Underlying lists the Gemini primary endorsement (VP 02 79) so the Convex layer references the entity correctly.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "tech-eo",
+        "umbrella-attachment",
+        "hard-cap",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Does Runbeck Graphics Inc. handle print/mail work for counties, or is its work entirely internal to the Runbeck family?",
+        "If Maricopa or LA County sued Runbeck Graphics directly over a ballot-print defect, do you understand that the $5M Convex excess wouldn't respond?",
+        "Has the broker confirmed in writing that Convex follows form down to entities not listed on the excess?"
+      ]
+    },
+    {
+      "id": "finding-011",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Graphics Inc Missing from Hartford Management Liability",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 4,
+      "risk_score": 12,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Runbeck Graphics Inc. is named on five other in-force policies (Gemini E&O, AmTrust Cyber, Hanover Auto, Hanover Commercial Package, Hanover Umbrella).",
+      "contract_page": "Cross-policy entity matrix",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hartford Management Liability Named Insured = 'Runbeck Election Services, LLC.' No subsidiary schedule visible adding Graphics, Investments, or Properties.",
+      "policy_page": "Dec page",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "Runbeck Graphics Inc. (and Runbeck Investments LLC, Runbeck Properties LLC — see separate findings) appears across the program but is not named as a Subsidiary on the Hartford Management Liability Dec. The D&O coverage for directors and officers of these subsidiary entities is unclear and likely defective. Hartford's standard 'Subsidiary' definition (typically tied to >50% ownership) MAY pick them up automatically, but this is policy-specific and varies — and the LLC subsidiary carve-outs common to ML policies often defeat automatic inclusion. Combined with the existing Hartford ML Manufacturing/Professional Services Exclusion and 1-year Prior Acts Cutoff (already on the finding list), this leaves directors of subsidiary entities especially exposed.",
+      "plain_english": "Your Hartford Management Liability policy lists 'Runbeck Election Services LLC' as the insured but doesn't visibly schedule your subsidiaries — Graphics, Investments, Properties. If a director of one of those subsidiaries gets sued, coverage depends on Hartford's automatic 'subsidiary' definition. That definition has fine-print carve-outs that don't always include LLCs. Get the subsidiaries on the schedule explicitly so there's no argument.",
+      "recommendation": "Request a Schedule of Subsidiaries endorsement on the Hartford Management Liability policy expressly listing Runbeck Graphics Inc., Runbeck Investments LLC, and Runbeck Properties LLC. Confirm the Hartford 'Subsidiary' definition picks up LLCs.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "management-liability",
+        "subsidiary-coverage",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Do Runbeck Graphics, Investments, and Properties have their own boards or directors, or do they share with Runbeck Election Services?",
+        "Has Hartford ever provided written confirmation that the auto-include 'Subsidiary' definition picks up your LLC subs?"
+      ]
+    },
+    {
+      "id": "finding-012",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Investments LLC Missing from Hartford Management Liability",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 4,
+      "risk_score": 12,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. Runbeck Investments LLC is named on AmTrust Cyber, Hanover Auto, Hanover Commercial Package, Hanover Umbrella.",
+      "contract_page": "Cross-policy entity matrix",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hartford Management Liability Named Insured = 'Runbeck Election Services, LLC.'",
+      "policy_page": "Dec page",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "Runbeck Investments LLC, the investment-holding entity of the Runbeck family, is on four other policies but absent from Hartford ML. PE-backed companies have heightened D&O exposure tied to investment-entity decisions; this is the wrong entity to leave off the Subsidiary schedule.",
+      "plain_english": "The investment-holding entity isn't on your D&O policy. For a PE-backed business, that's where some of the riskiest decisions get made. If an investment-related claim hits Runbeck Investments LLC directly, Hartford ML may not respond.",
+      "recommendation": "Add Runbeck Investments LLC to the Hartford ML Schedule of Subsidiaries simultaneously with Graphics and Properties.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "management-liability",
+        "subsidiary-coverage",
+        "PE-specific",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "What does Runbeck Investments LLC actually do — does it hold the PE sponsor's interest, hold operating-company stock, or hold passive investments?",
+        "If a PE sponsor or LP filed a derivative claim naming Runbeck Investments LLC, is that entity scheduled on the Hartford ML?"
+      ]
+    },
+    {
+      "id": "finding-013",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Investments LLC Missing from Gemini Professional Liability",
+      "category": "Bad",
+      "likelihood": 2,
+      "severity": 3,
+      "risk_score": 6,
+      "contract_quote": "N/A — cross-policy entity matrix derivation.",
+      "contract_page": "Cross-policy entity matrix",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Gemini E&O Schedule (AD 66 16 04 09 page 27) lists Lincoln Shields LLC and Black Mountain Investment Company LLC, plus Runbeck Graphics Inc. via VP 02 79 page 36, but does NOT list 'Runbeck Investments LLC.'",
+      "policy_page": "Pages 27 / 36",
+      "policy_file": "Redacted2025 - 2026 Professional Liability Policy.pdf",
+      "gap_description": "Runbeck Investments LLC is omitted from the Gemini E&O entity schedule even though Black Mountain Investment Company LLC and Lincoln Shields LLC are included. If Runbeck Investments LLC plays any role in election-services delivery (sub-contracting, billing, customer-of-record), professional liability claims could name it without coverage.",
+      "plain_english": "Three of your subsidiaries are on the E&O policy. Runbeck Investments LLC isn't. If it ever signs a customer agreement or appears in a chain of subcontractors on a county engagement, an E&O claim against it has no coverage.",
+      "recommendation": "Confirm with Run-Test whether Runbeck Investments LLC ever contracts with counties or invoices customers. If yes, add it to the Gemini E&O entity schedule. If no, document its non-operational role in the broker file.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "named-insured",
+        "tech-eo",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Does Runbeck Investments LLC ever sign customer-facing contracts or appear on invoices to counties?",
+        "Why did the broker add Black Mountain and Lincoln Shields to the E&O schedule but not Runbeck Investments?"
+      ]
+    },
+    {
+      "id": "finding-014",
+      "requirement_type": "Cross-Policy Entity Coverage — Runbeck Companies 401(k) Profit Sharing Plan Missing from Hartford Fiduciary Coverage",
+      "category": "Ugly",
+      "likelihood": 3,
+      "severity": 5,
+      "risk_score": 15,
+      "contract_quote": "N/A — cross-policy entity matrix derivation. The 401(k) Plan is named on Hanover Auto (Multiple Named Insured Endorsement 461-0174, page 28) — the WRONG policy for a benefit plan — but absent from the Hartford ML Fiduciary Coverage Part where it would be the natural insured plan.",
+      "contract_page": "Hanover Auto page 28",
+      "contract_file": "Cross-policy entity matrix",
+      "policy_quote": "Hartford Management Liability Fiduciary Coverage Part Dec — Schedule of Plans not visibly identifying 'Runbeck Companies 401(k) Profit Sharing Plan' by name.",
+      "policy_page": "Fiduciary Dec",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "The Runbeck Companies 401(k) Profit Sharing Plan appears on the Hanover Auto schedule — which makes no operational sense for a benefit plan that does not own vehicles — and is NOT visibly identified as a covered Plan on the Hartford ML Fiduciary Coverage Part. Two related defects: (1) the Plan is on a policy where it has no business being (Auto), and (2) it is not expressly identified on the Fiduciary Coverage Part where ERISA-fiduciary claims would land. Standard Fiduciary 'Plan' definitions usually include 'any employee benefit plan sponsored by the Insured Organization,' which may pick up the 401(k) automatically — but expressly scheduling it eliminates ambiguity. The Auto entity-listing creates a documentary anomaly that adds nothing and could complicate Auto premium audit.",
+      "plain_english": "Your 401(k) plan is somehow listed as a Named Insured on the Auto policy. That policy doesn't cover ERISA fiduciary claims. The policy that DOES — your Hartford Fiduciary Coverage — doesn't visibly name the 401(k) Plan as a scheduled plan. This is two errors at once: the right entity on the wrong policy, and missing from the right policy.",
+      "recommendation": "Remove 'Runbeck Companies 401(k) Profit Sharing Plan' from the Hanover Auto Multiple Named Insured Endorsement. Add it expressly to the Hartford Fiduciary Coverage Part Schedule of Insured Plans. Verify the Hartford Fiduciary 'Plan' definition picks up the 401(k) automatically and obtain written confirmation if so.",
+      "covered_by_other_policy": true,
+      "covered_by_which_policy": "Hartford Fiduciary Coverage Part — likely automatic via 'Plan' definition, but unconfirmed",
+      "tags": [
+        "named-insured",
+        "fiduciary",
+        "ERISA",
+        "GAP-20",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Why is your 401(k) Plan listed as a Named Insured on the Auto policy — does the Plan own or operate any vehicles?",
+        "Has Hartford confirmed in writing that the Fiduciary 'Plan' definition picks up the Runbeck Companies 401(k) Profit Sharing Plan?",
+        "Who is the named Plan fiduciary, and have they reviewed whether the Hartford Fiduciary limits ($1M aggregate, $0 retention) are sufficient for the plan asset size?"
+      ]
+    },
+    {
+      "id": "finding-015",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Hanover Auto",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Hanover Auto Endorsement 401-1235 12 14 (Notice of Cancellation to Designated Entity(s)) lists 8 designated entities (BLANKET WHERE REQUIRED BY WRITTEN CONTRACT, City of Boulder, Coconino County, Amazon.com Services, El Paso County, San Luis Obispo County, State of Colorado, NY State OGS) but does NOT list Maricopa County.",
+      "policy_page": "Pages 44–46",
+      "policy_file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+      "gap_description": "The Hanover Auto policy carries a Designated Entity NOC endorsement listing 8 entities, but Maricopa County — the contract counterparty for §8.2.15 — is conspicuously absent from the list. The 'BLANKET WHERE REQUIRED BY WRITTEN CONTRACT' line item provides arguable cover, but most carriers and counties require the entity to be expressly named to give effect to the contractual notice obligation. The absence is particularly visible because seven specific entities ARE named on this policy, suggesting the broker built the schedule manually and missed Maricopa.",
+      "plain_english": "Your Maricopa County contract requires Maricopa to get 30 days' notice if your Auto policy gets cancelled. The Auto policy DOES have a designated-entity notice endorsement — and it lists eight entities. Maricopa is not one of them. If the policy ever cancels, Maricopa won't get direct notice and you're in breach of contract.",
+      "recommendation": "Endorse 'Maricopa County' onto Hanover Auto Form 401-1235 with 30-day notice. Verify against the Maricopa contract address. Audit all program policies and add Maricopa to every required policy line in parallel (see related findings on each policy).",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "How was the designated-entity schedule on the Auto policy built — did the broker get a list from you or pull it from prior years?",
+        "Has Maricopa ever audited your COI or NOC endorsements directly?",
+        "If the Auto policy got cancelled tomorrow, do you understand that 7 of your customer counties would get notice but Maricopa would not?"
+      ]
+    },
+    {
+      "id": "finding-016",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Hanover Commercial Package",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Hanover Commercial Package Endorsement 401-1235 lists The New York State Office Of General Services, Amazon.com Services LLC, ARC Airport 2800, Banterra Bank — does NOT list Maricopa County.",
+      "policy_page": "Page 36",
+      "policy_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "gap_description": "The Commercial Package GL is the policy on which Maricopa is named as Additional Insured (via Blanket AI by written contract endorsement). Yet the Designated Entity NOC schedule on the same policy doesn't list Maricopa. This is a documentation inconsistency — one endorsement on the policy treats Maricopa as covered, but the cancellation-notice endorsement on the same policy doesn't acknowledge them.",
+      "plain_english": "Maricopa is technically additional-insured on your GL via the blanket. But the cancellation-notice schedule on that same policy doesn't list Maricopa. So Maricopa is your additional insured but won't get notice if you cancel — direct contract breach on a $multi-million county engagement.",
+      "recommendation": "Endorse 'Maricopa County' onto Hanover Commercial Package Form 401-1235 with 30-day notice immediately.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Maricopa is one of your largest customers — why isn't it on the cancellation-notice schedule when 4 other entities are?",
+        "When was the last time the broker reconciled the NOC schedule with your active customer list?"
+      ]
+    },
+    {
+      "id": "finding-017",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Hanover Umbrella",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Hanover Umbrella — no Designated Entity NOC endorsement of any kind appears in the policy.",
+      "policy_page": "—",
+      "policy_file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "gap_description": "The Hanover Umbrella has NO Designated Entity NOC endorsement at all — not just missing Maricopa, but missing every customer entity. Standard practice in customer-contract programs requires the umbrella to carry the same notice obligations as the underlyings (since underlying-policy cancellation often forces umbrella cancellation in parallel under maintenance-of-underlying clauses). For a Commercial Umbrella covering an election-services PE-backed manufacturer with multiple county contracts, this is a systemic NOC gap.",
+      "plain_english": "Your $10M Umbrella has NO cancellation-notice endorsement at all. Not for Maricopa. Not for any of the other 8 county or customer entities your underlying policies are notifying. If your umbrella is ever cancelled or non-renewed, none of your county counterparties get direct notice — a contract breach across most of your county portfolio.",
+      "recommendation": "URGENT: Add Form 401-1235 (or Hanover Umbrella equivalent) to the Hanover Umbrella with the full list of designated entities matching the underlying schedules — Maricopa County, Sacramento County, Los Angeles County, Douglas County CO, Coconino County, El Paso County, plus the existing 8 from underlying.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "umbrella",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Why does your Umbrella have no cancellation-notice endorsement at all when 5 underlying policies do?",
+        "If the Umbrella non-renewed and triggered underlying maintenance-of-underlying issues, do you understand which counties wouldn't get notice?"
+      ]
+    },
+    {
+      "id": "finding-018",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Arch Security Guards CGL",
+      "category": "Bad",
+      "likelihood": 4,
+      "severity": 3,
+      "risk_score": 12,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Arch Security Guards CGL — no Designated Entity NOC endorsement appears in the policy.",
+      "policy_page": "—",
+      "policy_file": "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+      "gap_description": "The Arch Security Guards CGL stand-alone policy has no Designated Entity NOC endorsement. If Maricopa contract requires GL coverage with cancellation notice, and this CGL is one of the GL policies in the program (per the program summary listing both the Hanover Package GL and this Arch CGL), Maricopa is owed notice on this layer too.",
+      "plain_english": "Your secondary GL policy (the Security Guards-specific one with Arch) has no cancellation-notice endorsement at all. Maricopa would not be notified if it were cancelled.",
+      "recommendation": "Confirm with Run-Test whether the Arch Security Guards CGL is responsive to county contracts. If yes, endorse Maricopa (and other county counterparties) as designated entities with 30-day notice. If the policy is for a non-county-facing risk only, document the limited use in the broker file.",
+      "covered_by_other_policy": true,
+      "covered_by_which_policy": "Hanover Commercial Package Form 401-1235 (also missing Maricopa per separate finding)",
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "What operations does the Arch Security Guards CGL cover that the Hanover Commercial Package doesn't?",
+        "Are county contracts ever serviced by security-guard work, and would cancellation of this policy affect any county contract?"
+      ]
+    },
+    {
+      "id": "finding-019",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Hartford Management Liability",
+      "category": "Bad",
+      "likelihood": 3,
+      "severity": 3,
+      "risk_score": 9,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Hartford Management Liability — no Designated Entity NOC endorsement appears in the policy.",
+      "policy_page": "—",
+      "policy_file": "Redacted2024-26 Management Liability Policy.pdf",
+      "gap_description": "Hartford ML carries no Designated Entity NOC endorsement. Most county contracts focus the NOC requirement on lines explicitly required by the contract (GL, Auto, WC, Cyber, E&O); Maricopa §8.2.15's 'all required' reading may or may not extend to ML. Conservative reading favors adding Maricopa to the schedule.",
+      "plain_english": "Maricopa contract says all required insurance lines need notice. Your D&O policy isn't a typical 'required line' for county contracts, so this is debatable — but if your contract references it, the safe play is to add Maricopa to the schedule.",
+      "recommendation": "Verify with Maricopa whether ML is treated as a required insurance line under §8.2. If yes, request Hartford add the Maricopa NOC endorsement. If not, document the determination.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "management-liability",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Does Maricopa specifically request a COI for D&O coverage at contract renewal, or only for GL/Auto/WC/Cyber/E&O?"
+      ]
+    },
+    {
+      "id": "finding-020",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Gemini Professional Liability",
+      "category": "Ugly",
+      "likelihood": 5,
+      "severity": 4,
+      "risk_score": 20,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines. Maricopa expressly requires Tech E&O / Professional Liability under §8.2 (per existing audit context).",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Gemini Professional Liability — no Designated Entity NOC endorsement appears in the policy.",
+      "policy_page": "—",
+      "policy_file": "Redacted2025 - 2026 Professional Liability Policy.pdf",
+      "gap_description": "Gemini Professional Liability — the lead E&O coverage for ballot-printing and election-mail processing claims — has no Designated Entity NOC endorsement at all. For a county contract that pays you on professional-services delivery, this is the most contractually exposed NOC gap.",
+      "plain_english": "Your E&O — the policy most likely to respond to a real county claim about ballot accuracy — has zero cancellation-notice protection for Maricopa or any other county. If the policy is cancelled, none of your customers know. That's a contract breach across multiple counties.",
+      "recommendation": "Request Gemini add a Designated Entity NOC endorsement listing Maricopa County and every other county counterparty (Sacramento, Los Angeles, Douglas CO, Coconino, El Paso, San Luis Obispo, Benton WA) with 30-day notice. Confirm Convex Excess Tech E&O follows form on this endorsement.",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "tech-eo",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "When you submitted COIs to Maricopa for the current contract, did the certificate hold or did Maricopa kick it back for missing endorsements?",
+        "Has any county ever asked specifically whether they would receive direct notice if your E&O is cancelled?"
+      ]
+    },
+    {
+      "id": "finding-021",
+      "requirement_type": "Designated Entity Cancellation Notice — Maricopa County Missing from Convex Excess Tech E&O",
+      "category": "Bad",
+      "likelihood": 4,
+      "severity": 3,
+      "risk_score": 12,
+      "contract_quote": "Maricopa contract §8.2.15 (p 7) requires Maricopa County to receive 30-day designated-entity cancellation notice on all required insurance lines.",
+      "contract_page": "§8.2.15 (p 7)",
+      "contract_file": "Redactedscrubbed - Maricopa Contract.pdf",
+      "policy_quote": "Convex Excess Tech E&O — no Designated Entity NOC endorsement appears in the policy.",
+      "policy_page": "—",
+      "policy_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+      "gap_description": "The $5M Convex Excess Tech E&O has no NOC endorsement. While the contract may permit follow-form on the underlying Gemini schedule, the existing audit's 'Conditional Follow-Form More Restrictive' clause finding (already on the list) makes follow-form less reliable. Direct scheduling on Convex eliminates the ambiguity.",
+      "plain_english": "Your Tech E&O excess has no cancellation-notice endorsement, and Convex's follow-form has carve-outs that may not extend to this kind of endorsement. Direct scheduling is the safe move.",
+      "recommendation": "Endorse Maricopa County and other county counterparties onto the Convex Excess Tech E&O with 30-day notice.",
+      "covered_by_other_policy": true,
+      "covered_by_which_policy": "Gemini Primary E&O — also missing per separate finding",
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Maricopa",
+        "tech-eo",
+        "excess",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "Has Convex confirmed in writing that follow-form attaches to a Designated Entity NOC endorsement issued by Gemini at primary level?"
+      ]
+    },
+    {
+      "id": "finding-022",
+      "requirement_type": "Cross-Cutting — Sacramento, Los Angeles, Douglas (CO), San Luis Obispo, Benton (WA) Counties Not Listed as Designated Entities Anywhere in Program",
+      "category": "Ugly",
+      "likelihood": 4,
+      "severity": 4,
+      "risk_score": 16,
+      "contract_quote": "Sacramento County: 'CONTRACTOR shall provide the COUNTY with at least thirty (30) calendar days written notice of any cancellation, non-renewal, or material change in coverage.' (Sacramento Appendix G §VI). Los Angeles County contract Amendment Number Four — see contract notice provisions. Douglas County and San Luis Obispo similar standard county templates.",
+      "contract_page": "Sacramento Appendix G §VI; LA Amendment 4; Douglas/SLO standard",
+      "contract_file": "Multiple county contracts",
+      "policy_quote": "Cross-policy NOC schedule audit: Sacramento County, Los Angeles County, Douglas County (CO), San Luis Obispo County, Benton County (WA) appear on NO Designated Entity NOC endorsement on ANY policy in the program — the only policy that lists San Luis Obispo and Douglas-related entities is Hanover Auto (and only via the partial Auto schedule).",
+      "policy_page": "Cross-policy",
+      "policy_file": "PROGRAM",
+      "gap_description": "The NOC matrix shows Sacramento, LA, Douglas (CO), and Benton (WA) — all confirmed county counterparties per the contracts in the audit set — appear on no NOC endorsement anywhere in the program. San Luis Obispo and Douglas-via-Colorado appear only on Hanover Auto pages 45–46 but not on the GL Package or Umbrella. This is a multi-county notice deficiency that runs across multiple required coverage lines.",
+      "plain_english": "The NOC schedules across your program look like a partial draft — they cover Coconino, El Paso, Amazon, Boulder, NY State, and a few others, but they MISS Sacramento, LA County, and Douglas Colorado, all of which are active customer contracts in the audit. If any of your policies cancels, those four counties would learn about it from a third party rather than from your broker.",
+      "recommendation": "Cross-policy reconciliation project: build a master list of every customer contract requiring designated-entity notice, and reconcile against every policy NOC endorsement. Add Sacramento County, Los Angeles County, Douglas County (CO), and Benton County (WA) to all required-line NOC endorsements with the longest contract-required notice period (typically 30 days, but Sacramento and LA may require longer — verify).",
+      "covered_by_other_policy": false,
+      "covered_by_which_policy": null,
+      "tags": [
+        "designated-entity-noc",
+        "cancellation-notice",
+        "Sacramento",
+        "Los-Angeles",
+        "Douglas-CO",
+        "GAP-21",
+        "cross-policy-matrix"
+      ],
+      "discoveryQuestions": [
+        "How many active county contracts does Run-Test have right now, and is there a single source-of-truth list the broker reconciles to at renewal?",
+        "Has Run-Test ever had a county contract terminated for cause due to insurance non-compliance — and if so, what triggered it?",
+        "If a policy non-renewed mid-county-contract, does Run-Test have an internal process to notify counties directly even if the broker doesn't?",
+        "Does the legal team review COI/NOC schedules at contract execution, or rely on the broker to validate compliance?"
+      ]
+    }
+  ]
+}

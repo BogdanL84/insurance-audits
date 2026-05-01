@@ -1,0 +1,765 @@
+{
+  "slug": "auto",
+  "policy_name": "Hanover Commercial Auto",
+  "sources": {
+    "presentation": true,
+    "prior_report": false,
+    "annotation_master": true,
+    "v1": false,
+    "v2": true
+  },
+  "v1_findings": [],
+  "v2_findings": [
+    {
+      "page": 9,
+      "title": "Auto \u2014 Named Driver Exclusion (Malina Trujillo)",
+      "content": "[Bad] Auto \u2014 Named Driver Exclusion (Malina Trujillo)\nRisk Score: 6/25\n\nWhat this means:\nThere's a person named Malina Trujillo on your policy who's specifically excluded. If they get behind the wheel of a company car \u2014 even in an emergency \u2014 your auto policy won't cover the accident. You need to make sure this person never has access to a company vehicle, and HR/dispatch needs to know.\n\nRecommendation:\nVerify operational controls preventing this individual from operating company vehicles. Document in HR records. Consider whether the underlying cause (likely MVR issue) has been resolved and the exclu",
+      "type_name": "Text"
+    },
+    {
+      "page": 28,
+      "title": "Auto \u2014 Hired & Non-Owned Auto Coverage",
+      "content": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if employee count grows.",
+      "type_name": "Text"
+    },
+    {
+      "page": 34,
+      "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+      "content": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up part of it ($100K transit, $250K off-premises) \u2014 but for a major election cycle that's not enough. And if it's actual el\n\nRecommendation:\nIncrease Property In Transit limit to at least $500K. Consider scheduled Inland Marine cargo policy specifically for election season transports. For high-value equipment routes, document and schedule",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Bad",
+      "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+      "score": 9,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "auto",
+      "matched_in_audited": true,
+      "audited_page": 34,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up part of it ($100K t"
+    },
+    {
+      "category": "Bad",
+      "title": "Auto \u2014 Named Driver Exclusion (Malina Trujillo)",
+      "score": 6,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "auto",
+      "matched_in_audited": true,
+      "audited_page": 9,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] Auto \u2014 Named Driver Exclusion (Malina Trujillo)\nRisk Score: 6/25\n\nWhat this means:\nThere's a person named Malina Trujillo on your policy who's specifically excluded. If they get behind the wheel of a company car \u2014 even in an emergency \u2014 your auto policy won't cover the accident. You need to ma"
+    },
+    {
+      "category": "Good",
+      "title": "Auto \u2014 Hired & Non-Owned Auto Coverage",
+      "score": 0,
+      "severity_word": "",
+      "description": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if employee count grows.",
+      "policy_slug": "auto",
+      "matched_in_audited": true,
+      "audited_page": 28,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if employee count grows.",
+      "from_pdf_only": true
+    }
+  ],
+  "v1_v2_unchanged": [],
+  "v1_v2_removed": [],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 9,
+      "title": "Auto \u2014 Named Driver Exclusion (Malina Trujillo)",
+      "content": "[Bad] Auto \u2014 Named Driver Exclusion (Malina Trujillo)\nRisk Score: 6/25\n\nWhat this means:\nThere's a person named Malina Trujillo on your policy who's specifically excluded. If they get behind the wheel of a company car \u2014 even in an emergency \u2014 your auto policy won't cover the accident. You need to make sure this person never has access to a company vehicle, and HR/dispatch needs to know.\n\nRecommendation:\nVerify operational controls preventing this individual from operating company vehicles. Document in HR records. Consider whether the underlying cause (likely MVR issue) has been resolved and the exclu",
+      "type_name": "Text"
+    },
+    {
+      "page": 28,
+      "title": "Auto \u2014 Hired & Non-Owned Auto Coverage",
+      "content": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if employee count grows.",
+      "type_name": "Text"
+    },
+    {
+      "page": 34,
+      "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+      "content": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up part of it ($100K transit, $250K off-premises) \u2014 but for a major election cycle that's not enough. And if it's actual el\n\nRecommendation:\nIncrease Property In Transit limit to at least $500K. Consider scheduled Inland Marine cargo policy specifically for election season transports. For high-value equipment routes, document and schedule",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 11,
+      "title": "Business Auto Policy",
+      "body": [
+        "Bodily Injury definition includes Mental Anguish",
+        "Pg. 54 of 77"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 12,
+      "title": "Business Auto Policy",
+      "body": [
+        "Other Insurance clause is well built.",
+        "Pg. 38 of 77"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 21,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Pg. 28 of 77",
+        "Commercial Auto Policy",
+        "It\u2019s LLC not INC"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [],
+  "master_annotations": {
+    "filename": "Hanover - Auto - 4.1.25-4.1.26.pdf",
+    "page_count": 77,
+    "annot_count": 19,
+    "bookmark_count": 10,
+    "annotations": [
+      {
+        "page": 24,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311120357-07'00'",
+        "mod_date": "D:20260311120356-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          35.4,
+          424.7,
+          394.4,
+          435.9
+        ],
+        "text_under": "LIABILITY $1,000,000 COMBINED SINGLE LIMIT 01"
+      },
+      {
+        "page": 24,
+        "type_num": 2,
+        "type_name": "FreeText",
+        "author": "Bogdan Laza",
+        "subject": "Text Box",
+        "content": "not a great start - Maricopa contract expressly states $2M CSL required - contract DOES NOT state that auto limits can be met via use of an Umbrella. ((states so for GL but not Auto))\r",
+        "creation_date": "D:20260311120404-07'00'",
+        "mod_date": "D:20260311120551-07'00'",
+        "stroke": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          48.4,
+          693.8,
+          475.9,
+          734.4
+        ],
+        "text_under": ""
+      },
+      {
+        "page": 24,
+        "type_num": 3,
+        "type_name": "Line",
+        "author": "Bogdan Laza",
+        "subject": "Line",
+        "content": "",
+        "creation_date": "D:20260311120439-07'00'",
+        "mod_date": "D:20260311120439-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          15.4,
+          425.8,
+          39.5,
+          702.6
+        ],
+        "text_under": ".....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n.....................\n+(\n.1.\n.(\n.1.\n+(\n.1.\n.(\n.1.\n.(\n.1.\n1(\n.1.\n1(\n.1.\n+(\n.\nL\nM\nP\nU\nU\nM\nP\nP\nC\nC\nP\nC\nC\nM"
+      },
+      {
+        "page": 24,
+        "type_num": 4,
+        "type_name": "Square",
+        "author": "Bogdan Laza",
+        "subject": "Rectangle",
+        "content": "",
+        "creation_date": "D:20260311120735-07'00'",
+        "mod_date": "D:20260311120826-07'00'",
+        "stroke": [
+          0.07450869679450989,
+          0.4509739875793457,
+          0.9098049998283386
+        ],
+        "fill": null,
+        "rect": [
+          157.1,
+          414.3,
+          193.8,
+          636.3
+        ],
+        "text_under": "11111111111111111111111111111111111111111111111111111111111111111111\n.....................................................................\n.....................................................................\n.....................................................................\n.....................................................................\n.....................................................................\n.....................................................................\n.....................................................................\n........................................."
+      },
+      {
+        "page": 28,
+        "type_num": 4,
+        "type_name": "Square",
+        "author": "Bogdan Laza",
+        "subject": "Rectangle",
+        "content": "",
+        "creation_date": "D:20260311121214-07'00'",
+        "mod_date": "D:20260311121230-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          17.8,
+          284.9,
+          548.4,
+          535.3
+        ],
+        "text_under": "ADDITIONAL NAMED INSURED ENDORSEMENT\nTHE\nITEM 1. OF THE POLICY DECLARATIONS PAGE, NAMED INSURED IS AMENDED TO INCLUDE ALL OF\nFOLLOWING NAMED INSUREDS APPLICABLE TO THIS POLICY:\nRUNBECK ELECTION SERVICES INC\nRUNBECK INVESTMENTS LLC\nRUNBECK PROPERTIES LLC\nRUNBECK GRAPHICS INC\n2800 S 36TH AVENUE\nPHOENIX, AZ\n2800 S 36TH AVENUE\nPHOENIX, AZ\n2800 S 3600 AVENUE\nPHOENIX, AZ\nRUNBECK COMPANIES 401(K)\nPROFIT SHARING PLAN\nLINCOLN SHIELDS LLC\n2800 S.36TH STREET\nPHOENIX, AZ\nBLACK MOUNTAIN INVESTMENT CO. LLC\n8325 W.HAPPY VALLEY RD,ST 220 PEORIA, AZ"
+      },
+      {
+        "page": 28,
+        "type_num": 2,
+        "type_name": "FreeText",
+        "author": "Bogdan Laza",
+        "subject": "Text Box",
+        "content": "okay... where were these on the CGL and Auto policies?",
+        "creation_date": "D:20260311121242-07'00'",
+        "mod_date": "D:20260311121258-07'00'",
+        "stroke": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          148.6,
+          566.2,
+          256.6,
+          604.2
+        ],
+        "text_under": ""
+      },
+      {
+        "page": 32,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311121632-07'00'",
+        "mod_date": "D:20260311121632-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          317.5,
+          321.5,
+          381.9,
+          331.7
+        ],
+        "text_under": "B. Exclusions"
+      },
+      {
+        "page": 32,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311121635-07'00'",
+        "mod_date": "D:20260311121635-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          333.5,
+          414.9,
+          400.6,
+          425.1
+        ],
+        "text_under": "2. Contractual"
+      },
+      {
+        "page": 32,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311121641-07'00'",
+        "mod_date": "D:20260311121641-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          347.4,
+          429.8,
+          557.8,
+          452.2
+        ],
+        "text_under": "Liability assumed under any contract or agreement."
+      },
+      {
+        "page": 33,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311121714-07'00'",
+        "mod_date": "D:20260311121714-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          69.5,
+          336.7,
+          161.6,
+          346.9
+        ],
+        "text_under": "5. Fellow Employee"
+      },
+      {
+        "page": 38,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311121928-07'00'",
+        "mod_date": "D:20260311121928-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          98.3,
+          322.2,
+          293.9,
+          355.5
+        ],
+        "text_under": "For any covered \"auto\" you don\u2019t own, the insurance provided by this Cov- erage Form is excess"
+      },
+      {
+        "page": 38,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122030-07'00'",
+        "mod_date": "D:20260311122030-07'00'",
+        "stroke": [
+          0.8588259816169739,
+          0.203917995095253,
+          0.14509600400924683
+        ],
+        "fill": null,
+        "rect": [
+          113.4,
+          414.9,
+          293.9,
+          437.1
+        ],
+        "text_under": "Excess while it is connected to a mo- tor vehicle you do not own."
+      },
+      {
+        "page": 38,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122044-07'00'",
+        "mod_date": "D:20260311122047-07'00'",
+        "stroke": [
+          0.2196040004491806,
+          0.8980410099029541,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          98.3,
+          537.5,
+          293.9,
+          582.1
+        ],
+        "text_under": "Regardless of the provisions of Para- graph a. above, this Coverage Form\u2019s Li- ability Coverage is primary for any liabil- ity assumed under an \"insured contract\"."
+      },
+      {
+        "page": 39,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122117-07'00'",
+        "mod_date": "D:20260311122121-07'00'",
+        "stroke": [
+          1.0,
+          0.38430801033973694,
+          0.0
+        ],
+        "fill": null,
+        "rect": [
+          53.5,
+          411.0,
+          293.9,
+          444.3
+        ],
+        "text_under": "C. \"Bodily injury\" means bodily injury, sickness or disease sustained by a person including death resulting from any of these."
+      },
+      {
+        "page": 44,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122200-07'00'",
+        "mod_date": "D:20260311122200-07'00'",
+        "stroke": [
+          1.0,
+          0.38430801033973694,
+          0.0
+        ],
+        "fill": null,
+        "rect": [
+          82.9,
+          270.2,
+          530.7,
+          281.4
+        ],
+        "text_under": "BLANKET WHERE REQUIRED BY WRITTEN CONTRACT 30"
+      },
+      {
+        "page": 47,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122232-07'00'",
+        "mod_date": "D:20260311122244-07'00'",
+        "stroke": [
+          0.2196040004491806,
+          0.8980410099029541,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          62.4,
+          392.4,
+          292.4,
+          401.6
+        ],
+        "text_under": "BLANKET WHERE REQUIRED BY WRITTEN CONTRACT"
+      },
+      {
+        "page": 48,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122254-07'00'",
+        "mod_date": "D:20260311122254-07'00'",
+        "stroke": [
+          0.2196040004491806,
+          0.8980410099029541,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          126.6,
+          314.1,
+          277.5,
+          349.8
+        ],
+        "text_under": "60 days before the effective date of cancellation if we cancel for any other reason."
+      },
+      {
+        "page": 54,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122436-07'00'",
+        "mod_date": "D:20260311122436-07'00'",
+        "stroke": [
+          0.2196040004491806,
+          0.8980410099029541,
+          1.0
+        ],
+        "fill": null,
+        "rect": [
+          323.4,
+          378.9,
+          519.2,
+          489.0
+        ],
+        "text_under": "20. MENTAL ANGUISH Paragraph C. \"Bodily injury\", SECTION V - DEFINITIONS is replaced by the following: C. \"Bodily injury\" means bodily injury, sickness or disease sustained by a person including death or mental anguish resulting from any of these."
+      },
+      {
+        "page": 61,
+        "type_num": 8,
+        "type_name": "Highlight",
+        "author": "Bogdan Laza",
+        "subject": "Highlight",
+        "content": "",
+        "creation_date": "D:20260311122512-07'00'",
+        "mod_date": "D:20260311122515-07'00'",
+        "stroke": [
+          1.0,
+          0.38430801033973694,
+          0.0
+        ],
+        "fill": null,
+        "rect": [
+          71.4,
+          308.1,
+          297.2,
+          359.1
+        ],
+        "text_under": "If we decide not to renew this Policy, we will mail or deliver to the first Named Insured shown in the Declarations written notice of the nonrenewal at least 30 days before the expiration or anniversary date of this Policy."
+      }
+    ],
+    "bookmarks": [
+      {
+        "level": 1,
+        "title": "Additional Named Insured",
+        "page": 28
+      },
+      {
+        "level": 1,
+        "title": "Contractual Liability assumption exclusion",
+        "page": 32
+      },
+      {
+        "level": 1,
+        "title": "Fellow Employee Exclusion",
+        "page": 33
+      },
+      {
+        "level": 1,
+        "title": "Other Insurance - good",
+        "page": 38
+      },
+      {
+        "level": 1,
+        "title": "BI does not include mental anguish",
+        "page": 39
+      },
+      {
+        "level": 1,
+        "title": "30-day NOC - should be 90 at least 60",
+        "page": 44
+      },
+      {
+        "level": 1,
+        "title": "Blanket WOS by contract",
+        "page": 47
+      },
+      {
+        "level": 1,
+        "title": "60-day NOC extension - better",
+        "page": 48
+      },
+      {
+        "level": 1,
+        "title": "BI / Mental Anguish giveback",
+        "page": 54
+      },
+      {
+        "level": 1,
+        "title": "30-day nonrnewal notice",
+        "page": 61
+      }
+    ]
+  },
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-17",
+      "description": "Maricopa $2M CSL fails (umbrella attachment barred for Auto)",
+      "keywords": [
+        "maricopa",
+        "2,000,000",
+        "csl",
+        "combined single limit",
+        "umbrella"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-18",
+      "description": "$500 electronic equipment sublimit",
+      "keywords": [
+        "$500",
+        "electronic equipment",
+        "audio, visual",
+        "461-0155"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 34,
+          "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+          "snippet": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up"
+        }
+      ]
+    },
+    {
+      "gap_id": "GAP-19",
+      "description": "Malina Trujillo named driver exclusion",
+      "keywords": [
+        "malina",
+        "trujillo",
+        "named driver"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 9,
+          "title": "Auto \u2014 Named Driver Exclusion (Malina Trujillo)",
+          "snippet": "[Bad] Auto \u2014 Named Driver Exclusion (Malina Trujillo)\nRisk Score: 6/25\n\nWhat this means:\nThere's a person named Malina Trujillo on your policy who's specifically excluded. If they get behind the wheel of a company car \u2014 even in an emergency \u2014 your auto policy won't cover the acci"
+        }
+      ]
+    },
+    {
+      "gap_id": "GAP-20",
+      "description": "Lincoln Shields LLC + Black Mountain on Auto, missing from Umbrella",
+      "keywords": [
+        "lincoln shields",
+        "black mountain",
+        "475-0174"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-21",
+      "description": "Auto missing 401-1235 Designated Entity NOC",
+      "keywords": [
+        "401-1235",
+        "designated entity",
+        "noc to designated"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-01",
+      "description": "Inc-vs-LLC entity-type mismatch",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "entity type"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 28,
+          "title": "Auto \u2014 Hired & Non-Owned Auto Coverage",
+          "snippet": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if em"
+        },
+        {
+          "page": 34,
+          "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+          "snippet": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up"
+        }
+      ]
+    },
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 28,
+          "title": "Auto \u2014 Hired & Non-Owned Auto Coverage",
+          "snippet": "[Good] Auto \u2014 Hired & Non-Owned Auto Coverage\n\nWhat this means:\nHired and non-owned auto coverage is in place \u2014 meaning when employees rent cars for travel or use personal vehicles for business, your auto policy responds. Good.\n\nRecommendation:\nMaintain. Consider increasing if em"
+        },
+        {
+          "page": 34,
+          "title": "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)",
+          "snippet": "[Bad] Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)\nRisk Score: 9/25\n\nWhat this means:\nIf your truck rolls over and ballots are destroyed mid-transit, your auto policy doesn't pay because the cargo is in your care, custody, and control. Your property policy picks up"
+        }
+      ]
+    }
+  ]
+}

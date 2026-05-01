@@ -1,0 +1,58 @@
+{
+  "chunks": [
+    {
+      "chunk": "core-liability",
+      "label": "Chunk 1 - Core liability stack (Commercial / Security Guards / Auto / Umbrella)",
+      "policy_count": 4,
+      "prompt_chars": 220095,
+      "response_chars": 58,
+      "elapsed_s": 1800.2,
+      "ok": false,
+      "cache_read_input_tokens": null,
+      "input_tokens_total": null,
+      "output_tokens_total": null
+    },
+    {
+      "chunk": "pro-cyber",
+      "label": "Chunk 2 - Professional services / cyber (Pro E&O / Excess Tech E&O / Cyber)",
+      "policy_count": 3,
+      "prompt_chars": 145555,
+      "response_chars": 142564,
+      "elapsed_s": 780.3,
+      "ok": true,
+      "cache_read_input_tokens": null,
+      "input_tokens_total": null,
+      "output_tokens_total": null,
+      "findings_total": 64,
+      "findings_ugly": 9,
+      "findings_bad": 16,
+      "findings_review": 24,
+      "findings_good": 15
+    },
+    {
+      "chunk": "ml-wc",
+      "label": "Chunk 3 - Management Liability + Workers' Comp",
+      "policy_count": 2,
+      "prompt_chars": 166146,
+      "response_chars": 132454,
+      "elapsed_s": 779.3,
+      "ok": true,
+      "cache_read_input_tokens": null,
+      "input_tokens_total": null,
+      "output_tokens_total": null,
+      "findings_total": 53,
+      "findings_ugly": 7,
+      "findings_bad": 14,
+      "findings_review": 12,
+      "findings_good": 20
+    }
+  ],
+  "merge_stats": {
+    "chunks_with_findings": 2,
+    "pre_merge_total": 117,
+    "post_merge_total": 117,
+    "duplicates_collapsed": 0
+  },
+  "elapsed_total_s": 3359.9,
+  "metrics_capture_note": "cache_read_input_tokens / input_tokens_total / output_tokens_total are None because the runner uses --output-format text. To capture these, switch run_claude to --output-format json (with envelope unwrap) or stream-json (with line-by-line parsing) and read the usage block."
+}

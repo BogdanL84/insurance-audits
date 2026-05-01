@@ -1,0 +1,198 @@
+{
+  "filename": "Redacted2024-26 Management Liability Policy-AUDITED.pdf",
+  "page_count": 110,
+  "annot_count": 6,
+  "bookmark_count": 10,
+  "annotations": [
+    {
+      "page": 15,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su",
+      "subject": "",
+      "content": "[Bad] D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su\nRisk Score: 9/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 60,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "subject": "",
+      "content": "[Good] Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 73,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv",
+      "subject": "",
+      "content": "[Bad] D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv\nRisk Score: 12/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 74,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+      "subject": "",
+      "content": "[Good] Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.18000000715255737,
+        0.49000000953674316,
+        0.20000000298023224
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 86,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent",
+      "subject": "",
+      "content": "[Ugly] D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent\nRisk Score: 12/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.7200000286102295,
+        0.10999999940395355,
+        0.10999999940395355
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 107,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye",
+      "subject": "",
+      "content": "[Bad] D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye\nRisk Score: 12/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.8999999761581421,
+        0.4000000059604645,
+        0.0
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Critical (Ugly)",
+      "page": 86
+    },
+    {
+      "level": 3,
+      "title": "D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent",
+      "page": 86
+    },
+    {
+      "level": 2,
+      "title": "Needs Attention (Bad)",
+      "page": 107
+    },
+    {
+      "level": 3,
+      "title": "D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye",
+      "page": 107
+    },
+    {
+      "level": 3,
+      "title": "D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv",
+      "page": 73
+    },
+    {
+      "level": 3,
+      "title": "D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su",
+      "page": 15
+    },
+    {
+      "level": 2,
+      "title": "Compliant (Good)",
+      "page": 60
+    },
+    {
+      "level": 3,
+      "title": "Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "page": 60
+    },
+    {
+      "level": 3,
+      "title": "Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+      "page": 74
+    }
+  ]
+}

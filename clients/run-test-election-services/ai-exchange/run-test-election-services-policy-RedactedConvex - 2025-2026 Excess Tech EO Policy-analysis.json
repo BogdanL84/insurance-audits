@@ -1,0 +1,185 @@
+{
+  "source_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Tech E&O",
+  "is_package": false,
+  "coverage_parts": [
+    "Excess Professional Liability (Follow Form Excess Tech E&O)"
+  ],
+  "is_primary": false,
+  "named_insured": "Runbeck Election Services, LLC",
+  "named_insured_entity_type": "LLC",
+  "additional_named_insureds": [],
+  "additional_insureds": [],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": "No Broad Form Named Insured endorsement on this excess policy. Per Section V.B (Definitions), 'Insured' means any person or organization that is an Insured pursuant to the Followed Policy — i.e., the Insured definition follows form to the underlying Gemini policy."
+  },
+  "carrier": "Convex Insurance UK Limited (surplus lines / non-admitted in AZ)",
+  "policy_number": "XPL000040-0425",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "policy_limit": 5000000,
+    "attachment_point": 5000000,
+    "structure_note": "$5M xs $5M — sits excess of Gemini Insurance Company primary Tech E&O policy VIPL055885/VIPL056495 ($5M limit, $0 attachment, retro 03/27/2017). Total Tech E&O tower: $10M."
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": null,
+    "for_other_reasons": null,
+    "page_ref": "Not specified in policy text — follows form to Gemini primary per Section I (Coverages) and Section IV.C (Changes to Followed Policy)"
+  },
+  "endorsements": [
+    {
+      "form_number": "XPL-001 (01/24)",
+      "name": "Declarations Page",
+      "page": 6,
+      "notes": "$5M policy limit / $5M attachment point. Follow form to Gemini VIPL056495 (note: schedule on pg 13 lists policy number VIPL055885 — minor discrepancy between Dec page and schedule, both Gemini)."
+    },
+    {
+      "form_number": "CUS-001 (07/22)",
+      "name": "Schedule of Forms",
+      "page": 9,
+      "notes": "Lists all forms attached."
+    },
+    {
+      "form_number": "XPL-300 (07/22)",
+      "name": "Follow Form Excess Professional Liability Coverage Part",
+      "page": 10,
+      "notes": "Core coverage form. Conditional follow form — follows Followed Policy 'except as otherwise provided herein or endorsed.' If any underlying is more restrictive, this policy follows the more restrictive provision."
+    },
+    {
+      "form_number": "XPL-301 (01/23)",
+      "name": "Schedule of Underlying Insurance",
+      "page": 13,
+      "notes": "One underlying: Gemini Insurance Company VIPL055885, $5M limit, $0 attachment, retro 03/27/2017."
+    },
+    {
+      "form_number": "CUS-002 (07/22)",
+      "name": "Sanction Limitation and Exclusion Clause",
+      "page": 14,
+      "notes": "Standard OFAC/UN/EU/UK/US sanctions exclusion."
+    },
+    {
+      "form_number": "CUS-003 (01/25)",
+      "name": "Service of Suit",
+      "page": 15,
+      "notes": "Service via Troutman Pepper Locke LLP, 875 Third Avenue, NY. Convex submits to US courts of competent jurisdiction."
+    },
+    {
+      "form_number": "XPL-002 (04/24)",
+      "name": "Notice of Claims",
+      "page": 17,
+      "notes": "Claims notice to Reserv Claims Analysis LLC, 99 Wall Street #5202, New York NY 10005 / convex.claims@reserv.com / +1 646 956 5222."
+    },
+    {
+      "form_number": "XPL-502 (01/23)",
+      "name": "Retroactive Date Endorsement",
+      "page": 18,
+      "notes": "Retroactive Date: 03/27/2017 — matches the underlying Gemini retro date. No retro gap."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Conditional Follow Form — 'more restrictive' clause",
+      "form_number": "XPL-300 §I",
+      "page": 10,
+      "impact": "Per Section I: 'If any Underlying Policy includes any more restrictive coverage, terms, definitions, exclusions, conditions, or limitations, then this policy will follow the more restrictive provisions of any Underlying Policy.' This is the standard conditional follow form trap — every exclusion or carve-out on the underlying Gemini Tech E&O flows up. If Gemini has, e.g., an election technology carve-out, BIPA carve-out, or contractual liability limitation, those flow up to this excess layer too."
+    },
+    {
+      "name": "Sublimits in underlying do NOT extend to this policy",
+      "form_number": "XPL-300 §II",
+      "page": 10,
+      "impact": "Section II: 'If any Underlying Policy grants coverage subject to a sublimit of liability, this policy shall not afford such coverage, however this policy shall recognize any reduction or exhaustion of the Attachment Point by payments with respect to such coverage pursuant to that Underlying Policy.' Translation: any sublimited coverage on Gemini (e.g., regulatory defense sublimit, breach response sublimit, BIPA sublimit) is NOT extended by this excess policy — but those sublimit payments DO erode the $5M attachment. Net effect: client pays for sublimited coverage twice (no excess) but still depletes the attachment."
+    },
+    {
+      "name": "Maintenance of Underlying Insurance",
+      "form_number": "XPL-300 §IV.D",
+      "page": 11,
+      "impact": "If insured fails to maintain underlying or renews/replaces with lesser coverage, Convex is liable only as if the underlying had been fully maintained. Failure to maintain does NOT void the policy but the excess attaches as if the underlying limit were intact — the insured eats the gap. Contrast with the 'maintenance violation = no coverage' trap on some umbrellas."
+    },
+    {
+      "name": "Unimpaired Underlying Limits warranty",
+      "form_number": "XPL-300 §IV.F",
+      "page": 12,
+      "impact": "Insured warrants total underlying limits unimpaired at inception. If impaired, this policy applies as if unimpaired (insured eats the gap). For non-concurrent periods, only claims covered during this policy's period count toward exhaustion of underlying aggregates — insured retains liability for resulting gaps."
+    },
+    {
+      "name": "Sanction Limitation and Exclusion (OFAC)",
+      "form_number": "CUS-002",
+      "page": 14,
+      "impact": "Standard sanctions exclusion — no payment if it would expose Convex to UN/EU/UK/US sanctions. Low concern for domestic election services unless international expansion."
+    },
+    {
+      "name": "Surplus Lines / Non-Admitted Carrier — AZ Guaranty Fund Exclusion",
+      "form_number": "Dec page (AZ disclosure)",
+      "page": 6,
+      "impact": "Convex Insurance UK Limited is non-admitted in AZ. Per A.R.S. §20-401.01(B)(1), if Convex becomes insolvent, no AZ Property and Casualty Guaranty Fund protection applies. Informational note — surplus lines is the appropriate market for this layer; carrier is part of the Convex Group (Bermuda parent, UK FCA/PRA regulated). Verify AM Best rating against Sacramento County A-VII / Maricopa County B++ minimums."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": false,
+    "additional_insured_scheduled": false,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "umbrella_excess_specific": {
+    "follow_form_type": "Conditional follow form (excess Professional Liability only — NOT a commercial umbrella)",
+    "follow_form_clause_page": 10,
+    "follows_form_to": "Gemini Insurance Company VIPL055885/VIPL056495 (primary Tech E&O / Miscellaneous Professional Liability)",
+    "schedule_of_underlying": [
+      {
+        "line": "Tech E&O / Miscellaneous Professional Liability",
+        "carrier": "Gemini Insurance Company",
+        "policy_number": "VIPL055885 (schedule) / VIPL056495 (Dec page Item 5) — confirm correct number",
+        "limit": 5000000,
+        "attachment": 0,
+        "retro_date": "2017-03-27"
+      }
+    ],
+    "schedule_blank_lines": "N/A — single-line excess (Tech E&O only). This policy does NOT excess GL, Auto, EL, or any other liability line — it ONLY sits over the Gemini primary Tech E&O.",
+    "coverage_b_direct_exclusions": "N/A — pure follow-form excess, no separate Coverage B umbrella grant. No drop-down provision.",
+    "stacked_exclusion_endorsements": [],
+    "maintenance_of_underlying_clause": "Section IV.D, page 11 — failure to maintain does NOT void; policy applies as if underlying fully in force (insured eats the gap)",
+    "horizontal_exhaustion": "N/A — vertical follow-form excess over a single primary E&O policy",
+    "drop_down_for_uncollectability": "Expressly excluded — Section II: 'The risk of uncollectability with respect to any Underlying Policy or Underlying Insurers for any reason is expressly retained by the Insured and is not covered under this policy.'",
+    "defense_costs_inside_or_outside_limits": "Follows form to Followed Policy (Section III.B). Verify Gemini primary treatment.",
+    "duty_to_defend_when_underlying_exhausted": "Yes — Section IV.B.2: 'We will have the right and duty to defend any claim made or suit brought or proceeding instituted against an Insured to which this policy applies if the applicable limits of Underlying Policies have been exhausted.'",
+    "punitive_damages": "Follow form (no separate carve-out)",
+    "professional_liability_giveback": "N/A — this IS the Professional Liability tower (excess Tech E&O), not a commercial umbrella with a PL carve-back",
+    "named_insured_consistency": "Named Insured 'Runbeck Election Services, LLC' matches the underlying Gemini schedule. Insured definition follows form (Section V.B)."
+  },
+  "contract_compliance_notes": {
+    "sacramento_county_satisfaction": {
+      "applies_to_e_and_o_minimum": "Sacramento §III.E requires $1M/$1M Professional Liability. Gemini primary $5M alone exceeds the minimum; this Convex excess provides additional $5M for total $10M Tech E&O tower — strongly exceeds the $1M minimum.",
+      "umbrella_may_satisfy_e_and_o": "Sacramento §II.E EXPRESSLY EXCLUDES Professional Liability from coverages umbrella may follow form over. However, this is NOT a commercial umbrella — it is a dedicated Excess Professional Liability policy specifically designed to sit over the primary E&O. Convex excess is therefore a permissible vehicle for stacking on the E&O tower.",
+      "retro_date_compliance": "Sacramento §V.A requires retro 'on or before the date of the Agreement or beginning of Agreement performance.' Convex retro 03/27/2017 matches Gemini primary — verify this predates each Sacramento contract effective date.",
+      "erp_compliance": "Sacramento §V.C requires minimum 1-year ERP. ERP availability follows form to Gemini — verify on primary."
+    },
+    "maricopa_county_satisfaction": {
+      "applies_to_e_and_o": "Maricopa §8.2.3 requires retro before contract effective + 2-year ERP for any claims-made line. Convex retro 03/27/2017 is well before any 2024-2026 Maricopa contract. ERP follows form to Gemini — verify primary policy provides 2 years.",
+      "carrier_rating_compliance": "Maricopa §8.2.1 requires AM Best B++. Convex Insurance UK Limited — verify AM Best rating; UK PRA/FCA-regulated subsidiary of Convex Re (Bermuda). Need to confirm AM Best rating meets B++ (and Sacramento A-VII).",
+      "no_e_and_o_specific_minimum": "Maricopa §8.2 does not specify a Professional Liability minimum limit; only Cyber ($5M) is specified. The $10M Tech E&O tower comfortably exceeds any unwritten expectation."
+    }
+  },
+  "key_observations": [
+    "FOLLOW-FORM EXCESS ONLY — this policy provides $5M xs $5M of Professional Liability over Gemini primary Tech E&O. It is NOT a commercial umbrella and does NOT excess GL, Auto, EL, or Cyber. The Tech E&O tower is now $10M total.",
+    "RETRO DATE SOLID — 03/27/2017 retro on Convex matches Gemini primary. No retro gap at the excess layer. For an election technology company that has been in business 50+ years and serves 90M+ voters, this 2017 retro likely covers the contracts in this audit (Sacramento, Maricopa, LA County).",
+    "POLICY NUMBER DISCREPANCY — Dec page Item 5 shows Gemini policy VIPL056495; Schedule of Underlying Insurance (XPL-301, page 13) shows VIPL055885. Both Gemini, but the policy number doesn't match. Flag for housekeeping correction with the carrier — minor administrative defect, not coverage-threatening.",
+    "CONDITIONAL FOLLOW FORM TRAP — Section I states this policy follows 'the more restrictive' of the underlying when there's a conflict. Any restrictive endorsement on Gemini primary (e.g., a restrictive election-services definition, BIPA exclusion, contractual liability carve-back) flows up to and limits this excess. Audit Gemini primary for restrictive endorsements; the restrictions there ARE the restrictions here.",
+    "SUBLIMITED COVERAGES NOT EXTENDED — Section II expressly states: any sublimited coverage on Gemini is NOT afforded by this excess. So if Gemini has, say, a $250K regulatory defense sublimit, the Convex excess will NOT add a second $250K — it will only attach over the FULL $5M attachment, but those sublimited dollars on Gemini still erode the attachment. This is standard for follow-form excess but worth flagging for CFO.",
+    "SURPLUS LINES / NON-ADMITTED IN AZ — Convex UK Ltd is non-admitted; AZ Guaranty Fund does not apply. Informational only. The excess tech E&O tower is appropriately placed in the surplus lines market — admitted carriers rarely write $5M xs $5M tech E&O for election technology firms.",
+    "NO ADDITIONAL INSURED / NO WAIVER OF SUBROGATION / NO P&NC — these are not applicable to a follow-form excess Professional Liability policy (and contracts uniformly carve E&O out of AI/WoS requirements). Sacramento §II.E and Maricopa §8.2.7-§8.2.8 both expressly exclude E&O from AI requirement. Compliant.",
+    "MAINTENANCE OF UNDERLYING — Section IV.D is favorable: failure to maintain does NOT void the policy; instead, Convex acts as if underlying were intact (insured eats the gap). This is the better of the two common maintenance constructions per the KB Book of Solutions Umbrella material.",
+    "DUTY TO DEFEND ON DROP-DOWN — Section IV.B.2 grants right AND duty to defend once underlying exhausts. Strong provision."
+  ],
+  "_source_file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf"
+}

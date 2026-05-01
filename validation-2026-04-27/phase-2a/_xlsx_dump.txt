@@ -1,0 +1,2483 @@
+=== Workbook: Template_Contract_Analysis.xlsx ===
+Sheet names: ['General All Policies', 'CGL', 'CA', 'CP - na', 'UMB', 'IM - na ', 'WC', 'Misc - na', 'Hidden Math', 'Hidden Math - Maybe', 'Hidden Math - Maybe B&B', 'Current Policy Output', 'B&B Policy Output', 'AS Hidden']
+
+
+================================================================================
+SHEET: 'General All Policies'  (50 rows × 17 cols)
+================================================================================
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Misc. Risk Mitigation Factors |  |  | Current Issue? | Probability | CGL | Property | Auto | Umbrella | Impact | Why is this an issue (or not)? | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue? | Notes
+  R 11: 1 | 90 day notice of cancellation |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | Unintentional Errors and Omissions |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | Named insureds - list for each policy and highlight any that are missing and should not be missing. |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Notice and Knowledge of Claims - all policies except umbrella |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Waiver of Subrogation |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 25: 15 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 26: 16 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 27: 17 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 28: 18 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 29: 19 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 30: 20 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 31: 21 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 32: 22 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 33: 23 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 34: 24 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 35: 25 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 36: 26 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 37: 27 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 38: 28 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 39: 29 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 40: 30 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 41: 31 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 42: 32 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 43: 33 |  |  |  | (Blank) | (Blank) |  |  |  |  | (Blank) |  |  |  |  | (Blank)
+  R 45:  | Total Issues to Discuss: |  |  |  | 0
+  R 46:  |  |  | Severity of Issues:
+  R 48:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 50:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'CGL'  (1048576 rows × 13 cols)
+================================================================================
+  R  1:  | Affinium Security |  |  |  |  |  |  |  |  |  | (Blank)
+  R  2:  | Date Reviewed: | DD-MM-YYYY
+  R  3:  | Company Reviewed:
+  R  4:  | Ex-Date: | DD-MM-YYYY
+  R  5:  | Policy/Form Number:
+  R  9:  | General Liability Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | (Blank)
+  R 10: 1 | Additional Insured: Does the policy include blanket AI endorsement? Is the AI form utilizing the words "arising from" and does the form or forms include ongoing operations and products or completed operations? Does the AI form contain any exclusions or negative conditions? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 11: 2 | Care Custody and Control - Does your Insured have or could they have property of others in their care custody and/or control? (e.g., A machine shop is working on someone's equipment; a technology company is testing their software that runs a third party's equipment, or a contractor is installing equipment that belongs to a third party?) |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 3 | Compliance: Are the insurance policies in compliance with bank covenants, master deeds, contracts and/or leases? It is best to obtain copies of these documents and perform a review. This item is closely related to items 1 & 5 but more from the aspect of reviewing the contracts and making certain they are funded by the insurance policy. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 4 | Composite Rating, is there an opportunity to use composite rating to the benefit of the customer? You have an opportunity to be very creative with this criteria - accounts can be won on this single concept. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 5 | Contract Review procedure? Remember contracts include purchase orders and invoice Terms and Conditions. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 6 | Contractual Liability - Part 1 Does the policy have the proper wording for an Insured contract and if so has it been altered, typically (ISO forms) with the amendment of insured contract definition? As part 2, is the policy set up to anticipate, additional insured, primary and non-contributory and waiver of subrogation contract requirements automatically triggered by written contract (blanket)? Note relative to part 1 - the standard ISO form includes contractual liability - it is only problematic when the Iso form, CG 00 01 is endorsed, typically with the amendment of insured contract definition. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 7 | Contractual liability for personal and advertising injury -have we endorsed this coverage back on to the policy? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 8 | Coverage Territory - Is the insured's product sold outside the USA or Canada or "could" their product end up outside the US territories/possessions, or Canada? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 9 | Cyber Coverage - first party and third party. If this is endorsed on the CGL, have coalition help you with a coverage analysis - the GL endorsements for Cyber pale in comparison to a stand alone form. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 10 | Damage to premises - You must calculate the prospect's exposure versus the policy sub-limit. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 11 | Damages to Premises - (Fire Legal Liability) damage to premises extension to include other perils. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 12 | Deductibles - What are any and all deductibles and do they make sense? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 13 | Duty to Defend - Do all policies include the duty to defend clause (most will, D&O/EPL will vary)? Secondarily - Is it important for the Insured to be able to pick their own attorney? If so we must negotiate this point before we place cover. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 14 | Employer Benefit Liability (EBL) Coverage - Does the insured have EBL coverage?  Is there a retro date issue? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 15 | Employment Practices Liability Insurance - is EPLI included, what perils does the definition of wrongful acts include?  Can you select your own attorney? PAY SPECIAL ATTENTION TO COVERAGE FOR WAGE AND HOUR CLAIMS - at a minimum defense coverage only. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 25: 16 | Endorsements - List every endorsement under the "why" column. Highlight the problematic endorsements in red and insert a comment as for the explanation as well as inserting the page number. Use the top 50 most horrible endorsement form to help you. The operative word in the preceding sentence is "help" you must read the endorsement, critical. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26: 17 | Environmental, does the prospect/insured purchase environmental coverage/exposure?  If they do, what's covered and is the limit appropriate? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 27: 18 | Errors & Omissions -  ¶ A professional type insurance that protects companies and individuals against claims made by clients for defective work and/or negligent actions. GCL coverage is triggered by bodily injury or property damage to a third patty caused by an occurrence. Thus if there is no BI or PD there is no coverage. E&O is triggered by a wrongful act, such as an error in the design or fabrication of a product. Coverage is mostly considered for the construction and manufacturing industry, although coverage is not limited to these industries. ¶ |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 28: 19 | Faulty Work - Does the policy provide the giveback for subcontractors work? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 29: 20 | Fellow Employee Coverage - Is the Fellow Employee Exclusion deleted? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 30: 21 | Hired and Non-owned Coverage - is this included on the CGL as needed, when the insured does not have an auto policy. Does the insured have a WC ghost policy exposure? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 31: 22 | Leased workers and temporary workers - does or could the insured lease workers ? And if so, have we requested the Lessor to add the alternate employers endorsement to their policy and or deleted leased workers as an employee on our insured's CGL form? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 32: 23 | Mental Anguish - Is it included in the definition of Bodily Injury? We want mental anguish in and of itself - we don't want it connected to bodily injury. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 33: 24 | Named Insured - It is best to see the insured's financial report in order to discover all entities.  You may also want to look at an org. chart.  Does the policy have broad wording to include all subsidiaries? Joint Ventures - Is the insured involved in any joint ventures, teaming agreements and or partnerships  and if so are they properly listed on the policy? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 34: 25 | Notice & Knowledge - Is the policy wording endorsed so notice of an occurrence is only considered when an officer, the person responsible for insurance, and/or the risk manager is notified? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 35: 26 | Per Location  and or Per Project Aggregate - does the insured have this endorsement? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 36: 27 | Primary and Non-Contributory - Is primary and non-contributory in favor of the AI included within the Additional Insured form or on a separate endorsement and is the wording best practices? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 37: 28 | Product Recall - does the insured have this coverage? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 38: 29 | Professional Coverage -A type of liability coverage designed to protect traditional professionals (e.g., accountants, attorneys) and quasi-professionals (e.g., real estate brokers, consultants) against liability incurred as a result of errors and omissions in performing their professional services. Although there are a few exceptions (e.g., physicians, architects, and engineers), most professional liability policies only cover economic or financial losses suffered by third parties, as opposed to bodily injury (BI) and property damage (PD) claims. This is because the latter two types of loss are typically covered under commercial general liability (CGL) policies. The vast majority of professional liability policies are written with claims-made coverage triggers. In addition, professional liability policies contain what are known as "shrinking limits," meaning that unlike CGL policies (where defense costs are paid in addition to policy limits), the insurer's payment of defense costs reduces available policy limits. Accordingly, when attempting to determine appropriate policy limits, insureds must consider the fact that because defense costs are often a high proportion of any claim settlement or judgment, they must usually purchase additional limits. The most common exclusions in professional liability policy forms are for BI, PD, and intentional/dishonest acts. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 39: 30 | Stop Gap - does the prospect have coverage under the CGL or WC? Do they have the exposure or could they have it regardless of their location? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 40: 31 | Total Pollution Exclusion - is this exclusion endorsed on to the policy? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 41: 32 | Tria - Does the insured buy terrorism and has it been explained thoroughly. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 42: 33 | Waiver of subrogation - does the policy have the correct wording and is it blanket? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 44:  | Total Issues to Discuss: |  |  |  | 0
+  R 45:  |  |  | Severity of Issues:
+  R 47:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 49:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+  R1048576:  |  |  |  |  |  |  |  |  |  |  | (Blank)
+
+================================================================================
+SHEET: 'CA'  (35 rows × 13 cols)
+================================================================================
+  R  2:  | Affinium Security
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Commercial Auto Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 | Additional Insured status - Automatic? Automatic Waiver of Subrogation? Primary and Non-contributory? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | Bodily injury including Mental Anguish? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | Broad Named Insured as well as all Named Insureds all listed |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Lease Gap coverage. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Drive Other Car - Including no-fault as applicable? You would like this cover on the broadest basis possible. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 | Employee as Insured's CA 9933 & Employee Hired Autos CA 2054. These coverages can be viewed as a positive and a negative - the insured must have this information to make the best decision for them. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 | Endorsements - List all endorsements and highlight any that are problematic. Color code problematic endorsements as red with an explanation and include the relevant page number. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 | Environmental Exposures - are there any? Does the policy include the limited pollution endorsement as a minimum? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 | Fellow Employee Exclusion, is it deleted? Does the insured want it deleted? This coverage can be viewed as a positive and a negative - the insured must have this information to make the best decision for them. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 | Hired Non-Owned (including liability and PD). Applicable to those insureds without an auto exposure such as a condo. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 | For vehicles in no-fault states has the insured ever been presented all the optional coverage with the pros and cons? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 | Mobile Equipment - What is considered an "auto" and what is considered "mobile equipment"? Are there items not scheduled on the auto that should be? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 | Notice and Knowledge. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 | Ownership of Vehicles - Who owns the vehicles? If personally owned or leased - We need a copy of the lease agreement. Also, if personally owned,  the CA 9916 or Employee As Lessor CA 9947 are needed, depending on whether or not the Lessor/Owner is an employee or not. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 25: 15 | Parked Vehicles - Are there a group of vehicles parked close together whereas the Insured would benefit from an aggregate deductible in the event of a catastrophic loss, such as fire or wind that damages more than one vehicle? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26: 16 | Symbols - you are looking for 1 and 2 versus 7. Additionally are there any examples of mobile equipment that are subject to any motor vehicle law that needs to be scheduled? Also, please note that symbols 2,8&9 are not equivalent to symbol 1. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 27: 17 | Temporary & Leased Workers? We need to make sure that the definition of an "employee" is modified to exclude "leased" workers. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 28: 18 | Uninsured / Underinsured - Does the Insured understand what they are buying and how much it costs, especially when they have full policy limits? Does the insured understand how their own personal insurance may interact with their commercial Insurance UI or UM limit? This coverage can be viewed as a positive and a negative - the insured must have this information to make the best decision for them. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 29:  |  |  |  | (Blank) | (Blank)
+  R 30:  | Total Issues to Discuss: |  |  |  | 0 |  | 0
+  R 31:  |  |  | Severity of Issues:
+  R 33:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 35:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'CP - na'  (48 rows × 13 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Property Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 | Agreed Value - Does the contract include agreed value wording? Does the policy include a coinsurance provision? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | Back Up of Sewers & Drains, does the policy give coverage back and  what are the limits? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | BI - Dependent Properties - Does the policy include coverage? What are the limits? Is it suppliers and customers? Are there any natural event exclusions? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Blanket Coverage - What property exposure are included and/or not included in the blanket? If we can't get full blanket - does a margin clause make sense? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Business Interruption (BI) - what is the BI limit? Is ordinary payroll covered? Does the coverage form include Extra Expense? What is the extended period of indemnity? Is flood covered as a peril to trigger BI? Is ordinance or law covered as a peril to trigger BI? What is the waiting period. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 | Claim preparation fees? Are the limits adequate. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 | Contractors Equipment - Does the insured have a floater / Builders Risk / installation floater? Compare terms to BOS? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 | Debris Removal: What is the sub-limit and what is the additional limit? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 | Deductibles - Are you paying for something that you are not using? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 | Does the insured have Personal Property of others in their care custody and control and is the limit and terms adequate? Is the optional valuation for personal property of others triggered? Did you review  property not covered? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 | Earthquake - Does the insured have quake coverage? What are the limits? What is the deductible? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 | EDP: Coverage including BI? Also, what are the limits for specific EDP cover? The importance of separate EDP increases relative to the insured's dependency upon EDP as relates to their revenue and or profit. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 | Employee Dishonesty/Forgery or alteration /Social Engineering/Fraudulent Transfer of Funds/Third party Crime. If under a separate policy, just indicate so and the review can be separate. Often some crime coverage can be found under the property policy. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 | Endorsements - List all endorsements and highlight any that are problematic. Color code problematic endorsements as red with an explanation and include the relevant page number. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 25: 15 | Voluntary Parting and unauthorized Instructions. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26: 16 | Flood including BI - Do they have coverage? What are the limits? What is the deductible? If flood is provided by the NFIP then BI is not covered under the property policy when caused by flood. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 27: 17 | Insuring to Value - What is the replacement cost per sq. foot? What is Marshal and Swift calculation?  How did the client calculate their Business personal property? 🔍🔦 |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 28: 18 | Inventory - Do inventory values fluctuate? Do we need a reporting form or peak season endorsement? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 29: 19 | Mechanical Breakdown Coverage - Is MB included, what are the terms? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 30: 20 | Miscellaneous Unnamed Location (off premises property)- If covered, what are the limits? What perils are covered, what perils can we add, what does the lease require if applicable? Are there any restrictions to this coverage? For flood and quake perils can we add, with some limitations on what zones are acceptable? For organization where newly aquired is important, ask them, make sure these limits are as high as practical/possible. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 31: 21 | Ocean Cargo - Does the insured  ship overseas or outside the coverage territory?🔍🔦 |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 32: 22 | Off Premises Power Interruption - Is  direct and indirect coverage provided. What are the sub-limits? Are overhead transmission lines covered? Are the mechanical breakdown exposures covered? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 33: 23 | Ordinance or law - Does the prospect have all 4 coverages and are the limits adequate? If flood is insured under NFIP, then O&L caused by flood is not covered under the property policy. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 34: 24 | Pollution Clean Up - are the limits sufficient for the exposure?🔍🔦 Does the insured need an environmental clean up policy? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 35: 25 | Coverage modifications: 1-Is there property Not Covered - that should be covered? 2-Are improvements and betterments covered for the correct value at leased locations? 3 - Does the policy have a temperature and humidity exclusion and can we modify it? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 36: 26 | Protective Safeguards - is there a protective safeguard endorsement included, what are the safeguards listed and does the insured have the safeguards as well as being aware of the safeguard conditions? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 37: 27 | Spoilage / Consequential - Does the insured have the cover/exposure and if so what are the terms/limits? These exposures can be hard to think of - use your imagination. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 38: 28 | Time Element Deductible - Are there any and what are they and can they be reduced? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 39: 29 | Transit - Is the limit adequate? How is property being shipped? Is contingent liability included? Do we need a separate policy. Is the coverage broad? Are all conveyances included? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 40: 30 | Vacancy Restrictions - What are terms? Could the insured have a vacancy? Does the insured know what the restrictions are? Do we need a vacancy permit. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 41: 31 | Waiver of subrogation - see General tab. For proprety this is often built in |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 43:  | Total Issues to Discuss: |  |  |  | 0
+  R 44:  |  |  | Severity of Issues:
+  R 46:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 48:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'UMB'  (31 rows × 13 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Umbrella Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 | Endorsements, list each one and highlight anything problematic and reference the applicable page number. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | Exclusions and Non follow form exclusions or endorsements that are different, unique to the umbrella and/or broader than the underlying. You must note these. At first this RMF seems daunting, but with practice it gets easier. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | 1-Horizontal Limit Exhaustion/Primary and Non-Contributory - Does the "other insurance" clause within the condition section of the policy create a primary/non-contributory issue for an Additional Insured named under the primary and umbrella? 2-Transfer of Rights of recovery/Waiver of subrogation follow form. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Insureds: 1) Is the Additional Insured - follow form, or are conditional exceptions taken? 2) Are named insureds listed the same as in the underlying? Do the named insured after be listed the same as the primary; that is, some umbrella do follow form for. named insureds. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Limits - Is Defense inside the limit versus outside the limit? How does your umbrella compare? Typically this PCT will be discovered within E&S policies and not within standard market policies. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 | Maintenance of underlying insurance. Must the insured notify the carrier of any underlying changes? Does the insured know this? What is the penalty for not complying - this needs to be defined. If failure to maintain invalidates the umbrella - Houston we have a problem. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 | Notice and knowledge. Is the policy endorsed to limit this condition to the person responsible to maintain insurance? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 | Per Project Aggregate or Per Location - Do they have these terms within their policy?s Many umbrellas do not have a follow aggregate - which can be problematic when required by contract. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 | Professional Liability - Does the PL endorsement include a means and methods giveback and/or is it broader than the primary? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 | Punitive damages, are they excluded? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 | Right and Duty - Does the policy state that the carrier has the right and duty to defend when the limits are exhausted in the underlying policy? Typically this PCT will be discovered within E&S policies and not within standard market policies. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 | Total Pollution Exclusion - is it endorsed or part of the policy? There are no givebacks under the total pollution exclusion endorsement. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 | Underlying Policies - Are they all listed, including the foreign liability? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 | Specific follow form concerns - Additional Insured, Named Insured, proffessional |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26:  | Total Issues to Discuss: |  |  |  | 0 |  | 0
+  R 27:  |  |  | Severity of Issues:
+  R 29:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 31:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'IM - na '  (31 rows × 13 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Inland Marine Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 | Automatic Waiver of Subrogation as required by written contract. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | Blanket Installation Floater Contractor - You can also review this form under the misc. section of this analysis and note any deficiencies. Are named insureds listed the same? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | Borrowed or Loaned equipment minimum limit of $50k? Leased or Rented to Others equipment minimum limit of $50,000. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Claim preparation fees, minimum $50,000? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Continuation of rental fee? Limit per the risk. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 | Deletion of Coinsurance & Waiver of Subrogation? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 | Endorsements - are any endorsements taking away coverage? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 | Equipment NOT covered such as trailers that need to be scheduled that are leased and rented - are they covered? Look through all the property not covered for potential exposures such as waterborne and underground. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 | Flood and Quake |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 | Legal Liability and leased and rented blanket coverage. Does the insured have leased and rented on a blanket basis and are the limits sufficient? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 | Misc. Equipment 20% of schedule, minimum $50k, $5,000 per item. 2-Substitute equipment minimum limit of $10k to $25k depending on size of contractor. 3-Hauling Property of Others 50K. 4-Pollution Cleanup 50K. 5-Expediting Expense 50K. 6-Employees tools 50k. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 | Replacement Cost with at least a ten year limitation if none at all. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 | Valuation for owned equipment and scheduling of same including maintenance of schedule - Is it kept up? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 | Various Extensions - check each one: 1- Automatic acquisition 12 months., 2- Increase pollution clean-up, 3 - remove or address waterborne or underground limitation, 4- Delete Voluntary removal exclusion, 5- Include BI coverage. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26:  | Total Issues to Discuss: |  |  |  | 0
+  R 27:  |  |  | Severity of Issues:
+  R 29:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 31:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'WC'  (33 rows × 13 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex-Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Workers' Compensation Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 | # & amount of small indemnity claims in experience period - Can these be treated, in the future, with the utilization of a "back to work" program, as medical only claims. Will this result in a 70% reduction for mod calculation purposes for those NCCI states that allow such an adjustment? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 | # & amount of small med claims in experience period, for states where #1 is not applicable - Can these small claims be paid resulting a mod savings? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 | All States Endorsement on WC / Additionally are any states omitted from 3.A that were picked up under 3.C in the previous year? If so, this can be very problematic. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 | Intentionally Left Blank |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 | Alternate Employee Endorsement included on the leasing company's policy? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 | EL Limits - Are they adequate to support the Umbrella? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 | Endemic Disease, Foreign Voluntary and Repatriation costs. |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 | Experience Modification - Is it being managed by the broker? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 | Is the Maritime coverage endorsement included? Especially for firms with a remote or possible exposure? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 | Large claims by name and total incurred - Have these been managed correctly? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 | Does the comp policy contain all possible credits? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 | Owners Excluded |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 | Is Defense Base Act (DBA) included for workers working overseas at U.S. government facilities or for the benefit of the government? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 | USH&L on an "if any" basis? Especially for firms with a remote or possible exposure? Could the client have an MEL exposure (underway vessel related to crewmen or those that can be considered as such) |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 25: 15 | Are the classification codes correct? |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26: 16 | Waiver of Subrogation |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 28:  | Total Issues to Discuss: |  |  |  | 0
+  R 29:  |  |  | Severity of Issues:
+  R 31:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 33:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'Misc - na'  (50 rows × 13 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Date Reviewed: | DD-MM-YYYY
+  R  4:  | Company Reviewed:
+  R  5:  | Ex Date: | DD-MM-YYYY
+  R  6:  | Policy/Form Number:
+  R  7:  | Reviewed By:
+  R  8:  | Current Broker:
+  R 10:  | Misc. Risk Mitigation Factors (RMF) |  |  | Current Issue? | Probability | Impact | Why is this an issue (or not)? Copy text of policy with your reflections. | Policy Page(s) | Follow-up Question(s) to be Asked |  | B&B Issue?
+  R 11: 1 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 12: 2 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 13: 3 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 14: 4 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 15: 5 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 16: 6 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 17: 7 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 18: 8 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 19: 9 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 20: 10 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 21: 11 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 22: 12 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 23: 13 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 24: 14 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 25: 15 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 26: 16 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 27: 17 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 28: 18 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 29: 19 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 30: 20 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 31: 21 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 32: 22 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 33: 23 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 34: 24 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 35: 25 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 36: 26 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 37: 27 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 38: 28 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 39: 29 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 40: 30 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 41: 31 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 42: 32 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 43: 33 |  |  |  | (Blank) | (Blank) | (Blank) |  |  |  |  | (Blank)
+  R 45:  | Total Issues to Discuss: |  |  |  | 0
+  R 46:  |  |  | Severity of Issues:
+  R 48:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage.
+  R 50:  | Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+
+================================================================================
+SHEET: 'Hidden Math'  (160 rows × 6 cols)
+================================================================================
+  R  1:  |  | Issue? | Probablity | Impact | B&B Issue?
+  R  2: CGL | 1 | (Blank) |  |  | (Blank)
+  R  3: CGL | 2 | (Blank) |  |  | (Blank)
+  R  4: CGL | 3 | (Blank) |  |  | (Blank)
+  R  5: CGL | 4 | (Blank) |  |  | (Blank)
+  R  6: CGL | 5 | (Blank) |  |  | (Blank)
+  R  7: CGL | 6 | (Blank) |  |  | (Blank)
+  R  8: CGL | 7 | (Blank) |  |  | (Blank)
+  R  9: CGL | 8 | (Blank) |  |  | (Blank)
+  R 10: CGL | 9 | (Blank) |  |  | (Blank)
+  R 11: CGL | 10 | (Blank) |  |  | (Blank)
+  R 12: CGL | 11 | (Blank) |  |  | (Blank)
+  R 13: CGL | 12 | (Blank) |  |  | (Blank)
+  R 14: CGL | 13 | (Blank) |  |  | (Blank)
+  R 15: CGL | 14 | (Blank) |  |  | (Blank)
+  R 16: CGL | 15 | (Blank) |  |  | (Blank)
+  R 17: CGL | 16 | (Blank) |  |  | (Blank)
+  R 18: CGL | 17 | (Blank) |  |  | (Blank)
+  R 19: CGL | 18 | (Blank) |  |  | (Blank)
+  R 20: CGL | 19 | (Blank) |  |  | (Blank)
+  R 21: CGL | 20 | (Blank) |  |  | (Blank)
+  R 22: CGL | 21 | (Blank) |  |  | (Blank)
+  R 23: CGL | 22 | (Blank) |  |  | (Blank)
+  R 24: CGL | 23 | (Blank) |  |  | (Blank)
+  R 25: CGL | 24 | (Blank) |  |  | (Blank)
+  R 26: CGL | 25 | (Blank) |  |  | (Blank)
+  R 27: CGL | 26 | (Blank) |  |  | (Blank)
+  R 28: CGL | 27 | (Blank) |  |  | (Blank)
+  R 29: CGL | 28 | (Blank) |  |  | (Blank)
+  R 30: CGL | 29 | (Blank) |  |  | (Blank)
+  R 31: CGL | 30 | (Blank) |  |  | (Blank)
+  R 32: CGL | 31 | (Blank) |  |  | (Blank)
+  R 33: CGL | 32 | (Blank) |  |  | (Blank)
+  R 34: CGL | 33 | (Blank) |  |  | (Blank)
+  R 35: PROP | 1 | (Blank) |  |  | (Blank)
+  R 36: PROP | 2 | (Blank) |  |  | (Blank)
+  R 37: PROP | 3 | (Blank) |  |  | (Blank)
+  R 38: PROP | 4 | (Blank) |  |  | (Blank)
+  R 39: PROP | 5 | (Blank) |  |  | (Blank)
+  R 40: PROP | 6 | (Blank) |  |  | (Blank)
+  R 41: PROP | 7 | (Blank) |  |  | (Blank)
+  R 42: PROP | 8 | (Blank) |  |  | (Blank)
+  R 43: PROP | 9 | (Blank) |  |  | (Blank)
+  R 44: PROP | 10 | (Blank) |  |  | (Blank)
+  R 45: PROP | 11 | (Blank) |  |  | (Blank)
+  R 46: PROP | 12 | (Blank) |  |  | (Blank)
+  R 47: PROP | 13 | (Blank) |  |  | (Blank)
+  R 48: PROP | 14 | (Blank) |  |  | (Blank)
+  R 49: PROP | 15 | (Blank) |  |  | (Blank)
+  R 50: PROP | 16 | (Blank) |  |  | (Blank)
+  R 51: PROP | 17 | (Blank) |  |  | (Blank)
+  R 52: PROP | 18 | (Blank) |  |  | (Blank)
+  R 53: PROP | 19 | (Blank) |  |  | (Blank)
+  R 54: PROP | 20 | (Blank) |  |  | (Blank)
+  R 55: PROP | 21 | (Blank) |  |  | (Blank)
+  R 56: PROP | 22 | (Blank) |  |  | (Blank)
+  R 57: PROP | 23 | (Blank) |  |  | (Blank)
+  R 58: PROP | 24 | (Blank) |  |  | (Blank)
+  R 59: PROP | 25 | (Blank) |  |  | (Blank)
+  R 60: PROP | 26 | (Blank) |  |  | (Blank)
+  R 61: PROP | 27 | (Blank) |  |  | (Blank)
+  R 62: PROP | 28 | (Blank) |  |  | (Blank)
+  R 63: PROP | 29 | (Blank) |  |  | (Blank)
+  R 64: PROP | 30 | (Blank) |  |  | (Blank)
+  R 65: PROP | 31 | (Blank) |  |  | (Blank)
+  R 66: AUTO | 1 | (Blank) |  |  | (Blank)
+  R 67: AUTO | 2 | (Blank)
+  R 68: AUTO | 3 | (Blank)
+  R 69: AUTO | 4 | (Blank)
+  R 70: AUTO | 5 | (Blank)
+  R 71: AUTO | 6 | (Blank)
+  R 72: AUTO | 7 | (Blank)
+  R 73: AUTO | 8 | (Blank)
+  R 74: AUTO | 9 | (Blank)
+  R 75: AUTO | 10 | (Blank)
+  R 76: AUTO | 11 | (Blank)
+  R 77: AUTO | 12 | (Blank)
+  R 78: AUTO | 13 | (Blank)
+  R 79: AUTO | 14 | (Blank)
+  R 80: AUTO | 15 | (Blank)
+  R 81: AUTO | 16 | (Blank)
+  R 82: AUTO | 17 | (Blank)
+  R 83: AUTO | 18 | (Blank)
+  R 84: UMB | 1 | (Blank) |  |  | (Blank)
+  R 85: UMB | 2 | (Blank) |  |  | (Blank)
+  R 86: UMB | 3 | (Blank) |  |  | (Blank)
+  R 87: UMB | 4 | (Blank) |  |  | (Blank)
+  R 88: UMB | 5 | (Blank) |  |  | (Blank)
+  R 89: UMB | 6 | (Blank) |  |  | (Blank)
+  R 90: UMB | 7 | (Blank) |  |  | (Blank)
+  R 91: UMB | 8 | (Blank) |  |  | (Blank)
+  R 92: UMB | 9 | (Blank) |  |  | (Blank)
+  R 93: UMB | 10 | (Blank) |  |  | (Blank)
+  R 94: UMB | 11 | (Blank) |  |  | (Blank)
+  R 95: UMB | 12 | (Blank) |  |  | (Blank)
+  R 96: UMB | 13 | (Blank) |  |  | (Blank)
+  R 97: UMB | 14 | (Blank) |  |  | (Blank)
+  R 98: IM | 1 | (Blank) |  |  | (Blank)
+  R 99: IM | 2 | (Blank) |  |  | (Blank)
+  R100: IM | 3 | (Blank) |  |  | (Blank)
+  R101: IM | 4 | (Blank) |  |  | (Blank)
+  R102: IM | 5 | (Blank) |  |  | (Blank)
+  R103: IM | 6 | (Blank) |  |  | (Blank)
+  R104: IM | 7 | (Blank) |  |  | (Blank)
+  R105: IM | 8 | (Blank) |  |  | (Blank)
+  R106: IM | 9 | (Blank) |  |  | (Blank)
+  R107: IM | 10 | (Blank) |  |  | (Blank)
+  R108: IM | 11 | (Blank) |  |  | (Blank)
+  R109: IM | 12 | (Blank) |  |  | (Blank)
+  R110: IM | 13 | (Blank) |  |  | (Blank)
+  R111: IM | 14 | (Blank) |  |  | (Blank)
+  R112: WC | 1 | (Blank) |  |  | (Blank)
+  R113: WC | 2 | (Blank) |  |  | (Blank)
+  R114: WC | 3 | (Blank) |  |  | (Blank)
+  R115: WC | 4 | (Blank) |  |  | (Blank)
+  R116: WC | 5 | (Blank) |  |  | (Blank)
+  R117: WC | 6 | (Blank) |  |  | (Blank)
+  R118: WC | 7 | (Blank) |  |  | (Blank)
+  R119: WC | 8 | (Blank) |  |  | (Blank)
+  R120: WC | 9 | (Blank) |  |  | (Blank)
+  R121: WC | 10 | (Blank) |  |  | (Blank)
+  R122: WC | 11 | (Blank) |  |  | (Blank)
+  R123: WC | 12 | (Blank) |  |  | (Blank)
+  R124: WC | 13 | (Blank) |  |  | (Blank)
+  R125: WC | 14 | (Blank) |  |  | (Blank)
+  R126: WC | 15 | (Blank) |  |  | (Blank)
+  R127: WC | 16 | (Blank) |  |  | (Blank)
+  R128: MISC | 1 | (Blank) |  |  | (Blank)
+  R129: MISC | 2 | (Blank) |  |  | (Blank)
+  R130: MISC | 3 | (Blank) |  |  | (Blank)
+  R131: MISC | 4 | (Blank) |  |  | (Blank)
+  R132: MISC | 5 | (Blank) |  |  | (Blank)
+  R133: MISC | 6 | (Blank) |  |  | (Blank)
+  R134: MISC | 7 | (Blank) |  |  | (Blank)
+  R135: MISC | 8 | (Blank) |  |  | (Blank)
+  R136: MISC | 9 | (Blank) |  |  | (Blank)
+  R137: MISC | 10 | (Blank) |  |  | (Blank)
+  R138: MISC | 11 | (Blank) |  |  | (Blank)
+  R139: MISC | 12 | (Blank) |  |  | (Blank)
+  R140: MISC | 13 | (Blank) |  |  | (Blank)
+  R141: MISC | 14 | (Blank) |  |  | (Blank)
+  R142: MISC | 15 | (Blank) |  |  | (Blank)
+  R143: MISC | 16 | (Blank) |  |  | (Blank)
+  R144: MISC | 17 | (Blank) |  |  | (Blank)
+  R145: MISC | 18 | (Blank) |  |  | (Blank)
+  R146: MISC | 19 | (Blank) |  |  | (Blank)
+  R147: MISC | 20 | (Blank) |  |  | (Blank)
+  R148: MISC | 21 | (Blank) |  |  | (Blank)
+  R149: MISC | 22 | (Blank) |  |  | (Blank)
+  R150: MISC | 23 | (Blank) |  |  | (Blank)
+  R151: MISC | 24 | (Blank) |  |  | (Blank)
+  R152: MISC | 25 | (Blank) |  |  | (Blank)
+  R153: MISC | 26 | (Blank) |  |  | (Blank)
+  R154: MISC | 27 | (Blank) |  |  | (Blank)
+  R155: MISC | 28 | (Blank) |  |  | (Blank)
+  R156: MISC | 29 | (Blank) |  |  | (Blank)
+  R157: MISC | 30 | (Blank) |  |  | (Blank)
+  R158: MISC | 31 | (Blank) |  |  | (Blank)
+  R159: MISC | 32 | (Blank) |  |  | (Blank)
+  R160: MISC | 33 | (Blank) |  |  | (Blank)
+
+================================================================================
+SHEET: 'Hidden Math - Maybe'  (516 rows × 18 cols)
+================================================================================
+  R  1: LIABILITY CALCULATION:
+  R  3: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R  4: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R  5: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R  6: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R  7: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R  8: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R  9: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 10: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 11: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 12: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 13: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 14: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 15: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 16: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 17: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 18: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 19: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 20: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 21: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 22: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 23: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 24: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 25: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R 26: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R 27: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R 28: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R 29: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R 30: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R 31: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R 32: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R 33: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R 34: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R 35: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R 36: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R 39: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R 40:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 41:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 42:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 43:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 44:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 45:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 46:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 47:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 48:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 49:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 50:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 51:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 52:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 53:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 54:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 55:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 56:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 57:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 58:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 59:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 60:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 61:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 62:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 63:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 64:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 65:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 66:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 67:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 68:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 69:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 70:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 71:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 72:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 75: PROPERTY CALCULATION:
+  R 77: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R 78: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R 79: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R 80: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R 81: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R 82: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R 83: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 84: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 85: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 86: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 87: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 88: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 89: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 90: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 91: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 92: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 93: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 94: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 95: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 96: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 97: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 98: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 99: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R100: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R101: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R102: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R103: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R104: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R105: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R106: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R107: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R108: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R109: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R110: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R113: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R114: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R115: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R116: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R117: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R118: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R119: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R120: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R121: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R122: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R123: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R124: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R125: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R126: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R127: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R128: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R129: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R130: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R131: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R132: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R133: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R134: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R135: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R136: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R137: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R138: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R139: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R140: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R141: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R142: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R143: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R144: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R145: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R146: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R149: COMMERCIAL AUTO CALCULATION
+  R151: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R152: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R153: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R154: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R155: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R156: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R157: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R158: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R159: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R160: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R161: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R162: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R163: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R164: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R165: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R166: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R167: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R168: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R169: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R170: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | (Blank) |  |  | ,
+  R171: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R172: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R173: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R174: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R175: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R176: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R177: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R178: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R179: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R180: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R181: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R182: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R183: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R184: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R187: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R188: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R189: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R190: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R191: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R192: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R193: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R194: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R195: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R196: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R197: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R198: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R199: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R200: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R201: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R202: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R203: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R204: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R205: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R206: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R207: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R208: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R209: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R210: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R211: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R212: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R213: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R214: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R215: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R216: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R217: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R218: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R219: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R220: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R223: COMMERICAL UMBRELLA CALCULATION
+  R225: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R226: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R227: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R228: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R229: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R230: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R231: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R232: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R233: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R234: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R235: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R236: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R237: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R238: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R239: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R240: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R241: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R242: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R243: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R244: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R245: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R246: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R247: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R248: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R249: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R250: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R251: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R252: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R253: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R254: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R255: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R256: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R257: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R258: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R261: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R262: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R263: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R264: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R265: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R266: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R267: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R268: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R269: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R270: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R271: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R272: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R273: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R274: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R275: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R276: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R277: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R278: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R279: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R280: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R281: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R282: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R283: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R284: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R285: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R286: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R287: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R288: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R289: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R290: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R291: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R292: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R293: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R294: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R297: COMMERICAL INLAND MARINE CALCULATION
+  R299: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R300: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R301: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R302: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R303: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R304: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R305: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R306: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R307: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R308: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R309: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R310: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R311: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R312: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R313: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R314: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R315: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R316: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R317: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R318: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R319: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R320: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R321: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R322: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R323: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R324: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R325: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R326: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R327: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R328: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R329: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R330: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R331: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R332: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R335: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R336: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R337: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R338: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R339: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R340: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R341: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R342: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R343: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R344: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R345: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R346: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R347: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R348: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R349: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R350: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R351: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R352: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R353: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R354: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R355: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R356: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R357: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R358: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R359: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R360: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R361: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R362: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R363: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R364: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R365: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R366: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R367: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R368: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R371: WORKERS' COMPENSATION CALCULATION
+  R373: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R374: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R375: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R376: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R377: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R378: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R379: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R380: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R381: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R382: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R383: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R384: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R385: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R386: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R387: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R388: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R389: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R390: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R391: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R392: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R393: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R394: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R395: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R396: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R397: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R398: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R399: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R400: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R401: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R402: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R403: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R404: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R405: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R406: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R409: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R410: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R411: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R412: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R413: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R414: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R415: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R416: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R417: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R418: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R419: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R420: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R421: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R422: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R423: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R424: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R425: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R426: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R427: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R428: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R429: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R430: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R431: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R432: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R433: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R434: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R435: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R436: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R437: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R438: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R439: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R440: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R441: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R442: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R445: MISC CALCULATION
+  R447: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R448: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R449: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R450: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R451: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R452: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R453: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R454: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R455: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R456: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R457: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R458: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R459: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R460: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R461: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R462: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R463: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R464: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R465: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R466: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R467: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R468: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R469: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R470: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R471: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R472: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R473: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R474: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R475: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R476: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R477: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R478: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R479: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R480: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R483: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R484: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R485: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R486: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R487: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R488: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R489: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R490: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R491: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R492: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R493: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R494: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R495: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R496: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R497: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R498: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R499: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R500: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R501: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R502: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R503: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R504: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R505: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R506: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R507: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R508: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R509: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R510: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R511: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R512: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R513: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R514: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R515: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R516: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+
+================================================================================
+SHEET: 'Hidden Math - Maybe B&B'  (516 rows × 18 cols)
+================================================================================
+  R  1: LIABILITY CALCULATION:
+  R  3: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R  4: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R  5: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R  6: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R  7: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R  8: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R  9: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 10: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 11: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 12: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 13: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 14: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 15: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 16: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 17: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 18: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 19: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 20: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 21: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 22: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 23: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 24: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 25: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R 26: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R 27: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R 28: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R 29: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R 30: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R 31: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R 32: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R 33: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R 34: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R 35: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R 36: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R 39: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R 40:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 41:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 42:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 43:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 44:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 45:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 46:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 47:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 48:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 49:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 50:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 51:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 52:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 53:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 54:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 55:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 56:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 57:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 58:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 59:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 60:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 61:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 62:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 63:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 64:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 65:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 66:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 67:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 68:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 69:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 70:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 71:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 72:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R 75: PROPERTY CALCULATION:
+  R 77: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R 78: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R 79: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R 80: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R 81: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R 82: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R 83: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 84: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 85: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 86: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 87: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 88: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 89: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 90: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 91: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 92: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 93: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 94: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 95: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 96: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 97: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 98: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 99: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R100: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R101: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R102: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R103: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R104: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R105: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R106: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R107: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R108: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R109: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R110: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R113: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R114: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R115: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R116: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R117: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R118: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R119: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R120: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R121: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R122: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R123: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R124: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R125: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R126: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R127: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R128: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R129: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R130: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R131: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R132: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R133: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R134: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R135: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R136: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R137: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R138: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R139: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R140: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R141: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R142: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R143: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R144: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R145: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R146: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R149: COMMERCIAL AUTO CALCULATION
+  R151: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R152: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R153: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R154: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R155: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R156: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R157: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R158: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R159: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R160: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R161: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R162: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R163: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R164: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R165: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R166: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R167: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R168: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R169: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R170: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R171: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R172: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R173: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R174: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R175: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R176: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R177: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R178: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R179: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R180: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R181: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R182: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R183: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R184: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R187: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R188: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R189: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R190: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R191: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R192: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R193: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R194: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R195: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R196: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R197: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R198: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R199: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R200: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R201: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R202: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R203: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R204: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R205: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R206: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R207: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R208: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R209: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R210: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R211: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R212: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R213: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R214: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R215: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R216: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R217: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R218: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R219: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R220: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R223: COMMERICAL UMBRELLA CALCULATION
+  R225: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R226: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R227: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R228: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R229: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R230: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R231: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R232: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R233: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R234: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R235: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R236: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R237: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R238: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R239: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R240: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R241: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R242: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R243: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R244: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R245: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R246: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R247: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R248: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R249: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R250: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R251: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R252: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R253: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R254: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R255: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R256: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R257: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R258: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R261: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R262: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R263: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R264: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R265: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R266: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R267: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R268: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R269: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R270: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R271: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R272: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R273: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R274: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R275: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R276: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R277: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R278: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R279: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R280: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R281: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R282: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R283: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R284: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R285: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R286: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R287: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R288: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R289: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R290: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R291: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R292: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R293: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R294: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R297: COMMERICAL INLAND MARINE CALCULATION
+  R299: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R300: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R301: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R302: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R303: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R304: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R305: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R306: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R307: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R308: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R309: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R310: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R311: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R312: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R313: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R314: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R315: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R316: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R317: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R318: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R319: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R320: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R321: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R322: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R323: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R324: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R325: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R326: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R327: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R328: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R329: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R330: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R331: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R332: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R335: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R336: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R337: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R338: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R339: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R340: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R341: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R342: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R343: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R344: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R345: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R346: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R347: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R348: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R349: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R350: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R351: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R352: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R353: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R354: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R355: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R356: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R357: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R358: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R359: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R360: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R361: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R362: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R363: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R364: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R365: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R366: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R367: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R368: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R371: WORKERS' COMPENSATION CALCULATION
+  R373: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R374: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R375: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R376: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R377: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R378: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R379: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R380: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R381: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R382: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R383: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R384: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R385: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R386: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R387: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R388: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R389: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R390: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R391: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R392: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R393: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R394: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R395: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R396: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R397: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R398: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R399: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R400: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R401: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R402: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R403: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R404: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R405: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R406: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R409: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R410: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R411: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R412: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R413: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R414: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R415: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R416: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R417: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R418: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R419: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R420: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R421: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R422: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R423: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R424: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R425: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R426: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R427: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R428: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R429: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R430: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R431: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R432: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R433: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R434: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R435: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R436: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R437: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R438: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R439: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R440: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R441: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R442: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R445: MISC CALCULATION
+  R447: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R448: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R449: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R450: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R451: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R452: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R453: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R454: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R455: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R456: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R457: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R458: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R459: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R460: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R461: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R462: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R463: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R464: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R465: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R466: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R467: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R468: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R469: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R470: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R471: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R472: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R473: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R474: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R475: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R476: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R477: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R478: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R479: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R480: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R483: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R484: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R485: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R486: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R487: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R488: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R489: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R490: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R491: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R492: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R493: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R494: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R495: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R496: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R497: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R498: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R499: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R500: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R501: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R502: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R503: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R504: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R505: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R506: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R507: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R508: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R509: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R510: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R511: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R512: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R513: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R514: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R515: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R516: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+
+================================================================================
+SHEET: 'Current Policy Output'  (552 rows × 20 cols)
+================================================================================
+  R  2:  | Named Insured
+  R  3:  | Current Policy Analysis
+  R 33:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage. Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+  R 38: LIABILITY CALCULATION:
+  R 40: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R 41: 1 |  | Probable | large | catastrophic | red | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R 42: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R 43: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R 44: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R 45: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R 46: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 47: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 48: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 49: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 50: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 51: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 52: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 53: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 54: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 55: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 56: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 57: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 58: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 59: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 60: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 61: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 62: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R 63: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R 64: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R 65: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R 66: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R 67: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R 68: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R 69: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R 70: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R 71: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R 72: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R 73: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R 76: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R 77: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R 78: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R 79: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R 80: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R 81: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R 82: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R 83: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R 84: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R 85: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R 86: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R 87: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R 88: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R 89: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R 90: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R 91: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R 92: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R 93: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R 94: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R 95: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R 96: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R 97: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R 98: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R 99: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R100: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R101: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R102: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R103: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R104: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R105: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R106: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R107: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R108: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R109: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R111: PROPERTY CALCULATION:
+  R113: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R114: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R115: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R116: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R117: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R118: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R119: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R120: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R121: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R122: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R123: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R124: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R125: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R126: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R127: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R128: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R129: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R130: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R131: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R132: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R133: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R134: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R135: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R136: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R137: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R138: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R139: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R140: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R141: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R142: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R143: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R144: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R145:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R146:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R149: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R150: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R151: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R152: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R153: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R154: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R155: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R156: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R157: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R158: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R159: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R160: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R161: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R162: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R163: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R164: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R165: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R166: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R167: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R168: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R169: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R170: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R171: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R172: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R173: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R174: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R175: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R176: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R177: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R178: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R179: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R180: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R181:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R182:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R185: COMMERCIAL AUTO CALCULATION:
+  R187: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R188: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R189: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R190: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R191: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R192: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R193: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R194: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R195: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R196: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R197: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R198: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R199: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R200: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R201: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R202: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R203: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R204: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R205: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R206: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | (Blank) |  |  | ,
+  R207: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R208: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R209: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R210: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R211: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R212: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R213: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R214: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R215: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R216: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R217: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R218: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R219:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R220:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R223: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R224: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R225: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R226: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R227: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R228: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R229: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R230: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R231: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R232: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R233: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R234: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R235: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R236: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R237: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R238: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R239: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R240: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R241: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R242: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R243: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R244: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R245: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R246: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R247: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R248: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R249: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R250: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R251: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R252: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R253: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R254: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R255:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R256:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R259: COMMERCIAL UMBRELLA CALCULATION
+  R261: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R262: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R263: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R264: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R265: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R266: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R267: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R268: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R269: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R270: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R271: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R272: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R273: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R274: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R275: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R276: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R277: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R278: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R279: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R280: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R281: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R282: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R283: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R284: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R285: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R286: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R287: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R288: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R289: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R290: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R291: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R292: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R293:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R294:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R297: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R298: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R299: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R300: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R301: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R302: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R303: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R304: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R305: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R306: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R307: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R308: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R309: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R310: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R311: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R312: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R313: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R314: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R315: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R316: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R317: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R318: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R319: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R320: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R321: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R322: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R323: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R324: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R325: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R326: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R327: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R328: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R329:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R330:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R333: COMMERCIAL INLANE MARINE CALCULATION
+  R335: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R336: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R337: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R338: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R339: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R340: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R341: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R342: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R343: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R344: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R345: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R346: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R347: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R348: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R349: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R350: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R351: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R352: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R353: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R354: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R355: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R356: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R357: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R358: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R359: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R360: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R361: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R362: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R363: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R364: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R365: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R366: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R367:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R368:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R371: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R372: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R373: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R374: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R375: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R376: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R377: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R378: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R379: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R380: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R381: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R382: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R383: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R384: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R385: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R386: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R387: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R388: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R389: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R390: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R391: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R392: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R393: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R394: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R395: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R396: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R397: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R398: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R399: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R400: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R401: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R402: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R403:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R404:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R407: WORKERS' COMPENSATION CALCULATION
+  R409: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R410: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R411: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R412: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R413: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R414: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R415: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R416: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R417: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R418: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R419: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R420: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R421: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R422: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R423: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R424: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R425: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R426: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R427: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R428: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R429: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R430: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R431: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R432: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R433: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R434: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R435: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R436: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R437: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R438: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R439: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R440: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R441:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R442:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R445: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R446: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R447: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R448: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R449: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R450: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R451: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R452: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R453: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R454: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R455: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R456: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R457: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R458: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R459: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R460: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R461: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R462: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R463: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R464: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R465: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R466: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R467: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R468: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R469: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R470: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R471: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R472: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R473: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R474: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R475: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R476: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R477:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R478:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R481: MISC Calculation
+  R483: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R484: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R485: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R486: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R487: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R488: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R489: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R490: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R491: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R492: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R493: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R494: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R495: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R496: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R497: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R498: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R499: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R500: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R501: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R502: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R503: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R504: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R505: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R506: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R507: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R508: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R509: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R510: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R511: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R512: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R513: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R514: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R515: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank)
+  R516: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank)
+  R519: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R520: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R521: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R522: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R523: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R524: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R525: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R526: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R527: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R528: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R529: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R530: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R531: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R532: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R533: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R534: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R535: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R536: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R537: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R538: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R539: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R540: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R541: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R542: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R543: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R544: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R545: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R546: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R547: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R548: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R549: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R550: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R551: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R552: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+
+================================================================================
+SHEET: 'B&B Policy Output'  (552 rows × 20 cols)
+================================================================================
+  R  2:  | Affinium Security
+  R  3:  | Brown & Brown Policy
+  R 33:  | **The analysis of the various policy forms  is a summary of our findings relative to your current policies and is for illustrative  purposes only and should not be misconstrued in lieu of your actual policies.  Please refer to your actual policies to review the terms and conditions applicable to your coverage. Further, this document seeks to illustrate both coverage discrepancies and adequacy of limits.
+  R 38: LIABILITY CALCULATION:
+  R 40: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R 41: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R 42: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R 43: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R 44: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R 45: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R 46: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R 47: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R 48: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R 49: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R 50: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R 51: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R 52: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R 53: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R 54: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R 55: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R 56: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R 57: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R 58: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R 59: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R 60: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R 61: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R 62: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R 63: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R 64: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R 65: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R 66: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R 67: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R 68: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R 69: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R 70: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R 71: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R 72: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank) |  |  | ,
+  R 73: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank) |  |  | ,
+  R 76: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R 77: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R 78: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R 79: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R 80: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R 81: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R 82: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R 83: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R 84: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R 85: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R 86: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R 87: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R 88: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R 89: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R 90: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R 91: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R 92: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R 93: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R 94: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R 95: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R 96: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R 97: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R 98: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R 99: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R100: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R101: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R102: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R103: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R104: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R105: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R106: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R107: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R108: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R109: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+  R111: PROPERTY CALCULATION:
+  R113: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R114: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R115: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R116: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R117: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R118: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R119: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R120: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R121: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R122: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R123: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R124: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R125: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R126: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R127: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R128: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R129: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R130: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R131: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R132: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R133: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R134: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R135: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R136: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R137: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R138: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R139: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R140: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R141: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R142: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R143: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R144: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R145:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R146:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R149: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R150: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R151: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R152: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R153: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R154: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R155: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R156: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R157: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R158: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R159: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R160: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R161: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R162: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R163: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R164: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R165: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R166: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R167: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R168: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R169: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R170: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R171: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R172: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R173: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R174: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R175: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R176: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R177: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R178: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R179: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R180: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R181:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R182:  |  | 0 |  | 0 |  |  |  | 0 |  | 0
+  R185: COMMERCIAL AUTO CALCULATION:
+  R187: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R188: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R189: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R190: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R191: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R192: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R193: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R194: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R195: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R196: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R197: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R198: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R199: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R200: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R201: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R202: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R203: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R204: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R205: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R206: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R207: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R208: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R209: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R210: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R211: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R212: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R213: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R214: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R215: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R216: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R217: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R218: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R219:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R220:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R223: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R224: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R225: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R226: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R227: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R228: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R229: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R230: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R231: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R232: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R233: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R234: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R235: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R236: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R237: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R238: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R239: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R240: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R241: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R242: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R243: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R244: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R245: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R246: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R247: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R248: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R249: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R250: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R251: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R252: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R253: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R254: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R255:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R256:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R259: COMMERCIAL UMBRELLA CALCULATION
+  R261: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R262: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R263: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R264: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R265: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R266: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R267: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R268: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R269: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R270: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R271: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R272: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R273: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R274: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R275: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R276: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R277: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R278: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R279: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R280: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R281: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R282: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R283: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R284: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R285: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R286: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R287: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R288: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R289: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R290: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R291: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R292: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R293:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R294:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R297: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R298: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R299: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R300: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R301: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R302: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R303: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R304: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R305: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R306: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R307: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R308: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R309: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R310: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R311: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R312: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R313: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R314: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R315: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R316: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R317: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R318: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R319: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R320: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R321: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R322: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R323: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R324: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R325: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R326: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R327: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R328: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R329:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R330:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R333: COMMERCIAL INLANE MARINE CALCULATION
+  R335: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R336: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R337: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R338: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R339: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R340: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R341: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R342: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R343: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R344: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R345: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R346: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R347: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R348: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R349: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R350: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R351: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R352: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R353: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R354: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R355: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R356: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R357: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R358: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R359: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R360: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R361: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R362: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R363: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R364: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R365: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R366: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 | 0 | 0 | 0,0
+  R367:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R368:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R371: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R372: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R373: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R374: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R375: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R376: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R377: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R378: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R379: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R380: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R381: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R382: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R383: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R384: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R385: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R386: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R387: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R388: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R389: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R390: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R391: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R392: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R393: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R394: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R395: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R396: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R397: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R398: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R399: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R400: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R401: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R402: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R403:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R404:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R407: WORKERS' COMPENSATION CALCULATION
+  R409: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R410: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R411: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R412: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R413: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R414: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R415: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R416: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R417: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R418: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R419: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R420: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R421: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R422: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R423: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R424: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R425: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R426: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R427: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R428: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R429: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R430: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R431: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R432: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R433: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R434: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R435: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R436: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R437: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R438: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R439: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R440: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 0 | 0 |  |  | ,
+  R441:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R442:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R445: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R446: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R447: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R448: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R449: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R450: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R451: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R452: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R453: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R454: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R455: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R456: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R457: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R458: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R459: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R460: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R461: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R462: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R463: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R464: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R465: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R466: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R467: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R468: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R469: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R470: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R471: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R472: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R473: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R474: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R475: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R476: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R477:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R478:  | 0 | 0 |  | 0 |  |  | 0 | 0 |  | 0
+  R481: MISC Calculation
+  R483: TL | Rare, Unlikely / High, Catastrophic | X Prob | Size | Y Impact | Label | TR | Possible, Probable / High, Catastrophic | X Prob | Size | Y Impact | Label |  | Q | Issue? | Probability | Impact
+  R484: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0 |  |  | 1 | (Blank) |  |  | ,
+  R485: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0 |  |  | 2 | (Blank) |  |  | ,
+  R486: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0 |  |  | 3 | (Blank) |  |  | ,
+  R487: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0 |  |  | 4 | (Blank) |  |  | ,
+  R488: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0 |  |  | 5 | (Blank) |  |  | ,
+  R489: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0 |  |  | 6 | (Blank) |  |  | ,
+  R490: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0 |  |  | 7 | (Blank) |  |  | ,
+  R491: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0 |  |  | 8 | (Blank) |  |  | ,
+  R492: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0 |  |  | 9 | (Blank) |  |  | ,
+  R493: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0 |  |  | 10 | (Blank) |  |  | ,
+  R494: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0 |  |  | 11 | (Blank) |  |  | ,
+  R495: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0 |  |  | 12 | (Blank) |  |  | ,
+  R496: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0 |  |  | 13 | (Blank) |  |  | ,
+  R497: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0 |  |  | 14 | (Blank) |  |  | ,
+  R498: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0 |  |  | 15 | (Blank) |  |  | ,
+  R499: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0 |  |  | 16 | (Blank) |  |  | ,
+  R500: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0 |  |  | 17 | (Blank) |  |  | ,
+  R501: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0 |  |  | 18 | (Blank) |  |  | ,
+  R502: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0 |  |  | 19 | (Blank) |  |  | ,
+  R503: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0 |  |  | 20 | (Blank) |  |  | ,
+  R504: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0 |  |  | 21 | (Blank) |  |  | ,
+  R505: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0 |  |  | 22 | (Blank) |  |  | ,
+  R506: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0 |  |  | 23 | (Blank) |  |  | ,
+  R507: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0 |  |  | 24 | (Blank) |  |  | ,
+  R508: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0 |  |  | 25 | (Blank) |  |  | ,
+  R509: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0 |  |  | 26 | (Blank) |  |  | ,
+  R510: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0 |  |  | 27 | (Blank) |  |  | ,
+  R511: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0 |  |  | 28 | (Blank) |  |  | ,
+  R512: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0 |  |  | 29 | (Blank) |  |  | ,
+  R513: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0 |  |  | 30 | (Blank) |  |  | ,
+  R514: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0 |  |  | 31 | (Blank) |  |  | ,
+  R515: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0 |  |  | 32 | (Blank)
+  R516: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0 |  |  | 33 | (Blank)
+  R519: BL | Rare, Unlikely / Low, Medium | X Prob | Size | Y Impact | Issue # | BR | Possible, Probable / Low, Medium | X Prob | Size | Y Impact | Issue #
+  R520: 1 |  | 0 |  | 0 |  | 0.5 |  | 0 |  | 0
+  R521: 2 |  | 0 |  | 0 |  | 1 |  | 0 |  | 0
+  R522: 3 |  | 0 |  | 0 |  | 1.5 |  | 0 |  | 0
+  R523: 4 |  | 0 |  | 0 |  | 2 |  | 0 |  | 0
+  R524: 5 |  | 0 |  | 0 |  | 2.5 |  | 0 |  | 0
+  R525: 6 |  | 0 |  | 0 |  | 3 |  | 0 |  | 0
+  R526: 7 |  | 0 |  | 0 |  | 3.5 |  | 0 |  | 0
+  R527: 8 |  | 0 |  | 0 |  | 4 |  | 0 |  | 0
+  R528: 9 |  | 0 |  | 0 |  | 4.5 |  | 0 |  | 0
+  R529: 10 |  | 0 |  | 0 |  | 5 |  | 0 |  | 0
+  R530: 11 |  | 0 |  | 0 |  | 5.5 |  | 0 |  | 0
+  R531: 12 |  | 0 |  | 0 |  | 6 |  | 0 |  | 0
+  R532: 13 |  | 0 |  | 0 |  | 6.5 |  | 0 |  | 0
+  R533: 14 |  | 0 |  | 0 |  | 7 |  | 0 |  | 0
+  R534: 15 |  | 0 |  | 0 |  | 7.5 |  | 0 |  | 0
+  R535: 16 |  | 0 |  | 0 |  | 8 |  | 0 |  | 0
+  R536: 17 |  | 0 |  | 0 |  | 8.5 |  | 0 |  | 0
+  R537: 18 |  | 0 |  | 0 |  | 9 |  | 0 |  | 0
+  R538: 19 |  | 0 |  | 0 |  | 9.5 |  | 0 |  | 0
+  R539: 20 |  | 0 |  | 0 |  | 10 |  | 0 |  | 0
+  R540: 21 |  | 0 |  | 0 |  | 10.5 |  | 0 |  | 0
+  R541: 22 |  | 0 |  | 0 |  | 11 |  | 0 |  | 0
+  R542: 23 |  | 0 |  | 0 |  | 11.5 |  | 0 |  | 0
+  R543: 24 |  | 0 |  | 0 |  | 12 |  | 0 |  | 0
+  R544: 25 |  | 0 |  | 0 |  | 12.5 |  | 0 |  | 0
+  R545: 26 |  | 0 |  | 0 |  | 13 |  | 0 |  | 0
+  R546: 27 |  | 0 |  | 0 |  | 13.5 |  | 0 |  | 0
+  R547: 28 |  | 0 |  | 0 |  | 14 |  | 0 |  | 0
+  R548: 29 |  | 0 |  | 0 |  | 14.5 |  | 0 |  | 0
+  R549: 30 |  | 0 |  | 0 |  | 15 |  | 0 |  | 0
+  R550: 31 |  | 0 |  | 0 |  | 15.5 |  | 0 |  | 0
+  R551: 32 |  | 0 |  | 0 |  | 16 |  | 0 |  | 0
+  R552: 33 |  | 0 |  | 0 |  | 16.5 |  | 0 |  | 0
+
+================================================================================
+SHEET: 'AS Hidden'  (47 rows × 1 cols)
+================================================================================
+  R  2: [Select]
+  R  3: A- the undamaged portion of the building that must be knocked down. B - debris removal expense relating to “A". C - building laws. D - delay in restoring operations.
+  R  4: Additional Insured – 3rd party Contractual requirement such as customers - correct wording/form needed to avoid breach of Contract.
+  R  5: Back up of Sewers and Drains - Water or sewage that backs up from a sewer or drain and resulting damage to your property.
+  R  6: Broader Exclusion by Endorsement - Excess coverage is barred for losses triggered by broader exclusion.
+  R  7: Claim Prep Fees - Fees to pay an Accounting firm to represent your interests when negotiating with the insurance.
+  R  8: Coinsurance - A penalty assessed by the carrier in instances where the actual values insured are lower than contractually required.
+  R  9: Contractual Issues - Your policy must be constructed to function within the contractualy expected framework in an administratively practical way to avoid breach of contract.
+  R 10: Correct Symbols - we are looking for symbols 1 & 2.
+  R 11: Coverage Territory - For products sold or that end up outside the coverage territory there is no coverage unless the lawsuit is brought within the coverage territory.
+  R 12: Custody and Control - Because you have possession of property of others your policy needs to be amended accordingly to provide coverage and or for the proper valuation.
+  R 13: Drive Other Car - Coverage that amends the BAP to follow the driver.
+  R 14: Employee as Insured - provides cover to employee when driving their personal vehicle within the scope of their employment .
+  R 15: Environmental - The current CGL policy does not provide any givebacks relative to the pollution exclusion barring coverage in virtually all scenarios.
+  R 16: Environmental - You have a significant environmental exposure that would be better covered under a pollution policy covering liability to third parties.
+  R 17: Errors & Omissions - for losses where there is no bodily injury and or property damage the standard General Liability policy will not respond.
+  R 18: Flood Triggered Perils - coverage for Ordinance & Law and BI would be barred if flood is insured separately.
+  R 19: Insured Values - The values insured through the current broker/carrier are insufficient to meet your objectives.
+  R 20: Leased Employees - When a temporary or leased employees are utilized specific exposures to loss are a potential consequence. If the leased/temporary employee is injured a lawsuit can arise in spite of the worker’s compensation exclusive remedy. This potential liability can and should be transferred to the leasing company.
+  R 21: Leased Properties -The policy must be constructed to cover your legal liability relative to leased properties
+  R 22: Notice and Knowledge – the current policy wording is too broad and creates potential breach of contract liability barring cover under the effected policy. We prefer a modified condition that names a specific person or a job title.
+  R 23: Off Premises Power Coverage - Property damage on-site and/or loss of income due to damage to off-site utility property.
+  R 24: Ordinance or Law - Coverage for
+  R 25: Ownership of Vehicles - Coverage is barred under the BAP for the owner of a vehicle insured by and leased to the named insured by an employee.
+  R 26: Primary and Non-contributory - Required as a term in many contracts by upstream parties.
+  R 27: Property of Others In Your Care
+  R 28: Protective Safeguards - Warranties regarding protection you must provide.
+  R 29: Right & Duty to Defend - The policy currently provided does not obligate the insurer to defend you.
+  R 30: Scheduling of Underlying Policies - Certain policies are not included within your umbrella therefore barring excess coverage applicable to said policies.
+  R 31: Specific exposures to loss are a potential consequence. If the leased/temporary employee is injured a lawsuit can arise in spite of the worker’s compensation exclusive remedy. This potential liability can and should be transferred to the leasing company.
+  R 32: Waiver of Subrogation - A requirement of many contracts needed to prevent breach of contract. Waiver of Subrogation is a promise from the carrier to forgo legal action against a third party that contributed to a claim when required by written contract.
+  R 34: L
+  R 35: K
+  R 36: J
+  R 37: M
+  R 38: N
+  R 39: O
+  R 40: C
+  R 41: D

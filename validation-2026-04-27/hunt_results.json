@@ -1,0 +1,1522 @@
+[
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\Hanover - Auto - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "auto"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 77,
+    "types": {
+      "Highlight": 14,
+      "FreeText": 2,
+      "Line": 1,
+      "Square": 2
+    },
+    "authors": {
+      "Bogdan Laza": 19
+    },
+    "bookmarks": 10,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\Redacted2024-26 Management Liability Policy-AUDITED (1).pdf",
+    "slugs": [
+      "ml"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 110,
+    "types": {
+      "Redact": 164,
+      "Highlight": 3,
+      "Text": 4
+    },
+    "authors": {
+      "BogdanLaza": 164,
+      "(none)": 3,
+      "EPLI \u2014 Wage & Hour Defense Sublimit": 1,
+      "D&O Entity Coverage \u2014 Manufacturing & Professional Services ": 1,
+      "PE Co-Defendant Extension on Management Liability": 1,
+      "D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc": 1
+    },
+    "bookmarks": 8,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\Redacted2025 - 2026 Professional Liability Policy-AUDITED (1).pdf",
+    "slugs": [
+      "pl"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 46,
+    "types": {
+      "Redact": 180,
+      "Stamp": 1,
+      "Highlight": 5,
+      "Text": 6
+    },
+    "authors": {
+      "BogdanLaza": 180,
+      "s.subramanian": 1,
+      "(none)": 5,
+      "Professional Liability \u2014 Mail Processing Services Restricted": 1,
+      "Professional Liability \u2014 Split Limits of Liability Tower": 1,
+      "Professional Liability \u2014 Ransomware / Extortion Exclusion": 1,
+      "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te": 1,
+      "Professional Liability \u2014 Network Security & Privacy Breach E": 1,
+      "Professional Liability \u2014 Biometric Identifiers Exclusion (BI": 1
+    },
+    "bookmarks": 9,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\Redacted2025-2026 Liability Policy - Security Guards-AUDITED (1).pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 69,
+    "types": {
+      "Redact": 160,
+      "Stamp": 1,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 160,
+      "Brownyard by1spf664": 1,
+      "(none)": 1,
+      "General Liability \u2014 Classification Limitation on Arch Policy": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\RedactedConvex - 2025-2026 Excess Tech EO Policy-AUDITED (1).pdf",
+    "slugs": [
+      "convex"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 20,
+    "types": {
+      "Redact": 46,
+      "Stamp": 2,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 46,
+      "anitha.ganesh": 2,
+      "(none)": 1,
+      "Excess Tower \u2014 Convex Policy Number Documentation Defect": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302-AUDITED (1).pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 5,
+    "types": {
+      "Redact": 25,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 25,
+      "(none)": 1,
+      "Cyber \u2014 Social Engineering / Cyber Deception Coverage": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\RedactedHanover - Auto - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "auto"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 78,
+    "types": {
+      "Redact": 123,
+      "Highlight": 3,
+      "Text": 3
+    },
+    "authors": {
+      "BogdanLaza": 123,
+      "(none)": 3,
+      "Auto \u2014 Named Driver Exclusion (Malina Trujillo)": 1,
+      "Auto \u2014 Hired & Non-Owned Auto Coverage": 1,
+      "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)": 1
+    },
+    "bookmarks": 6,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\RedactedHanover - Commercial - 4.1.25-4.1.26-AUDITED (1).pdf",
+    "slugs": [
+      "pkg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 254,
+    "types": {
+      "Redact": 371,
+      "Highlight": 4,
+      "Text": 4
+    },
+    "authors": {
+      "BogdanLaza": 371,
+      "(none)": 4,
+      "Property \u2014 Equipment Breakdown Limit Adequacy": 1,
+      "Property \u2014 Electronic Data Sublimit": 1,
+      "Property \u2014 Interruption of Computer Operations Sublimit": 1,
+      "Per-Project Aggregate Cap Limitation": 1
+    },
+    "bookmarks": 7,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26-AUDITED (1).pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 78,
+    "types": {
+      "Redact": 79,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 79,
+      "(none)": 1,
+      "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\Redacted2024-26 Management Liability Policy-AUDITED.pdf",
+    "slugs": [
+      "ml"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 110,
+    "types": {
+      "Redact": 164,
+      "Highlight": 3,
+      "Text": 4
+    },
+    "authors": {
+      "BogdanLaza": 164,
+      "(none)": 3,
+      "EPLI \u2014 Wage & Hour Defense Sublimit": 1,
+      "D&O Entity Coverage \u2014 Manufacturing & Professional Services ": 1,
+      "PE Co-Defendant Extension on Management Liability": 1,
+      "D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc": 1
+    },
+    "bookmarks": 8,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\Redacted2025 - 2026 Professional Liability Policy-AUDITED.pdf",
+    "slugs": [
+      "pl"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 46,
+    "types": {
+      "Redact": 180,
+      "Stamp": 1,
+      "Highlight": 5,
+      "Text": 6
+    },
+    "authors": {
+      "BogdanLaza": 180,
+      "s.subramanian": 1,
+      "(none)": 5,
+      "Professional Liability \u2014 Mail Processing Services Restricted": 1,
+      "Professional Liability \u2014 Split Limits of Liability Tower": 1,
+      "Professional Liability \u2014 Ransomware / Extortion Exclusion": 1,
+      "PL Hammer Clause \u2014 Dual Structure (50/50 in SIR Context) [te": 1,
+      "Professional Liability \u2014 Network Security & Privacy Breach E": 1,
+      "Professional Liability \u2014 Biometric Identifiers Exclusion (BI": 1
+    },
+    "bookmarks": 9,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\Redacted2025-2026 Liability Policy - Security Guards-AUDITED.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 69,
+    "types": {
+      "Redact": 160,
+      "Stamp": 1,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 160,
+      "Brownyard by1spf664": 1,
+      "(none)": 1,
+      "General Liability \u2014 Classification Limitation on Arch Policy": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\RedactedConvex - 2025-2026 Excess Tech EO Policy-AUDITED.pdf",
+    "slugs": [
+      "convex"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 20,
+    "types": {
+      "Redact": 46,
+      "Stamp": 2,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 46,
+      "anitha.ganesh": 2,
+      "(none)": 1,
+      "Excess Tower \u2014 Convex Policy Number Documentation Defect": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302-AUDITED.pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 5,
+    "types": {
+      "Redact": 25,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 25,
+      "(none)": 1,
+      "Cyber \u2014 Social Engineering / Cyber Deception Coverage": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\RedactedHanover - Auto - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "auto"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 78,
+    "types": {
+      "Redact": 123,
+      "Highlight": 3,
+      "Text": 3
+    },
+    "authors": {
+      "BogdanLaza": 123,
+      "(none)": 3,
+      "Auto \u2014 Named Driver Exclusion (Malina Trujillo)": 1,
+      "Auto \u2014 Hired & Non-Owned Auto Coverage": 1,
+      "Auto \u2014 Care, Custody, or Control Exclusion (Ballot Transit)": 1
+    },
+    "bookmarks": 6,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\RedactedHanover - Commercial - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "pkg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 254,
+    "types": {
+      "Redact": 371,
+      "Highlight": 4,
+      "Text": 4
+    },
+    "authors": {
+      "BogdanLaza": 371,
+      "(none)": 4,
+      "Property \u2014 Equipment Breakdown Limit Adequacy": 1,
+      "Property \u2014 Electronic Data Sublimit": 1,
+      "Property \u2014 Interruption of Computer Operations Sublimit": 1,
+      "Per-Project Aggregate Cap Limitation": 1
+    },
+    "bookmarks": 7,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 78,
+    "types": {
+      "Redact": 79,
+      "Highlight": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 79,
+      "(none)": 1,
+      "Umbrella \u2014 Professional Liability, Cyber, and D&O Excluded": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\Redacted2024-26 Management Liability Policy-AUDITED.pdf",
+    "slugs": [
+      "ml"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 110,
+    "types": {
+      "Redact": 164,
+      "Text": 6
+    },
+    "authors": {
+      "BogdanLaza": 164,
+      "D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su": 1,
+      "Management Liability \u2014 Crime Coverage $2M Included in Packag": 1,
+      "D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv": 1,
+      "Management Liability \u2014 PE Co-Defendant Extension and Shadow ": 1,
+      "D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent": 1,
+      "D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye": 1
+    },
+    "bookmarks": 10,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\Redacted2025 - 2026 Professional Liability Policy-AUDITED.pdf",
+    "slugs": [
+      "pl"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 46,
+    "types": {
+      "Redact": 180,
+      "Stamp": 1,
+      "Text": 2
+    },
+    "authors": {
+      "BogdanLaza": 180,
+      "s.subramanian": 1,
+      "Professional Liability \u2014 Mail Processing Services Retroactiv": 1,
+      "Professional Liability \u2014 Network Security/Privacy Breach Exc": 1
+    },
+    "bookmarks": 4,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\Redacted2025-2026 Liability Policy - Security Guards-AUDITED.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 69,
+    "types": {
+      "Redact": 160,
+      "Stamp": 1,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 160,
+      "Brownyard by1spf664": 1,
+      "GL \u2014 Security Guard Policy Covers Security Operations Only; ": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\RedactedConvex - 2025-2026 Excess Tech EO Policy-AUDITED.pdf",
+    "slugs": [
+      "convex"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 20,
+    "types": {
+      "Redact": 46,
+      "Stamp": 2,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 46,
+      "anitha.ganesh": 2,
+      "Excess Tech E&O \u2014 Policy Number Discrepancy Creates Coverage": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302-AUDITED.pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 5,
+    "types": {
+      "Redact": 25,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 25,
+      "Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\RedactedHanover - Commercial - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "pkg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 254,
+    "types": {
+      "Redact": 371,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 371,
+      "Commercial Property \u2014 Electronic Data and Computer Operation": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 78,
+    "types": {
+      "Redact": 79,
+      "Text": 1
+    },
+    "authors": {
+      "BogdanLaza": 79,
+      "Professional Liability \u2014 No Umbrella Excess Coverage Over Te": 1
+    },
+    "bookmarks": 3,
+    "rank": 2
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\umbrella-excess\\archive\\Umbrella 17-18 - bob's comments included.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 28,
+    "types": {
+      "FreeText": 19,
+      "Text": 6
+    },
+    "authors": {
+      "(none)": 15,
+      "robertmessina": 10
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\insurance-audit-tool-pdf output - including .txt summary output file\\redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED (1).pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 206,
+    "types": {
+      "Highlight": 4,
+      "Text": 4
+    },
+    "authors": {
+      "(none)": 4,
+      "WC \u2014 Stop Gap for Monopolistic States": 1,
+      "Workers' Compensation \u2014 Waiver of Subrogation Gap (GA, NC, I": 1,
+      "Workers' Comp \u2014 Experience Modification Rate": 1,
+      "California Employers' Liability \u2014 Labor Code \u00a72810.3 Exclusi": 1
+    },
+    "bookmarks": 7,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\Redacted2024-26 Management Liability Policy.pdf",
+    "slugs": [
+      "ml"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 109,
+    "types": {
+      "Redact": 164
+    },
+    "authors": {
+      "BogdanLaza": 164
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\Redacted2025 - 2026 Professional Liability Policy.pdf",
+    "slugs": [
+      "pl"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 45,
+    "types": {
+      "Redact": 180,
+      "Stamp": 1
+    },
+    "authors": {
+      "BogdanLaza": 180,
+      "s.subramanian": 1
+    },
+    "bookmarks": 26,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\Redacted2025-2026 Liability Policy - Security Guards.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 68,
+    "types": {
+      "Redact": 160,
+      "Stamp": 1
+    },
+    "authors": {
+      "BogdanLaza": 160,
+      "Brownyard by1spf664": 1
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+    "slugs": [
+      "convex"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 19,
+    "types": {
+      "Redact": 46,
+      "Stamp": 2
+    },
+    "authors": {
+      "BogdanLaza": 46,
+      "anitha.ganesh": 2
+    },
+    "bookmarks": 28,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 4,
+    "types": {
+      "Redact": 25
+    },
+    "authors": {
+      "BogdanLaza": 25
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "auto"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 77,
+    "types": {
+      "Redact": 123
+    },
+    "authors": {
+      "BogdanLaza": 123
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "pkg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 253,
+    "types": {
+      "Redact": 371
+    },
+    "authors": {
+      "BogdanLaza": 371
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 77,
+    "types": {
+      "Redact": 79
+    },
+    "authors": {
+      "BogdanLaza": 79
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\RedactedHanover - WC - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 205,
+    "types": {
+      "Redact": 345
+    },
+    "authors": {
+      "BogdanLaza": 345
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\output\\redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 206,
+    "types": {
+      "Highlight": 4,
+      "Text": 4
+    },
+    "authors": {
+      "(none)": 4,
+      "WC \u2014 Stop Gap for Monopolistic States": 1,
+      "Workers' Compensation \u2014 Waiver of Subrogation Gap (GA, NC, I": 1,
+      "Workers' Comp \u2014 Experience Modification Rate": 1,
+      "California Employers' Liability \u2014 Labor Code \u00a72810.3 Exclusi": 1
+    },
+    "bookmarks": 7,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\Redacted2024-26 Management Liability Policy.pdf",
+    "slugs": [
+      "ml"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 109,
+    "types": {
+      "Redact": 164
+    },
+    "authors": {
+      "BogdanLaza": 164
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\Redacted2025 - 2026 Professional Liability Policy.pdf",
+    "slugs": [
+      "pl"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 45,
+    "types": {
+      "Redact": 180,
+      "Stamp": 1
+    },
+    "authors": {
+      "BogdanLaza": 180,
+      "s.subramanian": 1
+    },
+    "bookmarks": 26,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\Redacted2025-2026 Liability Policy - Security Guards.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 68,
+    "types": {
+      "Redact": 160,
+      "Stamp": 1
+    },
+    "authors": {
+      "BogdanLaza": 160,
+      "Brownyard by1spf664": 1
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+    "slugs": [
+      "convex"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 19,
+    "types": {
+      "Redact": 46,
+      "Stamp": 2
+    },
+    "authors": {
+      "BogdanLaza": 46,
+      "anitha.ganesh": 2
+    },
+    "bookmarks": 28,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 4,
+    "types": {
+      "Redact": 25
+    },
+    "authors": {
+      "BogdanLaza": 25
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "auto"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 77,
+    "types": {
+      "Redact": 123
+    },
+    "authors": {
+      "BogdanLaza": 123
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "pkg"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 253,
+    "types": {
+      "Redact": 371
+    },
+    "authors": {
+      "BogdanLaza": 371
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 77,
+    "types": {
+      "Redact": 79
+    },
+    "authors": {
+      "BogdanLaza": 79
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\RedactedHanover - WC - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 205,
+    "types": {
+      "Redact": 345
+    },
+    "authors": {
+      "BogdanLaza": 345
+    },
+    "bookmarks": 0,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\25-26 WC Berkley RTS Policy-AUDITED (1).pdf",
+    "slugs": [
+      "pl",
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 88,
+    "types": {
+      "Text": 7,
+      "Highlight": 3
+    },
+    "authors": {
+      "Workers Compensation \u2014 Statutory Coverage by State [text not": 1,
+      "Employers Liability \u2014 Limits Adequacy [text not located \u2014 se": 1,
+      "Multi-State Workers Compensation Coverage [text not located ": 1,
+      "(none)": 3,
+      "Workers Compensation \u2014 Classification Accuracy (Texas)": 1,
+      "Workers Compensation \u2014 Classification Accuracy (AZ and UT)": 1,
+      "Workers Compensation \u2014 Classification Accuracy (Florida)": 1,
+      "Workers Compensation \u2014 Waiver of Subrogation [text not locat": 1
+    },
+    "bookmarks": 11,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\25-26 WC Berkley RTS Policy-AUDITED.pdf",
+    "slugs": [
+      "pl",
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 88,
+    "types": {
+      "Text": 7,
+      "Highlight": 3
+    },
+    "authors": {
+      "Workers Compensation \u2014 Statutory Coverage by State [text not": 1,
+      "Employers Liability \u2014 Limits Adequacy [text not found \u2014 see ": 1,
+      "Multi-State Workers Compensation Coverage [text not found \u2014 ": 1,
+      "(none)": 3,
+      "Workers Compensation \u2014 Classification Accuracy (Texas)": 1,
+      "Workers Compensation \u2014 Classification Accuracy (AZ and UT)": 1,
+      "Workers Compensation \u2014 Classification Accuracy (Florida)": 1,
+      "Workers Compensation \u2014 Waiver of Subrogation [text not found": 1
+    },
+    "bookmarks": 11,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Downloads\\redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 206,
+    "types": {
+      "Text": 4
+    },
+    "authors": {
+      "Workers' Compensation \u2014 Favorable EMR of 0.690 \u2014 Strong Safe": 1,
+      "Workers' Compensation \u2014 Multi-State Coverage with Stop Gap a": 1,
+      "Workers' Compensation \u2014 Waiver of Subrogation Gap in GA, NC,": 1,
+      "WC \u2014 Ownership Change Reporting Obligation Critical for PE-B": 1
+    },
+    "bookmarks": 7,
+    "rank": 1
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_acl.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 5,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_linkify.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_misc.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_paths.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_perms.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_stat.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 4,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_entry_time.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_add_passphrase.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_data.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_disk.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 6,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_extract.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_filter.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_format.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_free.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_header.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_new.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_open.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_read_set_options.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_util.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 4,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_blocksize.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_data.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_disk.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 4,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_filter.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_finish_entry.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_format.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_free.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_header.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_new.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_open.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_set_options.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 8,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\archive_write_set_passphrase.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 1,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\libarchive-formats.5.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 5,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\libarchive.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 3,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\libarchive_changes.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 5,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\anaconda3\\Library\\share\\man\\pdf\\libarchive_internals.3.pdf",
+    "slugs": [
+      "sg"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 4,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\cyber\\01_cyber-coverage-cheat-sheet.pdf",
+    "slugs": [
+      "cyber"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 2,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\umbrella-excess\\Book of Solutions Umbrella.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 20,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\umbrella-excess\\Umbrella Condition - Maintenance of underlying policies.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 6,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\umbrella-excess\\Umbrella Form.pdf",
+    "slugs": [
+      "umb"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 26,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\workers-comp\\archive\\FL-WC-Statute-Chapter-440.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 10,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\workers-comp\\archive\\WC-Experience-Rating-Complete-Guide.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 259,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\workers-comp\\TRIA-Terrorism-Coverage-WC.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 9,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\knowledge-base\\by-coverage\\workers-comp\\WC-Retro-Rating-Plans-McNerney.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": false,
+    "pages": 17,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Desktop\\Run-Test Policies, Contracts\\Policies I bookmarked - and audited, including .pptx executive presentation\\redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 205,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  },
+  {
+    "path": "C:\\Users\\Bogdan\\Documents\\insurance-audits\\clients\\run-test-election-services\\policies\\redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+    "slugs": [
+      "wc"
+    ],
+    "is_redacted_or_audited": true,
+    "pages": 205,
+    "types": {},
+    "authors": {},
+    "bookmarks": 0,
+    "rank": 0
+  }
+]

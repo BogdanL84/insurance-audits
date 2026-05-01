@@ -1,0 +1,484 @@
+{
+  "rows": [
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "general_liability",
+      "requirement_summary": "$1,000,000 each_occurrence; AI required; P/NC required",
+      "umbrella_may_satisfy_minimum": true,
+      "umbrella_satisfaction_note": "Section II.E expressly identifies CGL as a line where Umbrella/Excess Liability may be used to satisfy higher limits, and must follow-form over the underlying. Inline-mention is unambiguous for GL.",
+      "ai_required": true,
+      "pnc_required": true,
+      "wos_required": false,
+      "section_ref": "§II.A, §III.A, §VII",
+      "exact_quote": "GENERAL LIABILITY: Insurance Services Office's Commercial General Liability occurrence coverage form CG 0001. Including, but not limited to Premises/Operations, Products/Completed Operations, Contractual, and Personal & Advertising Injury, without additional exclusions or limitations, unless approved by the County Risk Manager. ... General Liability shall be on an Occurrence basis (as opposed to Claims Made basis). Minimum limits and structure shall be: Building Trades General Aggregate: $2,000,000; Products Comp/Op Aggregate: $2,000,000; Personal & Adv. Injury: $1,000,000; Each Occurrence: $1,000,000; Fire Damage: $100,000. Contractors and Contractors engaged in other projects of construction shall have their general liability Aggregate Limit of Insurance endorsed to apply separately to each job site or project, as provided for by Insurance Services Office form CG-2503 Amendment-Aggregate Limits of Insurance (Per Project).",
+      "severity_hint": "informational",
+      "policy_check": {
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+          "policy_type": "CGL",
+          "primary_limit_value": 1000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": 0,
+          "verdict": "met",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        },
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Package",
+          "primary_limit_value": 1000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": 0,
+          "verdict": "met",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "auto_liability",
+      "requirement_summary": "$1,000,000 combined_single_limit; AI required; P/NC required",
+      "umbrella_may_satisfy_minimum": true,
+      "umbrella_satisfaction_note": "Section II.E expressly identifies Commercial Automobile Liability as a line where Umbrella/Excess may follow-form and satisfy higher limits. Inline-mention is unambiguous for Auto.",
+      "ai_required": true,
+      "pnc_required": true,
+      "wos_required": false,
+      "section_ref": "§II.B, §III.B, §VII",
+      "exact_quote": "AUTOMOBILE LIABILITY: Insurance Services Office's Commercial Automobile Liability coverage form CA 0001. 1. Commercial Automobile Liability: auto coverage symbol '1' (any auto) for corporate/business owned vehicles. If there are no owned or leased vehicles, symbols 8 and 9 for non-owned and hired autos shall apply. 2. Personal Lines automobile insurance shall apply if vehicles are individually owned. ... Commercial Automobile Liability for Corporate/business owned vehicles including non-owned and hired, $1,000,000 Combined Single Limit. Personal Lines Automobile Liability for Individually owned vehicles, $250,000 per person, $500,000 each accident, $100,000 property damage.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Auto",
+          "primary_limit_value": null,
+          "primary_limit_field": "combined_single_limit",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "workers_comp",
+      "requirement_summary": "WOS required",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": true,
+      "section_ref": "§II.C, §III.C, §VIII",
+      "exact_quote": "WORKERS' COMPENSATION: Statutory requirements of the State of California and Employer's Liability Insurance. ... Workers' Compensation Waiver of Subrogation: The workers' compensation policy required hereunder shall be endorsed to state that the workers' compensation carrier waives its right of subrogation against the COUNTY, its officers, directors, officials, employees, agents or volunteers, which might arise by reason of payment under such policy in connection with performance under this Agreement by the CONTRACTOR. Should CONTRACTOR be self-insured for workers' compensation, CONTRACTOR hereby agrees to waive its right of subrogation against COUNTY, its officers, directors, officials, employees, agents or volunteers.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Workers Comp",
+          "primary_limit_value": null,
+          "primary_limit_field": null,
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "employers_liability",
+      "requirement_summary": "$1,000,000 each_accident",
+      "umbrella_may_satisfy_minimum": true,
+      "umbrella_satisfaction_note": "Section II.E expressly identifies Employers' Liability as a line where Umbrella/Excess may follow-form and satisfy higher limits.",
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": "§III.D",
+      "exact_quote": "EMPLOYER'S LIABILITY: $1,000,000 per accident for bodily injury or disease.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Workers Comp",
+          "primary_limit_value": null,
+          "primary_limit_field": "each_accident",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "professional_liability",
+      "requirement_summary": "$1,000,000 each_claim",
+      "umbrella_may_satisfy_minimum": false,
+      "umbrella_satisfaction_note": "Section II.E EXPLICITLY EXCLUDES Professional Liability from the umbrella follow-form list — '...any other liability coverage (other than Professional Liability)...'. Umbrella may NOT be used to satisfy the Professional Liability minimum.",
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": "§II.D, §III.E, §V",
+      "exact_quote": "PROFESSIONAL LIABILITY or Errors and Omissions Liability insurance appropriate to the CONTRACTOR's profession. ... PROFESSIONAL LIABILITY OR ERRORS AND OMISSIONS LIABILITY: $1,000,000 per claim and aggregate. ... If professional liability coverage is written on a Claims Made form: A. The 'Retro Date' must be shown, and must be on or before the date of the Agreement or the beginning of Agreement performance by CONTRACTOR. B. Insurance must be maintained and evidence of insurance must be provided for at least one (1) year after completion of the Agreement. C. If coverage is cancelled or non-renewed, and not replaced with another claims made policy form with a 'Retro Date' prior to the contract effective date, the CONTRACTOR must purchase 'extended reporting' coverage for a minimum of one (1) year after completion of the Agreement.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+          "policy_type": "Professional Liability",
+          "primary_limit_value": 5000000,
+          "primary_limit_field": "each_claim",
+          "delta": 4000000,
+          "verdict": "met",
+          "ai_present": true,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        },
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+          "policy_type": "Tech E&O",
+          "primary_limit_value": null,
+          "primary_limit_field": "each_claim",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "umbrella",
+      "requirement_summary": "each_occurrence (no minimum specified)",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": "§II.E",
+      "exact_quote": "UMBRELLA or Excess Liability policies are acceptable where the need for higher liability limits is noted in the Minimum Limits of Insurance and shall provide liability coverages that at least follow form over the underlying insurance requirements where necessary for Commercial General Liability, Commercial Automobile Liability, Employers' Liability, and any other liability coverage (other than Professional Liability) designated under the Minimum Scope of Insurance.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Umbrella",
+          "primary_limit_value": 10000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "property",
+      "requirement_summary": "WOS required",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": true,
+      "section_ref": "§IX",
+      "exact_quote": "Course of Construction (COC) Waiver of Subrogation: Any Course of Construction (COC) policies maintained by the CONTRACTOR in performance of the Agreement shall contain the following provisions: 1. The COUNTY shall be named as loss payee. 2. The Insurer shall waive all rights of subrogation against the COUNTY.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Package",
+          "primary_limit_value": null,
+          "primary_limit_field": null,
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "RedactedAppendix G - Sacramento County Minimum Insurance Requirements.pdf",
+      "coverage_line": "inland_marine",
+      "requirement_summary": "WOS required",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": true,
+      "section_ref": "§IX",
+      "exact_quote": "Inland Marine Waiver of Subrogation: Any Inland Marine insurance policies maintained by the CONTRACTOR in performance of the Agreement shall be endorsed to state that the insurer shall waive all rights of subrogation against the COUNTY.",
+      "severity_hint": "critical",
+      "policy_check": {
+        "(no policy of this type in program)": {
+          "policy_type": "MISSING",
+          "primary_limit_value": null,
+          "primary_limit_field": null,
+          "delta": null,
+          "verdict": "missing_policy",
+          "ai_present": "unknown",
+          "pnc_present": "unknown",
+          "wos_present": "unknown",
+          "umbrella_mitigation": null,
+          "severity_hint": "critical",
+          "notes": "Contract requires inland_marine coverage but no policy of this type was found in the program."
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "general_liability",
+      "requirement_summary": "$2,000,000 each_occurrence; AI required; P/NC required; WOS required",
+      "umbrella_may_satisfy_minimum": true,
+      "umbrella_satisfaction_note": "§8.2.10 CGL clause explicitly inline-mentions Commercial Umbrella attachment ('Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence...'). Unambiguous — umbrella DOES satisfy this line's minimum.",
+      "ai_required": true,
+      "pnc_required": true,
+      "wos_required": true,
+      "section_ref": "§8.2.10 (p 6); AI §8.2.7; WOS §8.2.8; P&NC §8.2.4",
+      "exact_quote": "Commercial General Liability (CGL) insurance and, if necessary, Commercial Umbrella insurance with a limit of not less than $2,000,000 for each occurrence, $4,000,000 Products/Completed Operations Aggregate, and $4,000,000 General Aggregate Limit. The policy shall include coverage for premises liability, bodily injury, broad form property damage, personal injury, products and completed operations and blanket contractual coverage, and shall not contain any provisions which would serve to limit third party action over claims. There shall be no endorsement or modifications of the CGL limiting the scope of coverage for liability arising from explosion, collapse, or underground property damage.",
+      "severity_hint": "low",
+      "policy_check": {
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf": {
+          "policy_type": "CGL",
+          "primary_limit_value": 1000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": -1000000,
+          "verdict": "met",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": false,
+          "umbrella_mitigation": "applies — umbrella $10,000,000 above primary $1,000,000",
+          "severity_hint": "low",
+          "notes": ""
+        },
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Package",
+          "primary_limit_value": 1000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": -1000000,
+          "verdict": "met",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": true,
+          "umbrella_mitigation": "applies — umbrella $10,000,000 above primary $1,000,000",
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "auto_liability",
+      "requirement_summary": "$2,000,000 combined_single_limit; AI required; P/NC required; WOS required",
+      "umbrella_may_satisfy_minimum": false,
+      "umbrella_satisfaction_note": "Contract has program-level umbrella permission §8.2.9 ('the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements') but §8.2.11 Auto clause does not inline-mention umbrella. Strict reading: umbrella does NOT satisfy this line's minimum (specific governs general). Permissive reading: program-level §8.2.9 cross-applies and umbrella DOES satisfy. Human review required to choose which interpretation governs.",
+      "ai_required": true,
+      "pnc_required": true,
+      "wos_required": true,
+      "section_ref": "§8.2.11 (p 6); AI §8.2.7; WOS §8.2.8; P&NC §8.2.4",
+      "exact_quote": "Commercial/Business Automobile Liability insurance with a combined single limit for bodily injury and property damage of not less than $2,000,000 each occurrence with respect to any of the Contractor's owned, hired, and non-owned vehicles assigned to or used in performance of the Contractor's work or services or use or maintenance of the premises under this contract.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Auto",
+          "primary_limit_value": null,
+          "primary_limit_field": "combined_single_limit",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": true,
+          "pnc_present": true,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "workers_comp",
+      "requirement_summary": "WOS required",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": true,
+      "section_ref": "§8.2.12 (p 6)",
+      "exact_quote": "Workers' compensation insurance to cover obligations imposed by Federal and State statutes having jurisdiction of Contractor's employees engaged in the performance of the work or services under this contract... Contractor, its subcontractors, and sub-subcontractors waive all rights against this contract and its agents, officers, directors, and employees for recovery of damages to the extent these damages are covered by the workers' compensation and Employer's Liability or Commercial Umbrella Liability insurance obtained by Contractor, its subcontractors, and its sub-subcontractors pursuant to this contract.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Workers Comp",
+          "primary_limit_value": null,
+          "primary_limit_field": null,
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "employers_liability",
+      "requirement_summary": "$1,000,000 each_accident",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": "§8.2.12 (p 6)",
+      "exact_quote": "Employer's Liability insurance of not less than $1,000,000 for each accident, $1,000,000 disease for each employee, and $1,000,000 disease policy limit.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Workers Comp",
+          "primary_limit_value": null,
+          "primary_limit_field": "each_accident",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": true,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "professional_liability",
+      "requirement_summary": "each_claim (no minimum specified)",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": null,
+      "exact_quote": null,
+      "severity_hint": "informational",
+      "policy_check": {
+        "Redacted2025 - 2026 Professional Liability Policy.pdf": {
+          "policy_type": "Professional Liability",
+          "primary_limit_value": 5000000,
+          "primary_limit_field": "each_claim",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": true,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        },
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": {
+          "policy_type": "Tech E&O",
+          "primary_limit_value": null,
+          "primary_limit_field": "each_claim",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "cyber",
+      "requirement_summary": "$5,000,000 each_occurrence; AI required; P/NC required",
+      "umbrella_may_satisfy_minimum": false,
+      "umbrella_satisfaction_note": "Contract has program-level umbrella permission §8.2.9 but §8.2.13 Cyber clause does not inline-mention umbrella. Strict reading: umbrella does NOT satisfy this line's minimum. Permissive reading: umbrella DOES satisfy. Human review required.",
+      "ai_required": true,
+      "pnc_required": true,
+      "wos_required": false,
+      "section_ref": "§8.2.13 (p 6); AI §8.2.7; P&NC §8.2.4",
+      "exact_quote": "Cyber, Network Security and Privacy Liability Insurance with a limit of not less than $5,000,000 per occurrence. The policy shall include, but not be limited to; coverage for all directors, officers, agents and employees of the Contractor, losses with respect to network risks (such as data breaches, unauthorized access or use, and ID theft of data), invasion of privacy (regardless of the type of media involved in the loss of private information), crisis management, identity theft response costs, breach notification costs, credit remediation, and credit monitoring, defense, and claims expenses, regulatory defense costs plus fines and penalties, cyber extortion, electronic data restoration expenses (data asset protection), network business interruption, computer fraud coverage, funds transfer loss, third-party fidelity, theft, no requirement for arrest and conviction, and loss outside the premises of the named insured.",
+      "severity_hint": "low",
+      "policy_check": {
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": {
+          "policy_type": "Cyber",
+          "primary_limit_value": null,
+          "primary_limit_field": "each_occurrence",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "low",
+          "notes": ""
+        }
+      }
+    },
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "coverage_line": "umbrella",
+      "requirement_summary": "each_occurrence (no minimum specified)",
+      "umbrella_may_satisfy_minimum": null,
+      "umbrella_satisfaction_note": null,
+      "ai_required": false,
+      "pnc_required": false,
+      "wos_required": false,
+      "section_ref": "§8.2.9 (p 6)",
+      "exact_quote": "If available, the insurance policies required by this contract may be combined with Commercial Umbrella Insurance policies to meet the minimum limit requirements. If a Commercial Umbrella insurance policy is utilized to meet insurance requirements, the Certificate of Insurance shall indicate which lines the Commercial Umbrella Insurance covers.",
+      "severity_hint": "informational",
+      "policy_check": {
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": {
+          "policy_type": "Umbrella",
+          "primary_limit_value": 10000000,
+          "primary_limit_field": "each_occurrence",
+          "delta": null,
+          "verdict": "missing_data",
+          "ai_present": false,
+          "pnc_present": false,
+          "wos_present": false,
+          "umbrella_mitigation": null,
+          "severity_hint": "informational",
+          "notes": ""
+        }
+      }
+    }
+  ],
+  "summary": {
+    "total_requirements": 19,
+    "met": 5,
+    "shortfall": 0,
+    "violation": 0,
+    "missing_data": 13,
+    "missing_policy": 1
+  }
+}

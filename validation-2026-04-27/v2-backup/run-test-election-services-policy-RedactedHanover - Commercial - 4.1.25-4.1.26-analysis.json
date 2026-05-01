@@ -1,0 +1,506 @@
+{
+  "source_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+  "analysis_date": "2026-04-08",
+  "policy_type": "Commercial Package Policy",
+  "is_package": true,
+  "coverage_parts": [
+    "Commercial Property",
+    "Business Income / Extra Expense",
+    "Commercial General Liability",
+    "Data Breach",
+    "Equipment Breakdown",
+    "Employee Benefits Liability"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services Inc (Additional Named Insureds: Runbeck Graphics Inc; Runbeck Investments LLC)",
+  "carrier": "Citizens Insurance Company of America (Hanover Insurance Group) — Equipment Breakdown underwritten by Hartford Steam Boiler Inspection and Insurance Company",
+  "policy_number": "ZB4 H221415 05",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "gl_each_occurrence": 1000000,
+    "gl_general_aggregate": 2000000,
+    "gl_products_completed_ops_aggregate": "Included in General Aggregate",
+    "gl_personal_advertising_injury": 1000000,
+    "gl_damage_to_rented_premises": 1000000,
+    "gl_medical_expense": 10000,
+    "gl_per_project_aggregate_cap": 2000000,
+    "gl_product_recall_each_occurrence": 25000,
+    "gl_product_recall_aggregate": 50000,
+    "property_blanket_building": 21259561,
+    "property_blanket_personal_property": 16280820,
+    "property_business_income": 11500000,
+    "property_extra_expense": "Included in Business Income",
+    "property_equipment_breakdown": 49040381,
+    "property_equipment_breakdown_data_restoration": 100000,
+    "property_equipment_breakdown_expediting_expenses": 100000,
+    "property_equipment_breakdown_hazardous_substances": 100000,
+    "property_equipment_breakdown_spoilage": 100000,
+    "property_equipment_breakdown_direct_deductible": 100000,
+    "property_equipment_breakdown_indirect_deductible": "1x ADV",
+    "property_equipment_breakdown_spoilage_deductible": 10000,
+    "property_equipment_breakdown_service_interruption_waiting_period_hours": 24,
+    "property_electronic_data_sublimit": 2500,
+    "property_interruption_of_computer_operations_sublimit": 2500,
+    "data_breach_aggregate": 10000,
+    "data_breach_deductible": 1000,
+    "employee_benefits_liability_each_employee": 1000000,
+    "employee_benefits_liability_aggregate": 1000000,
+    "employee_benefits_liability_deductible_per_employee": 1000,
+    "total_policy_premium": 30466
+  },
+  "endorsements": [
+    {
+      "form_number": "421-0452 12 14",
+      "name": "Additional Insured — Primary and Non-Contributory",
+      "page": 190,
+      "notes": "Standalone P&NC endorsement on GL. Triggered by written contract, written agreement, or permit. This insurance is primary to the AI's own coverage as Named Insured. Will not seek contribution except for AI's sole negligence, when AI is also an AI under another primary policy, or when excess conditions apply. Defense obligation falls to this carrier if no other insurer defends."
+    },
+    {
+      "form_number": "421-1395 10 10",
+      "name": "Waiver and Release Warranty Endorsement",
+      "page": 192,
+      "notes": "Requires Named Insured to obtain signed Waiver and Release forms from all 'players' or members participating in 'covered activities' (sports teams, athletic/non-athletic events). No coverage for BI/PD claims by a player who did not sign a waiver — except unintentional failure to obtain an individual waiver does not void coverage. Appears inapplicable to election services operations."
+    },
+    {
+      "form_number": "421-2915 06 15",
+      "name": "Commercial General Liability Broadening Endorsement",
+      "page": 194,
+      "notes": "Broad endorsement adding 13 enhancements: (1) Blanket AI by Contract/Agreement/Permit — triggered by written contract, covers BI/PD/PAIA caused in whole or in part by insured's acts; excludes professional services liability for AIs; (2) AI Primary & Non-Contributory — contract-triggered; (3) Blanket Waiver of Subrogation — waives subrogation against any party with whom insured has a written contract requiring waiver, applies only to damage arising out of insured's activities under that contract, contract must predate the occurrence; (4) Bodily Injury Redefined to include mental anguish; (5) Broad Form PD — borrowed equipment, customers goods, elevators; (6) Knowledge of Occurrence — notice to designated employee counts; (7) Liberalization Clause — 45-day window; (8) Medical Payments extended to 3-year reporting; (9) Newly Acquired Organizations covered to end of policy period; (10) Non-Owned Watercraft extended to 51 feet; (11) Supplementary Payments — bail bonds $2,500, loss of earnings $1,000/day; (12) Unintentional Failure to Disclose Hazards; (13) Unintentional Failure to Notify. CRITICAL: AI coverage under item (1) expressly excludes BI/PD/PAIA arising out of rendering or failure to render any professional services — even if claims allege negligence in supervision, hiring, or training of others."
+    },
+    {
+      "form_number": "421-2916 06 15",
+      "name": "Commercial General Liability Enhancement Endorsement",
+      "page": 198,
+      "notes": "10 enhancements: (1) Broad Form Vendors AI — contract-triggered; (2) Aggregate Limit Per Location — general aggregate applies separately per location; (3) Alienated Premises — limits exclusion to known hazards at time of transfer; (4) Broad Form Named Insured — extends Named Insured to >50% owned subsidiaries; (5) Extended Property Damage — reasonable force exception to expected/intended injury exclusion; (6) Incidental Malpractice for employed nurses/EMTs/paramedics; (7) Mobile Equipment Redefined — <1,000 lbs GVW self-propelled vehicles excluded from mobile equipment definition; (8) Personal Injury Broad Form — malicious prosecution added, limited discrimination coverage added (not employment-related); (9) Product Recall Expense — $25,000/occurrence, $50,000 aggregate, $500 deductible; covers communications, shipping, overtime, additional personnel, warehouse rental, disposal; (10) Property Damage Legal Liability Broad Form — expands premises rented to you coverage to $1,000,000 limit including lightning, explosion, smoke, and leakage from fire protective systems."
+    },
+    {
+      "form_number": "421-3635 07 16",
+      "name": "Aggregate Limits of Insurance Per Project and Per Location with Cap",
+      "page": 204,
+      "notes": "General Aggregate applies separately to each construction project away from insured's owned/rented premises AND to each location owned/rented to insured. However, a Policy Aggregate Cap of $2,000,000 applies — this is the overall maximum regardless of number of locations or projects. Does NOT apply to products-completed operations hazard losses."
+    },
+    {
+      "form_number": "421-5203 07 23",
+      "name": "Exclusion — Phthalates",
+      "page": 206,
+      "notes": "Absolute exclusion on GL Coverage A and B and Products/Completed Operations for BI, PD, and PAIA arising out of or allegedly arising out of exposure to or presence of phthalates in any form (lists 12+ specific compounds including DEHP, DINP, DIDP, etc.). Applies whether combined with other substances or not. Applies to any substance identified by any governmental authority as containing or exhibiting similar properties."
+    },
+    {
+      "form_number": "421-5286 01 25",
+      "name": "Exclusion — Cyber Incident — Cyber Content",
+      "page": 208,
+      "notes": "CRITICAL FOR THIS CLIENT. Absolute cyber exclusion on GL Coverage A (BI/PD) and Coverage B (PAIA). Excludes ALL BI, PD, and PAIA caused by, arising out of, or as a consequence of a 'cyber incident.' Definition is extremely broad: (a) unauthorized access to any computer system; (b) malicious code, virus, or harmful code directed at any computer system; (c) denial of service attack disrupting any computer system; (d) alleged or actual unintentional/unauthorized IP infringement, plagiarism, invasion of publicity rights, or defamation resulting directly from 'cyber content' of the insured entity. Expressly bars coverage even for notification costs, credit monitoring, forensic expenses, PR expenses, data restoration, and extortion expenses. 'Cyber content' means electronic display, transmission, or dissemination of information through any network or insured's system including email or website. New Hanover form effective 01/25."
+    },
+    {
+      "form_number": "421-0022 12 90",
+      "name": "Asbestos Liability Exclusion",
+      "page": 188,
+      "notes": "Absolute asbestos exclusion on GL. Bars BI, PD, personal injury, and advertising injury arising out of: inhalation/ingestion/exposure to asbestos; use in construction/manufacturing; removal/encapsulation/disposal; manufacture/transportation/storage; products containing asbestos; or supervision of any asbestos abatement job. No exceptions."
+    },
+    {
+      "form_number": "CG 00 01 04 13",
+      "name": "Commercial General Liability Coverage Form",
+      "page": 210,
+      "notes": "ISO standard CGL occurrence form (2012 edition). Duty to defend; defense costs outside limits until limit exhaustion. Coverage A exclusions include: expected/intended injury, contractual liability (with insured contract exception preserving contractual risk transfer), liquor liability, workers comp, employer's liability, pollution (with hostile fire, building HVAC, and mobile equipment exceptions), aircraft/auto/watercraft, mobile equipment, war, damage to property, damage to your product/work, recall, personal and advertising injury, electronic data (excluded from 'property damage' definition — Pg. 224-225), and recording/distribution of material in violation of law. Insured contract definition (Pg. 223) confirms contractual liability coverage for tort liability assumed by contract."
+    },
+    {
+      "form_number": "CG 00 69 12 23",
+      "name": "Exclusion — Violation of Law Addressing Data Privacy",
+      "page": 226,
+      "notes": "Adds exclusion to Coverage A and Coverage B for BI/PD and personal & advertising injury arising directly or indirectly out of violations of any data privacy law — expressly including BIPA (Illinois Biometric Information Privacy Act), CCPA (California Consumer Privacy Act), and GDPR. Broader than the base TCPA/CAN-SPAM/FCRA exclusion already in the standard form. Critical for Run-Test: company handles voter registration data across 31 states and DC."
+    },
+    {
+      "form_number": "CG 04 35 12 07",
+      "name": "Employee Benefits Liability Coverage",
+      "page": 228,
+      "notes": "Claims-made endorsement. Covers acts, errors, or omissions in the administration of employee benefit programs. Limits: $1,000,000 each employee / $1,000,000 aggregate. Deductible: $1,000 per employee. Retroactive Date: 04/08/2017. Premium: $275. Extended reporting period of 5 years available at up to 100% of annual premium — must be requested within 60 days of policy end. Excludes ERISA fiduciary liability, investment performance claims, employment-related practices (wrongful termination, discrimination), and taxes/fines/penalties."
+    },
+    {
+      "form_number": "CG 20 18 04 13",
+      "name": "Additional Insured — Mortgagee, Assignee or Receiver",
+      "page": 234,
+      "notes": "Scheduled additional insured endorsement — NOT blanket. Adds two parties for premises at 2800 S. 36th St., Phoenix AZ 85034 only: (1) ARC Airport 2800, LLC and (2) Banterra Bank ISAOA Credit Admin. Coverage limited strictly to their liability as mortgagee, assignee, or receiver arising out of ownership/maintenance/use of those premises. Expressly excludes structural alterations, new construction, and demolition. Coverage capped at the lesser of what the contract requires or policy limits. This is a landlord/lender AI endorsement only — not a customer or county government AI endorsement."
+    },
+    {
+      "form_number": "CG 21 06 12 23",
+      "name": "Exclusion — Access or Disclosure of Confidential or Personal Material or Information",
+      "page": 236,
+      "notes": "Absolute exclusion added to both Coverage A and Coverage B. Excludes BI/PD and personal & advertising injury arising out of any access to or disclosure of confidential or personal information — including patents, trade secrets, customer lists, financial info, credit card info, health info, and biometric info. Exclusion expressly extends to notification costs, credit/identity monitoring, forensic expenses, public relations expenses, data restoration, and extortion expenses. Critical for Run-Test: company processes election data, voter registration info, and ballot data for 90M+ registered voters."
+    },
+    {
+      "form_number": "CG 21 47 12 07",
+      "name": "Employment-Related Practices Exclusion",
+      "page": 238,
+      "notes": "Excludes bodily injury and personal/advertising injury arising from employment-related practices — refusal to employ, termination, coercion, demotion, discipline, harassment, humiliation, discrimination, or malicious prosecution. Applies before, during, and after employment in any capacity."
+    },
+    {
+      "form_number": "CG 21 49 09 99",
+      "name": "Total Pollution Exclusion Endorsement",
+      "page": 240,
+      "notes": "Replaces standard exclusion f with absolute pollution exclusion — no coverage for BI/PD arising from discharge, dispersal, seepage, migration, release, or escape of pollutants at any time. Also excludes all cleanup/response costs. CONFLICT: CG 21 55 (pg. 242) also purports to replace exclusion f — both cannot simultaneously govern. The later-appearing CG 21 55 likely supersedes, but carrier confirmation required."
+    },
+    {
+      "form_number": "CG 21 55 09 99",
+      "name": "Total Pollution Exclusion with a Hostile Fire Exception",
+      "page": 242,
+      "notes": "Also replaces exclusion f — same absolute pollution exclusion as CG 21 49, but restores coverage for BI/PD from heat, smoke, or fumes from a 'hostile fire,' except where the fire occurs at a waste-handling or remediation site. As the later-appearing endorsement, this likely supersedes CG 21 49 — meaning the hostile fire exception would apply — but ambiguity should be confirmed with Hanover."
+    },
+    {
+      "form_number": "CG 21 67 12 04",
+      "name": "Fungi or Bacteria Exclusion",
+      "page": 244,
+      "notes": "Excludes BI/PD and personal/advertising injury arising from inhalation, ingestion, contact with, or presence of any fungi or bacteria (including mold, mildew, mycotoxins, spores) within a building or structure. Also excludes all remediation/abatement costs. Exception for fungi/bacteria in goods intended for bodily consumption."
+    },
+    {
+      "form_number": "CG 21 73 01 15",
+      "name": "Exclusion of Certified Acts of Terrorism",
+      "page": 246,
+      "notes": "Excludes all injury or damage arising directly or indirectly from a 'certified act of terrorism' under TRIA. Applies across GL, Liquor Liability, OCP, Pollution, Products/Completed Ops, Railroad Protective, and UST coverage parts. Terrorism coverage ($468 total premium) was accepted per TRIA disclosure on page 6 of the policy."
+    },
+    {
+      "form_number": "CG 21 96 03 05",
+      "name": "Silica or Silica-Related Dust Exclusion",
+      "page": 248,
+      "notes": "Excludes BI/PD and personal/advertising injury arising from inhalation, ingestion, or contact with silica (silicon dioxide in any form) or silica-related dust mixtures. Also excludes all cleanup and response costs."
+    },
+    {
+      "form_number": "CG 24 04 05 09",
+      "name": "Waiver of Transfer of Rights of Recovery Against Others To Us — Blanket",
+      "page": 250,
+      "notes": "Blanket waiver of subrogation — carrier waives right of recovery against any person or organization where required by written contract. Applies to both GL and Products/Completed Operations hazard. Schedule reads: 'Blanket where required by written contract.' Contract-triggered, favorable blanket form. Also note: 421-2915 Section (3) provides a parallel blanket WOS provision for the same trigger."
+    },
+    {
+      "form_number": "CG 40 32 05 23",
+      "name": "Exclusion — Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)",
+      "page": 252,
+      "notes": "Excludes BI/PD and personal/advertising injury arising from PFAS chemicals — broadly defined to include PFOA, PFOS, fluorotelomers, side-chain fluorinated polymers, their degradation products, and goods/products containing them. Industry-standard exclusion as of 2022-2023."
+    },
+    {
+      "form_number": "411-0669 01 15",
+      "name": "Data Breach Coverage Form",
+      "page": 58,
+      "notes": "CRITICAL NOTE — aggregate limit is only $10,000. This is nominal coverage only. Coverage A (Data Breach Expense): notification expenses, forensic analysis, cyber BI (24-hr waiting period, 60-day max period of restoration), legal, PR, and ransom. Coverage also includes regulatory investigation defense. Section B exclusions: fines/penalties, contractually assumed liability, defense/legal liability from third-party claims (except regulatory investigation defense), prior discovery, dishonesty, and consequential losses (with cyber BI exception). Section D: $1,000 per-event deductible. Section F key definitions: Data Breach, Private Personal Data, Rogue Employee, Regulatory Investigation, Period of Restoration. 30-day discovery-to-report window. For a company processing elections for 90M+ voters, this sublimit is dangerously inadequate."
+    },
+    {
+      "form_number": "411-0679 04 10",
+      "name": "Associates and Family Members Additional Coverage Endorsement",
+      "page": 70,
+      "notes": "Extends Data Breach Services (Fraud Alert and Identity Restoration Case Management) to employees ('associates') and their family members (spouse/domestic partner; dependents under 23) when private personal data is lost/stolen through personal means (wallet, credit card, passport theft). Does NOT apply to data breaches involving information owned or controlled by the insured business. Services available for one year from date of notification."
+    },
+    {
+      "form_number": "411-0681 12 09",
+      "name": "Identity Theft Resolution Services",
+      "page": 72,
+      "notes": "Informational insert only — not an endorsement changing coverage. Provides access phone number (800-628-0250) for Identity Theft 911 fraud specialists. Offers Fraud Alert service and Identity Restoration Case Management including one year of credit monitoring and fraud monitoring of 1,000+ public databases."
+    },
+    {
+      "form_number": "411-0682 12 09",
+      "name": "Graphic Arts Coverage Extension",
+      "page": 74,
+      "notes": "Extends Business Personal Property coverage to 'graphic arts materials' (negatives, positives, artwork, separations, plates, dies, molds, forms, manuscripts, electronic/magnetic media equivalents — excludes prepackaged software). Limit: $100,000. Deductible: $500 per occurrence. Valuation: actual replacement/reproduction cost; if irreplaceable, original production cost. Coverage requires property be actually replaced or reproduced — no coverage for obsolete or unused property. Highly relevant for a ballot printing operation. Post-election, custom ballot dies and molds may be deemed obsolete/unused and therefore unrecoverable."
+    },
+    {
+      "form_number": "411-0793 02 23",
+      "name": "Gold Property Broadening Endorsement",
+      "page": 76,
+      "notes": "Comprehensive property broadening endorsement modifying Building and Personal Property, Causes of Loss – Special Form, and Business Income forms. Contains 58 Scheduled Coverages and 9 Scheduled Blanket Coverages (Blanket Limit: $500,000). Key scheduled limits: Employee Theft incl. ERISA Compliance $250,000; Computer and Funds Transfer Fraud $50,000 (social engineering ONLY covered when caused by software contractor with written agreement — standard BEC scams NOT covered); Forgery or Alteration $100,000; Extra Expense $300,000; Extended Business Income 180 Days; Business Personal Property Off Premises $250,000; Business Personal Property In Transit $100,000; Ordinance or Law Coverage B/C $500,000; Newly Acquired Property — Building $2,000,000 / BPP $1,000,000; Debris Removal $250,000; Unintentional Property Reporting Errors $500,000; Dependent Properties BI/EE $150,000; Pollutant Clean-Up $100,000; Utility Services Direct Damage $100,000 + BI/EE $100,000 (excludes overhead transmission lines and electronic data; 24-hr waiting period); Leasehold Interest $150,000; Inventory and Loss Appraisal $250,000; Worldwide BPP Off Premises $75,000; Money and Securities $50,000 (excludes computer funds transfer fraud and BEC); Voluntary Parting $50,000; Water Damage extended to lawns/shrubs $50,000; Windblown Debris $10,000; Denial of Access; E-Commerce/Electronic Vandalism (excludes employee manipulation, proprietary data theft, and observation-based exfiltration); Electronic Data Processing Equipment (excludes computer hacking and computer virus). Blanket coverages ($500,000 shared): Accounts Receivable, Valuable Papers and Records, Fine Arts, Research and Development Documentation (R&D — excludes electronic data form, erasure, and programming errors), Outdoor Property, Personal Effects and Property of Others, Fire Department Service Charge, Movement of Property, Deferred Payments. Special theft sub-limits: furs $10K, jewelry $10K, precious stones/bullion $35K, patterns/dies/molds owned by others $5K. Valuation: replacement cost for hardware/software/fine arts/BPP; ACV for hardware not replaced; proprietary programs at reproduction cost from duplicates or research cost if no duplicates."
+    },
+    {
+      "form_number": "411-0933 01 15",
+      "name": "Arizona Changes — Data Breach Coverage Form",
+      "page": 124,
+      "notes": "State-specific endorsement modifying Data Breach Coverage Form for Arizona. Replaces Section E – Conditions, paragraph 2 (Concealment, Misrepresentation or Fraud). Under AZ version, coverage is denied only where misrepresentation/omission is (a) fraudulent, (b) material to acceptance of risk or hazard assumed, AND (c) would have caused carrier to not issue, not issue in as large an amount, or not provide coverage for the hazard. Conjunctive three-part test — slightly better protection for the insured than a simple materiality test."
+    },
+    {
+      "form_number": "451-0038 11 16",
+      "name": "Equipment Breakdown Coverage (Including Electronic Circuitry Impairment) — Hartford Steam Boiler",
+      "page": 126,
+      "notes": "Adds Equipment Breakdown as an Additional Cause of Loss across Building and Personal Property and Causes of Loss forms. Covered triggers: (a) 'accident' — mechanical breakdown, artificially generated electrical current/arcing, steam boiler explosion, internal steam/hot water equipment damage; (b) 'electronic circuitry impairment' — physical damage to covered equipment from electrical/electronic failure. Sub-coverages: BI/EE (extends existing limits); Data Restoration $100,000; Expediting Expenses $100,000; Fungus/Wet Rot/Dry Rot/Bacteria $15,000 sublimit; Hazardous Substances $100,000; Off Premises Equipment Breakdown (worldwide except sanctioned countries); Public Relations $5,000; Service Interruption — extends BI/EE/Data Restoration/Spoilage to utility/landlord/supplier equipment failure including cloud computing services (accident only — 24-hr waiting period; electronic circuitry impairment does NOT trigger service interruption); Spoilage $100,000. Environmental/Safety/Efficiency Improvements allows up to 150% of like-kind replacement cost. Suspension clause: carrier can suspend coverage on dangerous equipment immediately upon written notice. Deductibles: Direct $100,000; Indirect 1x ADV; Spoilage $10,000. Key exclusions: vandalism, earth movement, flood, fire, lightning, windstorm/hail, smoke, virus/malware/programming errors (not an 'accident'), and data loss. Defects, programming errors, malicious code, and data loss are expressly excluded from the definition of 'accident.' Electronic circuitry impairment does NOT trigger Service Interruption or Dependent Properties coverage."
+    },
+    {
+      "form_number": "451-0039 11 16",
+      "name": "Commercial Property Coverage Part Equipment Breakdown Coverage Schedule",
+      "page": 136,
+      "notes": "Sets Equipment Breakdown sublimits: $49,040,381 Equipment Breakdown Limit; $11,500,000 Business Income; Extra Expense included; Data Restoration $100,000; Expediting Expenses $100,000; Hazardous Substances $100,000; Spoilage $100,000. Deductibles: Direct Coverages $100,000; Indirect Coverages 1x ADV; Spoilage $10,000. Service Interruption subject to 24-hour waiting period."
+    },
+    {
+      "form_number": "CP 00 10 10 12",
+      "name": "Building and Personal Property Coverage Form",
+      "page": 138,
+      "notes": "Standard ISO BPP form (2011 edition). Covers Buildings, Business Personal Property, and Personal Property of Others. Critical sublimits within form: Electronic Data Additional Coverage capped at $2,500 per policy year regardless of number of occurrences or premises (critically inadequate for election tech company); Fire Department Service Charge $1,000 (modified by AZ endorsement); Pollutant Cleanup $10,000 per location per year; Outdoor Property $1,000 total; Property Off-Premises $10,000; Newly Acquired Buildings $250,000; Newly Acquired BPP $100,000 (30-day automatic coverage). Personal Effects/Property of Others Extension limited to $2,500 per premises. Valuable Papers (non-electronic) limited to $2,500. Electronic Data Manipulation by Employee expressly excluded — rogue employee corrupting data files not covered. Vacant building rule (>60 days): excludes vandalism, sprinkler leakage, glass breakage, water damage, and theft; reduces all other covered losses by 15%."
+    },
+    {
+      "form_number": "CP 00 30 10 12",
+      "name": "Business Income (And Extra Expense) Coverage Form",
+      "page": 154,
+      "notes": "Standard ISO BI/EE form (2011 edition). Coverage triggered by direct physical loss causing suspension of operations during period of restoration. Interruption of Computer Operations sublimit: $2,500 per policy year (unless Declarations show higher limit) — critically low for a technology-dependent election services company. Extended Business Income ends at the earlier of 60 days post-restoration or date operations could reasonably resume. Civil Authority coverage begins 72 hours after access prohibition and runs 4 consecutive weeks. For manufacturing risks, Net Income includes net sales value of production — applicable to Run-Test's printing operations."
+    },
+    {
+      "form_number": "CP 00 90 07 88",
+      "name": "Commercial Property Conditions",
+      "page": 164,
+      "notes": "Standard commercial property conditions. Includes Transfer of Rights of Recovery (subrogation) — insurer may recover from third parties. Waiver of subrogation permitted only if executed in writing prior to loss, or post-loss for owned/controlled entities or tenants. Legal action against insurer must be brought within 2 years of loss date. Coverage territory: USA, Puerto Rico, Canada."
+    },
+    {
+      "form_number": "CP-AZ-1",
+      "name": "Arizona Changes — Intentional Loss and Concealment/Misrepresentation",
+      "page": 166,
+      "notes": "Adds intentional loss exclusion for fire (acts by or at direction of insured with intent to cause loss) and for other perils. Domestic violence carve-out: innocent co-insured who did not cooperate in creating the loss may still recover their insurable interest. Replaces standard Concealment/Misrepresentation/Fraud condition with Arizona-specific version requiring materiality and good-faith underwriting impact to void coverage."
+    },
+    {
+      "form_number": "CP-AZ-2",
+      "name": "Arizona Changes — Fire Department Service Charge Removed",
+      "page": 170,
+      "notes": "Removes Paragraph A.4.c. Fire Department Service Charge additional coverage from Building and Personal Property Coverage Form. State-required Arizona modification."
+    },
+    {
+      "form_number": "CP 01 40 07 06",
+      "name": "Exclusion of Loss Due to Virus or Bacteria",
+      "page": 168,
+      "notes": "Absolute exclusion — no coverage for loss or damage caused by or resulting from any virus, bacterium or other microorganism capable of inducing physical distress, illness or disease. Applies to ALL coverages under the Commercial Property part including Building & Personal Property, Business Income, Extra Expense, and Civil Authority. Does NOT exclude fungus, wet rot, or dry rot (addressed separately). Supersedes pollutants exclusion where applicable."
+    },
+    {
+      "form_number": "CP 04 11 09 17",
+      "name": "Protective Safeguards",
+      "page": 172,
+      "notes": "Condition requiring insured to maintain Protective Safeguard P-1 (Automatic Sprinkler System, including related supervisory services) at Premises 1, Building 1. If insured fails to maintain sprinkler system in complete working order AND a fire occurs, the carrier WILL NOT pay for that fire loss. Insured must notify carrier of any suspension or impairment — except sprinkler shutoffs can run up to 48 hours for breakage/leakage/freezing without notification. Hard condition — coverage denial applies specifically to fire losses following a known sprinkler impairment."
+    },
+    {
+      "form_number": "CP 10 30 09 17",
+      "name": "Causes of Loss — Special Form",
+      "page": 174,
+      "notes": "Open-perils form — covers direct physical loss unless excluded. Key exclusions: Ordinance/Law, Earth Movement, Governmental Action (seizure/destruction by government order — potentially significant for election services company), Nuclear Hazard, Utility Services (off-premises power/communication failure — not covered), War, Flood/Water, Fungus/Bacteria (limited coverage $15,000 sublimit if from specified cause of loss), Electrical Disturbance, Wear & Tear/Mechanical Breakdown, Dishonest/Criminal Acts by Employees (theft by employees excluded — requires separate Crime coverage), Pollution, and Collapse (with exceptions). Additional exclusion for Loss or Damage to Products caused by error/omission in any stage of development, production, or use — directly relevant to ballot printing (a print error destroying a ballot run is not covered as property damage unless a separate Covered Cause of Loss results). Property in Transit extension: $5,000 limit."
+    },
+    {
+      "form_number": "CP 12 18 10 12",
+      "name": "Loss Payable Provisions",
+      "page": 184,
+      "notes": "Modifies Commercial Property coverage. Provides four clauses: (1) Loss Payable, (2) Lender's Loss Payable, (3) Contract of Sale, (4) Building Owner Loss Payable. Loss Payee schedule fields blank in reviewed pages."
+    },
+    {
+      "form_number": "IL 00 21 09 08",
+      "name": "Nuclear Energy Liability Exclusion (Broad Form)",
+      "page": 48,
+      "notes": "Absolute nuclear exclusion across all liability coverages. Standard."
+    },
+    {
+      "form_number": "IL 09 35 07 02",
+      "name": "Exclusion of Certain Computer-Related Losses",
+      "page": 54,
+      "notes": "Excludes property losses caused by failure of computer hardware, software, or networks to correctly process dates. Legacy Y2K-era form. Broad exclusion — applies to all property coverage."
+    },
+    {
+      "form_number": "401-1235 12 14",
+      "name": "Notice of Cancellation to Designated Entity(s)",
+      "page": 36,
+      "notes": "30-day cancellation notice provided to: NY State Office of General Services/Procurement Services; Amazon.com Services LLC; ARC Airport 2800 LLC; Banterra Bank ISAOA. Confirms active government contract relationships (NY OGS) and possible AWS/cloud dependency. County contracts likely require cancellation notice compliance."
+    },
+    {
+      "form_number": "401-1337 02 16",
+      "name": "Trade or Economic Sanctions Endorsement",
+      "page": 38,
+      "notes": "Standard sanctions exclusion — no coverage where prohibited by OFAC or other applicable sanctions laws."
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Cyber Incident / Cyber Content Exclusion",
+      "form_number": "421-5286 01 25",
+      "page": 208,
+      "impact": "CRITICAL. Absolute exclusion of all GL coverage (BI, PD, PAIA) arising out of any cyber incident. Definition is extremely broad — unauthorized access, malicious code, DoS attack, or cyber content issues. Expressly bars derivative costs including notification, forensics, credit monitoring, data restoration, PR, and extortion expenses. For Run-Test Election Services, whose core operations involve election technology, ballot processing systems, and digital infrastructure serving 90M+ registered voters, this exclusion strips GL protection for the most likely catastrophic loss scenario. A standalone cyber liability policy is mandatory."
+    },
+    {
+      "name": "Access or Disclosure of Confidential or Personal Information Exclusion",
+      "form_number": "CG 21 06 12 23",
+      "page": 236,
+      "impact": "Absolute exclusion — GL will not pay for any data breach-related claim of any kind, including notification, credit monitoring, forensic, PR, data restoration, and extortion expenses. Covers any access to or disclosure of patents, trade secrets, customer lists, financial info, credit card info, health info, and biometric data. Paired with CG 00 69 12 23 and 421-5286, this creates a complete cyber/data exclusion wall on the GL policy. Any cyber-related third-party claim from a county government must be handled by a standalone cyber policy."
+    },
+    {
+      "name": "Violation of Law Addressing Data Privacy Exclusion",
+      "form_number": "CG 00 69 12 23",
+      "page": 226,
+      "impact": "Absolute exclusion for BI/PD and PAIA arising from violations of any data privacy law — expressly including BIPA, CCPA, and GDPR, and any similar federal/state/local statute. Goes beyond the base form's TCPA/CAN-SPAM/FCRA exclusion to sweep in all privacy statutes. For a company touching voter data in 31 states, this closes the GL policy entirely to any privacy law violation claim."
+    },
+    {
+      "name": "Electronic Data Exclusion (GL)",
+      "form_number": "CG 00 01 04 13",
+      "page": 214,
+      "impact": "Coverage A excludes damages arising out of loss of, loss of use of, damage to, corruption of, inability to access, or inability to manipulate electronic data. Electronic data is expressly excluded from the definition of 'tangible property' under 'property damage' (Pg. 224-225). For Run-Test, whose core deliverable is election data processing and ballot management software, the GL will not respond to claims that their software corrupted, lost, or made inaccessible election data — regardless of whether a county government sues for it."
+    },
+    {
+      "name": "Professional Services Exclusion within Blanket AI Endorsement",
+      "form_number": "421-2915 06 15",
+      "page": 195,
+      "impact": "The blanket AI endorsement expressly excludes coverage for AIs for BI/PD/PAIA 'arising out of the rendering of or failure to render any professional services' — even when negligence in supervision, hiring, training, or monitoring is alleged, if the underlying occurrence involves professional services. Run-Test's election technology services — system configuration, ballot design, data processing — likely constitute 'professional services.' County clients added as AIs may find their AI coverage stripped for technology/service failure claims. GL AI coverage for counties is therefore limited to premises/operations claims only."
+    },
+    {
+      "name": "Employment-Related Practices Exclusion",
+      "form_number": "CG 21 47 12 07",
+      "page": 238,
+      "impact": "No GL coverage for employment-related claims — harassment, discrimination, wrongful termination, hostile work environment, etc. Standard GL exclusion; these exposures require a separate EPLI policy. No EPLI coverage part exists in this package — standalone EPLI must be confirmed elsewhere in the program."
+    },
+    {
+      "name": "Total Pollution Exclusion / Hostile Fire Conflict",
+      "form_number": "CG 21 49 09 99 / CG 21 55 09 99",
+      "page": 240,
+      "impact": "Two endorsements (CG 21 49, pg. 240 and CG 21 55, pg. 242) both purport to replace exclusion f — creating coverage ambiguity. CG 21 49 is absolute; CG 21 55 restores the hostile fire exception. As the later-appearing endorsement, CG 21 55 likely controls and the hostile fire exception applies — but this must be confirmed with Hanover. Low practical relevance for election technology operations."
+    },
+    {
+      "name": "Data Breach — No Third-Party Liability Coverage",
+      "form_number": "411-0669 01 15",
+      "page": 60,
+      "impact": "No coverage under the Data Breach form for fees, costs, settlements, judgments, or liability arising from any lawsuit, administrative proceeding, or governmental investigation against the insured — except regulatory investigation defense costs. If a county or voter sues Run-Test following a data breach, the Data Breach Coverage Form provides no defense or indemnity for that claim. Combined with the GL cyber exclusion wall, third-party claim liability from a data breach has no coverage in this program. A standalone cyber liability policy is essential."
+    },
+    {
+      "name": "Data Breach — Fines, Penalties and Assessments Excluded",
+      "form_number": "411-0669 01 15",
+      "page": 60,
+      "impact": "No coverage for fines, assessments, surcharges, attorneys' fees, court costs or other penalties arising from a data breach — including fees/surcharges from financial institutions. Election data breaches frequently trigger state AG regulatory penalties and FTC enforcement actions. Policy covers defense costs for regulatory investigations but will not pay the resulting fines or assessments."
+    },
+    {
+      "name": "Data Breach — Contractually Assumed Liability Excluded",
+      "form_number": "411-0669 01 15",
+      "page": 61,
+      "impact": "No coverage for legal obligations arising from assumption of liability in a contract or agreement. If Run-Test's county contracts require them to indemnify counties for data breach liability, those contractually assumed obligations are not covered under the Data Breach form. Significant given government contract exposure."
+    },
+    {
+      "name": "Computer and Funds Transfer Fraud — Social Engineering Coverage Severely Limited",
+      "form_number": "411-0793 02 23",
+      "page": 84,
+      "impact": "CRITICAL LIMITATION. Computer and Funds Transfer Fraud coverage under the Gold Property endorsement explicitly states that social engineering coverage is ONLY provided when a software contractor with a written agreement causes the fraudulent entry/change. Standard business email compromise (BEC) scams — where an employee is deceived into wiring funds by a fraudulent email posing as a vendor or executive — are NOT covered. $50,000 sublimit applies even in the narrow covered scenario. Separate Crime or Cyber policy required for BEC coverage."
+    },
+    {
+      "name": "Electronic Data Processing Equipment — Computer Hacking and Virus Excluded",
+      "form_number": "411-0793 02 23",
+      "page": 88,
+      "impact": "CRITICAL FOR THIS CLIENT. Under the Electronic Data Processing Equipment Additional Coverage, the policy expressly excludes direct physical loss caused by 'computer hacking' or 'computer virus.' Also excludes electrical disturbance and power supply disturbance. Run-Test operates election technology systems handling data for 90M+ voters — a cyberattack causing physical damage to EDP equipment would not be covered under this property endorsement. A standalone Cyber policy is required."
+    },
+    {
+      "name": "E-Commerce — Employee Manipulation Exclusion",
+      "form_number": "411-0793 02 23",
+      "page": 87,
+      "impact": "The E-Commerce Interruption of Computer Operations coverage (electronic vandalism triggering BI) expressly excludes any interruption caused by manipulation of a computer system by any employee, including temporary or leased employees, or by any retained entity. Insider threat scenarios — including accidental or intentional manipulation by IT staff or vendors — would not trigger this coverage."
+    },
+    {
+      "name": "Electronic Data — $2,500 Sublimit (Building & Personal Property Form)",
+      "form_number": "CP 00 10 10 12",
+      "page": 143,
+      "impact": "SIGNIFICANT CONCERN. Under the standard BPP form, coverage for electronic data is limited to $2,500 per policy year regardless of number of occurrences or premises. For an election technology company whose core product IS data — ballot files, voter records, programming data — this is a near-total exclusion of the most valuable asset. Equipment Breakdown Data Restoration ($100,000) provides additional coverage but only for breakdown-caused data loss. A standalone Cyber or Technology E&O policy with first-party data restoration is essential."
+    },
+    {
+      "name": "Interruption of Computer Operations — $2,500 Sublimit",
+      "form_number": "CP 00 30 10 12",
+      "page": 157,
+      "impact": "Business Income and Extra Expense coverage for suspension caused by electronic data destruction/corruption is capped at $2,500 annually unless Declarations show a higher limit. Critically inadequate for Run-Test Election Services, whose entire operation is technology-dependent. Confirm whether a higher limit is shown in Declarations."
+    },
+    {
+      "name": "Governmental Action Exclusion",
+      "form_number": "CP 10 30 09 17",
+      "page": 175,
+      "impact": "Excludes seizure or destruction of property by order of governmental authority. Potentially significant for Run-Test — a company with government contracts whose equipment could be subject to government seizure, investigation, or confiscation during an election dispute or security review."
+    },
+    {
+      "name": "Loss or Damage to Products — Error/Omission Exclusion",
+      "form_number": "CP 10 30 09 17",
+      "page": 179,
+      "impact": "No coverage for loss or damage to merchandise, goods, or products caused by error or omission in any stage of development, production, or use — including planning, testing, processing, packaging. Directly relevant to ballot printing: a print error that destroys a ballot run is not covered as property damage. Only covered if the error results in a separate Covered Cause of Loss (e.g., a fire started by the error)."
+    },
+    {
+      "name": "Dishonest or Criminal Acts by Employees (Property)",
+      "form_number": "CP 10 30 09 17",
+      "page": 177,
+      "impact": "No property coverage for theft or criminal acts by employees, officers, directors, authorized representatives, or anyone entrusted with the property. For an election company with sensitive data and equipment, employee theft of ballots, election hardware, or proprietary systems is uninsured under property. Requires separate Crime/Fidelity coverage — confirm elsewhere in program."
+    },
+    {
+      "name": "Utility Services Exclusion (Property)",
+      "form_number": "CP 10 30 09 17",
+      "page": 175,
+      "impact": "No coverage for loss caused by failure of power, communication, water, or other utility originating away from described premises. For an election technology company, extended off-premises power or internet outage causing business interruption is not covered under base property form. Note: Utility Services Direct Damage ($100,000) and BI/EE ($100,000) extensions exist in the Gold Endorsement (411-0793) but exclude overhead transmission lines and electronic data."
+    },
+    {
+      "name": "Protective Safeguards — Fire Coverage Condition",
+      "form_number": "CP 04 11 09 17",
+      "page": 172,
+      "impact": "If insured fails to maintain automatic sprinkler system (P-1) in complete working order prior to a fire, fire coverage is voided. Hard condition — coverage denial applies specifically to fire losses following a known sprinkler impairment. Must ensure sprinkler maintenance records are current."
+    },
+    {
+      "name": "Equipment Breakdown — Programming Error / Data Loss Not an Accident",
+      "form_number": "451-0038 11 16",
+      "page": 130,
+      "impact": "Defect, programming error, programming limitation, computer virus, malicious code, loss of data, loss of access, loss of use, or loss of functionality are expressly excluded from the definition of 'accident.' For a technology company, cyber/malware events that damage equipment may not qualify as an 'accident' under Equipment Breakdown — reducing effective coverage for cyber-induced physical equipment damage."
+    },
+    {
+      "name": "Vacancy Reduction — 60-Day Rule",
+      "form_number": "CP 00 10 10 12",
+      "page": 149,
+      "impact": "If premises are vacant more than 60 consecutive days: vandalism, sprinkler leakage, glass breakage, water damage, theft, and attempted theft are completely excluded; all other covered losses are reduced 15%. Relevant if Run-Test has seasonal operations or satellite locations that may be unoccupied during off-election periods."
+    },
+    {
+      "name": "Valuable Papers and Records — Electronic Data Exclusion",
+      "form_number": "CP 00 10 10 12",
+      "page": 145,
+      "impact": "Valuable Papers and Records Coverage Extension explicitly does NOT apply to records that exist as electronic data. For an election technology company, virtually all critical records (ballot designs, voter files, programming data) are electronic — this extension provides no practical protection for Run-Test's most important records."
+    },
+    {
+      "name": "R&D Documentation — Electronic Data Exclusion",
+      "form_number": "411-0793 02 23",
+      "page": 112,
+      "impact": "Research and Development Documentation coverage explicitly does not apply to R&D documentation which exists as 'electronic data.' For a technology company whose R&D almost certainly exists primarily in electronic form, this sublimit provides less protection than it appears. Also excludes erasure, programming errors, and faulty installation."
+    },
+    {
+      "name": "Virus or Bacteria — Absolute Exclusion (Property)",
+      "form_number": "CP 01 40 07 06",
+      "page": 168,
+      "impact": "No coverage for any loss (property damage, business income, extra expense, civil authority) caused by any virus or bacterium. Applies to all Commercial Property coverage parts. Eliminates any pandemic-related BI claim. Standard post-COVID ISO exclusion."
+    },
+    {
+      "name": "Fungi or Bacteria Exclusion (GL)",
+      "form_number": "CG 21 67 12 04",
+      "page": 244,
+      "impact": "No GL coverage for mold/fungi/bacteria claims including any resulting BI, PD, or remediation costs. Moderate relevance for printing/mail operations where paper storage and humidity create mold conditions."
+    },
+    {
+      "name": "PFAS Exclusion",
+      "form_number": "CG 40 32 05 23",
+      "page": 252,
+      "impact": "No GL coverage for any PFAS-related claims. Industry-standard exclusion; low relevance for election technology/printing/mail operations unless specialty inks or coatings involve fluorinated compounds. Worth verifying ballot printing materials are PFAS-free."
+    },
+    {
+      "name": "Phthalates Exclusion",
+      "form_number": "421-5203 07 23",
+      "page": 206,
+      "impact": "Absolute exclusion for phthalate-related BI/PD/PAIA on GL and Products/Completed Operations. Election services involve paper, ink, and printing materials — if any inks or materials contain phthalates, products/completed ops claims could be barred. Worth verifying that ballot printing materials are phthalate-free."
+    },
+    {
+      "name": "Certified Acts of Terrorism Exclusion",
+      "form_number": "CG 21 73 01 15",
+      "page": 246,
+      "impact": "No GL coverage for TRIA-certified terrorism events. For an election technology company serving government entities, verify if government contract requirements mandate terrorism coverage. Standalone terrorism coverage accepted per TRIA disclosure (page 6)."
+    },
+    {
+      "name": "Employee Benefits Liability — ERISA Fiduciary Exclusion",
+      "form_number": "CG 04 35 12 07",
+      "page": 229,
+      "impact": "EBL endorsement excludes damages for which any insured is liable as a fiduciary under ERISA or similar laws. If the company has a 401(k) or pension plan, ERISA fiduciary liability requires a separate fiduciary liability policy."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": true,
+    "additional_insured_blanket_note": "Form 421-2915 (Broadening Endorsement, Pg. 194) provides blanket AI by written contract/agreement/permit. Form 421-0452 (Pg. 190) provides AI + Primary & Non-Contributory by written contract. CRITICAL LIMITATION: both forms exclude professional services claims — AI coverage for county clients is limited to premises/operations, not technology or service failures.",
+    "additional_insured_scheduled": true,
+    "additional_insured_scheduled_note": "CG 20 18 04 13 (Pg. 234) provides scheduled AI for landlord ARC Airport 2800 LLC and lender Banterra Bank ISAOA at 2800 S. 36th St., Phoenix AZ only. Mortgagee/lender AI only — not a trade counterparty or government client endorsement.",
+    "additional_insured_completed_ops": false,
+    "additional_insured_completed_ops_note": "Not confirmed in any chunk. Standard CG 20 37 completed operations AI endorsement not identified. 421-2915 blanket AI does not explicitly extend to completed operations. Gap for government contracts that require completed ops AI status.",
+    "waiver_of_subrogation": true,
+    "waiver_of_subrogation_page": 250,
+    "waiver_of_subrogation_note": "CG 24 04 05 09 (Pg. 250) confirmed as blanket — 'Blanket where required by written contract.' Applies to GL and Products/Completed Operations. 421-2915 Section (3) provides a parallel blanket WOS provision on the same trigger.",
+    "primary_noncontributory": true,
+    "primary_noncontributory_note": "Form 421-0452 12 14 (Pg. 190) is a standalone P&NC endorsement, contract-triggered. Form 421-2915 Section (2) also provides AI P&NC. Both are contract-triggered blanket forms.",
+    "contractual_liability": true,
+    "contractual_liability_note": "CG 00 01 04 13 base form (Pg. 210/223) preserves contractual liability coverage through the 'insured contract' exception to exclusion (b). Standard contractual risk transfer mechanism is operative.",
+    "per_project_aggregate": true,
+    "per_project_aggregate_note": "Form 421-3635 07 16 (Pg. 204) provides per-project and per-location aggregates. IMPORTANT LIMITATION: a Policy Aggregate Cap of $2,000,000 applies across all projects and locations combined (except products-completed ops). This cap may be insufficient if Run-Test is simultaneously serving multiple counties."
+  },
+  "_source_file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf"
+}

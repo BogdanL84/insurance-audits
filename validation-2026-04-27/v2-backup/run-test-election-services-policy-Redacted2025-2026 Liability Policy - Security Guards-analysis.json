@@ -1,0 +1,321 @@
+{
+  "source_file": "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+  "analysis_date": "2026-04-08",
+  "policy_type": "General Liability",
+  "is_package": false,
+  "coverage_parts": [
+    "GL"
+  ],
+  "is_primary": true,
+  "named_insured": "RUNBECK ELECTION SERVICES LLC",
+  "carrier": "Arch Insurance Company",
+  "policy_number": "BSPKG0356704",
+  "effective_date": "2025-10-22",
+  "expiry_date": "2026-10-22",
+  "limits": {
+    "each_occurrence": 1000000,
+    "general_aggregate": 3000000,
+    "products_completed_ops_aggregate": 3000000,
+    "damage_to_premises_rented": 100000,
+    "medical_payments": 5000,
+    "theft_per_occurrence": 100000,
+    "theft_aggregate": 300000
+  },
+  "endorsements": [
+    {
+      "form_number": "00 MLL0008 00 05 24",
+      "name": "Exclusion – Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS)",
+      "page": 3,
+      "notes": "Absolute PFAS exclusion. Bars all BI, PD, and PAI arising out of PFAS in any form. No exceptions."
+    },
+    {
+      "form_number": "IL 00 21 09 08",
+      "name": "Nuclear Energy Liability Exclusion Endorsement (Broad Form)",
+      "page": 12,
+      "notes": "Standard broad-form nuclear exclusion. Applies across all liability coverages."
+    },
+    {
+      "form_number": "IL 02 58 04 21",
+      "name": "Arizona Changes – Cancellation and Nonrenewal",
+      "page": 14,
+      "notes": "Arizona-specific cancellation rules. After 60 days in force, carrier may only cancel for enumerated reasons. 45-day nonrenewal notice required."
+    },
+    {
+      "form_number": "00 GL1045 00 01 25",
+      "name": "Limited Theft Extension Endorsement",
+      "page": 19,
+      "notes": "Extends Coverage A to include theft of tangible property. Per-occurrence limit $100,000; aggregate $300,000. Deductible: see policy. Excludes theft by insured/employees, theft of money/securities, and inventory shortages. Electronic data is not tangible property."
+    },
+    {
+      "form_number": "00 GL1047 00 01 25",
+      "name": "Total Pollution Exclusion with Hostile Fire and Self-Defense Spray Exception",
+      "page": 21,
+      "notes": "Replaces standard pollution exclusion with total pollution exclusion. Narrow exceptions only for hostile fire and use of mace/pepper spray normal to named insured's operations. Relevant to security guard context."
+    },
+    {
+      "form_number": "00 GL1048 00 01 25",
+      "name": "Canine Liability Exclusion",
+      "page": 22,
+      "notes": "Absolute exclusion for BI or PD arising out of ownership, rental, maintenance, or use of any dog or canine. Bars K-9 unit coverage entirely."
+    },
+    {
+      "form_number": "00 GL1049 00 01 25",
+      "name": "Errors & Omissions Coverage Extension (Coverage D)",
+      "page": 23,
+      "notes": "Adds Coverage D – E&O for 'wrongful acts' (negligent acts, errors, omissions while performing services described in Declarations). Wrongful acts must occur during the policy period and commence after the Effective Date. Key exclusions: BI/PD (Coverage A), intentional injury, statutory violations, non-monetary relief, contractual liability (except insured contracts), electronic data damage, personal/advertising injury. E&O damages drawn from the General Aggregate. 'Wrongful act' is limited to 'services as described in Declarations' — which, combined with Classification Limitation (00 GL0713), restricts this to classified security operations only."
+    },
+    {
+      "form_number": "00 GL1050 00 01 25",
+      "name": "Unintentional Errors or Omissions Endorsement",
+      "page": 27,
+      "notes": "Failure to disclose all hazards at inception does not prejudice coverage if the omission was not intentional."
+    },
+    {
+      "form_number": "00 GL1051 00 01 25",
+      "name": "Coverage Extensions – Section I – Coverages A and B",
+      "page": 28,
+      "notes": "Broadens Coverage A to cover BI/PD caused by negligent acts, errors, or omissions (not just 'occurrences') in connection with listed operations. Also extends Coverage B to offenses arising from negligent acts/errors/omissions in listed operations. Expands trigger language but still limited to classified operations."
+    },
+    {
+      "form_number": "00 GL1052 00 01 25",
+      "name": "Securities and Financial Interest Exclusion",
+      "page": 29,
+      "notes": "Excludes BI or PD arising out of purchase/sale/offer of securities, financial instruments, or any representations as to their price or value. Narrow exclusion; unlikely to impact security guard operations."
+    },
+    {
+      "form_number": "00 GL1053 00 01 25",
+      "name": "Independent Contractor Requirements Endorsement",
+      "page": 30,
+      "notes": "Requires insured to obtain COIs from independent contractors with limits equal to or greater than this policy. Failure to comply does not void coverage but triggers premium audit — uninsured subcontractors' payroll converted to premium basis for applicable classifications."
+    },
+    {
+      "form_number": "00 GL1054 00 01 25",
+      "name": "Incidental Medical Malpractice Endorsement",
+      "page": 31,
+      "notes": "Restores coverage for incidental medical malpractice by EMTs or employees performing emergency medical services in an emergency. Excludes insureds whose primary business is medical/paramedical."
+    },
+    {
+      "form_number": "00 GL1058 00 01 25",
+      "name": "Contractual Liability Limitation Endorsement",
+      "page": 32,
+      "notes": "Narrows definition of 'insured contract' to exclude indemnification of any party for their sole negligence. Limits contractual liability coverage in county and government contracts where broad-form indemnity is common."
+    },
+    {
+      "form_number": "00 GL1060 00 01 25",
+      "name": "Lost Key Coverage Endorsement",
+      "page": 33,
+      "notes": "Covers cost to replace lost keys, adjust locks, or install new locks when keys are entrusted to insured or employees. Limits and deductible: see policy. Excludes misappropriation, conversion, infidelity, or dishonest acts. Relevant to security guard key-holding operations."
+    },
+    {
+      "form_number": "00 GL1061 00 01 25",
+      "name": "Lead Exclusion",
+      "page": 35,
+      "notes": "Absolute lead exclusion. Bars all BI, PD, and PAI arising out of exposure to lead or lead-containing materials, including cleanup costs and regulatory claims."
+    },
+    {
+      "form_number": "00 GL1062 00 01 25",
+      "name": "Absolute Asbestos Exclusion",
+      "page": 36,
+      "notes": "Absolute asbestos exclusion. Bars all claims arising from asbestos exposure, abatement, monitoring, or remediation. No exceptions."
+    },
+    {
+      "form_number": "00 GL1063 00 01 25",
+      "name": "Assault and Battery Coverage Endorsement",
+      "page": 37,
+      "notes": "Restores coverage for BI resulting from use of physical force to protect persons or property, and for claims against any insured arising from assault or battery by an employee. Important for security guard operations where physical intervention is part of the job."
+    },
+    {
+      "form_number": "00 GL0713 00 08 11",
+      "name": "Classification Limitation",
+      "page": 39,
+      "notes": "CRITICAL: Coverage applies ONLY to operations for which a classification is listed on the declarations. Classified operations are: (1) Alarms and Alarm Systems – Installation (Code 91127), (2) Detective or Investigative Agencies – Private (Code 91636), and (3) Security and Patrol Agencies (Code 98751, $190,000 payroll exposure). All other operations — including Runbeck's core election technology, ballot printing, and mail processing operations — are NOT insured under this policy."
+    },
+    {
+      "form_number": "CG 00 01 04 13",
+      "name": "Commercial General Liability Coverage Form",
+      "page": 40,
+      "notes": "Standard ISO CG 00 01 04 13 (2012 edition). Occurrence form. Includes Coverage A (BI/PD), Coverage B (Personal & Advertising Injury), Coverage C (Medical Payments). Contractual liability excluded with insured contract exception. Electronic data is not tangible property per definition — loss of electronic data not covered under Coverage A."
+    },
+    {
+      "form_number": "CG 00 69 12 23",
+      "name": "Exclusion – Violation of Law Addressing Data Privacy",
+      "page": 56,
+      "notes": "Adds data privacy law exclusion to both Coverage A and Coverage B. Excludes BI/PD and Personal & Advertising Injury arising from violations of any federal, state, or local law addressing access, collection, storage, safeguarding, or distribution of confidential or personal information — explicitly including BIPA, CCPA, and GDPR. Broad exclusion — covers any such law, not just the named statutes. Significant exposure for an election technology company handling voter data."
+    },
+    {
+      "form_number": "CG 03 00 01 96",
+      "name": "Deductible Liability Insurance",
+      "page": 57,
+      "notes": "Imposes a $1,000 deductible per claim or per occurrence (schedule shows $1,000; basis not fully legible due to redaction). Carrier retains right and duty to defend regardless of deductible. Insured must reimburse carrier if carrier pays deductible to effect settlement."
+    },
+    {
+      "form_number": "CG 20 01 12 19",
+      "name": "Primary and Noncontributory – Other Insurance Condition",
+      "page": 59,
+      "notes": "Adds Primary and Noncontributory language. Policy is primary and will not seek contribution from additional insured's own insurance, provided: (1) the additional insured is a Named Insured under their own policy, AND (2) the insured agreed in writing (by contract) that this policy would be primary and noncontributory. Condition-based — does not apply automatically, requires written contractual agreement."
+    },
+    {
+      "form_number": "CG 20 10 12 19",
+      "name": "Additional Insured – Owners, Lessees or Contractors – Scheduled Person or Organization (Ongoing Operations)",
+      "page": 60,
+      "notes": "Schedule reads: 'ALL PARTIES WHERE REQUIRED BY A WRITTEN CONTRACT PROVIDED SUCH CONTRACT WAS EXECUTED PRIOR TO LOSS.' Functions as blanket additional insured for ongoing operations. Coverage limited to BI/PD/PAI caused in whole or in part by insured's acts or omissions in performance of ongoing operations. Cuts off after work is completed or put to intended use — ongoing ops only. Coverage capped at the lesser of contract-required limits or policy limits."
+    },
+    {
+      "form_number": "CG 20 37 12 19",
+      "name": "Additional Insured – Owners, Lessees or Contractors – Completed Operations",
+      "page": 62,
+      "notes": "Schedule reads: 'ALL PARTIES WHERE REQUIRED BY A WRITTEN CONTRACT PROVIDED SUCH CONTRACT WAS EXECUTED PRIOR TO LOSS.' Functions as blanket additional insured for completed operations. Modifies both CGL Coverage Part and Products/Completed Operations Coverage Part. Location/description field references classifications listed in the Declarations. Note from pages 63+: coverage capped at the lesser of contract-required amount or available policy limits. Does NOT cover ongoing operations — only post-completion liability."
+    },
+    {
+      "form_number": "CG 21 06 12 23",
+      "name": "Exclusion – Access or Disclosure of Confidential or Personal Material or Information",
+      "page": 64,
+      "notes": "Excludes bodily injury, property damage, and personal/advertising injury arising out of any access to or disclosure of confidential or personal information — including patents, trade secrets, financial info, health info, biometric info, and any other nonpublic material. Expressly applies even when damages are framed as notification costs, credit monitoring, forensic expenses, PR expenses, data restoration, or extortion expenses. This is a data breach exclusion on the GL."
+    },
+    {
+      "form_number": "CG 21 47 12 07",
+      "name": "Employment-Related Practices Exclusion",
+      "page": 65,
+      "notes": "Excludes bodily injury and personal/advertising injury to any person arising out of refusal to employ, termination, or employment-related practices (coercion, demotion, evaluation, reassignment, discipline, defamation, harassment, humiliation, discrimination, malicious prosecution). Applies pre-, during, and post-employment. Eliminates GL coverage for employment torts — EPL exposure must be addressed by a separate EPLI policy."
+    },
+    {
+      "form_number": "CG 21 73 01 15",
+      "name": "Exclusion of Certified Acts of Terrorism",
+      "page": 66,
+      "notes": "Excludes any injury or damage arising directly or indirectly from a 'certified act of terrorism' as defined under the federal Terrorism Risk Insurance Act (TRIA). Applies across GL and several other coverage parts listed. Standard TRIA exclusion."
+    },
+    {
+      "form_number": "CG 21 96 03 05",
+      "name": "Silica or Silica-Related Dust Exclusion",
+      "page": 67,
+      "notes": "Absolute exclusion for bodily injury, property damage, and personal/advertising injury arising from silica or silica-related dust — including inhalation, ingestion, contact, exposure, or remediation costs. Low relevance for election technology/printing operations but noted for completeness."
+    },
+    {
+      "form_number": "CG 40 35 12 23",
+      "name": "Exclusion – Cyber Incident",
+      "page": 68,
+      "notes": "Absolute exclusion for bodily injury, property damage, and personal/advertising injury arising out of any 'cyber incident.' Defined broadly to include: (1) unauthorized access to or use of any computer system; (2) malicious code/virus; (3) denial of service attacks. Expressly applies even when damages are claimed as notification, forensic, credit monitoring, PR, data restoration, or extortion costs. This is a complete cyber exclusion on the GL — CRITICAL for Runbeck given their election technology operations and data handling across 31 states."
+    }
+  ],
+  "exclusions_of_note": [
+    {
+      "name": "Classification Limitation – Operations Outside Declared Classifications",
+      "form_number": "00 GL0713 00 08 11",
+      "page": 39,
+      "impact": "CRITICAL. Coverage applies only to three classified operations: (1) Security and Patrol Agencies, (2) Detective/Investigative Agencies, (3) Alarms/Alarm Systems Installation. Runbeck's core business — election technology, ballot printing, mail sorting, and election data processing — is not classified and therefore not covered under this policy. This is a security guard GL policy, not a general business GL for election operations."
+    },
+    {
+      "name": "Cyber Incident Exclusion",
+      "form_number": "CG 40 35 12 23",
+      "page": 68,
+      "impact": "Absolute — zero GL coverage for any cyber incident including unauthorized access, malware, ransomware, or DoS attacks. Covers bodily injury, property damage, AND personal/advertising injury. Expressly captures notification costs, forensic expenses, extortion, and data restoration. For an election technology company handling voter data across 31 states, this exclusion removes all cyber-related GL coverage. A standalone cyber liability policy is essential."
+    },
+    {
+      "name": "Access or Disclosure of Confidential or Personal Information Exclusion",
+      "form_number": "CG 21 06 12 23",
+      "page": 64,
+      "impact": "Absolute — no GL coverage for any claim arising from unauthorized access to or disclosure of personal/confidential information, including health info, biometric info, financial info, trade secrets, or 'any other type of nonpublic material.' Applies even when damages are reframed as notification, forensic, PR, or credit monitoring costs. Combined with CG 40 35, this policy has a complete double-layered data/cyber exclusion on the GL. Highly significant for Runbeck's voter data and election system operations."
+    },
+    {
+      "name": "Violation of Law Addressing Data Privacy",
+      "form_number": "CG 00 69 12 23",
+      "page": 56,
+      "impact": "Absolute exclusion — no Coverage A or Coverage B for any claim alleging violation of data privacy laws including BIPA, CCPA, GDPR, or any similar federal/state/local law. For an election technology company processing voter registration data across 31 states and DC, this is a critical uninsured exposure. Any claim alleging improper collection, storage, or handling of voter personal information would be excluded."
+    },
+    {
+      "name": "E&O Electronic Data Exclusion (Coverage D)",
+      "form_number": "00 GL1049 00 01 25",
+      "page": 24,
+      "impact": "The E&O Coverage D extension expressly excludes 'damages arising out of the loss of, loss of use of, damage to, corruption of, inability to access, or ability to manipulate electronic data.' For an election technology company, this excludes the most significant E&O exposure — data corruption, ballot system failure, or loss of voter records."
+    },
+    {
+      "name": "Electronic Data Exclusion (Base CGL Form)",
+      "form_number": "CG 00 01 04 13",
+      "page": 44,
+      "impact": "Coverage A excludes damages arising out of loss of, loss of use of, damage to, corruption of, inability to access, or inability to manipulate electronic data. Electronic data is also excluded from the definition of 'tangible property' under Coverage A. For an election technology/SaaS company, this means loss or corruption of ballot data, voter files, or election software would not be covered under GL."
+    },
+    {
+      "name": "Contractual Liability Limitation – Sole Negligence Carve-Out",
+      "form_number": "00 GL1058 00 01 25",
+      "page": 32,
+      "impact": "Excludes from 'insured contract' any indemnification for the indemnitee's sole negligence. County and government contracts frequently contain broad indemnity provisions that may require Runbeck to hold harmless even for the county's own negligence. That portion of contractual liability is uninsured."
+    },
+    {
+      "name": "Total Pollution Exclusion",
+      "form_number": "00 GL1047 00 01 25",
+      "page": 21,
+      "impact": "Absolute pollution exclusion except for hostile fire and pepper spray/mace. Standard for security guard policies."
+    },
+    {
+      "name": "PFAS Exclusion – Absolute",
+      "form_number": "00 MLL0008 00 05 24",
+      "page": 3,
+      "impact": "Absolute exclusion for all PFAS-related claims across all coverages. No exceptions."
+    },
+    {
+      "name": "Canine Liability Exclusion",
+      "form_number": "00 GL1048 00 01 25",
+      "page": 22,
+      "impact": "Bars all BI/PD from canine ownership or use. K-9 units entirely uninsured."
+    },
+    {
+      "name": "Employment-Related Practices Exclusion",
+      "form_number": "CG 21 47 12 07",
+      "page": 65,
+      "impact": "Removes all GL coverage for employment torts — harassment, discrimination, wrongful termination, demotion, and related claims. Requires a separate EPLI policy to cover these exposures. Standard exclusion but must be confirmed that EPLI is in place."
+    },
+    {
+      "name": "Lead Exclusion – Absolute",
+      "form_number": "00 GL1061 00 01 25",
+      "page": 35,
+      "impact": "Absolute lead exclusion. Bars all BI, PD, and PAI from lead exposure."
+    },
+    {
+      "name": "Absolute Asbestos Exclusion",
+      "form_number": "00 GL1062 00 01 25",
+      "page": 36,
+      "impact": "Absolute asbestos exclusion. Bars all asbestos-related claims."
+    },
+    {
+      "name": "Additional Insured Coverage Cutoff – Ongoing Operations Only (CG 20 10)",
+      "form_number": "CG 20 10 12 19",
+      "page": 61,
+      "impact": "Additional insured coverage under CG 20 10 terminates once the work is completed or put to its intended use. Counties relying on AI status post-election (after ballots are processed and results certified) would have no coverage under this form. CG 20 37 addresses completed operations separately."
+    },
+    {
+      "name": "Damage to Your Work",
+      "form_number": "CG 00 01 04 13",
+      "page": 44,
+      "impact": "Property damage to 'your work' arising out of it and included in the products-completed operations hazard is excluded — unless the damaged work was performed by a subcontractor. Relevant for election services work product (e.g., printed ballots, mail processing) once delivered."
+    },
+    {
+      "name": "Damage to Impaired Property / No Physical Injury",
+      "form_number": "CG 00 01 04 13",
+      "page": 44,
+      "impact": "Excludes property damage to impaired property or property not physically injured arising from a defect in 'your product' or 'your work,' or from failure to perform a contract. This effectively bars economic loss claims from election administration errors (e.g., incorrect ballot printing causing delays) where there is no physical property damage."
+    },
+    {
+      "name": "Exclusion of Certified Acts of Terrorism",
+      "form_number": "CG 21 73 01 15",
+      "page": 66,
+      "impact": "Standard TRIA exclusion. Election infrastructure is a potential terrorism target — notable but this is a standard market exclusion. Separate terrorism coverage (TRIA or standalone) should be evaluated given the election technology sector."
+    },
+    {
+      "name": "Silica or Silica-Related Dust Exclusion",
+      "form_number": "CG 21 96 03 05",
+      "page": 67,
+      "impact": "Absolute exclusion for silica-related claims. Low relevance for election technology/printing operations. Noted for completeness."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": true,
+    "additional_insured_scheduled": true,
+    "additional_insured_completed_ops": true,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": true,
+    "contractual_liability": true,
+    "per_project_aggregate": false
+  },
+  "_source_file": "Redacted2025-2026 Liability Policy - Security Guards.pdf"
+}

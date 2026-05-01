@@ -1,0 +1,209 @@
+{
+  "slug": "cyber",
+  "policy_name": "Cyber (AmTrust)",
+  "sources": {
+    "presentation": true,
+    "prior_report": false,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 3,
+      "title": "Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "content": "[Good] Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 4,
+      "title": "Cyber \u2014 Social Engineering / Cyber Deception Coverage",
+      "content": "[Ugly] Cyber \u2014 Social Engineering / Cyber Deception Coverage\nRisk Score: 16/25\n\nWhat this means:\nYou're a government vendor processing wires and ACH for county contracts. The most common cyberattack today \u2014 a fraudster sends a fake email pretending to be your CEO or a county official telling Accounts Payable to wire money \u2014 would not be covered by any policy in your program in any meaningful wa\n\nRecommendation:\nRestructure cyber deception terms at renewal: target $1M sublimit with $25K-$50K retention. If AmTrust won't restructure, market the cyber renewal \u2014 multiple carriers (Coalition, At-Bay, Beazley) offe",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "Cyber \u2014 Social Engineering / Cyber Deception Coverage",
+      "score": 16,
+      "severity_word": "High",
+      "description": "AmTrust Cyber sublimits social engineering/cyber deception at $250,000 with a $250,000 retention.",
+      "policy_slug": "cyber",
+      "matched_in_audited": true,
+      "audited_page": 4,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] Cyber \u2014 Social Engineering / Cyber Deception Coverage\nRisk Score: 16/25\n\nWhat this means:\nYou're a government vendor processing wires and ACH for county contracts. The most common cyberattack today \u2014 a fraudster sends a fake email pretending to be your CEO or a county official telling Account"
+    }
+  ],
+  "v1_v2_unchanged": [],
+  "v1_v2_removed": [
+    {
+      "page": 3,
+      "title": "Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "content": "[Good] Cyber Liability \u2014 Standalone Comprehensive Cyber Policy in P",
+      "type_name": "Text"
+    }
+  ],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 4,
+      "title": "Cyber \u2014 Social Engineering / Cyber Deception Coverage",
+      "content": "[Ugly] Cyber \u2014 Social Engineering / Cyber Deception Coverage\nRisk Score: 16/25\n\nWhat this means:\nYou're a government vendor processing wires and ACH for county contracts. The most common cyberattack today \u2014 a fraudster sends a fake email pretending to be your CEO or a county official telling Accounts Payable to wire money \u2014 would not be covered by any policy in your program in any meaningful wa\n\nRecommendation:\nRestructure cyber deception terms at renewal: target $1M sublimit with $25K-$50K retention. If AmTrust won't restructure, market the cyber renewal \u2014 multiple carriers (Coalition, At-Bay, Beazley) offe",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 17,
+      "title": "Cyber Policy",
+      "body": [
+        "You effectively have no coverage for Cyber Deception (cyber incident arising from social engineering)",
+        "They carved it out as a separate line item from a Cyber Event, gave you a $250k sublimit with a $250k deductible.",
+        "Pg. 7 of 41"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 22,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Security Guard Policy",
+        "Cyber Policy"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 32,
+      "title": "Cyber Policy",
+      "body": [
+        "Maricopa County asks for $5M limits, you have $4M.",
+        "This policy does NOT sit under any umbrella.",
+        "County also does not expressly state this can be secured through secondary excess policy.",
+        "Breach of Contract"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-22a",
+      "description": "Cyber Deception $250K=$250K phantom coverage",
+      "keywords": [
+        "$250,000",
+        "250k",
+        "cyber deception",
+        "social engineering",
+        "retention"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 4,
+          "title": "Cyber \u2014 Social Engineering / Cyber Deception Coverage",
+          "snippet": "[Ugly] Cyber \u2014 Social Engineering / Cyber Deception Coverage\nRisk Score: 16/25\n\nWhat this means:\nYou're a government vendor processing wires and ACH for county contracts. The most common cyberattack today \u2014 a fraudster sends a fake email pretending to be your CEO or a county offi"
+        }
+      ]
+    },
+    {
+      "gap_id": "GAP-22b",
+      "description": "Defense Within Limits + Shared Aggregate erosion",
+      "keywords": [
+        "defense within",
+        "dwl",
+        "erosion",
+        "shared aggregate"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-22c",
+      "description": "$4M aggregate vs Maricopa $5M",
+      "keywords": [
+        "$5,000,000",
+        "$5m",
+        "$4m",
+        "$4,000,000",
+        "maricopa"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-22d",
+      "description": "NY choice-of-law on AZ insured",
+      "keywords": [
+        "new york",
+        "choice of law",
+        "governed by"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-22e",
+      "description": "Proof of Loss $250K secondary sublimit",
+      "keywords": [
+        "proof of loss",
+        "$250"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-22f",
+      "description": "Cyber is the ONLY policy with correct LLC entity",
+      "keywords": [
+        "llc",
+        "policy change",
+        "endorsement #1",
+        "name change"
+      ],
+      "caught": false,
+      "hits": []
+    },
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": false,
+      "hits": []
+    }
+  ]
+}

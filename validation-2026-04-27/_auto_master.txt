@@ -1,0 +1,104 @@
+=== Auto master annotations ===
+
+pg24 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: LIABILITY $1,000,000 COMBINED SINGLE LIMIT 01
+
+pg24 | type=FreeText | stroke=[1.0, 1.0, 1.0] | fill=None
+  content: not a great start - Maricopa contract expressly states $2M CSL required - contract DOES NOT state that auto limits can be met via use of an Umbrella. ((states so for GL but not Auto))
+  subject: Text Box
+
+pg24 | type=Line | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Line
+  text_under: .....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+.....................
+..
+
+pg24 | type=Square | stroke=[0.07450869679450989, 0.4509739875793457, 0.9098049998283386] | fill=None
+  subject: Rectangle
+  text_under: 11111111111111111111111111111111111111111111111111111111111111111111
+.....................................................................
+.............................................................
+
+pg28 | type=Square | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Rectangle
+  text_under: ADDITIONAL NAMED INSURED ENDORSEMENT
+THE
+ITEM 1. OF THE POLICY DECLARATIONS PAGE, NAMED INSURED IS AMENDED TO INCLUDE ALL OF
+FOLLOWING NAMED INSUREDS APPLICABLE TO THIS POLICY:
+RUNBECK ELECTION SERVIC
+
+pg28 | type=FreeText | stroke=[1.0, 1.0, 1.0] | fill=None
+  content: okay... where were these on the CGL and Auto policies?
+  subject: Text Box
+
+pg32 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: B. Exclusions
+
+pg32 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: 2. Contractual
+
+pg32 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: Liability assumed under any contract or agreement.
+
+pg33 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: 5. Fellow Employee
+
+pg38 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: For any covered "auto" you don’t own, the insurance provided by this Cov- erage Form is excess
+
+pg38 | type=Highlight | stroke=[0.8588259816169739, 0.203917995095253, 0.14509600400924683] | fill=None
+  subject: Highlight
+  text_under: Excess while it is connected to a mo- tor vehicle you do not own.
+
+pg38 | type=Highlight | stroke=[0.2196040004491806, 0.8980410099029541, 1.0] | fill=None
+  subject: Highlight
+  text_under: Regardless of the provisions of Para- graph a. above, this Coverage Form’s Li- ability Coverage is primary for any liabil- ity assumed under an "insured contract".
+
+pg39 | type=Highlight | stroke=[1.0, 0.38430801033973694, 0.0] | fill=None
+  subject: Highlight
+  text_under: C. "Bodily injury" means bodily injury, sickness or disease sustained by a person including death resulting from any of these.
+
+pg44 | type=Highlight | stroke=[1.0, 0.38430801033973694, 0.0] | fill=None
+  subject: Highlight
+  text_under: BLANKET WHERE REQUIRED BY WRITTEN CONTRACT 30
+
+pg47 | type=Highlight | stroke=[0.2196040004491806, 0.8980410099029541, 1.0] | fill=None
+  subject: Highlight
+  text_under: BLANKET WHERE REQUIRED BY WRITTEN CONTRACT
+
+pg48 | type=Highlight | stroke=[0.2196040004491806, 0.8980410099029541, 1.0] | fill=None
+  subject: Highlight
+  text_under: 60 days before the effective date of cancellation if we cancel for any other reason.
+
+pg54 | type=Highlight | stroke=[0.2196040004491806, 0.8980410099029541, 1.0] | fill=None
+  subject: Highlight
+  text_under: 20. MENTAL ANGUISH Paragraph C. "Bodily injury", SECTION V - DEFINITIONS is replaced by the following: C. "Bodily injury" means bodily injury, sickness or disease sustained by a person including death
+
+pg61 | type=Highlight | stroke=[1.0, 0.38430801033973694, 0.0] | fill=None
+  subject: Highlight
+  text_under: If we decide not to renew this Policy, we will mail or deliver to the first Named Insured shown in the Declarations written notice of the nonrenewal at least 30 days before the expiration or anniversa
+
+=== Auto master bookmarks ===
+pg28 | Additional Named Insured
+pg32 | Contractual Liability assumption exclusion
+pg33 | Fellow Employee Exclusion
+pg38 | Other Insurance - good
+pg39 | BI does not include mental anguish
+pg44 | 30-day NOC - should be 90 at least 60
+pg47 | Blanket WOS by contract
+pg48 | 60-day NOC extension - better
+pg54 | BI / Mental Anguish giveback
+pg61 | 30-day nonrnewal notice

@@ -1,0 +1,315 @@
+{
+  "slug": "ml",
+  "policy_name": "Management Liability (Hartford / Twin City Fire)",
+  "sources": {
+    "presentation": true,
+    "prior_report": true,
+    "annotation_master": false,
+    "v1": true,
+    "v2": true
+  },
+  "v1_findings": [
+    {
+      "page": 15,
+      "title": "D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su",
+      "content": "[Bad] D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su\nRisk Score: 9/25",
+      "type_name": "Text"
+    },
+    {
+      "page": 60,
+      "title": "Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "content": "[Good] Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "type_name": "Text"
+    },
+    {
+      "page": 73,
+      "title": "D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv",
+      "content": "[Bad] D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv\nRisk Score: 12/25",
+      "type_name": "Text"
+    },
+    {
+      "page": 74,
+      "title": "Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+      "content": "[Good] Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+      "type_name": "Text"
+    },
+    {
+      "page": 86,
+      "title": "D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent",
+      "content": "[Ugly] D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent\nRisk Score: 12/25",
+      "type_name": "Text"
+    },
+    {
+      "page": 107,
+      "title": "D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye",
+      "content": "[Bad] D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye\nRisk Score: 12/25",
+      "type_name": "Text"
+    }
+  ],
+  "v2_findings": [
+    {
+      "page": 36,
+      "title": "EPLI \u2014 Wage & Hour Defense Sublimit",
+      "content": "[Bad] EPLI \u2014 Wage & Hour Defense Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a former employee filed a wage and hour class action \u2014 a very common claim type \u2014 your insurance pays for $100K of defense costs and zero damages. The company manages its own defense (the carrier won't even appoint a lawyer). $100K is what one lawyer at a firm bills in three months on a class act\n\nRecommendation:\nIncrease W&H defense sublimit to $250K-$500K at renewal. Audit timekeeping, exempt classifications, meal/rest break compliance especially in CA. Consider standalone wage & hour policy if exposure warr",
+      "type_name": "Text"
+    },
+    {
+      "page": 86,
+      "title": "D&O Entity Coverage \u2014 Manufacturing & Professional Services ",
+      "content": "[Ugly] D&O Entity Coverage \u2014 Manufacturing & Professional Services \nRisk Score: 20/25\n\nWhat this means:\nYour D&O policy says: if a county sues your company because a ballot system failed or you didn't deliver election services correctly, the company itself is NOT covered. Only the individual directors and officers are covered, and only if shareholders sue. This is the worst possible exclusion for your\n\nRecommendation:\nNegotiate removal or material narrowing of PP 00 H350 at renewal. If carrier won't budge, secure standalone Tech E&O entity-level wrapper or place D&O with a different carrier that does not impose thi",
+      "type_name": "Text"
+    },
+    {
+      "page": 105,
+      "title": "PE Co-Defendant Extension on Management Liability",
+      "content": "[Good] PE Co-Defendant Extension on Management Liability\n\nWhat this means:\nYour PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful first line.\n\nRecommendation:\nMaintain. Verify named entities still match current ownership at each renewal.",
+      "type_name": "Text"
+    },
+    {
+      "page": 107,
+      "title": "D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc",
+      "content": "[Bad] D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc\nRisk Score: 8/25\n\nWhat this means:\nYour D&O policy says you have $2 million of coverage. But for any wrongdoing that happened between mid-August 2023 and early April 2024, you actually only have $1 million. The second million has a later start date. So if a 2023 board decision triggers a 2026 lawsuit asking for $1.8 million, you cove\n\nRecommendation:\nAt renewal, push to align the excess layer's prior/pending date with the primary's 8/18/2023 date. If carrier won't budge, document the 7.5-month window in board materials and ensure no known potentia",
+      "type_name": "Text"
+    }
+  ],
+  "v2_table_entries": [
+    {
+      "category": "Ugly",
+      "title": "D&O Entity Coverage \u2014 Manufacturing & Professional Services Exclusion",
+      "score": 20,
+      "severity_word": "Critical",
+      "description": "The Hartford Management Liability policy contains a manufacturing AND professional services exclusion that bars Insuring Agreement C (Entity Liability) coverage for any claim arising from product defects (ballot printing/election hardware) OR services rendered for a fee (election processing, mail sorting, technology services).",
+      "policy_slug": "ml",
+      "matched_in_audited": true,
+      "audited_page": 86,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Ugly] D&O Entity Coverage \u2014 Manufacturing & Professional Services \nRisk Score: 20/25\n\nWhat this means:\nYour D&O policy says: if a county sues your company because a ballot system failed or you didn't deliver election services correctly, the company itself is NOT covered. Only the individual directo"
+    },
+    {
+      "category": "Bad",
+      "title": "EPLI \u2014 Wage & Hour Defense Sublimit",
+      "score": 9,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "ml",
+      "matched_in_audited": true,
+      "audited_page": 36,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] EPLI \u2014 Wage & Hour Defense Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a former employee filed a wage and hour class action \u2014 a very common claim type \u2014 your insurance pays for $100K of defense costs and zero damages. The company manages its own defense (the carrier won't even appoint a law"
+    },
+    {
+      "category": "Bad",
+      "title": "D&O \u2014 Split Prior/Pending Date on Excess Layer",
+      "score": 8,
+      "severity_word": "Medium",
+      "description": "",
+      "policy_slug": "ml",
+      "matched_in_audited": true,
+      "audited_page": 107,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Bad] D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc\nRisk Score: 8/25\n\nWhat this means:\nYour D&O policy says you have $2 million of coverage. But for any wrongdoing that happened between mid-August 2023 and early April 2024, you actually only have $1 million. The second million has a l"
+    },
+    {
+      "category": "Good",
+      "title": "PE Co-Defendant Extension on Management Liability",
+      "score": 0,
+      "severity_word": "",
+      "description": "[Good] PE Co-Defendant Extension on Management Liability\n\nWhat this means:\nYour PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful first line.\n\nRecommendation:\nMaintain. Verify named entities still match current ownership at each renewal.",
+      "policy_slug": "ml",
+      "matched_in_audited": true,
+      "audited_page": 105,
+      "audited_annot_type": "Text",
+      "audited_content_preview": "[Good] PE Co-Defendant Extension on Management Liability\n\nWhat this means:\nYour PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful first line.\n\nRecommendat",
+      "from_pdf_only": true
+    }
+  ],
+  "v1_v2_unchanged": [
+    {
+      "v1": {
+        "page": 74,
+        "title": "Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+        "content": "[Good] Management Liability \u2014 PE Co-Defendant Extension and Shadow ",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 105,
+        "title": "PE Co-Defendant Extension on Management Liability",
+        "content": "[Good] PE Co-Defendant Extension on Management Liability\n\nWhat this means:\nYour PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful first line.\n\nRecommendation:\nMaintain. Verify named entities still match current ownership at each renewal.",
+        "type_name": "Text"
+      },
+      "similarity": 0.56
+    },
+    {
+      "v1": {
+        "page": 86,
+        "title": "D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent",
+        "content": "[Ugly] D&O \u2014 Manufacturing/Professional Services Exclusion Bars Ent\nRisk Score: 12/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 86,
+        "title": "D&O Entity Coverage \u2014 Manufacturing & Professional Services ",
+        "content": "[Ugly] D&O Entity Coverage \u2014 Manufacturing & Professional Services \nRisk Score: 20/25\n\nWhat this means:\nYour D&O policy says: if a county sues your company because a ballot system failed or you didn't deliver election services correctly, the company itself is NOT covered. Only the individual directors and officers are covered, and only if shareholders sue. This is the worst possible exclusion for your\n\nRecommendation:\nNegotiate removal or material narrowing of PP 00 H350 at renewal. If carrier won't budge, secure standalone Tech E&O entity-level wrapper or place D&O with a different carrier that does not impose thi",
+        "type_name": "Text"
+      },
+      "similarity": 0.67
+    },
+    {
+      "v1": {
+        "page": 107,
+        "title": "D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye",
+        "content": "[Bad] D&O \u2014 Split Prior/Pending Date Leaves $1M Gap on Excess Laye\nRisk Score: 12/25",
+        "type_name": "Text"
+      },
+      "v2": {
+        "page": 107,
+        "title": "D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc",
+        "content": "[Bad] D&O \u2014 Split Prior/Pending Date on Excess Layer [text not loc\nRisk Score: 8/25\n\nWhat this means:\nYour D&O policy says you have $2 million of coverage. But for any wrongdoing that happened between mid-August 2023 and early April 2024, you actually only have $1 million. The second million has a later start date. So if a 2023 board decision triggers a 2026 lawsuit asking for $1.8 million, you cove\n\nRecommendation:\nAt renewal, push to align the excess layer's prior/pending date with the primary's 8/18/2023 date. If carrier won't budge, document the 7.5-month window in board materials and ensure no known potentia",
+        "type_name": "Text"
+      },
+      "similarity": 0.75
+    }
+  ],
+  "v1_v2_removed": [
+    {
+      "page": 15,
+      "title": "D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su",
+      "content": "[Bad] D&O \u2014 Wage & Hour: No Carrier Defense Duty; Defense Costs Su\nRisk Score: 9/25",
+      "type_name": "Text"
+    },
+    {
+      "page": 60,
+      "title": "Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "content": "[Good] Management Liability \u2014 Crime Coverage $2M Included in Packag",
+      "type_name": "Text"
+    },
+    {
+      "page": 73,
+      "title": "D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv",
+      "content": "[Bad] D&O \u2014 Entity Regulatory Proceedings Not Covered Unless Indiv\nRisk Score: 12/25",
+      "type_name": "Text"
+    }
+  ],
+  "v1_v2_new_in_v2": [
+    {
+      "page": 36,
+      "title": "EPLI \u2014 Wage & Hour Defense Sublimit",
+      "content": "[Bad] EPLI \u2014 Wage & Hour Defense Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a former employee filed a wage and hour class action \u2014 a very common claim type \u2014 your insurance pays for $100K of defense costs and zero damages. The company manages its own defense (the carrier won't even appoint a lawyer). $100K is what one lawyer at a firm bills in three months on a class act\n\nRecommendation:\nIncrease W&H defense sublimit to $250K-$500K at renewal. Audit timekeeping, exempt classifications, meal/rest break compliance especially in CA. Consider standalone wage & hour policy if exposure warr",
+      "type_name": "Text"
+    }
+  ],
+  "presentation_slides": [
+    {
+      "slide": 10,
+      "title": "Management Liability Policy",
+      "body": [
+        "Notice of Knowledge constricted to CEO and CFO only",
+        "Pg. 74 of 109"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 18,
+      "title": "Insufficient Cancellation Notice",
+      "body": [
+        "We expect a 90-day notice of cancellation or nonrenewal from our carrier partners.",
+        "This gives us sufficient time to perform a thorough marketing effort for replacement coverage.",
+        "Security Policy 60-days",
+        "E&O Policy 60-days",
+        "Worker\u2019s Comp 30-days",
+        "Management Liability 10-days",
+        "Commercial Package 45-days",
+        "Commercial Umbrella 60-days",
+        "Auto 30-days"
+      ],
+      "notes": ""
+    },
+    {
+      "slide": 24,
+      "title": "Multiple Policies",
+      "body": [
+        "Additional Named Insureds Completely or Partially Missing from most policies.",
+        "FIRST NAMED INSURED:",
+        "Runbeck Election Services LLC",
+        "ADDITIONAL NAMED INSUREDS:",
+        "Runbeck Investments LLC",
+        "Runbeck Graphics Inc",
+        "Runbeck Properties LLC",
+        "Runbeck Companies 401(K)",
+        "Lincoln Shields LLC",
+        "Black Mountain Investment Management",
+        "Management Liability Policy",
+        "Commercial Package"
+      ],
+      "notes": ""
+    }
+  ],
+  "prior_report_claims": [
+    [
+      "Wage & Hour no carrier defense duty, defense costs sub",
+      "Bad Risk 9",
+      "p15"
+    ],
+    [
+      "Crime coverage $2M included",
+      "Good",
+      "p60"
+    ],
+    [
+      "Entity regulatory proceedings not covered unless individual",
+      "Bad Risk 12",
+      "p73"
+    ],
+    [
+      "PE Co-Defendant Extension + Shadow Director",
+      "Good",
+      "p74"
+    ],
+    [
+      "D&O Manufacturing/Professional Services Exclusion bars Entity coverage",
+      "Ugly Risk 12",
+      "p86"
+    ],
+    [
+      "Split Prior/Pending Date \u2014 $1M gap on excess layer",
+      "Bad Risk 12",
+      "p107"
+    ],
+    [
+      "PRESENTATION CLAIM G1 (slide 10): Notice of Knowledge CEO/CFO only \u2014 pg 74",
+      "PARTIAL \u2014 cite wrong, claim lives at pp 20/25/42/58",
+      "p20-58"
+    ],
+    [
+      "PRESENTATION CLAIM B4 (slide 18): ML cancellation 10 days",
+      "PARTIAL \u2014 10 days non-pay only; 20 days other (PP00H10700 pg 70)",
+      "p70"
+    ]
+  ],
+  "master_annotations": null,
+  "gap_xx_results": [
+    {
+      "gap_id": "GAP-01-EXPANDED",
+      "description": "Inc-vs-LLC entity-type mismatch caught here?",
+      "keywords": [
+        "inc",
+        "llc",
+        "form of business",
+        "named insured"
+      ],
+      "caught": true,
+      "hits": [
+        {
+          "page": 36,
+          "title": "EPLI \u2014 Wage & Hour Defense Sublimit",
+          "snippet": "[Bad] EPLI \u2014 Wage & Hour Defense Sublimit\nRisk Score: 9/25\n\nWhat this means:\nIf a former employee filed a wage and hour class action \u2014 a very common claim type \u2014 your insurance pays for $100K of defense costs and zero damages. The company manages its own defense (the carrier won'"
+        },
+        {
+          "page": 105,
+          "title": "PE Co-Defendant Extension on Management Liability",
+          "snippet": "[Good] PE Co-Defendant Extension on Management Liability\n\nWhat this means:\nYour PE owners (Lincoln Shields and Black Mountain) are protected by your D&O if someone sues them solely because they own you. Good. They probably also have their own insurance, but yours is a useful firs"
+        }
+      ]
+    }
+  ]
+}

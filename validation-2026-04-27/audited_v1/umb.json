@@ -1,0 +1,48 @@
+{
+  "filename": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26-AUDITED.pdf",
+  "page_count": 78,
+  "annot_count": 1,
+  "bookmark_count": 3,
+  "annotations": [
+    {
+      "page": 36,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Professional Liability \u2014 No Umbrella Excess Coverage Over Te",
+      "subject": "",
+      "content": "[Ugly] Professional Liability \u2014 No Umbrella Excess Coverage Over Te\nRisk Score: 20/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.7200000286102295,
+        0.10999999940395355,
+        0.10999999940395355
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Critical (Ugly)",
+      "page": 36
+    },
+    {
+      "level": 3,
+      "title": "Professional Liability \u2014 No Umbrella Excess Coverage Over Te",
+      "page": 36
+    }
+  ]
+}

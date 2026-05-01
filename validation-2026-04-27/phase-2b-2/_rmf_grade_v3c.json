@@ -1,0 +1,432 @@
+[
+  {
+    "tag": "General-1",
+    "item": "90 day notice of cancellation",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "General-2",
+    "item": "Unintentional Errors and Omissions",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "General-3",
+    "item": "Named insureds list per policy + flag missing",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "General-4",
+    "item": "Notice and Knowledge (all except umbrella)",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "General-5",
+    "item": "Waiver of Subrogation",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-1",
+    "item": "Additional Insured (blanket)",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-2",
+    "item": "Care Custody Control (CGL)",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-3",
+    "item": "Compliance bank covenants/contracts/leases",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "CGL-4",
+    "item": "Composite Rating",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-5",
+    "item": "Contract Review procedure",
+    "verdict": "METHODOLOGY/NA"
+  },
+  {
+    "tag": "CGL-6",
+    "item": "Contractual Liability + automatic AI/PNC/WoS",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-7",
+    "item": "Contractual liability personal & advertising",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-8",
+    "item": "Coverage Territory",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-9",
+    "item": "Cyber Coverage on CGL",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-10",
+    "item": "Damage to premises sublimit",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-11",
+    "item": "Damages to Premises (Fire Legal)",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-12",
+    "item": "Deductibles",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-13",
+    "item": "Duty to Defend",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-14",
+    "item": "EBL Coverage",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-15",
+    "item": "EPLI / Wage & Hour",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-16",
+    "item": "Endorsements list problematic",
+    "verdict": "METHODOLOGY/NA"
+  },
+  {
+    "tag": "CGL-17",
+    "item": "Environmental",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-18",
+    "item": "Errors & Omissions / E&O",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-19",
+    "item": "Faulty Work / subcontractor giveback",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-20",
+    "item": "Fellow Employee Coverage / exclusion deleted",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-21",
+    "item": "Hired and Non-Owned on CGL",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-22",
+    "item": "Leased / temporary workers",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-23",
+    "item": "Mental Anguish in BI definition",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-24",
+    "item": "Named Insured (broad/subsidiaries/JVs)",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-25",
+    "item": "Notice & Knowledge (officer-limited)",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-26",
+    "item": "Per Location / Per Project Aggregate",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-27",
+    "item": "Primary and Non-Contributory",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-28",
+    "item": "Product Recall",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-29",
+    "item": "Professional Coverage",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-30",
+    "item": "Stop Gap (CGL or WC)",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-31",
+    "item": "Total Pollution Exclusion",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CGL-32",
+    "item": "TRIA / terrorism",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CGL-33",
+    "item": "Waiver of Subrogation (blanket)",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CA-1",
+    "item": "AI status \u2014 Automatic + WoS + P&NC",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CA-2",
+    "item": "BI including Mental Anguish",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CA-3",
+    "item": "Broad Named Insured + all NIs listed",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CA-4",
+    "item": "Lease Gap coverage",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-5",
+    "item": "Drive Other Car",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-6",
+    "item": "Employee as Insured / CA 9933",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-7",
+    "item": "Endorsements list",
+    "verdict": "METHODOLOGY/NA"
+  },
+  {
+    "tag": "CA-8",
+    "item": "Environmental Exposures",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-9",
+    "item": "Fellow Employee Exclusion",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-10",
+    "item": "Hired Non-Owned",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "CA-11",
+    "item": "No-fault states optional coverage",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-12",
+    "item": "Mobile Equipment vs auto",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-13",
+    "item": "Notice and Knowledge",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-14",
+    "item": "Ownership of Vehicles",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-15",
+    "item": "Parked Vehicles aggregate ded.",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-16",
+    "item": "Symbols 1/2 vs 7",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-17",
+    "item": "Temporary & Leased Workers",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "CA-18",
+    "item": "Uninsured/Underinsured",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-1",
+    "item": "Endorsements list",
+    "verdict": "METHODOLOGY/NA"
+  },
+  {
+    "tag": "UMB-2",
+    "item": "Exclusions / non-follow-form",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "UMB-3",
+    "item": "Horizontal exhaustion / P&NC + WoS follow form",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "UMB-4",
+    "item": "Insureds \u2014 AI follow form, NIs same as underlying",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "UMB-5",
+    "item": "Defense inside vs outside limits",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-6",
+    "item": "Maintenance of underlying",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-7",
+    "item": "Notice and knowledge",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-8",
+    "item": "Per Project Aggregate / Per Location",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "UMB-9",
+    "item": "Professional Liability follow-form",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "UMB-10",
+    "item": "Punitive damages excluded",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-11",
+    "item": "Right and Duty when underlying exhausted",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "UMB-12",
+    "item": "Total Pollution Exclusion (umbrella)",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "UMB-13",
+    "item": "Underlying Policies all listed",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "UMB-14",
+    "item": "Specific follow-form concerns",
+    "verdict": "PARTIAL"
+  },
+  {
+    "tag": "WC-1",
+    "item": "Small indemnity claims / back-to-work",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-2",
+    "item": "Small med claims",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-3",
+    "item": "All States Endorsement (3.A vs 3.C)",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "WC-4",
+    "item": "(Intentionally Left Blank)",
+    "verdict": "METHODOLOGY/NA"
+  },
+  {
+    "tag": "WC-5",
+    "item": "Alternate Employee Endorsement",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-6",
+    "item": "EL Limits adequate to support Umbrella",
+    "verdict": "CAUGHT"
+  },
+  {
+    "tag": "WC-7",
+    "item": "Endemic Disease / Foreign Voluntary",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-8",
+    "item": "Experience Modification",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-9",
+    "item": "Maritime coverage",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-10",
+    "item": "Large claims by name",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-11",
+    "item": "All possible credits",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-12",
+    "item": "Owners Excluded",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-13",
+    "item": "DBA included",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-14",
+    "item": "USL&H",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-15",
+    "item": "Classification codes correct",
+    "verdict": "NOT CAUGHT"
+  },
+  {
+    "tag": "WC-16",
+    "item": "Waiver of Subrogation",
+    "verdict": "CAUGHT"
+  }
+]

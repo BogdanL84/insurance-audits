@@ -1,0 +1,419 @@
+{
+  "source_file": "Redacted2025 - 2026 Professional Liability Policy.pdf",
+  "analysis_date": "2026-04-28",
+  "policy_type": "Professional Liability",
+  "is_package": false,
+  "coverage_parts": [
+    "Professional Liability"
+  ],
+  "is_primary": true,
+  "named_insured": "Runbeck Election Services, Inc.",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [
+    {
+      "entity": "Runbeck Graphics Inc.",
+      "entity_type": "Inc",
+      "via_endorsement": "VP 02 79 07 17",
+      "endorsement_name": "Amended Named Insured",
+      "endorsement_type": "Schedule Named Insured",
+      "page": 36,
+      "scope_note": "Added as Named Insured with Retroactive Date 12-28-18",
+      "broad_form_llc_risk": false
+    }
+  ],
+  "additional_insureds": [
+    {
+      "entity": "Any person or organization with whom Named Insured has a written contract requiring AI status (Blanket)",
+      "via_endorsement": "VP 07 83 07 17",
+      "endorsement_name": "Blanket Additional Insured",
+      "endorsement_type": "other",
+      "page": 20,
+      "scope_note": "Defense costs (Claim Expenses) only — endorsement expressly states 'The Company will not pay any Loss on behalf of the additional Insured.' Limited to ongoing performance of Professional Services; AI status ends when Named Insured's services for that AI are completed. Coverage applies only to Claims arising solely out of Wrongful Acts of the Named Insured."
+    },
+    {
+      "entity": "Lincoln Shields LLC",
+      "via_endorsement": "AD 66 16 04 09 (End. #7)",
+      "endorsement_name": "Additional Insured / Vicarious Liability",
+      "endorsement_type": "Schedule Named Insured",
+      "page": 27,
+      "scope_note": "Vicarious liability only — Claims arising solely out of Wrongful Acts of Named Insured. Retroactive Date 8-18-2023."
+    },
+    {
+      "entity": "Black Mountain Investment Company LLC",
+      "via_endorsement": "AD 66 16 04 09 (End. #7)",
+      "endorsement_name": "Additional Insured / Vicarious Liability",
+      "endorsement_type": "Schedule Named Insured",
+      "page": 27,
+      "scope_note": "Vicarious liability only — Claims arising solely out of Wrongful Acts of Named Insured. Retroactive Date 8-18-2023."
+    },
+    {
+      "entity": "Benton County, WA (620 Market Street, 1st Floor, Auditor's Office, Prosser, WA 99350)",
+      "via_endorsement": "VP 02 88 07 17 (End. #10)",
+      "endorsement_name": "Additional Insured",
+      "endorsement_type": "Schedule Named Insured",
+      "page": 30,
+      "scope_note": "AI for Claims arising solely out of Wrongful Acts of Named Insured in performance of Professional Services for the AI. Status ends when services completed. Additional premium $100."
+    }
+  ],
+  "broad_form_ni_endorsement": {
+    "present": false,
+    "form_number": null,
+    "page": null,
+    "excludes_llcs_or_partnerships": false,
+    "excludes_note": null
+  },
+  "carrier": "Gemini Insurance Company (a Delaware Stock Company; W.R. Berkley group; non-admitted in Arizona — surplus lines)",
+  "policy_number": "VIPL056495",
+  "effective_date": "2025-04-01",
+  "expiry_date": "2026-04-01",
+  "limits": {
+    "each_claim": 5000000,
+    "aggregate": 5000000,
+    "self_insured_retention_per_claim": 25000,
+    "structure_note": "Per Dec page (MPLDEC 07 19): $5M Each Claim / $5M Aggregate with Retroactive Date 03/27/2017 and $25K SIR per claim. HOWEVER — Endorsement #4 (Split Limits of Liability, AD 66 16 04 09) replaces the Limits of Liability section in its entirety with a tiered structure tied to when Wrongful Acts first commenced: (a) Acts on or after Retro Date 12/1/2007: $1M each claim / $1M aggregate; (b) Acts on or after 09/06/2019: additional $1M xs $1M each claim / $1M xs $1M aggregate; (c) Acts on or after 04/01/2021: additional $3M xs $2M each claim / $3M xs $2M aggregate. Effective full-tower $5M/$5M only available for Wrongful Acts first committed on or after 04/01/2021. Wrongful Acts committed between 12/1/2007 and 09/05/2019 are limited to $1M/$1M.",
+    "disciplinary_proceeding_sublimit_aggregate": 50000,
+    "disciplinary_proceeding_sublimit_each": 25000,
+    "subpoena_response_sublimit_per_subpoena": 2500,
+    "subpoena_response_sublimit_aggregate": 5000,
+    "supplementary_payments_loss_of_wages": "$250/day per Insured, $5,000 max each Claim (erodes Limits)"
+  },
+  "cancellation_notice_days": {
+    "for_nonpayment": 10,
+    "for_other_reasons": 60,
+    "page_ref": "Pg 15 (Section IX.C)"
+  },
+  "endorsements": [
+    {
+      "form_number": "VP 07 84 07 17",
+      "name": "Specific Professional Service Retroactive Date",
+      "page": 19,
+      "notes": "End. #1. Retro Date of 04/01/2021 (instead of policy Retro 03/27/2017) applies specifically to 'outbound and inbound mail processing services.' Creates a later retro for the mail processing operation — narrower prior-acts protection for that service."
+    },
+    {
+      "form_number": "VP 07 83 07 17",
+      "name": "Blanket Additional Insured",
+      "page": 20,
+      "notes": "End. #2. Adds AI status by written contract — but DEFENSE COSTS (Claim Expenses) ONLY. Carrier 'will not pay any Loss on behalf of the additional Insured.' Coverage limited to ongoing Professional Services; ends at completion. Insured-vs-Insured exclusion carved back for AI claims against Named Insured."
+    },
+    {
+      "form_number": "AD 66 16 04 09 (End. #3)",
+      "name": "Claim Reporting Provision",
+      "page": 21,
+      "notes": "Modifies Section VI.A. Notice trigger limited to awareness by CEO, CFO, General Counsel, or Risk Manager (rather than 'any Insured'). Outside notice still capped at 60 days post-Policy Period."
+    },
+    {
+      "form_number": "AD 66 16 04 09 (End. #4)",
+      "name": "Split Limits of Liability",
+      "page": 22,
+      "notes": "Replaces Limits of Liability with tiered structure. Acts >=12/1/2007: $1M/$1M; Acts >=09/06/2019: +$1M xs $1M; Acts >=04/01/2021: +$3M xs $2M. Full $5M/$5M tower only for acts post-04/01/2021. CRITICAL — earlier Wrongful Acts only have $1M of coverage."
+    },
+    {
+      "form_number": "AD 66 16 04 09 (End. #5)",
+      "name": "Media Extension Endorsement",
+      "page": 23,
+      "notes": "Replaces Intellectual Property exclusion (now only patent/trade secret excluded — copyright/trademark/trade dress now covered). Adds 'Media Injury' definition (privacy violations, libel/slander, copyright/trademark infringement, plagiarism, false light, etc.). ADDS new exclusions: Cost Estimates exceeded; Recall/Reprinting; Licensing Claims (ASCAP, RIAA, BMI, ESAC); Unfair/Deceptive Trade Practices (consumer protection statutes); Failure to Make Licensing/Royalty Payments; False Advertising (defense until adjudication); Client Print Media (Claims by clients arising from client-furnished print media or Content)."
+    },
+    {
+      "form_number": "AD 66 16 04 09 (End. #6)",
+      "name": "Amendatory Endorsement — Technology Services Extension",
+      "page": 25,
+      "notes": "Adds Technology Services to Professional Services definition (data processing, software licensing, IT consulting, web hosting, etc.). Expands Wrongful Act to include unintentional failure to prevent Unauthorized Access/Use of third-party Computer Systems and inadvertent transmission of Malicious Code. Adds NEW exclusions: hardware malfunction (unless solely from Wrongful Act); electrical failure (unless solely from Wrongful Act); Extortion/blackmail/ransom; Delay in performance/delivery of Tech Products; Internet failure/outage by ISP not owned by Insured (TWICE — duplicate paragraph); Loss/transfer of funds, money, investments. Premium $5,000 flat."
+    },
+    {
+      "form_number": "AD 66 16 04 09 (End. #7)",
+      "name": "Additional Insured / Vicarious Liability",
+      "page": 27,
+      "notes": "Schedules Lincoln Shields LLC and Black Mountain Investment Company LLC as AIs (vicarious liability only) with Retro Date 8-18-2023."
+    },
+    {
+      "form_number": "VP 06 82 09 15 (End. #8)",
+      "name": "Exclusion — Violation of Trade or Economic Sanctions Laws or Regulations",
+      "page": 28,
+      "notes": "Standard OFAC/sanctions exclusion."
+    },
+    {
+      "form_number": "VP 02 75 07 17 (End. #9)",
+      "name": "Professional Services",
+      "page": 29,
+      "notes": "Replaces Professional Services definition. Defines Professional Services as 'Solely in the performance as an Election Services Firm including but not limited to: Election ballot services, printing ballot services, election printing, petition printing and services, election and petition design, ballot fulfillment, election hardware and software maintenance, support and technical services, outbound and inbound mail processing services, and election & petition products and services.' Aligns scope with Run-Test's actual operations."
+    },
+    {
+      "form_number": "VP 02 88 07 17 (End. #10)",
+      "name": "Additional Insured (Benton County, WA)",
+      "page": 30,
+      "notes": "Adds Benton County, WA as scheduled AI."
+    },
+    {
+      "form_number": "VP 06 99 07 17 (End. #11)",
+      "name": "Self-Insured Retention",
+      "page": 31,
+      "notes": "Replaces 'Deductible' with 'Self-Insured Retention' of $25,000 per claim. Insured must pay SIR for both Loss and Claim Expenses BEFORE carrier has any obligation. Carrier has no duty to defend until SIR exhausted (with right to associate or take over). Insured bears investigation/defense within SIR using Company panel counsel as Claim Service Provider. Cannot settle claims exceeding SIR without carrier consent. Annual claims audit right. SIR applies to Loss and Claim Expense each Claim. Insured-retained counsel credited toward SIR but limited to Company's customary hourly rates and counsel must have 10+ years experience and lawyer's PL coverage at least equal to this Policy's limits. Company has right (not obligation) to pay within SIR; Insured jointly/severally liable to repay within 30 days; collection costs added to SIR without limitation. Section V.E and V.F deleted entirely. Notice of Claim required immediately, no later than 60 days after expiration, when (1) reasonable estimate exceeds 50% of SIR, (2) lawsuit/arbitration/admin proceeding filed, (3) 3+ claimants, or (4) class action."
+    },
+    {
+      "form_number": "VP 03 08 07 17",
+      "name": "Amendment Criminal / Dishonest / Knowingly Wrongful Acts (Exclusion A.)",
+      "page": 35,
+      "notes": "Endorsement #12. Amends Exclusion A — innocent insured carve-out for natural persons (other than Named Insured) who did not participate in, ratify, or acquiesce. Defense provided until adjudication. Excludes criminal penalties/fines, bail bonds, criminal investigation costs, and criminal proceeding costs."
+    },
+    {
+      "form_number": "VP 02 79 07 17",
+      "name": "Amended Named Insured",
+      "page": 36,
+      "notes": "Endorsement #13. Adds Runbeck Graphics Inc. as Named Insured with Retroactive Date 12-28-18."
+    },
+    {
+      "form_number": "VP 07 38 08 21",
+      "name": "Service of Suit",
+      "page": 37,
+      "notes": "Endorsement #14. Service of process upon John Briggs at 7233 East Butherus Drive, Scottsdale, AZ 85260. Surplus lines / non-admitted carrier indicator. Does not waive carrier's right to remove to federal court."
+    },
+    {
+      "form_number": "VP 08 39 05 17",
+      "name": "Amended Section II. Coverage Extensions, Part A. Disciplinary Proceedings",
+      "page": 38,
+      "notes": "Endorsement #15. Disciplinary Proceeding sublimit: $25,000 each / $50,000 aggregate. Deductible does not apply; does not erode Each Claim/Aggregate limits. No duty to appoint counsel. Notice required during or within 60 days after Policy Period."
+    },
+    {
+      "form_number": "VP 08 51 05 17",
+      "name": "Consent to Settle Amendment — Miscellaneous (Hammer Clause)",
+      "page": 39,
+      "notes": "Endorsement #16. 80/20 hammer clause — if Named Insured refuses Company's recommended settlement, carrier liability capped at recommended settlement amount + 80% of Claim Expenses and Loss in excess of recommended amount. Insured bears 20%."
+    },
+    {
+      "form_number": "VP 08 53 05 17",
+      "name": "Supplementary Payments",
+      "page": 40,
+      "notes": "Endorsement #17. Loss of wages reimbursement when attending proceedings at Company's request: $250/day per Insured, $5,000 max each Claim. Erodes Limits of Liability (part of, not in addition to)."
+    },
+    {
+      "form_number": "VP 02 89 10 17",
+      "name": "Pending and Prior Litigation Exclusion with Date",
+      "page": 41,
+      "notes": "Endorsement #18. P&P Litigation Date: 3/26/2017. Excludes Loss/Claim Expenses arising out of pending or prior Claims, suits, or litigation existing prior to 3/26/2017, or future Claims related/associated with such matters."
+    },
+    {
+      "form_number": "VP 09 62 07 19",
+      "name": "Amended Preamble",
+      "page": 42,
+      "notes": "Endorsement #19. Replaces Preamble — coverage in consideration of premium, deductible, and reliance on Application (incorporated into Policy)."
+    },
+    {
+      "form_number": "VP 09 68 04 20",
+      "name": "Communicable Disease Exclusion",
+      "page": 43,
+      "notes": "Endorsement #20. Absolute exclusion for any Claim alleging/arising out of/attributable to any actual or alleged Communicable Disease — including supervisory/hiring/training acts, testing failures, prevention failures, reporting failures, and related communications."
+    },
+    {
+      "form_number": "VP 09 97 06 22",
+      "name": "Network Security, Privacy Breach and Biometric Identifiers or Biometric Information Exclusions",
+      "page": 44,
+      "notes": "Endorsement #21. Excludes Network Security/Privacy Breach claims and Biometric Identifiers/Biometric Information violations. Does NOT apply if a Cyber Coverage Endorsement is attached. Loss expressly excludes notification costs, credit monitoring, forensic, PR, fines, penalties, or Claim Expenses tied to unauthorized access/disclosure of confidential or personal information."
+    }
+  ],
+  "designated_entity_noc_endorsements": [],
+  "exclusions_of_note": [
+    {
+      "name": "Criminal/Dishonest/Knowingly Wrongful Acts (as amended by End. #12)",
+      "form_number": "VP 00 06 10 17 §IV.A as amended by VP 03 08 07 17",
+      "page": 35,
+      "impact": "Excludes intentional/criminal/fraudulent acts. Innocent-insured carve-back for natural persons (other than Named Insured) who didn't participate in, ratify, or acquiesce. Defense provided until adjudication. Also excludes criminal penalties, bail bonds, criminal investigation/proceeding costs."
+    },
+    {
+      "name": "Bodily Injury / Property Damage",
+      "form_number": "VP 00 06 10 17 §IV.C",
+      "page": 8,
+      "impact": "Excludes BI/PD/emotional distress/mental anguish — these belong on the GL/Cyber. E&O is pure financial-loss coverage."
+    },
+    {
+      "name": "Intellectual Property (modified by Media Ext.)",
+      "form_number": "VP 00 06 10 17 §IV.D, modified by End. #5",
+      "page": 8,
+      "impact": "Originally excluded all IP. Media Extension End. #5 narrows it to ONLY patent and trade secret infringement. Copyright, trademark, trade dress, trade name, service mark, slogan, Lanham Act now COVERED via Media Injury definition."
+    },
+    {
+      "name": "Employment-Related Practices",
+      "form_number": "VP 00 06 10 17 §IV.E",
+      "page": 8,
+      "impact": "Broad EPL exclusion — wrongful termination, discrimination, harassment, retaliation, refusal to hire, etc. Belongs on EPLI policy, not E&O."
+    },
+    {
+      "name": "Violation of Statutes",
+      "form_number": "VP 00 06 10 17 §IV.F",
+      "page": 9,
+      "impact": "Excludes Securities Act, ERISA, RICO, FLSA/WARN/COBRA/OSHA, HIPAA, antitrust/price-fixing/restraint of trade. HIPAA exclusion noteworthy — though Run-Test handles election (not health) data, the broad statutory exclusion language could be invoked for some regulatory matters."
+    },
+    {
+      "name": "Liability Assumed by Contract",
+      "form_number": "VP 00 06 10 17 §IV.G",
+      "page": 9,
+      "impact": "Excludes contractually-assumed liability EXCEPT liability that would have attached even absent the contract. Standard E&O language. Could limit indemnity-based claims from county contracts unless tort liability would also exist."
+    },
+    {
+      "name": "Breach of Express Guarantee or Warranty",
+      "form_number": "VP 00 06 10 17 §IV.H",
+      "page": 9,
+      "impact": "Excludes claims based on express warranties/guarantees — could be invoked for service-level guarantees in election contracts."
+    },
+    {
+      "name": "Insurance / Bonds",
+      "form_number": "VP 00 06 10 17 §IV.I",
+      "page": 9,
+      "impact": "Excludes failure to procure/maintain insurance or bonds."
+    },
+    {
+      "name": "Pollution, Asbestos and Lead (Absolute)",
+      "form_number": "VP 00 06 10 17 §IV.J",
+      "page": 9,
+      "impact": "Absolute pollution exclusion — broad definition of Pollutants includes asbestos, lead, chemicals, waste. Standard."
+    },
+    {
+      "name": "Unsolicited Faxes and Electronic Mail (TCPA)",
+      "form_number": "VP 00 06 10 17 §IV.K",
+      "page": 10,
+      "impact": "TCPA / unsolicited communications exclusion. Election mail vendor handling outbound mail — confirm any voter outreach/notice mailings are not characterizable as 'unsolicited' under TCPA."
+    },
+    {
+      "name": "Insureds versus Insureds",
+      "form_number": "VP 00 06 10 17 §IV.L (modified by End. #2 and End. #10)",
+      "page": 10,
+      "impact": "Standard IvI exclusion, with carve-backs for additional insureds (Blanket AI End. #2 and Benton County End. #10) bringing claims against the Named Insured."
+    },
+    {
+      "name": "Cost Guarantees",
+      "form_number": "VP 00 06 10 17 §IV.M (also End. #5 Q.)",
+      "page": 10,
+      "impact": "Excludes cost estimate/projection overruns. Reinforced by Media Extension End. #5."
+    },
+    {
+      "name": "War",
+      "form_number": "VP 00 06 10 17 §IV.N",
+      "page": 10,
+      "impact": "Standard war exclusion."
+    },
+    {
+      "name": "Business Enterprise / Outside Capacities",
+      "form_number": "VP 00 06 10 17 §IV.O",
+      "page": 10,
+      "impact": "Excludes Professional Services performed in outside-entity officer/director/manager/member capacities."
+    },
+    {
+      "name": "Third Party Discrimination and Sexual Harassment",
+      "form_number": "VP 00 06 10 17 §IV.P",
+      "page": 10,
+      "impact": "Excludes harassment/discrimination claims by non-employees (customers, clients, members of public). Belongs on EPLI third-party coverage, not here."
+    },
+    {
+      "name": "Recall/Reprinting (Media Extension)",
+      "form_number": "End. #5 R.",
+      "page": 23,
+      "impact": "Excludes recall, withdrawal, remediation, replacement, or reprinting of print media alleged to cause Media Injury. Material for an election ballot/print mail vendor — if a defective ballot has to be reprinted, the cost of the reprint itself is excluded."
+    },
+    {
+      "name": "Licensing Claims (ASCAP/RIAA/BMI/ESAC)",
+      "form_number": "End. #5 S.",
+      "page": 23,
+      "impact": "Excludes IP licensing organization claims."
+    },
+    {
+      "name": "Unfair or Deceptive Trade Practices",
+      "form_number": "End. #5 T.",
+      "page": 23,
+      "impact": "Excludes consumer protection / UDAP statute violations. Could be invoked in some election-related regulatory matters."
+    },
+    {
+      "name": "Failure to Make Licensing or Royalty Payments",
+      "form_number": "End. #5 U.",
+      "page": 23,
+      "impact": "Excludes royalty/license payment failures."
+    },
+    {
+      "name": "False Advertising (intentional)",
+      "form_number": "End. #5 V.",
+      "page": 23,
+      "impact": "Excludes intentionally false/deceptive/misleading advertising — defense provided until final adjudication."
+    },
+    {
+      "name": "Client Print Media",
+      "form_number": "End. #5 W.",
+      "page": 23,
+      "impact": "EXCLUDES Claims by clients of the Insured if Claim is a result of print media or Content furnished BY the client. CRITICAL FOR ELECTION CONTRACTS — counties typically furnish ballot content/data; if a county sues Run-Test over print media that the county itself furnished, this exclusion may bar coverage. Worth flagging to client."
+    },
+    {
+      "name": "Hardware Malfunction / Electrical Failure",
+      "form_number": "End. #6 A. & B.",
+      "page": 26,
+      "impact": "Excludes hardware malfunction/defect and electrical failure UNLESS solely caused by Insured's Wrongful Act/negligence. Limits coverage for equipment-related claims."
+    },
+    {
+      "name": "Extortion/Blackmail/Ransom",
+      "form_number": "End. #6 C.",
+      "page": 26,
+      "impact": "Excludes ransomware/extortion payments and security assistance costs. CRITICAL — confirm Cyber policy covers this; E&O does not."
+    },
+    {
+      "name": "Delay in Performance/Delivery",
+      "form_number": "End. #6 D.",
+      "page": 26,
+      "impact": "Excludes delay claims for Technology Products/services/contractual obligations. Election work is time-critical (printing/mailing ballots before deadlines) — delay claims are foreseeable, and they're excluded. NOTABLE GAP."
+    },
+    {
+      "name": "Internet Service Failure (ISP not owned)",
+      "form_number": "End. #6 E. & F. (duplicate)",
+      "page": 26,
+      "impact": "Excludes failure/outage of Internet service from third-party ISP. Carve-back: doesn't apply to maintenance/repair performed by others when rendering Professional Services. Listed twice (drafting error)."
+    },
+    {
+      "name": "Loss/Transfer of Funds",
+      "form_number": "End. #6 G.",
+      "page": 26,
+      "impact": "Excludes loss/transfer/attempted transfer of any funds, money, investments, or assets. Belongs on Cyber/Crime — confirm coverage there."
+    },
+    {
+      "name": "Violation of Trade or Economic Sanctions Laws",
+      "form_number": "VP 06 82 09 15 (End. #8)",
+      "page": 28,
+      "impact": "Standard OFAC/sanctions exclusion."
+    },
+    {
+      "name": "Pending and Prior Litigation Exclusion (3/26/2017)",
+      "form_number": "VP 02 89 10 17 (End. #18)",
+      "page": 41,
+      "impact": "P&P Litigation Date set at 3/26/2017. Excludes any Claim arising from prior litigation existing before that date or future related Claims. Long pre-policy date — narrows prior-acts exposure but may also exclude latent matters known/pending pre-2017."
+    },
+    {
+      "name": "Communicable Disease Exclusion",
+      "form_number": "VP 09 68 04 20 (End. #20)",
+      "page": 43,
+      "impact": "Absolute exclusion for any Communicable Disease claim including supervisory/training/testing/reporting failures. Broad post-COVID exclusion."
+    },
+    {
+      "name": "Network Security & Privacy Breach Exclusion",
+      "form_number": "VP 09 97 06 22 (End. #21)",
+      "page": 44,
+      "impact": "MATERIAL — excludes from Professional Liability any Claim arising from data breach, network security failure, mishandling of confidential/personal information, GLBA, HIPAA, FTC §5(a), DPPA, CA SB 1386 violations. Coverage MUST exist on a separate Cyber Coverage Endorsement (or standalone Cyber policy) to cover these exposures. For a vendor handling 90M voter records under Maricopa's $5M Cyber requirement, this confirms cyber risk is NOT covered under E&O."
+    },
+    {
+      "name": "Biometric Identifiers / Biometric Information Exclusion",
+      "form_number": "VP 09 97 06 22 (End. #21)",
+      "page": 44,
+      "impact": "Excludes any Claim alleging violation of statutes governing collection/use/storage/destruction of biometric identifiers or information (BIPA-style). Material if Run-Test handles fingerprints/retina/voice in election authentication."
+    },
+    {
+      "name": "Hammer Clause (80/20 Consent to Settle)",
+      "form_number": "VP 08 51 05 17 (End. #16)",
+      "page": 39,
+      "impact": "If Insured refuses recommended settlement, carrier liability capped at recommended amount + 80% of subsequent Claim Expenses and Loss. Insured retains 20% of post-refusal costs/loss. Standard hammer clause — meaningful insured consequence to overriding carrier settlement."
+    }
+  ],
+  "checklist": {
+    "additional_insured_blanket": true,
+    "additional_insured_scheduled": true,
+    "additional_insured_completed_ops": false,
+    "waiver_of_subrogation": false,
+    "waiver_of_subrogation_page": null,
+    "primary_noncontributory": false,
+    "contractual_liability": false,
+    "per_project_aggregate": false
+  },
+  "_source_file": "Redacted2025 - 2026 Professional Liability Policy.pdf"
+}

@@ -1,0 +1,375 @@
+{
+  "timestamp": "2026-04-29T07:48:30.580971",
+  "plan": {
+    "tbv_positioning": {
+      "headline": "Bogdan, before we talk about price, indulge me for sixty seconds: do you know if your insurance policies will actually pay when you need them, or are you just hoping?",
+      "provocation_narrative": "Run-Test Election Services protects 90 million American voters across 31 states — your entire business model is built on the premise that the keys turn in the lock when democracy needs them to. That's exactly how you should be thinking about your insurance program. Right now, the policies you're paying for are a $10M briefcase with the wrong name engraved on it — six of your policies are issued to 'Runbeck Election Services Inc,' but the AmTrust correction in April of 2025 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Policy Change #1, Page 2) tells us the real entity is the LLC. You don't get to find out the keys don't fit until after the loss. We did Trust But Verify on 27 different keys before this meeting. We need to talk about which ones don't turn.",
+      "recommended_analogy": "briefcase",
+      "analogy_rationale": "The briefcase is the right opener for Runbeck because the dominant theme of the audit is structural: the named insured on six policies doesn't match the legal entity, three subsidiaries are missing from the umbrella, and the 401(k) plan is scheduled on the auto policy instead of fiduciary coverage. Every one of those is a 'briefcase with the wrong name engraved on it' problem — the carrier holds the money, the keys exist, but the keys don't fit until you fix the engraving. Election services is also a high-stakes, high-visibility industry where a denied claim becomes a public crisis, which makes the 'try the keys before you need the money' framing land hard with the CFO.",
+      "two_objections_prep": [
+        "'We trust our broker' — Bogdan, I respect that, and I have no doubt your broker is a good person who placed competitive insurance. The question I'd ask is different: did your broker, as a deliberate act, sit down with the contracts you signed with Maricopa, Sacramento, Benton County, and ARC Airport, and then read every page of every policy to verify the contract requirements actually flow through? Because what we found across this program (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56; Redacted2024-26 Management Liability Policy.pdf, Schedule of Subsidiaries) is the kind of pattern you only see when nobody did that work. That isn't a character judgment — it's a process gap. Trust your broker. Then verify their work. That's all TBV is.",
+        "'We've never had a major claim' — That's exactly what worries me, because it's the turkey problem. The turkey is most confident the day before Thanksgiving. The fact that nothing has gone wrong is the only evidence your current broker has that the program is sound — and that evidence is worthless. It tells you nothing about whether the policies will pay when something does go wrong. We found 13 Ugly findings in your program — including a $10M umbrella that doesn't actually cover three of your subsidiaries (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56) — and not one of those would surface until the first claim hits. By then, the toothpaste is out of the tube."
+      ]
+    },
+    "pct_playbook": [
+      {
+        "finding_id": "finding-001-systemic-named-insured",
+        "finding_title": "First Named Insured — Inc vs LLC Entity-Type Mismatch Across Program (Systemic)",
+        "laymen_title": "The Insurance Policies for a Company That Doesn't Exist",
+        "severity_framing": "Six of your insurance policies are issued to a legal entity that may not be your actual operating company.",
+        "worst_case_scenario": "A multi-million dollar liability claim is presented to a carrier whose policy names 'Runbeck Election Services Inc.' The carrier's claims counsel reviews the AZ Corporation Commission filing, sees the operating entity is the LLC, and asserts the claimant's insurance is on the wrong entity. Coverage is delayed 6-18 months in declaratory judgment litigation, defense costs are paid out of pocket, and settlement leverage evaporates.",
+        "cost_of_doing_nothing": "Reservation of rights letter on every claim until carrier's choice; estimated $250K-$2M in delay/defense exposure per claim, plus full uninsured loss if carrier prevails on entity-mismatch defense. Six policies × any single claim = compounded risk.",
+        "conviction_evidence_type": "IRMI article on 'first named insured' construction; carrier denial letters citing entity-mismatch (e.g., Federal Insurance Co. v. PrintGroup); industry guidance on PE-backed entity restructuring and named-insured continuity",
+        "our_solution": "Issue Name Change endorsement (IL 12 01 or carrier equivalent) on all six 'Inc' policies — Hanover WC, Hanover Auto, Hanover Commercial Package, Hanover Commercial Umbrella, Gemini Pro Liab, Hartford Management Liability — to align entity-type to LLC. Verify Form-of-Business field reads 'Limited Liability Company' on each Dec page. Confirm Hanover Broad Form Named Insured endorsement (form 421-2916) does not exclude LLCs from automatic subsidiary coverage. (PROGRAM — WC Dec; Auto Dec; Package Dec; Umbrella Dec; Pro Liab Dec; ML Dec; Arch CGL Dec; Convex Dec; AmTrust Cyber Policy Change #1 p 2)",
+        "presentation_sequence": 1
+      },
+      {
+        "finding_id": "finding-004-runbeck-properties",
+        "finding_title": "Cross-Policy Named Insured — Runbeck Properties, LLC on Umbrella But Missing from Hanover Commercial Package CGL",
+        "laymen_title": "The $10M Umbrella With Nothing Underneath It",
+        "severity_framing": "Your real-estate-holding entity is on the umbrella but not on the general liability policy beneath it — meaning every premises claim has zero coverage.",
+        "worst_case_scenario": "A vendor, customer rep, or visitor falls on a stairway at a Runbeck Properties building and suffers spinal injury. Demand: $4.5M. Hanover declines under Commercial Package CGL because Runbeck Properties is not a named insured (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Schedule of Named Insureds, Page 12). Umbrella declines to drop down because there's no underlying policy to follow form on. Runbeck pays the entire $4.5M out of pocket plus defense.",
+        "cost_of_doing_nothing": "Full uninsured liability exposure for any premises claim at any Runbeck Properties location. Range: $100K (minor injury) to $5M+ (catastrophic injury or wrongful death).",
+        "conviction_evidence_type": "ISO CG 00 01 named-insured definition; IRMI 'umbrella schedule of underlying' commentary; Stonebridge v. Continental Casualty (umbrella declines when underlying entity not insured)",
+        "our_solution": "Issue immediate endorsement to Hanover Commercial Package adding 'Runbeck Properties, LLC' to the Schedule of Named Insureds (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 12). Verify the addition flows through to products/completed-operations and per-project aggregates. Confirm Hanover Broad Form Named Insured endorsement (421-2916) does not exclude LLCs from automatic coverage.",
+        "presentation_sequence": 2
+      },
+      {
+        "finding_id": "finding-002-lincoln-shields",
+        "finding_title": "Cross-Policy Named Insured — Lincoln Shields LLC Missing from Umbrella, Package CGL, and ML",
+        "laymen_title": "The Ghost Subsidiary",
+        "severity_framing": "A subsidiary on your auto and pro-liab policies is invisible to your umbrella, your general liability, and your D&O.",
+        "worst_case_scenario": "A Lincoln Shields vehicle is in an at-fault accident with a school bus; multiple injuries; demand reaches $5M. Hanover Auto pays $1M. Hanover Umbrella declines because Lincoln Shields LLC is not on the umbrella schedule (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56). $4M paid by Runbeck out of pocket. Separately, a Lincoln Shields director is sued; D&O carrier declines because the subsidiary is not on the Hartford ML Schedule of Subsidiaries.",
+        "cost_of_doing_nothing": "$4M-$9M uninsured exposure on any auto claim above $1M for Lincoln Shields. Full uninsured GL and D&O exposure for the subsidiary.",
+        "conviction_evidence_type": "ISO CA 00 01 named-insured definition; commercial umbrella schedule-of-underlying caselaw; Hartford ML Subsidiary clause analysis; carrier denial letters on subsidiary-not-scheduled grounds",
+        "our_solution": "Add Lincoln Shields LLC to Hanover Umbrella schedule (form 475-0174) by endorsement (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56). Add to Hanover Commercial Package Schedule of Named Insureds (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 12). Add to Hartford Management Liability Schedule of Subsidiaries (Redacted2024-26 Management Liability Policy.pdf).",
+        "presentation_sequence": 3
+      },
+      {
+        "finding_id": "finding-003-black-mountain",
+        "finding_title": "Cross-Policy Named Insured — Black Mountain Investment Co. LLC Missing from Umbrella, Package CGL, and ML",
+        "laymen_title": "Two Spellings, Zero Coverage",
+        "severity_framing": "A subsidiary appears on the auto policy under one name and on pro-liab under another — and is missing entirely from the umbrella, GL, and D&O.",
+        "worst_case_scenario": "Black Mountain vehicle causes a serious-injury crash; demand $3.5M. Auto pays $1M. Umbrella reviews and finds (a) Black Mountain not on schedule and (b) name spelled inconsistently between Auto (RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28) and Pro Liab (Page 27). Carrier uses the spelling discrepancy to delay tender 9-12 months while litigating identity of the insured. Settlement leverage destroyed.",
+        "cost_of_doing_nothing": "$2M-$5M uninsured exposure per material auto/GL claim, plus litigation cost premium for entity-identity discovery battles.",
+        "conviction_evidence_type": "Caselaw on named-insured spelling discrepancies (e.g., American Home v. NorthLand); IRMI guidance on subsidiary scheduling consistency",
+        "our_solution": "Add 'Black Mountain Investment Co. LLC' (using one consistent spelling — confirm AZ corporate filing as authoritative) to Hanover Umbrella 475-0174, Hanover Commercial Package, and Hartford ML Schedule of Subsidiaries. Reconcile name spelling across Auto (RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28), Pro Liab (Redacted2025 - 2026 Professional Liability Policy.pdf, Page 27), and the new endorsements.",
+        "presentation_sequence": 4
+      },
+      {
+        "finding_id": "finding-011-umbrella-misalignment",
+        "finding_title": "Umbrella Schedule of Underlying — Multiple Subsidiary Entities Not Aligned with Auto/Pro Liab Primaries",
+        "laymen_title": "The Pyramid Built on Sand",
+        "severity_framing": "You're paying for a $10M umbrella that only attaches to four of your seven entities.",
+        "worst_case_scenario": "Any of three subsidiaries — Lincoln Shields, Black Mountain, or the 401(k) Plan — generates a claim that breaches the $1M auto primary. Umbrella schedule (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56) doesn't include them. Excess capacity is paid for and unusable. Net result: you bought $10M and got $1M.",
+        "cost_of_doing_nothing": "Up to $9M of phantom umbrella capacity per claim on the unscheduled subsidiaries. Premium spend ratio implies ~30% of umbrella premium is buying coverage that doesn't attach.",
+        "conviction_evidence_type": "IRMI commercial umbrella schedule-of-underlying analysis; carrier denial template language; ISO CU 00 01 attachment provisions",
+        "our_solution": "Reconcile the Umbrella schedule (475-0174, RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56) with the Auto schedule (461-0174, RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28) and Pro Liab schedule (AD 66 16 04 09 End. #7, Page 27). Add Lincoln Shields LLC, Black Mountain Investment Co. LLC; remove 401(k) Plan (it goes to ML Fiduciary instead). Confirm name-spelling consistency across all three schedules.",
+        "presentation_sequence": 5
+      },
+      {
+        "finding_id": "finding-005-401k",
+        "finding_title": "Fiduciary Liability — Runbeck Companies 401(k) Profit Sharing Plan Not Listed as Named Insured on ML Policy",
+        "laymen_title": "The 401(k) That Drives a Truck",
+        "severity_framing": "Your retirement plan is scheduled on the auto policy — where it doesn't belong — and missing from the fiduciary coverage where it must be.",
+        "worst_case_scenario": "Plan participants file an ERISA class action over excessive fees or imprudent investment selection (the most common PE-backed-sponsor claim type). Hartford ML Fiduciary Coverage Part is asked to defend; carrier reviews schedule of insureds, finds the Plan is not listed, and asserts the Plan itself is not a named insured under fiduciary coverage (Redacted2024-26 Management Liability Policy.pdf, Fiduciary Coverage Part). Defense costs $1.5M-$3M paid by Runbeck; settlement $5M-$15M.",
+        "cost_of_doing_nothing": "$5M-$20M ERISA class-action exposure with no fiduciary coverage; defense costs alone $1.5M-$3M.",
+        "conviction_evidence_type": "Hughes v. Northwestern University (Sup. Ct. 2022) — fee-litigation pleading standard; Schlichter Bogard fee-litigation track record; ERISA §404(a) prudence standard; IRMI Fiduciary Coverage Part construction guidance",
+        "our_solution": "(1) Schedule 'Runbeck Companies 401(k) Profit Sharing Plan' as a Named Insured on the Hartford Management Liability Fiduciary Coverage Part (Redacted2024-26 Management Liability Policy.pdf). (2) Remove Plan from Auto Multiple Named Insured schedule (RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28). (3) Confirm Fiduciary Coverage Part definition of 'Insured' captures plan trustees, plan administrators, and individuals serving as fiduciaries. (4) Verify Settlor Functions exclusion language.",
+        "presentation_sequence": 6
+      },
+      {
+        "finding_id": "finding-001-cyber-min-limits",
+        "finding_title": "Cyber Liability — Minimum Limits ($5M Per Occurrence)",
+        "laymen_title": "The $5M Maricopa Promise on a $4M Policy",
+        "severity_framing": "Your largest customer's contract requires $5M cyber; your cyber policy limits don't get there.",
+        "worst_case_scenario": "Maricopa County's procurement office conducts a routine COI audit (not even a claim) and discovers cyber limits below the required $5M (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 4, Pages 2-3). Material breach declaration. Contract terminated for cause. Multi-year revenue stream lost. Reputational damage propagates to other county customers reviewing their own COIs.",
+        "cost_of_doing_nothing": "Loss of Maricopa contract = estimated $5M-$25M+ in lost contracted revenue, plus secondary loss as other counties audit. Insurance gap on a covered claim: shortfall $1M-$3M depending on actual limits.",
+        "conviction_evidence_type": "Sample county procurement contract language; AICPA SOC 2 audit standards on insurance compliance; election technology industry contract templates",
+        "our_solution": "Bind a stand-alone primary cyber tower at $5M minimum per occurrence with a financially strong admitted carrier. Reconfirm contractual COI flow to Maricopa County's contract administration office. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 4, Pages 2-3)",
+        "presentation_sequence": 7
+      },
+      {
+        "finding_id": "finding-002-cyber-defense-within",
+        "finding_title": "Cyber Liability — Defense Within Limits + Shared Aggregate Erosion",
+        "laymen_title": "The Limit That Eats Itself",
+        "severity_framing": "Every dollar your cyber lawyers bill reduces the dollars left to pay the claim — and one bad incident can drain the policy before it pays anyone.",
+        "worst_case_scenario": "Ransomware event triggers a coordinated investigation, regulatory defense, and class action. Defense within limits (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page, Page 2) means breach counsel, forensics, regulatory defense, and class-action defense all reduce the aggregate. By the time settlement is on the table, $2M of the limit has been spent on defense and the remaining limit is insufficient to fund the settlement.",
+        "cost_of_doing_nothing": "$1M-$3M defense erosion per major incident; potential settlement shortfall of equivalent amount on a single covered loss.",
+        "conviction_evidence_type": "Defense-outside-limits market comparison (Beazley, Coalition, Chubb specimen forms); Hiscox cyber claims study on average defense cost per breach; Maersk NotPetya cost decomposition",
+        "our_solution": "Replace AmTrust placement with a cyber tower providing duty-to-defend coverage with defense outside limits, or at minimum a separately-stated Breach Response sublimit that does not erode the third-party liability aggregate. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page, Page 2)",
+        "presentation_sequence": 8
+      },
+      {
+        "finding_id": "finding-003-cyber-social-engineering",
+        "finding_title": "Cyber Liability — Social Engineering / Cyber Deception Phantom Coverage",
+        "laymen_title": "The Phantom Coverage",
+        "severity_framing": "Your policy implies social engineering coverage but the sublimit is structured so a real claim collapses on itself.",
+        "worst_case_scenario": "AP department wires $750K to a fraudulent vendor account on what looks like a legitimate election-jurisdiction invoice. Cyber insurer reviews dec page Item 7 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Page 3); sublimit and intent language constrain recovery. Crime carrier reviews $15K Social Engineering sublimit (Redacted2024-26 Management Liability Policy.pdf, Crime Dec / §V(T), Pages 8 and 54). Recovery: $15K. Loss: $735K.",
+        "cost_of_doing_nothing": "$250K-$1.5M per social-engineering incident; election-services payment volume creates ongoing impersonation risk during ballot-cycle peak periods.",
+        "conviction_evidence_type": "FBI IC3 BEC report (annual losses); Medidata Solutions v. Federal Insurance (2nd Cir. 2018) social-engineering coverage caselaw; AFP Payments Fraud Survey",
+        "our_solution": "Negotiate stand-alone Cyber Deception/Social Engineering coverage at $1M minimum on a non-eroding sublimit basis on the new cyber tower; eliminate reliance on the $15K Crime sublimit for funds-transfer fraud. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 7, Page 3)",
+        "presentation_sequence": 9
+      },
+      {
+        "finding_id": "finding-004-do-mfg-exclusion",
+        "finding_title": "D&O — Manufacturing & Professional Services Exclusion Bars Core Operations",
+        "laymen_title": "The Carve-Out for Your Core Business",
+        "severity_framing": "Your D&O policy contains an exclusion that knocks out the very activity that defines your company.",
+        "worst_case_scenario": "Shareholder, customer, or counterparty sues directors over a ballot-printing error, election-mail processing failure, or technology product underperformance. Hartford D&O reviews Endorsement #19 (PP 00 H350 00 0616, Redacted2024-26 Management Liability Policy.pdf, Page 85) and asserts the manufacturing/professional services exclusion bars entity coverage. Defense and indemnity declined. Directors personally exposed under a PE-backed cap structure where indemnification is limited.",
+        "cost_of_doing_nothing": "$2M-$10M+ defense and indemnity exposure per directors-suit; recruiting and retention damage as directors discover personal exposure.",
+        "conviction_evidence_type": "Hartford Private Choice Premier specimen form analysis; Lessons learned 2026-03-24 (CLAUDE.md) — Hartford manufacturing/professional services exclusion can bar entity liability; PE-backed D&O placement comparison templates",
+        "our_solution": "Negotiate carrier-issued Endorsement removing or carving back Endorsement #19 (Redacted2024-26 Management Liability Policy.pdf, Page 85) for Insured Entity coverage on professional-services activities; alternatively, replace D&O with carrier whose base form does not contain this exclusion (Travelers, Chubb, AIG specimen).",
+        "presentation_sequence": 10
+      },
+      {
+        "finding_id": "finding-006-cyber-ai-maricopa",
+        "finding_title": "Cyber — Additional Insured Status (Maricopa)",
+        "laymen_title": "The Customer Without a Seat",
+        "severity_framing": "Maricopa's contract requires AI status on cyber; the cyber policy doesn't grant it.",
+        "worst_case_scenario": "Maricopa is named as a co-defendant in a downstream privacy class action arising from a Runbeck breach. Maricopa tenders to AmTrust under contractual AI obligation. Carrier reviews Dec page Item 8 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Page 4) — no AI endorsement scheduled — and declines tender. Maricopa pursues Runbeck for indemnification under the contract.",
+        "cost_of_doing_nothing": "Direct contract breach exposure to Maricopa; estimated $250K-$2M indemnification flow-through per incident.",
+        "conviction_evidence_type": "ISO CG 20 10 / 20 38 commentary; cyber AI endorsement market specimens (Beazley, Coalition); contract indemnification flow-through caselaw",
+        "our_solution": "Bind Cyber Additional Insured endorsement naming Maricopa County on the new cyber tower. Confirm endorsement language does not narrow coverage to liability arising solely from the AI's own conduct. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 8, Page 4)",
+        "presentation_sequence": 11
+      },
+      {
+        "finding_id": "finding-007-cyber-wos-maricopa",
+        "finding_title": "Cyber — Waiver of Subrogation (Maricopa)",
+        "laymen_title": "The Refund Maricopa Will Demand",
+        "severity_framing": "Your contract waives recovery rights against Maricopa; your cyber policy doesn't.",
+        "worst_case_scenario": "Following a covered cyber loss, AmTrust pays the claim and then sues Maricopa for contribution under subrogation rights. Maricopa's risk manager, citing the contract's WoS provision, demands Runbeck make Maricopa whole — putting Runbeck on the hook for a recovery that the carrier should never have pursued.",
+        "cost_of_doing_nothing": "Contract breach exposure equal to the full subrogation recovery the carrier pursues; estimated $100K-$2M per incident.",
+        "conviction_evidence_type": "ISO WoS endorsement specimen language; carrier subrogation policy templates; California Civil Code §2860-equivalents on contractual waivers",
+        "our_solution": "Bind Waiver of Subrogation endorsement naming Maricopa County on the new cyber tower. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 8, Page 4)",
+        "presentation_sequence": 12
+      },
+      {
+        "finding_id": "finding-005-noc-maricopa",
+        "finding_title": "Designated Entity Notice of Cancellation — Maricopa County",
+        "laymen_title": "The Cancellation They'll Find Out About From CNN",
+        "severity_framing": "If your cyber, ML, or E&O policies cancel, Maricopa won't get the notice their contract requires.",
+        "worst_case_scenario": "Mid-term cancellation or non-renewal hits a coverage line Maricopa requires. No NOC endorsement on Cyber, ML, or E&O (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf — none; Redacted2024-26 Management Liability Policy.pdf — none) means Maricopa doesn't find out until the next COI request. Maricopa's procurement officer treats the lapse as material breach, even if no claim occurred.",
+        "cost_of_doing_nothing": "Contract termination risk for administrative breach; estimated revenue impact $5M-$25M+ over remaining contract term.",
+        "conviction_evidence_type": "Sample county procurement contract language on NOC; ISO IL 12 03 specimen; AON public-sector procurement breach study",
+        "our_solution": "Add Designated Entity Notice of Cancellation endorsement listing Maricopa County (and other contract counterparties) on every program policy whose coverage line is enumerated in the contract. (RedactedHanover - WC - 4.1.25-4.1.26.pdf, Page 112; RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Pages 44-46; ML/Cyber/E&O — none currently)",
+        "presentation_sequence": 13
+      },
+      {
+        "finding_id": "finding-006-bad-investments-graphics",
+        "finding_title": "Cross-Policy Named Insured — Runbeck Investments LLC and Runbeck Graphics Inc. Missing from Management Liability Policy",
+        "laymen_title": "The D&O That Forgot Half the Company",
+        "severity_framing": "Two of your operating subsidiaries are on every policy except the one that protects directors and officers.",
+        "worst_case_scenario": "A Graphics customer or contracting party sues Graphics directors for breach of fiduciary duty; Hartford reviews Schedule of Subsidiaries (Redacted2024-26 Management Liability Policy.pdf), finds Runbeck Graphics Inc. not scheduled, and declines defense. Same outcome on a Runbeck Investments regulatory investigation.",
+        "cost_of_doing_nothing": "Defense and indemnity exposure for two unscheduled operating subsidiaries; estimated $500K-$5M per directors-suit.",
+        "conviction_evidence_type": "Hartford ML Subsidiary clause analysis; >50% ownership automatic-coverage caselaw (e.g., MBIA v. Federal Insurance)",
+        "our_solution": "Request endorsement scheduling Runbeck Investments LLC, Runbeck Graphics Inc., Runbeck Properties LLC, Lincoln Shields LLC, and Black Mountain Investment Co. LLC as Subsidiaries on the Hartford Management Liability Policy (Redacted2024-26 Management Liability Policy.pdf). Same review for Fiduciary, EPLI, and Crime Coverage Parts.",
+        "presentation_sequence": 14
+      },
+      {
+        "finding_id": "finding-009-noc-six-policies",
+        "finding_title": "Designated Entity NOC — Endorsement Entirely Absent from Six Program Policies",
+        "laymen_title": "Six Silent Policies",
+        "severity_framing": "Six different policies in your program have no mechanism for telling your customers if they get cancelled.",
+        "worst_case_scenario": "Cancellation of any of six lines (ML, Pro Liab, Arch CGL, Convex, Cyber, Umbrella — Redacted2024-26 Management Liability Policy.pdf; Redacted2025 - 2026 Professional Liability Policy.pdf; Redacted2025-2026 Liability Policy - Security Guards.pdf; RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf; RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf; RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf) without customer notice triggers contract breach across the customer book.",
+        "cost_of_doing_nothing": "Aggregate contract-breach exposure across the book; lost contract value $5M-$50M depending on which line lapses and which customers are affected.",
+        "conviction_evidence_type": "ISO IL 12 03 specimen and carrier equivalents; sample customer contract NOC language",
+        "our_solution": "For each customer contract, identify enumerated coverage lines; add Designated Entity NOC endorsement listing customer counterparty on each. Priority: AmTrust Cyber → Hanover Umbrella → Gemini Pro Liab + Convex Excess → Hartford ML → Arch CGL.",
+        "presentation_sequence": 15
+      },
+      {
+        "finding_id": "finding-008-noc-asymmetry",
+        "finding_title": "Designated Entity NOC Asymmetry — Customer Counties on Auto/WC But Missing from Hanover Commercial Package CGL",
+        "laymen_title": "The Notice List That Lost Five Counties",
+        "severity_framing": "Five customer counties are on your auto NOC list but absent from your GL NOC list.",
+        "worst_case_scenario": "Hanover Commercial Package GL is cancelled or non-renewed mid-term; Boulder, San Luis Obispo, Colorado state, El Paso, and Coconino aren't notified because they aren't on the Package NOC schedule (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 36) — only on Auto (Pages 44-46) and WC (Page 112). All five contracts breached simultaneously.",
+        "cost_of_doing_nothing": "Multi-customer contract breach exposure; estimated combined $3M-$15M revenue at risk.",
+        "conviction_evidence_type": "ISO IL 12 03 specimen; sample county contract NOC requirements (typically 30/60/90 days)",
+        "our_solution": "Reconcile NOC schedules across Hanover Auto, WC, and Package CGL using the Auto schedule (RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Pages 44-46) as baseline. Replicate to Package (Page 36) and WC (Page 112).",
+        "presentation_sequence": 16
+      },
+      {
+        "finding_id": "finding-011-do-prior-acts",
+        "finding_title": "D&O — Prior Acts Cutoff 8/18/2023 (PE-Backed Risk)",
+        "laymen_title": "The Date That Erased Your History",
+        "severity_framing": "Your D&O policy treats every wrongful act before August 18, 2023 as if it never happened.",
+        "worst_case_scenario": "Regulatory investigation or shareholder claim arises based on conduct from 2020-2023 (a particularly active period for election-services scrutiny). Hartford reviews Endorsement #28 (PP 00 H033 00 0616, Redacted2024-26 Management Liability Policy.pdf, Page 96) and declines defense based on prior acts cutoff. Directors and entity exposed for the entire pre-cutoff window.",
+        "cost_of_doing_nothing": "$2M-$15M+ exposure for any pre-8/18/2023 wrongful-act claim that surfaces during the policy period.",
+        "conviction_evidence_type": "PE-backed D&O retroactive-date market analysis; SEC enforcement timeline statistics; PCAOB/state-AG election-services regulatory scrutiny",
+        "our_solution": "Negotiate full prior acts coverage at renewal — if not achievable with Hartford, market the D&O to carriers offering full prior acts (AIG, Chubb, Travelers) given PE-backed structure. (Redacted2024-26 Management Liability Policy.pdf, Endorsement #28, Page 96)",
+        "presentation_sequence": 17
+      },
+      {
+        "finding_id": "finding-012-crime-social-eng",
+        "finding_title": "Crime — Social Engineering / Deception Fraud Sublimited to $15K",
+        "laymen_title": "The $15K Lock on a $10M Door",
+        "severity_framing": "The most common fraud loss in your industry is sublimited to fifteen thousand dollars.",
+        "worst_case_scenario": "AP wires $400K to a fraudulent vendor impersonating a county election office. Crime carrier reviews §V(T) (Redacted2024-26 Management Liability Policy.pdf, Crime Dec / §V(T), Pages 8 and 54), pays $15K. Loss: $385K out of pocket.",
+        "cost_of_doing_nothing": "Single-incident exposure $250K-$1.5M; election-services payment cycles create recurring risk.",
+        "conviction_evidence_type": "FBI IC3 BEC annual report; AFP Payments Fraud Survey; Medidata v. Federal Insurance",
+        "our_solution": "Negotiate Crime Social Engineering sublimit increase to $1M minimum (matched by Cyber Deception placement on cyber tower). (Redacted2024-26 Management Liability Policy.pdf, Crime Dec / §V(T), Pages 8 and 54)",
+        "presentation_sequence": 18
+      },
+      {
+        "finding_id": "finding-009-cyber-retro",
+        "finding_title": "Cyber — Continuity / Retroactive Date Gap",
+        "laymen_title": "The Door That Opens Backward",
+        "severity_framing": "Your cyber retroactive date may not capture the full pre-policy exposure window.",
+        "worst_case_scenario": "Breach is discovered in 2026 but the underlying intrusion occurred prior to the retroactive date stated on Dec page Item 5 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Page 3). Carrier denies based on retroactive-date provision. No coverage for the resulting claim.",
+        "cost_of_doing_nothing": "Full uninsured exposure for any breach traced to pre-retroactive conduct; $500K-$5M per incident.",
+        "conviction_evidence_type": "Cyber claims-made retro-date caselaw; Mandiant/CrowdStrike dwell-time studies (median 200+ days)",
+        "our_solution": "Negotiate full prior acts / retroactive coverage on the new cyber tower; document continuous coverage history at renewal. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 5, Page 3)",
+        "presentation_sequence": 19
+      },
+      {
+        "finding_id": "finding-007-bad-arc-airport",
+        "finding_title": "Landlord Additional Insured — ARC Airport 2800, LLC Missing from Umbrella",
+        "laymen_title": "The Landlord at $1M, Not $10M",
+        "severity_framing": "Your landlord is on the GL but not the umbrella — and the lease almost certainly requires both.",
+        "worst_case_scenario": "Catastrophic slip-and-fall judgment exceeds $1M GL primary at the leased premises. ARC Airport 2800's recovery against your insurance stops at $1M (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 234 — present on Package; RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56 — absent on Umbrella). Landlord tenders excess to Runbeck under lease indemnification clause; Runbeck pays $2M-$4M out of pocket.",
+        "cost_of_doing_nothing": "Lease-indemnity exposure $1M-$5M per major premises claim.",
+        "conviction_evidence_type": "Standard commercial lease specimen requiring AI status 'up to the full limits of all insurance'; ISO CG 20 11 specimen",
+        "our_solution": "Pull the lease and confirm the insurance article scope. Request Designated Entity / Designated Lessor endorsement adding ARC Airport 2800, LLC to Hanover Umbrella 475-0174 as Additional Insured (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56). Confirm primary-and-noncontributory wording matches the GL endorsement.",
+        "presentation_sequence": 20
+      },
+      {
+        "finding_id": "finding-010-bad-benton-county",
+        "finding_title": "Cross-Policy Customer Entity — Benton County, WA on Pro Liab Only",
+        "laymen_title": "The County That Got Half a Promise",
+        "severity_framing": "A customer county is named on professional liability but missing from the four other lines their contract probably requires.",
+        "worst_case_scenario": "Benton County's risk manager performs a routine COI audit and discovers AI status only on Pro Liab (Redacted2025 - 2026 Professional Liability Policy.pdf, Page 30) but missing from Package CGL, Auto, Umbrella, and Cyber. Material breach declaration on the contract.",
+        "cost_of_doing_nothing": "Contract administrative-breach exposure; estimated $500K-$3M revenue at risk.",
+        "conviction_evidence_type": "Sample county contract AI requirement language; Hanover blanket AI endorsement 421-2915 commentary",
+        "our_solution": "Pull the Benton County contract; verify required AI status on each enumerated line. Confirm Hanover Commercial Package Blanket AI endorsement (421-2915) automatically captures Benton County via written-contract trigger. Verify Auto blanket endorsement 461-0478 picks up. Add Benton County to Hanover Umbrella and AmTrust Cyber by endorsement. (Redacted2025 - 2026 Professional Liability Policy.pdf, Page 30 — present; missing from RedactedHanover - Commercial - 4.1.25-4.1.26.pdf; RedactedHanover - Auto - 4.1.25-4.1.26.pdf; RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf; RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf)",
+        "presentation_sequence": 21
+      },
+      {
+        "finding_id": "finding-010-bad-tech-eo-split",
+        "finding_title": "Tech E&O — Split Limits Reduce Coverage on Pre-2021 Wrongful Acts",
+        "laymen_title": "The Two-Limit Tower",
+        "severity_framing": "Your E&O tower has a hidden split that reduces capacity for older wrongful acts.",
+        "worst_case_scenario": "Customer asserts E&O claim based on pre-2021 software or processing service. Endorsement #4 (Redacted2025 - 2026 Professional Liability Policy.pdf, Page 22) reduces available tower capacity below the full limit. Settlement leverage compromised; counterparty learns of split during discovery.",
+        "cost_of_doing_nothing": "Reduced tower capacity for older claims; $1M-$5M shortfall on a covered claim depending on split structure.",
+        "conviction_evidence_type": "Tech E&O specimen comparison (Beazley, Tokio Marine, Coalition); pre-2021 election-tech contract review",
+        "our_solution": "Negotiate single-limit reconstruction on the E&O tower at renewal; remove or modify Endorsement #4 (Redacted2025 - 2026 Professional Liability Policy.pdf, Page 22). If carrier resists, market to a competing E&O writer.",
+        "presentation_sequence": 22
+      },
+      {
+        "finding_id": "finding-008-cyber-pnc",
+        "finding_title": "Cyber — Primary & Noncontributory (Maricopa)",
+        "laymen_title": "The Customer in the Middle of the Policy Stack",
+        "severity_framing": "Maricopa's contract requires your cyber to be primary; your cyber doesn't promise that.",
+        "worst_case_scenario": "Maricopa tenders a cyber claim and Runbeck's carrier asserts contribution from Maricopa's own cyber tower. Maricopa's contract specifies primary-and-noncontributory; carrier's failure to honor it (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 8, Page 4) creates contract breach.",
+        "cost_of_doing_nothing": "Contract breach exposure; estimated $250K-$1M per incident.",
+        "conviction_evidence_type": "ISO P&NC endorsement specimen; cyber market P&NC availability comparison",
+        "our_solution": "Bind Primary & Noncontributory endorsement naming Maricopa County on the new cyber tower. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 8, Page 4)",
+        "presentation_sequence": 23
+      },
+      {
+        "finding_id": "finding-016-cyber-proof-of-loss",
+        "finding_title": "Cyber — Proof of Loss Sublimit $250K",
+        "laymen_title": "The $250K Speed Bump",
+        "severity_framing": "Even on a covered cyber claim, this provision caps part of the recovery at a fraction of the policy limit.",
+        "worst_case_scenario": "Major covered cyber loss; recovery limited by the $250K proof-of-loss sublimit referenced on Dec page Item 7 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Page 3). Net loss: shortfall between actual damages and sublimit.",
+        "cost_of_doing_nothing": "$250K-$1M shortfall per major covered cyber claim.",
+        "conviction_evidence_type": "Cyber sublimit market comparison (Beazley, Coalition); proof-of-loss sublimit specimen analysis",
+        "our_solution": "Negotiate sublimit increase to $1M minimum on the new cyber tower or restructure as a non-eroding sub-coverage. (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec page Item 7, Page 3)",
+        "presentation_sequence": 24
+      },
+      {
+        "finding_id": "finding-014-im-wos-sacramento",
+        "finding_title": "Inland Marine — Waiver of Subrogation (Sacramento)",
+        "laymen_title": "Sacramento's Free Lawsuit",
+        "severity_framing": "Sacramento's contract waives recovery against the county; your inland marine doesn't reflect that waiver.",
+        "worst_case_scenario": "Following an IM loss, Hanover pays the claim and pursues subrogation against Sacramento County. Sacramento, citing the contract WoS provision, demands Runbeck cover the recovery. Runbeck pays out of pocket.",
+        "cost_of_doing_nothing": "Contract-driven indemnification exposure; estimated $50K-$500K per incident.",
+        "conviction_evidence_type": "ISO WoS endorsement specimen; California public-entity contract WoS templates",
+        "our_solution": "Add Waiver of Subrogation endorsement on the Inland Marine line naming Sacramento County. (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Pages 138, 76)",
+        "presentation_sequence": 25
+      },
+      {
+        "finding_id": "finding-013-gl-sacramento-cyber-privacy",
+        "finding_title": "GL — Sacramento 'No Additional Exclusions' vs Hanover GL Cyber/Privacy Stack",
+        "laymen_title": "The Sacramento Mismatch",
+        "severity_framing": "Sacramento's contract bars additional exclusions on GL, but your GL has a stack of cyber/privacy carve-outs.",
+        "worst_case_scenario": "Sacramento's risk manager reviews the policy schedule of forms and endorsements (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Pages 188-252), identifies cyber/privacy exclusions added to the GL form, and asserts the policy doesn't comply with the contract's 'no additional exclusions' provision. Material breach declaration.",
+        "cost_of_doing_nothing": "Sacramento contract breach risk; estimated $500K-$3M revenue exposure.",
+        "conviction_evidence_type": "ISO CG 21 06 / CG 21 07 specimen; sample 'no additional exclusions' contract language; cyber-on-GL caselaw",
+        "our_solution": "Negotiate carve-back endorsements on Hanover GL or move cyber/privacy entirely to the cyber tower. (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Pages 188-252)",
+        "presentation_sequence": 26
+      },
+      {
+        "finding_id": "finding-015-carrier-rating",
+        "finding_title": "Carrier Rating Verification — Surplus Lines Carriers",
+        "laymen_title": "The Tower of Surplus",
+        "severity_framing": "Multiple carriers in your tower are non-admitted; no guaranty fund backstop if one becomes insolvent.",
+        "worst_case_scenario": "Surplus lines carrier on Pro Liab, Excess Tech E&O, or Cyber experiences material rating downgrade or insolvency. No state guaranty fund coverage for non-admitted placement. Outstanding claim becomes Runbeck's direct exposure.",
+        "cost_of_doing_nothing": "Insolvency-event exposure; magnitude depends on which carrier and stage of claim. Informational risk that warrants ongoing monitoring.",
+        "conviction_evidence_type": "AM Best rating reports for each surplus carrier; state guaranty fund non-admitted exclusion statutes; recent surplus insolvency case studies",
+        "our_solution": "Document AM Best ratings (target A- or better, financial size category VII+) for each surplus carrier. Establish quarterly rating monitoring. Where ratings are marginal, market to admitted alternatives or stronger surplus markets at renewal. (Redacted2025 - 2026 Professional Liability Policy.pdf; RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf; RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf — Various policy Dec pages)",
+        "presentation_sequence": 27
+      }
+    ],
+    "broker_a_vs_b": {
+      "incumbent_evidence": "The incumbent broker placed competitive insurance and renewed it on time — that's Broker A doing the transaction. The TBV evidence of what they didn't do is overwhelming and specific: (1) Six policies issued to 'Runbeck Election Services Inc' while AmTrust corrected to LLC in April 2025 (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Policy Change #1, Page 2) — nobody reconciled the entity types across the program. (2) Runbeck Properties LLC on the umbrella schedule (RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56) but absent from the underlying Commercial Package CGL (RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 12) — nobody compared the schedules. (3) The 401(k) Plan listed on the auto policy (RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28) instead of the Fiduciary Coverage Part (Redacted2024-26 Management Liability Policy.pdf) — nobody read the schedules in context. (4) Maricopa County requires $5M cyber and AI/WoS/P&NC status; the cyber policy is short on the limit (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec Item 4, Pages 2-3) and has zero contract endorsements scheduled (Dec Item 8, Page 4) — nobody read the Maricopa contract against the cyber dec page. (5) Five customer counties are on the Auto NOC schedule (Pages 44-46) but missing from the Package CGL NOC schedule (Page 36) — nobody reconciled them. These aren't placement errors; they're verification failures.",
+      "our_differentiation": "We did the verification. We pulled the Articles of Organization for every Runbeck entity and matched them line-by-line against ten Dec pages. We pulled the Maricopa County, Sacramento, and Benton County contracts and walked every insurance requirement against the corresponding endorsement schedules. We read every named-insured schedule, every NOC schedule, every Schedule of Underlying, and we built a 27-row matrix showing which entity is on which policy with which spelling. We found the D&O manufacturing/professional services exclusion buried at Page 85 of the Hartford ML policy (Endorsement #19, PP 00 H350 00 0616) — that's not visible from the Dec page; that's TBV work. We marked up every policy, sticky-noted every page reference, and built a remediation roadmap. That is Step 2 of TBV — Contract Analysis — performed deliberately, not optionally.",
+      "transition_script": "Bogdan, your incumbent did the transaction. We don't doubt that — competitive premiums, renewals on time, certificates issued. The question isn't whether they're a good broker. The question is whether they performed Trust But Verify on a program that protects 90 million voters and three operating subsidiaries that aren't currently scheduled on your $10M umbrella. We did. The 27 findings on the next slides are the answer."
+    },
+    "five_principals": {
+      "product": "Strong product advantage. The findings give us clear superiority on at least 13 Ugly items — entity-mismatch reconciliation, umbrella schedule alignment, cyber tower reconstruction with $5M limits and defense-outside-limits, and D&O carve-out negotiation. The systemic named-insured findings (finding-001-systemic — PROGRAM, all Dec pages; finding-004 — RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 12; finding-002 and 003 — across Umbrella Page 56, Package Page 12, ML) are the most defensible because they're structural rather than judgment calls — anyone reading the schedules side-by-side reaches the same conclusion.",
+      "price": "Let product carry. Pricing is unlikely to be the deciding factor for a 50-year company protecting election infrastructure across 31 states; reputational and contract-compliance risk dominates. Lead with TBV findings; let price be competitive but not the headline. If the incumbent retaliates with a price cut, we use the airplane analogy — same fare, but we put the parachute on. Do request the LED comparison early to control the apples-to-apples narrative (CAUA Step 5).",
+      "relationship": "Likely a transactional incumbent relationship — the volume of structural verification gaps suggests a placement-focused broker, not a strategic risk consultant. Strengthen our relationship by booking the Step 3 Conference Call with the CFO plus operations leaders (Director of Operations, IT/CISO, HR/Benefits leader who oversees the 401(k) Plan, plus outside counsel if PE sponsor uses one) at least three weeks before the final meeting. Bring the marked-up policies physically to the room — sticky-noted, dog-eared, highlighted. The marked-up policy is the relationship-builder.",
+      "qualification": "Highly qualified. Green lights: complex multi-entity structure (six Runbeck entities + 401(k) plan), heavy contractual obligations (Maricopa, Sacramento, Benton County, ARC Airport), multi-state operations (31 states + DC), claims-sensitive industry (election services under public scrutiny), and almost certainly never received a formal program audit (the entity mismatch alone proves that). Two yellow flags to test at the progress report: (1) Is the incumbent a pure-placement broker or do they claim to do strategic work? If the latter, we need to undress that claim with specific evidence. (2) Is the CFO empowered to switch brokers, or does PE sponsor approval gate the decision? If sponsor-gated, we need to identify and engage the sponsor's risk-side stakeholder before the final meeting.",
+      "strategy": "Win with structure, not price. Lead with the systemic entity-mismatch findings (Ugly findings 001, 002, 003, 004, 005, 011) because they're undeniable — a name on a schedule is either there or it isn't. Build conviction through quantification (every PCT monetized) and Maricopa-specific contract-compliance findings (the customer they cannot afford to lose). Close with the airplane: same fare, our plane has the parachute, why are you flying without one when 90 million voters are downstream of your operations?"
+    },
+    "final_meeting_outline": {
+      "opening_script": "Bogdan, before we get into anything, indulge me for sixty seconds. You and I both know insurance is intangible — you don't find out if your policy works until the moment you need it to, and at that point it's too late to fix it. Think of each policy as a briefcase with money inside that's been promised to you. The carrier holds the keys. You don't get to test whether the keys turn until after the loss. Trust But Verify is the discipline of trying the keys today, before the loss, while we can still fix the lock. That's all we did with your program. We tried 27 keys against 10 policies and the contracts you signed with Maricopa, Sacramento, Benton County, and ARC Airport. The next 90 minutes are about which keys turn, which keys don't, and what we recommend doing about it before the next claim.",
+      "section_sequence": [
+        "Opening — Briefcase analogy + TBV recap (60 seconds)",
+        "Section 1: THE UGLY — Structural failures",
+        "1. The Insurance Policies for a Company That Doesn't Exist (finding-001-systemic — PROGRAM, all Dec pages)",
+        "2. The $10M Umbrella With Nothing Underneath It (finding-004 — RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 12)",
+        "3. The Ghost Subsidiary (finding-002 — Lincoln Shields, RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56; Page 12; Hartford ML)",
+        "4. Two Spellings, Zero Coverage (finding-003 — Black Mountain, RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28; Pro Liab, Page 27)",
+        "5. The Pyramid Built on Sand (finding-011 — RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56)",
+        "6. The 401(k) That Drives a Truck (finding-005 — RedactedHanover - Auto - 4.1.25-4.1.26.pdf, Page 28; Hartford ML Fiduciary)",
+        "Section 2: THE UGLY — Maricopa contract compliance",
+        "7. The $5M Maricopa Promise on a $4M Policy (finding-001-cyber — RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec Item 4, Pages 2-3)",
+        "8. The Limit That Eats Itself (finding-002-cyber — Dec page, Page 2)",
+        "9. The Phantom Coverage (finding-003-cyber — Dec Item 7, Page 3)",
+        "10. The Carve-Out for Your Core Business (finding-004-do — Redacted2024-26 Management Liability Policy.pdf, Endorsement #19, Page 85)",
+        "11. The Customer Without a Seat (finding-006-cyber-AI — Dec Item 8, Page 4)",
+        "12. The Refund Maricopa Will Demand (finding-007-cyber-WoS — Dec Item 8, Page 4)",
+        "13. The Cancellation They'll Find Out About From CNN (finding-005-NOC — Cyber/ML/E&O — none)",
+        "Trial Close — Mid-meeting Socratic question",
+        "Section 3: THE BAD — Subsidiary, NOC, and quality findings",
+        "14. The D&O That Forgot Half the Company (finding-006-bad — Hartford ML Schedule of Subsidiaries)",
+        "15. Six Silent Policies (finding-009-NOC — six policies)",
+        "16. The Notice List That Lost Five Counties (finding-008-NOC — RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Page 36)",
+        "17. The Date That Erased Your History (finding-011-bad — Redacted2024-26 Management Liability Policy.pdf, Endorsement #28, Page 96)",
+        "18. The $15K Lock on a $10M Door (finding-012-bad — Crime §V(T), Pages 8 and 54)",
+        "19. The Door That Opens Backward (finding-009-cyber-retro — Dec Item 5, Page 3)",
+        "20. The Landlord at $1M, Not $10M (finding-007-bad — RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf, Page 56)",
+        "21. The County That Got Half a Promise (finding-010-bad — Benton County, Pro Liab Page 30)",
+        "22. The Two-Limit Tower (finding-010-bad-EO — Redacted2025 - 2026 Professional Liability Policy.pdf, Endorsement #4, Page 22)",
+        "23. The Customer in the Middle of the Policy Stack (finding-008-cyber-PNC — Dec Item 8, Page 4)",
+        "24. The $250K Speed Bump (finding-016-cyber — Dec Item 7, Page 3)",
+        "25. Sacramento's Free Lawsuit (finding-014-IM — RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Pages 138, 76)",
+        "26. The Sacramento Mismatch (finding-013-GL — RedactedHanover - Commercial - 4.1.25-4.1.26.pdf, Pages 188-252)",
+        "27. The Tower of Surplus (finding-015 — Pro Liab; Convex; Cyber Dec pages)",
+        "Section 4: THE GOOD — Where the program is working (11 findings)",
+        "Section 5: Broker A vs. Broker B contrast — what the incumbent did and didn't do",
+        "Section 6: Solution roadmap and 30/60/90-day remediation plan",
+        "Closing — Airplane analogy and ask"
+      ],
+      "mid_meeting_trial_close": "Bogdan, if a Lincoln Shields driver caused a $5M crash next Tuesday, walk me through how you'd want the claim to flow. Now look at Page 56 of the umbrella schedule — does that match what you just described?",
+      "closing_statement": "Bogdan, here's what I want to leave you with. Imagine two airplanes, same destination, same fare. Plane A has a parachute under your seat. Plane B doesn't. Right now, you're paying competitive premium for Plane B — six policies under the wrong entity name, three subsidiaries missing from a $10M umbrella that you're paying for, a $5M cyber promise to Maricopa that the Dec page can't keep (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec Item 4, Pages 2-3), and a D&O carve-out at Page 85 of the Hartford policy (Redacted2024-26 Management Liability Policy.pdf, Endorsement #19) that excludes your core operations. We're not asking you to pay more for the parachute. We're asking why you'd fly without one. 90 million voters are downstream of how you handle this. Let's put the parachute on.",
+      "leave_behind_summary": "One-page exec summary: (1) The Briefcase + the airplane visual at the top. (2) The 27 findings as a heatmap by category and risk score, grouped Ugly/Bad/Good. (3) The five 'cannot-fail' headline items: Inc-vs-LLC entity mismatch across program; Runbeck Properties missing from Package CGL; Lincoln Shields and Black Mountain missing from Umbrella/CGL/ML; 401(k) misplaced on Auto; Maricopa cyber compliance gap on limits/AI/WoS/P&NC. (4) The 30/60/90-day remediation roadmap with carrier-side action items. (5) The Broker A vs. Broker B grid using the audit's actual findings as the comparison evidence. (6) Page references for every finding so the CFO can audit our work."
+    },
+    "progress_report_agenda": [
+      "Confirm the legal entity structure: pull the AZ Corporation Commission filings or Articles for Runbeck Election Services and every subsidiary. The single biggest finding (six policies issued to 'Runbeck Election Services Inc' against an LLC operating entity per AmTrust correction — RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Policy Change #1, Page 2) is undeniable only if we can put the formation document on the table next to the dec pages. This is a litmus test of the prospect's seriousness — if they won't pull the documents, we're being used as a pricing wedge.",
+      "Walk the CFO through the Maricopa County contract insurance article and put it side-by-side with the AmTrust Cyber dec page (RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf, Dec Item 4 Pages 2-3 and Dec Item 8 Page 4). Test their reaction to the $5M limit shortfall and the missing AI/WoS/P&NC endorsements before the final meeting — this is the most visceral, customer-specific finding and we want to know if it lands before we anchor the whole presentation on it.",
+      "Identify the decision authority gate: confirm whether the CFO can authorize broker-of-record change unilaterally or whether PE sponsor sign-off is required. If sponsor-gated, request a brief introduction to the sponsor's risk-side counterpart prior to the final meeting so we can preview the Ugly findings related to D&O prior acts (Redacted2024-26 Management Liability Policy.pdf, Endorsement #28, Page 96) and the manufacturing/professional services exclusion (Endorsement #19, Page 85) — both of which the sponsor will care about more than the CFO."
+    ]
+  }
+}

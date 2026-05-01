@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "ml",
+    "original": {
+      "file": "Redacted2024-26 Management Liability Policy.pdf",
+      "annots": 164,
+      "bookmarks": 0,
+      "pages": 109
+    },
+    "audited": {
+      "file": "Redacted2024-26 Management Liability Policy-AUDITED (1).pdf",
+      "annots": 171,
+      "bookmarks": 8,
+      "pages": 110
+    }
+  },
+  {
+    "slug": "pl",
+    "original": {
+      "file": "Redacted2025 - 2026 Professional Liability Policy.pdf",
+      "annots": 181,
+      "bookmarks": 26,
+      "pages": 45
+    },
+    "audited": {
+      "file": "Redacted2025 - 2026 Professional Liability Policy-AUDITED (1).pdf",
+      "annots": 192,
+      "bookmarks": 9,
+      "pages": 46
+    }
+  },
+  {
+    "slug": "sg",
+    "original": {
+      "file": "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+      "annots": 161,
+      "bookmarks": 0,
+      "pages": 68
+    },
+    "audited": {
+      "file": "Redacted2025-2026 Liability Policy - Security Guards-AUDITED (1).pdf",
+      "annots": 163,
+      "bookmarks": 3,
+      "pages": 69
+    }
+  },
+  {
+    "slug": "convex",
+    "original": {
+      "file": "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+      "annots": 48,
+      "bookmarks": 28,
+      "pages": 19
+    },
+    "audited": {
+      "file": "RedactedConvex - 2025-2026 Excess Tech EO Policy-AUDITED (1).pdf",
+      "annots": 50,
+      "bookmarks": 3,
+      "pages": 20
+    }
+  },
+  {
+    "slug": "cyber",
+    "original": {
+      "file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+      "annots": 25,
+      "bookmarks": 0,
+      "pages": 4
+    },
+    "audited": {
+      "file": "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302-AUDITED (1).pdf",
+      "annots": 27,
+      "bookmarks": 3,
+      "pages": 5
+    }
+  },
+  {
+    "slug": "auto",
+    "original": {
+      "file": "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+      "annots": 123,
+      "bookmarks": 0,
+      "pages": 77
+    },
+    "audited": {
+      "file": "RedactedHanover - Auto - 4.1.25-4.1.26-AUDITED.pdf",
+      "annots": 129,
+      "bookmarks": 6,
+      "pages": 78
+    }
+  },
+  {
+    "slug": "pkg",
+    "original": {
+      "file": "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+      "annots": 371,
+      "bookmarks": 0,
+      "pages": 253
+    },
+    "audited": {
+      "file": "RedactedHanover - Commercial - 4.1.25-4.1.26-AUDITED (1).pdf",
+      "annots": 379,
+      "bookmarks": 7,
+      "pages": 254
+    }
+  },
+  {
+    "slug": "umb",
+    "original": {
+      "file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf",
+      "annots": 79,
+      "bookmarks": 0,
+      "pages": 77
+    },
+    "audited": {
+      "file": "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26-AUDITED (1).pdf",
+      "annots": 81,
+      "bookmarks": 3,
+      "pages": 78
+    }
+  },
+  {
+    "slug": "wc",
+    "original": {
+      "file": "RedactedHanover - WC - 4.1.25-4.1.26.pdf",
+      "annots": 345,
+      "bookmarks": 0,
+      "pages": 205
+    },
+    "audited": {
+      "file": "redacted - Hanover - WC - 4.1.25-4.1.26-AUDITED (1).pdf",
+      "annots": 8,
+      "bookmarks": 7,
+      "pages": 206
+    }
+  }
+]

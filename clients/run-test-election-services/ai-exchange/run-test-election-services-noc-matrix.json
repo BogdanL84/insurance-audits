@@ -1,0 +1,105 @@
+{
+  "contract_requirements": [
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "designated_entity": "Maricopa County (c/o Risk Management, 301 W Jefferson St, Suite 910, Phoenix, AZ 85003) — notice deliverable to Maricopa County Office of Procurement Services, 160 S. 4th Avenue, Phoenix, AZ 85003",
+      "notice_days": 30,
+      "applies_to_lines": [
+        "all"
+      ],
+      "section_ref": "§8.2.15"
+    }
+  ],
+  "policy_endorsements": {
+    "redacted - Hanover - WC - 4.1.25-4.1.26.pdf": [
+      {
+        "form_number": "331-0342 (09 11) / 33103420911",
+        "name": "Notice of Cancellation to Designated Entity(s)",
+        "page": 112,
+        "designated_entities": [
+          "El Paso County Contracts & Procurement Division (200 South Cascade Avenue, Colorado Springs, CO 80903)",
+          "Coconino County (219 East Cherry Ave, Flagstaff, AZ 86001)",
+          "Amazon.com Services LLC (345 Boren Avenue North, Seattle, WA 98109)"
+        ],
+        "notice_days": 30
+      }
+    ],
+    "Redacted2024-26 Management Liability Policy.pdf": [],
+    "Redacted2025 - 2026 Professional Liability Policy.pdf": [],
+    "Redacted2025-2026 Liability Policy - Security Guards.pdf": [],
+    "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf": [],
+    "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf": [],
+    "RedactedHanover - Auto - 4.1.25-4.1.26.pdf": [
+      {
+        "form_number": "401-1235 12 14",
+        "name": "Notice of Cancellation to Designated Entity(s)",
+        "page": 44,
+        "designated_entities": [
+          "BLANKET WHERE REQUIRED BY WRITTEN CONTRACT",
+          "City of Boulder (3065 Center Green Dr, Boulder CO)",
+          "Coconino County (219 East Cherry Avenue)"
+        ],
+        "notice_days": 30
+      },
+      {
+        "form_number": "401-1235 12 14",
+        "name": "Notice of Cancellation to Designated Entity(s)",
+        "page": 45,
+        "designated_entities": [
+          "Amazon.com Services LLC (345 Boren Ave N, Seattle WA)",
+          "El Paso County Contracts & Procurement Division (200 S Cascade Ave, Colorado Springs CO)",
+          "San Luis Obispo County (1055 Monterey St Ste D120, San Luis Obispo CA)"
+        ],
+        "notice_days": 30
+      },
+      {
+        "form_number": "401-1235 12 14",
+        "name": "Notice of Cancellation to Designated Entity(s)",
+        "page": 46,
+        "designated_entities": [
+          "State of Colorado (1700 Broadway Suite 200, Denver CO 80290)",
+          "The New York State Office of General Services; Procurement Services-22802 (38th Floor Corning Tower, Empire State Plaza, Albany NY 12242)"
+        ],
+        "notice_days": 30
+      }
+    ],
+    "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf": [
+      {
+        "form_number": "401-1235",
+        "name": "Notice of Cancellation to Designated Entity(s)",
+        "page": 36,
+        "designated_entities": [
+          "The New York State Office Of General Services; Procurement Services (Albany, NY)",
+          "Amazon.com Services LLC (Seattle, WA)",
+          "ARC Airport 2800, LLC (Scottsdale, AZ - Landlord)",
+          "Banterra Bank (Marion, IL - 2nd Mortgagee)"
+        ],
+        "notice_days": 30
+      }
+    ],
+    "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf": []
+  },
+  "asymmetries": [
+    {
+      "contract": "Redactedscrubbed - Maricopa Contract.pdf",
+      "designated_entity": "Maricopa County (c/o Risk Management, 301 W Jefferson St, Suite 910, Phoenix, AZ 85003) — notice deliverable to Maricopa County Office of Procurement Services, 160 S. 4th Avenue, Phoenix, AZ 85003",
+      "contract_requires_on_lines": [
+        "all"
+      ],
+      "endorsement_present_on": [],
+      "endorsement_missing_from": [
+        "redacted - Hanover - WC - 4.1.25-4.1.26.pdf",
+        "Redacted2024-26 Management Liability Policy.pdf",
+        "Redacted2025 - 2026 Professional Liability Policy.pdf",
+        "Redacted2025-2026 Liability Policy - Security Guards.pdf",
+        "RedactedConvex - 2025-2026 Excess Tech EO Policy.pdf",
+        "RedactedCyber_Assoc Industries.AmTrust_04.25-04.26 #AES123191302.pdf",
+        "RedactedHanover - Auto - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial - 4.1.25-4.1.26.pdf",
+        "RedactedHanover - Commercial Umbrella - 4.1.25-4.1.26.pdf"
+      ],
+      "notice_period_match": true,
+      "notice_mismatches": []
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "filename": "Redacted2025 - 2026 Professional Liability Policy-AUDITED.pdf",
+  "page_count": 46,
+  "annot_count": 2,
+  "bookmark_count": 4,
+  "annotations": [
+    {
+      "page": 20,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Professional Liability \u2014 Mail Processing Services Retroactiv",
+      "subject": "",
+      "content": "[Ugly] Professional Liability \u2014 Mail Processing Services Retroactiv\nRisk Score: 12/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.7200000286102295,
+        0.10999999940395355,
+        0.10999999940395355
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    },
+    {
+      "page": 27,
+      "type_num": 0,
+      "type_name": "Text",
+      "author": "Professional Liability \u2014 Network Security/Privacy Breach Exc",
+      "subject": "",
+      "content": "[Ugly] Professional Liability \u2014 Network Security/Privacy Breach Exc\nRisk Score: 20/25",
+      "creation_date": "",
+      "mod_date": "",
+      "stroke": [
+        0.7200000286102295,
+        0.10999999940395355,
+        0.10999999940395355
+      ],
+      "fill": null,
+      "rect": [
+        582.0,
+        10.0,
+        598.0,
+        26.0
+      ],
+      "text_under": ""
+    }
+  ],
+  "bookmarks": [
+    {
+      "level": 1,
+      "title": "Audit Findings",
+      "page": 1
+    },
+    {
+      "level": 2,
+      "title": "Critical (Ugly)",
+      "page": 27
+    },
+    {
+      "level": 3,
+      "title": "Professional Liability \u2014 Network Security/Privacy Breach Exc",
+      "page": 27
+    },
+    {
+      "level": 3,
+      "title": "Professional Liability \u2014 Mail Processing Services Retroactiv",
+      "page": 20
+    }
+  ]
+}
