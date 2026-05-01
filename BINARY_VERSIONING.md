@@ -363,6 +363,45 @@ refactor to insulate against per-call stream-idle.
 - `synthesis_v3c.json`, `matrix_v3c_*.json` — yesterday's good run, never reached during today's crash
 - Stage B tempfile preserved at `C:\Users\Bogdan\AppData\Local\Temp\claude_runner_ooh5_5zc\` with 0-byte stdout + 0-byte stderr — the smoking gun for the silent-hang hypothesis
 
+## After-change verification
+
+Run the smoke test AFTER any system change before trusting the pipeline on
+real client work. System changes that warrant a smoke test:
+
+- Claude Code CLI update (auto or manual)
+- OS update (Windows feature update, .NET runtime, etc.)
+- Python or dependency upgrade (`pip install -U ...`)
+- Edits to `app/core/claude_runner.py`, `build_crossref_prompt`, or `extract_json`
+- Anaconda environment changes
+- New machine / restored backup
+
+**The smoke test:** `validation-2026-04-27/phase-2b-2/_smoke_test.py`
+
+```bash
+cd "validation-2026-04-27/phase-2b-2"
+python _smoke_test.py
+```
+
+**What it does:** loads the v3c contract baseline + the smallest per-policy
+analysis (Convex Cyber, ~14 KB), builds a one-policy synthesis prompt, calls
+`run_claude` with a 600-second timeout, verifies the response parses as JSON
+with at least one finding. Exit code 0 = PASS, 1 = FAIL.
+
+**Expected runtime:** 1–10 minutes. Typical clean runs finish in 1–3 min.
+Slower 5–10 min runs indicate quota pressure or transient API slowness but
+are still PASS if findings come back. Outright timeout or parse failure is
+the FAIL signal that should block downstream work until investigated.
+
+**What FAIL means by failure mode:**
+- "Timed out after 600s" → real call hung or generation slowed beyond
+  threshold; check `_USE_TEXT_MODE=1` to compare; check rate-limit info in
+  stderr; possibly Anthropic API issue
+- "extract_json returned None" → response shape changed (model variation,
+  prompt regression, or new escape pattern that json_repair can't recover);
+  inspect `_stage_b_*_response_raw.txt` from the preserved tempfile
+- "claude exited 1: ..." → likely auth/permission issue; check the pinned
+  binary still runs (`<pin> --version`)
+
 ## Files
 
 - **The pin**: `bin/claude-pinned-2.1.121.exe` (read-only)
