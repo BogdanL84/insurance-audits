@@ -1,10 +1,21 @@
 # Phase 2B-2 — Resume State
 
-Last updated: 2026-05-01 after v3e full run (autonomy mode complete).
+Last updated: 2026-05-01 after Friday-evening hardening sprint (3-task autonomy run).
 
 ## Where we are
 
-**v3e shipped.** Final deliverable: `phase-2b-2/findings_v3e.json` (449 findings = 58U + 128B + 147R + 116G). RMF coverage: 50% keyword grade, **73% tag-aware grade**. Full report: `phase-2b-2/V3E_FINAL_REPORT.md`.
+**v3e shipped + Friday-evening hardening complete.** Three architectural fixes landed today addressing field-test failure modes from the Run-test → Precision Aero shakedown. All committed to https://github.com/BogdanL84/insurance-audits.
+
+### Friday hardening (2026-05-01 evening)
+1. **Persist findings per stage** (`91e6a50`) — `_Analyze.py` now writes `findings_synthesis.json` → `findings_crosspolicy.json` → `findings.json` after each successful pipeline stage, with incremental atomic updates to `audit-state.json`. Prevents the Precision Aero "lost in session_state" data loss.
+2. **PDF annotator skip on image-only PDFs** (`7f982d1`) — `pdf_annotator.py` probes word count on first 3 pages; skips with clear reason if <50 words. Fixes the "Generate Marked-up PDFs" hang on scanned policies.
+3. **Live progress UX on Analyze page** (`14a384f`) — expected-time hints, technical-log expander, higher-contrast text, cumulative-elapsed display on chunk transitions.
+
+### v3e shipping state
+Final deliverable: `phase-2b-2/findings_v3e.json` (449 findings = 58U + 128B + 147R + 116G). RMF coverage: 50% keyword grade, **73% tag-aware grade**. Full report: `phase-2b-2/V3E_FINAL_REPORT.md`.
+
+### First real client (Precision Aero)
+55 findings = 4U + 16B + 24R + 6G + 5 Informational, recovered after a Streamlit hang via runner-tempfile parsing. `clients/precision-aero/output/findings.json`. Top items: document-integrity Ugly on 3 scanned PDFs, no Cyber program (Ugly), Auto Hired Auto Phys Damage missing (Ugly).
 
 The K+L per-coverage prompt design hit its target (55%+ tag-aware). The stream-json runner migration eliminated the binary-side output truncation that was the chronic ceiling on every prior iteration.
 
@@ -83,3 +94,32 @@ If starting a new client:
 - `findings_v3d.json` — 139 findings, v3d_chunked
 - `findings_v3d-split.json` — 195 findings, v3d-split path
 - `findings_v3e-partial.json` — 243 findings, salvage path
+- `findings_v3e.json` — 449 findings, full v3e (Run-test, stream-json runner)
+- `findings_v3e_app.json` — 410 findings, app-refactor validation (Run-test)
+- `findings_precision_aero_v3e.json` — 55 findings, first real client recovery snapshot
+
+## Open issues (deferred, in rough priority order)
+
+1. **OCR pre-processing in Stage A document intake.** When extracted text has `word_count: 0` (scanned image-only PDF), Stage A should run Tesseract / a cloud OCR pass and write OCR'd text back as the source. Today the per-policy analyses on those PDFs are minimal (~1.6 KB metadata-only vs ~16 KB on text-extracted policies) and the marked-up PDF generator can't anchor annotations. 3 of 5 Precision Aero PDFs hit this. Highest-impact next investment for client-readiness.
+
+2. **Findings dashboard "E&O misclassified as Auto" pattern (Bogdan flagged).** When a single chunk holds both Auto and an E&O-related policy (or when the synthesis prompt's policy_type cues are ambiguous), some findings are emitted with `policy_file: AUTO.pdf` but the substantive content is E&O. Causes incorrect annotations on AUTO.pdf and confuses the dashboard's per-policy grouping. Likely fix: tighten the synthesis prompt to require `policy_file` to match the policy that actually carries the issue, plus a post-synthesis validator that cross-checks `policy_file` against `requirement_type` keyword and warns on mismatches.
+
+3. **Threaded heartbeat for live ticking clock during single blocking calls.** Today's Task 3 added cumulative-elapsed updates between chunks; during a single 4-minute blocking `run_claude` call the clock doesn't tick. A worker thread updating `_timer_display` every 2 seconds (with `add_script_run_ctx` so widget updates work from the thread) would give true liveness. Skipped this round as too risky for autonomy mode.
+
+4. **Full UI redesign for client-grade polish.** Current UI is functional but visibly "engineering tool"-grade. CFO-facing pages (Findings Dashboard, Strategic Advisor, Build Report) should get a typography/layout pass. Out of scope for the iteration cycle so far.
+
+5. **Tag emission tightening.** Per-item `rmf-XX-N` tag emission is non-deterministic — sometimes the model uses item-level tags (rmf-ca-1), sometimes tab-level (rmf-cgl), sometimes none. Tag-aware grader becomes more reliable when tags are consistent. Prompt change: require explicit `rmf-XX-N` tag on every emit, not just topic-level.
+
+6. **Migrate keyword grader to tag-aware as primary.** Current `_rmf_grade.py` keyword matching has documented false positives (CA-2 credited from CGL-23 hit) and false negatives. Tag-aware supplementary grader (`_rmf_grade_tag_aware.py`) should become primary once tag emission is reliable.
+
+7. **`cache_read_input_tokens` in per-chunk metrics.** Stream-json mode now logs cache hit data to stderr per call but doesn't aggregate into `chunk_metrics.json`. Easy enhancement.
+
+8. **Multi-policy `policy_file` parsing in PDF annotator.** Findings with `policy_file: "BOP.pdf, UMBRELLA.pdf, WC PEKIN 24.pdf"` (comma-separated) are treated as a single non-existent filename. `annotate_all_policies` splits on `;` but not `,`. Pre-existing bug surfaced during today's Precision Aero annotator test. Trivial fix.
+
+## Friday hardening commits
+
+- `91e6a50` Persist findings to disk after each pipeline stage
+- `7f982d1` PDF annotator: skip image-only PDFs instead of hanging
+- `14a384f` Live progress UX on Analyze page
+- `2bfdfbe` Recover Precision Aero findings from preserved runner tempfile
+- `c741f33` Document PDF annotator hang on scanned PDFs as known issue
