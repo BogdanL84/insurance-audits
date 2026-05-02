@@ -1600,16 +1600,19 @@ with st.expander("Generate Marked-up PDFs", expanded=False):
             pa_list = _load_policy_analyses_local(exchange_dir_pdf)
             # Build the set of policies referenced by at least one finding.
             # policy_file may be a single filename, "PROGRAM" (skipped here),
-            # or a semicolon-delimited list — split each list and add every piece.
+            # or a comma-OR-semicolon-delimited list. Models emit either
+            # separator inconsistently. Heuristic: only count pieces ending
+            # in .pdf (case-insensitive); fall back to whole string if none.
             policies_with_findings: set = set()
             for f in findings:
                 pf = str(f.get("policy_file", "") or "").strip()
                 if not pf or pf.upper() == "PROGRAM":
                     continue
-                for piece in pf.split(";"):
-                    piece = piece.strip()
-                    if piece:
-                        policies_with_findings.add(Path(piece).name)
+                _normalized = pf.replace(";", ",")
+                _raw = [p.strip() for p in _normalized.split(",") if p.strip()]
+                _pdf_pieces = [Path(p).name for p in _raw if p.lower().endswith(".pdf")]
+                for piece in (_pdf_pieces or [Path(pf).name]):
+                    policies_with_findings.add(piece)
             pdf_list = (
                 [policies_dir_pdf / name for name in policies_with_findings
                  if (policies_dir_pdf / name).exists()]

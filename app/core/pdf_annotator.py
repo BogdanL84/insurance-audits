@@ -573,20 +573,33 @@ def annotate_all_policies(
             pinfo_map[src]            = pa
             pinfo_map[Path(src).name] = pa
 
-    # Group findings by policy_file. Supports three shapes:
+    # Group findings by policy_file. Supports four shapes:
     #   - "" or missing  → unattached, skipped
     #   - "PROGRAM"      → program-level finding, no specific PDF home (skipped here;
     #                      surfaces on the dashboard but not on any policy's PDF)
     #   - "file1.pdf"    → single-policy attachment
-    #   - "file1.pdf; file2.pdf; ..." → multi-policy: attach to EACH listed PDF
+    #   - "file1.pdf; file2.pdf, file3.pdf, ..." → multi-policy: attach to EACH listed PDF.
+    #     Models emit either ';' or ',' as separator; we accept both. Filenames
+    #     containing ',' are unusual but possible — heuristic: pieces only count
+    #     if they end in '.pdf' (case-insensitive); otherwise treat as part of
+    #     the previous piece.
     # Path(pf).name preserves the basename and strips any leading directory components.
+    def _split_policy_file(pf: str) -> list[str]:
+        # Normalize semicolons to commas, then split on commas. Filter to PDF files.
+        normalized = pf.replace(";", ",")
+        raw_pieces = [p.strip() for p in normalized.split(",") if p.strip()]
+        pieces = [Path(p).name for p in raw_pieces if p.lower().endswith(".pdf")]
+        # Fallback: if no piece looks like a PDF (e.g., the whole string is one
+        # filename without a .pdf extension, or comma is part of the filename),
+        # treat the entire string as one piece.
+        return pieces or [Path(pf).name]
+
     by_policy: dict[str, list] = {}
     for f in findings:
         pf = str(f.get("policy_file", "") or "").strip()
         if not pf or pf.upper() == "PROGRAM":
             continue
-        pieces = [Path(p.strip()).name for p in pf.split(";") if p.strip()]
-        for piece in pieces:
+        for piece in _split_policy_file(pf):
             by_policy.setdefault(piece, []).append(f)
 
     if not by_policy:
