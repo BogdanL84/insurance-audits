@@ -508,6 +508,13 @@ requirements_data: dict = {"requirements": []}
 policy_analyses:   list = []
 errors:            dict = {}
 
+# Live progress: capture every _log_step / _log_sub call into session state so
+# a 'Show technical log' expander at the page bottom can render the entire run
+# trace inline. This eliminates the need to watch a separate terminal window
+# to know what the pipeline is doing.
+if "_analyze_log_buffer" not in st.session_state:
+    st.session_state["_analyze_log_buffer"] = []
+
 
 def _rate_limited() -> bool:
     return st.session_state.get("_rate_limited", False)
@@ -579,18 +586,23 @@ def _advance(msg: str) -> None:
     _timer_display.caption(f"\u23f1 Elapsed: {_elapsed_str()}")
 
 def _log_step(msg: str) -> None:
+    elapsed = _elapsed_str()
+    st.session_state["_analyze_log_buffer"].append(("step", msg, elapsed))
     with log:
         st.markdown(
             f"<span style='color:{COLOR_NAVY};font-weight:600'>{msg} "
-            f"<span style='font-weight:400;color:#888'>\u23f1 {_elapsed_str()}</span></span>",
+            f"<span style='font-weight:500;color:#222'>\u23f1 {elapsed}</span></span>",
             unsafe_allow_html=True,
         )
 
 def _log_sub(msg: str) -> None:
+    elapsed = _elapsed_str()
+    st.session_state["_analyze_log_buffer"].append(("sub", msg, elapsed))
     with log:
         st.markdown(
-            f"<span style='color:#555;font-size:0.875rem'>"
-            f"&nbsp;&nbsp;&nbsp;{msg}</span>",
+            f"<span style='color:#222;font-size:0.875rem'>"
+            f"&nbsp;&nbsp;&nbsp;{msg} "
+            f"<span style='color:#666'>(\u23f1 {elapsed})</span></span>",
             unsafe_allow_html=True,
         )
 
@@ -670,7 +682,7 @@ if run_mode == "synthesize_now":
     # and merges per-chunk findings with cross-chunk dedup of Bad/Ugly.
     # Background: v3e validation confirmed prompts >170 KB hit truncation /
     # silent hangs on the 2.1.121 binary; chunking keeps every call safe.
-    prog.progress(0.25, text="Synthesizing findings...")
+    prog.progress(0.25, text="Synthesizing findings... (typically 2-15 min single-call, 60-90 min chunked)")
     _log_step("Synthesizing findings across all analyzed policies...")
     synthesis_reqs = {
         "client":        (requirements_data or {}).get("client"),
@@ -678,9 +690,14 @@ if run_mode == "synthesize_now":
         "requirements":  (requirements_data or {}).get("requirements") or [],
     }
 
+    _synth_chunk_t0 = [time.time()]
     def _synth_progress(label: str, frac: float) -> None:
-        prog.progress(0.25 + 0.4 * frac, text=label)
-        _log_sub(label)
+        elapsed_total = int(time.time() - _start_time)
+        elapsed_chunk = int(time.time() - _synth_chunk_t0[0])
+        _synth_chunk_t0[0] = time.time()
+        cum_str = str(elapsed_total // 60) + "m " + str(elapsed_total % 60) + "s"
+        prog.progress(0.25 + 0.4 * frac, text=label + "  -  cumulative " + cum_str)
+        _log_sub(label + " (chunk took " + str(elapsed_chunk // 60) + "m " + str(elapsed_chunk % 60) + "s)")
 
     findings, synth_meta = run_chunked_synthesis(
         client_notes,
@@ -767,7 +784,7 @@ if run_mode == "synthesize_now":
 
     # Cross-policy intelligence pass (2 of 2)
     if has_crossref and findings and not _rate_limited():
-        prog.progress(0.7, text="Running cross-policy intelligence pass...")
+        prog.progress(0.7, text="Running cross-policy intelligence pass... (typically 4-8 min)")
         _log_sub("Running cross-policy intelligence review...")
         time.sleep(RATE_LIMIT_DELAY)
         compressed = [
@@ -826,7 +843,7 @@ if run_mode == "synthesize_now":
 
     # ── NEW Step 5: Cross-policy matrix pass (GAP-01/17/20/21) ─────
     if has_crossref and findings and not _rate_limited():
-        prog.progress(0.85, text="Running cross-policy matrix pass (GAP-01/17/20/21)...")
+        prog.progress(0.85, text="Running cross-policy matrix pass... (typically 4-8 min)")
         _log_sub("Building entity + contract-compliance + NOC matrices...")
 
         from core.cross_policy import (
@@ -1356,5 +1373,18 @@ if run_mode == "analyze":
         if st.button("Back to Queue", key="back_queue_all_failed"):
             st.session_state.pop("_rate_limited", None)
             st.rerun()
+
+    # Technical log: collapsible at page bottom for diagnostic visibility.
+    # Captures every _log_step / _log_sub call from the run with timestamps.
+    _log_buf = st.session_state.get("_analyze_log_buffer", [])
+    if _log_buf:
+        with st.expander("Show technical log (" + str(len(_log_buf)) + " entries)", expanded=False):
+            for kind, msg, elapsed in _log_buf:
+                prefix = "->" if kind == "step" else "  ."
+                st.text("[" + str(elapsed).rjust(8) + "]  " + prefix + " " + str(msg))
+            st.caption(
+                "Captured from the pipeline run. For detailed CLI logs, "
+                "check the terminal where Streamlit is running."
+            )
 
     st.stop()
