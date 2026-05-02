@@ -619,6 +619,41 @@ def annotate_all_policies(
 
         pinfo = pinfo_map.get(candidate.name) or pinfo_map.get(pdf_name) or {}
 
+        # Pre-check: skip scanned image-only PDFs whose text-search anchoring
+        # cannot find any quote substrings. Without this, page.search_for() in
+        # _search_with_method falls through to "fallback" mode for every
+        # finding and emits header-band annotations that pile up — and on the
+        # 2026-05-01 Precision Aero run, the annotator hung indefinitely on 3
+        # such PDFs. We sample the first 3 pages of extractable text; <50
+        # words means the PDF is effectively image-only and annotation is
+        # not useful until OCR pre-processing is added.
+        try:
+            with fitz.open(str(candidate)) as _probe_doc:
+                _probe_pages = min(3, len(_probe_doc))
+                _sample_text = "".join(
+                    _probe_doc[i].get_text("text") for i in range(_probe_pages)
+                )
+            _word_count = len(_sample_text.split())
+        except Exception as _exc:
+            _word_count = 0
+            print(
+                f"[pdf_annotator] word-count probe failed on "
+                f"{candidate.name}: {_exc}",
+                file=sys.stderr,
+            )
+        if _word_count < 50:
+            skip_msg = (
+                f"Skipped — no extractable text "
+                f"({_word_count} words on first {_probe_pages if _word_count else '?'} "
+                f"pages; likely scanned image-only PDF; OCR not yet implemented)"
+            )
+            print(
+                f"[pdf_annotator] SKIP {candidate.name}: {skip_msg}",
+                file=sys.stderr,
+            )
+            results.append((candidate.name, None, len(pdf_findings), skip_msg))
+            continue
+
         # Deduplicate findings by id
         seen, deduped = set(), []
         for f in pdf_findings:
