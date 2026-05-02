@@ -515,6 +515,59 @@ def _rate_limited() -> bool:
 def _set_rate_limited() -> None:
     st.session_state["_rate_limited"] = True
 
+def _persist_stage_findings(stage_name: str, findings_list: list) -> None:
+    """Save findings to disk after a successful pipeline stage.
+
+    Writes clients/<slug>/output/findings_<stage_name>.json (or findings.json
+    for stage_name="final") atomically via tempfile + Path.replace, then
+    updates audit-state.json with the findings list and stage marker.
+
+    Pipeline architecture: each stage's output is persisted IMMEDIATELY after
+    that stage's findings are produced, before any subsequent stage starts.
+    If a later stage hangs/fails, prior stages' work is recoverable from disk.
+    Added 2026-05-01 after the Precision Aero post-cross-policy-pass hang.
+
+    stage_name -> stage label written to audit-state.json:
+      synthesis    -> "synthesized"
+      crosspolicy  -> "cross_policy_reviewed"
+      final        -> "audited"   (writes findings.json without _<stage> suffix)
+    """
+    output_dir = client_path / "output"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    if stage_name == "final":
+        target = output_dir / "findings.json"
+        stage_label = "audited"
+    else:
+        target = output_dir / f"findings_{stage_name}.json"
+        stage_label = {
+            "synthesis":   "synthesized",
+            "crosspolicy": "cross_policy_reviewed",
+        }.get(stage_name, stage_name)
+
+    payload = {
+        "client":        slug,
+        "stage":         stage_label,
+        "saved_at":      datetime.now().isoformat(),
+        "finding_count": len(findings_list),
+        "findings":      findings_list,
+    }
+    tmp = target.with_suffix(target.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(target)
+
+    # Incremental audit-state update so later stages crash safely.
+    state["findings"] = findings_list
+    state["stage"]    = stage_label
+    ast.save(client_path, state)
+    try:
+        _log_sub(
+            f"💾 Saved {len(findings_list)} findings -> {target.name} "
+            f"(stage: {stage_label})"
+        )
+    except Exception:
+        pass
+
+
 def _elapsed_str() -> str:
     secs = int(time.time() - _start_time)
     return f"{secs // 60}m {secs % 60}s"
@@ -674,6 +727,15 @@ if run_mode == "synthesize_now":
                     f"all-policies prompt would have been "
                     f"{synth_meta.get('all_policies_prompt_chars', 0):,} chars"
                 )
+
+        # Persist after-synthesis findings to disk before the cross-policy
+        # pass starts. If the cross-policy pass hangs, synthesis output is
+        # not lost.
+        try:
+            _persist_stage_findings("synthesis", findings)
+        except Exception as _exc:
+            _log_sub(f"(synthesis persistence warning: {_exc})")
+
     else:
         findings = state.get("findings", [])
         err_msgs = synth_meta.get("errors") or []
@@ -745,6 +807,16 @@ if run_mode == "synthesize_now":
                         f"{n_covered} finding{'s' if n_covered != 1 else ''} "
                         "found covered by other policies."
                     )
+
+                # Persist after-cross-policy-pass findings before the matrix
+                # pass starts. If the matrix pass hangs, cross-policy output
+                # is not lost. (This is the failure mode that bit Precision
+                # Aero on 2026-05-01.)
+                try:
+                    _persist_stage_findings("crosspolicy", findings)
+                except Exception as _exc:
+                    _log_sub(f"(cross-policy persistence warning: {_exc})")
+
             else:
                 _add_error("Cross-policy pass", "JSON parse failed \u2014 using synthesis findings.")
                 _log_sub("Cross-policy pass: JSON parse failed \u2014 using synthesis findings.")
@@ -865,15 +937,12 @@ if run_mode == "synthesize_now":
             else:
                 _add_error("Cross-policy matrix pass", result[:200])
                 _log_sub(f"Cross-policy matrix pass failed: {result[:120]}.")
-
-    # ── Persist findings ───────────────────────────────────────────
+    # === Persist final findings ===
     if findings:
-        (exchange_dir / f"{slug}-findings.json").write_text(
-            json.dumps({"client": slug, "findings": findings}, indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
+        # Compute auxiliary state (prior_runs, policy_type_counts) BEFORE the
+        # final save so audit-state.json captures everything in one atomic write.
         prior_findings = state.get("findings", [])
-        if prior_findings:
+        if prior_findings and prior_findings is not findings:
             prior_runs = state.setdefault("prior_runs", [])
             prior_runs.append({
                 "timestamp":     datetime.now().isoformat(),
@@ -884,16 +953,31 @@ if run_mode == "synthesize_now":
                 "findings":      prior_findings,
             })
             state["prior_runs"] = prior_runs[-5:]
-        state["findings"] = findings
         policy_type_counts: dict = {}
         for pa in policy_analyses:
             pt = pa.get("policy_type") or "Unknown"
             policy_type_counts[pt] = policy_type_counts.get(pt, 0) + 1
         state["policy_type_counts"] = policy_type_counts
         state["last_analysis_date"] = datetime.now().isoformat()
-        ast.refresh_stage(state)
 
-    ast.save(client_path, state)
+        # Final canonical save: writes clients/<slug>/output/findings.json
+        # AND updates audit-state.json with stage="audited" + findings list.
+        try:
+            _persist_stage_findings("final", findings)
+        except Exception as _exc:
+            _log_sub(f"(final persistence warning: {_exc})")
+
+        # Legacy ai-exchange copy retained for any downstream tooling that
+        # reads it; the canonical path is now output/findings.json.
+        try:
+            (exchange_dir / f"{slug}-findings.json").write_text(
+                json.dumps({"client": slug, "findings": findings}, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+        except Exception:
+            pass
+    else:
+        ast.save(client_path, state)
     prog.progress(1.0, text=f"Done. Total time: {_elapsed_str()}")
 
     # ── Final status ───────────────────────────────────────────────
