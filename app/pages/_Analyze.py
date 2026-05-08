@@ -36,6 +36,7 @@ from core.claude_runner import (
     RATE_LIMIT_DELAY, ANALYSIS_TIMEOUT,
 )
 from core.chunking import run_chunked_synthesis, SINGLE_CALL_THRESHOLD
+from core.findings_filter import filter_hallucinated_findings
 from utils import (
     render_sidebar, require_client, render_progress_bar,
     inject_css, render_breadcrumb,
@@ -718,6 +719,28 @@ if run_mode == "synthesize_now":
             )
         findings = state.get("findings", [])
     elif synth_meta.get("ok") and findings:
+        # Defensive post-merge filter: drop chunk-induced "No <X> Policy"
+        # hallucinations whose claimed-missing coverage is actually present
+        # somewhere in the program. See core/findings_filter.py for the
+        # rationale (chunked synthesis hides per-cluster policies from each
+        # other; merge_chunks doesn't cross-check missing-coverage claims
+        # against the full program inventory).
+        _pre_filter_count = len(findings)
+        findings, _dropped = filter_hallucinated_findings(findings, policy_analyses)
+        if _dropped:
+            with log:
+                _log_sub(
+                    f"Filter: dropped {len(_dropped)} hallucinated "
+                    f"\"No X Policy\" finding{'s' if len(_dropped) != 1 else ''} "
+                    f"(see technical log)"
+                )
+                for _f, _reason in _dropped:
+                    _log_sub(
+                        f"  - {_f.get('id', '?')}: "
+                        f"{(_f.get('requirement_type') or '')[:80]} "
+                        f"({_reason})"
+                    )
+
         with log:
             n_ugly   = sum(1 for f in findings if f.get("category") == "Ugly")
             n_bad    = sum(1 for f in findings if f.get("category") == "Bad")
@@ -732,10 +755,14 @@ if run_mode == "synthesize_now":
                 f"{f'; {n_errs} chunk errors' if n_errs else ''})"
                 if mode == "chunked" else ""
             )
+            _filter_summary = (
+                f" ({_pre_filter_count - len(findings)} filtered out)"
+                if _dropped else ""
+            )
             st.success(
                 f"Synthesis complete — {len(findings)} findings: "
                 f"{n_ugly} critical, {n_bad} bad, {n_review} review, {n_good} good"
-                f"{chunk_summary}."
+                f"{chunk_summary}{_filter_summary}."
             )
             if mode == "chunked":
                 _log_sub(
