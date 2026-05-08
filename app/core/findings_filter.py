@@ -1,23 +1,18 @@
 """
-findings_filter.py — Defensive post-synthesis filter that drops chunk-induced
-"No <X> Policy" hallucinations.
+findings_filter.py — Post-synthesis cleanup. Three orthogonal passes:
 
-Background: chunked synthesis splits policies into coverage clusters, so each
-chunk only sees a subset of the program. A chunk that doesn't see the WC
-policy can confidently emit "Program Gap — No Workers' Compensation Policy"
-even when WC is in another chunk. The merge step doesn't cross-check these
-claims against the full program inventory, so they survive into findings.json.
+  1. filter_hallucinated_findings  — drop chunk-induced "No <X> Policy"
+     claims when X is actually in the program.
+  2. dedupe_program_findings       — collapse duplicate program-level
+     findings (synthesis + matrix passes both emit "No D&O" / "No Crime"
+     etc.; keep the higher-severity one).
+  3. correct_carrier_mentions      — fix carrier-name hallucinations in
+     finding text (e.g. "Hanover BOP" replaced with the actual carrier
+     when the policy_file's carrier is something else).
 
-This filter is a defensive net. It runs after merge_chunks() returns. For each
-finding whose title matches a canonical "missing-coverage" phrasing (Program
-Gap — No X / X Policy — Not Provided / Missing Policy — X), we check whether
-X is actually present in the program (via the per-policy analyses' policy_type
-+ coverage_parts). If yes, we drop the finding. If no, we keep it — a real
-gap.
-
-Match scope is requirement_type ONLY. The body is too prone to incidental
-phrasings ("the umbrella does not extend EPLI" → false-positive on
-"no umbrella") and gets skipped.
+Match scope for #1 is requirement_type ONLY. The body is too prone to
+incidental phrasings ("the umbrella does not extend EPLI" → false-positive
+on "no umbrella") and gets skipped.
 
 Coverage flags are FINE-GRAINED: a "Management Liability" policy that only
 carries an EPLI coverage_part contributes EPLI to PROGRAM_HAS but NOT D&O,
@@ -25,6 +20,7 @@ so a "Missing Policy — D&O" finding remains legitimate.
 """
 
 import re
+from pathlib import Path
 
 
 # ── Program inventory ───────────────────────────────────────────────
@@ -129,7 +125,7 @@ def _is_hallucination(finding: dict, program_has: set, n_policies: int):
     return False, None
 
 
-# ── Public entry point ──────────────────────────────────────────────
+# ── Public entry point: hallucination filter ───────────────────────
 def filter_hallucinated_findings(
     findings: list,
     policy_analyses: list,
@@ -156,3 +152,198 @@ def filter_hallucinated_findings(
         else:
             kept.append(f)
     return kept, dropped
+
+
+# ── Program-level dedup ────────────────────────────────────────────
+# Severity rank: lower = drop first (Good < Review < Bad < Ugly).
+_SEVERITY_RANK = {"Good": 0, "Needs Review": 1, "Review": 1, "Bad": 2, "Ugly": 3}
+
+# Map a program-level finding to a coverage-key bucket. Two findings
+# claiming the same missing coverage are duplicates of each other.
+_PROGRAM_COVERAGE_PATTERNS = [
+    # (regex, key)
+    (re.compile(r"\bcyber\b", re.I),                                      "CYBER"),
+    (re.compile(r"\b(directors?\s*&?\s*officers?|d\s*&\s*o|management liability)\b",
+                re.I),                                                    "DO_ML"),
+    (re.compile(r"\b(crime|fidelity|fid(?:elity)?\s*bond|social engineering)\b",
+                re.I),                                                    "CRIME"),
+    (re.compile(r"\b(products|aerospace products|product liability)\b",
+                re.I),                                                    "PRODUCTS"),
+    (re.compile(r"\b(pollution|environmental)\b", re.I),                  "POLLUTION"),
+    (re.compile(r"\b(professional liability|errors\s*&?\s*omissions|e\s*&\s*o|miscellaneous professional)\b",
+                re.I),                                                    "E_AND_O"),
+    (re.compile(r"\bstop\s*gap\b", re.I),                                 "STOP_GAP"),
+    (re.compile(r"\b(fiduciary)\b", re.I),                                "FIDUCIARY"),
+]
+
+
+def _program_coverage_key(f: dict) -> str | None:
+    """Return a coverage-key bucket for grouping program-level duplicates,
+    or None when no canonical bucket matches (don't dedup)."""
+    pf = (f.get("policy_file") or "").strip().upper()
+    if pf not in ("", "PROGRAM", "N/A"):
+        return None  # only dedup program-level findings
+    title = f.get("requirement_type") or ""
+    tags  = " ".join(f.get("tags") or [])
+    blob  = f"{title}\n{tags}"
+    # Only buckets that look like missing-policy claims; the cross-program
+    # entity-type matrix finding ("First Named Insured Entity Type
+    # Inconsistency") shouldn't get bucketed.
+    if not re.search(r"\b(no|missing|program gap|not provided)\b", title, re.I):
+        return None
+    for pat, key in _PROGRAM_COVERAGE_PATTERNS:
+        if pat.search(blob):
+            return key
+    return None
+
+
+def dedupe_program_findings(findings: list) -> tuple[list, list]:
+    """Collapse duplicate program-level findings about the same missing
+    coverage. Keep the highest-severity one in each bucket.
+
+    Returns (kept, merged) where merged = list of (kept_finding,
+    dropped_finding, key) tuples for visibility."""
+    findings = list(findings or [])
+    buckets: dict[str, list[int]] = {}  # key -> list of indices
+    for i, f in enumerate(findings):
+        key = _program_coverage_key(f)
+        if key:
+            buckets.setdefault(key, []).append(i)
+
+    merged: list = []
+    drop_idxs: set[int] = set()
+    for key, idxs in buckets.items():
+        if len(idxs) < 2:
+            continue
+        # Pick the one with highest severity rank; tiebreak on risk_score
+        def _rank(i):
+            f = findings[i]
+            cat  = (f.get("category") or "").strip()
+            sev  = _SEVERITY_RANK.get(cat, 0)
+            risk = f.get("risk_score") or 0
+            try:
+                risk = int(risk)
+            except (TypeError, ValueError):
+                risk = 0
+            return (sev, risk)
+        ranked = sorted(idxs, key=_rank, reverse=True)
+        winner = ranked[0]
+        for loser in ranked[1:]:
+            merged.append((findings[winner], findings[loser], key))
+            drop_idxs.add(loser)
+
+    kept = [f for i, f in enumerate(findings) if i not in drop_idxs]
+    return kept, merged
+
+
+# ── Carrier-name correction ────────────────────────────────────────
+# Carriers worth name-correcting. The replacement only fires when the
+# wrong-carrier name sits in a "<Carrier> <coverage-noun>" or "Have
+# <Carrier> add" construction — i.e. where the text is naming the carrier
+# of THIS policy rather than mentioning an alternative carrier in a
+# recommendation.
+_CARRIER_BRANDS = [
+    "Hanover", "Travelers", "Hartford", "Chubb", "CNA", "Liberty Mutual",
+    "Cincinnati", "Zurich", "AIG", "Nationwide", "Allstate", "Progressive",
+    "AmTrust", "Berkley", "Markel", "Arch", "QBE", "FCCI", "Selective",
+    "Westfield", "Auto-Owners",
+]
+_COVERAGE_NOUNS = (
+    r"BOP|CGL|Commercial Auto|Commercial General Liability|Commercial Umbrella|"
+    r"Auto|Umbrella|Property|GL|WC|Workers'?\s*Comp(?:ensation)?|"
+    r"Excess|Package|Inland Marine"
+)
+
+
+def _build_carrier_lookup(policy_analyses: list) -> dict:
+    """Return {filename: actual_carrier_str}. Empty when no analyses."""
+    out = {}
+    for pa in policy_analyses or []:
+        sf = pa.get("source_file") or pa.get("_source_file") or ""
+        sf = Path(sf).name
+        c  = (pa.get("carrier") or "").strip()
+        if sf and c:
+            out[sf] = c
+    return out
+
+
+def _carrier_brand_token(carrier_str: str) -> str:
+    """Extract the brand token from a long carrier name. e.g.
+    'Pekin Insurance Company' → 'Pekin'."""
+    if not carrier_str:
+        return ""
+    # Strip common suffixes
+    s = re.sub(r"\b(Insurance|Ins\.?|Company|Co\.?|Group|Mutual|Corp(?:oration)?)\b",
+               "", carrier_str, flags=re.I)
+    # Take the first non-trivial token
+    tokens = [t for t in re.split(r"[\s,/]+", s) if t and len(t) > 1]
+    return tokens[0] if tokens else ""
+
+
+def correct_carrier_mentions(
+    findings: list,
+    policy_analyses: list,
+) -> tuple[list, list]:
+    """Replace carrier-name hallucinations in finding text.
+
+    Targets only constructions that imply "the carrier of this policy"
+    (e.g. "Hanover BOP", "Have Hanover add"). Other carrier mentions
+    (recommendations to consider alternative markets) are preserved.
+
+    Returns (findings_in_place, corrections) where corrections is a list
+    of (finding_id, policy_file, wrong_brand, actual_brand, n_replacements)
+    tuples for visibility. Mutates findings in place.
+    """
+    carriers = _build_carrier_lookup(policy_analyses)
+    if not carriers:
+        return findings, []
+
+    corrections = []
+    coverage_re = _COVERAGE_NOUNS
+
+    for f in findings or []:
+        pf = (f.get("policy_file") or "").strip()
+        # Only apply when the finding is anchored to a single policy
+        pieces = [p.strip() for p in pf.replace(";", ",").split(",") if p.strip()]
+        pdf_pieces = [p for p in pieces if p.lower().endswith(".pdf")]
+        if len(pdf_pieces) != 1:
+            continue
+
+        actual_carrier = carriers.get(pdf_pieces[0])
+        if not actual_carrier:
+            continue
+        actual_brand = _carrier_brand_token(actual_carrier)
+        if not actual_brand:
+            continue
+
+        for field in ("gap_description", "recommendation"):
+            text = f.get(field) or ""
+            if not text:
+                continue
+
+            for wrong in _CARRIER_BRANDS:
+                # Skip if this brand IS the actual carrier
+                if wrong.lower() == actual_brand.lower():
+                    continue
+                # Pattern A: "<Wrong> <coverage-noun>" — implies "the X policy"
+                pat_a = re.compile(rf"\b{re.escape(wrong)}\s+(?={coverage_re}\b)", re.I)
+                # Pattern B: "Have <Wrong> add" / "with <Wrong>" / "the <Wrong> ___"
+                # Restrict B to "Have <Wrong> add" construction to avoid sweeping
+                # alternative-market recommendations.
+                pat_b = re.compile(rf"\bHave\s+{re.escape(wrong)}\s+add\b", re.I)
+
+                new_text, n_a = pat_a.subn(f"{actual_brand} ", text)
+                new_text, n_b = pat_b.subn(f"Have {actual_brand} add", new_text)
+                n_total = n_a + n_b
+                if n_total > 0:
+                    text = new_text
+                    corrections.append((
+                        f.get("id", "?"),
+                        pdf_pieces[0],
+                        wrong,
+                        actual_brand,
+                        n_total,
+                    ))
+            f[field] = text
+
+    return findings, corrections

@@ -120,17 +120,19 @@ def _finding_html(f: dict, current_policy: str | None = None) -> str:
 
     risk_badge = _risk_badge_html(f)
 
-    meta_pieces = []
-    if page:
-        meta_pieces.append(page)
+    # Always render the meta line for visual consistency. When no page
+    # reference was captured, surface that explicitly rather than omitting
+    # the line — every finding card should have the same vertical structure.
+    page_html = (
+        page if page
+        else '<span class="page-missing">Page reference not captured</span>'
+    )
+    meta_pieces = [page_html]
     if multi_note:
         meta_pieces.append(multi_note)
     if risk_badge:
         meta_pieces.append(risk_badge)
-    meta_html = (
-        f'<div class="finding-meta">{" · ".join(meta_pieces)}</div>'
-        if meta_pieces else ""
-    )
+    meta_html = f'<div class="finding-meta">{" · ".join(meta_pieces)}</div>'
 
     body_html = _escape_paragraphs(gd) if gd else (
         '<p class="finding-empty">No detail provided in source data.</p>'
@@ -363,6 +365,7 @@ html, body {
 .finding-meta .risk.bad    { color: var(--bad); }
 .finding-meta .risk.review { color: var(--review); }
 .finding-meta .shared-note { color: var(--accent); }
+.finding-meta .page-missing { color: var(--text-muted); font-style: italic; }
 .finding-body { color: var(--text); font-size: 15px; line-height: 1.65; }
 .finding-body p { margin: 0 0 0.6rem; }
 .finding-body p:last-child { margin-bottom: 0; }

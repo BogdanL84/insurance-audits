@@ -1,12 +1,16 @@
 """
-Re-apply the hallucination filter to a client's existing findings.json.
+Re-apply the post-synthesis cleanup passes to a client's existing
+findings.json:
+  (1) filter_hallucinated_findings — drop chunk-induced "No <X> Policy"
+      claims when X is in the program
+  (2) dedupe_program_findings      — collapse duplicate program-level
+      findings (synthesis + matrix passes both emit "No D&O" / "No Crime")
+  (3) correct_carrier_mentions     — fix "Hanover BOP" → "Pekin BOP"
+      style carrier-name hallucinations
 
-This is a thin wrapper over app/core/findings_filter.py. The same filter
-runs automatically inside the pipeline (_Analyze.py:run_chunked_synthesis
-→ filter_hallucinated_findings → persist). Use this script when you need
-to re-filter findings produced before the in-pipeline filter shipped, or
-when you've changed the filter rules and want to re-apply them without
-re-running synthesis.
+The same passes run automatically inside the pipeline (_Analyze.py after
+run_chunked_synthesis, before persist). Use this script to re-clean
+findings produced before the cleanup passes shipped, or after rule changes.
 
 Usage:
   python _filter_hallucinated_findings.py [client-slug]   # default: precision-aero
@@ -29,7 +33,12 @@ ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT / "app"))
 
 from core import audit_state as ast
-from core.findings_filter import filter_hallucinated_findings, build_program_inventory
+from core.findings_filter import (
+    filter_hallucinated_findings,
+    dedupe_program_findings,
+    correct_carrier_mentions,
+    build_program_inventory,
+)
 
 
 def main(slug: str = "precision-aero") -> None:
@@ -53,16 +62,34 @@ def main(slug: str = "precision-aero") -> None:
     print(f"Program covers: {sorted(build_program_inventory(analyses))}")
 
     backup = outdir / "findings.json.pre-filter"
-    shutil.copy2(findings_path, backup)
-    print(f"Backed up pre-filter findings to {backup.name}")
+    if not backup.exists():
+        shutil.copy2(findings_path, backup)
+        print(f"Backed up pre-filter findings to {backup.name}")
+    else:
+        print(f"Pre-filter backup already exists at {backup.name} — preserving original baseline")
 
+    # Pass 1: hallucination filter
     kept, dropped = filter_hallucinated_findings(findings, analyses)
-    print(f"\nDropped {len(dropped)} hallucinated findings:")
+    print(f"\nPass 1 — Hallucination filter: dropped {len(dropped)} findings")
     for f, reason in dropped:
-        rt = (f.get("requirement_type") or "")[:80]
         print(f"  - id={f.get('id', '?')}  pf={f.get('policy_file') or '<empty>'!r}")
-        print(f"    rt: {rt}")
+        print(f"    rt: {(f.get('requirement_type') or '')[:80]}")
         print(f"    reason: {reason}")
+
+    # Pass 2: program-level dedup
+    kept, merged = dedupe_program_findings(kept)
+    print(f"\nPass 2 — Program-level dedup: collapsed {len(merged)} duplicates")
+    for winner, loser, key in merged:
+        print(f"  - {key}: kept {winner.get('id','?')} ({winner.get('category')}), "
+              f"dropped {loser.get('id','?')} ({loser.get('category')})")
+        print(f"      kept rt:    {(winner.get('requirement_type') or '')[:80]}")
+        print(f"      dropped rt: {(loser.get('requirement_type') or '')[:80]}")
+
+    # Pass 3: carrier-name correction
+    kept, corrections = correct_carrier_mentions(kept, analyses)
+    print(f"\nPass 3 — Carrier correction: fixed {len(corrections)} mentions")
+    for fid, pf, wrong, actual, n in corrections:
+        print(f"  - {fid} on {pf}: \"{wrong}\" → \"{actual}\" ({n} replacement{'s' if n != 1 else ''})")
 
     # Recompute counts
     from collections import Counter

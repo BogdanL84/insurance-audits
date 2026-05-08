@@ -36,7 +36,11 @@ from core.claude_runner import (
     RATE_LIMIT_DELAY, ANALYSIS_TIMEOUT,
 )
 from core.chunking import run_chunked_synthesis, SINGLE_CALL_THRESHOLD
-from core.findings_filter import filter_hallucinated_findings
+from core.findings_filter import (
+    filter_hallucinated_findings,
+    dedupe_program_findings,
+    correct_carrier_mentions,
+)
 from utils import (
     render_sidebar, require_client, render_progress_bar,
     inject_css, render_breadcrumb,
@@ -719,14 +723,25 @@ if run_mode == "synthesize_now":
             )
         findings = state.get("findings", [])
     elif synth_meta.get("ok") and findings:
-        # Defensive post-merge filter: drop chunk-induced "No <X> Policy"
-        # hallucinations whose claimed-missing coverage is actually present
-        # somewhere in the program. See core/findings_filter.py for the
-        # rationale (chunked synthesis hides per-cluster policies from each
-        # other; merge_chunks doesn't cross-check missing-coverage claims
-        # against the full program inventory).
+        # Defensive post-merge cleanup. Three orthogonal passes — see
+        # core/findings_filter.py for rationale on each:
+        #   (1) Drop chunk-induced "No <X> Policy" hallucinations whose
+        #       claimed-missing coverage is actually present somewhere in
+        #       the program (chunked synthesis hides per-cluster policies
+        #       from each other; merge_chunks doesn't cross-check missing-
+        #       coverage claims against the full program inventory).
+        #   (2) Dedupe program-level findings — synthesis and matrix passes
+        #       both emit "No D&O" / "No Crime" / etc.; keep the higher-
+        #       severity copy.
+        #   (3) Correct carrier-name hallucinations in finding text where
+        #       the wrong carrier is named in a "<Carrier> <coverage>"
+        #       construction (e.g. "Hanover BOP" → "Pekin BOP" when the
+        #       actual BOP carrier is Pekin).
         _pre_filter_count = len(findings)
-        findings, _dropped = filter_hallucinated_findings(findings, policy_analyses)
+        findings, _dropped     = filter_hallucinated_findings(findings, policy_analyses)
+        findings, _merged      = dedupe_program_findings(findings)
+        findings, _carrier_fix = correct_carrier_mentions(findings, policy_analyses)
+
         if _dropped:
             with log:
                 _log_sub(
@@ -739,6 +754,31 @@ if run_mode == "synthesize_now":
                         f"  - {_f.get('id', '?')}: "
                         f"{(_f.get('requirement_type') or '')[:80]} "
                         f"({_reason})"
+                    )
+
+        if _merged:
+            with log:
+                _log_sub(
+                    f"Dedup: collapsed {len(_merged)} program-level "
+                    f"duplicate finding{'s' if len(_merged) != 1 else ''}"
+                )
+                for _winner, _loser, _key in _merged:
+                    _log_sub(
+                        f"  - {_key}: kept {_winner.get('id', '?')} "
+                        f"({_winner.get('category')}), dropped "
+                        f"{_loser.get('id', '?')} ({_loser.get('category')})"
+                    )
+
+        if _carrier_fix:
+            with log:
+                _log_sub(
+                    f"Carrier correction: fixed {len(_carrier_fix)} mismatched "
+                    f"carrier mention{'s' if len(_carrier_fix) != 1 else ''}"
+                )
+                for _fid, _pf, _wrong, _actual, _n in _carrier_fix:
+                    _log_sub(
+                        f"  - {_fid} on {_pf}: \"{_wrong}\" → \"{_actual}\" "
+                        f"({_n} replacement{'s' if _n != 1 else ''})"
                     )
 
         with log:
