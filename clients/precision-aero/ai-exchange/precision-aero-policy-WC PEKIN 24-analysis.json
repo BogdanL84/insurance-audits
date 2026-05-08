@@ -1,34 +1,143 @@
 {
   "source_file": "WC PEKIN 24.pdf",
-  "analysis_date": "2026-05-01",
+  "analysis_date": "2026-05-08",
   "policy_type": "Workers Comp",
   "is_package": false,
   "coverage_parts": [
-    "Workers Compensation"
+    "Workers Compensation (Part One)",
+    "Employers Liability (Part Two)",
+    "Other States Insurance (Part Three)"
   ],
   "is_primary": true,
-  "named_insured": "unknown - policy text not extracted",
-  "named_insured_entity_type": "unspecified",
-  "additional_named_insureds": [],
+  "named_insured": "Precision Aero Inc",
+  "named_insured_entity_type": "Inc",
+  "additional_named_insureds": [
+    {
+      "entity": "Black Mountain Investment Company LLC",
+      "entity_type": "LLC",
+      "via_endorsement": "WC 97 06 01",
+      "endorsement_name": "Amendment of Policy — Named Insured (Name Overflow)",
+      "endorsement_type": "Multiple Named Insured",
+      "page": 3,
+      "scope_note": "Added by Name Overflow endorsement directly amending the Named Insured field. Reliable inclusion — not a Broad Form NI conditional extension.",
+      "broad_form_llc_risk": false
+    }
+  ],
   "additional_insureds": [],
   "broad_form_ni_endorsement": {
     "present": false,
     "form_number": null,
     "page": null,
     "excludes_llcs_or_partnerships": false,
-    "excludes_note": null
+    "excludes_note": "No Broad Form Named Insured endorsement on this WC policy. Black Mountain Investment Company LLC is added by direct Name Overflow endorsement (WC 97 06 01), not a Broad Form extension."
   },
-  "carrier": "Pekin Insurance",
-  "policy_number": "unknown - policy text not extracted",
-  "effective_date": null,
-  "expiry_date": null,
-  "limits": {},
+  "carrier": "Pekin Insurance Company",
+  "policy_number": "005211944",
+  "effective_date": "2024-03-01",
+  "expiry_date": "2025-03-01",
+  "limits": {
+    "employers_liability_each_accident": 1000000,
+    "employers_liability_disease_policy_limit": 1000000,
+    "employers_liability_disease_each_employee": 1000000,
+    "workers_compensation": "Statutory — Arizona"
+  },
   "cancellation_notice_days": {
     "for_nonpayment": null,
     "for_other_reasons": null,
-    "page_ref": null
+    "page_ref": "Standard WC policy cancellation provisions (WC 00 00 00 C) not contained in extracted excerpt — verify cancellation notice terms"
   },
-  "endorsements": [],
+  "endorsements": [
+    {
+      "form_number": "WC 91 06 01 (12-11)",
+      "name": "Information Page",
+      "page": 1,
+      "notes": "Dec page form"
+    },
+    {
+      "form_number": "WC 92 06 01 (12-11)",
+      "name": "Amendment of Policy — Operations Address",
+      "page": 2,
+      "notes": "Confirms operations emanate from address shown on Information Page"
+    },
+    {
+      "form_number": "WC 97 06 01 (01-20)",
+      "name": "Amendment of Policy — Named Insured (Name Overflow)",
+      "page": 3,
+      "notes": "Adds Black Mountain Investment Company LLC as Named Insured alongside Precision Aero Inc"
+    },
+    {
+      "form_number": "WC 90 06 01 (08-22)",
+      "name": "In Witness clause / signing page",
+      "page": 5,
+      "notes": ""
+    },
+    {
+      "form_number": "WC 00 04 21 F (08-22)",
+      "name": "Catastrophe (Other Than Certified Acts of Terrorism) Premium Endorsement",
+      "page": 6,
+      "notes": "$50M aggregate threshold for catastrophe losses; AZ rate 0.010, $350 premium"
+    },
+    {
+      "form_number": "WC 00 04 22 C (01-21)",
+      "name": "Terrorism Risk Insurance Program Reauthorization Act Disclosure",
+      "page": 7,
+      "notes": "TRIA disclosure; $100B annual program cap with pro-rata sharing above insurer deductible (20% of prior-year direct earned premium)"
+    },
+    {
+      "form_number": "WC 00 04 04 (04-84)",
+      "name": "Pending Rate Change Endorsement",
+      "page": 8,
+      "notes": "AZ rate filing pending — rates may change mid-term"
+    },
+    {
+      "form_number": "WC 00 04 06 A (07-95)",
+      "name": "Premium Discount Endorsement",
+      "page": 9,
+      "notes": "Average percentage discount: 0.041653% — effectively negligible discount due to low premium tier"
+    },
+    {
+      "form_number": "WC 00 04 24 (01-17)",
+      "name": "Audit Noncompliance Charge Endorsement",
+      "page": 10,
+      "notes": "Allows carrier to charge UP TO TWO TIMES estimated annual premium if insured fails to provide audit records — material penalty risk"
+    },
+    {
+      "form_number": "WC 02 06 03 A (12-22)",
+      "name": "Arizona Amendatory Endorsement",
+      "page": 11,
+      "notes": "Time zone clarification for AZ"
+    },
+    {
+      "form_number": "WC 00 04 25 (01-17)",
+      "name": "Experience Rating Modification Factor Revision Endorsement",
+      "page": 14,
+      "notes": "Allows mid-term EMR revision per NCCI manual — no current EMR shown on dec excerpt"
+    },
+    {
+      "form_number": "WCLT1 (08-22)",
+      "name": "Policyholder Letter — Audit / Subcontractor Reminder",
+      "page": 4,
+      "notes": "Customer notice — not coverage-altering"
+    },
+    {
+      "form_number": "1604 (03-89)",
+      "name": "Subcontractor / Overtime Notice",
+      "page": 12,
+      "notes": "Audit-administration notice; reminds insured to obtain WC certificates from subcontractors and segregate overtime payroll"
+    },
+    {
+      "form_number": "4149 (01-20)",
+      "name": "Audit Noncompliance Reminder Notice",
+      "page": 13,
+      "notes": "Reinforces WC 00 04 24 — 2x premium penalty for audit non-cooperation"
+    },
+    {
+      "form_number": "780 (01-20)",
+      "name": "Arizona Department of Insurance Complaint Notice",
+      "page": 15,
+      "notes": "Regulatory notice"
+    }
+  ],
   "designated_entity_noc_endorsements": [],
   "exclusions_of_note": [],
   "checklist": {
@@ -41,6 +150,30 @@
     "contractual_liability": false,
     "per_project_aggregate": false
   },
-  "extraction_error": "Policy text was empty for all 15 pages. Source PDF (WC PEKIN 24.pdf) appears to be image-based/scanned and was not OCR'd before submission. No findings can be generated without the underlying text. Recommend re-extracting with OCR (e.g., Tesseract via PyMuPDF or ocrmypdf) and re-running the audit.",
+  "wc_specific_findings": {
+    "states_part_one": [
+      "AZ"
+    ],
+    "states_part_three_other_states": "All states and U.S. territories EXCEPT ND, OH, WA, WY, Puerto Rico, U.S. Virgin Islands, and Arizona",
+    "monopolistic_state_exposure": "Other States coverage explicitly excludes the four monopolistic states (ND, OH, WA, WY). If Precision Aero has any employees traveling to or working in these states, separate state-fund coverage is required — there is NO carrier-provided coverage for monopolistic states.",
+    "waiver_of_subrogation_endorsement_present": false,
+    "waiver_of_subrogation_note": "No Waiver of Subrogation endorsement (WC 00 03 13) appears in the schedule of endorsements on the Information Page. For an aerospace/manufacturing operation supplying OEMs (Boeing, Lockheed, defense primes), Tier-1 supplier contracts almost universally require Waiver of Subrogation in favor of the customer. Absent endorsement = the carrier retains full subrogation rights against any party who caused an employee injury, including the very customers Precision Aero is contractually obligated to protect. Recommend adding a blanket Waiver of Subrogation endorsement.",
+    "alternate_employer_endorsement_present": false,
+    "alternate_employer_note": "No Alternate Employer endorsement (WC 00 03 01 A) is listed. Given the Named Insured includes Black Mountain Investment Company LLC (likely a holding/real-estate affiliate), confirm whether any employees are payrolled through one entity but performing work for the other. If so, an Alternate Employer endorsement is appropriate.",
+    "voluntary_compensation_endorsement_present": false,
+    "voluntary_compensation_note": "No Voluntary Compensation endorsement noted. For Precision Aero specifically this is likely non-issue (manufacturing employees should be statutory employees in AZ), but verify if any executives/owners are excluded from statutory coverage and would benefit from voluntary coverage.",
+    "uslh_maritime_present": false,
+    "uslh_maritime_note": "USL&H / Maritime coverage not endorsed. Aerospace manufacturing in landlocked Arizona — likely non-applicable. Verify whether any operations involve seaplane/amphibious aircraft work near navigable waters, otherwise no concern.",
+    "experience_mod_visible_on_dec": false,
+    "experience_mod_note": "EMR factor not visible in the extracted Information Page text. WC 00 04 25 endorsement permits mid-term EMR revision per NCCI. Obtain current EMR and 3-year trend for full audit.",
+    "classification_codes_visible": false,
+    "classification_codes_note": "Dec page references 'REFER TO NEXT PAGE FOR COMPLETE INFORMATION' for class codes, payroll, and rates — those classification pages were not contained in the extracted excerpt. Cannot evaluate class code accuracy for aerospace manufacturing operations from text provided. Pull complete dec/classification schedule from carrier to verify code(s) match Precision Aero's actual operations (likely 3681 Instrument Mfg. NOC, 3076 Fireproof Equipment Mfg., or aerospace-specific code depending on work performed).",
+    "audit_noncompliance_penalty_severity": "Audit Noncompliance Charge endorsement (WC 00 04 24) permits Pekin to charge up to 2x estimated annual premium for failure to cooperate with audit. With $18,533 estimated annual premium, worst-case penalty is ~$37,066. Not unusual but material — ensure premium audit responsiveness."
+  },
+  "structural_observations": {
+    "named_insured_status": "Primary Named Insured (Precision Aero Inc) is a Corporation. Affiliate Black Mountain Investment Company LLC is properly added to the Named Insured field via a Name Overflow endorsement (WC 97 06 01) — this is a direct amendment, not a conditional Broad Form extension, so the LLC IS reliably covered as an insured employer under this policy. No GAP-01 LLC-exclusion risk on this WC policy.",
+    "other_states_coverage_quality": "Part Three (Other States) is broadly written — all U.S. states and territories except the four monopolistic states, Puerto Rico, USVI, and AZ (which is on Part One). For a single-location AZ operation with potential field/installation travel, this is appropriate scope.",
+    "premium_size": "$18,533 estimated annual premium is small for a manufacturing operation — verify payroll basis and class codes are accurate; under-reported payroll will produce a sizeable audit premium."
+  },
   "_source_file": "WC PEKIN 24.pdf"
 }

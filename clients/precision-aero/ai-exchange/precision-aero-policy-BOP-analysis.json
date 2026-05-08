@@ -1,37 +1,339 @@
 {
   "source_file": "BOP.pdf",
-  "analysis_date": "2026-05-01",
-  "policy_type": "other",
-  "is_package": false,
-  "coverage_parts": [],
+  "analysis_date": "2026-05-08",
+  "policy_type": "Package",
+  "is_package": true,
+  "coverage_parts": [
+    "Property",
+    "GL",
+    "Inland Marine - Motor Transit Cargo",
+    "Employee Benefits Administration Liability E&O"
+  ],
   "is_primary": true,
-  "named_insured": "unknown - policy text not extractable",
-  "named_insured_entity_type": "unspecified",
+  "named_insured": "Precision Aero Inc",
+  "named_insured_entity_type": "Corp",
   "additional_named_insureds": [],
-  "additional_insureds": [],
+  "additional_insureds": [
+    {
+      "entity": "Makino Inc, Black Mountain Aerospace",
+      "via_endorsement": "CG 20 28 07 04",
+      "endorsement_name": "Additional Insured - Lessor of Leased Equipment",
+      "page": 21,
+      "scope_note": "Ongoing operations only; coverage tied to leased equipment; AI status terminates when equipment lease expires. No coverage for completed operations."
+    },
+    {
+      "entity": "Wells Fargo Equipment Finance Inc, its successors & assigns (MAC S3928-034)",
+      "via_endorsement": "481TPR (08-19) Amendment of Policy",
+      "endorsement_name": "Additional Insured - Equipment Lessor (manuscript)",
+      "page": 12,
+      "scope_note": "Listed as Additional Insured on the 481TPR amendment endorsement; scope not specified by endorsement text on this form."
+    },
+    {
+      "entity": "Zions Bancorporation NA dba National Bank of Arizona, its successors and/or assigns",
+      "via_endorsement": "481TPR (08-19) Amendment of Policy",
+      "endorsement_name": "Additional Insured - Equipment Lessor (manuscript)",
+      "page": 12,
+      "scope_note": "Listed as Additional Insured on 481TPR amendment; also a Lender's Loss Payee per CP 12 18 on Property side."
+    }
+  ],
   "broad_form_ni_endorsement": {
     "present": false,
     "form_number": null,
     "page": null,
     "excludes_llcs_or_partnerships": false,
-    "excludes_note": "Policy text was not extractable — all 35 pages returned empty. Cannot confirm presence of Broad Form NI endorsement."
+    "excludes_note": "No Broad Form Named Insured endorsement (e.g., Hanover 421-2916, ISO IL 00 17) is attached to this policy."
   },
-  "carrier": "unknown",
-  "policy_number": "unknown",
-  "effective_date": null,
-  "expiry_date": null,
-  "limits": {},
+  "carrier": "Pekin Insurance Company",
+  "policy_number": "006206676",
+  "effective_date": "2024-03-01",
+  "expiry_date": "2025-03-01",
+  "limits": {
+    "general_aggregate": 2000000,
+    "products_completed_operations_aggregate": "EXCLUDED",
+    "personal_advertising_injury": 1000000,
+    "each_occurrence": 1000000,
+    "damage_to_premises_rented": 100000,
+    "medical_expense": 5000,
+    "ebl_each_claim": 1000000,
+    "ebl_aggregate": 3000000,
+    "ebl_retroactive_date": "2016-03-01",
+    "property_bpp": 11800000,
+    "property_building_improvements_betterments": 1500000,
+    "property_legal_liability_building": 1081600,
+    "property_personal_property_of_others": 1500000,
+    "im_motor_transit_cargo": 320000
+  },
   "cancellation_notice_days": {
-    "for_nonpayment": null,
-    "for_other_reasons": null,
-    "page_ref": null
+    "for_nonpayment": 10,
+    "for_other_reasons": 45,
+    "page_ref": "Pg 32 (IL 20 00 04 21 - Arizona Changes - Cancellation and Nonrenewal); 45-day nonrenewal notice also required."
   },
-  "endorsements": [],
+  "endorsements": [
+    {
+      "form_number": "CG 00 01 10 01",
+      "name": "Commercial General Liability Coverage Form (occurrence)",
+      "page": 6,
+      "notes": "Base CGL form."
+    },
+    {
+      "form_number": "CG 03 00 01 96",
+      "name": "Deductible Liability Insurance",
+      "page": 19,
+      "notes": "$250 per-claim Property Damage deductible; no BI deductible. Applies to all operations."
+    },
+    {
+      "form_number": "CG 20 28 07 04",
+      "name": "Additional Insured - Lessor of Leased Equipment",
+      "page": 21,
+      "notes": "Schedules Makino Inc / Black Mountain Aerospace; AI only for liability arising out of leased equipment; ongoing ops only and ends when lease expires. Not blanket."
+    },
+    {
+      "form_number": "CG 21 04 11 85",
+      "name": "Exclusion - Products/Completed Operations Hazard",
+      "page": null,
+      "notes": "Form referenced in CGL forms list (Pg 6). Dec page confirms Products-Completed Operations Aggregate Limit = EXCLUDED and premium shown as $0.00. ENTIRE products-completed ops hazard excluded."
+    },
+    {
+      "form_number": "CG 21 32 05 09",
+      "name": "Communicable Disease Exclusion",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 21 39 10 93",
+      "name": "Contractual Liability Limitation",
+      "page": null,
+      "notes": "Listed in CGL forms list. Materially narrows CGL contractual liability — strikes the broader 'insured contract' language in the base form, leaving only enumerated contracts."
+    },
+    {
+      "form_number": "CG 21 46 07 98",
+      "name": "Abuse or Molestation Exclusion",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 21 47 07 98",
+      "name": "Employment-Related Practices Exclusion",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 21 60 09 98",
+      "name": "Limitation of Coverage to Designated Premises or Project",
+      "page": null,
+      "notes": "Listed in CGL forms list. Restricts CGL to operations at the described premises (5310 S 32nd St, Phoenix). Off-site operations and projects elsewhere are not covered."
+    },
+    {
+      "form_number": "CG 21 75 01 15",
+      "name": "Exclusion - Engineers, Architects or Surveyors Professional Liability",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 21 76 01 15",
+      "name": "Exclusion - Designated Professional Services",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 21 87 01 15",
+      "name": "Asbestos Exclusion (or similar - listed)",
+      "page": null,
+      "notes": "Listed in CGL forms list (form number indicates asbestos-related exclusion family)."
+    },
+    {
+      "form_number": "CG 21 96 03 05",
+      "name": "Silica or Silica-Related Dust Exclusion",
+      "page": null,
+      "notes": "Listed in CGL forms list. Excludes BI/PD/PI&AI arising out of silica or silica-related dust."
+    },
+    {
+      "form_number": "CG 29 26 03 22",
+      "name": "Exclusion - Access or Disclosure of Confidential or Personal Information and Data-Related Liability",
+      "page": 22,
+      "notes": "Bars data breach, cyber, and biometric privacy exposures from CGL Coverage A and B."
+    },
+    {
+      "form_number": "CG 40 14 12 20",
+      "name": "Exclusion - Designated Operations Covered by a Consolidated (Wrap-Up) Insurance Program",
+      "page": null,
+      "notes": "Listed in CGL forms list."
+    },
+    {
+      "form_number": "CG 50 07 05 22",
+      "name": "Exclusion - Specified New Residential Construction Work",
+      "page": 23,
+      "notes": "Excludes property damage in products-completed ops hazard arising out of new residential construction. (Largely moot for a machine shop, but layered on top of the broader products-completed ops exclusion.)"
+    },
+    {
+      "form_number": "481TPR (08-19)",
+      "name": "Amendment of Policy - Additional Insured Listing (manuscript)",
+      "page": 12,
+      "notes": "Adds Wells Fargo Equipment Finance and Zions Bancorporation NA / National Bank of Arizona as Additional Insureds. Manuscript form, not standard ISO."
+    },
+    {
+      "form_number": "CP 12 10 11 85",
+      "name": "Protective Safeguards",
+      "page": 15,
+      "notes": "P-1 Automatic Sprinkler System required. Coverage automatically suspended if Insured fails to immediately notify carrier of any suspension/impairment of the protected safeguard, OR fails to maintain in working order. Sprinkler restoration must occur within 48 hours."
+    },
+    {
+      "form_number": "CP 12 18 10 12",
+      "name": "Loss Payable Provisions",
+      "page": 16,
+      "notes": "Lender's Loss Payable Clause (Clause C.2.) applied to BPP for Zions Bancorporation. 10-day non-payment notice / 30-day other reason notice / 10-day non-renewal notice to Loss Payee."
+    },
+    {
+      "form_number": "CM 75 03 02 21",
+      "name": "Cyber Incident Exclusion (Inland Marine)",
+      "page": 27,
+      "notes": "Excludes IM cargo coverage for unauthorized access, malicious code, or denial of service attacks. Resulting fire/explosion exception only."
+    },
+    {
+      "form_number": "IL 09 17 11 85",
+      "name": "Resident Agent Countersignature",
+      "page": 30,
+      "notes": "AZ resident agent compliance."
+    },
+    {
+      "form_number": "IL 10 09 12 20",
+      "name": "Disclosure Pursuant to Terrorism Risk Insurance Act",
+      "page": 31,
+      "notes": "TRIA coverage REJECTED. No coverage for losses from certified acts of terrorism."
+    },
+    {
+      "form_number": "IL 20 00 04 21",
+      "name": "Arizona Changes - Cancellation and Nonrenewal",
+      "page": 32,
+      "notes": "10-day notice for nonpayment; 45-day notice for any other cancellation reason; 45-day nonrenewal notice."
+    },
+    {
+      "form_number": "IL 20 25 07 20",
+      "name": "Actual Cash Value Endorsement",
+      "page": 35,
+      "notes": "Modifies BOP, Commercial Property, and Commercial Inland Marine coverage parts. Defines ACV as replacement cost less depreciation. Tension with Property Dec page where BPP is marked '*** REPLACEMENT COST AND AGREED VALUE' and Building Improvement/Betterment + Legal Liability are marked '*' for Replacement Cost. Loss settlement basis should be confirmed in writing with carrier."
+    },
+    {
+      "form_number": "EB 00 02 07 97",
+      "name": "Employee Benefits Administration Liability Errors and Omissions Coverage Form",
+      "page": 11,
+      "notes": "Claims-made coverage. $1M each claim / $3M aggregate. Retroactive Date 03/01/2016 - any acts/errors/omissions before that date are not covered. $1,000 deductible each claim."
+    },
+    {
+      "form_number": "CM 16 28 03 86",
+      "name": "Motor Transit Cargo Declarations",
+      "page": 10,
+      "notes": "Cargo carried in scheduled 2018 Dodge Ram 1500 only ($320,000 limit, $250 deductible). Not a true Auto Liability or Hired & Non-Owned Auto policy."
+    }
+  ],
   "designated_entity_noc_endorsements": [],
-  "exclusions_of_note": [],
+  "exclusions_of_note": [
+    {
+      "name": "Products-Completed Operations Hazard EXCLUDED (entire hazard)",
+      "form_number": "CG 21 04 11 85 + Dec page",
+      "page": 6,
+      "impact": "CRITICAL for an aerospace machine shop. Dec page (Pg 6) shows Products-Completed Operations Aggregate Limit = EXCLUDED and Products/Completed Operations advance premium = $0.00. Combined with CG 21 04, this means BI/PD arising out of the insured's products or completed work AFTER the work is finished or product leaves their possession is wholly uninsured. For Precision Aero (precision aerospace machining), a defective machined part causing an in-flight or ground incident produces a catastrophic uninsured exposure. A Products Liability policy or restoring Products-Completed Ops on the CGL is required."
+    },
+    {
+      "name": "Limitation of Coverage to Designated Premises or Project",
+      "form_number": "CG 21 60 09 98",
+      "page": 6,
+      "impact": "CGL only responds to operations at 5310 S 32nd St, Phoenix. Any off-site work, customer-site visits, trade shows, or operations at a second location are uninsured for liability. Manufacturers that occasionally install, service, or visit customer sites face a real coverage gap."
+    },
+    {
+      "name": "Silica or Silica-Related Dust Exclusion",
+      "form_number": "CG 21 96 03 05",
+      "page": 6,
+      "impact": "Bars BI/PD/Personal & Advertising Injury arising out of silica or silica-related dust. Material to a machine shop performing grinding, cutting, or finishing operations that could generate respirable silica. A Contractors/Industrial Pollution Liability or industrial hygiene-specific policy would be needed."
+    },
+    {
+      "name": "Contractual Liability Limitation",
+      "form_number": "CG 21 39 10 93",
+      "page": 6,
+      "impact": "Materially narrows the 'insured contract' definition in the base CGL form. Hold-harmless and indemnity obligations Precision Aero accepts in customer purchase orders or supplier MSAs may not be picked up by CGL contractual liability coverage. Contracts with significant indemnity obligations should be reviewed against this form."
+    },
+    {
+      "name": "Access or Disclosure of Confidential or Personal Information / Data-Related Liability",
+      "form_number": "CG 29 26 03 22",
+      "page": 22,
+      "impact": "No CGL coverage for data breach, biometric privacy claims, or loss of/damage to electronic data. A standalone Cyber Liability policy is required."
+    },
+    {
+      "name": "Cyber Incident Exclusion (Inland Marine)",
+      "form_number": "CM 75 03 02 21",
+      "page": 27,
+      "impact": "Excludes IM Motor Transit Cargo loss caused by hacking, malware, or DOS attacks. Resulting fire/explosion exception only. A Cyber Liability policy with property/extra expense extensions would respond."
+    },
+    {
+      "name": "Designated Operations Covered by Consolidated (Wrap-Up) Insurance Program",
+      "form_number": "CG 40 14 12 20",
+      "page": 6,
+      "impact": "Excludes coverage for operations covered (or required to be covered) by an OCIP/CCIP. Generally appropriate, but flags any wrap-required projects as needing the wrap as primary."
+    },
+    {
+      "name": "Engineers, Architects or Surveyors Professional Liability Exclusion + Designated Professional Services Exclusion",
+      "form_number": "CG 21 75 01 15 + CG 21 76 01 15",
+      "page": 6,
+      "impact": "Strips professional services exposure from CGL. If Precision Aero performs design/engineering, draws specifications, or provides any professional advice on parts, this is uninsured. Standalone Manufacturer's E&O / Professional Liability policy needed if there is any design responsibility."
+    },
+    {
+      "name": "Asbestos Exclusion",
+      "form_number": "CG 21 87 01 15 (asbestos exclusion family)",
+      "page": 6,
+      "impact": "Standard. Generally not material to a current machining operation but flagged for completeness."
+    },
+    {
+      "name": "Employment-Related Practices Exclusion",
+      "form_number": "CG 21 47 07 98",
+      "page": 6,
+      "impact": "Excludes employment claims (harassment, discrimination, wrongful termination). EPLI policy required."
+    },
+    {
+      "name": "Abuse or Molestation Exclusion",
+      "form_number": "CG 21 46 07 98",
+      "page": 6,
+      "impact": "Standard exclusion."
+    },
+    {
+      "name": "Communicable Disease Exclusion",
+      "form_number": "CG 21 32 05 09",
+      "page": 6,
+      "impact": "Standard post-COVID exclusion."
+    },
+    {
+      "name": "Specified New Residential Construction Work Exclusion",
+      "form_number": "CG 50 07 05 22",
+      "page": 23,
+      "impact": "Largely moot for a machine shop, but compounds the Products-Completed Operations exclusion if any incidental residential work were ever performed."
+    },
+    {
+      "name": "Terrorism (TRIA) coverage REJECTED",
+      "form_number": "IL 10 09 12 20",
+      "page": 31,
+      "impact": "No coverage anywhere on the program for losses arising out of certified acts of terrorism. For a Phoenix industrial location this may be an acceptable risk; flag for client confirmation given aerospace customer base."
+    },
+    {
+      "name": "Actual Cash Value Endorsement",
+      "form_number": "IL 20 25 07 20",
+      "page": 35,
+      "impact": "Modifies all Property and Inland Marine forms to define loss settlement as ACV (replacement cost less depreciation). Conflicts with Property Dec page markings showing BPP as Replacement Cost & Agreed Value and Building Improvement/Betterment + Legal Liability as Replacement Cost. Carrier should confirm in writing which valuation actually applies — if ACV controls, $11.8M BPP recovery could be materially reduced by depreciation on machinery, tooling, and equipment."
+    },
+    {
+      "name": "Protective Safeguards Warranty (P-1 Automatic Sprinkler)",
+      "form_number": "CP 12 10 11 85",
+      "page": 15,
+      "impact": "Coverage is automatically suspended if Precision Aero fails to immediately notify Pekin of any sprinkler suspension/impairment, or fails to maintain the sprinkler system. A non-functioning sprinkler at the time of loss = no coverage. Operational discipline required."
+    },
+    {
+      "name": "Employee Benefits E&O - Retroactive Date 03/01/2016",
+      "form_number": "EB 00 02 07 97",
+      "page": 11,
+      "impact": "Claims-made coverage with prior acts limited to 03/01/2016. Negligent benefits administration acts/errors/omissions before 03/01/2016 are uninsured even if the claim is made today. Verify whether any prior acts coverage existed pre-2016 (since the company has presumably administered benefits longer than 8 years)."
+    }
+  ],
   "checklist": {
     "additional_insured_blanket": false,
-    "additional_insured_scheduled": false,
+    "additional_insured_scheduled": true,
     "additional_insured_completed_ops": false,
     "waiver_of_subrogation": false,
     "waiver_of_subrogation_page": null,
@@ -39,6 +341,5 @@
     "contractual_liability": false,
     "per_project_aggregate": false
   },
-  "extraction_error": "All 35 pages of BOP.pdf returned empty text. The PDF appears to be image-based (scanned) or otherwise non-extractable via PyMuPDF text extraction. OCR is required before this policy can be audited. No findings can be reported because no policy content was readable.",
   "_source_file": "BOP.pdf"
 }

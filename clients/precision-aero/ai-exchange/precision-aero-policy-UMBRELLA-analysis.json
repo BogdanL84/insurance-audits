@@ -1,36 +1,298 @@
 {
   "source_file": "UMBRELLA.pdf",
-  "analysis_date": "2026-05-01",
+  "analysis_date": "2026-05-08",
   "policy_type": "Umbrella",
   "is_package": false,
   "coverage_parts": [
-    "Umbrella"
+    "Commercial Umbrella"
   ],
   "is_primary": false,
-  "named_insured": "unknown - policy text not extractable",
+  "named_insured": "PRECISION AERO INC",
   "named_insured_entity_type": "unspecified",
   "additional_named_insureds": [],
-  "additional_insureds": [],
+  "additional_insureds": [
+    {
+      "entity": "Any person or organization required by written contract",
+      "via_endorsement": "CU 00 01 08 22 Section II.4",
+      "endorsement_name": "Who Is An Insured (policy form)",
+      "page": 11,
+      "scope_note": "Built-in extension limited to operations performed by/on behalf of named insured or to facilities named insured owns/uses; no broader than underlying"
+    },
+    {
+      "entity": "Any other person or organization who is an Insured under the underlying insurance",
+      "via_endorsement": "CU 00 01 08 22 Section II.6",
+      "endorsement_name": "Who Is An Insured (follow-form AI)",
+      "page": 11,
+      "scope_note": "Conditional follow form — coverage no broader than the underlying GL/Auto/EL AI grant"
+    }
+  ],
   "broad_form_ni_endorsement": {
     "present": false,
     "form_number": null,
     "page": null,
-    "excludes_llcs_or_partnerships": false,
-    "excludes_note": "Policy text not extractable - cannot verify"
+    "excludes_llcs_or_partnerships": null,
+    "excludes_note": "No Broad Form Named Insured endorsement is present on this umbrella. The umbrella relies on Section II.2 (subsidiaries under your control and active management covered by underlying insurance at inception) and Section II.7 (entities added to underlying during the policy term, provided notice within 90 days). No automatic LLC/partnership extension."
   },
-  "carrier": "unknown",
-  "policy_number": "unknown",
-  "effective_date": "unknown",
-  "expiry_date": "unknown",
-  "limits": {},
+  "carrier": "Pekin Insurance Company",
+  "policy_number": "005935979",
+  "effective_date": "2024-03-01",
+  "expiry_date": "2025-03-01",
+  "limits": {
+    "each_occurrence": 5000000,
+    "general_aggregate": 5000000,
+    "products_completed_operations_aggregate": "Excluded",
+    "self_insured_retention": 10000
+  },
   "cancellation_notice_days": {
-    "for_nonpayment": null,
-    "for_other_reasons": null,
-    "page_ref": "Policy text not extractable"
+    "for_nonpayment": 10,
+    "for_other_reasons": 45,
+    "page_ref": "Pg 21 (IL 20 00 04 21 Arizona Changes — Cancellation and Nonrenewal, Item A.7); Nonrenewal: 45 days per Item C"
   },
-  "endorsements": [],
+  "endorsements": [
+    {
+      "form_number": "CU 00 02 02 19",
+      "name": "Commercial Umbrella Declarations",
+      "page": 3,
+      "notes": "Dec page; Form of Business boxes are unchecked — entity type unspecified on the Dec"
+    },
+    {
+      "form_number": "CU 00 38 09 00",
+      "name": "Exclusion — Designated Operations Covered by a Consolidated (Wrap-Up) Insurance Program",
+      "page": 4,
+      "notes": "Schedule reads: 'Any and All Operations Performed in conjunction with a consolidated (Wrap-Up) Insurance Program' — applies regardless of whether wrap-up is adequate or in effect"
+    },
+    {
+      "form_number": "IL 09 17 11 85",
+      "name": "Resident Agent Countersignature",
+      "page": 5,
+      "notes": "AZ countersignature"
+    },
+    {
+      "form_number": "IL 10 09 12 20",
+      "name": "Disclosure Pursuant to Terrorism Risk Insurance Act",
+      "page": 6,
+      "notes": "Insured REJECTED terrorism coverage — premium shown as 'Rejected'"
+    },
+    {
+      "form_number": "CU 00 01 08 22",
+      "name": "Commercial Umbrella Policy (base form)",
+      "page": 8,
+      "notes": "Conditional follow form. Other Insurance clause (IV.9) is bare excess — no Primary & Non-Contributory giveback. Maintenance of Underlying (IV.10) is the favorable wording: failure to maintain does not invalidate, but policy applies as if underlying were in force at scheduled limits"
+    },
+    {
+      "form_number": "CU 00 44 08 22",
+      "name": "Arizona Changes — Amendment of Policy Provisions",
+      "page": 19,
+      "notes": "Replaces signature block per AZ law"
+    },
+    {
+      "form_number": "CU 00 56 06 22",
+      "name": "Exclusion — Access or Disclosure of Confidential or Personal Information and Data-Related Liability — Limited Bodily Injury Exception NOT Included",
+      "page": 20,
+      "notes": "Absolute cyber/data exclusion. Applies to BI, PD, Personal Injury, and Advertising Injury arising from data breach or electronic data loss. No bodily-injury carve-back."
+    },
+    {
+      "form_number": "IL 20 00 04 21",
+      "name": "Arizona Changes — Cancellation and Nonrenewal",
+      "page": 21,
+      "notes": "10 days nonpayment / 45 days other reasons (after 60 days in effect); 45 days nonrenewal"
+    },
+    {
+      "form_number": "CU 21 35 01 15",
+      "name": "Exclusion of Certified Acts of Terrorism and Exclusion of Other Acts of Terrorism Committed Outside the United States",
+      "page": 24,
+      "notes": "Reflects insured's TRIA rejection"
+    },
+    {
+      "form_number": "CU 21 36 01 15",
+      "name": "Exclusion of Punitive Damages Related to a Certified Act of Terrorism",
+      "page": 26,
+      "notes": "Punitive damages from certified terrorism are excluded"
+    },
+    {
+      "form_number": "IL 00 17 11 98",
+      "name": "Common Policy Conditions",
+      "page": null,
+      "notes": "Listed on Dec; superseded by IL 20 00 04 21 in AZ"
+    },
+    {
+      "form_number": "IL 20 26 07 21",
+      "name": "Listed on Dec",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 04 07 87",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 10 07 87",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 17 07 87",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 28 10 98",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 31 05 02",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 32 12 02",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 36 05 09",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 37 05 09",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 43 06 04",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 45 10 12",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 46 03 13",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 47 03 13",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 49 03 14",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    },
+    {
+      "form_number": "CU 00 54 01 15",
+      "name": "Listed on Dec — endorsement text not reproduced",
+      "page": null,
+      "notes": "Form not reproduced in extract"
+    }
+  ],
   "designated_entity_noc_endorsements": [],
-  "exclusions_of_note": [],
+  "exclusions_of_note": [
+    {
+      "name": "Products/Completed Operations Aggregate — EXCLUDED",
+      "form_number": "CU 00 02 02 19 (Declarations)",
+      "page": 3,
+      "impact": "The Dec page shows the Products/Completed Operations Aggregate Limit as 'Excluded.' The Schedule of Underlying Insurance also shows the underlying Pekin GL Products/Completed Operations Aggregate as 'EXCLUDED.' For a company with 'Aero' in its name and a Phoenix manufacturing address, this is a critical structural gap: any products-completed operations claim has no excess attachment because there is no products coverage on the umbrella, AND because the underlying does not appear to provide products coverage either, the umbrella has nothing to follow form to. A separate dedicated Products Liability / Aviation Products policy is the appropriate remedy if Precision Aero manufactures or distributes aerospace components."
+    },
+    {
+      "name": "Aircraft Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.h(1)",
+      "page": 10,
+      "impact": "Excludes BI/PD arising out of ownership, maintenance, operation, use, loading/unloading, or entrustment to others of aircraft owned by any insured or chartered without crew. For an aerospace-named insured, ground operations involving aircraft (test flights, deliveries, hangar movements, ferry pilots) could trigger this. A standalone Aviation/Aircraft Liability policy is the appropriate remedy."
+    },
+    {
+      "name": "Total Pollution Exclusion (with hostile-fire carve-back only)",
+      "form_number": "CU 00 01 08 22 Section I.2.e",
+      "page": 9,
+      "impact": "Absolute pollution exclusion at premises owned/rented/occupied; sites used for waste handling/storage; sites where pollutants are brought on by the insured or its contractors; and governmental cleanup directives. Only carve-back is heat/smoke/fumes from a hostile fire. Aerospace manufacturing typically uses solvents, fuels, lubricants, and chemicals — a Contractors Pollution Liability or Premises Pollution Liability policy would be the appropriate remedy for environmental exposures."
+    },
+    {
+      "name": "Professional Liability Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.g",
+      "page": 9,
+      "impact": "Excludes any damages because of 'professional liability' as broadly defined in Section V.15 (engineers, architects, surveyors, draftsmen explicitly listed). For a manufacturer doing engineered components or design work, this is a hard exclusion. A standalone Professional/E&O or Manufacturers E&O policy is the appropriate remedy."
+    },
+    {
+      "name": "Cyber / Access or Disclosure of Confidential Information / Data-Related Liability",
+      "form_number": "CU 00 56 06 22",
+      "page": 20,
+      "impact": "Absolute cyber exclusion. Bars BI, PD, Personal Injury, AND Advertising Injury arising from any access to or disclosure of personal/confidential information, biometric data, or any electronic data loss/corruption. Endorsement is the version WITHOUT the limited bodily-injury exception — meaning even a BI claim traceable to a cyber event is excluded. A standalone Cyber Liability policy is required."
+    },
+    {
+      "name": "Wrap-Up (OCIP/CCIP) Exclusion — Designated Operations",
+      "form_number": "CU 00 38 09 00",
+      "page": 4,
+      "impact": "Excludes BI/PD arising out of ongoing ops or products-completed operations at any wrap-up location, regardless of whether the wrap-up is in effect, has adequate limits, or provides identical coverage. If Precision Aero performs work at a customer/owner-controlled construction site under an OCIP/CCIP, no umbrella coverage exists — including for completed operations after the wrap-up's tail expires. The insured must rely solely on the wrap-up policy and its sunset provisions."
+    },
+    {
+      "name": "Watercraft Over 50 Feet Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.h(2)",
+      "page": 10,
+      "impact": "Excludes watercraft over 50 feet; watercraft 50 feet or less is covered only if covered by underlying and 'no broader than the underlying.' Likely not material for this insured but a structural limit."
+    },
+    {
+      "name": "ERISA / Employee Benefits / Fiduciary Liability Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.k",
+      "page": 10,
+      "impact": "Excludes any liability (including fiduciary) from employee benefit plans, ERISA, Pension Reform Act. A standalone Fiduciary Liability policy and Employee Benefits Liability endorsement on the underlying GL are the appropriate remedies."
+    },
+    {
+      "name": "Insured-vs-Insured (Claim by Named Insured against Named Insured)",
+      "form_number": "CU 00 01 08 22 Section I.2.q",
+      "page": 10,
+      "impact": "Bars any claim brought 'by or on behalf of you or any additional Named Insured.' Cross-suits between affiliated entities listed on the umbrella receive no coverage. Material when the program later adds subsidiaries — they cannot sue each other under this umbrella."
+    },
+    {
+      "name": "Discrimination Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.f",
+      "page": 9,
+      "impact": "'Any alleged or actual discrimination by an insured against any person.' EPLI-type claims have no umbrella excess. A standalone EPLI policy is the appropriate remedy."
+    },
+    {
+      "name": "Damage to Property Owned/Rented/Occupied; Care, Custody and Control",
+      "form_number": "CU 00 01 08 22 Section I.2.i(1)–(4)",
+      "page": 9,
+      "impact": "Excludes property damage to property owned, rented, occupied, loaned to insured, or in care/custody/control. Standard but worth noting — Bailee or Inland Marine coverage is the appropriate remedy."
+    },
+    {
+      "name": "War Exclusion",
+      "form_number": "CU 00 01 08 22 Section I.2.r",
+      "page": 11,
+      "impact": "Standard war exclusion."
+    },
+    {
+      "name": "Certified Acts of Terrorism (and Other Acts Outside US over thresholds)",
+      "form_number": "CU 21 35 01 15",
+      "page": 24,
+      "impact": "Insured rejected TRIA. Certified acts of terrorism, and large-scale 'other acts of terrorism' committed outside the US (>$25M property damage, ≥50 deaths/serious injury, NBC-related, etc.) are excluded."
+    },
+    {
+      "name": "Punitive Damages from Certified Acts of Terrorism",
+      "form_number": "CU 21 36 01 15",
+      "page": 26,
+      "impact": "Punitive damages tied to certified terrorism are excluded."
+    }
+  ],
   "checklist": {
     "additional_insured_blanket": false,
     "additional_insured_scheduled": false,
@@ -38,9 +300,28 @@
     "waiver_of_subrogation": false,
     "waiver_of_subrogation_page": null,
     "primary_noncontributory": false,
-    "contractual_liability": false,
+    "contractual_liability": true,
     "per_project_aggregate": false
   },
-  "extraction_error": "All 26 pages of UMBRELLA.pdf returned empty text. The PDF appears to be image-based (scanned) or has text extraction issues. OCR processing is required before this policy can be audited. No findings can be reported from a blank source.",
+  "structural_notes": {
+    "follow_form_type": "Conditional follow form — Section I.1.b(1) caps payment at the part of ultimate net loss exceeding underlying limits; Section II.6 limits AI coverage to 'no broader than that of the underlying insurance.' This is a textbook conditional follow-form umbrella with the well-known traps when underlying has been endorsed for PNC, Waiver of Subrogation, or Notice/Knowledge but the umbrella has not been similarly endorsed.",
+    "schedule_of_underlying_blanks": [
+      "Professional Liability — NOT listed (no follow-form excess for any E&O the insured may carry)",
+      "Cyber Liability — NOT listed (and Coverage A/B excludes cyber via CU 00 56 anyway)",
+      "Foreign Liability — NOT listed",
+      "Liquor Liability — NOT listed",
+      "Pollution Liability — NOT listed (and pollution is excluded outright)"
+    ],
+    "underlying_listed": [
+      "Pekin GL 006206676 — $1M occurrence / $2M general aggregate / Products-Completed Ops EXCLUDED / $1M Personal & Advertising",
+      "Pekin Auto — $1M CSL (also broken out as $1M BI/person, $1M BI/accident, $1M PD/accident)",
+      "Pekin Employers Liability 005211944 — $1M/$1M/$1M"
+    ],
+    "other_insurance_clause": "Section IV.9 — bare excess over underlying and any other collectible insurance; no Primary & Non-Contributory giveback. If the underlying GL is endorsed PNC for an AI, the umbrella will NOT follow that endorsement and will sit excess of any other valid and collectible insurance — a classic conditional-follow-form gap.",
+    "transfer_of_rights_of_recovery": "Section IV.8 — standard subrogation language; no Waiver of Subrogation giveback. If the underlying carries a blanket Waiver of Subrogation endorsement, the umbrella does NOT follow form to that waiver.",
+    "notice_and_knowledge": "Section IV.6 — broad 'you must see to it that we... are notified as soon as practicable' language with no carve-back limiting knowledge to the person responsible for insurance. Standard poorly constructed term flagged in Book of Solutions Umbrella.",
+    "maintenance_of_underlying": "Section IV.10 — favorable wording: failure to maintain does NOT invalidate the umbrella, but the umbrella applies as though underlying were in force at scheduled limits (i.e., umbrella does not drop down to fill the gap). Insured still bears the gap if they let underlying lapse or reduce limits.",
+    "defense_costs": "Supplementary Payments are payable IN ADDITION to the limit of insurance (Section I.3). Defense costs treatment is favorable (outside limits) when the umbrella defends; however the umbrella only has a duty to defend when no underlying applies or underlying aggregate has been exhausted by paid losses."
+  },
   "_source_file": "UMBRELLA.pdf"
 }

@@ -1,10 +1,14 @@
 # Phase 2B-2 — Resume State
 
-Last updated: 2026-05-01 after Friday-evening hardening sprint (3-task autonomy run).
+Last updated: 2026-05-08 after OCR pre-processing landed and Precision Aero audit re-ran end-to-end on the OCR'd data.
 
 ## Where we are
 
-**v3e shipped + Friday-evening hardening complete.** Three architectural fixes landed today addressing field-test failure modes from the Run-test → Precision Aero shakedown. All committed to https://github.com/BogdanL84/insurance-audits.
+**OCR pre-processing landed; Precision Aero audit re-shipped at 2.6× findings.** The 2026-05-04 OCR blocker (Tesseract install required admin) was resolved when Bogdan installed the UB-Mannheim Windows installer. Three OCR pieces shipped: (a) Stage A intake fallback in `pdf_extractor.py:_extract_pdf` (PyMuPDF first, Tesseract on <50-word PDFs), (b) Document Intake UI shows `(OCR'd)` badge and real word count, (c) optional text-layered PDF generator (`_make_text_layered_pdfs.py`) so the annotator can anchor highlights on previously-image-only PDFs.
+
+Precision Aero deliverable now ships at **144 findings (30 Ugly + 49 Bad + 43 Review + 22 Good)** vs the prior 55 from the metadata-only-on-3-PDFs recovery. All 5 marked-up PDFs generated (BOP/UMBRELLA/WC PEKIN now annotatable thanks to text-layered versions). Markdown report regenerated.
+
+**v3e shipped + Friday-evening hardening complete.** Three architectural fixes landed 2026-05-01 addressing field-test failure modes from the Run-test → Precision Aero shakedown. All committed to https://github.com/BogdanL84/insurance-audits.
 
 ### Friday hardening (2026-05-01 evening)
 1. **Persist findings per stage** (`91e6a50`) — `_Analyze.py` now writes `findings_synthesis.json` → `findings_crosspolicy.json` → `findings.json` after each successful pipeline stage, with incremental atomic updates to `audit-state.json`. Prevents the Precision Aero "lost in session_state" data loss.
@@ -100,7 +104,7 @@ If starting a new client:
 
 ## Open issues (deferred, in rough priority order)
 
-1. **OCR pre-processing in Stage A document intake.** When extracted text has `word_count: 0` (scanned image-only PDF), Stage A should run Tesseract / a cloud OCR pass and write OCR'd text back as the source. Today the per-policy analyses on those PDFs are minimal (~1.6 KB metadata-only vs ~16 KB on text-extracted policies) and the marked-up PDF generator can't anchor annotations. 3 of 5 Precision Aero PDFs hit this. Highest-impact next investment for client-readiness.
+1. ~~**OCR pre-processing in Stage A document intake.**~~ **CLOSED 2026-05-08.** Resolved with Tesseract 5.5.0 (UB-Mannheim Windows installer) + pytesseract. Stage A's `_extract_pdf` now runs Tesseract on PDFs whose PyMuPDF-extracted word count is <50, returning OCR'd text per page. Document Intake UI shows `(OCR'd)` badge. Separately, `_make_text_layered_pdfs.py` produces text-layered PDFs (Tesseract `image_to_pdf_or_hocr` mode) so the annotator can anchor highlights on previously-image-only PDFs. Precision Aero validation: BOP/UMBRELLA/WC PEKIN went from 0 words → 9263/10595/3182 words; per-policy analyses went from 1.6 KB metadata stubs → 17 KB / 18 KB / 10 KB substantive; final synthesis ran 4 chunks → 144 findings. Cross-policy intel pass timed out at 158 KB prompt (compressed-findings list exceeded threshold); fallback to synthesis findings worked, matrix AI pass added 9 more on top. New deferred item #9 below.
 
 2. **Findings dashboard "E&O misclassified as Auto" pattern (Bogdan flagged).** When a single chunk holds both Auto and an E&O-related policy (or when the synthesis prompt's policy_type cues are ambiguous), some findings are emitted with `policy_file: AUTO.pdf` but the substantive content is E&O. Causes incorrect annotations on AUTO.pdf and confuses the dashboard's per-policy grouping. Likely fix: tighten the synthesis prompt to require `policy_file` to match the policy that actually carries the issue, plus a post-synthesis validator that cross-checks `policy_file` against `requirement_type` keyword and warns on mismatches.
 
@@ -115,6 +119,10 @@ If starting a new client:
 7. **`cache_read_input_tokens` in per-chunk metrics.** Stream-json mode now logs cache hit data to stderr per call but doesn't aggregate into `chunk_metrics.json`. Easy enhancement.
 
 8. **Multi-policy `policy_file` parsing in PDF annotator.** Findings with `policy_file: "BOP.pdf, UMBRELLA.pdf, WC PEKIN 24.pdf"` (comma-separated) are treated as a single non-existent filename. `annotate_all_policies` splits on `;` but not `,`. Pre-existing bug surfaced during today's Precision Aero annotator test. Trivial fix.
+
+9. **Cross-policy intel pass times out on programs with many findings.** With 135 synthesis findings × ~1 KB each compressed + 5 policy analyses, the cross-policy intel prompt hit 158 KB and timed out at 300 s. Fallback worked (kept synthesis findings, matrix AI pass added 9 more). Fix options: (a) compress findings more aggressively (drop full `gap_description`, summarize), (b) chunk the cross-policy pass over findings the way synthesis is chunked, (c) raise per-call timeout to 600s but accept higher latency. Lowest-risk: (a) — the cross-policy pass mainly needs `requirement_type`, `policy_file`, and brief gap text, not the full description.
+
+10. **Text-layered PDF generation is a one-shot script, not pipeline-integrated.** `_make_text_layered_pdfs.py` runs OCR + Tesseract `image_to_pdf_or_hocr` to bake a hidden text layer into scanned PDFs so the annotator can anchor highlights. Today this is a manual step run from the repo root. Next: integrate as an automatic Stage A side-effect (when an OCR'd extraction is taken, also write `<stem>-text-layered.pdf` next to the original, and have the annotator prefer the layered version when both exist) — keeps the original byte-identical while giving the annotator searchable text.
 
 ## Friday hardening commits
 

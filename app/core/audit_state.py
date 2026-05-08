@@ -249,13 +249,17 @@ def register_document(state: dict, filename: str, doc_type: str,
 
 
 def mark_extracted(state: dict, filename: str, doc_type: str,
-                   word_count: int) -> dict:
-    """Mark a document as extracted and store word count."""
+                   word_count: int, method: str = "pdf_text") -> dict:
+    """
+    Mark a document as extracted and store word count + extraction method.
+    method ∈ {"pdf_text", "ocr", "ocr_failed", "empty", "docx", "xlsx", "text"}.
+    """
     key = "contracts" if doc_type == "contract" else "policies"
     if filename in state.get(key, {}):
-        state[key][filename]["extracted"]    = True
-        state[key][filename]["word_count"]   = word_count
-        state[key][filename]["extracted_at"] = datetime.now().isoformat()
+        state[key][filename]["extracted"]         = True
+        state[key][filename]["word_count"]        = word_count
+        state[key][filename]["extraction_method"] = method
+        state[key][filename]["extracted_at"]      = datetime.now().isoformat()
     return state
 
 

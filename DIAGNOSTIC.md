@@ -1,8 +1,25 @@
 # OCR Pre-processing — Diagnostic & Next Steps
 
-**Date:** 2026-05-04
+**Date:** 2026-05-04 (history) → **RESOLVED 2026-05-08**
 **Context:** Attempt to add OCR pre-processing to Stage A document intake so scanned image-only PDFs (Precision Aero's BOP, UMBRELLA, WC PEKIN 24) get text-extracted instead of producing zero-word per-policy analyses.
-**Outcome:** Stopped — every install path attempted hit the same Windows DLL initialization failure. No OCR is available without admin-rights intervention or a cloud-API approach.
+
+## Resolution (2026-05-08)
+
+Bogdan installed Tesseract 5.5.0 via the official UB-Mannheim Windows installer (Option (b) from below). Pytesseract installed cleanly via pip. OCR pre-processing now lives in `app/core/pdf_extractor.py:_extract_pdf` (PyMuPDF first; falls back to Tesseract on PDFs with <50 total extracted words). Validated end-to-end on Precision Aero:
+
+| PDF | PyMuPDF words | OCR'd words | Per-policy analysis size |
+|---|---:|---:|---:|
+| BOP.pdf | 0 | 9,263 | 1.6 KB → 17 KB |
+| UMBRELLA.pdf | 0 | 10,595 | 1.6 KB → 18 KB |
+| WC PEKIN 24.pdf | 0 | 3,182 | 1.6 KB → 10 KB |
+
+Final audit shipped 144 findings (30U + 49B + 43R + 22G), up from 55 in the prior recovery run. All 5 marked-up PDFs generated (text-layered versions of the 3 scanned PDFs created via `_make_text_layered_pdfs.py` so the annotator can anchor highlights on the OCR'd text).
+
+The historical diagnostic remains below for reference.
+
+---
+
+**Outcome (historical, 2026-05-04):** Stopped — every install path attempted hit the same Windows DLL initialization failure. No OCR is available without admin-rights intervention or a cloud-API approach.
 
 ## What was tried
 

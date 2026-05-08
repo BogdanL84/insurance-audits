@@ -3,16 +3,25 @@ pdf_extractor.py — Extract text from documents for AI analysis.
 
 Supported types and how they're handled:
   PDF           → PyMuPDF, preserves page numbers
+                  ↳ OCR fallback (Tesseract) when PyMuPDF returns <50 words
+                    across all pages (i.e. a scanned image-only PDF)
   DOCX / DOC    → python-docx, includes table cells, ~3k chars per page
   TXT / MD      → read directly, split into ~3k-char pages
   XLSX / XLS    → openpyxl, extracts all cell values sheet by sheet
   PNG/JPG/JPEG  → NOT extracted — stored as reference files only
 
 Returns: {page_num (int): text (str)}  — all types, 1-indexed
+Use extract_with_info() to also receive {"method": "pdf_text"|"ocr"|"ocr_failed"|"empty", ...}.
 """
 
+import io
 import re
 from pathlib import Path
+
+# ── OCR config ─────────────────────────────────────────────────────
+_TESSERACT_PATH      = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+_OCR_THRESHOLD_WORDS = 50   # PyMuPDF total < this triggers OCR fallback
+_OCR_DPI             = 300  # rasterization DPI for scanned-page OCR
 
 # ── File type categories ───────────────────────────────────────────
 EXTRACTABLE_TYPES = {".pdf", ".docx", ".doc", ".xlsx", ".xls", ".txt", ".md"}
@@ -33,16 +42,30 @@ def extract(path: Path) -> dict:
     """
     Extract text from a document. Returns {page_num: text}.
     Raises ValueError for images (call is_image() first).
+
+    For OCR / extraction-method awareness, use extract_with_info().
+    """
+    return extract_with_info(path)[0]
+
+
+def extract_with_info(path: Path) -> tuple[dict, dict]:
+    """
+    Like extract(), but also returns an info dict:
+      {"method": "pdf_text" | "ocr" | "ocr_failed" | "empty"
+                | "docx" | "xlsx" | "text",
+       "pre_ocr_words": int (PDFs only, when method == 'ocr'),
+       "ocr_pages_succeeded": int (PDFs, when method in {ocr, ocr_failed}),
+       "ocr_pages_failed":    int (ditto)}
     """
     suffix = path.suffix.lower()
     if suffix == ".pdf":
         return _extract_pdf(path)
     elif suffix in (".docx", ".doc"):
-        return _extract_docx(path)
+        return _extract_docx(path), {"method": "docx"}
     elif suffix in (".xlsx", ".xls"):
-        return _extract_xlsx(path)
+        return _extract_xlsx(path), {"method": "xlsx"}
     elif suffix in (".txt", ".md"):
-        return _extract_text(path)
+        return _extract_text(path), {"method": "text"}
     elif suffix in IMAGE_TYPES:
         raise ValueError(
             f"{path.name} is an image file. Images are stored as reference files, "
@@ -56,7 +79,16 @@ def extract(path: Path) -> dict:
 
 
 # ── PDF ────────────────────────────────────────────────────────────
-def _extract_pdf(path: Path) -> dict:
+def _extract_pdf(path: Path) -> tuple[dict, dict]:
+    """
+    PyMuPDF extraction with OCR fallback for scanned image-only PDFs.
+
+    Returns (text_by_page, info). info["method"] is:
+      "pdf_text"   — PyMuPDF returned ≥ _OCR_THRESHOLD_WORDS total
+      "ocr"        — fell back to Tesseract, OCR succeeded on ≥1 page
+      "ocr_failed" — fell back to Tesseract, OCR returned no usable text
+      "empty"      — PDF has zero pages or zero extractable content of any kind
+    """
     try:
         import fitz
     except ImportError:
@@ -64,15 +96,87 @@ def _extract_pdf(path: Path) -> dict:
 
     result = {}
     doc = fitz.open(str(path))
+    page_count = len(doc)
     try:
-        for i in range(len(doc)):
+        for i in range(page_count):
             text = doc[i].get_text()
             text = re.sub(r"\n{3,}", "\n\n", text)
             text = re.sub(r" {2,}", " ", text)
             result[i + 1] = text.strip()
     finally:
         doc.close()
-    return result
+
+    if page_count == 0:
+        return {1: ""}, {"method": "empty"}
+
+    pre_ocr_words = sum(len(v.split()) for v in result.values())
+    if pre_ocr_words >= _OCR_THRESHOLD_WORDS:
+        return result, {"method": "pdf_text"}
+
+    # PyMuPDF couldn't get meaningful text — try OCR.
+    ocr_result, ocr_info = _ocr_pdf(path)
+    ocr_words = sum(len(v.split()) for v in ocr_result.values())
+
+    if ocr_words >= _OCR_THRESHOLD_WORDS:
+        info = {
+            "method":              "ocr",
+            "pre_ocr_words":       pre_ocr_words,
+            "ocr_pages_succeeded": ocr_info["pages_succeeded"],
+            "ocr_pages_failed":    ocr_info["pages_failed"],
+        }
+        return ocr_result, info
+
+    # OCR also produced nothing usable — return PyMuPDF's result so caller has
+    # the page-count shape but flag it as ocr_failed for the UI.
+    info = {
+        "method":              "ocr_failed",
+        "pre_ocr_words":       pre_ocr_words,
+        "ocr_pages_succeeded": ocr_info["pages_succeeded"],
+        "ocr_pages_failed":    ocr_info["pages_failed"],
+    }
+    return result, info
+
+
+# ── OCR helper ─────────────────────────────────────────────────────
+def _ocr_pdf(path: Path) -> tuple[dict, dict]:
+    """
+    Rasterize each page of a PDF at _OCR_DPI and run Tesseract on each image.
+    Returns ({page_num: text}, {"pages_succeeded": N, "pages_failed": N}).
+    Per-page failures are caught — one bad page never aborts the whole OCR pass.
+    """
+    import fitz
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        import pytesseract  # noqa: pulls pandas → noisy numpy 2.x ABI warnings
+    from PIL import Image
+
+    pytesseract.pytesseract.tesseract_cmd = _TESSERACT_PATH
+
+    result   = {}
+    succeeded = 0
+    failed    = 0
+    doc = fitz.open(str(path))
+    try:
+        for i in range(len(doc)):
+            page = doc[i]
+            try:
+                pix       = page.get_pixmap(dpi=_OCR_DPI)
+                img       = Image.open(io.BytesIO(pix.tobytes("png")))
+                text      = pytesseract.image_to_string(img)
+                text      = re.sub(r"\n{3,}", "\n\n", text)
+                text      = re.sub(r" {2,}", " ", text).strip()
+                result[i + 1] = text
+                if len(text.split()) >= 3:
+                    succeeded += 1
+                else:
+                    failed += 1
+            except Exception as e:
+                result[i + 1] = ""
+                failed += 1
+    finally:
+        doc.close()
+    return result, {"pages_succeeded": succeeded, "pages_failed": failed}
 
 
 # ── DOCX ───────────────────────────────────────────────────────────

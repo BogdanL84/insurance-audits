@@ -29,7 +29,7 @@ st.set_page_config(
 from config import MAX_PDF_MB, COLOR_GOOD, COLOR_BAD, COLOR_UGLY, COLOR_NAVY
 from core import audit_state as ast
 from core.pdf_extractor import (
-    extract, get_page_count, get_file_size_mb, format_size,
+    extract, extract_with_info, get_page_count, get_file_size_mb, format_size,
     get_word_count, save_extracted_text, is_image,
     EXTRACTABLE_TYPES, IMAGE_TYPES,
 )
@@ -332,16 +332,18 @@ def extract_doc(filename: str, source_dir: Path, category: str) -> tuple:
     if actual_mb > MAX_PDF_MB:
         return False, f"File too large: {actual_mb:.1f} MB (limit is {MAX_PDF_MB} MB). Consider splitting the PDF."
     try:
-        extracted = extract(source)
-        words     = get_word_count(extracted)
-        pages     = len(extracted)
-        out_path  = exchange_dir / f"{source.stem}-extracted.txt"
+        extracted, info = extract_with_info(source)
+        words           = get_word_count(extracted)
+        pages           = len(extracted)
+        method          = info.get("method", "pdf_text")
+        out_path        = exchange_dir / f"{source.stem}-extracted.txt"
         save_extracted_text(extracted, out_path)
-        doc_type  = "contract" if category == "contract" else "policy"
-        ast.mark_extracted(state, filename, doc_type, words)
+        doc_type        = "contract" if category == "contract" else "policy"
+        ast.mark_extracted(state, filename, doc_type, words, method)
         ast.refresh_stage(state)
         ast.save(client_path, state)
-        return True, f"{pages} pages · {words:,} words"
+        suffix = " (OCR'd)" if method == "ocr" else ""
+        return True, f"{pages} pages · {words:,} words{suffix}"
     except Exception as e:
         return False, str(e)
 
@@ -360,12 +362,13 @@ def get_tab_files(source_dir: Path, category: str) -> list:
             continue
         meta = state_docs.get(f.name, {})
         files.append({
-            "name":       f.name,
-            "path":       f,
-            "size_str":   format_size(f),
-            "page_count": meta.get("page_count", 0),
-            "extracted":  meta.get("extracted", False),
-            "word_count": meta.get("word_count", 0),
+            "name":              f.name,
+            "path":              f,
+            "size_str":          format_size(f),
+            "page_count":        meta.get("page_count", 0),
+            "extracted":         meta.get("extracted", False),
+            "word_count":        meta.get("word_count", 0),
+            "extraction_method": meta.get("extraction_method", "pdf_text"),
         })
     return files
 
@@ -407,7 +410,17 @@ def render_doc_card(f: dict, category: str, source_dir: Path, meta_fields_fn) ->
             if f.get("page_count"):
                 parts.append(f"{f['page_count']} pg")
             if f.get("word_count"):
-                parts.append(f"{f['word_count']:,} words")
+                _method = f.get("extraction_method", "pdf_text")
+                if _method == "ocr":
+                    parts.append(f"{f['word_count']:,} words (OCR'd)")
+                elif _method == "ocr_failed":
+                    parts.append(f"{f['word_count']:,} words — OCR failed")
+                elif _method == "empty":
+                    parts.append("0 words — extraction failed")
+                else:
+                    parts.append(f"{f['word_count']:,} words (PDF text)")
+            elif f.get("extracted"):
+                parts.append("0 words — extraction failed")
             st.caption("  ·  ".join(parts))
         with status_col:
             if f["extracted"]:
