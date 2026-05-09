@@ -109,9 +109,78 @@ HALLUCINATION_PATTERNS = [
 
 SINGLE_POLICY_PROGRAM_RE = re.compile(r"single-?policy program", re.I)
 
+# ── Multi-policy "not provided in audit" check ─────────────────────
+# The HALLUCINATION_PATTERNS above match against requirement_type only —
+# they catch single-source hallucinations whose title carries the canonical
+# "Not Provided" / "Missing Policy" phrasing. Some chunks emit the same
+# "X policy was not provided" claim in the BODY of a finding whose title
+# is a generic coverage-confirmation question (e.g. "Hired & Non-Owned
+# Auto — Coverage Confirmation" with body "A Pekin Commercial Auto policy
+# at $1M CSL ... was not provided in this audit batch"). This per-sentence
+# scan catches those: a sentence in gap_description must contain BOTH a
+# "<policy noun> ... not provided/supplied/included in (this) audit/batch"
+# phrase AND the referenced policy must actually be in the program
+# inventory. Per-sentence (vs whole-text) matching avoids false positives
+# where unrelated mentions of "not provided" and a policy name happen to
+# land in the same long description.
+
+_NOT_PROVIDED_PHRASE = re.compile(
+    r"\b(?:was|were|is|are)?\s*"
+    r"not\s+(?:provided|supplied|included)"
+    r"(?:\s+(?:in|to|for))?\s*"
+    r"(?:this\s+)?(?:audit|batch|review|engagement)",
+    re.I,
+)
+
+# Policy-reference patterns → coverage flag. Names that the model uses
+# when referencing a missing policy in body text. Distinct from the
+# policy_file flag set so we can distinguish e.g. "Auto policy" (claim)
+# from "policy_file = AUTO.pdf" (where the finding is anchored).
+_POLICY_REF_PATTERNS = [
+    (re.compile(r"\b(?:Commercial\s+)?Auto\s+policy\b", re.I),               "AUTO"),
+    (re.compile(r"\b(?:Pekin|Hanover|Travelers|Hartford|Chubb|CNA|"
+                r"Cincinnati|Liberty|Zurich|Nationwide|AmTrust|Berkley|"
+                r"Markel|Cincinnati|FCCI|Selective|Westfield|Auto-Owners)"
+                r"\s+Commercial\s+Auto\b", re.I),                            "AUTO"),
+    (re.compile(r"\bWorkers'?\s*Comp(?:ensation)?\s+policy\b", re.I),        "WC"),
+    (re.compile(r"\bWC\s+policy\b", re.I),                                   "WC"),
+    (re.compile(r"\bUmbrella\s+policy\b", re.I),                             "UMBRELLA"),
+    (re.compile(r"\bExcess\s+(?:Liability\s+)?policy\b", re.I),              "UMBRELLA"),
+    (re.compile(r"\bBOP\s+policy\b", re.I),                                  "BOP"),
+    (re.compile(r"\bProperty\s+policy\b", re.I),                             "PROPERTY"),
+    (re.compile(r"\b(?:General\s+Liability|CGL)\s+policy\b", re.I),          "GL"),
+    (re.compile(r"\bGL\s+policy\b", re.I),                                   "GL"),
+    (re.compile(r"\bEPLI\s+policy\b", re.I),                                 "EPLI"),
+    (re.compile(r"\bCyber\s+policy\b", re.I),                                "CYBER"),
+]
+
+
+def _multi_policy_not_provided(finding: dict, program_has: set):
+    """Return (flag, sentence) when gap_description claims a policy is
+    missing AND that policy is in the program. Per-sentence scan."""
+    gd = finding.get("gap_description") or ""
+    if not gd:
+        return None, None
+    # BOP coverage_part check: BOP isn't normally in program_has by name
+    # because we flag GL/PROPERTY/IM/EBL separately. If the claim names
+    # "BOP policy" specifically and we have GL or PROPERTY, treat that
+    # as the BOP being present.
+    program_has_with_bop = set(program_has)
+    if "GL" in program_has or "PROPERTY" in program_has:
+        program_has_with_bop.add("BOP")
+    for sentence in re.split(r"(?<=[.!?])\s+", gd):
+        if not _NOT_PROVIDED_PHRASE.search(sentence):
+            continue
+        for pat, flag in _POLICY_REF_PATTERNS:
+            if pat.search(sentence) and flag in program_has_with_bop:
+                return flag, sentence
+    return None, None
+
 
 def _is_hallucination(finding: dict, program_has: set, n_policies: int):
-    """Return (drop, reason). Match against requirement_type ONLY."""
+    """Return (drop, reason). Match against requirement_type first; if no
+    title-based pattern fires, fall through to the multi-policy
+    gap_description scan."""
     rt = (finding.get("requirement_type") or "")
 
     if SINGLE_POLICY_PROGRAM_RE.search(rt) and n_policies > 1:
@@ -122,7 +191,29 @@ def _is_hallucination(finding: dict, program_has: set, n_policies: int):
             if flag in program_has:
                 return True, f"claims-{flag}-missing-but-program-has-{flag}"
             return False, None
+
+    # Title didn't match a hallucination pattern — check the body for
+    # the multi-policy "X policy not provided" variant.
+    flag, _sentence = _multi_policy_not_provided(finding, program_has)
+    if flag:
+        return True, f"gap-description-claims-{flag}-not-provided-but-in-program"
+
     return False, None
+
+
+# ── Drop-record helper (audit trail) ───────────────────────────────
+def drop_record(finding: dict, reason: str) -> dict:
+    """Convert a (finding, reason) drop tuple into a serializable record
+    for persistence in audit-state.json:state['filter_drops']."""
+    from datetime import datetime
+    return {
+        "id":               finding.get("id"),
+        "policy_file":      finding.get("policy_file"),
+        "requirement_type": finding.get("requirement_type"),
+        "category":         finding.get("category"),
+        "reason":           reason,
+        "ts":               datetime.now().isoformat(timespec="seconds"),
+    }
 
 
 # ── Public entry point: hallucination filter ───────────────────────

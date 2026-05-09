@@ -38,6 +38,7 @@ from core.findings_filter import (
     dedupe_program_findings,
     correct_carrier_mentions,
     build_program_inventory,
+    drop_record,
 )
 
 
@@ -75,6 +76,8 @@ def main(slug: str = "precision-aero") -> None:
         print(f"  - id={f.get('id', '?')}  pf={f.get('policy_file') or '<empty>'!r}")
         print(f"    rt: {(f.get('requirement_type') or '')[:80]}")
         print(f"    reason: {reason}")
+    # Persistent audit-trail records (state['filter_drops'] in Pass 5)
+    drop_records = [drop_record(f, reason) for f, reason in dropped]
 
     # Pass 2: program-level dedup
     kept, merged = dedupe_program_findings(kept)
@@ -110,11 +113,15 @@ def main(slug: str = "precision-aero") -> None:
     tmp.replace(findings_path)
     print(f"\nWrote filtered findings.json ({len(kept)} findings).")
 
-    # Update audit-state.json
+    # Update audit-state.json — findings + filter_drops audit trail
     state = ast.load(client)
     state["findings"] = kept
+    if drop_records:
+        state.setdefault("filter_drops", []).extend(drop_records)
     ast.save(client, state)
-    print("Updated audit-state.json findings field.")
+    print(f"Updated audit-state.json findings field "
+          f"and appended {len(drop_records)} filter_drops record"
+          f"{'s' if len(drop_records) != 1 else ''}.")
 
 
 if __name__ == "__main__":
