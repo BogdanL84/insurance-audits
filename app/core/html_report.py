@@ -26,11 +26,11 @@ from pathlib import Path
 # Order policies appear in the report. Anything not listed here renders
 # alphabetically at the end.
 DEFAULT_POLICY_ORDER = [
+    "AUTO.pdf",
     "BOP.pdf",
     "UMBRELLA.pdf",
-    "WC PEKIN 24.pdf",
-    "AUTO.pdf",
     "USLI EPLI.pdf",
+    "WC PEKIN 24.pdf",
 ]
 
 CAT_TO_CLASS = {
@@ -215,7 +215,24 @@ def _policy_meta_dl(pa: dict) -> str:
     return f'<dl class="policy-meta">{"".join(rows)}</dl>'
 
 
-def _policy_section(pdf_name: str, findings: list, pa: dict) -> str:
+def _section_header_html(section_num: str, title: str, subtitle: str = "") -> str:
+    """Reference-style header: mono uppercase 'Section 0N' + DM Serif title +
+    2px ink underline. Optional subtitle paragraph beneath."""
+    sub = (
+        f'<p class="section-subtitle">{html.escape(subtitle)}</p>'
+        if subtitle else ""
+    )
+    return (
+        '<header class="section-header">'
+        f'<div class="section-num">Section {html.escape(section_num)}</div>'
+        f'<h2 class="section-title">{title}</h2>'
+        f'{sub}'
+        '</header>'
+    )
+
+
+def _policy_section(pdf_name: str, findings: list, pa: dict,
+                    section_num: str, section_id: str) -> str:
     grouped = _grouped_by_category(findings)
     blocks_html = "".join(
         _severity_block(
@@ -231,23 +248,24 @@ def _policy_section(pdf_name: str, findings: list, pa: dict) -> str:
     )
 
     if not blocks_html.strip():
-        return ""  # nothing to show
+        return ""
 
-    title_suffix = pa.get("policy_type") or ""
+    # Section title combines pdf filename + carrier + policy_type when available.
     carrier      = pa.get("carrier") or ""
+    title_suffix = pa.get("policy_type") or ""
     if carrier and title_suffix:
-        h2 = f"{html.escape(pdf_name)} — {html.escape(carrier)} {html.escape(title_suffix)}"
+        title = f"{html.escape(pdf_name)} <span class='section-title-suffix'>· {html.escape(carrier)} {html.escape(title_suffix)}</span>"
     elif carrier:
-        h2 = f"{html.escape(pdf_name)} — {html.escape(carrier)}"
+        title = f"{html.escape(pdf_name)} <span class='section-title-suffix'>· {html.escape(carrier)}</span>"
     else:
-        h2 = html.escape(pdf_name)
+        title = html.escape(pdf_name)
 
     meta_dl = _policy_meta_dl(pa)
 
     return f"""\
-  <section class="policy">
+  <section class="section policy" id="{section_id}">
+    {_section_header_html(section_num, title)}
     <div class="policy-header">
-      <h2>{h2}</h2>
       {meta_dl}
     </div>
 {blocks_html}
@@ -255,7 +273,7 @@ def _policy_section(pdf_name: str, findings: list, pa: dict) -> str:
 """
 
 
-def _program_section(findings: list) -> str:
+def _program_section(findings: list, section_num: str = "02") -> str:
     grouped = _grouped_by_category(findings)
     blocks_html = "".join(
         _severity_block(
@@ -271,158 +289,597 @@ def _program_section(findings: list) -> str:
     )
     if not blocks_html.strip():
         return ""
+    subtitle = (
+        "Issues that span the program — missing coverage types, cross-policy "
+        "entity gaps, named-insured inconsistencies — and items not anchored "
+        "to a specific policy."
+    )
     return f"""\
-  <section class="policy program-level">
-    <div class="policy-header">
-      <h2>Program-Level Findings</h2>
-      <div class="program-subtitle">
-        Issues that span the program — missing coverage types, cross-policy entity
-        gaps, named-insured inconsistencies — and items not anchored to a specific policy.
-      </div>
-    </div>
+  <section class="section policy program-level" id="program">
+    {_section_header_html(section_num, "Program-Level Findings", subtitle)}
 {blocks_html}
   </section>
 """
 
 
 # ── CSS (inline, single source of truth) ──────────────────────────
+# Stages 1+2 of redesign port (2026-05-08): design tokens + sidebar +
+# cover hero + section structure lifted from Risk_Treasury_Blueprint_v5.html.
+# Light theme on warm off-white (paper-warm body, white cards), dark sidebar
+# + dark cover hero providing architectural contrast. DM Sans / DM Serif
+# Display / JetBrains Mono typography. Severity stoplight colors retained
+# for severity tagging only — they don't drive the document palette.
+# Stage 3 (finding-card re-skin + prominent page citation) is the next
+# checkpoint.
 _CSS = """
 :root {
-  --bg:           #1a1a1a;
-  --bg-card:      #232323;
-  --bg-card-soft: #2a2a2a;
-  --text:         #e8e8e8;
-  --text-muted:   #9a9a9a;
-  --border:       #333;
-  --accent:       #6db1ff;
-  --ugly:         #ff4d4d;
-  --bad:          #ff9933;
-  --review:       #ffd966;
-  --good:         #5fdb7d;
+  /* Sidebar + cover — unchanged from light/dark transition */
+  --ink:           #0a0f1a;
+  --ink-soft:      #1f2937;
+  /* Main canvas (now dark, slightly warmer than ink so sidebar reads as a separate plane) */
+  --paper:         #14191f;
+  --paper-warm:    #1a1f26;
+  --card:          #1c222b;
+  --card-soft:     #232a35;
+  /* Text */
+  --text:          #e8e4d8;
+  --text-strong:   #f4f0e6;
+  --muted:         #8a9099;
+  --muted-dark:    #6b7280;
+  /* Borders — subtle dark-on-dark */
+  --border:        #2a323d;
+  --border-strong: #3a4451;
+  /* Accents */
+  --accent:        #5fbb91;
+  --accent-dark:   #3d9970;
+  --warm:          #e8a06b;
+  --teal:          #5eead4;          /* sidebar only — do not bleed into main */
+  --conf-red:      #ff7370;
+  /* Severity — financial-dashboard stoplight, no bg washes */
+  --sev-ugly:      #f25c5c;
+  --sev-bad:       #f5a368;
+  --sev-review:    #ecc94b;
+  --sev-good:      #5fbb91;
 }
-* { box-sizing: border-box; }
-html, body {
-  margin: 0; padding: 0;
-  background: var(--bg);
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.6;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
-.page { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem 6rem; }
 
-/* Document header */
-.doc-header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
-.doc-header h1 { margin: 0 0 0.25rem; font-size: 28px; color: var(--accent); letter-spacing: -0.01em; }
-.doc-header .subtitle { color: var(--text-muted); font-size: 15px; }
-.doc-header .totals { display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1.25rem; }
-.doc-header .multi-note { color: var(--text-muted); font-size: 13px; margin-top: 0.85rem; line-height: 1.5; }
-.totals .pill { padding: 0.4rem 0.85rem; border-radius: 999px; font-weight: 600; font-size: 14px; background: var(--bg-card); border: 1px solid var(--border); }
-.totals .pill.ugly  { color: var(--ugly);   border-color: rgba(255, 77, 77, 0.4); }
-.totals .pill.bad   { color: var(--bad);    border-color: rgba(255,153, 51, 0.4); }
-.totals .pill.review{ color: var(--review); border-color: rgba(255,217,102, 0.45); }
-.totals .pill.good  { color: var(--good);   border-color: rgba(95,219,125, 0.4); }
+/* ── Sidebar TOC (fixed left, dark) ─────────────────────────────── */
+.toc {
+  position: fixed;
+  top: 0; left: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--ink);
+  color: var(--text);
+  padding: 2.5rem 1.5rem 2rem;
+  overflow-y: auto;
+  z-index: 100;
+  border-right: 1px solid var(--ink-soft);
+}
+.toc-brand {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.7rem;
+  color: var(--text-strong);
+  line-height: 1.05;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+.toc-version {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 2.2rem;
+}
+.toc-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--ink-soft);
+}
+.toc-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+.toc-list li { margin: 0; padding: 0; }
+.toc-list a {
+  display: block;
+  padding: 0.55rem 0.7rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border-radius: 4px;
+  transition: all 0.15s;
+}
+.toc-list a:hover {
+  background: var(--ink-soft);
+  color: var(--teal);
+  padding-left: 1rem;
+}
+.toc-list a.active {
+  background: var(--ink-soft);
+  color: var(--teal);
+}
+.toc-list .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--teal);
+  margin-right: 0.6rem;
+  font-weight: 500;
+}
+.toc-list .toc-counts {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
+.toc-foot {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ink-soft);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  color: #6b7280;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.confidential-on-dark {
+  color: #ff6b67;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
-/* Table of contents */
-.toc { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 2.5rem; }
-.toc h3 { margin: 0 0 0.5rem; font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); font-weight: 700; }
-.toc ul { margin: 0; padding-left: 1.2rem; }
-.toc li { margin: 0.2rem 0; font-size: 15px; }
-.toc a { color: var(--accent); text-decoration: none; }
-.toc a:hover { text-decoration: underline; }
-.toc .toc-counts { color: var(--text-muted); font-size: 13px; margin-left: 0.5rem; }
+.main { margin-left: 280px; }
 
-/* Policy section */
-.policy { margin-top: 2.5rem; scroll-margin-top: 1rem; }
-.policy.program-level { margin-top: 1rem; }
-.policy-header { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
-.policy-header h2 { margin: 0 0 0.5rem; font-size: 22px; color: var(--accent); }
-.policy-header .program-subtitle { color: var(--text-muted); font-size: 14px; line-height: 1.55; }
-.policy-meta { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.25rem; color: var(--text-muted); font-size: 14px; margin: 0.75rem 0 0; }
-.policy-meta dt { color: var(--text-muted); }
+/* ── Cover hero (full 100vh, dark, teal accent) ─────────────────── */
+.cover {
+  min-height: 100vh;
+  background: var(--ink);
+  color: var(--text);
+  padding: 6rem 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: -10%; right: -10%;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(94,234,210,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  opacity: 0.3;
+}
+.cover-confidential-banner {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid #ff6b67;
+  padding: 0.65rem 1.1rem;
+  margin-bottom: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  background: rgba(200, 48, 44, 0.08);
+  border-radius: 4px;
+  align-self: flex-start;
+  width: max-content;
+}
+.cover-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+.cover h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(3rem, 6.5vw, 5.5rem);
+  line-height: 1.02;
+  color: var(--text-strong);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+.cover .subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #94a3b8;
+  max-width: 56ch;
+  line-height: 1.55;
+  margin-bottom: 3.5rem;
+  position: relative;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.cover-meta {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 3rem;
+  position: relative;
+}
+.cover-meta-item .meta-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.cover-meta-item .meta-value {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--text-strong);
+  line-height: 1.1;
+}
+
+/* ── Section (numbered, with header) ──────────────────────────── */
+.section {
+  padding: 5rem 5rem 5rem;
+  max-width: 1200px;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-of-type { border-bottom: none; }
+.section-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--text-strong);
+}
+.section-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  color: var(--text-strong);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.section-title-suffix {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.55em;
+  color: var(--muted);
+  letter-spacing: 0;
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
+.section-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.55;
+  margin-top: 0.85rem;
+  max-width: 75ch;
+}
+
+/* ── Bignum cards (executive summary 4-up row) ──────────────────── */
+.bignum {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.4rem;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+.bignum.warm   { color: var(--warm); }
+.bignum.ugly   { color: var(--sev-ugly); }
+.bignum.muted  { color: var(--text-strong); }
+.bignum-card {
+  text-align: left;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+}
+.bignum-card .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Grids ──────────────────────────────────────────────────────── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 1.5rem 0; }
+
+/* ── Callouts ───────────────────────────────────────────────────── */
+.callout {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+}
+.callout.warm { border-left-color: var(--warm); }
+.callout.ugly { border-left-color: var(--sev-ugly); }
+.callout p { color: var(--text); margin: 0 0 0.6rem; max-width: none; font-size: 1rem; line-height: 1.55; }
+.callout p:last-child { margin-bottom: 0; }
+.callout strong { color: var(--text-strong); font-weight: 700; }
+.callout .tag {
+  display: inline-block;
+  padding: 0.2em 0.65em;
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  background: transparent;
+  border: 1px solid currentColor;
+}
+.callout .tag.ugly { color: var(--sev-ugly); }
+.callout .tag.warm { color: var(--warm); }
+.callout .tag.bad  { color: var(--sev-bad); }
+.callout .tag.good { color: var(--sev-good); }
+.callout .tag.review { color: var(--sev-review); }
+
+/* ── Tables (severity-by-policy + others) ───────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  background: var(--card);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+thead { background: var(--ink); }
+th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-strong);
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+th.right, td.right   { text-align: right; }
+th.center, td.center { text-align: center; }
+td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+tr:last-child td { border-bottom: none; }
+tr.highlight td { background: var(--card-soft); font-weight: 600; color: var(--accent); }
+td.sev-ugly   { color: var(--sev-ugly);   font-weight: 700; }
+td.sev-bad    { color: var(--sev-bad);    font-weight: 700; }
+td.sev-review { color: var(--sev-review); font-weight: 700; }
+td.sev-good   { color: var(--sev-good);   font-weight: 700; }
+
+/* ── Policy header card (sits inside each policy section) ───────── */
+.policy-header {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.policy-header h2 {
+  margin: 0 0 0.6rem;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  color: var(--text-strong);
+  letter-spacing: -0.01em;
+}
+.policy-header .program-subtitle {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 72ch;
+}
+.policy-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45rem 1.5rem;
+  font-size: 0.95rem;
+  margin: 0.85rem 0 0;
+}
+.policy-meta dt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 0.15rem;
+}
 .policy-meta dd { color: var(--text); margin: 0; }
 
 /* Severity subsection */
-.severity-block { margin-top: 1.5rem; }
-.severity-block h3 { margin: 0 0 0.75rem; font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
-.severity-block.ugly h3   { color: var(--ugly); }
-.severity-block.bad h3    { color: var(--bad); }
-.severity-block.review h3 { color: var(--review); }
-.severity-block.good h3   { color: var(--good); }
-.severity-block h3 .count { color: var(--text-muted); font-weight: 500; font-size: 14px; margin-left: 0.4rem; letter-spacing: 0; }
+.severity-block { margin-top: 1.75rem; }
+.severity-block h3 {
+  margin: 0 0 0.85rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.severity-block.ugly h3   { color: var(--sev-ugly); }
+.severity-block.bad h3    { color: var(--sev-bad); }
+.severity-block.review h3 { color: var(--sev-review); }
+.severity-block.good h3   { color: var(--sev-good); }
+.severity-block h3 .count {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  margin-left: 0.5rem;
+  color: var(--muted);
+}
 
-/* Finding card */
-.finding { background: var(--bg-card); border: 1px solid var(--border); border-left-width: 4px; border-radius: 6px; padding: 1rem 1.25rem; margin-bottom: 0.85rem; }
-.finding.ugly   { border-left-color: var(--ugly); }
-.finding.bad    { border-left-color: var(--bad); }
-.finding.review { border-left-color: var(--review); }
-.finding.good   { border-left-color: var(--good); }
-.finding-title { font-weight: 600; font-size: 17px; margin: 0 0 0.35rem; color: var(--text); }
-.finding-meta { color: var(--text-muted); font-size: 13px; margin-bottom: 0.75rem; }
-.finding-meta .risk { display: inline-block; margin-left: 0.6rem; padding: 1px 8px; border-radius: 4px; background: var(--bg-card-soft); color: var(--text); font-weight: 600; }
-.finding-meta .risk.ugly   { color: var(--ugly); }
-.finding-meta .risk.bad    { color: var(--bad); }
-.finding-meta .risk.review { color: var(--review); }
-.finding-meta .shared-note { color: var(--accent); }
-.finding-meta .page-missing { color: var(--text-muted); font-style: italic; }
-.finding-body { color: var(--text); font-size: 15px; line-height: 1.65; }
-.finding-body p { margin: 0 0 0.6rem; }
+/* Finding card — base shell from reference .card pattern, severity left border */
+.finding {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left-width: 3px;
+  border-radius: 6px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 0.85rem;
+}
+.finding.ugly   { border-left-color: var(--sev-ugly); }
+.finding.bad    { border-left-color: var(--sev-bad); }
+.finding.review { border-left-color: var(--sev-review); }
+.finding.good   { border-left-color: var(--sev-good); }
+.finding-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0 0 0.4rem;
+  color: var(--text-strong);
+  letter-spacing: -0.005em;
+}
+.finding-meta {
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.7rem;
+}
+.finding-meta .risk {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-weight: 600;
+}
+.finding-meta .risk.ugly   { color: var(--sev-ugly);   border-color: var(--sev-ugly); }
+.finding-meta .risk.bad    { color: var(--sev-bad);    border-color: var(--sev-bad); }
+.finding-meta .risk.review { color: var(--sev-review); border-color: var(--sev-review); }
+.finding-meta .shared-note {
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.finding-meta .page-missing {
+  color: var(--muted);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.finding-body {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.finding-body p { margin: 0 0 0.6rem; max-width: 75ch; }
 .finding-body p:last-child { margin-bottom: 0; }
-.finding-body .finding-empty { color: var(--text-muted); font-style: italic; }
-.finding-recommendation { margin-top: 0.85rem; padding-top: 0.85rem; border-top: 1px solid var(--border); font-size: 14px; color: var(--text-muted); }
-.finding-recommendation strong { color: var(--accent); font-weight: 600; }
-.finding-recommendation p { margin: 0 0 0.4rem; color: var(--text-muted); }
+.finding-body strong { color: var(--text-strong); font-weight: 600; }
+.finding-body .finding-empty { color: var(--muted); font-style: italic; }
+.finding-recommendation {
+  margin-top: 0.95rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.finding-recommendation strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+.finding-recommendation p {
+  margin: 0 0 0.4rem;
+  color: var(--text);
+  max-width: 75ch;
+}
 .finding-recommendation p:first-of-type { display: inline; }
 
-/* Print stylesheet — flips to ink-friendly white background */
-@media print {
-  html, body { background: white; color: black; }
-  .doc-header h1, .policy-header h2, .toc a { color: #000; }
-  .finding, .policy-header, .toc { background: white; border-color: #ccc; }
-  .finding-meta, .policy-meta dt, .doc-header .subtitle, .toc .toc-counts,
-  .policy-header .program-subtitle, .finding-recommendation, .finding-body .finding-empty
-    { color: #555; }
-  .severity-block.ugly h3   { color: #b00020; }
-  .severity-block.bad h3    { color: #c75300; }
-  .severity-block.review h3 { color: #8a6a00; }
-  .severity-block.good h3   { color: #1f7a3d; }
-  .totals .pill { background: white; }
-  .totals .pill.ugly   { color: #b00020; }
-  .totals .pill.bad    { color: #c75300; }
-  .totals .pill.review { color: #8a6a00; }
-  .totals .pill.good   { color: #1f7a3d; }
+/* ── Responsive (mobile/narrow) ──────────────────────────────── */
+@media (max-width: 900px) {
+  .toc { display: none; }
+  .main { margin-left: 0; }
+  .section { padding: 3rem 1.5rem; }
+  .cover { padding: 4rem 1.5rem 3rem; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .cover-meta { grid-template-columns: 1fr; gap: 1.5rem; }
+  table { font-size: 0.85rem; }
+  th, td { padding: 0.55rem 0.7rem; }
+  .cover h1 { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+  .section-title { font-size: clamp(1.8rem, 5vw, 2.4rem); }
 }
-"""
 
-
-def _toc_html(program_count: int, policy_sections: list[tuple[str, int, dict]]) -> str:
-    """policy_sections is a list of (pdf_name, finding_count, by_cat_counts)."""
-    items = []
-    if program_count:
-        items.append(
-            f'<li><a href="#program">Program-Level Findings</a>'
-            f'<span class="toc-counts">({program_count})</span></li>'
-        )
-    for pdf_name, n, by_cat in policy_sections:
-        slug = _anchor_slug(pdf_name)
-        breakdown_parts = []
-        for c in CAT_ORDER:
-            v = by_cat.get(c, 0)
-            if v:
-                breakdown_parts.append(f"{v} {c}")
-        breakdown = (" · ".join(breakdown_parts)) if breakdown_parts else "no findings"
-        items.append(
-            f'<li><a href="#{slug}">{html.escape(pdf_name)}</a>'
-            f'<span class="toc-counts">({n} — {breakdown})</span></li>'
-        )
-    if not items:
-        return ""
-    return f"""\
-  <nav class="toc">
-    <h3>Sections</h3>
-    <ul>{"".join(items)}</ul>
-  </nav>
+/* ── Print stylesheet — drop sidebar, white bg, page-break aware ─ */
+@media print {
+  .toc { display: none; }
+  .main { margin-left: 0; }
+  html, body { background: white; color: black; }
+  .cover {
+    background: white; color: black;
+    min-height: auto; padding: 3rem 2rem;
+    page-break-after: always;
+  }
+  .cover h1, .cover .cover-meta-item .meta-value, .cover .subtitle { color: black; }
+  .cover-tag, .cover-meta-item .meta-label { color: #555; }
+  .cover::before, .cover::after { display: none; }
+  .cover-confidential-banner { color: #c8302c; border-color: #c8302c; }
+  .section { padding: 2rem; page-break-inside: avoid; }
+  .section-header { page-break-after: avoid; border-bottom-color: #000; }
+  .section-title, .policy-header h2, .finding-title { color: #000; }
+  .finding, .policy-header, .callout, .bignum-card, table { page-break-inside: avoid; }
+  .finding, .policy-header, .bignum-card, table { background: white; border-color: #ccc; }
+  .finding-body, .finding-meta, .policy-meta dt, .finding-recommendation,
+  .finding-recommendation strong, .finding-body strong, .policy-meta dd,
+  td, .section-subtitle, .toc, .toc * { color: #222; }
+  thead { background: #000; }
+  th { color: white; }
+  tr.highlight td { background: #f1ede4; color: #000; }
+  .severity-block h3, .policy-header h2, .finding-title { page-break-after: avoid; }
+  .severity-block.ugly h3, td.sev-ugly, .finding-meta .risk.ugly,
+  .callout.ugly, .callout .tag.ugly, .bignum.ugly        { color: #b00020; }
+  .severity-block.bad h3, td.sev-bad, .finding-meta .risk.bad,
+  .callout .tag.bad, .bignum.warm                        { color: #c75300; }
+  .severity-block.review h3, td.sev-review, .finding-meta .risk.review,
+  .callout .tag.review                                   { color: #8a6a00; }
+  .severity-block.good h3, td.sev-good,
+  .callout .tag.good, .bignum                            { color: #1f7a3d; }
+  .finding.ugly  { border-left-color: #b00020; }
+  .finding.bad   { border-left-color: #c75300; }
+  .finding.review{ border-left-color: #8a6a00; }
+  .finding.good  { border-left-color: #1f7a3d; }
+  .finding-meta .risk { border-color: currentColor; background: white; }
+}
 """
 
 
@@ -430,6 +887,261 @@ def _anchor_slug(pdf_name: str) -> str:
     s = pdf_name.lower()
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s or "policy"
+
+
+def _toc_sidebar_html(
+    display_name: str,
+    audit_date: str,
+    toc_entries: list,  # list of (section_num, anchor_id, label, count)
+) -> str:
+    """Fixed-left dark sidebar. toc_entries are tuples of
+    (section_num, anchor_id, label, finding_count_or_None)."""
+    items = []
+    for num, anchor, label, n in toc_entries:
+        cnt_html = (
+            f'<span class="toc-counts">({n})</span>'
+            if isinstance(n, int) and n > 0 else ""
+        )
+        items.append(
+            f'<li><a href="#{anchor}">'
+            f'<span class="num">{html.escape(num)}</span>'
+            f'{html.escape(label)}{cnt_html}'
+            f'</a></li>'
+        )
+    return f"""\
+<nav class="toc">
+  <div class="toc-brand">Insurance Audit</div>
+  <div class="toc-version">
+    {html.escape(display_name).upper()} ·
+    <span class="confidential-on-dark">Confidential</span>
+  </div>
+  <div class="toc-label">Contents</div>
+  <ul class="toc-list">
+{''.join(items)}
+  </ul>
+  <div class="toc-foot">
+    Property of Bogdan Laza, CLCS<br>
+    For discussion only<br>
+    Not for distribution
+  </div>
+</nav>
+"""
+
+
+def _carrier_brand(carrier: str) -> str:
+    """Extract a brand token from a long carrier string. Mirrors
+    findings_filter._carrier_brand_token but kept local to avoid the
+    cross-module import from a renderer."""
+    if not carrier:
+        return ""
+    s = re.sub(
+        r"\b(Insurance|Ins\.?|Company|Co\.?|Group|Mutual|Corp(?:oration)?|"
+        r"Limited|Ltd\.?)\b",
+        "", carrier, flags=re.I,
+    )
+    tokens = [t for t in re.split(r"[\s,/()]+", s) if t and len(t) > 1]
+    return tokens[0] if tokens else carrier.split()[0]
+
+
+def _count_unique_carriers(policy_analyses: list) -> int:
+    seen = set()
+    for pa in policy_analyses or []:
+        b = _carrier_brand(pa.get("carrier") or "")
+        if b:
+            seen.add(b.lower())
+    return len(seen)
+
+
+def _cover_hero_html(
+    display_name: str,
+    audit_date: str,
+    n_findings: int,
+    n_critical: int,
+    n_policies: int,
+    n_carriers: int,
+) -> str:
+    """Full-screen dark hero with confidential banner, mono tag, big
+    serif title, narrative subtitle, and 3-up meta grid."""
+    audit_date_pretty = _format_audit_date(audit_date)
+    subtitle = (
+        f"An audit of the firm's commercial insurance program — "
+        f"{n_policies} {'policy' if n_policies == 1 else 'policies'} across "
+        f"{n_carriers} {'carrier' if n_carriers == 1 else 'carriers'}, "
+        f"identifying {n_findings} findings and {n_critical} critical "
+        f"{'exposure' if n_critical == 1 else 'exposures'}."
+    )
+    return f"""
+<section id="cover" class="cover">
+  <div class="cover-confidential-banner">
+    <span class="confidential-on-dark">Confidential</span> ·
+    For {html.escape(display_name)} leadership only
+  </div>
+  <div class="cover-tag">Insurance Program Audit · {html.escape(audit_date_pretty.upper())}</div>
+  <h1>{html.escape(display_name)}</h1>
+  <p class="subtitle">{html.escape(subtitle)}</p>
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <div class="meta-label">Client</div>
+      <div class="meta-value">{html.escape(display_name)}</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="meta-label">Audit Date</div>
+      <div class="meta-value">{html.escape(audit_date_pretty)}</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="meta-label">Prepared By</div>
+      <div class="meta-value">Bogdan Laza, CLCS</div>
+    </div>
+  </div>
+</section>
+"""
+
+
+def _format_audit_date(iso_or_str: str) -> str:
+    """ISO date → 'May 8, 2026'. Returns input unchanged on parse failure."""
+    if not iso_or_str:
+        return ""
+    try:
+        dt = datetime.strptime(iso_or_str[:10], "%Y-%m-%d")
+        return dt.strftime("%b %-d, %Y") if hasattr(dt, "strftime") else iso_or_str
+    except (ValueError, TypeError):
+        return iso_or_str
+    except Exception:
+        return iso_or_str
+
+
+def _severity_by_policy_table_html(
+    policy_rows: list,  # list of (pdf_name, carrier_short, U, B, R, G, total)
+    program_row: tuple | None,
+    grand_totals: tuple,
+) -> str:
+    """Dark-thead severity-by-policy table for the executive summary.
+    program_row optional. grand_totals = (U, B, R, G, total)."""
+    rows = []
+    for pdf_name, carrier, U, B, R, G, total in policy_rows:
+        rows.append(
+            f"<tr>"
+            f"<td><strong>{html.escape(pdf_name)}</strong></td>"
+            f"<td>{html.escape(carrier)}</td>"
+            f"<td class='center sev-ugly'>{U}</td>"
+            f"<td class='center sev-bad'>{B}</td>"
+            f"<td class='center sev-review'>{R}</td>"
+            f"<td class='center sev-good'>{G}</td>"
+            f"<td class='right'><strong>{total}</strong></td>"
+            f"</tr>"
+        )
+    if program_row:
+        _, _, U, B, R, G, total = program_row
+        rows.append(
+            f"<tr>"
+            f"<td><strong>Program-level</strong></td>"
+            f"<td>—</td>"
+            f"<td class='center sev-ugly'>{U}</td>"
+            f"<td class='center sev-bad'>{B}</td>"
+            f"<td class='center sev-review'>{R}</td>"
+            f"<td class='center sev-good'>{G}</td>"
+            f"<td class='right'><strong>{total}</strong></td>"
+            f"</tr>"
+        )
+    gU, gB, gR, gG, gT = grand_totals
+    rows.append(
+        f"<tr class='highlight'>"
+        f"<td colspan='2'><strong>Total</strong></td>"
+        f"<td class='center'><strong>{gU}</strong></td>"
+        f"<td class='center'><strong>{gB}</strong></td>"
+        f"<td class='center'><strong>{gR}</strong></td>"
+        f"<td class='center'><strong>{gG}</strong></td>"
+        f"<td class='right'><strong>{gT}</strong></td>"
+        f"</tr>"
+    )
+    return f"""
+<table>
+  <thead>
+    <tr>
+      <th>Policy</th>
+      <th>Carrier</th>
+      <th class="center">Ugly</th>
+      <th class="center">Bad</th>
+      <th class="center">Review</th>
+      <th class="center">Good</th>
+      <th class="right">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+{''.join(rows)}
+  </tbody>
+</table>
+"""
+
+
+def _top_critical_callouts_html(top_findings: list) -> str:
+    """Render top 3 Ugly findings as .callout.warm blocks."""
+    out = []
+    for f in top_findings:
+        rt   = html.escape(f.get("requirement_type") or "(untitled)")
+        rs   = f.get("risk_score")
+        risk_str = f"Risk {rs}/25" if rs else ""
+        # Pull a tight summary from gap_description (first 1-2 sentences)
+        gd = (f.get("gap_description") or "").strip()
+        summary = re.split(r"(?<=[.!?])\s+", gd)
+        head = " ".join(summary[:2])[:600]
+        head_escaped = html.escape(head)
+        risk_pill = (
+            f'<span class="tag warm">Ugly{(" · " + risk_str) if risk_str else ""}</span>'
+        )
+        out.append(
+            f'<div class="callout warm">'
+            f'<p>{risk_pill}<strong>{rt}</strong></p>'
+            f'<p>{head_escaped}</p>'
+            f'</div>'
+        )
+    return "\n".join(out)
+
+
+def _executive_summary_html(
+    section_num: str,
+    n_findings: int,
+    n_critical: int,
+    n_policies: int,
+    n_carriers: int,
+    severity_table_html: str,
+    top_critical_html: str,
+    narrative: str,
+) -> str:
+    return f"""
+<section id="exec" class="section">
+  {_section_header_html(section_num, "Executive Summary")}
+
+  <p style="font-size:1.05rem; color:var(--text); line-height:1.65; max-width:75ch;">
+    {narrative}
+  </p>
+
+  <div class="grid-4">
+    <div class="bignum-card">
+      <div class="label">Findings</div>
+      <div class="bignum">{n_findings}</div>
+    </div>
+    <div class="bignum-card">
+      <div class="label">Critical (Ugly)</div>
+      <div class="bignum ugly">{n_critical}</div>
+    </div>
+    <div class="bignum-card">
+      <div class="label">Policies</div>
+      <div class="bignum muted">{n_policies}</div>
+    </div>
+    <div class="bignum-card">
+      <div class="label">Carriers</div>
+      <div class="bignum warm">{n_carriers}</div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin:2.5rem 0 0.5rem;">Severity by Policy</h3>
+  {severity_table_html}
+
+  <h3 style="font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); margin:2.5rem 0 0.5rem;">Top Critical Exposures</h3>
+  {top_critical_html}
+</section>
+"""
 
 
 # ── Public entry ──────────────────────────────────────────────────
@@ -472,53 +1184,155 @@ def render_audit_report(state: dict, policy_analyses: list, slug: str = "") -> s
         if c in {"Ugly", "Bad", "Review", "Good"}:
             counts[c] += 1
 
-    # Build TOC entries with breakdown
-    toc_policy_entries = []
+    # ── Section numbering ─────────────────────────────────────
+    # 00 Cover, 01 Executive Summary, 02 Program-Level, 03+ per policy
+    n_policies   = len(policy_names_ordered)
+    n_carriers   = _count_unique_carriers(policy_analyses)
+
+    # Build TOC entries: (section_num, anchor_id, label, finding_count_or_None)
+    toc_entries = [
+        ("00", "cover", "Cover", None),
+        ("01", "exec",  "Executive Summary", None),
+    ]
+    next_num = 2
+    if program_findings:
+        toc_entries.append((f"{next_num:02}", "program",
+                            "Program-Level", len(program_findings)))
+        program_section_num = f"{next_num:02}"
+        next_num += 1
+    else:
+        program_section_num = None
+
+    policy_section_nums: dict[str, str] = {}
+    for n in policy_names_ordered:
+        num = f"{next_num:02}"
+        policy_section_nums[n] = num
+        toc_entries.append((
+            num,
+            _anchor_slug(n),
+            n.replace(".pdf", "").replace(" PEKIN 24", ""),
+            len(by_policy[n]),
+        ))
+        next_num += 1
+
+    # ── Build per-policy severity rows for the exec-summary table ──
+    policy_rows = []
     for n in policy_names_ordered:
         pf_findings = by_policy[n]
         by_cat = Counter(_category_of(f) for f in pf_findings)
-        toc_policy_entries.append((n, len(pf_findings), dict(by_cat)))
-
-    # Build sections
-    sections = []
-    if program_findings:
-        sections.append(_program_section(program_findings).replace(
-            '<section class="policy program-level">',
-            '<section class="policy program-level" id="program">'
+        carrier = (pa_lookup.get(n, {}).get("carrier") or "")
+        carrier_short = _carrier_brand(carrier) or "—"
+        # Map to display name (strip .pdf, drop " PEKIN 24" tail for display)
+        disp = n.replace(".pdf", "").replace(" PEKIN 24", "")
+        policy_rows.append((
+            disp, carrier_short,
+            by_cat.get("Ugly", 0),
+            by_cat.get("Bad", 0),
+            by_cat.get("Review", 0),
+            by_cat.get("Good", 0),
+            len(pf_findings),
         ))
-    for n in policy_names_ordered:
-        pa = pa_lookup.get(n) or {}
-        section = _policy_section(n, by_policy[n], pa)
-        if section:
-            section = section.replace(
-                '<section class="policy">',
-                f'<section class="policy" id="{_anchor_slug(n)}">'
-            )
-            sections.append(section)
 
-    sections_html = "".join(sections)
-    toc_html      = _toc_html(len(program_findings), toc_policy_entries)
+    program_row = None
+    if program_findings:
+        by_cat = Counter(_category_of(f) for f in program_findings)
+        program_row = (
+            "Program-level", "—",
+            by_cat.get("Ugly", 0),
+            by_cat.get("Bad", 0),
+            by_cat.get("Review", 0),
+            by_cat.get("Good", 0),
+            len(program_findings),
+        )
 
-    n_policies = len(policy_names_ordered)
-    pill_total = (
-        f'<span class="pill">{len(findings)} unique findings · '
-        f'{n_policies} {"policy" if n_policies == 1 else "policies"}</span>'
+    grand_totals = (
+        counts.get("Ugly", 0),
+        counts.get("Bad", 0),
+        counts.get("Review", 0),
+        counts.get("Good", 0),
+        len(findings),
     )
 
-    # Multi-policy findings are rendered once per affected policy section so
-    # each policy's review is self-contained. Disclose this so totals don't
-    # confuse the reader (header counts unique findings; section card counts
-    # may exceed unique counts for multi-policy items).
+    # ── Top 3 Ugly findings by risk_score ──────────────────────
+    top3 = sorted(
+        [f for f in findings if (f.get("category") or "") == "Ugly"],
+        key=lambda f: -(f.get("risk_score") or 0),
+    )[:3]
+
+    # ── Narrative paragraph for exec summary ───────────────────
+    n_critical = grand_totals[0]
+    n_bad      = grand_totals[1]
+    narrative = html.escape(
+        f"This audit identified {len(findings)} findings across "
+        f"{n_policies} {'policy' if n_policies == 1 else 'policies'} "
+        f"({n_carriers} {'carrier' if n_carriers == 1 else 'carriers'}). "
+        f"Of those, {n_critical} are critical exposures with material "
+        f"claim-denial risk, {n_bad} are gaps that need attention but are "
+        f"not catastrophic, and the remainder are confirm-with-carrier "
+        f"items or coverage already in place."
+    )
+
+    # ── Build all section HTML ─────────────────────────────────
+    cover_html = _cover_hero_html(
+        display_name, audit_date,
+        len(findings), n_critical, n_policies, n_carriers,
+    )
+
+    severity_table_html  = _severity_by_policy_table_html(
+        policy_rows, program_row, grand_totals
+    )
+    top_critical_html    = _top_critical_callouts_html(top3)
+    exec_summary_html    = _executive_summary_html(
+        "01", len(findings), n_critical, n_policies, n_carriers,
+        severity_table_html, top_critical_html, narrative,
+    )
+
+    program_html = (
+        _program_section(program_findings, section_num=program_section_num)
+        if program_findings and program_section_num else ""
+    )
+
+    policy_section_htmls = []
+    for name in policy_names_ordered:
+        pa = pa_lookup.get(name) or {}
+        sec = _policy_section(
+            name, by_policy[name], pa,
+            section_num=policy_section_nums[name],
+            section_id=_anchor_slug(name),
+        )
+        if sec:
+            policy_section_htmls.append(sec)
+
+    sidebar_html = _toc_sidebar_html(display_name, audit_date, toc_entries)
+
+    # Multi-policy disclosure note (rendered as a small line under exec summary)
     n_multi = sum(
         1 for f in findings
         if len(_split_policy_file(f.get("policy_file") or "")) > 1
     )
-    multi_note_html = (
-        f'<div class="multi-note">{n_multi} finding{"s" if n_multi != 1 else ""} '
-        f"affect multiple policies and appear in each affected section "
-        f'(annotated <span class="shared-note">Shared with…</span>).</div>'
-        if n_multi else ""
-    )
+    # Suppressed in this rebuild — exec summary's totals row already discloses
+    # what the rendered section card counts will look like. If we want to
+    # surface the multi-policy explanation later, drop a `.section-subtitle`
+    # under the exec section header.
+
+    # ── IntersectionObserver for active-section highlighting ───
+    ix_script = """
+<script>
+(function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        document.querySelectorAll('.toc-list a').forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+  document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+})();
+</script>
+"""
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -526,31 +1340,18 @@ def render_audit_report(state: dict, policy_analyses: list, slug: str = "") -> s
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insurance Audit — {html.escape(display_name)}</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>{_CSS}</style>
 </head>
 <body>
-<div class="page">
-
-  <header class="doc-header">
-    <h1>Insurance Program Audit — {html.escape(display_name)}</h1>
-    <div class="subtitle">
-      Prepared by Bogdan Laza, CLCS · Patriot Growth Insurance Services ·
-      Audit date {html.escape(audit_date)}
-    </div>
-    <div class="totals">
-      <span class="pill ugly">{counts.get('Ugly', 0)} Ugly</span>
-      <span class="pill bad">{counts.get('Bad', 0)} Bad</span>
-      <span class="pill review">{counts.get('Review', 0)} Needs Review</span>
-      <span class="pill good">{counts.get('Good', 0)} Good</span>
-      {pill_total}
-    </div>
-    {multi_note_html}
-  </header>
-
-{toc_html}
-{sections_html}
-
-</div>
+{sidebar_html}
+<main class="main">
+{cover_html}
+{exec_summary_html}
+{program_html}
+{''.join(policy_section_htmls)}
+</main>
+{ix_script}
 </body>
 </html>
 """
