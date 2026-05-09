@@ -100,14 +100,61 @@ def _risk_badge_html(f: dict) -> str:
     )
 
 
+def _render_page_citation(policy_page) -> str:
+    """Render the policy_page citation as a mono pill, or a muted placeholder
+    when the value is missing / non-citation prose. Verbatim — no
+    normalization or reformatting.
+
+    Rules:
+      - None / empty / 'N/A' / 'unknown' / 'none' / 'null' (case-insensitive)
+        → muted placeholder
+      - Contains zero digits (e.g. 'Information Page schedule', 'Not visible',
+        'Throughout the policy') → muted placeholder
+      - Otherwise render the original string verbatim, HTML-escaped
+    """
+    if not policy_page:
+        return ('<span class="page-citation page-missing">'
+                'page reference not captured</span>')
+    s = str(policy_page).strip()
+    if not s or s.lower() in {"n/a", "unknown", "none", "null"}:
+        return ('<span class="page-citation page-missing">'
+                'page reference not captured</span>')
+    if not re.search(r"\d", s):
+        return ('<span class="page-citation page-missing">'
+                'page reference not captured</span>')
+    return f'<span class="page-citation">{html.escape(s)}</span>'
+
+
+# Display labels for severity tags rendered in the finding-head row.
+_SEVERITY_LABEL = {
+    "Ugly":         "Ugly",
+    "Bad":          "Bad",
+    "Review":       "Needs Review",
+    "Needs Review": "Needs Review",
+    "Good":         "Good",
+}
+
+
 def _finding_html(f: dict, current_policy: str | None = None) -> str:
+    cat       = (f.get("category") or "").strip()
     cat_class = _category_class(f)
+    cat_label = _SEVERITY_LABEL.get(cat, cat or "—")
     title     = html.escape((f.get("requirement_type") or "(untitled finding)").strip())
-    page      = html.escape((f.get("policy_page") or "").strip())
     gd        = (f.get("gap_description") or f.get("description") or "").strip()
     rec       = (f.get("recommendation") or "").strip()
     pf        = (f.get("policy_file") or "").strip()
 
+    # ── finding-head: severity tag + page citation, side-by-side ───
+    severity_tag = (
+        f'<span class="tag {cat_class}">{html.escape(cat_label)}</span>'
+        if cat_class else ""
+    )
+    page_citation_html = _render_page_citation(f.get("policy_page"))
+    head_html = (
+        f'<div class="finding-head">{severity_tag}{page_citation_html}</div>'
+    )
+
+    # ── finding-meta: risk score + shared-with note (suppress if empty) ─
     multi_note = ""
     if current_policy:
         pieces = _split_policy_file(pf)
@@ -118,21 +165,12 @@ def _finding_html(f: dict, current_policy: str | None = None) -> str:
                 f'{html.escape(", ".join(others))}</span>'
             )
 
-    risk_badge = _risk_badge_html(f)
-
-    # Always render the meta line for visual consistency. When no page
-    # reference was captured, surface that explicitly rather than omitting
-    # the line — every finding card should have the same vertical structure.
-    page_html = (
-        page if page
-        else '<span class="page-missing">Page reference not captured</span>'
+    risk_badge  = _risk_badge_html(f)
+    meta_pieces = [p for p in (risk_badge, multi_note) if p]
+    meta_html   = (
+        f'<div class="finding-meta">{" · ".join(meta_pieces)}</div>'
+        if meta_pieces else ""
     )
-    meta_pieces = [page_html]
-    if multi_note:
-        meta_pieces.append(multi_note)
-    if risk_badge:
-        meta_pieces.append(risk_badge)
-    meta_html = f'<div class="finding-meta">{" · ".join(meta_pieces)}</div>'
 
     body_html = _escape_paragraphs(gd) if gd else (
         '<p class="finding-empty">No detail provided in source data.</p>'
@@ -149,7 +187,8 @@ def _finding_html(f: dict, current_policy: str | None = None) -> str:
 
     return f"""\
       <article class="finding {cat_class}">
-        <div class="finding-title">{title}</div>
+        {head_html}
+        <h4 class="finding-title">{title}</h4>
         {meta_html}
         <div class="finding-body">
 {body_html}
@@ -759,6 +798,58 @@ td.sev-good   { color: var(--sev-good);   font-weight: 700; }
 .finding.bad    { border-left-color: var(--sev-bad); }
 .finding.review { border-left-color: var(--sev-review); }
 .finding.good   { border-left-color: var(--sev-good); }
+
+/* finding-head: severity tag + page citation, side-by-side at the top
+   of the card. Wraps to two lines on narrow viewports. */
+.finding-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+.finding-head .tag {
+  display: inline-block;
+  padding: 0.2em 0.65em;
+  border-radius: 100px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid currentColor;
+}
+.finding-head .tag.ugly   { color: var(--sev-ugly); }
+.finding-head .tag.bad    { color: var(--sev-bad); }
+.finding-head .tag.review { color: var(--sev-review); }
+.finding-head .tag.good   { color: var(--sev-good); }
+
+/* Page citation pill — mono uppercase chip, prominent next to severity tag.
+   Subtle warm-grey fill against card so it reads as a sibling pill of the
+   severity tag without competing on color. */
+.page-citation {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-strong);
+  background: var(--paper-warm);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+}
+.page-citation.page-missing {
+  color: var(--muted);
+  background: transparent;
+  border-color: transparent;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: none;
+  padding-left: 0;
+}
+
 .finding-title {
   font-family: 'DM Serif Display', serif;
   font-size: 1.2rem;
@@ -790,12 +881,6 @@ td.sev-good   { color: var(--sev-good);   font-weight: 700; }
 .finding-meta .risk.review { color: var(--sev-review); border-color: var(--sev-review); }
 .finding-meta .shared-note {
   color: var(--accent);
-  text-transform: none;
-  letter-spacing: 0;
-}
-.finding-meta .page-missing {
-  color: var(--muted);
-  font-style: italic;
   text-transform: none;
   letter-spacing: 0;
 }
