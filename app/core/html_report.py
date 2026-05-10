@@ -597,11 +597,12 @@ body {
   font-weight: 600;
 }
 .section-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  line-height: 1.08;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 3.6vw, 2.8rem);
+  line-height: 1.15;
   color: var(--text-strong);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
   margin: 0;
 }
 .section-title-suffix {
@@ -733,11 +734,12 @@ td.sev-good   { color: var(--sev-good);   font-weight: 700; }
 }
 .policy-header h2 {
   margin: 0 0 0.6rem;
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.7rem;
-  line-height: 1.15;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
   color: var(--text-strong);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
 }
 .policy-header .program-subtitle {
   color: var(--text);
@@ -851,12 +853,13 @@ td.sev-good   { color: var(--sev-good);   font-weight: 700; }
 }
 
 .finding-title {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.35;
   margin: 0 0 0.4rem;
   color: var(--text-strong);
-  letter-spacing: -0.005em;
+  letter-spacing: 0;
 }
 .finding-meta {
   color: var(--muted);
