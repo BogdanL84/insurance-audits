@@ -1632,6 +1632,40 @@ INSTRUCTIONS:
   - "Good"  = policy meets or exceeds the requirement. Credit where it's due.
   - "Bad"   = gap, limitation, or problematic exclusion — needs attention but not catastrophic.
   - "Ugly"  = critical: policy expressly excludes something the contract requires, or a serious uninsured exposure that could sink the business.
+- CONCRETE CARRIER-CONTROLLED MID-TERM CHANGES → Bad, not Needs Review.
+
+  Provisions where the carrier reserves the right to change premium,
+  rates, charges, or coverage terms mid-policy without the insured's
+  consent are concrete policy mechanics — not "confirm with carrier"
+  items. Their downside is observable directly in the policy text;
+  the only uncertainty is when (not whether) the trigger fires.
+
+  Examples (not exhaustive):
+    * "Pending Rate Change" endorsements (e.g. WC 00 04 04 in NCCI
+      WC forms, or carrier-specific equivalents) that permit the
+      carrier to adjust premium mid-term once a state-approved rate
+      filing takes effect.
+    * Audit Noncompliance Charge endorsements that levy penalties
+      (typically 2x premium) based on undisclosed payroll or other
+      misreporting.
+    * Any clause reserving carrier discretion to change coverage
+      terms, rates, deductibles, or charges mid-policy without the
+      insured's consent.
+
+  Future-contingent triggers do NOT make these Needs Review. The
+  model has historically misclassified Pending Rate Change as
+  "needs verification" because the trigger (state filing approval)
+  hasn't fired yet. That reasoning is wrong: the provision itself
+  is in the policy and its mechanism is observable. Classify Bad.
+
+  Typical scoring:
+    * Severity 3 — premium movement, not coverage failure.
+    * Likelihood depends on trigger frequency:
+        - State rate changes: likelihood 3 (common in active filing
+          environments).
+        - Audit noncompliance: likelihood 1-2 (rare unless insured
+          misreports).
+        - Carrier-discretion coverage changes: likelihood 2.
 - For Bad and Ugly findings only: score Likelihood (1-5) and Severity (1-5).
   - Likelihood: how likely this gap causes a real claim or coverage denial given this client's operations.
   - Severity: 1=<$10k, 2=$10k-$50k, 3=$50k-$250k, 4=$250k-$1M, 5=>$1M or business-threatening.
