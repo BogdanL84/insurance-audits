@@ -1606,6 +1606,28 @@ INSTRUCTIONS:
     * No EPLI → flag employment practices exposure
     * No Crime/Fidelity → flag employee theft and funds transfer exposure
     * Auto HNOA gap → flag hired & non-owned auto exposure
+- DO NOT EMIT META-FINDINGS ABOUT THE AUDIT PROCESS ITSELF.
+
+  Forbidden meta-findings — these describe the audit's input scope, not
+  the policy's substantive content, and have no place in the findings
+  list:
+    * "The contract requirements file was empty / not provided"
+    * "Audit Scope Limitation — Contract Requirements Not Loaded"
+    * "No loss runs were supplied for this audit"
+    * "Renewal Certificate provided instead of full policy form"
+    * Any finding whose subject is the audit's input scope rather than
+      the policy's content.
+
+  When CONTRACT REQUIREMENTS above is empty (requirements: []), treat
+  the audit as policy-only. Emit findings about the policy itself; do
+  not flag the absence of contracts as a finding. Policy-only scope is
+  conveyed in audit metadata and the report cover page, not in the
+  findings list.
+
+  When policy text is partial (e.g., a renewal certificate excerpt
+  rather than the full form), it's appropriate to emit Needs Review
+  findings on SUBSTANTIVE points that can't be confirmed from the
+  partial text — but the partial text itself is not a finding.
 - Categorize each finding:
   - "Good"  = policy meets or exceeds the requirement. Credit where it's due.
   - "Bad"   = gap, limitation, or problematic exclusion — needs attention but not catastrophic.
