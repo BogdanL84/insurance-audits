@@ -267,8 +267,14 @@ def run_chunked_synthesis(
         "requirements":  requirements_data.get("requirements") or [],
     }
 
-    # Estimate the all-policies prompt size to decide single-call vs chunked
-    all_prompt = build_crossref_prompt(client_notes, slug, synthesis_reqs, policy_analyses)
+    # Estimate the all-policies prompt size to decide single-call vs chunked.
+    # The single-call path implicitly has the full program in policy_analyses
+    # (chunk == program), so full_program_inventory is the same list — pass
+    # it explicitly so the inventory block renders identically in both paths.
+    all_prompt = build_crossref_prompt(
+        client_notes, slug, synthesis_reqs, policy_analyses,
+        full_program_inventory=policy_analyses,
+    )
     all_size = len(all_prompt)
 
     metadata = {
@@ -329,7 +335,13 @@ def run_chunked_synthesis(
                 f"Synthesizing chunk {idx}/{n_chunks} ({chunk_name})...",
                 (idx - 1) / n_chunks,
             )
-        prompt = build_crossref_prompt(client_notes, slug, synthesis_reqs, chunk_policies)
+        # Pass the FULL program inventory (not just the chunk's subset) so
+        # the model can ground "missing coverage" reasoning in the whole
+        # program, not just what's in front of it. Item 11 / 2026-05-09.
+        prompt = build_crossref_prompt(
+            client_notes, slug, synthesis_reqs, chunk_policies,
+            full_program_inventory=policy_analyses,
+        )
         t0 = time.time()
         ok, result = run_claude(prompt, timeout=timeout)
         elapsed = time.time() - t0

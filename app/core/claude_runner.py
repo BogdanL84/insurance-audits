@@ -1416,15 +1416,51 @@ CHUNK ANALYSES TO MERGE:
     )
 
 
+def _format_program_inventory_block(policies: list) -> str:
+    """Format the medium-detail PROGRAM INVENTORY lines. Robust to
+    missing fields — emits whatever's available per policy."""
+    if not policies:
+        return "  (no policies in program)"
+    lines = []
+    for pa in policies:
+        sf = pa.get("source_file") or pa.get("_source_file") or "UNKNOWN.pdf"
+        # Strip any path components, keep just the filename
+        from os.path import basename
+        sf = basename(sf)
+        pt = (pa.get("policy_type") or "").strip()
+        cps = pa.get("coverage_parts") or []
+        if isinstance(cps, str):
+            cps = [cps]
+        cps = [str(c).strip() for c in cps if c]
+        line = f"  - {sf}"
+        if pt:
+            line += f" — {pt}"
+        lines.append(line)
+        if cps:
+            lines.append(f"    Coverages: {', '.join(cps)}")
+    return "\n".join(lines)
+
+
 def build_crossref_prompt(
     client_notes: str,
     client_slug: str,
     requirements_json: dict,
     policy_analyses: list,
+    full_program_inventory: list | None = None,
 ) -> str:
-    """Build the cross-reference prompt to generate final audit findings."""
+    """Build the cross-reference prompt to generate final audit findings.
+
+    full_program_inventory: when set, lists the full client program
+    (all policies, not just the chunk subset). Used by the chunked
+    synthesis caller to give the model ground truth about what
+    coverages exist program-wide so it doesn't hallucinate "X is
+    missing" based on its limited per-chunk view. When None, the
+    function uses policy_analyses itself as the inventory (single-call
+    path — chunk and program are the same set)."""
     req_str = json.dumps(requirements_json, indent=2)
     pol_str = json.dumps(policy_analyses, indent=2)
+    inventory_policies = full_program_inventory if full_program_inventory is not None else policy_analyses
+    inventory_block = _format_program_inventory_block(inventory_policies)
     return (
         _methodology_header()
         + _CRITICAL_THINKING_BLOCK
@@ -1435,6 +1471,48 @@ CLIENT CONTEXT:
 {client_notes}
 
 CLIENT SLUG: {client_slug}
+
+PROGRAM INVENTORY (full client program)
+
+All policies in this client's commercial insurance program. When deciding
+whether a coverage type is missing from the program, treat this list as
+ground truth. A coverage type that appears below IS in the program — it
+may simply not be analyzed in this chunk.
+
+{inventory_block}
+
+Rule: Do NOT emit findings of the form "X policy is missing", "Program
+Gap — No X", "Missing Coverage — X", "Coverage X Not in Audit Scope",
+or any equivalent phrasing when X appears in the PROGRAM INVENTORY
+above. The PROGRAM INVENTORY is the authoritative answer to "what
+coverages does this client have"; the per-chunk POLICY ANALYSES below
+is only the subset being analyzed in detail right now.
+
+Findings about gaps in the PROGRAM INVENTORY ARE legitimate when the
+coverage type is genuinely absent (e.g. if no Cyber policy appears in
+the inventory, a "Program Gap — No Cyber" finding is correct). The rule
+only blocks false-negative emissions where the model reasons from
+chunk-level visibility instead of program-level inventory.
+
+IMPORTANT — this rule is a guardrail, not a suppression of all program-
+gap findings. You MUST still emit "Program Gap — No X" findings for
+coverages genuinely absent from the inventory. Specifically check the
+inventory for each of these standard commercial coverages and emit a
+Program Gap finding if absent:
+  - Cyber Liability
+  - Crime / Fidelity (including social engineering)
+  - Pollution / Environmental
+  - Professional Liability / E&O (separate from EPLI — note that an
+    EPLI-only policy does NOT satisfy the Professional Liability or
+    D&O coverage requirements; check coverage_parts on any Management
+    Liability policy to confirm what's actually inside)
+  - Products Liability (when manufacturer / aerospace operations)
+  - Directors & Officers (separate from EPLI per above)
+  - Stop Gap (when monopolistic-state operations may apply)
+  - Standalone Umbrella (when only primary policies are listed)
+
+The inventory rule prevents false claims about coverages that DO exist;
+it does NOT excuse you from auditing what's genuinely missing.
 
 CONTRACT REQUIREMENTS:
 {req_str}
