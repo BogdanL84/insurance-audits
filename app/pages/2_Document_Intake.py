@@ -39,10 +39,7 @@ from core.claude_runner import (
     build_policy_chunk_prompt, build_policy_merge_prompt,
     chunk_text, ANALYSIS_TIMEOUT, RATE_LIMIT_DELAY,
 )
-from utils import (
-    render_sidebar, require_client, render_progress_bar,
-    inject_css, render_breadcrumb,
-)
+from utils import render_sidebar, require_client, render_stepper, inject_css
 
 inject_css()
 render_sidebar()
@@ -66,12 +63,31 @@ if st.session_state.get("just_created"):
     name = st.session_state.pop("just_created")
     st.success(f"**{name}** created. Upload their documents below.")
 
-# ── Page header ────────────────────────────────────────────────────
-render_breadcrumb(display_name, "Document Intake")
-st.title("Document Intake")
-st.caption(f"**{display_name}**")
-render_progress_bar(state.get("stage", "docs_uploaded"), active_step=1)
-st.divider()
+
+# ── Page hero ──────────────────────────────────────────────────────
+col_hero, col_continue = st.columns([8, 2])
+with col_hero:
+    st.markdown(
+        f'<div class="page-hero">'
+        f'<h1 class="page-hero-title">Document Intake</h1>'
+        f'<p class="page-hero-sub">{display_name} &middot; '
+        f'Upload policies, contracts, and supporting docs</p>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+with col_continue:
+    st.write("")
+    if st.button(
+        "Continue to Analyze →",
+        key="di_continue",
+        type="primary",
+        use_container_width=True,
+    ):
+        st.switch_page("pages/_Analyze.py")
+
+
+# ── Stepper: Upload is step 2 ──────────────────────────────────────
+render_stepper(2)
 
 # ══════════════════════════════════════════════════════════════════
 #  CONSTANTS
@@ -385,9 +401,39 @@ def save_doc_meta(filename: str, updates: dict) -> None:
     ast.save(client_path, state)
 
 
+_FILE_ICON_CLS = {
+    ".pdf":  ("",     "PDF"),
+    ".docx": ("docx", "DOCX"),
+    ".doc":  ("docx", "DOC"),
+    ".xlsx": ("xlsx", "XLSX"),
+    ".xls":  ("xlsx", "XLS"),
+    ".txt":  ("txt",  "TXT"),
+    ".md":   ("txt",  "MD"),
+}
+
+
+def _status_pills_html(f: dict, category: str) -> str:
+    """Render the 1-2 status pills for a file row.
+    States: pending, extracted, analyzed, failed."""
+    if not f["extracted"]:
+        return '<span class="file-row-status pending">Pending</span>'
+
+    pills = ['<span class="file-row-status extracted">Extracted</span>']
+    if category == "policy":
+        failed_pol = state.get("failed_policies") or []
+        anal_file  = _analysis_json_path(f["name"])
+        if f["name"] in failed_pol and not anal_file.exists():
+            pills.append('<span class="file-row-status failed">Failed</span>')
+        elif anal_file.exists():
+            pills.append('<span class="file-row-status analyzed">Analyzed</span>')
+        else:
+            pills.append('<span class="file-row-status pending">Pending</span>')
+    return " ".join(pills)
+
+
 def render_doc_card(f: dict, category: str, source_dir: Path, meta_fields_fn) -> None:
     fk = _fkey(f["name"])
-    with st.container(border=True):
+    with st.container(key=f"file_row_{fk}", border=True):
         # Full-width error banner (analysis failure persisted across rerun)
         _anal_err_key = f"anal_error_{fk}"
         if _anal_err_key in st.session_state:
@@ -397,57 +443,44 @@ def render_doc_card(f: dict, category: str, source_dir: Path, meta_fields_fn) ->
         # Timer placeholder shown above the row during analysis
         _timer_ph = st.empty()
 
-        # Policy cards with extracted text get an extra button column
-        _is_pol_extracted = (category == "policy" and f["extracted"])
-        name_col, meta_col, status_col, btn_col = st.columns(
-            [4, 2, 2, 3] if _is_pol_extracted else [4, 2, 2, 1]
+        # File-row layout (Day-2 restyle): icon + name/meta + status pills + button
+        ext_cls, ext_label = _FILE_ICON_CLS.get(
+            Path(f["name"]).suffix.lower(), ("", "FILE"),
         )
-        with name_col:
-            st.markdown(f"{file_icon(f['name'])} **{f['name']}**",
-                        unsafe_allow_html=True)
-        with meta_col:
-            parts = [f["size_str"]]
+
+        _is_pol_extracted = (category == "policy" and f["extracted"])
+        col_icon, col_text, col_status, btn_col = st.columns(
+            [0.5, 4.5, 2, 2.2] if _is_pol_extracted else [0.5, 4.5, 2, 1],
+        )
+        with col_icon:
+            st.markdown(
+                f'<div class="file-row-icon {ext_cls}">{ext_label}</div>',
+                unsafe_allow_html=True,
+            )
+        with col_text:
+            meta_parts = [f["size_str"]]
             if f.get("page_count"):
-                parts.append(f"{f['page_count']} pg")
+                meta_parts.append(f"{f['page_count']} pg")
             if f.get("word_count"):
                 _method = f.get("extraction_method", "pdf_text")
                 if _method == "ocr":
-                    parts.append(f"{f['word_count']:,} words (OCR'd)")
+                    meta_parts.append(f"{f['word_count']:,} words (OCR'd)")
                 elif _method == "ocr_failed":
-                    parts.append(f"{f['word_count']:,} words — OCR failed")
+                    meta_parts.append(f"{f['word_count']:,} words — OCR failed")
                 elif _method == "empty":
-                    parts.append("0 words — extraction failed")
+                    meta_parts.append("0 words — extraction failed")
                 else:
-                    parts.append(f"{f['word_count']:,} words (PDF text)")
+                    meta_parts.append(f"{f['word_count']:,} words (PDF text)")
             elif f.get("extracted"):
-                parts.append("0 words — extraction failed")
-            st.caption("  ·  ".join(parts))
-        with status_col:
-            if f["extracted"]:
-                st.markdown(
-                    f"<span style='color:{COLOR_GOOD};font-weight:600;font-size:0.875rem'>"
-                    "&#10003; Extracted</span>", unsafe_allow_html=True)
-                if category == "policy":
-                    _failed_pol = state.get("failed_policies") or []
-                    _anal_file  = _analysis_json_path(f["name"])
-                    _dur = state.get("documents", {}).get(f["name"], {}).get("analysis_duration")
-                    if f["name"] in _failed_pol and not _anal_file.exists():
-                        st.markdown(
-                            f"<span style='color:{COLOR_UGLY};font-size:0.8rem'>"
-                            "&#10007; Failed</span>", unsafe_allow_html=True)
-                    elif _anal_file.exists():
-                        _dur_str = f" in {_fmt_elapsed(_dur)}" if _dur else ""
-                        st.markdown(
-                            f"<span style='color:{COLOR_GOOD};font-size:0.8rem'>"
-                            f"&#10003; Analyzed{_dur_str}</span>", unsafe_allow_html=True)
-                    else:
-                        st.markdown(
-                            "<span style='color:#9E9E9E;font-size:0.8rem'>"
-                            "&#8211; Not yet analyzed</span>", unsafe_allow_html=True)
-            else:
-                st.markdown(
-                    "<span style='color:#F57C00;font-weight:600;font-size:0.875rem'>"
-                    "&#9203; Pending</span>", unsafe_allow_html=True)
+                meta_parts.append("0 words — extraction failed")
+            _meta_str = "  ·  ".join(meta_parts)
+            st.markdown(
+                f'<div class="file-row-name">{f["name"]}</div>'
+                f'<div class="file-row-meta">{_meta_str}</div>',
+                unsafe_allow_html=True,
+            )
+        with col_status:
+            st.markdown(_status_pills_html(f, category), unsafe_allow_html=True)
 
         with btn_col:
             if _is_pol_extracted:
@@ -611,13 +644,104 @@ def _cope_meta_fields(filename, saved, fk):
 
 
 # ══════════════════════════════════════════════════════════════════
-#  TABS
+#  UPLOAD ZONE + STATUS BANNER HELPERS (Day-2 restyle, 2026-05-12)
 # ══════════════════════════════════════════════════════════════════
+def _render_upload_zone(
+    title: str,
+    sub: str,
+    uploader_key: str,
+    source_dir: Path,
+    category: str,
+) -> bool:
+    """Render the styled upload zone wrapping a Streamlit file_uploader.
+    Returns True if new files were saved (caller should st.rerun)."""
+    with st.container(key=f"upload_zone_{category}"):
+        st.markdown(
+            f'<div class="upload-zone-title">{title}</div>'
+            f'<div class="upload-zone-sub">{sub}</div>',
+            unsafe_allow_html=True,
+        )
+        ups = st.file_uploader(
+            "Drop files",
+            type=EXTRACTABLE_EXT,
+            accept_multiple_files=True,
+            key=uploader_key,
+            label_visibility="collapsed",
+        )
+    if not ups:
+        return False
+    added, oversized = 0, []
+    for u in ups:
+        if u.size > MAX_PDF_MB * 1024 * 1024:
+            oversized.append(u.name); continue
+        if save_doc(u, source_dir, category):
+            extract_doc(u.name, source_dir, category)
+            added += 1
+    if oversized:
+        st.warning(f"Skipped (too large): {', '.join(oversized)}")
+    return added > 0
+
+
+def _render_status_banner(files: list[dict], category_label: str) -> None:
+    """Render the green (all extracted) or amber (pending) status banner
+    above a file list. category_label is e.g. 'policies' or 'contracts'."""
+    if not files:
+        return
+    total     = len(files)
+    extracted = sum(1 for f in files if f["extracted"])
+    word = "file" if total == 1 else "files"
+    if extracted == total:
+        st.markdown(
+            f'<div class="status-banner">'
+            f'<div class="status-banner-check">&#10003;</div>'
+            f'<div>'
+            f'<div class="status-banner-title">{total} {word} uploaded — all extracted</div>'
+            f'<div class="status-banner-sub">All {category_label} ready for synthesis</div>'
+            f'</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+    else:
+        pending = total - extracted
+        pword   = "file" if pending == 1 else "files"
+        st.markdown(
+            f'<div class="status-banner pending">'
+            f'<div class="status-banner-check">!</div>'
+            f'<div>'
+            f'<div class="status-banner-title">{total} {word} — {pending} {pword} pending extraction</div>'
+            f'<div class="status-banner-sub">If a file stays pending, try deleting and re-uploading.</div>'
+            f'</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+
+# ══════════════════════════════════════════════════════════════════
+#  TABS — count-suffixed labels (Streamlit strips HTML from tab
+#  labels, so counts are plain text in parens, not pill badges).
+# ══════════════════════════════════════════════════════════════════
+def _count_files(folder: Path) -> int:
+    if not folder.exists():
+        return 0
+    return sum(
+        1 for f in folder.iterdir()
+        if f.is_file() and not f.name.startswith(".")
+        and f.suffix.lower() in EXTRACTABLE_TYPES
+    )
+
+_pol_n  = _count_files(policies_dir)
+_con_n  = _count_files(contracts_dir)
+_lr_n   = _count_files(loss_runs_dir)
+_cope_n = _count_files(cope_dir)
+
+def _tab_label(label: str, count: int) -> str:
+    return f"{label} ({count})" if count else label
+
 tab_pol, tab_con, tab_lr, tab_cope_tab, tab_notes = st.tabs([
-    "Policies",
-    "Contracts & Agreements",
-    "Loss Runs & EMOD",
-    "COPE / Property Schedule",
+    _tab_label("Policies",               _pol_n),
+    _tab_label("Contracts & Agreements", _con_n),
+    _tab_label("Loss Runs & EMOD",       _lr_n),
+    _tab_label("COPE / Property",        _cope_n),
     "Notes & Context",
 ])
 
@@ -627,40 +751,18 @@ tab_pol, tab_con, tab_lr, tab_cope_tab, tab_notes = st.tabs([
 # ══════════════════════════════════════════════════════════════════
 with tab_pol:
     pol_files = get_tab_files(policies_dir, "policy")
-    pol_ext   = sum(1 for f in pol_files if f["extracted"])
 
-    st.subheader("Insurance Policies")
-    st.caption(
-        "Every policy in the program: GL, WC, Auto, Umbrella, Cyber, "
-        "Property, E&O, Management Liability — all of them."
-    )
-    if pol_files:
-        if pol_ext == len(pol_files):
-            st.success(f"{len(pol_files)} {'file' if len(pol_files)==1 else 'files'} uploaded — all extracted")
-        else:
-            st.warning(f"{len(pol_files)} {'file' if len(pol_files)==1 else 'files'} — {len(pol_files)-pol_ext} pending extraction")
+    if _render_upload_zone(
+        title="Drop policy PDFs here, or click to browse",
+        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+        uploader_key="policy_uploader",
+        source_dir=policies_dir,
+        category="policy",
+    ):
+        st.rerun()
 
-    st.markdown("<br>", unsafe_allow_html=True)
-    ups = st.file_uploader(
-        "Drop policy PDFs here",
-        type=EXTRACTABLE_EXT,
-        accept_multiple_files=True,
-        key="policy_uploader",
-    )
-    if ups:
-        added, oversized = 0, []
-        for u in ups:
-            if u.size > MAX_PDF_MB * 1024 * 1024:
-                oversized.append(u.name); continue
-            if save_doc(u, policies_dir, "policy"):
-                extract_doc(u.name, policies_dir, "policy")
-                added += 1
-        if oversized:
-            st.warning(f"Skipped (too large): {', '.join(oversized)}")
-        if added:
-            st.rerun()
+    _render_status_banner(pol_files, "policies")
 
-    st.markdown("<br>", unsafe_allow_html=True)
     if pol_files:
         for f in pol_files:
             render_doc_card(f, "policy", policies_dir, None)
@@ -673,40 +775,18 @@ with tab_pol:
 # ══════════════════════════════════════════════════════════════════
 with tab_con:
     con_files = get_tab_files(contracts_dir, "contract")
-    con_ext   = sum(1 for f in con_files if f["extracted"])
 
-    st.subheader("Contracts & Agreements")
-    st.caption(
-        "MSAs, subcontracts, leases, service contracts — anything that "
-        "imposes insurance or indemnification obligations on this client."
-    )
-    if con_files:
-        if con_ext == len(con_files):
-            st.success(f"{len(con_files)} {'file' if len(con_files)==1 else 'files'} — all extracted")
-        else:
-            st.warning(f"{len(con_files)} {'file' if len(con_files)==1 else 'files'} — {len(con_files)-con_ext} pending extraction")
+    if _render_upload_zone(
+        title="Drop contracts here, or click to browse",
+        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+        uploader_key="contract_uploader",
+        source_dir=contracts_dir,
+        category="contract",
+    ):
+        st.rerun()
 
-    st.markdown("<br>", unsafe_allow_html=True)
-    ups = st.file_uploader(
-        "Drop contracts here — PDF, DOCX, XLSX, TXT accepted",
-        type=EXTRACTABLE_EXT,
-        accept_multiple_files=True,
-        key="contract_uploader",
-    )
-    if ups:
-        added, oversized = 0, []
-        for u in ups:
-            if u.size > MAX_PDF_MB * 1024 * 1024:
-                oversized.append(u.name); continue
-            if save_doc(u, contracts_dir, "contract"):
-                extract_doc(u.name, contracts_dir, "contract")
-                added += 1
-        if oversized:
-            st.warning(f"Skipped (too large): {', '.join(oversized)}")
-        if added:
-            st.rerun()
+    _render_status_banner(con_files, "contracts")
 
-    st.markdown("<br>", unsafe_allow_html=True)
     if con_files:
         for f in con_files:
             render_doc_card(f, "contract", contracts_dir, _contract_meta_fields)
@@ -719,38 +799,19 @@ with tab_con:
 # ══════════════════════════════════════════════════════════════════
 with tab_lr:
     lr_files = get_tab_files(loss_runs_dir, "loss_run")
-    lr_ext   = sum(1 for f in lr_files if f["extracted"])
 
-    st.subheader("Loss Runs & Experience Modification")
-    st.caption("Upload loss run files, or enter historical data manually below.")
+    if _render_upload_zone(
+        title="Drop loss run PDFs or Excel files here",
+        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+        uploader_key="loss_run_uploader",
+        source_dir=loss_runs_dir,
+        category="loss_run",
+    ):
+        st.rerun()
 
-    # Upload zone
-    st.markdown("**Upload Loss Run Files**")
-    ups = st.file_uploader(
-        "Drop loss run PDFs or Excel files here",
-        type=EXTRACTABLE_EXT,
-        accept_multiple_files=True,
-        key="loss_run_uploader",
-    )
-    if ups:
-        added, oversized = 0, []
-        for u in ups:
-            if u.size > MAX_PDF_MB * 1024 * 1024:
-                oversized.append(u.name); continue
-            if save_doc(u, loss_runs_dir, "loss_run"):
-                extract_doc(u.name, loss_runs_dir, "loss_run")
-                added += 1
-        if oversized:
-            st.warning(f"Skipped (too large): {', '.join(oversized)}")
-        if added:
-            st.rerun()
+    _render_status_banner(lr_files, "loss runs")
 
     if lr_files:
-        if lr_ext == len(lr_files):
-            st.success(f"{len(lr_files)} {'file' if len(lr_files)==1 else 'files'} — all extracted")
-        else:
-            st.warning(f"{len(lr_files)} {'file' if len(lr_files)==1 else 'files'} — {len(lr_files)-lr_ext} pending")
-        st.markdown("<br>", unsafe_allow_html=True)
         for f in lr_files:
             render_doc_card(f, "loss_run", loss_runs_dir, _loss_run_meta_fields)
     else:
@@ -876,40 +937,18 @@ with tab_lr:
 # ══════════════════════════════════════════════════════════════════
 with tab_cope_tab:
     cope_files = get_tab_files(cope_dir, "cope")
-    cope_ext   = sum(1 for f in cope_files if f["extracted"])
 
-    st.subheader("COPE / Property Schedule")
-    st.caption(
-        "Property schedules, Statements of Value (SOVs), COPE data, "
-        "building schedules — anything describing insured property."
-    )
-    if cope_files:
-        if cope_ext == len(cope_files):
-            st.success(f"{len(cope_files)} {'file' if len(cope_files)==1 else 'files'} — all extracted")
-        else:
-            st.warning(f"{len(cope_files)} {'file' if len(cope_files)==1 else 'files'} — {len(cope_files)-cope_ext} pending")
+    if _render_upload_zone(
+        title="Drop property schedules, SOVs, or COPE data here",
+        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+        uploader_key="cope_uploader",
+        source_dir=cope_dir,
+        category="cope",
+    ):
+        st.rerun()
 
-    st.markdown("<br>", unsafe_allow_html=True)
-    ups = st.file_uploader(
-        "Drop property schedules, SOVs, or COPE data here",
-        type=EXTRACTABLE_EXT,
-        accept_multiple_files=True,
-        key="cope_uploader",
-    )
-    if ups:
-        added, oversized = 0, []
-        for u in ups:
-            if u.size > MAX_PDF_MB * 1024 * 1024:
-                oversized.append(u.name); continue
-            if save_doc(u, cope_dir, "cope"):
-                extract_doc(u.name, cope_dir, "cope")
-                added += 1
-        if oversized:
-            st.warning(f"Skipped (too large): {', '.join(oversized)}")
-        if added:
-            st.rerun()
+    _render_status_banner(cope_files, "property docs")
 
-    st.markdown("<br>", unsafe_allow_html=True)
     if cope_files:
         for f in cope_files:
             render_doc_card(f, "cope", cope_dir, _cope_meta_fields)
@@ -960,37 +999,13 @@ with tab_notes:
 
 
 # ══════════════════════════════════════════════════════════════════
-#  BOTTOM: STATUS SUMMARY
-# ══════════════════════════════════════════════════════════════════
+#  BOTTOM: ai-exchange debug expander
+# Day-2: the old "BOTTOM: STATUS SUMMARY" block (final success/warning
+# banner + Go-to-Analyze button) was removed -- the per-tab status
+# banner + the page-hero "Continue to Analyze" button cover the same
+# affordances at the top of the page.
+# ════════════════════════════════════════════════════════════════
 st.divider()
-
-_pol_files = get_tab_files(policies_dir,  "policy")
-_con_files = get_tab_files(contracts_dir, "contract")
-_all_files = _pol_files + _con_files
-
-_extracted = [f for f in _all_files if f["extracted"]]
-_pending   = [f for f in _all_files if not f["extracted"]]
-
-if not _all_files:
-    st.info("Upload documents in any tab above to begin.")
-elif _pending:
-    st.warning(
-        f"**{len(_pending)} file{'s' if len(_pending)!=1 else ''} still processing** "
-        f"({len(_extracted)} of {len(_all_files)} extracted). "
-        "If a file stays pending, try deleting and re-uploading it."
-    )
-else:
-    _n_word = "file" if len(_extracted) == 1 else "files"
-    _sc1, _sc2 = st.columns([3, 1])
-    with _sc1:
-        st.success(
-            f"**All {len(_extracted)} {_n_word} uploaded and extracted.** "
-            "Ready to read policies and generate findings."
-        )
-    with _sc2:
-        if st.button("Go to Analyze \u2192", type="primary", use_container_width=True,
-                     key="goto_analyze_btn"):
-            st.switch_page("pages/_Analyze.py")
 
 
 # ── ai-exchange preview ────────────────────────────────────────────

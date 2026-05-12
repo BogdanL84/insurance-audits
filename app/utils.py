@@ -321,8 +321,8 @@ label,
   font-size: 0.8125rem !important;
 }
 
-/* Monospace text areas / code */
-textarea, code, pre,
+/* Monospace for code only (Day-2 fix: textareas inherit Inter) */
+code, pre,
 [data-testid="stCode"] {
   font-family: var(--font-mono) !important;
   font-size: 0.8125rem !important;
@@ -390,15 +390,51 @@ hr {
   color: var(--sidebar-link-h) !important;
 }
 
-/* Sidebar page-link rows: tighter, with hover wash */
+/* Sidebar page-link rows: tighter, with hover wash.
+   padding-left bumped to 14px so the active state's 3px bar
+   has room to sit inside without shifting text on activation.
+   overflow: visible so the ::before bar isn't clipped by the
+   parent's border-radius. */
 [data-testid="stSidebar"] [data-testid="stPageLink-NavLink"] {
   border-radius: var(--radius-sm) !important;
-  padding: 6px 10px !important;
+  padding: 6px 10px 6px 14px !important;
+  overflow: visible !important;
   transition: background 0.15s ease, color 0.15s ease;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"] {
+  overflow: visible !important;
 }
 [data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:hover {
   background-color: rgba(1,118,211,0.06) !important;
   color: var(--primary) !important;
+}
+
+/* Active nav item: 3px gradient left bar + subtle bg wash
+   (Day-2 addition, 2026-05-12) */
+[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"]) {
+  background: linear-gradient(90deg,
+              rgba(1,118,211,0.08) 0%,
+              rgba(6,182,212,0.05) 100%) !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  position: relative;
+  overflow: visible !important;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"])::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  background: var(--grad-primary);
+  border-radius: 0 3px 3px 0;
+  z-index: 1;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"]) p {
+  color: var(--primary) !important;
+  font-weight: 600 !important;
 }
 
 /* Sidebar selectbox: card-surface with subtle border (sits inside .sb-client-card) */
@@ -846,6 +882,523 @@ hr {
 }
 
 /* ═══════════════════════════════════════════════
+   WORKFLOW STEPPER (Day-2 restyle, 2026-05-12)
+═══════════════════════════════════════════════ */
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 1.75rem;
+  background: var(--bg-card);
+  padding: 1.1rem 1.4rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  overflow-x: auto;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex: 0 0 auto;
+}
+.step-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.step.done .step-dot {
+  background: var(--green);
+  color: white;
+}
+.step.active .step-dot {
+  background: var(--grad-primary);
+  color: white;
+  box-shadow: 0 0 0 4px rgba(1, 118, 211, 0.15);
+}
+.step-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.step.done .step-label,
+.step.active .step-label { color: var(--text); }
+.step.active .step-label { color: var(--primary); }
+.step-line {
+  flex: 1 1 auto;
+  height: 2px;
+  background: var(--border);
+  margin: 0 1rem;
+  min-width: 30px;
+}
+.step-line.done { background: var(--green); }
+
+/* ── CSS-SPLIT-MARKER ────────────────────────────
+   Streamlit's markdown processor silently drops large
+   spans of a single _COMPONENT_CSS string above ~35KB.
+   inject_css() splits this string at the marker line
+   below and emits each half in its own st.markdown
+   call, dodging the limit. Keep the marker intact.
+═══════════════════════════════════════════════ */
+/* CSS_SPLIT_HERE */
+/* ═══════════════════════════════════════════════
+   DOCUMENT INTAKE (Day-2 restyle, 2026-05-12)
+═══════════════════════════════════════════════ */
+
+/* ── Tab strip (overrides Streamlit st.tabs appearance) ────────── */
+section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab-list"] {
+  background: transparent !important;
+  border-bottom: 2px solid var(--border-soft) !important;
+  gap: 0 !important;
+  padding: 0 0.25rem !important;
+  margin-bottom: 1.5rem !important;
+  overflow-x: auto !important;
+}
+section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab"] {
+  padding: 0.85rem 1.25rem !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem !important;
+  color: var(--muted) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  margin-bottom: -2px !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  cursor: pointer !important;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab"]:hover {
+  color: var(--primary) !important;
+}
+section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"] {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+  border-bottom-color: var(--primary) !important;
+}
+/* Kill the default tab highlight bar Streamlit emits */
+section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+  display: none !important;
+}
+/* Tab counter badge (added via emoji-free inline span in tab label) */
+section[data-testid="stMain"] [data-testid="stTabs"] .tab-count {
+  background: var(--bg-subtle);
+  color: var(--text-soft);
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-left: 0.45rem;
+}
+section[data-testid="stMain"] [data-testid="stTabs"]
+  [data-baseweb="tab"][aria-selected="true"] .tab-count {
+  background: var(--grad-primary);
+  color: #ffffff;
+}
+
+/* ── Upload drop zone wrapper (st.container(key=upload_zone_*)) ── */
+[class*="st-key-upload_zone_"] {
+  background: linear-gradient(135deg, rgba(1,118,211,0.04) 0%,
+              rgba(6,182,212,0.04) 100%) !important;
+  border: 2px dashed var(--primary) !important;
+  border-radius: 14px !important;
+  padding: 1.1rem 1.4rem 0.7rem !important;
+  margin-bottom: 1.25rem !important;
+  text-align: center;
+}
+.upload-zone-title {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  color: var(--text) !important;
+  margin: 0 0 0.2rem;
+}
+.upload-zone-sub {
+  color: var(--muted) !important;
+  font-size: 0.85rem !important;
+  margin: 0 0 0.6rem;
+}
+/* Strip Streamlit's native chrome inside the upload zone */
+[class*="st-key-upload_zone_"] [data-testid="stFileUploader"] section {
+  background: transparent !important;
+  border: none !important;
+  padding: 0.2rem 0 !important;
+}
+[class*="st-key-upload_zone_"] [data-testid="stFileUploaderDropzone"] {
+  background: transparent !important;
+  border: none !important;
+  padding: 0.3rem 0 !important;
+  min-height: 0 !important;
+}
+[class*="st-key-upload_zone_"] [data-testid="stFileUploaderDropzoneInstructions"] {
+  display: none !important;
+}
+
+/* ── Status banner (success / warning) ─────────────────────────── */
+.status-banner {
+  background: linear-gradient(90deg, rgba(16,185,129,0.1) 0%,
+              rgba(6,182,212,0.08) 100%);
+  border: 1px solid rgba(16,185,129,0.3);
+  border-radius: 10px;
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.status-banner-check {
+  background: var(--green);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+.status-banner-title {
+  font-weight: 700;
+  color: var(--green);
+  font-size: 0.92rem;
+}
+.status-banner-sub {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  margin-top: 1px;
+}
+/* Pending variant: amber tinted */
+.status-banner.pending {
+  background: linear-gradient(90deg, rgba(245,158,11,0.1) 0%,
+              rgba(249,115,22,0.08) 100%);
+  border-color: rgba(245,158,11,0.3);
+}
+.status-banner.pending .status-banner-check {
+  background: var(--amber);
+}
+.status-banner.pending .status-banner-title {
+  color: var(--amber);
+}
+
+/* ── File row cards — applied to st.container(key=file_row_*) ── */
+[class*="st-key-file_row_"] [data-testid="stVerticalBlockBorderWrapper"] > div {
+  border-radius: 12px !important;
+  padding: 0.85rem 1.1rem !important;
+  margin-bottom: 0 !important;
+}
+[class*="st-key-file_row_"] {
+  margin-bottom: 0.55rem !important;
+}
+.file-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.55rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.file-row:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+.file-row-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.file-row-left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.file-row-icon {
+  background: linear-gradient(135deg, #fee2e2, #fecaca) !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #dc2626 !important;
+  font-weight: 800 !important;
+  font-size: 0.7rem !important;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+.file-row-icon.docx { background: linear-gradient(135deg, #dbeafe, #bfdbfe) !important; color: #1d4ed8 !important; }
+.file-row-icon.xlsx { background: linear-gradient(135deg, #dcfce7, #bbf7d0) !important; color: #15803d !important; }
+.file-row-icon.txt  { background: linear-gradient(135deg, #f3f4f6, #e5e7eb) !important; color: #374151 !important; }
+.file-row-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.file-row-name {
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.92rem;
+}
+.file-row-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 1px;
+}
+.file-row-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* ── Status pills (extracted/analyzed/pending/running/failed) ─── */
+.file-row-status {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  padding: 4px 10px !important;
+  border-radius: 100px !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  margin-right: 4px;
+}
+.file-row-status::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.file-row-status.extracted,
+.file-row-status.analyzed {
+  background: rgba(16,185,129,0.12) !important;
+  color: var(--green) !important;
+}
+.file-row-status.extracted::before,
+.file-row-status.analyzed::before { background: var(--green); }
+.file-row-status.pending {
+  background: rgba(245,158,11,0.12) !important;
+  color: var(--amber) !important;
+}
+.file-row-status.pending::before { background: var(--amber); }
+.file-row-status.running {
+  background: rgba(1,118,211,0.12) !important;
+  color: var(--primary) !important;
+}
+.file-row-status.running::before { background: var(--primary); }
+.file-row-status.failed {
+  background: rgba(239,68,68,0.12) !important;
+  color: var(--red) !important;
+}
+.file-row-status.failed::before { background: var(--red); }
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.4; transform: scale(0.7); }
+}
+.file-row-status.running::before {
+  animation: statusPulse 1.5s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════
+   FORM LABELS + PILL TOGGLES (Day-2 restyle, 2026-05-12)
+═══════════════════════════════════════════════ */
+
+/* Stronger label weight on main-pane widgets (matches mockup spec) */
+section[data-testid="stMain"] [data-testid="stWidgetLabel"] p,
+section[data-testid="stMain"] [data-testid="stWidgetLabel"] label {
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+}
+
+/* Custom form label component (used when label_visibility="collapsed") */
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 6px;
+}
+.form-label .req {
+  color: var(--red);
+  font-weight: 700;
+}
+.form-help {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin: -2px 0 6px;
+}
+
+/* Pill toggle row (Streamlit st.multiselect skinned) */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.pill {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+.pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.pill.on {
+  background: rgba(1, 118, 211, 0.12);
+  border-color: var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Skin st.multiselect: render selected tags as primary-tinted pills */
+section[data-testid="stMain"] [data-testid="stMultiSelect"] [data-baseweb="select"] > div {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 8px !important;
+  min-height: 42px;
+}
+section[data-testid="stMain"] [data-testid="stMultiSelect"] [data-baseweb="tag"] {
+  background: rgba(1, 118, 211, 0.12) !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 100px !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+}
+section[data-testid="stMain"] [data-testid="stMultiSelect"] [data-baseweb="tag"] span {
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  font-size: 0.78rem !important;
+}
+
+/* ── Ghost button — Day-2 hero Cancel (key-scoped) ── */
+.st-key-cs_cancel_top button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--text-soft) !important;
+  font-weight: 500 !important;
+}
+.st-key-cs_cancel_top button:hover {
+  color: var(--primary) !important;
+  background: rgba(1,118,211,0.06) !important;
+  transform: none !important;
+}
+
+/* ── Pill toggles (option-b: st.button per pill, key-prefixed)
+   Selected state uses type="primary" (data-testid stBaseButton-
+   primary); unselected uses type="secondary". Overrides the
+   global gradient primary-button so selected pills are subtle. */
+[class*="st-key-cs_pill_state_"] button,
+[class*="st-key-cs_pill_risk_"] button {
+  border-radius: 100px !important;
+  padding: 4px 12px !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  letter-spacing: 0 !important;
+  box-shadow: none !important;
+  transition: all 0.12s !important;
+  white-space: nowrap !important;
+}
+[class*="st-key-cs_pill_state_"] [data-testid="stBaseButton-secondary"],
+[class*="st-key-cs_pill_risk_"] [data-testid="stBaseButton-secondary"] {
+  background: var(--bg-subtle) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-soft) !important;
+}
+[class*="st-key-cs_pill_state_"] [data-testid="stBaseButton-secondary"]:hover,
+[class*="st-key-cs_pill_risk_"] [data-testid="stBaseButton-secondary"]:hover {
+  background: var(--bg-subtle) !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
+  transform: none !important;
+}
+[class*="st-key-cs_pill_state_"] [data-testid="stBaseButton-primary"],
+[class*="st-key-cs_pill_risk_"] [data-testid="stBaseButton-primary"] {
+  background: rgba(1,118,211,0.12) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+[class*="st-key-cs_pill_state_"] [data-testid="stBaseButton-primary"]:hover,
+[class*="st-key-cs_pill_risk_"] [data-testid="stBaseButton-primary"]:hover {
+  background: rgba(1,118,211,0.2) !important;
+  filter: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ── Optional badge on card heads ─────────────────── */
+.cs-optional-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--bg-subtle);
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+}
+
+/* Main-pane text inputs / textareas / selects: token-driven surface.
+   TODO (Day-4 polish): bump placeholder text contrast in dark mode.
+   Currently uses Streamlit's default ::placeholder color which renders
+   very faint against --bg-input on the dark theme. */
+section[data-testid="stMain"] [data-testid="stTextInput"] input,
+section[data-testid="stMain"] [data-testid="stTextArea"] textarea,
+section[data-testid="stMain"] [data-testid="stNumberInput"] input,
+section[data-testid="stMain"] [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 8px !important;
+  color: var(--text) !important;
+  font-size: 0.9rem !important;
+}
+section[data-testid="stMain"] [data-testid="stTextInput"] input:focus,
+section[data-testid="stMain"] [data-testid="stTextArea"] textarea:focus,
+section[data-testid="stMain"] [data-testid="stNumberInput"] input:focus {
+  outline: none !important;
+  border-color: var(--primary) !important;
+  background: var(--bg-card) !important;
+  box-shadow: 0 0 0 3px rgba(1, 118, 211, 0.12) !important;
+}
+
+/* ═══════════════════════════════════════════════
    BUTTONS
 ═══════════════════════════════════════════════ */
 
@@ -1031,14 +1584,16 @@ hr {
   background-color: var(--bg-hover) !important;
 }
 
-/* Textarea */
+/* Textarea — font-family deliberately omitted so textareas inherit
+   the Inter UI font (Day-2 fix: a legacy rule here was forcing
+   monospace on all textareas, which only surfaced in dark mode
+   once the Day-2 CSS-split fix stopped truncating the rule). */
 textarea {
   background-color: var(--bg-input) !important;
   border-color: var(--border) !important;
   border-radius: var(--radius-sm) !important;
   color: var(--text-primary) !important;
-  font-family: var(--font-mono) !important;
-  font-size: 0.8125rem !important;
+  font-size: 0.875rem !important;
   resize: vertical;
 }
 
@@ -1330,11 +1885,61 @@ footer { display: none !important; }
 
 
 def inject_css() -> None:
-    """Inject Google Fonts, theme CSS variables, and component styles. Call at top of every page."""
+    """Inject Google Fonts, theme CSS variables, and component styles. Call at top of every page.
+
+    Component CSS is split at /* CSS_SPLIT_HERE */ because Streamlit's
+    markdown processor silently truncates a single st.markdown HTML
+    payload above ~35KB. Each half ships in its own st.markdown call,
+    wrapped in its own <style> block."""
     theme = _load_theme()
     st.markdown(_FONTS_HTML, unsafe_allow_html=True)
     st.markdown(_DARK_VARS if theme == "dark" else _LIGHT_VARS, unsafe_allow_html=True)
-    st.markdown(_COMPONENT_CSS, unsafe_allow_html=True)
+
+    parts = _COMPONENT_CSS.split("/* CSS_SPLIT_HERE */")
+    if len(parts) == 2:
+        st.markdown(parts[0] + "\n</style>",            unsafe_allow_html=True)
+        st.markdown("<style>\n" + parts[1],             unsafe_allow_html=True)
+    else:
+        st.markdown(_COMPONENT_CSS, unsafe_allow_html=True)
+
+
+# ── Workflow stepper (Day-2 restyle, 2026-05-12) ────────────────────
+_STEPPER_STEPS = (
+    "Setup",
+    "Upload",
+    "Analyze",
+    "Findings",
+    "Strategic Advisor",
+    "Report",
+)
+
+
+def render_stepper(current_step: int) -> None:
+    """Render the 6-step workflow stepper at the top of a page.
+
+    current_step is 1-indexed. 1 = Setup, 2 = Upload, 3 = Analyze,
+    4 = Findings, 5 = Strategic Advisor, 6 = Report. Steps before
+    current_step render as 'done' (green dot); current_step as
+    'active' (gradient dot with halo); later steps as upcoming
+    (muted). The connector line into a done/active dot is green."""
+    parts: list[str] = []
+    for i, label in enumerate(_STEPPER_STEPS, start=1):
+        if   i <  current_step: cls = "done"
+        elif i == current_step: cls = "active"
+        else:                   cls = ""
+        parts.append(
+            f'<div class="step {cls}">'
+            f'<div class="step-dot">{i}</div>'
+            f'<div class="step-label">{label}</div>'
+            f'</div>'
+        )
+        if i < len(_STEPPER_STEPS):
+            line_cls = "done" if i < current_step else ""
+            parts.append(f'<div class="step-line {line_cls}"></div>')
+    st.markdown(
+        '<div class="stepper">' + "".join(parts) + '</div>',
+        unsafe_allow_html=True,
+    )
 
 
 # ── Finding card severity helper ────────────────────────────────────
