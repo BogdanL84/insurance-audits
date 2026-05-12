@@ -1,10 +1,15 @@
 """
 app.py — Dashboard (home page)
 
-Displays all clients as cards with stage indicators and finding counts.
-Supports inline delete with confirmation.
+Day-1 restyle (2026-05-11): Salesforce-vibrant light-mode-first.
+Gradient hero, 4 gradient stat tiles, inline-SVG donut +
+per-client stacked-bar panel, gradient-strip client cards.
+Audit-report visual product (core/html_report.py) is untouched.
 """
 
+import html as _html
+import math
+import re as _re
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -21,24 +26,79 @@ st.set_page_config(
 from config import (
     CLIENTS_DIR, BROKER_NAME, BROKER_TITLE, BROKER_COMPANY,
     BROKER_EMAIL, BROKER_PHONE,
-    COLOR_GOOD, COLOR_BAD, COLOR_UGLY, COLOR_NAVY,
-    STAGE_COLORS, STAGES,
+    STAGES,
 )
 from core.audit_state import list_clients, delete_client
-from utils import render_sidebar, stage_badge, inject_css
+from utils import render_sidebar, inject_css
 
 inject_css()
 render_sidebar()
 
 
-# ── Header ─────────────────────────────────────────────────────────
+# ── Helpers ────────────────────────────────────────────────────────
+def _esc(s) -> str:
+    return _html.escape(str(s)) if s is not None else ""
+
+def _md(html: str) -> None:
+    """st.markdown(unsafe_allow_html=True) but with leading whitespace
+    collapsed so multi-line f-string HTML isn't parsed as code blocks
+    by Streamlit's markdown processor (>=4-space indent → <pre><code>)."""
+    st.markdown(_re.sub(r"\n\s*", "", html), unsafe_allow_html=True)
+
+def _stage_label(stage: str) -> str:
+    return dict(STAGES).get(stage, stage)
+
+def _stage_pill_class(stage: str) -> str:
+    if stage in ("findings_reviewed", "output_generated"):
+        return "success"
+    if stage == "findings_imported":
+        return "warm"
+    if stage in ("docs_uploaded", "text_extracted"):
+        return "primary"
+    return ""
+
+def _strip_class(client: dict) -> str:
+    s = client["summary"]
+    stage = client["stage"]
+    if s["ugly"] > 0:
+        return "danger"
+    if s["bad"] > 0:
+        return "warm"
+    if s["total_findings"] > 0:
+        return "success"
+    if stage in ("docs_uploaded", "text_extracted", "findings_imported"):
+        return "primary"
+    return "neutral"
+
+
+# ── Load clients ───────────────────────────────────────────────────
+clients = list_clients(CLIENTS_DIR)
+
+
+# ── Hero header ────────────────────────────────────────────────────
+total_findings = sum(c["summary"]["total_findings"] for c in clients)
+total_good     = sum(c["summary"]["good"]  for c in clients)
+total_bad      = sum(c["summary"]["bad"]   for c in clients)
+total_ugly     = sum(c["summary"]["ugly"]  for c in clients)
+clients_with_findings = sum(1 for c in clients if c["summary"]["total_findings"] > 0)
+
+if clients:
+    sub_parts = [f"{len(clients)} client{'s' if len(clients) != 1 else ''}"]
+    if total_findings:
+        sub_parts.append(f"{total_findings} total findings")
+    if total_ugly:
+        sub_parts.append(f"{total_ugly} critical exposure{'s' if total_ugly != 1 else ''}")
+    subtitle = " · ".join(sub_parts)
+else:
+    subtitle = "Create your first audit to get started."
+
 col_title, col_btn = st.columns([7, 2])
 with col_title:
-    st.markdown(
-        "<h1 style='margin-bottom:0'>Insurance Audit System</h1>"
-        f"<p style='color:#666;margin-top:2px;font-size:0.875rem'>"
-        f"{BROKER_NAME} &middot; {BROKER_COMPANY}</p>",
-        unsafe_allow_html=True,
+    _md(
+        f"""<div class="page-hero">
+          <h1 class="page-hero-title">Audit Dashboard</h1>
+          <p class="page-hero-sub">{_esc(subtitle)}</p>
+        </div>"""
     )
 with col_btn:
     st.write("")  # vertical spacer
@@ -46,12 +106,6 @@ with col_btn:
         st.session_state.selected_client  = None
         st.session_state.client_edit_mode = "new"
         st.switch_page("pages/1_Client_Setup.py")
-
-st.divider()
-
-
-# ── Load clients ───────────────────────────────────────────────────
-clients = list_clients(CLIENTS_DIR)
 
 
 # ── Empty state ────────────────────────────────────────────────────
@@ -63,7 +117,7 @@ if not clients:
             "<div style='text-align:center;padding:2rem 0'>"
             "<div style='font-size:3rem'>&#128196;</div>"
             "<h3>No clients yet</h3>"
-            "<p style='color:#666'>Create your first audit to get started. "
+            "<p style='color:var(--text-secondary)'>Create your first audit to get started. "
             "Each client gets its own folder for contracts, policies, and findings.</p>"
             "</div>",
             unsafe_allow_html=True,
@@ -75,49 +129,172 @@ if not clients:
     st.stop()
 
 
-# ── Stats bar ──────────────────────────────────────────────────────
-total_findings = sum(c["summary"]["total_findings"] for c in clients)
-total_good     = sum(c["summary"]["good"]  for c in clients)
-total_bad      = sum(c["summary"]["bad"]   for c in clients)
-total_ugly     = sum(c["summary"]["ugly"]  for c in clients)
+# ── Stat tiles (4 gradient tiles) ──────────────────────────────────
+clean_clients = clients_with_findings - sum(
+    1 for c in clients if c["summary"]["ugly"] > 0 or c["summary"]["bad"] > 0
+)
+clean_clients = max(clean_clients, 0)
 
-# Count clients at each stage bracket
-clients_with_findings = sum(1 for c in clients if c["summary"]["total_findings"] > 0)
-clients_critical      = sum(1 for c in clients if c["summary"]["ugly"] > 0)
+tiles_html = f"""
+<div class="stat-tile primary">
+  <div class="stat-glyph">&#128202;</div>
+  <p class="stat-label">Active Audits</p>
+  <p class="stat-value">{clients_with_findings}</p>
+  <p class="stat-trend">of {len(clients)} total clients</p>
+</div>
+"""
+tile2 = f"""
+<div class="stat-tile warm">
+  <div class="stat-glyph">&#9888;</div>
+  <p class="stat-label">Findings Generated</p>
+  <p class="stat-value">{total_findings}</p>
+  <p class="stat-trend">{total_bad} need attention</p>
+</div>
+"""
+tile3 = f"""
+<div class="stat-tile danger">
+  <div class="stat-glyph">&#128293;</div>
+  <p class="stat-label">Critical Exposures</p>
+  <p class="stat-value">{total_ugly}</p>
+  <p class="stat-trend">requires immediate action</p>
+</div>
+"""
+tile4 = f"""
+<div class="stat-tile success">
+  <div class="stat-glyph">&#10004;</div>
+  <p class="stat-label">Compliant Items</p>
+  <p class="stat-value">{total_good}</p>
+  <p class="stat-trend">good across all programs</p>
+</div>
+"""
 
-m1, m2, m3, m4, m5 = st.columns(5)
-m1.metric("Total Clients",    len(clients))
-m2.metric("Active Audits",    clients_with_findings)
-m3.metric("Critical Issues",  total_ugly,  delta=None,
-          help="Total Ugly findings across all clients")
-m4.metric("Gaps to Address",  total_bad,
-          help="Total Bad findings across all clients")
-m5.metric("Compliant Items",  total_good,
-          help="Total Good findings across all clients")
+t1, t2, t3, t4 = st.columns(4)
+with t1: _md(tiles_html)
+with t2: _md(tile2)
+with t3: _md(tile3)
+with t4: _md(tile4)
 
-st.markdown("<br>", unsafe_allow_html=True)
+st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+
+
+# ── Findings overview row: donut + per-client bars ─────────────────
+if total_findings > 0:
+    # Donut SVG (Good / Bad / Ugly distribution)
+    R = 40
+    CIRC = 2 * math.pi * R
+    total = total_good + total_bad + total_ugly
+    g_len = (total_good / total) * CIRC if total else 0
+    b_len = (total_bad  / total) * CIRC if total else 0
+    u_len = (total_ugly / total) * CIRC if total else 0
+
+    # Each segment: stroke-dasharray "seg_len gap_len" + dashoffset for position.
+    # All segments start at 12 o'clock via the transform rotate(-90).
+    def _seg(color: str, length: float, offset: float) -> str:
+        return (
+            f'<circle cx="60" cy="60" r="{R}" fill="none" '
+            f'stroke="{color}" stroke-width="14" '
+            f'stroke-dasharray="{length:.2f} {CIRC - length:.2f}" '
+            f'stroke-dashoffset="{-offset:.2f}" '
+            f'transform="rotate(-90 60 60)" />'
+        )
+
+    donut_svg = f"""
+    <svg width="120" height="120" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="{R}" fill="none"
+              stroke="var(--bg-subtle)" stroke-width="14" />
+      {_seg("#10b981", g_len, 0)}
+      {_seg("#f97316", b_len, g_len)}
+      {_seg("#ef4444", u_len, g_len + b_len)}
+      <text x="60" y="58" text-anchor="middle"
+            font-family="JetBrains Mono, monospace" font-size="20"
+            font-weight="700" fill="var(--text-primary)">{total_findings}</text>
+      <text x="60" y="74" text-anchor="middle"
+            font-family="Inter, sans-serif" font-size="9"
+            font-weight="600" fill="var(--text-muted)"
+            letter-spacing="0.1em">FINDINGS</text>
+    </svg>
+    """
+
+    donut_legend = f"""
+    <div class="donut-legend">
+      <div class="row"><span class="swatch" style="background:#10b981"></span>
+        Good<span class="count">{total_good}</span></div>
+      <div class="row"><span class="swatch" style="background:#f97316"></span>
+        Bad<span class="count">{total_bad}</span></div>
+      <div class="row"><span class="swatch" style="background:#ef4444"></span>
+        Ugly<span class="count">{total_ugly}</span></div>
+    </div>
+    """
+
+    # Per-client stacked bars — top 6 by total findings
+    rated = [c for c in clients if c["summary"]["total_findings"] > 0]
+    rated.sort(key=lambda c: c["summary"]["total_findings"], reverse=True)
+    rated = rated[:6]
+    max_total = max((c["summary"]["total_findings"] for c in rated), default=1)
+
+    bar_rows = []
+    for c in rated:
+        s = c["summary"]
+        tot = s["total_findings"]
+        # Track width relative to max
+        track_pct = (tot / max_total) * 100 if max_total else 0
+        # Within the track, segments are proportions of THIS client's total
+        g_pct = (s["good"] / tot) * 100 if tot else 0
+        b_pct = (s["bad"]  / tot) * 100 if tot else 0
+        u_pct = (s["ugly"] / tot) * 100 if tot else 0
+        bar_rows.append(f"""
+          <div class="client-bar-row">
+            <div class="client-bar-name" title="{_esc(c['display_name'])}">{_esc(c['display_name'])}</div>
+            <div class="client-bar-track" style="width:{track_pct:.1f}%">
+              <div class="client-bar-seg good" style="width:{g_pct:.1f}%"></div>
+              <div class="client-bar-seg bad"  style="width:{b_pct:.1f}%"></div>
+              <div class="client-bar-seg ugly" style="width:{u_pct:.1f}%"></div>
+            </div>
+            <div class="client-bar-count">{tot}</div>
+          </div>
+        """)
+
+    bars_html = "<div class='client-bars'>" + "".join(bar_rows) + "</div>"
+
+    col_a, col_b = st.columns([1, 2])
+    with col_a:
+        _md(
+            f"""<div class="panel-card">
+              <p class="panel-title">Findings Mix</p>
+              <div class="donut-wrap">{donut_svg}{donut_legend}</div>
+            </div>"""
+        )
+    with col_b:
+        _md(
+            f"""<div class="panel-card">
+              <p class="panel-title">Top Clients by Findings</p>
+              {bars_html}
+            </div>"""
+        )
+
+    st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
 
 
 # ── Client card renderer ───────────────────────────────────────────
 def render_card(client: dict) -> None:
     s           = client["summary"]
     stage       = client["stage"]
-    color       = STAGE_COLORS.get(stage, "#9E9E9E")
-    stage_label = dict(STAGES).get(stage, stage)
+    stage_label = _stage_label(stage)
+    stage_cls   = _stage_pill_class(stage)
+    strip_cls   = _strip_class(client)
     slug        = client["slug"]
 
-    # Check if delete confirmation is active for this card
-    confirm_key = f"confirm_delete_{slug}"
+    confirm_key   = f"confirm_delete_{slug}"
     is_confirming = st.session_state.get(confirm_key, False)
 
-    with st.container(border=True):
-        if is_confirming:
-            # ── Delete confirmation overlay ────────────────────────
+    if is_confirming:
+        # ── Delete confirmation overlay ────────────────────────────
+        with st.container(border=True):
             st.markdown(
-                f"<div style='background:#FFEBEE;border-radius:6px;padding:0.75rem;"
+                f"<div style='background:rgba(239,68,68,0.08);border-radius:8px;padding:0.75rem;"
                 f"margin-bottom:0.5rem'>"
-                f"<strong style='color:#B71C1C'>Delete {client['display_name']}?</strong><br>"
-                f"<span style='font-size:0.875rem;color:#555'>"
+                f"<strong style='color:var(--red)'>Delete {_esc(client['display_name'])}?</strong><br>"
+                f"<span style='font-size:0.875rem;color:var(--text-secondary)'>"
                 f"This will permanently delete all documents, findings, and data "
                 f"for this client. This cannot be undone.</span>"
                 f"</div>",
@@ -133,7 +310,6 @@ def render_card(client: dict) -> None:
                 ):
                     deleted = delete_client(CLIENTS_DIR, slug)
                     if deleted:
-                        # Clear selected client if it was this one
                         if st.session_state.get("selected_client") == slug:
                             st.session_state.selected_client = None
                         del st.session_state[confirm_key]
@@ -148,166 +324,89 @@ def render_card(client: dict) -> None:
                 ):
                     del st.session_state[confirm_key]
                     st.rerun()
-            return
+        return
 
-        # ── Normal card view ───────────────────────────────────────
-
-        # Stage pill + date row
-        col_stage, col_date = st.columns([3, 2])
-        with col_stage:
-            st.markdown(
-                f"<span style='background:{color};color:white;padding:2px 9px;"
-                f"border-radius:10px;font-size:0.75rem;font-weight:600;"
-                f"-webkit-font-smoothing:antialiased'>{stage_label}</span>",
-                unsafe_allow_html=True,
-            )
-        with col_date:
-            st.markdown(
-                f"<span style='font-size:0.75rem;color:#888'>"
-                f"{client['last_modified']}</span>",
-                unsafe_allow_html=True,
-            )
-
-        # Client name
-        st.markdown(
-            f"<h3 style='margin:6px 0 2px'>{client['display_name']}</h3>",
-            unsafe_allow_html=True,
+    # ── Normal card body (HTML hero) + Streamlit action buttons ────
+    ptc = client.get("policy_type_counts", {})
+    policy_tags_html = ""
+    if ptc:
+        tags = "".join(
+            f'<span class="cc-policy-tag">{_esc(pt)} ({cnt})</span>'
+            for pt, cnt in sorted(ptc.items())
         )
-        if client["industry"]:
-            st.caption(client["industry"])
+        policy_tags_html = f'<div class="cc-policy-tags">{tags}</div>'
 
-        st.markdown("<br>", unsafe_allow_html=True)
+    doc_parts = []
+    if s["contracts"]:
+        doc_parts.append(f"{s['contracts']} contract{'s' if s['contracts'] != 1 else ''}")
+    if s["policies"]:
+        doc_parts.append(f"{s['policies']} polic{'ies' if s['policies'] != 1 else 'y'}")
+    docs_line = " · ".join(doc_parts) if doc_parts else "No documents uploaded yet"
 
-        # Document counts
-        doc_parts = []
-        if s["contracts"]:
-            doc_parts.append(
-                f"{s['contracts']} contract{'s' if s['contracts'] != 1 else ''}"
-            )
-        if s["policies"]:
-            doc_parts.append(
-                f"{s['policies']} polic{'ies' if s['policies'] != 1 else 'y'}"
-            )
-        if doc_parts:
-            st.caption(" · ".join(doc_parts))
-        else:
-            st.caption("No documents uploaded yet")
+    if s["total_findings"] > 0:
+        findings_strip = f"""
+        <div class="findings-strip">
+          <div class="fchip good"><span class="v">{s['good']}</span><span class="l">Good</span></div>
+          <div class="fchip bad"><span class="v">{s['bad']}</span><span class="l">Bad</span></div>
+          <div class="fchip ugly"><span class="v">{s['ugly']}</span><span class="l">Ugly</span></div>
+        </div>
+        """
+    else:
+        findings_strip = """
+        <div class="findings-strip">
+          <div class="fchip empty"><span class="l">No findings yet</span></div>
+        </div>
+        """
 
-        # Program-at-a-Glance: policy type badges
-        ptc = client.get("policy_type_counts", {})
-        if ptc:
-            _type_colors = {
-                "gl": "#1565C0", "general liability": "#1565C0",
-                "wc": "#2E7D32", "workers": "#2E7D32",
-                "auto": "#E65100", "commercial auto": "#E65100",
-                "umbrella": "#6A1B9A", "excess": "#6A1B9A",
-                "cyber": "#00838F", "professional": "#00695C",
-                "e&o": "#00695C", "d&o": "#4527A0",
-                "management": "#4527A0", "epli": "#880E4F",
-                "crime": "#BF360C", "property": "#558B2F",
-            }
-            def _pt_color(pt):
-                ptl = pt.lower()
-                for kw, clr in _type_colors.items():
-                    if kw in ptl:
-                        return clr
-                return "#607D8B"
+    industry_html = (
+        f'<p class="cc-industry">{_esc(client["industry"])}</p>'
+        if client.get("industry") else ""
+    )
 
-            badges_html = " ".join(
-                f"<span style='background:{_pt_color(pt)};color:white;"
-                f"padding:1px 7px;border-radius:9px;font-size:0.7rem;font-weight:600;"
-                f"white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"
-                f"max-width:200px'>{pt} ({cnt})</span>"
-                for pt, cnt in sorted(ptc.items())
-            )
-            st.markdown(
-                f"<div style='margin:4px 0 2px;display:flex;flex-wrap:wrap;gap:4px'>"
-                f"{badges_html}</div>",
-                unsafe_allow_html=True,
-            )
+    _md(
+        f"""<div class="client-card">
+          <div class="cc-strip {strip_cls}"></div>
+          <div class="cc-head">
+            <span class="cc-stage {stage_cls}">{_esc(stage_label)}</span>
+            <span class="cc-date">{_esc(client['last_modified'])}</span>
+          </div>
+          <h3 class="cc-name">{_esc(client['display_name'])}</h3>
+          {industry_html}
+          <p class="cc-docs">{_esc(docs_line)}</p>
+          {policy_tags_html}
+          {findings_strip}
+        </div>"""
+    )
 
-        # Finding counts
-        if s["total_findings"] > 0:
-            c_good, c_bad, c_ugly = st.columns(3)
-            with c_good:
-                st.markdown(
-                    f"<div style='text-align:center'>"
-                    f"<span style='font-size:1.5rem;font-weight:700;color:{COLOR_GOOD}'>"
-                    f"{s['good']}</span><br>"
-                    f"<span style='font-size:0.75rem;color:#666'>Good</span></div>",
-                    unsafe_allow_html=True,
-                )
-            with c_bad:
-                st.markdown(
-                    f"<div style='text-align:center'>"
-                    f"<span style='font-size:1.5rem;font-weight:700;color:{COLOR_BAD}'>"
-                    f"{s['bad']}</span><br>"
-                    f"<span style='font-size:0.75rem;color:#666'>Bad</span></div>",
-                    unsafe_allow_html=True,
-                )
-            with c_ugly:
-                st.markdown(
-                    f"<div style='text-align:center'>"
-                    f"<span style='font-size:1.5rem;font-weight:700;color:{COLOR_UGLY}'>"
-                    f"{s['ugly']}</span><br>"
-                    f"<span style='font-size:0.75rem;color:#666'>Ugly</span></div>",
-                    unsafe_allow_html=True,
-                )
-        else:
-            st.markdown(
-                "<span style='font-size:0.875rem;color:#bbb'>No findings yet</span>",
-                unsafe_allow_html=True,
-            )
-
-        # Quick stats line
-        qs_parts = []
-        if s["policies"]:
-            qs_parts.append(f"{s['policies']} polic{'ies' if s['policies'] != 1 else 'y'} analyzed")
-        if s["total_findings"]:
-            qs_parts.append(f"{s['total_findings']} findings")
-        if s["ugly"]:
-            qs_parts.append(f"<span style='color:{COLOR_UGLY};font-weight:600'>{s['ugly']} critical</span>")
-        last_run = client.get("last_analysis_date", "")
-        if last_run:
-            qs_parts.append(f"Last run: {last_run}")
-        if qs_parts:
-            st.markdown(
-                f"<div style='font-size:0.75rem;color:#888;margin-top:4px'>"
-                f"{'&nbsp;&middot;&nbsp;'.join(qs_parts)}</div>",
-                unsafe_allow_html=True,
-            )
-
-        st.markdown("<br>", unsafe_allow_html=True)
-
-        # Action buttons: Open | Edit | Delete
-        btn_open, btn_edit, btn_del = st.columns([3, 2, 1])
-        with btn_open:
-            if st.button(
-                "Open &rarr;",
-                key=f"open_{slug}",
-                use_container_width=True,
-                type="primary",
-            ):
-                st.session_state.selected_client = slug
-                st.switch_page("pages/2_Document_Intake.py")
-        with btn_edit:
-            if st.button(
-                "Edit",
-                key=f"edit_{slug}",
-                use_container_width=True,
-            ):
-                st.session_state.selected_client  = slug
-                st.session_state.client_edit_mode = "edit"
-                st.switch_page("pages/1_Client_Setup.py")
-        with btn_del:
-            if st.button(
-                "&#128465;",
-                key=f"delete_{slug}",
-                use_container_width=True,
-                help="Delete this client",
-            ):
-                st.session_state[confirm_key] = True
-                st.rerun()
+    # Action buttons (Streamlit, post-card so they're clickable)
+    btn_open, btn_edit, btn_del = st.columns([3, 2, 1])
+    with btn_open:
+        if st.button(
+            "Open &rarr;",
+            key=f"open_{slug}",
+            use_container_width=True,
+            type="primary",
+        ):
+            st.session_state.selected_client = slug
+            st.switch_page("pages/2_Document_Intake.py")
+    with btn_edit:
+        if st.button(
+            "Edit",
+            key=f"edit_{slug}",
+            use_container_width=True,
+        ):
+            st.session_state.selected_client  = slug
+            st.session_state.client_edit_mode = "edit"
+            st.switch_page("pages/1_Client_Setup.py")
+    with btn_del:
+        if st.button(
+            "&#128465;",
+            key=f"delete_{slug}",
+            use_container_width=True,
+            help="Delete this client",
+        ):
+            st.session_state[confirm_key] = True
+            st.rerun()
 
 
 # ── 3-column grid ──────────────────────────────────────────────────

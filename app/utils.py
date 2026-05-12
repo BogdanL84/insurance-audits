@@ -25,11 +25,29 @@ _SETTINGS_PATH = Path(__file__).parent.parent / "settings.json"
 
 
 def _load_theme() -> str:
-    """Read theme from settings.json on every call — not cached."""
+    """Read theme from settings.json on every call — not cached.
+    Day-1 restyle (2026-05-11): default flipped to 'light'."""
     try:
-        return json.loads(_SETTINGS_PATH.read_text(encoding="utf-8")).get("theme", "dark")
+        return json.loads(_SETTINGS_PATH.read_text(encoding="utf-8")).get("theme", "light")
     except Exception:
-        return "dark"
+        return "light"
+
+
+def _html_escape(s: str) -> str:
+    """HTML-escape a string for safe inline rendering."""
+    import html as _html
+    return _html.escape(s) if s else ""
+
+
+def _sidebar_status_pill(stage: str) -> tuple[str, str]:
+    """Map audit stage → (CSS class suffix, display label) for the
+    sidebar active-client status pill. Day-1 restyle (2026-05-11)."""
+    if stage in ("findings_imported", "output_generated"):
+        return "imported", "Findings Imported"
+    if stage == "findings_reviewed":
+        return "reviewed", "Reviewed"
+    label = dict(STAGES).get(stage, stage)
+    return "setup", label
 
 
 def _save_theme(theme: str) -> None:
@@ -52,89 +70,171 @@ def _save_theme(theme: str) -> None:
 _FONTS_HTML = """
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 """
 
-# ── Dark theme CSS variables ──────────────────────────────────────
+# ── Dark theme CSS variables (secondary toggle) ──────────────────
+# Day-1 restyle (2026-05-11): true dark companion to the light theme.
+# NOT the audit-report's warm-ink palette — the audit report is a
+# separate visual product. Same vibrant blue/teal/gradient accents,
+# inverted surfaces only.
 _DARK_VARS = """
 <style>
 :root {
-  --bg-app:          #0d1117;
-  --bg-sidebar:      #0d1421;
-  --bg-card:         #161b27;
-  --bg-card-2:       #1c2333;
-  --bg-input:        #1c2333;
-  --bg-hover:        #21273a;
-  --border:          #2a3347;
-  --border-subtle:   #1e2d3d;
-  --text-primary:    #e8edf5;
-  --text-body:       #c9d1d9;
-  --text-secondary:  #8b949e;
-  --text-muted:      #8b949e;
-  --text-label:      #b1bac4;
-  --sidebar-text:    #d8dee8;
-  --sidebar-muted:   #8b949e;
-  --sidebar-link:    #8b949e;
-  --sidebar-link-h:  #e6edf3;
-  --accent:          #388bfd;
-  --accent-hover:    #58a6ff;
-  --accent-subtle:   rgba(56, 139, 253, 0.12);
-  --good:            #3fb950;
-  --bad:             #f0883e;
-  --ugly:            #f85149;
-  --review:          #d4a017;
-  --good-bg:         rgba(63, 185, 80, 0.12);
-  --bad-bg:          rgba(240, 136, 62, 0.12);
-  --ugly-bg:         rgba(248, 81, 73, 0.12);
-  --review-bg:       rgba(212, 160, 23, 0.14);
+  /* Surfaces */
+  --bg:                #0a0f1a;
+  --bg-card:           #14191f;
+  --bg-subtle:         #1a1f2c;
+  --bg-input:          #14191f;
+  --border:            #2a323d;
+  --border-soft:       #1f2530;
+  --border-strong:     #3a4451;
+  /* Text */
+  --text:              #f1f5f9;
+  --text-soft:         #cbd5e1;
+  --muted:             #94a3b8;
+  --muted-light:       #64748b;
+  /* Brand + accents — same as light, work on dark too */
+  --primary:           #0176d3;
+  --primary-light:     #1a8cf2;
+  --primary-dark:      #014486;
+  --teal:              #06b6d4;
+  --teal-light:        #67e8f9;
+  --indigo:            #6366f1;
+  --purple:            #9333ea;
+  --pink:              #ec4899;
+  --orange:            #f97316;
+  --amber:             #f59e0b;
+  --green:             #10b981;
+  --green-light:       #34d399;
+  --red:               #ef4444;
+  --red-soft:          #fb7185;
+  /* Gradients — identical to light theme; gradients work on either bg */
+  --grad-primary:      linear-gradient(135deg, #0176d3 0%, #06b6d4 100%);
+  --grad-warm:         linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  --grad-success:      linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --grad-danger:       linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+  --grad-purple:       linear-gradient(135deg, #6366f1 0%, #9333ea 100%);
+  --grad-amber:        linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  /* Chrome */
   --shadow-sm:       0 1px 2px rgba(0,0,0,0.5);
   --shadow:          0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
   --radius:          8px;
   --radius-sm:       6px;
-  --font-ui:         'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-mono:       'DM Mono', 'JetBrains Mono', 'Courier New', monospace;
+  --font-ui:         'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:       'JetBrains Mono', 'DM Mono', 'Courier New', monospace;
+
+  /* LEGACY ALIASES — old token names kept so the existing 900-
+     line component CSS doesn't all break at once. Remove after
+     a CSS audit, deferred. */
+  --text-primary:      var(--text);
+  --text-body:         var(--text);
+  --text-secondary:    var(--muted);
+  --text-muted:        var(--muted);
+  --text-label:        var(--text-soft);
+  --bg-app:            var(--bg);
+  --bg-sidebar:        var(--bg-card);
+  --bg-card-2:         var(--bg-subtle);
+  --bg-hover:          var(--bg-subtle);
+  --border-subtle:     var(--border-soft);
+  --sidebar-text:      var(--text);
+  --sidebar-muted:     var(--muted);
+  --sidebar-link:      var(--muted);
+  --sidebar-link-h:    var(--text);
+  --accent:            var(--primary);
+  --accent-hover:      var(--primary-light);
+  --accent-subtle:     rgba(1, 118, 211, 0.1);
+  --good:              var(--green);
+  --bad:               var(--orange);
+  --ugly:              var(--red);
+  --review:            var(--amber);
+  --good-bg:           rgba(16, 185, 129, 0.12);
+  --bad-bg:            rgba(249, 115, 22, 0.12);
+  --ugly-bg:           rgba(239, 68, 68, 0.12);
+  --review-bg:         rgba(245, 158, 11, 0.14);
 }
 </style>
 """
 
-# ── Light theme CSS variables ─────────────────────────────────────
+# ── Light theme CSS variables (DEFAULT) ─────────────────────────────
+# Day-1 restyle (2026-05-11): Salesforce-vibrant light-mode-first
+# palette. Blue → teal gradient accent. Heavy gradient use on stat
+# tiles, primary button, sidebar brand mark, hero strips. White cards
+# on slightly-blue-tinted off-white background.
 _LIGHT_VARS = """
 <style>
 :root {
-  --bg-app:          #f4f6f8;
-  --bg-sidebar:      #0d1421;
-  --bg-card:         #ffffff;
-  --bg-card-2:       #f8fafc;
-  --bg-input:        #ffffff;
-  --bg-hover:        #f1f5f9;
-  --border:          #e2e8f0;
-  --border-subtle:   #f1f5f9;
-  --text-primary:    #032d60;
-  --text-body:       #032d60;
-  --text-secondary:  #4a6276;
-  --text-muted:      #6b7280;
-  --text-label:      #4a6276;
-  --sidebar-text:    #d8dee8;
-  --sidebar-muted:   #8b949e;
-  --sidebar-link:    #8b949e;
-  --sidebar-link-h:  #e6edf3;
-  --accent:          #0176d3;
-  --accent-hover:    #0284c7;
-  --accent-subtle:   rgba(1, 118, 211, 0.1);
-  --good:            #2e844a;
-  --bad:             #dd7a06;
-  --ugly:            #ba0517;
-  --review:          #a06800;
-  --good-bg:         rgba(46, 132, 74, 0.1);
-  --bad-bg:          rgba(221, 122, 6, 0.1);
-  --ugly-bg:         rgba(186, 5, 23, 0.1);
-  --review-bg:       rgba(160, 104, 0, 0.1);
-  --shadow-sm:       0 1px 2px rgba(0,0,0,0.08);
-  --shadow:          0 2px 8px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.06);
+  /* Surfaces */
+  --bg:                #f7f8fc;
+  --bg-card:           #ffffff;
+  --bg-subtle:         #f1f4fa;
+  --bg-input:          #fafbfd;
+  --border:            #e4e8f0;
+  --border-soft:       #eef1f6;
+  --border-strong:     #d4dae5;
+  /* Text */
+  --text:              #1a2233;
+  --text-soft:         #4a5568;
+  --muted:             #8896ab;
+  --muted-light:       #b4bdcc;
+  /* Brand + accents */
+  --primary:           #0176d3;
+  --primary-light:     #1a8cf2;
+  --primary-dark:      #014486;
+  --teal:              #06b6d4;
+  --teal-light:        #67e8f9;
+  --indigo:            #6366f1;
+  --purple:            #9333ea;
+  --pink:              #ec4899;
+  --orange:            #f97316;
+  --amber:             #f59e0b;
+  --green:             #10b981;
+  --green-light:       #34d399;
+  --red:               #ef4444;
+  --red-soft:          #fb7185;
+  /* Gradients */
+  --grad-primary:      linear-gradient(135deg, #0176d3 0%, #06b6d4 100%);
+  --grad-warm:         linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  --grad-success:      linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --grad-danger:       linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+  --grad-purple:       linear-gradient(135deg, #6366f1 0%, #9333ea 100%);
+  --grad-amber:        linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  /* Chrome */
+  --shadow-sm:       0 1px 2px rgba(0,0,0,0.06);
+  --shadow:          0 2px 8px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
   --radius:          8px;
   --radius-sm:       6px;
-  --font-ui:         'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-mono:       'DM Mono', 'JetBrains Mono', 'Courier New', monospace;
+  --font-ui:         'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:       'JetBrains Mono', 'DM Mono', 'Courier New', monospace;
+
+  /* LEGACY ALIASES — old token names kept so the existing 900-
+     line component CSS doesn't all break at once. Remove after
+     a CSS audit, deferred. */
+  --text-primary:      var(--text);
+  --text-body:         var(--text);
+  --text-secondary:    var(--muted);
+  --text-muted:        var(--muted);
+  --text-label:        var(--text-soft);
+  --bg-app:            var(--bg);
+  --bg-sidebar:        var(--bg-card);
+  --bg-card-2:         var(--bg-subtle);
+  --bg-hover:          var(--bg-subtle);
+  --border-subtle:     var(--border-soft);
+  --sidebar-text:      var(--text);
+  --sidebar-muted:     var(--muted);
+  --sidebar-link:      var(--muted);
+  --sidebar-link-h:    var(--text);
+  --accent:            var(--primary);
+  --accent-hover:      var(--primary-light);
+  --accent-subtle:     rgba(1, 118, 211, 0.1);
+  --good:              var(--green);
+  --bad:               var(--orange);
+  --ugly:              var(--red);
+  --review:            var(--amber);
+  --good-bg:           rgba(16, 185, 129, 0.12);
+  --bad-bg:            rgba(249, 115, 22, 0.12);
+  --ugly-bg:           rgba(239, 68, 68, 0.12);
+  --review-bg:         rgba(245, 158, 11, 0.14);
 }
 </style>
 """
@@ -260,19 +360,16 @@ hr {
 }
 
 /* ═══════════════════════════════════════════════
-   SIDEBAR (always dark)
+   SIDEBAR (Day-1 restyle: light-mode first)
 ═══════════════════════════════════════════════ */
 
-[data-testid="stSidebar"] > div:first-child {
-  background-color: var(--bg-sidebar) !important;
-  border-right: 1px solid rgba(255,255,255,0.06) !important;
-}
-
+[data-testid="stSidebar"] > div:first-child,
 [data-testid="stSidebarContent"] {
   background-color: var(--bg-sidebar) !important;
+  border-right: 1px solid var(--border) !important;
 }
 
-/* All text in sidebar stays light */
+/* Sidebar text uses normal app text color in light mode */
 [data-testid="stSidebar"] p,
 [data-testid="stSidebar"] span,
 [data-testid="stSidebar"] div,
@@ -293,39 +390,151 @@ hr {
   color: var(--sidebar-link-h) !important;
 }
 
-/* Sidebar page links */
+/* Sidebar page-link rows: tighter, with hover wash */
 [data-testid="stSidebar"] [data-testid="stPageLink-NavLink"] {
   border-radius: var(--radius-sm) !important;
-  padding: 4px 8px !important;
-  transition: background 0.15s ease;
+  padding: 6px 10px !important;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 [data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:hover {
-  background-color: rgba(255,255,255,0.08) !important;
+  background-color: rgba(1,118,211,0.06) !important;
+  color: var(--primary) !important;
 }
 
-/* Sidebar selectbox */
+/* Sidebar selectbox: card-surface with subtle border (sits inside .sb-client-card) */
 [data-testid="stSidebar"] [data-baseweb="select"] > div {
-  background-color: rgba(255,255,255,0.06) !important;
-  border-color: rgba(255,255,255,0.12) !important;
-  color: var(--sidebar-text) !important;
+  background-color: var(--bg-card) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+/* Force the value text inside the select to use --text (baseweb sets
+   nested colors that can override the ancestor rule) */
+[data-testid="stSidebar"] [data-baseweb="select"] > div > div,
+[data-testid="stSidebar"] [data-baseweb="select"] [data-baseweb="select-search"] input,
+[data-testid="stSidebar"] [data-baseweb="select"] input {
+  color: var(--text) !important;
 }
 [data-testid="stSidebar"] [data-baseweb="select"] svg {
-  color: var(--sidebar-muted) !important;
+  color: var(--muted) !important;
 }
 
-/* Sidebar buttons */
+/* Sidebar secondary buttons (theme toggle) — transparent so the
+   sidebar surface shows through; border defines the button. */
 [data-testid="stSidebar"] [data-testid="stBaseButton-secondary"] {
-  background-color: rgba(255,255,255,0.06) !important;
-  border-color: rgba(255,255,255,0.12) !important;
-  color: var(--sidebar-text) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
 }
 [data-testid="stSidebar"] [data-testid="stBaseButton-secondary"]:hover {
-  background-color: rgba(255,255,255,0.1) !important;
-  border-color: rgba(255,255,255,0.2) !important;
+  background-color: rgba(1,118,211,0.06) !important;
+  border-color: var(--primary) !important;
+  color: var(--primary) !important;
 }
 
 /* Hide built-in nav */
 [data-testid="stSidebarNav"] { display: none !important; }
+
+/* ── Brand row (gradient mark + name) ─────────────── */
+.sb-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 4px 18px;
+}
+.sb-brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--grad-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(1,118,211,0.28);
+  flex-shrink: 0;
+}
+.sb-brand-text { line-height: 1.15; }
+.sb-brand-name {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+}
+.sb-brand-sub {
+  font-size: 0.72rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 2px;
+}
+
+/* ── Active-client card ─────────────────────────── */
+.sb-client-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px 12px;
+  margin: 0 0 14px;
+  box-shadow: var(--shadow-sm);
+}
+.sb-client-label {
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em;
+  color: var(--muted) !important;
+  margin: 0 0 6px;
+}
+/* Pull the selectbox tighter inside the card */
+.sb-client-card + div [data-baseweb="select"],
+.sb-client-card [data-baseweb="select"] {
+  margin-top: 0 !important;
+}
+
+.sb-client-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(148,163,184,0.14);
+  color: var(--text-secondary) !important;
+}
+.sb-client-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+.sb-client-status.setup    { background: rgba(148,163,184,0.16); color: var(--muted) !important; }
+.sb-client-status.setup::before    { background: var(--muted); }
+.sb-client-status.imported { background: rgba(249,115,22,0.14);  color: var(--orange) !important; }
+.sb-client-status.imported::before { background: var(--orange); }
+.sb-client-status.reviewed { background: rgba(16,185,129,0.14);  color: var(--green) !important; }
+.sb-client-status.reviewed::before { background: var(--green); }
+
+/* ── Nav section headers via :has() href-targeting ─ */
+[data-testid="stSidebar"] [data-testid="stPageLink"]:has(a[href*="Client_Setup"])::before {
+  content: "WORKFLOW";
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  padding: 14px 10px 6px;
+}
+[data-testid="stSidebar"] [data-testid="stPageLink"]:has(a[href*="Settings"])::before {
+  content: "CONFIGURATION";
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  padding: 14px 10px 6px;
+}
 
 /* ═══════════════════════════════════════════════
    CARDS
@@ -344,26 +553,319 @@ hr {
 }
 
 /* ═══════════════════════════════════════════════
+   DASHBOARD (Day-1 restyle, 2026-05-11)
+═══════════════════════════════════════════════ */
+
+/* Page hero: title + subtitle */
+.page-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 0 18px;
+}
+.page-hero-title {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  color: var(--text-primary) !important;
+  margin: 0;
+  line-height: 1.15;
+}
+.page-hero-sub {
+  font-size: 0.9rem !important;
+  color: var(--text-secondary) !important;
+  margin: 0;
+}
+
+/* Gradient stat tiles */
+.stat-tile {
+  position: relative;
+  padding: 18px 18px 16px;
+  border-radius: 14px;
+  color: #ffffff;            /* always white on gradient */
+  overflow: hidden;
+  min-height: 108px;
+  box-shadow: var(--shadow);
+}
+.stat-tile.primary { background: var(--grad-primary); }
+.stat-tile.warm    { background: var(--grad-warm); }
+.stat-tile.danger  { background: var(--grad-danger); }
+.stat-tile.success { background: var(--grad-success); }
+.stat-tile.purple  { background: var(--grad-purple); }
+.stat-tile.amber   { background: var(--grad-amber); }
+
+.stat-tile .stat-label {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85) !important;
+  margin: 0 0 6px;
+}
+.stat-tile .stat-value {
+  font-family: var(--font-mono) !important;
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  color: #ffffff !important;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.stat-tile .stat-trend {
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  color: rgba(255,255,255,0.88) !important;
+  margin: 8px 0 0;
+}
+.stat-tile .stat-glyph {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Donut + Bars panels */
+.panel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px 18px;
+  box-shadow: var(--shadow-sm);
+}
+.panel-title {
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary) !important;
+  margin: 0 0 12px;
+}
+.donut-wrap {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.donut-wrap svg { flex-shrink: 0; }
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+}
+.donut-legend .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+.donut-legend .swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.donut-legend .count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Stacked-bar (per-client) rows */
+.client-bars { display: flex; flex-direction: column; gap: 12px; }
+.client-bar-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 56px;
+  align-items: center;
+  gap: 12px;
+}
+.client-bar-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.client-bar-track {
+  display: flex;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+.client-bar-seg { height: 100%; }
+.client-bar-seg.good  { background: var(--green); }
+.client-bar-seg.bad   { background: var(--orange); }
+.client-bar-seg.ugly  { background: var(--red); }
+.client-bar-count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+/* Client cards (dashboard grid) */
+.client-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 18px 14px;
+  overflow: hidden;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 6px;
+}
+.client-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+.client-card .cc-strip {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+}
+.client-card .cc-strip.primary { background: var(--grad-primary); }
+.client-card .cc-strip.warm    { background: var(--grad-warm); }
+.client-card .cc-strip.success { background: var(--grad-success); }
+.client-card .cc-strip.danger  { background: var(--grad-danger); }
+.client-card .cc-strip.purple  { background: var(--grad-purple); }
+.client-card .cc-strip.neutral { background: linear-gradient(135deg, var(--muted) 0%, var(--muted-light) 100%); }
+
+.client-card .cc-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.client-card .cc-stage {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(148,163,184,0.16);
+  color: var(--text-secondary);
+}
+.client-card .cc-stage.primary { background: rgba(1,118,211,0.12); color: var(--primary); }
+.client-card .cc-stage.warm    { background: rgba(249,115,22,0.14); color: var(--orange); }
+.client-card .cc-stage.success { background: rgba(16,185,129,0.14); color: var(--green); }
+.client-card .cc-stage.danger  { background: rgba(239,68,68,0.14);  color: var(--red); }
+.client-card .cc-date {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.client-card .cc-name {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 8px 0 2px;
+  line-height: 1.2;
+}
+.client-card .cc-industry {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin: 0 0 10px;
+}
+.client-card .cc-docs {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+.client-card .cc-policy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.client-card .cc-policy-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Findings strip inside client card */
+.findings-strip {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 4px;
+}
+.findings-strip .fchip {
+  flex: 1;
+  background: var(--bg-subtle);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.findings-strip .fchip .v {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.findings-strip .fchip .l {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.findings-strip .fchip.good .v { color: var(--green); }
+.findings-strip .fchip.bad  .v { color: var(--orange); }
+.findings-strip .fchip.ugly .v { color: var(--red); }
+.findings-strip .fchip.empty {
+  background: transparent;
+  border: 1px dashed var(--border);
+  align-items: center;
+  justify-content: center;
+}
+.findings-strip .fchip.empty .l {
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+/* ═══════════════════════════════════════════════
    BUTTONS
 ═══════════════════════════════════════════════ */
 
 [data-testid="stBaseButton-primary"] {
-  background: var(--accent) !important;
-  border: 1px solid var(--accent) !important;
+  background: var(--grad-primary) !important;
+  border: none !important;
   color: #ffffff !important;
   border-radius: var(--radius) !important;
   font-family: var(--font-ui) !important;
   font-size: 0.875rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.01em !important;
-  padding: 0.375rem 1rem !important;
-  transition: background 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 1px 3px rgba(56, 139, 253, 0.25) !important;
+  padding: 0.5rem 1.1rem !important;
+  transition: filter 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 4px 14px rgba(1, 118, 211, 0.28) !important;
 }
 [data-testid="stBaseButton-primary"]:hover {
-  background: var(--accent-hover) !important;
-  border-color: var(--accent-hover) !important;
-  box-shadow: 0 2px 8px rgba(56, 139, 253, 0.35) !important;
+  filter: brightness(1.05);
+  box-shadow: 0 6px 18px rgba(1, 118, 211, 0.36) !important;
+  transform: translateY(-1px);
 }
 
 [data-testid="stBaseButton-secondary"] {
@@ -938,43 +1440,26 @@ def render_breadcrumb(client_name: str, page_title: str) -> None:
 
 # ── Sidebar ────────────────────────────────────────────────────────
 def render_sidebar() -> None:
-    """Render the standard sidebar: branding, theme toggle, client quick-switch, nav."""
+    """Render the standard sidebar. Day-1 restyle (2026-05-11):
+    gradient brand mark + styled active-client card + status pill.
+    Light-mode-first; dark toggle still available via theme button."""
     theme = _load_theme()
 
-    # Branding colors depend on theme
-    if theme == "dark":
-        title_color  = "#ffffff"
-        broker_color = "#d0d0d0"
-        company_color = "#aaaaaa"
-    else:
-        title_color  = "#1a1a2e"
-        broker_color = "#374151"
-        company_color = "#6b7280"
-
     with st.sidebar:
-        # Branding
-        broker_lines = ""
-        if BROKER_NAME:
-            broker_lines += (
-                f"<br><span style='font-size:0.875rem;color:{broker_color}'>"
-                f"{BROKER_NAME}</span>"
-            )
-        if BROKER_COMPANY:
-            broker_lines += (
-                f"<br><span style='font-size:0.8rem;color:{company_color}'>"
-                f"{BROKER_COMPANY}</span>"
-            )
+        # ── Brand row: gradient mark + name + sub ──────────────────
+        brand_sub = _html_escape(BROKER_NAME) if BROKER_NAME else "Audit System"
         st.markdown(
-            f"<div style='padding:0.5rem 0 0.25rem'>"
-            f"<span style='font-size:1.2rem;font-weight:700;color:{title_color}'>"
-            f"&#128737;&nbsp;Audit System</span>"
-            f"{broker_lines}"
-            f"</div>",
+            f"""<div class="sb-brand-row">
+              <div class="sb-brand-mark">IA</div>
+              <div class="sb-brand-text">
+                <div class="sb-brand-name">Insurance Audit</div>
+                <div class="sb-brand-sub">{brand_sub}</div>
+              </div>
+            </div>""",
             unsafe_allow_html=True,
         )
-        st.divider()
 
-        # Client quick-switch
+        # ── Active-client card: label + selectbox + status pill ─────
         clients = list_clients(CLIENTS_DIR)
         if clients:
             client_map   = {c["slug"]: c["display_name"] for c in clients}
@@ -984,13 +1469,20 @@ def render_sidebar() -> None:
                 current_slug = slugs[0]
             idx = slugs.index(current_slug)
 
+            # Open the card visual chrome (closes after the status pill)
+            st.markdown(
+                "<div class='sb-client-card'>"
+                "<div class='sb-client-label'>ACTIVE CLIENT</div>",
+                unsafe_allow_html=True,
+            )
+
             chosen = st.selectbox(
                 "Quick-switch client",
                 options=slugs,
                 format_func=lambda x: client_map.get(x, x),
                 index=idx,
                 key="sidebar_client_selector",
-                help="Switch the active client without going back to the dashboard.",
+                label_visibility="collapsed",
             )
             if chosen != st.session_state.get("selected_client"):
                 st.session_state.selected_client = chosen
@@ -998,18 +1490,17 @@ def render_sidebar() -> None:
 
             active = next((c for c in clients if c["slug"] == chosen), None)
             if active:
-                stage_label = dict(STAGES).get(active["stage"], active["stage"])
-                color       = STAGE_COLORS.get(active["stage"], "#9E9E9E")
+                status_cls, status_label = _sidebar_status_pill(active["stage"])
                 st.markdown(
-                    f"<span class='stage-badge' style='background:{color}'>"
-                    f"{stage_label}</span>",
+                    f"<div class='sb-client-status {status_cls}'>{status_label}</div></div>",
                     unsafe_allow_html=True,
                 )
+            else:
+                st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.info("No clients yet.")
 
-        st.divider()
-
+        # ── Nav (Streamlit page links; section headers via CSS) ─────
         st.page_link("app.py",                           label="Dashboard")
         st.page_link("pages/1_Client_Setup.py",          label="1. Client Setup")
         st.page_link("pages/2_Document_Intake.py",       label="2. Document Intake")
