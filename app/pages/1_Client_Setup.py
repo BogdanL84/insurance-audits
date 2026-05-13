@@ -1,10 +1,11 @@
 """
 1_Client_Setup.py — Create a new client or edit an existing one.
 
-Day-2 restyle (2026-05-12): wide layout with page hero,
-6-step stepper, two cards (Client Information + Operations Detail
-with Optional badge), pill-toggle States + Risk Flags backed by
-session-state sets, ghost-style top Cancel.
+Treatment A restyle (2026-05-13): full-width gradient hero strip,
+floating stepper card, two form cards (Client Information +
+Operations Detail). States picker uses skinned st.multiselect.
+Risk Flags use categorized 3-column tile grid (Industry / Compliance
+/ Operations) with the pill-toggle pattern.
 
 Creates:
   clients/[slug]/contracts/
@@ -66,217 +67,230 @@ def _idx(lst, val):
         return 0
 
 
-# ── Pill-set session-state initialization (once per client) ────────
-# Re-seed only when the active client changes, so navigating away
-# and back doesn't reset in-progress edits.
-_init_marker = f"_cs_init_for_{selected or 'new'}"
+# ── Risk Flag categories (Treatment A) ─────────────────────────────
+_TA_RISK_GROUPS = [
+    ("INDUSTRY", "industry", [
+        "PE-backed / Private Equity",
+        "Construction / Contracting",
+        "Staffing / PEO",
+        "Maritime / USL&H",
+    ]),
+    ("COMPLIANCE", "compliance", [
+        "Government contracts",
+        "Healthcare / Medical",
+        "Hazardous materials",
+        "Food & Beverage / Processing",
+    ]),
+    ("OPERATIONS", "operations", [
+        "Multi-state operations",
+        "Transportation / Trucking (MCS-90)",
+        "Technology / SaaS",
+        "International operations",
+        "Real Estate / Property Management",
+        "High-value equipment",
+    ]),
+]
+
+
+# ── Session-state init (once per active client) ────────────────────
+_init_marker = f"_ta_init_for_{selected or 'new'}"
 if _init_marker not in st.session_state:
-    st.session_state.cs_selected_states = set(_get("states", []))
-    st.session_state.cs_selected_risks  = set(_get("special_risks", []))
-    st.session_state[_init_marker] = True
+    st.session_state.cs_selected_risks = set(_get("special_risks", []))
+    st.session_state.cs_states_ms      = list(_get("states", []))
+    st.session_state[_init_marker]     = True
 
 
-def _render_pill_row(
-    options: list[str],
-    state_key: str,
-    key_prefix: str,
-    per_row: int,
-) -> None:
-    """Render a wrapped grid of pill toggle buttons backed by a
-    session-state set. Clicking a pill toggles its membership and
-    triggers a rerun so the pill's style flips (secondary/primary)."""
-    selected_set: set = st.session_state[state_key]
-    for row_start in range(0, len(options), per_row):
-        row_options = options[row_start:row_start + per_row]
-        cols = st.columns(per_row)
-        for col, opt in zip(cols, row_options):
-            with col:
-                is_on = opt in selected_set
-                if st.button(
-                    opt,
-                    key=f"{key_prefix}_{opt}",
-                    type="primary" if is_on else "secondary",
-                ):
-                    if is_on:
-                        selected_set.discard(opt)
-                    else:
-                        selected_set.add(opt)
-                    st.rerun()
-
-
-# ── Page hero (title + Cancel ghost) ───────────────────────────────
+# ══════════════════════════════════════════════════════════════════
+#  HERO STRIP (full-width gradient)
+# ══════════════════════════════════════════════════════════════════
 if is_edit:
-    page_title = f"Edit — {existing_state['display_name']}"
-    page_sub   = "Update this commercial insurance audit's setup"
+    hero_title = f"Edit — {existing_state['display_name']}"
+    hero_sub   = ("Update this audit's client details and key risk "
+                  "markers so the AI can generate more accurate findings.")
 else:
-    page_title = "New Client"
-    page_sub   = "Set up a new commercial insurance audit"
+    hero_title = "New Client"
+    hero_sub   = ("Set up a new commercial insurance audit. Capture "
+                  "client details and key risk markers so the AI can "
+                  "generate more accurate findings.")
 
-col_hero, col_cancel_top = st.columns([8, 1])
-with col_hero:
-    st.markdown(
-        f'<div class="page-hero">'
-        f'<h1 class="page-hero-title">{page_title}</h1>'
-        f'<p class="page-hero-sub">{page_sub}</p>'
-        f'</div>',
-        unsafe_allow_html=True,
-    )
-with col_cancel_top:
-    st.write("")
-    if st.button("Cancel", key="cs_cancel_top", use_container_width=True):
-        # Drop any in-progress pill edits on cancel
-        st.session_state.pop("cs_selected_states", None)
-        st.session_state.pop("cs_selected_risks",  None)
-        st.session_state.pop(_init_marker, None)
-        st.switch_page("app.py")
-
-
-# ── Stepper: Setup is step 1 ───────────────────────────────────────
-render_stepper(1)
+st.markdown(
+    f'<div class="ta-hero">'
+    f'<div class="ta-hero-content">'
+    f'<p class="ta-hero-eyebrow">STEP 1 OF 6 &middot; SETUP</p>'
+    f'<h1 class="ta-hero-title">{hero_title}</h1>'
+    f'<p class="ta-hero-sub">{hero_sub}</p>'
+    f'<div class="ta-hero-chips">'
+    f'<span class="ta-hero-chip">&#10003; Required: Name + Industry</span>'
+    f'<span class="ta-hero-chip">&#9201; Takes ~2 min</span>'
+    f'</div>'
+    f'</div>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
 
 
-# ── Card 1: Client Information ─────────────────────────────────────
-with st.container(border=True):
-    st.markdown(
-        "<h3 style='margin:0 0 2px;font-size:1rem;font-weight:700'>"
-        "Client Information</h3>"
-        "<p style='margin:0 0 1rem;font-size:0.78rem;color:var(--muted)'>"
-        "Basic details about the company being audited"
-        "</p>",
-        unsafe_allow_html=True,
-    )
+# ══════════════════════════════════════════════════════════════════
+#  CONTENT (pulls up over the hero edge via .st-key-ta_content CSS)
+# ══════════════════════════════════════════════════════════════════
+with st.container(key="ta_content"):
 
-    display_name = st.text_input(
-        "Client Name *",
-        value=existing_state.get("display_name", ""),
-        placeholder="e.g. Acme Corporation",
-        key="cs_display_name",
-    )
+    # ── Stepper ───────────────────────────────────────────────────
+    render_stepper(1)
 
-    col_ind, col_web = st.columns(2)
-    with col_ind:
-        industry = st.selectbox(
-            "Industry *",
-            options=["— select —"] + INDUSTRIES,
-            index=_idx(["— select —"] + INDUSTRIES, _get("industry", "— select —")),
-            key="cs_industry",
-        )
-    with col_web:
-        website = st.text_input(
-            "Website",
-            value=_get("website", ""),
-            placeholder="e.g. acmecorp.com",
-            key="cs_website",
-        )
-
-    notes = st.text_area(
-        "Notes",
-        value=_get("notes", ""),
-        placeholder=(
-            "Anything useful for the audit — PE-backed, prior claims, "
-            "key exposures, what the CFO cares about."
-        ),
-        height=130,
-        help=(
-            "Anything useful for the audit: PE-backed, prior claims, key "
-            "exposures, contract relationships, what the CFO cares about, "
-            "red flags, renewal history."
-        ),
-        key="cs_notes",
-    )
-
-st.markdown("<div style='height:14px'></div>", unsafe_allow_html=True)
-
-
-# ── Card 2: Operations Detail (Optional) ───────────────────────────
-with st.container(border=True):
-    head_l, head_r = st.columns([6, 1])
-    with head_l:
+    # ── Card 1: Client Information ────────────────────────────────
+    with st.container(key="ta_card_info", border=True):
         st.markdown(
-            "<h3 style='margin:0 0 2px;font-size:1rem;font-weight:700'>"
-            "Operations Detail</h3>"
-            "<p style='margin:0 0 1rem;font-size:0.78rem;color:var(--muted)'>"
-            "Helps the AI generate more accurate findings"
-            "</p>",
-            unsafe_allow_html=True,
-        )
-    with head_r:
-        st.markdown(
-            "<div style='text-align:right;padding-top:4px'>"
-            "<span class='cs-optional-badge'>Optional</span>"
-            "</div>",
+            '<div class="ta-card-head"><div>'
+            '<h3 class="ta-card-title">Client Information</h3>'
+            '<p class="ta-card-sub">Basic details about the company being audited</p>'
+            '</div></div>',
             unsafe_allow_html=True,
         )
 
-    col_rev, col_emp = st.columns(2)
-    with col_rev:
-        revenue = st.selectbox(
-            "Annual Revenue",
-            options=["— select —"] + REVENUE_RANGES,
-            index=_idx(
-                ["— select —"] + REVENUE_RANGES,
-                _get("revenue", "— select —"),
-            ),
-            key="cs_revenue",
-        )
-    with col_emp:
-        employees = st.selectbox(
-            "Employees",
-            options=["— select —"] + EMPLOYEE_RANGES,
-            index=_idx(
-                ["— select —"] + EMPLOYEE_RANGES,
-                _get("employees", "— select —"),
-            ),
-            key="cs_employees",
+        display_name = st.text_input(
+            "Client Name *",
+            value=existing_state.get("display_name", ""),
+            placeholder="e.g. Acme Corporation",
+            key="cs_display_name",
         )
 
-    # ── Pill toggle: States of Operation ───────────────────────────
-    st.markdown(
-        "<div class='form-label' style='margin-top:0.75rem'>"
-        "States of Operation</div>",
-        unsafe_allow_html=True,
-    )
-    _render_pill_row(US_STATES, "cs_selected_states", "cs_pill_state", per_row=12)
+        col_ind, col_web = st.columns(2)
+        with col_ind:
+            industry = st.selectbox(
+                "Industry *",
+                options=["— select —"] + INDUSTRIES,
+                index=_idx(["— select —"] + INDUSTRIES, _get("industry", "— select —")),
+                key="cs_industry",
+            )
+        with col_web:
+            website = st.text_input(
+                "Website",
+                value=_get("website", ""),
+                placeholder="e.g. acmecorp.com",
+                key="cs_website",
+            )
 
-    # ── Pill toggle: Risk Flags ────────────────────────────────────
-    st.markdown(
-        "<div class='form-label' style='margin-top:0.85rem'>"
-        "Risk Flags</div>",
-        unsafe_allow_html=True,
-    )
-    _render_pill_row(SPECIAL_RISK_FLAGS, "cs_selected_risks", "cs_pill_risk", per_row=4)
+        notes = st.text_area(
+            "Notes",
+            value=_get("notes", ""),
+            placeholder=(
+                "Anything useful for the audit — PE-backed, prior claims, "
+                "key exposures, what the CFO cares about."
+            ),
+            height=130,
+            help=(
+                "Anything useful for the audit: PE-backed, prior claims, key "
+                "exposures, contract relationships, what the CFO cares about, "
+                "red flags, renewal history."
+            ),
+            key="cs_notes",
+        )
 
-    # ── Contract Parties (free-form textarea) ──────────────────────
-    existing_parties = _get("contract_parties", [])
-    contract_parties_raw = st.text_area(
-        "Upstream Contract Parties",
-        value="\n".join(existing_parties) if existing_parties else "",
-        placeholder="One per line:\nABC General Contractor\nCity of Portland",
-        height=90,
-        help="Who is requiring insurance of this client?",
-        key="cs_contract_parties",
-    )
+    # ── Card 2: Operations Detail (Optional) ──────────────────────
+    with st.container(key="ta_card_ops", border=True):
+        st.markdown(
+            '<div class="ta-card-head">'
+            '<div>'
+            '<h3 class="ta-card-title">Operations Detail</h3>'
+            '<p class="ta-card-sub">Helps the AI generate more accurate findings</p>'
+            '</div>'
+            '<span class="cs-optional-badge">Optional</span>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
 
-st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+        col_rev, col_emp = st.columns(2)
+        with col_rev:
+            revenue = st.selectbox(
+                "Annual Revenue",
+                options=["— select —"] + REVENUE_RANGES,
+                index=_idx(
+                    ["— select —"] + REVENUE_RANGES,
+                    _get("revenue", "— select —"),
+                ),
+                key="cs_revenue",
+            )
+        with col_emp:
+            employees = st.selectbox(
+                "Employees",
+                options=["— select —"] + EMPLOYEE_RANGES,
+                index=_idx(
+                    ["— select —"] + EMPLOYEE_RANGES,
+                    _get("employees", "— select —"),
+                ),
+                key="cs_employees",
+            )
 
+        # ── States of Operation: skinned multiselect ──────────────
+        st.markdown(
+            "<div class='form-label' style='margin-top:0.6rem'>States of Operation</div>",
+            unsafe_allow_html=True,
+        )
+        with st.container(key="ta_state_picker"):
+            states = st.multiselect(
+                "States of Operation",
+                options=US_STATES,
+                key="cs_states_ms",
+                label_visibility="collapsed",
+                placeholder="Type to search states (CA, TX, NY…)",
+            )
 
-# ── Action bar ─────────────────────────────────────────────────────
-btn_cancel, btn_spacer, btn_save = st.columns([2, 5, 3])
-with btn_cancel:
-    if st.button("← Cancel", key="cs_cancel_bottom", use_container_width=True):
-        st.session_state.pop("cs_selected_states", None)
-        st.session_state.pop("cs_selected_risks",  None)
-        st.session_state.pop(_init_marker, None)
-        st.switch_page("app.py")
+        # ── Risk Flags: categorized tile grid ─────────────────────
+        st.markdown(
+            "<div class='form-label' style='margin-top:1rem'>Risk Flags</div>",
+            unsafe_allow_html=True,
+        )
+        for group_label, group_slug, flags in _TA_RISK_GROUPS:
+            st.markdown(
+                f"<div class='ta-risk-group-label'>{group_label}</div>",
+                unsafe_allow_html=True,
+            )
+            rows = [flags[i:i + 3] for i in range(0, len(flags), 3)]
+            for row in rows:
+                cols = st.columns(3)
+                for col, flag in zip(cols, row):
+                    with col:
+                        is_on = flag in st.session_state.cs_selected_risks
+                        if st.button(
+                            flag,
+                            key=f"ta_risk_{group_slug}_{flag}",
+                            type="primary" if is_on else "secondary",
+                            use_container_width=True,
+                        ):
+                            if is_on:
+                                st.session_state.cs_selected_risks.discard(flag)
+                            else:
+                                st.session_state.cs_selected_risks.add(flag)
+                            st.rerun()
 
-with btn_save:
-    save_label = "Save Changes →" if is_edit else "Continue to Document Intake →"
-    submit_clicked = st.button(
-        save_label,
-        key="cs_submit",
-        type="primary",
-        use_container_width=True,
-    )
+        # ── Contract Parties (free-form) ──────────────────────────
+        existing_parties = _get("contract_parties", [])
+        contract_parties_raw = st.text_area(
+            "Upstream Contract Parties",
+            value="\n".join(existing_parties) if existing_parties else "",
+            placeholder="One per line:\nABC General Contractor\nCity of Portland",
+            height=90,
+            help="Who is requiring insurance of this client?",
+            key="cs_contract_parties",
+        )
+
+    # ── Action bar (white card with Cancel + Continue) ────────────
+    with st.container(key="ta_action_bar", border=True):
+        btn_cancel, btn_spacer, btn_save = st.columns([2, 5, 3])
+        with btn_cancel:
+            if st.button("← Cancel", key="cs_cancel", use_container_width=True):
+                st.session_state.pop("cs_selected_risks", None)
+                st.session_state.pop("cs_states_ms", None)
+                st.session_state.pop(_init_marker, None)
+                st.switch_page("app.py")
+        with btn_save:
+            save_label   = "Save Changes →" if is_edit else "Continue to Document Intake →"
+            submit_clicked = st.button(
+                save_label,
+                key="cs_submit",
+                type="primary",
+                use_container_width=True,
+            )
 
 
 # ── Handle submit ──────────────────────────────────────────────────
@@ -316,7 +330,7 @@ if submit_clicked:
         "website":          website.strip(),
         "revenue":          "" if revenue == "— select —" else revenue,
         "employees":        "" if employees == "— select —" else employees,
-        "states":           sorted(st.session_state.cs_selected_states),
+        "states":           sorted(st.session_state.cs_states_ms or []),
         "special_risks":    sorted(st.session_state.cs_selected_risks),
         "contract_parties": contract_parties,
         "notes":            notes.strip(),
@@ -349,9 +363,8 @@ if submit_clicked:
     if not is_edit:
         st.session_state.just_created = display_name.strip()
 
-    # Clear pill-set state so a future visit re-seeds from disk
-    st.session_state.pop("cs_selected_states", None)
-    st.session_state.pop("cs_selected_risks",  None)
+    st.session_state.pop("cs_selected_risks", None)
+    st.session_state.pop("cs_states_ms", None)
     st.session_state.pop(_init_marker, None)
 
     st.switch_page("pages/2_Document_Intake.py")

@@ -64,30 +64,24 @@ if st.session_state.get("just_created"):
     st.success(f"**{name}** created. Upload their documents below.")
 
 
-# ── Page hero ──────────────────────────────────────────────────────
-col_hero, col_continue = st.columns([8, 2])
-with col_hero:
-    st.markdown(
-        f'<div class="page-hero">'
-        f'<h1 class="page-hero-title">Document Intake</h1>'
-        f'<p class="page-hero-sub">{display_name} &middot; '
-        f'Upload policies, contracts, and supporting docs</p>'
-        f'</div>',
-        unsafe_allow_html=True,
-    )
-with col_continue:
-    st.write("")
-    if st.button(
-        "Continue to Analyze →",
-        key="di_continue",
-        type="primary",
-        use_container_width=True,
-    ):
-        st.switch_page("pages/_Analyze.py")
-
-
-# ── Stepper: Upload is step 2 ──────────────────────────────────────
-render_stepper(2)
+# ══════════════════════════════════════════════════════════════════
+#  TREATMENT A HERO STRIP (full-width gradient)
+# ══════════════════════════════════════════════════════════════════
+st.markdown(
+    f'<div class="ta-hero">'
+    f'<div class="ta-hero-content">'
+    f'<p class="ta-hero-eyebrow">STEP 2 OF 6 &middot; UPLOAD</p>'
+    f'<h1 class="ta-hero-title">Document Intake</h1>'
+    f'<p class="ta-hero-sub">{display_name} &middot; '
+    f'Upload policies, contracts, and supporting docs to power the audit.</p>'
+    f'<div class="ta-hero-chips">'
+    f'<span class="ta-hero-chip">&#128196; 5 file types accepted</span>'
+    f'<span class="ta-hero-chip">&#9921; Up to {MAX_PDF_MB}MB each</span>'
+    f'</div>'
+    f'</div>'
+    f'</div>',
+    unsafe_allow_html=True,
+)
 
 # ══════════════════════════════════════════════════════════════════
 #  CONSTANTS
@@ -737,283 +731,293 @@ _cope_n = _count_files(cope_dir)
 def _tab_label(label: str, count: int) -> str:
     return f"{label} ({count})" if count else label
 
-tab_pol, tab_con, tab_lr, tab_cope_tab, tab_notes = st.tabs([
-    _tab_label("Policies",               _pol_n),
-    _tab_label("Contracts & Agreements", _con_n),
-    _tab_label("Loss Runs & EMOD",       _lr_n),
-    _tab_label("COPE / Property",        _cope_n),
-    "Notes & Context",
-])
+with st.container(key="ta_content"):
+    render_stepper(2)
+
+    tab_pol, tab_con, tab_lr, tab_cope_tab, tab_notes = st.tabs([
+        _tab_label("Policies",               _pol_n),
+        _tab_label("Contracts & Agreements", _con_n),
+        _tab_label("Loss Runs & EMOD",       _lr_n),
+        _tab_label("COPE / Property",        _cope_n),
+        "Notes & Context",
+    ])
 
 
-# ══════════════════════════════════════════════════════════════════
-#  TAB 1: POLICIES
-# ══════════════════════════════════════════════════════════════════
-with tab_pol:
-    pol_files = get_tab_files(policies_dir, "policy")
+    # ══════════════════════════════════════════════════════════════════
+    #  TAB 1: POLICIES
+    # ══════════════════════════════════════════════════════════════════
+    with tab_pol:
+        pol_files = get_tab_files(policies_dir, "policy")
 
-    if _render_upload_zone(
-        title="Drop policy PDFs here, or click to browse",
-        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
-        uploader_key="policy_uploader",
-        source_dir=policies_dir,
-        category="policy",
-    ):
-        st.rerun()
-
-    _render_status_banner(pol_files, "policies")
-
-    if pol_files:
-        for f in pol_files:
-            render_doc_card(f, "policy", policies_dir, None)
-    else:
-        st.caption("No policy files uploaded yet.")
-
-
-# ══════════════════════════════════════════════════════════════════
-#  TAB 2: CONTRACTS & AGREEMENTS
-# ══════════════════════════════════════════════════════════════════
-with tab_con:
-    con_files = get_tab_files(contracts_dir, "contract")
-
-    if _render_upload_zone(
-        title="Drop contracts here, or click to browse",
-        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
-        uploader_key="contract_uploader",
-        source_dir=contracts_dir,
-        category="contract",
-    ):
-        st.rerun()
-
-    _render_status_banner(con_files, "contracts")
-
-    if con_files:
-        for f in con_files:
-            render_doc_card(f, "contract", contracts_dir, _contract_meta_fields)
-    else:
-        st.caption("No contracts uploaded yet.")
-
-
-# ══════════════════════════════════════════════════════════════════
-#  TAB 3: LOSS RUNS & EMOD
-# ══════════════════════════════════════════════════════════════════
-with tab_lr:
-    lr_files = get_tab_files(loss_runs_dir, "loss_run")
-
-    if _render_upload_zone(
-        title="Drop loss run PDFs or Excel files here",
-        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
-        uploader_key="loss_run_uploader",
-        source_dir=loss_runs_dir,
-        category="loss_run",
-    ):
-        st.rerun()
-
-    _render_status_banner(lr_files, "loss runs")
-
-    if lr_files:
-        for f in lr_files:
-            render_doc_card(f, "loss_run", loss_runs_dir, _loss_run_meta_fields)
-    else:
-        st.caption("No loss run files uploaded yet.")
-
-    st.divider()
-
-    # ── Manual entry table ─────────────────────────────────────────
-    st.markdown("**Manual Loss History Entry**")
-    st.caption(
-        "Enter historical loss data directly if you have the data but not a formal loss run."
-    )
-
-    if "lr_manual_rows" not in st.session_state:
-        st.session_state.lr_manual_rows = list(state.get("loss_runs", []))
-
-    # Column header labels
-    if st.session_state.lr_manual_rows:
-        hc1, hc2, hc3, hc4, hc5, hc6, _ = st.columns([1.6, 1.8, 1.1, 1.5, 1.5, 1.2, 0.5])
-        with hc1: st.caption("Policy Line")
-        with hc2: st.caption("Carrier")
-        with hc3: st.caption("Year")
-        with hc4: st.caption("Total Incurred $")
-        with hc5: st.caption("Total Paid $")
-        with hc6: st.caption("Open Claims")
-
-    rows_to_delete = []
-    for ri, row in enumerate(st.session_state.lr_manual_rows):
-        with st.container(border=True):
-            c1, c2, c3, c4, c5, c6, cdel = st.columns([1.6, 1.8, 1.1, 1.5, 1.5, 1.2, 0.5])
-            with c1:
-                st.selectbox("Line", POLICY_LINES,
-                    index=POLICY_LINES.index(row.get("policy_line","GL"))
-                          if row.get("policy_line","") in POLICY_LINES else 0,
-                    key=f"lr_line_{ri}", label_visibility="collapsed")
-            with c2:
-                st.text_input("Carrier", value=row.get("carrier",""),
-                    key=f"lr_car_{ri}", placeholder="Carrier",
-                    label_visibility="collapsed")
-            with c3:
-                st.text_input("Year", value=row.get("policy_period",""),
-                    key=f"lr_yr_{ri}", placeholder="Year",
-                    label_visibility="collapsed")
-            with c4:
-                st.text_input("Incurred", value=row.get("total_incurred",""),
-                    key=f"lr_inc_{ri}", placeholder="e.g. 45000",
-                    label_visibility="collapsed")
-            with c5:
-                st.text_input("Paid", value=row.get("total_paid",""),
-                    key=f"lr_paid_{ri}", placeholder="e.g. 32000",
-                    label_visibility="collapsed")
-            with c6:
-                st.text_input("Open", value=row.get("open_claims_count",""),
-                    key=f"lr_open_{ri}", placeholder="# claims",
-                    label_visibility="collapsed")
-            with cdel:
-                st.markdown("<br>", unsafe_allow_html=True)
-                if st.button("&#128465;", key=f"lr_del_{ri}", help="Remove row"):
-                    rows_to_delete.append(ri)
-
-    if rows_to_delete:
-        for ri in sorted(rows_to_delete, reverse=True):
-            st.session_state.lr_manual_rows.pop(ri)
-        st.rerun()
-
-    if not st.session_state.lr_manual_rows:
-        st.caption("No manual entries yet.")
-
-    col_add, col_save, _ = st.columns([1.2, 1.2, 4])
-    with col_add:
-        if st.button("+ Add Row", key="lr_add_row"):
-            st.session_state.lr_manual_rows.append({
-                "policy_line": "GL", "carrier": "", "policy_period": "",
-                "total_incurred": "", "total_paid": "", "open_claims_count": "",
-            })
+        if _render_upload_zone(
+            title="Drop policy PDFs here, or click to browse",
+            sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+            uploader_key="policy_uploader",
+            source_dir=policies_dir,
+            category="policy",
+        ):
             st.rerun()
-    with col_save:
-        if st.button("Save Table", key="lr_save_manual", type="primary"):
-            n = len(st.session_state.lr_manual_rows)
-            state["loss_runs"] = [
-                {
-                    "policy_line":       st.session_state.get(f"lr_line_{ri}", ""),
-                    "carrier":           st.session_state.get(f"lr_car_{ri}",  ""),
-                    "policy_period":     st.session_state.get(f"lr_yr_{ri}",   ""),
-                    "total_incurred":    st.session_state.get(f"lr_inc_{ri}",  ""),
-                    "total_paid":        st.session_state.get(f"lr_paid_{ri}", ""),
-                    "open_claims_count": st.session_state.get(f"lr_open_{ri}", ""),
-                }
-                for ri in range(n)
-            ]
+
+        _render_status_banner(pol_files, "policies")
+
+        if pol_files:
+            for f in pol_files:
+                render_doc_card(f, "policy", policies_dir, None)
+        else:
+            st.caption("No policy files uploaded yet.")
+
+
+    # ══════════════════════════════════════════════════════════════════
+    #  TAB 2: CONTRACTS & AGREEMENTS
+    # ══════════════════════════════════════════════════════════════════
+    with tab_con:
+        con_files = get_tab_files(contracts_dir, "contract")
+
+        if _render_upload_zone(
+            title="Drop contracts here, or click to browse",
+            sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+            uploader_key="contract_uploader",
+            source_dir=contracts_dir,
+            category="contract",
+        ):
+            st.rerun()
+
+        _render_status_banner(con_files, "contracts")
+
+        if con_files:
+            for f in con_files:
+                render_doc_card(f, "contract", contracts_dir, _contract_meta_fields)
+        else:
+            st.caption("No contracts uploaded yet.")
+
+
+    # ══════════════════════════════════════════════════════════════════
+    #  TAB 3: LOSS RUNS & EMOD
+    # ══════════════════════════════════════════════════════════════════
+    with tab_lr:
+        lr_files = get_tab_files(loss_runs_dir, "loss_run")
+
+        if _render_upload_zone(
+            title="Drop loss run PDFs or Excel files here",
+            sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+            uploader_key="loss_run_uploader",
+            source_dir=loss_runs_dir,
+            category="loss_run",
+        ):
+            st.rerun()
+
+        _render_status_banner(lr_files, "loss runs")
+
+        if lr_files:
+            for f in lr_files:
+                render_doc_card(f, "loss_run", loss_runs_dir, _loss_run_meta_fields)
+        else:
+            st.caption("No loss run files uploaded yet.")
+
+        st.divider()
+
+        # ── Manual entry table ─────────────────────────────────────────
+        st.markdown("**Manual Loss History Entry**")
+        st.caption(
+            "Enter historical loss data directly if you have the data but not a formal loss run."
+        )
+
+        if "lr_manual_rows" not in st.session_state:
+            st.session_state.lr_manual_rows = list(state.get("loss_runs", []))
+
+        # Column header labels
+        if st.session_state.lr_manual_rows:
+            hc1, hc2, hc3, hc4, hc5, hc6, _ = st.columns([1.6, 1.8, 1.1, 1.5, 1.5, 1.2, 0.5])
+            with hc1: st.caption("Policy Line")
+            with hc2: st.caption("Carrier")
+            with hc3: st.caption("Year")
+            with hc4: st.caption("Total Incurred $")
+            with hc5: st.caption("Total Paid $")
+            with hc6: st.caption("Open Claims")
+
+        rows_to_delete = []
+        for ri, row in enumerate(st.session_state.lr_manual_rows):
+            with st.container(border=True):
+                c1, c2, c3, c4, c5, c6, cdel = st.columns([1.6, 1.8, 1.1, 1.5, 1.5, 1.2, 0.5])
+                with c1:
+                    st.selectbox("Line", POLICY_LINES,
+                        index=POLICY_LINES.index(row.get("policy_line","GL"))
+                              if row.get("policy_line","") in POLICY_LINES else 0,
+                        key=f"lr_line_{ri}", label_visibility="collapsed")
+                with c2:
+                    st.text_input("Carrier", value=row.get("carrier",""),
+                        key=f"lr_car_{ri}", placeholder="Carrier",
+                        label_visibility="collapsed")
+                with c3:
+                    st.text_input("Year", value=row.get("policy_period",""),
+                        key=f"lr_yr_{ri}", placeholder="Year",
+                        label_visibility="collapsed")
+                with c4:
+                    st.text_input("Incurred", value=row.get("total_incurred",""),
+                        key=f"lr_inc_{ri}", placeholder="e.g. 45000",
+                        label_visibility="collapsed")
+                with c5:
+                    st.text_input("Paid", value=row.get("total_paid",""),
+                        key=f"lr_paid_{ri}", placeholder="e.g. 32000",
+                        label_visibility="collapsed")
+                with c6:
+                    st.text_input("Open", value=row.get("open_claims_count",""),
+                        key=f"lr_open_{ri}", placeholder="# claims",
+                        label_visibility="collapsed")
+                with cdel:
+                    st.markdown("<br>", unsafe_allow_html=True)
+                    if st.button("&#128465;", key=f"lr_del_{ri}", help="Remove row"):
+                        rows_to_delete.append(ri)
+
+        if rows_to_delete:
+            for ri in sorted(rows_to_delete, reverse=True):
+                st.session_state.lr_manual_rows.pop(ri)
+            st.rerun()
+
+        if not st.session_state.lr_manual_rows:
+            st.caption("No manual entries yet.")
+
+        col_add, col_save, _ = st.columns([1.2, 1.2, 4])
+        with col_add:
+            if st.button("+ Add Row", key="lr_add_row"):
+                st.session_state.lr_manual_rows.append({
+                    "policy_line": "GL", "carrier": "", "policy_period": "",
+                    "total_incurred": "", "total_paid": "", "open_claims_count": "",
+                })
+                st.rerun()
+        with col_save:
+            if st.button("Save Table", key="lr_save_manual", type="primary"):
+                n = len(st.session_state.lr_manual_rows)
+                state["loss_runs"] = [
+                    {
+                        "policy_line":       st.session_state.get(f"lr_line_{ri}", ""),
+                        "carrier":           st.session_state.get(f"lr_car_{ri}",  ""),
+                        "policy_period":     st.session_state.get(f"lr_yr_{ri}",   ""),
+                        "total_incurred":    st.session_state.get(f"lr_inc_{ri}",  ""),
+                        "total_paid":        st.session_state.get(f"lr_paid_{ri}", ""),
+                        "open_claims_count": st.session_state.get(f"lr_open_{ri}", ""),
+                    }
+                    for ri in range(n)
+                ]
+                ast.save(client_path, state)
+                st.toast("Loss history saved.")
+
+        st.divider()
+
+        # ── EMOD ──────────────────────────────────────────────────────
+        st.markdown("**Experience Modification Rate (EMOD)**")
+        saved_emod = state.get("emod", {})
+        ec1, ec2, ec3, ec4 = st.columns(4)
+        with ec1:
+            cur_emod = st.text_input("Current EMOD", value=saved_emod.get("current", ""),
+                                      placeholder="e.g. 0.92", key="emod_cur")
+        with ec2:
+            p1_emod  = st.text_input("Prior Year 1", value=saved_emod.get("prior_1", ""),
+                                      placeholder="e.g. 0.95", key="emod_p1")
+        with ec3:
+            p2_emod  = st.text_input("Prior Year 2", value=saved_emod.get("prior_2", ""),
+                                      placeholder="e.g. 0.98", key="emod_p2")
+        with ec4:
+            p3_emod  = st.text_input("Prior Year 3", value=saved_emod.get("prior_3", ""),
+                                      placeholder="e.g. 1.02", key="emod_p3")
+        if st.button("Save EMOD", key="save_emod"):
+            state["emod"] = {
+                "current": cur_emod, "prior_1": p1_emod,
+                "prior_2": p2_emod,  "prior_3": p3_emod,
+            }
             ast.save(client_path, state)
-            st.toast("Loss history saved.")
+            st.toast("EMOD saved.")
 
-    st.divider()
 
-    # ── EMOD ──────────────────────────────────────────────────────
-    st.markdown("**Experience Modification Rate (EMOD)**")
-    saved_emod = state.get("emod", {})
-    ec1, ec2, ec3, ec4 = st.columns(4)
-    with ec1:
-        cur_emod = st.text_input("Current EMOD", value=saved_emod.get("current", ""),
-                                  placeholder="e.g. 0.92", key="emod_cur")
-    with ec2:
-        p1_emod  = st.text_input("Prior Year 1", value=saved_emod.get("prior_1", ""),
-                                  placeholder="e.g. 0.95", key="emod_p1")
-    with ec3:
-        p2_emod  = st.text_input("Prior Year 2", value=saved_emod.get("prior_2", ""),
-                                  placeholder="e.g. 0.98", key="emod_p2")
-    with ec4:
-        p3_emod  = st.text_input("Prior Year 3", value=saved_emod.get("prior_3", ""),
-                                  placeholder="e.g. 1.02", key="emod_p3")
-    if st.button("Save EMOD", key="save_emod"):
-        state["emod"] = {
-            "current": cur_emod, "prior_1": p1_emod,
-            "prior_2": p2_emod,  "prior_3": p3_emod,
+    # ══════════════════════════════════════════════════════════════════
+    #  TAB 4: COPE / PROPERTY SCHEDULE
+    # ══════════════════════════════════════════════════════════════════
+    with tab_cope_tab:
+        cope_files = get_tab_files(cope_dir, "cope")
+
+        if _render_upload_zone(
+            title="Drop property schedules, SOVs, or COPE data here",
+            sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
+            uploader_key="cope_uploader",
+            source_dir=cope_dir,
+            category="cope",
+        ):
+            st.rerun()
+
+        _render_status_banner(cope_files, "property docs")
+
+        if cope_files:
+            for f in cope_files:
+                render_doc_card(f, "cope", cope_dir, _cope_meta_fields)
+        else:
+            st.caption("No COPE / property files uploaded yet.")
+
+
+    # ══════════════════════════════════════════════════════════════════
+    #  TAB 5: NOTES & CONTEXT
+    # ══════════════════════════════════════════════════════════════════
+    with tab_notes:
+        st.subheader("Notes & Context")
+        st.caption(
+            "Broker observations, risk context, client quirks, and flags "
+            "that inform the analysis but don't come from a document."
+        )
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        saved_notes = state.get("broker_notes", {})
+
+        notes_text = st.text_area(
+            "Broker Notes",
+            value=saved_notes.get("notes", state.get("client_info", {}).get("notes", "")),
+            height=200,
+            placeholder=(
+                "Add context here: special risk situations, prior incidents, "
+                "client concerns, upcoming changes, contract negotiations in progress..."
+            ),
+            key="broker_notes_text",
+        )
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("**Risk Flags**")
+        st.caption("These flags are passed to the analysis engine.")
+
+        saved_flags = saved_notes.get("flags", {})
+        flag_values = {
+            key: st.checkbox(label, value=saved_flags.get(key, False), key=f"flag_{key}")
+            for key, label in FLAG_DEFS
         }
-        ast.save(client_path, state)
-        st.toast("EMOD saved.")
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("Save Notes & Flags", key="save_notes", type="primary"):
+            state["broker_notes"] = {"notes": notes_text, "flags": flag_values}
+            state.setdefault("client_info", {})["notes"] = notes_text
+            ast.save(client_path, state)
+            st.toast("Notes and flags saved.")
 
 
-# ══════════════════════════════════════════════════════════════════
-#  TAB 4: COPE / PROPERTY SCHEDULE
-# ══════════════════════════════════════════════════════════════════
-with tab_cope_tab:
-    cope_files = get_tab_files(cope_dir, "cope")
+    # ── Action bar (white card with Back + Continue) ──────────
+    with st.container(key="ta_action_bar", border=True):
+        btn_back, btn_spacer, btn_continue = st.columns([2, 5, 3])
+        with btn_back:
+            if st.button("← Back to Setup", key="di_back", use_container_width=True):
+                st.switch_page("pages/1_Client_Setup.py")
+        with btn_continue:
+            if st.button(
+                "Continue to Analyze →",
+                key="di_continue",
+                type="primary",
+                use_container_width=True,
+            ):
+                st.switch_page("pages/_Analyze.py")
 
-    if _render_upload_zone(
-        title="Drop property schedules, SOVs, or COPE data here",
-        sub=f"PDF, DOCX, MD, TXT, XLS, XLSX · up to {MAX_PDF_MB}MB each",
-        uploader_key="cope_uploader",
-        source_dir=cope_dir,
-        category="cope",
-    ):
-        st.rerun()
-
-    _render_status_banner(cope_files, "property docs")
-
-    if cope_files:
-        for f in cope_files:
-            render_doc_card(f, "cope", cope_dir, _cope_meta_fields)
-    else:
-        st.caption("No COPE / property files uploaded yet.")
-
-
-# ══════════════════════════════════════════════════════════════════
-#  TAB 5: NOTES & CONTEXT
-# ══════════════════════════════════════════════════════════════════
-with tab_notes:
-    st.subheader("Notes & Context")
-    st.caption(
-        "Broker observations, risk context, client quirks, and flags "
-        "that inform the analysis but don't come from a document."
-    )
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    saved_notes = state.get("broker_notes", {})
-
-    notes_text = st.text_area(
-        "Broker Notes",
-        value=saved_notes.get("notes", state.get("client_info", {}).get("notes", "")),
-        height=200,
-        placeholder=(
-            "Add context here: special risk situations, prior incidents, "
-            "client concerns, upcoming changes, contract negotiations in progress..."
-        ),
-        key="broker_notes_text",
-    )
-
-    st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown("**Risk Flags**")
-    st.caption("These flags are passed to the analysis engine.")
-
-    saved_flags = saved_notes.get("flags", {})
-    flag_values = {
-        key: st.checkbox(label, value=saved_flags.get(key, False), key=f"flag_{key}")
-        for key, label in FLAG_DEFS
-    }
-
-    st.markdown("<br>", unsafe_allow_html=True)
-    if st.button("Save Notes & Flags", key="save_notes", type="primary"):
-        state["broker_notes"] = {"notes": notes_text, "flags": flag_values}
-        state.setdefault("client_info", {})["notes"] = notes_text
-        ast.save(client_path, state)
-        st.toast("Notes and flags saved.")
-
-
-# ══════════════════════════════════════════════════════════════════
-#  BOTTOM: ai-exchange debug expander
-# Day-2: the old "BOTTOM: STATUS SUMMARY" block (final success/warning
-# banner + Go-to-Analyze button) was removed -- the per-tab status
-# banner + the page-hero "Continue to Analyze" button cover the same
-# affordances at the top of the page.
-# ════════════════════════════════════════════════════════════════
-st.divider()
-
-
-# ── ai-exchange preview ────────────────────────────────────────────
-with st.expander("Extracted text files (ai-exchange/)"):
-    exchange_files = sorted(exchange_dir.glob("*-extracted.txt"))
-    if exchange_files:
-        for ef in exchange_files:
-            st.markdown(f"&#128196; `{ef.name}` — {format_size(ef)}")
-        st.caption(f"Path: `{exchange_dir}`")
-    else:
-        st.caption("No extracted text files yet.")
+    # ── ai-exchange debug expander (inside .ta-content so it
+    #    inherits the 1200px max-width and side padding) ──────────
+    st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+    with st.expander("Extracted text files (ai-exchange/)"):
+        exchange_files = sorted(exchange_dir.glob("*-extracted.txt"))
+        if exchange_files:
+            for ef in exchange_files:
+                st.markdown(f"&#128196; `{ef.name}` — {format_size(ef)}")
+            st.caption(f"Path: `{exchange_dir}`")
+        else:
+            st.caption("No extracted text files yet.")

@@ -986,7 +986,8 @@ section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab"]:hover 
 section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"] {
   color: var(--primary) !important;
   font-weight: 700 !important;
-  border-bottom-color: var(--primary) !important;
+  border-bottom: 3px solid var(--primary) !important;
+  margin-bottom: -2px !important;
 }
 /* Kill the default tab highlight bar Streamlit emits */
 section[data-testid="stMain"] [data-testid="stTabs"] [data-baseweb="tab-highlight"] {
@@ -1008,10 +1009,14 @@ section[data-testid="stMain"] [data-testid="stTabs"]
   color: #ffffff;
 }
 
-/* ── Upload drop zone wrapper (st.container(key=upload_zone_*)) ── */
+/* ── Upload drop zone wrapper (st.container(key=upload_zone_*))
+   Solid card-bg base UNDER a stronger blue/teal gradient so the
+   wash actually reads against both light and dark page surfaces. */
 [class*="st-key-upload_zone_"] {
-  background: linear-gradient(135deg, rgba(1,118,211,0.04) 0%,
-              rgba(6,182,212,0.04) 100%) !important;
+  background-color: var(--bg-card) !important;
+  background-image: linear-gradient(135deg,
+                    rgba(1,118,211,0.10) 0%,
+                    rgba(6,182,212,0.12) 100%) !important;
   border: 2px dashed var(--primary) !important;
   border-radius: 14px !important;
   padding: 1.1rem 1.4rem 0.7rem !important;
@@ -1029,14 +1034,18 @@ section[data-testid="stMain"] [data-testid="stTabs"]
   font-size: 0.85rem !important;
   margin: 0 0 0.6rem;
 }
-/* Strip Streamlit's native chrome inside the upload zone */
+/* Strip Streamlit's native chrome inside the upload zone so the
+   .ta-content + .upload-zone gradient bg actually shows through */
+[class*="st-key-upload_zone_"] [data-testid="stFileUploader"],
 [class*="st-key-upload_zone_"] [data-testid="stFileUploader"] section {
   background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
   padding: 0.2rem 0 !important;
 }
 [class*="st-key-upload_zone_"] [data-testid="stFileUploaderDropzone"] {
   background: transparent !important;
+  background-color: transparent !important;
   border: none !important;
   padding: 0.3rem 0 !important;
   min-height: 0 !important;
@@ -1878,6 +1887,313 @@ footer { display: none !important; }
   font-size: 0.875rem !important;
   font-weight: 400 !important;
   color: var(--sidebar-link) !important;
+}
+
+/* ═══════════════════════════════════════════════
+   TREATMENT A PAGE LAYOUT (Day-3 restyle, 2026-05-13)
+   Full-width gradient hero, floating content cards.
+═══════════════════════════════════════════════ */
+
+/* When a Treatment A page is on screen (detected by .ta-hero),
+   reset the block-container so the hero can go edge-to-edge.
+   Also zero out the OUTER stVerticalBlock's 16px flex gap so
+   the content's negative margin-top can pull it up. The inner
+   stVerticalBlocks (inside form cards) keep their gap because
+   they don't contain a .ta-hero. */
+section[data-testid="stMain"] [data-testid="stMainBlockContainer"]:has(.ta-hero) {
+  max-width: none !important;
+  padding: 0 !important;
+}
+section[data-testid="stMain"] [data-testid="stMainBlockContainer"]:has(.ta-hero)
+  > [data-testid="stVerticalBlock"] {
+  gap: 0 !important;
+}
+
+/* ── Hero strip ─────────────────────────────────────────── */
+.ta-hero {
+  position: relative;
+  background: var(--grad-primary);
+  padding: 36px 48px 72px;
+  color: #ffffff;
+  overflow: hidden;
+}
+/* Main 380px radial dome top-right */
+.ta-hero::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.18), transparent 65%);
+  pointer-events: none;
+}
+/* Smaller 160px highlight stacked on top of the dome */
+.ta-hero::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.ta-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ta-hero-eyebrow {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85) !important;
+  margin: 0 0 14px;
+}
+.ta-hero-title {
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em !important;
+  word-spacing: 0.06em !important;     /* keep "New Client" space visible
+                                           against the aggressive letter-
+                                           spacing at heavy weight */
+  color: #ffffff !important;
+  margin: 0 0 14px;
+}
+/* Streamlit wraps h1 content in <span id=":rN:"> -- inherit our type */
+.ta-hero-title > span:first-child {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  word-spacing: inherit !important;
+}
+/* Hide the Streamlit anchor-link icon that sits next to the title */
+.ta-hero-title [data-testid="stHeaderActionElements"] {
+  display: none !important;
+}
+.ta-hero-sub {
+  font-size: 1.05rem !important;
+  line-height: 1.5 !important;
+  color: rgba(255,255,255,0.92) !important;
+  max-width: 620px;
+  margin: 0 0 18px;
+}
+.ta-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ta-hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 100px;
+  color: #ffffff !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ── Content area (pulls up so the stepper straddles the
+   hero bottom edge — visually ~half over gradient, half over
+   page bg). The empirical -16px lands the straddle effect once
+   Streamlit's parent stVerticalBlock gap is zeroed out above.
+   Spec called for -56px assuming no parent gap, but Streamlit's
+   stLayoutWrapper adds a ~16px offset that effectively makes
+   the pull-up land deeper. -16px here = -32px effective shift. */
+.st-key-ta_content {
+  max-width: 1200px;
+  margin: -16px auto 0 !important;
+  padding: 0 48px 48px !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* Stepper card override: floating shadow inside .ta-content */
+.st-key-ta_content .stepper {
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06),
+              0 1px 3px rgba(15, 23, 42, 0.04) !important;
+  margin-bottom: 1.4rem !important;
+}
+
+/* ── Section cards (Client Information / Operations Detail) ─ */
+.st-key-ta_card_info [data-testid="stVerticalBlockBorderWrapper"] > div,
+.st-key-ta_card_ops [data-testid="stVerticalBlockBorderWrapper"] > div,
+.st-key-ta_action_bar [data-testid="stVerticalBlockBorderWrapper"] > div {
+  border-radius: 14px !important;
+  padding: 24px 26px !important;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+}
+.st-key-ta_card_info,
+.st-key-ta_card_ops {
+  margin-bottom: 1.4rem !important;
+}
+
+/* Card head: title + subtitle + optional badge */
+.ta-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.1rem;
+}
+.ta-card-title {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: var(--text) !important;
+  margin: 0 0 3px !important;
+  line-height: 1.2;
+}
+.ta-card-sub {
+  font-size: 0.82rem !important;
+  color: var(--muted) !important;
+  margin: 0 !important;
+}
+
+/* ── State picker (skinned st.multiselect) ──────────────── */
+.st-key-ta_state_picker [data-baseweb="select"] > div {
+  background: var(--bg-card) !important;
+  border: 1.5px solid var(--border-strong) !important;
+  border-radius: 10px !important;
+  min-height: 48px !important;
+  padding: 6px 10px !important;
+  transition: all 0.15s ease;
+}
+.st-key-ta_state_picker [data-baseweb="select"]:focus-within > div {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(1, 118, 211, 0.14) !important;
+}
+.st-key-ta_state_picker [data-baseweb="tag"] {
+  background: rgba(1, 118, 211, 0.1) !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 8px !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+  font-size: 0.78rem !important;
+  padding: 1px 8px !important;
+  margin: 3px !important;
+}
+.st-key-ta_state_picker [data-baseweb="tag"] span,
+.st-key-ta_state_picker [data-baseweb="tag"] div {
+  color: var(--primary) !important;
+}
+
+/* ── Risk Flag tiles (3-col grid, category-themed) ──────── */
+.ta-risk-group-label {
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+  margin: 1.3rem 0 0.6rem !important;
+}
+
+/* Base tile (unselected) */
+[class*="st-key-ta_risk_"] button {
+  background: var(--bg-card) !important;
+  border: 1.5px solid var(--border-strong) !important;
+  border-radius: 10px !important;
+  padding: 12px 14px !important;
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+  color: var(--text) !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  min-height: 56px !important;
+  box-shadow: none !important;
+  transition: all 0.15s ease;
+}
+[class*="st-key-ta_risk_"] button:hover {
+  border-color: var(--muted) !important;
+  background: var(--bg-card) !important;
+  transform: none !important;
+}
+
+/* Selected: gradient-tinted background, category-colored border */
+[class*="st-key-ta_risk_industry_"] [data-testid="stBaseButton-primary"] {
+  background: linear-gradient(135deg, rgba(249,115,22,0.10), rgba(236,72,153,0.06)) !important;
+  border: 1.5px solid var(--orange) !important;
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+[class*="st-key-ta_risk_compliance_"] [data-testid="stBaseButton-primary"] {
+  background: linear-gradient(135deg, rgba(99,102,241,0.10), rgba(147,51,234,0.07)) !important;
+  border: 1.5px solid var(--purple) !important;
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+[class*="st-key-ta_risk_operations_"] [data-testid="stBaseButton-primary"] {
+  background: linear-gradient(135deg, rgba(1,118,211,0.10), rgba(6,182,212,0.07)) !important;
+  border: 1.5px solid var(--primary) !important;
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+[class*="st-key-ta_risk_"] [data-testid="stBaseButton-primary"]:hover {
+  filter: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Left-side icon chip on each tile (28px square)
+   Target the button directly so the chip is a flex item;
+   Streamlit's button has display:flex and the chip becomes the
+   first sibling of the inner label container. */
+[class*="st-key-ta_risk_"] button::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 6px !important;
+  background: var(--bg-subtle) !important;
+  border: 1px solid var(--border-strong) !important;
+  margin-right: 12px !important;
+  flex-shrink: 0 !important;
+  align-self: center !important;
+}
+[class*="st-key-ta_risk_industry_"]   [data-testid="stBaseButton-primary"]::before {
+  background: var(--grad-warm) !important;
+  border-color: transparent !important;
+}
+[class*="st-key-ta_risk_compliance_"] [data-testid="stBaseButton-primary"]::before {
+  background: var(--grad-purple) !important;
+  border-color: transparent !important;
+}
+[class*="st-key-ta_risk_operations_"] [data-testid="stBaseButton-primary"]::before {
+  background: var(--grad-primary) !important;
+  border-color: transparent !important;
+}
+
+/* ── Action bar ─────────────────────────────────────────── */
+.st-key-ta_action_bar [data-testid="stVerticalBlockBorderWrapper"] > div {
+  padding: 18px 26px !important;
+}
+.st-key-cs_cancel button,
+.st-key-cs_cancel_top button,
+.st-key-ta_cancel_top button,
+.st-key-di_back button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--text-soft) !important;
+  font-weight: 500 !important;
+}
+.st-key-cs_cancel button:hover,
+.st-key-cs_cancel_top button:hover,
+.st-key-ta_cancel_top button:hover,
+.st-key-di_back button:hover {
+  color: var(--primary) !important;
+  background: rgba(1,118,211,0.06) !important;
+  transform: none !important;
 }
 
 </style>
