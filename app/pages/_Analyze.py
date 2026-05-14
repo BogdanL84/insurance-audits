@@ -43,11 +43,12 @@ from core.findings_filter import (
 )
 from utils import (
     render_sidebar, require_client, render_progress_bar,
-    inject_css, render_breadcrumb,
+    inject_css, render_breadcrumb, _mark_active_nav,
 )
 
 inject_css()
 render_sidebar()
+_mark_active_nav("Analyze")
 
 slug, client_path, state = require_client()
 display_name = state.get("display_name", slug)

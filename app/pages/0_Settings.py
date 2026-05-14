@@ -20,10 +20,11 @@ st.set_page_config(
 
 from core.settings import load as load_settings, save as save_settings
 from config import ASSETS_DIR
-from utils import render_sidebar, inject_css
+from utils import render_sidebar, inject_css, _mark_active_nav
 
 inject_css()
 render_sidebar()
+_mark_active_nav("Settings")
 
 st.title("Settings")
 st.caption("Broker branding used on all reports, emails, and PDF covers.")

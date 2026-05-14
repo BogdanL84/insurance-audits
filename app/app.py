@@ -29,10 +29,11 @@ from config import (
     STAGES,
 )
 from core.audit_state import list_clients, delete_client
-from utils import render_sidebar, inject_css
+from utils import render_sidebar, inject_css, _mark_active_nav
 
 inject_css()
 render_sidebar()
+_mark_active_nav("")  # Dashboard is the root path
 
 
 # ── Helpers ────────────────────────────────────────────────────────

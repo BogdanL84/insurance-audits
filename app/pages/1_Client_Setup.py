@@ -38,10 +38,11 @@ from core.audit_state import (
     load, save, initialize, slugify, slug_exists,
     create_client_folders, write_client_notes, get_all_display_names,
 )
-from utils import render_sidebar, render_stepper, inject_css
+from utils import render_sidebar, render_stepper, inject_css, _mark_active_nav
 
 inject_css()
 render_sidebar()
+_mark_active_nav("Client_Setup")
 
 
 # ── Determine mode: new or edit ────────────────────────────────────

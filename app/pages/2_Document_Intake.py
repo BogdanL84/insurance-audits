@@ -39,10 +39,11 @@ from core.claude_runner import (
     build_policy_chunk_prompt, build_policy_merge_prompt,
     chunk_text, ANALYSIS_TIMEOUT, RATE_LIMIT_DELAY,
 )
-from utils import render_sidebar, require_client, render_stepper, inject_css
+from utils import render_sidebar, require_client, render_stepper, inject_css, _mark_active_nav
 
 inject_css()
 render_sidebar()
+_mark_active_nav("Document_Intake")
 
 # ── Client + dirs ──────────────────────────────────────────────────
 slug, client_path, state = require_client()

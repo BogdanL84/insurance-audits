@@ -409,33 +409,13 @@ hr {
   color: var(--primary) !important;
 }
 
-/* Active nav item: 3px gradient left bar + subtle bg wash
-   (Day-2 addition, 2026-05-12) */
-[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"]) {
-  background: linear-gradient(90deg,
-              rgba(1,118,211,0.08) 0%,
-              rgba(6,182,212,0.05) 100%) !important;
-  color: var(--primary) !important;
-  font-weight: 600 !important;
-  position: relative;
-  overflow: visible !important;
-}
-[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"])::before {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3px;
-  height: 20px;
-  background: var(--grad-primary);
-  border-radius: 0 3px 3px 0;
-  z-index: 1;
-}
-[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"]:has(a[aria-current="page"]) p {
-  color: var(--primary) !important;
-  font-weight: 600 !important;
-}
+/* Day-3 note: the Day-2 active-nav rule used
+   :has(a[aria-current="page"]) but Streamlit 1.57 doesn't set
+   aria-current on page links, AND stPageLink-NavLink IS the <a>
+   (no inner anchor to :has). The rule has been a no-op since
+   Day 2. It's been replaced by the per-page _mark_active_nav()
+   helper in utils.py, which each workflow page calls after
+   render_sidebar() with its own URL slug. */
 
 /* Sidebar selectbox: card-surface with subtle border (sits inside .sb-client-card) */
 [data-testid="stSidebar"] [data-baseweb="select"] > div {
@@ -930,6 +910,14 @@ hr {
   font-weight: 600;
   color: var(--muted);
   white-space: nowrap;
+  /* Sit the label above the horizontal connector line. Without
+     this, long active labels like "Strategic Advisor" overflow
+     their step's flex-content box and the next line draws
+     through them at y-middle, creating a fake strikethrough. */
+  background: var(--bg-card);
+  padding: 0 4px;
+  position: relative;
+  z-index: 1;
 }
 .step.done .step-label,
 .step.active .step-label { color: var(--text); }
@@ -2196,6 +2184,348 @@ section[data-testid="stMain"] [data-testid="stMainBlockContainer"]:has(.ta-hero)
   transform: none !important;
 }
 
+/* CSS_SPLIT_HERE */
+
+/* =====================================================================
+   FINDINGS DASHBOARD (Day 3, Treatment A: Dense Command Center)
+   ===================================================================== */
+.findings-summary { display: grid; grid-template-columns: 1.4fr 0.8fr 1.2fr; gap: 16px; margin-bottom: 22px; }
+.findings-card { background: var(--bg-card); border-radius: 14px; padding: 20px 22px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(15,23,42,0.04); }
+.findings-card-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; }
+.findings-card-title { font-size: 0.84rem; font-weight: 700; letter-spacing: -0.005em; }
+.findings-card-meta { font-size: 0.7rem; color: var(--muted); font-weight: 500; }
+
+.sev-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.sev-tile { position: relative; padding: 14px 14px 12px; border-radius: 10px; background: var(--bg-subtle); overflow: hidden; }
+.sev-tile::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; }
+.sev-tile.critical { background: linear-gradient(135deg, rgba(239,68,68,0.10), rgba(236,72,153,0.04)); }
+.sev-tile.critical::before { background: var(--red); }
+.sev-tile.high { background: linear-gradient(135deg, rgba(245,158,11,0.10), rgba(249,115,22,0.04)); }
+.sev-tile.high::before { background: var(--amber); }
+.sev-tile.medium { background: linear-gradient(135deg, rgba(1,118,211,0.10), rgba(6,182,212,0.04)); }
+.sev-tile.medium::before { background: var(--primary); }
+.sev-tile.low { background: linear-gradient(135deg, rgba(16,185,129,0.10), rgba(6,182,212,0.04)); }
+.sev-tile.low::before { background: var(--green); }
+.sev-tile-count { font-family: var(--font-mono); font-size: 1.9rem; font-weight: 600; line-height: 1; margin-bottom: 6px; letter-spacing: -0.02em; }
+.sev-tile-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.sev-tile.critical .sev-tile-count { color: var(--red); }
+.sev-tile.high .sev-tile-count { color: var(--amber); }
+.sev-tile.medium .sev-tile-count { color: var(--primary); }
+.sev-tile.low .sev-tile-count { color: var(--green); }
+
+.risk-card { background: var(--bg-card); border-radius: 14px; padding: 20px 22px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(15,23,42,0.04); display: flex; flex-direction: column; align-items: center; text-align: center; }
+.risk-card .findings-card-head { width: 100%; }
+.risk-donut-wrap { position: relative; width: 130px; height: 130px; margin: 4px auto; }
+.risk-donut-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.risk-donut-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.risk-score { font-family: var(--font-mono); font-size: 2.2rem; font-weight: 700; line-height: 1; }
+.risk-score-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-top: 4px; }
+.risk-badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; margin-top: 8px; }
+.risk-badge.elevated { background: rgba(239,68,68,0.12); color: var(--red); }
+.risk-badge.moderate { background: rgba(245,158,11,0.12); color: var(--amber); }
+.risk-badge.healthy { background: rgba(16,185,129,0.12); color: var(--green); }
+
+.policy-chart { background: var(--bg-card); border-radius: 14px; padding: 20px 22px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(15,23,42,0.04); }
+.policy-bars { display: flex; align-items: flex-end; gap: 14px; height: 130px; padding-top: 8px; }
+.policy-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.policy-stack { display: flex; flex-direction: column; width: 100%; height: 110px; justify-content: flex-end; gap: 2px; border-radius: 4px; overflow: hidden; }
+.policy-bar { width: 100%; }
+.policy-bar.crit { background: var(--red); }
+.policy-bar.high { background: var(--amber); }
+.policy-bar.med { background: var(--primary); }
+.policy-bar.low { background: var(--green); }
+.policy-label { font-size: 0.7rem; color: var(--muted); font-weight: 500; }
+
+.findings-filter-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+.st-key-findings_filter_severity { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 16px; margin-bottom: 18px; box-shadow: 0 1px 3px rgba(15,23,42,0.04); }
+.st-key-findings_filter_severity div[data-testid="stHorizontalBlock"] { align-items: center; gap: 6px !important; }
+.st-key-findings_filter_severity .stButton button { padding: 5px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 500; background: var(--bg-subtle); color: var(--text-soft); border: 1px solid transparent; min-height: 0; line-height: 1.3; width: auto; }
+.st-key-findings_filter_severity .stButton button:hover { background: rgba(1,118,211,0.06); color: var(--primary); border-color: rgba(1,118,211,0.15); }
+.st-key-findings_filter_severity .stButton button[kind="primary"] { background: rgba(1,118,211,0.1); color: var(--primary); border-color: rgba(1,118,211,0.2); font-weight: 600; box-shadow: none; }
+
+.findings-results-meta { display: flex; align-items: center; justify-content: space-between; margin: 8px 4px 14px; }
+.findings-results-count { font-size: 0.85rem; color: var(--muted); }
+.findings-results-count strong { color: var(--text); font-weight: 700; }
+.findings-results-sort { font-size: 0.82rem; color: var(--text-soft); }
+.findings-results-sort strong { color: var(--text); font-weight: 600; }
+
+.findings-list { display: flex; flex-direction: column; gap: 8px; }
+.finding-row { background: var(--bg-card); border-radius: 11px; border: 1px solid var(--border); padding: 14px 18px 14px 22px; display: grid; grid-template-columns: 22px 1.2fr 0.7fr 0.7fr 0.6fr 90px; gap: 18px; align-items: center; position: relative; overflow: hidden; }
+.finding-row::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; }
+.finding-row.critical::before { background: var(--red); }
+.finding-row.high::before { background: var(--amber); }
+.finding-row.medium::before { background: var(--primary); }
+.finding-row.low::before { background: var(--green); }
+.finding-row-sev { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 800; color: white; }
+.finding-row.critical .finding-row-sev { background: var(--red); }
+.finding-row.high .finding-row-sev { background: var(--amber); }
+.finding-row.medium .finding-row-sev { background: var(--primary); }
+.finding-row.low .finding-row-sev { background: var(--green); }
+.finding-row-title { font-weight: 600; font-size: 0.92rem; line-height: 1.3; }
+.finding-row-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+.finding-row-meta { font-size: 0.78rem; color: var(--text-soft); }
+.finding-row-meta-strong { font-weight: 600; color: var(--text); }
+.finding-row-tag { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 6px; font-size: 0.7rem; font-weight: 600; background: var(--bg-subtle); color: var(--text-soft); }
+.finding-row-impact { display: flex; gap: 2px; }
+.finding-row-impact > div { width: 8px; height: 14px; border-radius: 2px; background: var(--border); }
+.finding-row-impact > div.on { background: var(--primary); }
+.finding-row-impact.crit > div.on { background: var(--red); }
+.finding-row-impact.high > div.on { background: var(--amber); }
+.finding-row-action { display: inline-flex; align-items: center; justify-content: center; padding: 6px 14px; border-radius: 8px; font-size: 0.76rem; font-weight: 600; background: var(--bg-subtle); color: var(--text-soft); border: 1px solid var(--border); }
+
+.findings-empty { background: var(--bg-card); border: 1px dashed var(--border); border-radius: 14px; padding: 60px 32px; text-align: center; color: var(--muted); }
+.findings-empty-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.5; }
+.findings-empty-title { font-size: 1.05rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.findings-empty-sub { font-size: 0.88rem; }
+
+/* =====================================================================
+   STRATEGIC ADVISOR (Day 3, Treatment A: Tabbed Insight Dashboard)
+   Purple-gradient hero (var(--grad-purple)) distinguishes from
+   workflow pages. Reuses Treatment A page-layout pattern.
+   ===================================================================== */
+
+/* Override TA hero gradient for THIS page only */
+.adv-hero-purple .ta-hero { background: var(--grad-purple); }
+
+/* Skin Streamlit's button row inside .st-key-adv_tabs to look like tabs */
+.st-key-adv_tabs {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 6px; margin-bottom: 22px;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.04);
+}
+.st-key-adv_tabs div[data-testid="stHorizontalBlock"] { gap: 4px !important; }
+.st-key-adv_tabs .stButton button {
+    padding: 10px 12px; border-radius: 10px; font-size: 0.78rem; font-weight: 700;
+    background: transparent; color: var(--text); border: 1px solid transparent;
+    min-height: 0; line-height: 1.25; text-align: center;
+    /* Equal-width tabs: enforce 100% width on both kinds so the
+       primary variant doesn't get implicit min-width. */
+    width: 100% !important; max-width: 100% !important; box-sizing: border-box;
+    /* Honor the literal \n in btn_label = f"{label}\n{meta}" so
+       the meta text wraps to a second line. */
+    white-space: pre-line;
+}
+.st-key-adv_tabs .stButton button p { white-space: pre-line; line-height: 1.25; }
+.st-key-adv_tabs .stButton button:hover { background: var(--bg-subtle); }
+.st-key-adv_tabs .stButton button[kind="primary"] {
+    background: linear-gradient(135deg, rgba(139,92,246,0.10), rgba(236,72,153,0.04));
+    color: var(--purple); border-color: rgba(139,92,246,0.18); box-shadow: none;
+    width: 100% !important; max-width: 100% !important;
+}
+
+/* Section header */
+.adv-sec-head { display: flex; align-items: center; justify-content: space-between; margin: 6px 4px 18px; }
+.adv-sec-title-block { display: flex; align-items: center; gap: 14px; }
+.adv-sec-icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--grad-purple); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; box-shadow: 0 4px 14px rgba(139,92,246,0.28);
+}
+.adv-sec-name { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.015em; }
+.adv-sec-name .accent {
+    background: var(--grad-purple);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    font-style: italic; font-family: var(--font-serif, 'Instrument Serif', Georgia, serif);
+    font-weight: 400;
+}
+.adv-sec-sub { font-size: 0.84rem; color: var(--muted); margin-top: 2px; }
+.adv-sec-meta { font-size: 0.8rem; color: var(--text-soft); }
+.adv-sec-meta strong { color: var(--text); font-weight: 600; }
+
+/* Playbook filter pills (purple variant) */
+.st-key-adv_playbook_filter {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 12px 16px; margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.04);
+}
+.st-key-adv_playbook_filter div[data-testid="stHorizontalBlock"] { align-items: center; gap: 6px !important; }
+.st-key-adv_playbook_filter .stButton button {
+    padding: 5px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 500;
+    background: var(--bg-subtle); color: var(--text-soft); border: 1px solid transparent;
+    min-height: 0; line-height: 1.3; width: auto;
+}
+.st-key-adv_playbook_filter .stButton button:hover {
+    background: rgba(139,92,246,0.06); color: var(--purple); border-color: rgba(139,92,246,0.15);
+}
+.st-key-adv_playbook_filter .stButton button[kind="primary"] {
+    background: rgba(139,92,246,0.1); color: var(--purple);
+    border-color: rgba(139,92,246,0.2); font-weight: 600; box-shadow: none;
+}
+
+/* Featured playbook entry (active in swap pattern) */
+.pb-featured {
+    background: var(--bg-card); border-radius: 16px;
+    padding: 24px 28px; border: 1px solid rgba(139,92,246,0.20);
+    box-shadow: 0 4px 18px rgba(139,92,246,0.10);
+    margin-bottom: 18px; position: relative; overflow: hidden;
+}
+.pb-featured::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: var(--grad-purple);
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.30);
+}
+.pb-featured-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 3px 10px; border-radius: 999px;
+    background: linear-gradient(135deg, rgba(139,92,246,0.10), rgba(236,72,153,0.05));
+    border: 1px solid rgba(139,92,246,0.20);
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--purple); margin-bottom: 12px;
+}
+.pb-featured-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--grad-purple); }
+.pb-featured-head { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
+.pb-seq {
+    font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700;
+    padding: 3px 9px; background: var(--grad-purple); color: white;
+    border-radius: 5px; letter-spacing: 0.04em;
+}
+.pb-sev {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 2px 9px; border-radius: 999px;
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.pb-sev.ugly { background: rgba(239,68,68,0.12); color: var(--red); }
+.pb-sev.bad { background: rgba(245,158,11,0.12); color: var(--amber); }
+.pb-sev.review { background: rgba(1,118,211,0.12); color: var(--primary); }
+.pb-sev.good { background: rgba(16,185,129,0.12); color: var(--green); }
+.pb-sev::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.pb-policy { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-left: auto; }
+.pb-featured-title { font-size: 1.25rem; font-weight: 700; line-height: 1.2; margin-bottom: 4px; letter-spacing: -0.015em; }
+.pb-featured-laymen {
+    font-size: 1rem; color: var(--purple); font-style: italic;
+    font-family: var(--font-serif, 'Instrument Serif', Georgia, serif); margin-bottom: 14px;
+}
+.pb-featured-body { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+.pb-block-title {
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 4px;
+}
+.pb-block-content { font-size: 0.88rem; line-height: 1.5; color: var(--text-soft); margin-bottom: 12px; }
+.pb-block-content strong { color: var(--text); font-weight: 600; }
+.pb-cost-callout {
+    background: linear-gradient(135deg, rgba(239,68,68,0.06), rgba(236,72,153,0.04));
+    border-left: 3px solid var(--red); border-radius: 0 10px 10px 0;
+    padding: 12px 16px; margin-bottom: 10px;
+}
+.pb-cost-callout .pb-block-title { color: var(--red); }
+.pb-cost-amount {
+    font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700;
+    color: var(--red); letter-spacing: -0.01em; margin: 2px 0;
+}
+.pb-solution-callout {
+    background: linear-gradient(135deg, rgba(16,185,129,0.06), rgba(6,182,212,0.04));
+    border-left: 3px solid var(--green); border-radius: 0 10px 10px 0;
+    padding: 12px 16px;
+}
+.pb-solution-callout .pb-block-title { color: var(--green); }
+.pb-solution-content { font-size: 0.86rem; color: var(--text); line-height: 1.45; }
+.pb-solution-content strong { color: var(--text); font-weight: 600; }
+
+/* Playbook row list */
+.pb-divider {
+    font-size: 0.7rem; font-weight: 700; color: var(--muted);
+    letter-spacing: 0.12em; text-transform: uppercase; margin: 20px 4px 10px;
+}
+[class*="st-key-pb_row_"] {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 8px 14px; margin-bottom: 6px;
+}
+[class*="st-key-pb_row_"][class*="_active"] {
+    background: linear-gradient(135deg, rgba(139,92,246,0.06), rgba(236,72,153,0.02));
+    border-color: rgba(139,92,246,0.30);
+}
+[class*="st-key-pb_row_"] .stButton button {
+    padding: 4px 10px; border-radius: 6px; font-size: 0.74rem; font-weight: 600;
+    background: transparent; color: var(--purple); border: 1px solid rgba(139,92,246,0.20);
+    min-height: 0; line-height: 1.2; width: auto; box-shadow: none;
+}
+[class*="st-key-pb_row_"] .stButton button:hover { background: rgba(139,92,246,0.06); }
+[class*="st-key-pb_row_"][class*="_active"] .stButton button { background: var(--grad-purple); color: white; border-color: transparent; }
+
+.pb-row-seq {
+    font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; color: var(--muted);
+    background: var(--bg-subtle); padding: 3px 7px; border-radius: 5px; text-align: center;
+    width: 36px;
+}
+.pb-row-title { font-size: 0.88rem; font-weight: 600; line-height: 1.3; }
+.pb-row-laymen { font-size: 0.76rem; color: var(--muted); font-style: italic; margin-top: 1px; }
+
+.st-key-pb_show_all_btn .stButton button {
+    width: 100%; padding: 14px; border-radius: 10px;
+    background: linear-gradient(135deg, rgba(139,92,246,0.04), rgba(236,72,153,0.03));
+    border: 1px dashed rgba(139,92,246,0.22);
+    color: var(--purple); font-weight: 600; font-size: 0.86rem;
+}
+
+/* Narrative tabs (Positioning, Broker, Principals, Meeting, Mid-Meeting) */
+.adv-narrative {
+    background: var(--bg-card); border-radius: 14px;
+    padding: 28px 32px; border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(15,23,42,0.04);
+}
+.adv-narrative-body { font-size: 0.96rem; line-height: 1.65; color: var(--text-soft); }
+.adv-narrative-body p { margin-bottom: 14px; }
+.adv-narrative-body strong { color: var(--text); font-weight: 600; }
+.adv-narrative-body .quote {
+    font-family: var(--font-serif, 'Instrument Serif', Georgia, serif);
+    font-style: italic; font-size: 1.15rem; color: var(--purple);
+    line-height: 1.45; margin: 16px 0; padding: 8px 0 8px 20px;
+    border-left: 3px solid var(--purple);
+}
+.adv-field { margin-bottom: 18px; }
+.adv-field-label {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+}
+.adv-field-value { font-size: 0.94rem; line-height: 1.6; color: var(--text); }
+.adv-field-value strong { font-weight: 600; }
+.adv-field-value em {
+    font-family: var(--font-serif, 'Instrument Serif', Georgia, serif);
+    font-style: italic; color: var(--purple);
+}
+
+.adv-principals { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.adv-principal-card { background: var(--bg-subtle); border-radius: 10px; padding: 16px 18px; }
+.adv-principal-card.full-width { grid-column: 1 / -1; }
+.adv-principal-card-title {
+    font-size: 0.78rem; font-weight: 700; color: var(--purple);
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 6px;
+}
+.adv-principal-card-body { font-size: 0.88rem; color: var(--text); line-height: 1.5; }
+
+.adv-outline-step { display: flex; gap: 14px; margin-bottom: 14px; }
+.adv-outline-num {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--bg-card); border: 2px solid var(--purple); color: var(--purple);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.78rem; flex-shrink: 0;
+}
+.adv-outline-step-content { flex: 1; }
+.adv-outline-step-name { font-weight: 600; font-size: 0.94rem; margin-bottom: 2px; }
+.adv-outline-step-body { font-size: 0.88rem; color: var(--text-soft); line-height: 1.5; }
+
+.adv-trial-list { background: var(--bg-subtle); border-radius: 12px; padding: 20px 24px; }
+.adv-trial-title {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+}
+.adv-trial-list ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.adv-trial-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    font-size: 0.92rem; line-height: 1.5; color: var(--text);
+}
+.adv-trial-list li::before { content: "▸"; color: var(--purple); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+.adv-empty {
+    background: var(--bg-card); border: 1px dashed var(--border);
+    border-radius: 14px; padding: 60px 32px; text-align: center; color: var(--muted);
+}
+.adv-empty-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.5; }
+.adv-empty-title { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.adv-empty-sub { font-size: 0.9rem; max-width: 420px; margin: 0 auto 20px; line-height: 1.5; }
+
 </style>
 """
 
@@ -2203,20 +2533,38 @@ section[data-testid="stMain"] [data-testid="stMainBlockContainer"]:has(.ta-hero)
 def inject_css() -> None:
     """Inject Google Fonts, theme CSS variables, and component styles. Call at top of every page.
 
-    Component CSS is split at /* CSS_SPLIT_HERE */ because Streamlit's
-    markdown processor silently truncates a single st.markdown HTML
-    payload above ~35KB. Each half ships in its own st.markdown call,
-    wrapped in its own <style> block."""
+    Component CSS is split at /* CSS_SPLIT_HERE */ markers because
+    Streamlit's markdown processor silently truncates a single
+    st.markdown HTML payload above ~35KB. Each segment ships in its
+    own st.markdown call wrapped in its own <style> block. N-way
+    split: first segment already has the opening <style>, last
+    segment already has the closing </style>, middle segments get
+    both prepended and appended."""
     theme = _load_theme()
     st.markdown(_FONTS_HTML, unsafe_allow_html=True)
     st.markdown(_DARK_VARS if theme == "dark" else _LIGHT_VARS, unsafe_allow_html=True)
 
     parts = _COMPONENT_CSS.split("/* CSS_SPLIT_HERE */")
-    if len(parts) == 2:
-        st.markdown(parts[0] + "\n</style>",            unsafe_allow_html=True)
-        st.markdown("<style>\n" + parts[1],             unsafe_allow_html=True)
-    else:
+    if len(parts) == 1:
         st.markdown(_COMPONENT_CSS, unsafe_allow_html=True)
+        return
+    # First segment already starts with <style>, close it
+    st.markdown(parts[0] + "\n</style>", unsafe_allow_html=True)
+    # Middle segments need both
+    for mid in parts[1:-1]:
+        st.markdown("<style>\n" + mid + "\n</style>", unsafe_allow_html=True)
+    # Last segment already ends with </style>, open it
+    st.markdown("<style>\n" + parts[-1], unsafe_allow_html=True)
+
+
+def _md(html: str) -> None:
+    """st.markdown(unsafe_allow_html=True) with leading whitespace
+    collapsed before each tag, so multi-line f-string HTML isn't
+    parsed as code blocks by Streamlit's markdown processor (>=4
+    spaces of indent turns the line into <pre><code>). Lifted from
+    app/app.py (Day 1) for reuse on Day 3+ pages."""
+    import re as _re
+    st.markdown(_re.sub(r"\n\s*", "", html), unsafe_allow_html=True)
 
 
 # ── Workflow stepper (Day-2 restyle, 2026-05-12) ────────────────────
@@ -2438,6 +2786,72 @@ def render_sidebar() -> None:
             st.rerun()
 
         st.page_link("pages/0_Settings.py", label="Settings")
+
+
+# ── Active-nav helper (Day-3, pure-CSS replacement for the dead
+#    :has(a[aria-current="page"]) rule) ───────────────────────────
+def _mark_active_nav(slug: str) -> None:
+    """Inject a one-rule CSS override that marks the sidebar nav link
+    matching `slug` as the active page.
+
+    Streamlit 1.57 doesn't apply aria-current on page-link anchors,
+    so the Day-2 `:has(a[aria-current="page"])` selector never
+    matched. <script> tags from st.markdown(unsafe_allow_html=True)
+    are stripped, so JS injection is out too. Instead, each page
+    calls this helper once after render_sidebar() with its own slug;
+    the helper emits a tiny <style> block that targets the matching
+    [href="..."] attribute on that page's link only.
+
+    `slug` is the path segment Streamlit emits as `href` on the
+    page-link anchor. Probed values:
+      ""                  → Dashboard (root, empty href)
+      "Client_Setup"      → Client Setup
+      "Document_Intake"   → Document Intake
+      "Analyze"           → Analyze
+      "Findings_Dashboard"→ Findings
+      "Strategic_Advisor" → Strategic Advisor
+      "Settings"          → Settings
+    """
+    # Dashboard's href is empty — needs an exact match so we don't
+    # accidentally match every link (every href ends with "").
+    if slug == "":
+        sel = '[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"][href=""]'
+    else:
+        # Exact match; include a lowercased fallback as a safety net.
+        sel = (
+            f'[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"][href="{slug}"], '
+            f'[data-testid="stSidebar"] [data-testid="stPageLink-NavLink"][href="{slug.lower()}"]'
+        )
+    st.markdown(
+        f"""<style>
+        {sel} {{
+          background: linear-gradient(90deg,
+                      rgba(1,118,211,0.10) 0%,
+                      rgba(6,182,212,0.04) 100%) !important;
+          color: var(--primary) !important;
+          font-weight: 600 !important;
+          position: relative !important;
+          overflow: visible !important;
+        }}
+        {sel.replace(', ', '::before, ') + '::before'} {{
+          content: "";
+          position: absolute;
+          left: 2px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 3px;
+          height: 22px;
+          background: var(--grad-primary);
+          border-radius: 0 3px 3px 0;
+          z-index: 1;
+        }}
+        {sel.replace(', ', ' p, ') + ' p'} {{
+          color: var(--primary) !important;
+          font-weight: 600 !important;
+        }}
+        </style>""",
+        unsafe_allow_html=True,
+    )
 
 
 # ── Client guard ───────────────────────────────────────────────────
